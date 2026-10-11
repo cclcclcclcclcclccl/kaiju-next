@@ -15,3 +15,8 @@ Thumbs.db
 private/
 evidence/raw-private/
 
+
+data/
+.env.local
+artifacts/browser/
+
