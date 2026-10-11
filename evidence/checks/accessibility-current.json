@@ -1,0 +1,24 @@
+{
+  "tool": "axe-core",
+  "scope": "Automated checks do not establish full WCAG conformance",
+  "audits": [
+    {
+      "stage": "desktop initial laboratory",
+      "violations": [],
+      "passedRules": 22,
+      "incomplete": 1
+    },
+    {
+      "stage": "desktop witness and repair comparison",
+      "violations": [],
+      "passedRules": 22,
+      "incomplete": 1
+    },
+    {
+      "stage": "mobile disconnected model dialog",
+      "violations": [],
+      "passedRules": 25,
+      "incomplete": 1
+    }
+  ]
+}

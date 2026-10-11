@@ -20,3 +20,4 @@ data/
 .env.local
 artifacts/browser/
 
+.reproduction/

@@ -1,0 +1,11 @@
+{
+  "phase": "before contrast fixes",
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodes": 49
+    }
+  ],
+  "scope": "Desktop initial laboratory, automated axe scan"
+}
