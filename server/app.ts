@@ -3,7 +3,8 @@ import type { IncomingMessage, ServerResponse } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 import { z, ZodError } from 'zod';
-import { modelSchema, boundsSchema } from '../src/core/model.ts';
+import { evaluatePlaytests } from '../src/core/simulation.ts';
+import { modelSchema, boundsSchema, ENGINE_VERSION } from '../src/core/model.ts';
 import { proposePatches, replay } from '../src/core/engine.ts';
 import { solve } from './solver.ts';
 import { generateCandidate, providerConfig } from './model-provider.ts';
@@ -70,7 +71,7 @@ export function createApp(store: Store, options: { dist?: string } = {}) {
       const method = req.method;
       if (method === 'GET' && url.pathname === '/api/status')
         return json(200, {
-          version: '0.1.0',
+          version: ENGINE_VERSION,
           modelConfigured: Boolean(providerConfig()),
           storage: 'sqlite',
         });
@@ -118,7 +119,15 @@ export function createApp(store: Store, options: { dist?: string } = {}) {
               } catch (error) {
                 oldTrace = { legal: false, violates: false, message: (error as Error).message };
               }
-              comparisons.push({ patch, result, oldTrace });
+              comparisons.push({
+                patch,
+                result,
+                oldTrace,
+                playtests: {
+                  before: evaluatePlaytests(run.model),
+                  after: evaluatePlaytests(patch.model),
+                },
+              });
             }
             return comparisons;
           }),

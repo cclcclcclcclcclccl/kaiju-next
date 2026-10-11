@@ -13,3 +13,5 @@ Supply an exact quote and exact path for EVERY numeric value: resources.N.initia
 Evidence quotes must be actual substrings. Inclusion of a quote does not prove its semantic interpretation; the user will inspect and confirm.
 A candidate needs 2–8 resources, 1–16 actions, and at least one restored resource other than the target.
 If the input requires unsupported features or does not explicitly define the verification intent, ask clarification instead of silently dropping requirements.
+
+Do not generate playtests. The designer declares preservation scenarios in the editor after confirming the candidate.

@@ -29,6 +29,8 @@ const responseSchema = z.discriminatedUnion('status', [
 export function validateCandidate(raw: unknown, input: string): Candidate | Clarification {
   const output = responseSchema.parse(raw);
   if (output.status === 'needs-clarification') return output;
+  if (output.model.playtests?.length)
+    throw new Error('模型候选不应代替设计者声明保留用例，请在载入后手动添加');
   const paths = [
     ...output.model.resources.map((_, i) => 'resources.' + i + '.initial'),
     ...output.model.actions.flatMap((a, i) =>

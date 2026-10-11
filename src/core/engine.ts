@@ -1,53 +1,9 @@
-import { performance } from 'node:perf_hooks';
 import { modelSchema, boundsSchema, initialInventory } from './model.ts';
-import type { Economy, Inventory, SearchResult, TraceStep, Patch } from './model.ts';
+import type { Economy, Inventory, SearchResult, Patch } from './model.ts';
 
-function nextState(state: Inventory, action: Economy['actions'][number]): Inventory | null {
-  for (const [key, value] of Object.entries(action.cost)) if (state[key] < value) return null;
-  return Object.fromEntries(
-    Object.entries(state).map(([key, value]) => [
-      key,
-      value - (action.cost[key] ?? 0) + (action.gain[key] ?? 0),
-    ]),
-  );
-}
-function violates(model: Economy, state: Inventory, initial: Inventory): boolean {
-  return (
-    state[model.contract.target] - initial[model.contract.target] > model.contract.allowedProfit &&
-    model.contract.restore.every((key) => state[key] === initial[key])
-  );
-}
-export function replay(
-  input: unknown,
-  actions: string[],
-): { trace: TraceStep[]; violates: boolean; profit: number } {
-  const model = modelSchema.parse(input);
-  if (actions.length > 128) throw new Error('回放路径过长');
-  const initial = initialInventory(model);
-  let inventory = initial;
-  const trace: TraceStep[] = [
-    { step: 0, actionId: null, actionName: '初始状态', inventory, profit: 0 },
-  ];
-  for (const id of actions) {
-    const action = model.actions.find((a) => a.id === id);
-    if (!action) throw new Error('回放动作不存在：' + id);
-    const next = nextState(inventory, action);
-    if (!next) throw new Error('第 ' + trace.length + ' 步资源不足，原路径已无法执行');
-    inventory = next;
-    trace.push({
-      step: trace.length,
-      actionId: id,
-      actionName: action.name,
-      inventory,
-      profit: inventory[model.contract.target] - initial[model.contract.target],
-    });
-  }
-  return {
-    trace,
-    violates: violates(model, inventory, initial),
-    profit: inventory[model.contract.target] - initial[model.contract.target],
-  };
-}
+import { nextState, violates, replay } from './simulation.ts';
+export { replay } from './simulation.ts';
+
 export function search(input: unknown, rawBounds: unknown = {}): SearchResult {
   const model = modelSchema.parse(input);
   const bounds = boundsSchema.parse(rawBounds);

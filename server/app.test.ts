@@ -37,10 +37,15 @@ test('API performs real verification, persists snapshots and evaluates repair ca
   const run = await analysis.json();
   assert.equal(run.result.status, 'counterexample');
   assert.equal(run.modelHash.length, 64);
+  assert.equal(run.engineVersion, '0.2.0');
+  assert.equal(run.playtests[0].status, 'pass');
   const restored = await (await fetch(base + '/api/runs/' + run.id)).json();
   assert.deepEqual(restored.result.trace, run.result.trace);
   const fixes = await (await post('/api/repairs', { runId: run.id })).json();
   assert.equal(fixes.length, 2);
+  assert.equal(fixes[0].playtests.after[0].status, 'pass');
+  assert.equal(fixes[1].playtests.before[0].status, 'pass');
+  assert.equal(fixes[1].playtests.after[0].status, 'blocked');
   assert.ok(
     fixes.every((fix: any) => fix.result.status === 'bounded-clear' && !fix.oldTrace.violates),
   );
@@ -59,7 +64,8 @@ test('API performs real verification, persists snapshots and evaluates repair ca
   assert.equal(huge.status, 413);
 });
 test('model candidate must cite every numeric field with an exact input quote', () => {
-  const model = scenarios[0].model;
+  const model = structuredClone(scenarios[0].model);
+  delete model.playtests;
   const paths = [
     ...model.resources.map((_, i) => 'resources.' + i + '.initial'),
     ...model.actions.flatMap((a, i) =>
@@ -76,6 +82,10 @@ test('model candidate must cite every numeric field with an exact input quote', 
     notes: [],
   };
   assert.equal(validateCandidate(valid, '这里是原始规则').status, 'candidate');
+  assert.throws(
+    () => validateCandidate({ ...valid, model: scenarios[0].model }, '原始规则'),
+    /保留用例/,
+  );
   assert.throws(() => validateCandidate({ ...valid, evidence: [] }, '原始规则'), /缺少/);
   assert.throws(() => validateCandidate(valid, '没有引文'), /缺少/);
   assert.equal(

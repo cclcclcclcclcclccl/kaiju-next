@@ -28,6 +28,20 @@ export const modelSchema = z
       )
       .min(1)
       .max(16),
+    playtests: z
+      .array(
+        z
+          .object({
+            id,
+            name: z.string().trim().min(1).max(60),
+            initial: vector,
+            actions: z.array(id).min(1).max(32),
+            minimum: vector.refine((v) => Object.keys(v).length > 0, '至少声明一个最低库存要求'),
+          })
+          .strict(),
+      )
+      .max(8)
+      .optional(),
     contract: z
       .object({
         target: id,
@@ -48,6 +62,14 @@ export const modelSchema = z
       fail('恢复库存不能重复');
     if (model.contract.restore.some((r) => !ids.includes(r) || r === model.contract.target))
       fail('恢复库存必须是其他已定义资源');
+    if (new Set((model.playtests ?? []).map((t) => t.id)).size !== (model.playtests ?? []).length)
+      fail('保留用例标识不能重复');
+    for (const t of model.playtests ?? []) {
+      if ([...Object.keys(t.initial), ...Object.keys(t.minimum)].some((key) => !ids.includes(key)))
+        fail('保留用例引用了未定义资源');
+      if (t.actions.some((key) => !model.actions.some((a) => a.id === key)))
+        fail('保留用例引用了未定义动作');
+    }
     for (const action of model.actions) {
       if (
         [...Object.keys(action.cost), ...Object.keys(action.gain)].some((key) => !ids.includes(key))
@@ -99,9 +121,35 @@ export type Patch = {
 export type Comparison = {
   patch: Patch;
   result: SearchResult;
+  playtests: { before: PlaytestResult[]; after: PlaytestResult[] };
   oldTrace: { legal: boolean; violates: boolean; profit?: number; message?: string };
 };
+export type Playtest = NonNullable<Economy['playtests']>[number];
+export type PlaytestResult = {
+  id: string;
+  name: string;
+  status: 'pass' | 'blocked' | 'below-minimum';
+  message: string;
+  failedStep?: number;
+  inventory: Inventory;
+};
+export const ENGINE_VERSION = '0.2.0';
 export const DEFAULT_BOUNDS: Bounds = { maxDepth: 12, maxStates: 12000, maxMillis: 1500 };
 export function initialInventory(model: Economy): Inventory {
   return Object.fromEntries(model.resources.map((r) => [r.id, r.initial]));
+}
+
+/** Object key order is serialization detail; action and resource array order stays meaningful. */
+export function sameModel(left: Economy, right: Economy): boolean {
+  const canonical = (value: unknown): unknown =>
+    Array.isArray(value)
+      ? value.map(canonical)
+      : value && typeof value === 'object'
+        ? Object.fromEntries(
+            Object.entries(value)
+              .sort(([a], [b]) => a.localeCompare(b))
+              .map(([key, v]) => [key, canonical(v)]),
+          )
+        : value;
+  return JSON.stringify(canonical(left)) === JSON.stringify(canonical(right));
 }

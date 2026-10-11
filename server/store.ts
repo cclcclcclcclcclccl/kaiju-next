@@ -1,3 +1,5 @@
+import { evaluatePlaytests } from '../src/core/simulation.ts';
+import { ENGINE_VERSION } from '../src/core/model.ts';
 import { DatabaseSync } from 'node:sqlite';
 import { randomUUID, createHash } from 'node:crypto';
 import type { Economy, SearchResult } from '../src/core/model.ts';
@@ -42,6 +44,8 @@ export function createStore(path: string) {
         id: randomUUID(),
         createdAt: new Date().toISOString(),
         modelHash,
+        engineVersion: ENGINE_VERSION,
+        playtests: evaluatePlaytests(model),
         model,
         result,
       };

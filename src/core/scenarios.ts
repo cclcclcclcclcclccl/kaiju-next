@@ -22,6 +22,15 @@ export const scenarios: Scenario[] = [
         { id: 'sell', name: '出售金属', cost: { ingot: 1 }, gain: { gold: 7 } },
       ],
       contract: { target: 'gold', restore: ['ore', 'ingot'], allowedProfit: 0 },
+      playtests: [
+        {
+          id: 'starter_craft',
+          name: '新手用 6 金币完成第一次熔炼',
+          initial: { gold: 6 },
+          actions: ['buy', 'buy', 'smelt'],
+          minimum: { ingot: 1 },
+        },
+      ],
     },
   },
   {

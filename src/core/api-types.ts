@@ -1,10 +1,12 @@
-import type { Economy, SearchResult } from './model.ts';
+import type { Economy, SearchResult, PlaytestResult } from './model.ts';
 export type Run = {
   id: string;
   createdAt: string;
   modelHash: string;
   model: Economy;
   result: SearchResult;
+  engineVersion?: string;
+  playtests?: PlaytestResult[];
 };
 export type RunSummary = {
   id: string;
