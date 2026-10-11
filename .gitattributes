@@ -1,0 +1,9 @@
+* text=auto
+*.md text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.css text eol=lf
+*.json text eol=lf
+*.mjs text eol=lf
+# Preserve the exact bytes of the supplied competition text.
+docs/source/contest-requirements.original.txt -text
