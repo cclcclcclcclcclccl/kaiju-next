@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-11",
+  "timezone": "Asia/Shanghai",
+  "commit": "bf429a1254398d2467003281aae7ac502aae5e84",
+  "node": "v24.16.0",
+  "npm": "11.13.0",
+  "environment": "Windows; fresh directory extracted from committed Git source; Node and npm already installed; existing npm cache available; no preexisting node_modules, dist, or application database",
+  "modelApiCalls": 0,
+  "archiveMilliseconds": 1037,
+  "installMilliseconds": 12670,
+  "buildMilliseconds": 9460,
+  "testsMilliseconds": 1816,
+  "startupAndFirstVerificationMilliseconds": 1183,
+  "totalMilliseconds": 26189,
+  "coreAndApiTestsPassed": 11,
+  "httpFrontendStatus": 200,
+  "firstResult": "counterexample",
+  "witnessLength": 4,
+  "profit": 1,
+  "limitations": [
+    "This is a fresh project directory on the same machine, not a clean operating system.",
+    "npm cache and existing Node/npm reduce first-install time.",
+    "Network download on another computer is not timed here.",
+    "Commercial model setup and requests are not included."
+  ],
+  "localLogDirectory": ".reproduction/clean-6636114f"
+}

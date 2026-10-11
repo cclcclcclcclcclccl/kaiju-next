@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-11",
+  "version": "0.1.0",
+  "typecheckAndBuild": "passed",
+  "coreApiAndMockProviderTests": 11,
+  "browser": {
+    "expected": 6,
+    "unexpected": 0,
+    "flaky": 0,
+    "durationMs": 20225.825
+  },
+  "accessibility": {
+    "scannedStates": 3,
+    "violations": 0,
+    "manualReviewItemsRemain": true
+  },
+  "productionDependencyAudit": {
+    "reportedVulnerabilities": 0,
+    "scope": "npm audit --omit=dev; not a full security audit"
+  },
+  "reproduction": {
+    "totalMs": 26189,
+    "commit": "bf429a1254398d2467003281aae7ac502aae5e84",
+    "conditions": "Windows; fresh directory extracted from committed Git source; Node and npm already installed; existing npm cache available; no preexisting node_modules, dist, or application database"
+  },
+  "originalRequirementsHashVerified": true,
+  "limitations": [
+    "No real model API request",
+    "All examples are synthetic",
+    "No real designer user study",
+    "No complete competition submission or award claim"
+  ]
+}

@@ -325,9 +325,9 @@ export default function App() {
                 <div>
                   <p className="eyebrow">DESIGN WITH INTENT. VERIFY WITH EVIDENCE.</p>
                   <h1>
-                    看见规则，<span>未曾预料的一面。</span>
+                    在上线之前，<span>找到规则的破绽。</span>
                   </h1>
-                  <p>把设计意图变成可验证的约束，让每一次修改都有依据。</p>
+                  <p>面向游戏经济的反例验证：编辑交易规则，回放套利路径，对照修复结果。</p>
                 </div>
                 <button
                   className="button button-secondary"

@@ -119,3 +119,39 @@ test('saved rules and the guide are navigable without losing the current draft',
   await page.reload();
   await expect(page.getByLabel('购买矿石消耗金币')).toHaveValue('4');
 });
+
+test('eight-resource imported model remains usable and finds a new eight-step witness', async ({
+  page,
+}) => {
+  const model = {
+    schemaVersion: 1,
+    title: '八资源兑换环',
+    description: '边界测试用合成输入',
+    resources: Array.from({ length: 8 }, (_, i) => ({
+      id: 'r' + i,
+      name: '资源' + i,
+      initial: i === 0 ? 1 : 0,
+    })),
+    actions: Array.from({ length: 8 }, (_, i) => ({
+      id: 'a' + i,
+      name: '兑换' + i,
+      cost: { ['r' + i]: 1 },
+      gain: { ['r' + ((i + 1) % 8)]: i === 7 ? 2 : 1 },
+    })),
+    contract: {
+      target: 'r0',
+      restore: Array.from({ length: 7 }, (_, i) => 'r' + (i + 1)),
+      allowedProfit: 0,
+    },
+  };
+  await page.getByRole('button', { name: '导入 / 编辑' }).click();
+  await page.getByLabel('完整规则 JSON').fill(JSON.stringify(model));
+  await page.getByRole('button', { name: '载入规则', exact: true }).click();
+  await expect(page.locator('.map-node')).toHaveCount(8);
+  await page.getByRole('button', { name: '开始验证', exact: true }).click();
+  await expect(page.getByRole('heading', { name: '8 步之后，资源0多出了 1。' })).toBeVisible();
+  await expect(page.locator('.trace-step')).toHaveCount(9);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(
+    true,
+  );
+});

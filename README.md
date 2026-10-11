@@ -68,9 +68,9 @@ npm run test:e2e
 
 浏览器测试在 Windows 使用已安装的 Microsoft Edge；其他系统使用 Playwright Chromium，需要先执行 npx playwright install chromium。测试服务使用端口 4319 和独立目录 data/e2e，不写入使用者的项目数据库。
 
-最新本轮结果：11 项核心、API 和模型协议测试通过；5 项浏览器测试通过，覆盖完整流程、新输入、报告导出、草稿恢复、窄屏以及三种界面状态的 axe 自动检查。运行依赖 npm audit --omit=dev 未报告已知漏洞。自动检查不等于完整安全审计或完整 WCAG 认证。
+最新本轮结果：11 项核心、API 和模型协议测试通过；6 项浏览器测试通过，覆盖完整流程、新输入、报告导出、草稿恢复、窄屏以及三种界面状态的 axe 自动检查。运行依赖 npm audit --omit=dev 未报告已知漏洞。自动检查不等于完整安全审计或完整 WCAG 认证。
 
-复现计时与机器前提见 evidence/checks/reproduction.json（完成复现实测后生成）。技术说明见 docs/06-architecture.md。
+本机新项目目录复现耗时 26.189 秒，包含归档解压、安装、构建、11 项测试、启动与首次验证；Node/npm 已预装并使用现有 npm 缓存，不代表干净操作系统或首次下载耗时。具体计时与前提见 evidence/checks/reproduction.json。技术说明见 docs/06-architecture.md。
 
 ## 文件入口
 

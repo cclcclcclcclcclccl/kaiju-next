@@ -858,3 +858,7 @@
 .economy-map-many > svg {
   max-height: 380px;
 }
+
+.sidebar-note small {
+  position: relative;
+}
