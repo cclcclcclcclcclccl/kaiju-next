@@ -18,10 +18,11 @@
 - [开发证据与复现方案](docs/03-evidence-and-reproduction.md)
 - [同类产品初查与候选差异](docs/04-direction-research.md)
 - [本次启动记录](evidence/iterations/000-kickoff.md)
+- [候选方向实验记录](evidence/iterations/001-direction-feasibility.md)
 
 ## 运行与复现
 
-当前仅包含规划和证据基础文件，没有可运行应用。依赖清单、环境变量模板、启动命令、测试命令和复现耗时将在第一条业务链路实现后逐步补齐。
+当前包含规划、证据基础文件和一个可运行的技术实验，尚无完整应用。技术实验在 Node.js v24.16.0 上通过 6 项测试，无第三方依赖；它使用合成规则，不代表真实用户验证。详见 [实验说明](experiments/counterexample/README.md)。完整产品的依赖清单、环境变量模板和复现指南将在选题确定并实现后补齐。
 
 不得将当前目录描述为“成品”“一键可复现”或“已满足全部参赛要求”。
 

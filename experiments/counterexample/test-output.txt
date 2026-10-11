@@ -1,0 +1,14 @@
+✔ returns a legal shortest counterexample and independently replayable resource changes (3.0027ms)
+✔ the same trace stops violating after a patch, and new bounded search also finds none (0.3692ms)
+✔ a state budget exhaustion is inconclusive, never reported as safe (0.2072ms)
+✔ rejects impossible actions and malformed numerical rules (0.8362ms)
+✔ checks arbitrary sale-price inputs instead of returning a fixed demonstration result (0.6183ms)
+✔ unchanged inventory is required; extra gold with consumed starting goods is not this violation (0.1927ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 166.4095

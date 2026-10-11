@@ -1,0 +1,125 @@
+{
+  "kind": "synthetic technical feasibility experiment, not a real user study",
+  "nodeVersion": "v24.16.0",
+  "contract": "Closed inventory trade/craft sequences must not increase gold without an external reward.",
+  "before": {
+    "status": "counterexample",
+    "shortestWithinModel": true,
+    "scope": {
+      "maxDepth": 12,
+      "maxStates": 10000,
+      "semantics": "memoryless nonnegative integer resource transitions"
+    },
+    "visited": 4,
+    "expanded": 3,
+    "actions": [
+      "buy",
+      "craft",
+      "sell"
+    ],
+    "trace": [
+      {
+        "step": 0,
+        "action": null,
+        "state": {
+          "gold": 4,
+          "wood": 0,
+          "blade": 0
+        }
+      },
+      {
+        "step": 1,
+        "action": "buy",
+        "label": "用 4 金币购买 2 木材",
+        "state": {
+          "gold": 0,
+          "wood": 2,
+          "blade": 0
+        }
+      },
+      {
+        "step": 2,
+        "action": "craft",
+        "label": "用 2 木材制作 1 刀剑",
+        "state": {
+          "gold": 0,
+          "wood": 0,
+          "blade": 1
+        }
+      },
+      {
+        "step": 3,
+        "action": "sell",
+        "label": "出售 1 刀剑，获得 5 金币",
+        "state": {
+          "gold": 5,
+          "wood": 0,
+          "blade": 0
+        }
+      }
+    ],
+    "violates": true
+  },
+  "after": {
+    "status": "no-counterexample-within-bound",
+    "scope": {
+      "maxDepth": 12,
+      "maxStates": 10000,
+      "semantics": "memoryless nonnegative integer resource transitions"
+    },
+    "visited": 3,
+    "expanded": 3
+  },
+  "oldTraceOnPatch": {
+    "trace": [
+      {
+        "step": 0,
+        "action": null,
+        "state": {
+          "gold": 4,
+          "wood": 0,
+          "blade": 0
+        }
+      },
+      {
+        "step": 1,
+        "action": "buy",
+        "label": "用 4 金币购买 2 木材",
+        "state": {
+          "gold": 0,
+          "wood": 2,
+          "blade": 0
+        }
+      },
+      {
+        "step": 2,
+        "action": "craft",
+        "label": "用 2 木材制作 1 刀剑",
+        "state": {
+          "gold": 0,
+          "wood": 0,
+          "blade": 1
+        }
+      },
+      {
+        "step": 3,
+        "action": "sell",
+        "label": "出售 1 刀剑，获得 4 金币",
+        "state": {
+          "gold": 4,
+          "wood": 0,
+          "blade": 0
+        }
+      }
+    ],
+    "violates": false
+  },
+  "elapsedMs": 1.036,
+  "limitations": [
+    "Rules and the defect are intentionally constructed, not discovered in a real project.",
+    "Only memoryless integer resource rules are modeled; no cooldowns, randomness or simultaneous players.",
+    "No counterexample within a bound is not a proof of general safety or game balance.",
+    "Economic profit is only a violation when the designer explicitly forbids it.",
+    "No natural-language parsing, model API, full application, or novelty validation has been completed."
+  ]
+}
