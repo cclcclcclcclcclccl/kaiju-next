@@ -11,7 +11,8 @@
     "start": "node --env-file-if-exists=.env server/index.ts",
     "build": "tsc --noEmit && vite build",
     "test": "node --test src/core/*.test.ts server/*.test.ts",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\" \"server/**/*.ts\" \"tests/**/*.ts\" \"scripts/*.mjs\" \"*.{ts,json}\""
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
@@ -26,6 +27,7 @@
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^5.1.0",
+    "prettier": "^3.9.10",
     "typescript": "~5.9.3",
     "vite": "^7.3.0"
   }

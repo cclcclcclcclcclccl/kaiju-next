@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2023",
-    "lib": [
-      "ES2023",
-      "DOM",
-      "DOM.Iterable"
-    ],
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "allowImportingTsExtensions": true,
@@ -14,17 +10,8 @@
     "strict": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "types": [
-      "node",
-      "vite/client"
-    ],
+    "types": ["node", "vite/client"],
     "erasableSyntaxOnly": true
   },
-  "include": [
-    "src",
-    "server",
-    "vite.config.ts",
-    "tests",
-    "playwright.config.ts"
-  ]
+  "include": ["src", "server", "vite.config.ts", "tests", "playwright.config.ts"]
 }

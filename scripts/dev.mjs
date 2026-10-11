@@ -7,12 +7,15 @@ let stopping = false;
 function stop(code = 0) {
   if (stopping) return;
   stopping = true;
-  children.forEach(child => child.kill());
+  children.forEach((child) => child.kill());
   process.exitCode = code;
 }
-children.forEach(child => {
-  child.on('error', error => { console.error(error.message); stop(1); });
-  child.on('exit', code => stop(code ?? 0));
+children.forEach((child) => {
+  child.on('error', (error) => {
+    console.error(error.message);
+    stop(1);
+  });
+  child.on('exit', (code) => stop(code ?? 0));
 });
 process.on('SIGINT', () => stop());
 process.on('SIGTERM', () => stop());

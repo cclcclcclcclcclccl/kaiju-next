@@ -9,7 +9,7 @@ test('manufacturing witness uses repeated purchases and conserves protected inve
   const result = search(model);
   assert.equal(result.status, 'counterexample');
   assert.equal(result.actions.length, 4);
-  assert.equal(result.actions.filter(id => id === 'buy').length, 2);
+  assert.equal(result.actions.filter((id) => id === 'buy').length, 2);
   assert.deepEqual(result.trace.at(-1)!.inventory, { gold: 13, ore: 0, ingot: 0 });
   assert.equal(replay(model, result.actions).violates, true);
   assert.equal(search(model, { maxDepth: 3 }).status, 'bounded-clear');
@@ -19,15 +19,15 @@ test('both proposed parameter edits remove the known witness and pass bounded re
   const patches = proposePatches(model, search(model));
   assert.equal(patches.length, 2);
   for (const patch of patches) {
-    assert.equal(replay(patch.model, ['buy','buy','smelt','sell']).violates, false);
+    assert.equal(replay(patch.model, ['buy', 'buy', 'smelt', 'sell']).violates, false);
     assert.equal(search(patch.model).status, 'bounded-clear');
   }
   assert.equal(model.actions[2].gain.gold, 7, 'suggestions must not mutate source model');
 });
 test('selling initial inventory is not treated as a closed loop', () => {
   const model = scenarios[2].model;
-  assert.equal(replay(model, ['sell','sell']).profit, 4);
-  assert.equal(replay(model, ['sell','sell']).violates, false);
+  assert.equal(replay(model, ['sell', 'sell']).profit, 4);
+  assert.equal(replay(model, ['sell', 'sell']).violates, false);
   assert.equal(search(model).status, 'bounded-clear');
 });
 test('state exhaustion is inconclusive and invalid bounds are rejected', () => {
@@ -36,13 +36,14 @@ test('state exhaustion is inconclusive and invalid bounds are rejected', () => {
 });
 test('invalid references, duplicate identifiers, unknown fields and negative resource costs fail validation', () => {
   for (const mutate of [
-    (m: any) => m.actions[0].cost.gold = -1,
-    (m: any) => m.actions[0].gain.unknown = 1,
-    (m: any) => m.resources[1].id = 'gold',
+    (m: any) => (m.actions[0].cost.gold = -1),
+    (m: any) => (m.actions[0].gain.unknown = 1),
+    (m: any) => (m.resources[1].id = 'gold'),
     (m: any) => m.contract.restore.push('gold'),
-    (m: any) => m.executableCode = 'arbitrary code',
+    (m: any) => (m.executableCode = 'arbitrary code'),
   ]) {
-    const model = structuredClone(scenarios[0].model); mutate(model);
+    const model = structuredClone(scenarios[0].model);
+    mutate(model);
     assert.equal(modelSchema.safeParse(model).success, false);
   }
 });
@@ -73,9 +74,10 @@ test('independent exhaustive enumeration agrees with BFS on branching economies'
       for (const state of frontier) {
         if (state.gold >= 3) next.push({ ...state, gold: state.gold - 3, ore: state.ore + 1 });
         if (state.ore >= 2) next.push({ ...state, ore: state.ore - 2, ingot: state.ingot + 1 });
-        if (state.ingot >= 1) next.push({ ...state, gold: state.gold + sale, ingot: state.ingot - 1 });
+        if (state.ingot >= 1)
+          next.push({ ...state, gold: state.gold + sale, ingot: state.ingot - 1 });
       }
-      if (next.some(s => s.gold > 12 && s.ore === 0 && s.ingot === 0)) shortest = depth;
+      if (next.some((s) => s.gold > 12 && s.ore === 0 && s.ingot === 0)) shortest = depth;
       frontier = next;
     }
     const actual = search(model, { maxDepth: 6 });

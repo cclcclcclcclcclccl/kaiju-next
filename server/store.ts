@@ -14,34 +14,73 @@ export function createStore(path: string) {
   return {
     close: () => db.close(),
     saveProject(model: Economy, id?: string): Project {
-      const project = { id: id ?? randomUUID(), title: model.title, updatedAt: new Date().toISOString(), model };
-      db.prepare('INSERT INTO projects VALUES(?,?,?,?) ON CONFLICT(id) DO UPDATE SET title=excluded.title, updated_at=excluded.updated_at, model=excluded.model')
-        .run(project.id, project.title, project.updatedAt, JSON.stringify(model));
+      const project = {
+        id: id ?? randomUUID(),
+        title: model.title,
+        updatedAt: new Date().toISOString(),
+        model,
+      };
+      db.prepare(
+        'INSERT INTO projects VALUES(?,?,?,?) ON CONFLICT(id) DO UPDATE SET title=excluded.title, updated_at=excluded.updated_at, model=excluded.model',
+      ).run(project.id, project.title, project.updatedAt, JSON.stringify(model));
       return project;
     },
     projects(): Project[] {
-      return db.prepare('SELECT * FROM projects ORDER BY updated_at DESC LIMIT 100').all().map(row => ({
-        id: String(row.id), title: String(row.title), updatedAt: String(row.updated_at), model: JSON.parse(String(row.model)),
-      }));
+      return db
+        .prepare('SELECT * FROM projects ORDER BY updated_at DESC LIMIT 100')
+        .all()
+        .map((row) => ({
+          id: String(row.id),
+          title: String(row.title),
+          updatedAt: String(row.updated_at),
+          model: JSON.parse(String(row.model)),
+        }));
     },
     saveRun(model: Economy, result: SearchResult): Run {
       const modelHash = createHash('sha256').update(JSON.stringify(model)).digest('hex');
-      const run: Run = { id: randomUUID(), createdAt: new Date().toISOString(), modelHash, model, result };
-      db.prepare('INSERT INTO runs VALUES(?,?,?,?,?,?)').run(run.id, run.createdAt, model.title, result.status, modelHash, JSON.stringify(run));
+      const run: Run = {
+        id: randomUUID(),
+        createdAt: new Date().toISOString(),
+        modelHash,
+        model,
+        result,
+      };
+      db.prepare('INSERT INTO runs VALUES(?,?,?,?,?,?)').run(
+        run.id,
+        run.createdAt,
+        model.title,
+        result.status,
+        modelHash,
+        JSON.stringify(run),
+      );
       return run;
     },
     runs(): RunSummary[] {
-      return db.prepare('SELECT id,created_at,title,status,model_hash FROM runs ORDER BY created_at DESC LIMIT 50').all().map(row => ({
-        id: String(row.id), createdAt: String(row.created_at), title: String(row.title),
-        status: row.status as SearchResult['status'], modelHash: String(row.model_hash),
-      }));
+      return db
+        .prepare(
+          'SELECT id,created_at,title,status,model_hash FROM runs ORDER BY created_at DESC LIMIT 50',
+        )
+        .all()
+        .map((row) => ({
+          id: String(row.id),
+          createdAt: String(row.created_at),
+          title: String(row.title),
+          status: row.status as SearchResult['status'],
+          modelHash: String(row.model_hash),
+        }));
     },
     getRun(id: string): Run | null {
       const row = db.prepare('SELECT payload FROM runs WHERE id=?').get(id);
       return row ? JSON.parse(String(row.payload)) : null;
     },
     saveGeneration(model: string, input: string, output: unknown) {
-      db.prepare('INSERT INTO generations VALUES(?,?,?,?,?)').run(randomUUID(), new Date().toISOString(), model, input, JSON.stringify(output));
+      db.prepare('INSERT INTO generations VALUES(?,?,?,?,?)').run(
+        randomUUID(),
+        new Date().toISOString(),
+        model,
+        input,
+        JSON.stringify(output),
+      );
     },
   };
 }

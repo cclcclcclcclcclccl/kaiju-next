@@ -7,3 +7,5 @@
 *.mjs text eol=lf
 # Preserve the exact bytes of the supplied competition text.
 docs/source/contest-requirements.original.txt -text
+
+*.cmd text eol=crlf
