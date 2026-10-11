@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react';
 import { ArrowRight, FileJson, FileUp, LoaderCircle, Sparkles, Check, Info } from 'lucide-react';
 import { Modal } from './ui.tsx';
-import { modelSchema } from './core/model.ts';
-import type { Economy } from './core/model.ts';
+import { modelSchema, boundsSchema } from './core/model.ts';
+import type { Economy, Bounds } from './core/model.ts';
 import type { Candidate, Clarification } from './core/api-types.ts';
 import { api } from './api.ts';
 export default function ImportDialog({
@@ -16,20 +16,24 @@ export default function ImportDialog({
   mode: 'json' | 'ai';
   configured: boolean;
   onClose: () => void;
-  onImport: (m: Economy, source: 'custom' | 'model') => void;
+  onImport: (m: Economy, source: 'custom' | 'model', bounds?: Bounds) => void;
 }) {
   const [tab, setTab] = useState(mode);
   const [json, setJson] = useState(JSON.stringify(model, null, 2));
   const [input, setInput] = useState('');
   const [error, setError] = useState('');
+  const [reviewed, setReviewed] = useState(false);
   const [busy, setBusy] = useState(false);
   const [candidate, setCandidate] = useState<Candidate | Clarification | null>(null);
   const file = useRef<HTMLInputElement>(null);
   const acceptJson = () => {
     try {
       const raw = JSON.parse(json);
-      const parsed = modelSchema.parse(raw.model ?? raw);
-      onImport(parsed, 'custom');
+      const payload = raw.format === 'hengju-evidence' ? raw.run : raw;
+      const parsed = modelSchema.parse(payload.model ?? payload);
+      const rawBounds = payload.result?.bounds ?? payload.bounds;
+      const bounds = rawBounds ? boundsSchema.parse(rawBounds) : undefined;
+      onImport(parsed, 'custom', bounds);
     } catch (error) {
       setError(
         error instanceof SyntaxError
@@ -42,6 +46,7 @@ export default function ImportDialog({
     setBusy(true);
     setError('');
     setCandidate(null);
+    setReviewed(false);
     try {
       setCandidate(await api<Candidate | Clarification>('/generate', { input }));
     } catch (e) {
@@ -76,7 +81,9 @@ export default function ImportDialog({
       </div>
       {tab === 'json' ? (
         <>
-          <p className="dialog-lead">在这里调整资源、动作与验证约束，或导入之前保存的规则文件。</p>
+          <p className="dialog-lead">
+            在这里调整资源、动作与验证约束，或导入规则文件、实验凭证。凭证仅载入规则和搜索范围，结果需要重新验证。
+          </p>
           <div className="code-toolbar">
             <span>规则文件 · JSON</span>
             <button className="text-button" onClick={() => file.current?.click()}>
@@ -154,9 +161,11 @@ export default function ImportDialog({
             className="intent-input"
             value={input}
             maxLength={12000}
+            disabled={busy}
             onChange={(e) => {
               setInput(e.target.value);
               setCandidate(null);
+              setReviewed(false);
             }}
             placeholder="例如：初始有 12 金币，矿石和金属锭均为 0。3 金币买 1 矿石，2 矿石炼成 1 金属锭，1 金属锭卖 7 金币。我希望矿石和金属锭恢复初始库存时，金币不能净增……"
           />
@@ -195,10 +204,68 @@ export default function ImportDialog({
               <p>
                 {candidate.model.resources.length} 种资源 · {candidate.model.actions.length} 条动作
               </p>
+              <div className="candidate-model">
+                <strong>候选模型预览</strong>
+                <p>{candidate.model.description}</p>
+                <p>
+                  初始库存：
+                  {candidate.model.resources.map((r) => r.name + ' ' + r.initial).join(' / ')}
+                </p>
+                {candidate.model.actions.map((a) => {
+                  const vector = (v: Record<string, number>) =>
+                    Object.entries(v)
+                      .map(
+                        ([id, n]) =>
+                          n + ' ' + candidate.model.resources.find((r) => r.id === id)!.name,
+                      )
+                      .join(' + ') || '无';
+                  return (
+                    <p key={a.id}>
+                      <b>{a.name}</b>：{vector(a.cost)} → {vector(a.gain)}
+                    </p>
+                  );
+                })}
+                <p>
+                  约束：
+                  {candidate.model.contract.restore
+                    .map((id) => candidate.model.resources.find((r) => r.id === id)!.name)
+                    .join('、')}
+                  恢复初始库存时，
+                  {
+                    candidate.model.resources.find((r) => r.id === candidate.model.contract.target)!
+                      .name
+                  }
+                  净增不超过 {candidate.model.contract.allowedProfit}。
+                </p>
+                <p>
+                  未要求恢复：
+                  {candidate.model.resources
+                    .filter(
+                      (r) =>
+                        r.id !== candidate.model.contract.target &&
+                        !candidate.model.contract.restore.includes(r.id),
+                    )
+                    .map((r) => r.name)
+                    .join('、') || '无'}
+                </p>
+              </div>
               <div className="evidence-list">
                 {candidate.evidence.map((e, i) => (
                   <div key={i}>
-                    <b>{label(candidate, e.path)}</b>
+                    <b>
+                      {label(candidate, e.path)} ={' '}
+                      {String(
+                        e.path
+                          .split('.')
+                          .reduce<unknown>(
+                            (value, key) =>
+                              value && typeof value === 'object'
+                                ? (value as Record<string, unknown>)[key]
+                                : undefined,
+                            candidate.model,
+                          ),
+                      )}
+                    </b>
                     <q>{e.quote}</q>
                   </div>
                 ))}
@@ -209,8 +276,17 @@ export default function ImportDialog({
               <p className="muted">
                 引用已检查是否存在于输入中，数值含义和设计意图仍需你逐项确认。
               </p>
+              <label className="review-check">
+                <input
+                  type="checkbox"
+                  checked={reviewed}
+                  onChange={(e) => setReviewed(e.target.checked)}
+                />
+                我已核对候选数值、动作和验证约束
+              </label>
               <button
                 className="button button-primary"
+                disabled={!reviewed}
                 onClick={() => onImport(candidate.model, 'model')}
               >
                 <Check size={16} />

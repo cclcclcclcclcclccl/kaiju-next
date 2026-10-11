@@ -18,6 +18,12 @@ test('complete workflow: verify, replay, compare, apply, reverify, save and reop
   await page.getByRole('button', { name: '比较修复方案' }).click();
   await expect(page.locator('.repair-card')).toHaveCount(2);
   await expect(page.locator('.repair-card').first()).toContainText('原路径不再违反约束');
+  await expect(page.locator('.repair-card').first()).toContainText('保留要求满足');
+  await expect(page.locator('.repair-card').nth(1)).toContainText('破坏正常玩法');
+  await expect(page.locator('.repair-card').nth(1)).toContainText('第 2 步');
+  await expect(
+    page.locator('.repair-card').nth(1).getByRole('button', { name: '未满足保留要求' }),
+  ).toBeDisabled();
   mkdirSync('evidence/screenshots', { recursive: true });
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({

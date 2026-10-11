@@ -24,40 +24,48 @@ import {
   X,
 } from 'lucide-react';
 import { scenarios } from './core/scenarios.ts';
-import { DEFAULT_BOUNDS, modelSchema } from './core/model.ts';
+import { DEFAULT_BOUNDS, modelSchema, boundsSchema, sameModel } from './core/model.ts';
 import type { Economy, Bounds, Comparison } from './core/model.ts';
 import type { Project, Run, RunSummary } from './core/api-types.ts';
 import { api, download } from './api.ts';
 import { EconomyMap, Modal, Status } from './ui.tsx';
+import PlaytestEditor from './PlaytestEditor.tsx';
 import RuleEditor from './RuleEditor.tsx';
 import ResultPanel from './ResultPanel.tsx';
 import ImportDialog from './ImportDialog.tsx';
 
 type Source = 'sample' | 'custom' | 'model';
-function readDraft(): { model: Economy; source: Source } {
+function readDraft(): { model: Economy; source: Source; bounds: Bounds; projectId?: string } {
   try {
     const raw = JSON.parse(localStorage.getItem('hengju-draft-v1') ?? 'null');
     if (raw && modelSchema.safeParse(raw.model).success)
       return {
         model: modelSchema.parse(raw.model),
+        bounds: boundsSchema.safeParse(raw.bounds).success
+          ? boundsSchema.parse(raw.bounds)
+          : DEFAULT_BOUNDS,
+        projectId:
+          typeof raw.projectId === 'string' && /^[0-9a-f-]{36}$/.test(raw.projectId)
+            ? raw.projectId
+            : undefined,
         source: ['sample', 'custom', 'model'].includes(raw.source) ? raw.source : 'custom',
       };
   } catch {
     /* A damaged draft must not block the application. */
   }
-  return { model: structuredClone(scenarios[0].model), source: 'sample' };
+  return { model: structuredClone(scenarios[0].model), source: 'sample', bounds: DEFAULT_BOUNDS };
 }
 export default function App() {
   const initial = useMemo(readDraft, []);
   const [model, setModel] = useState<Economy>(initial.model);
   const [source, setSource] = useState<Source>(initial.source);
-  const [bounds, setBounds] = useState<Bounds>(DEFAULT_BOUNDS);
+  const [bounds, setBounds] = useState<Bounds>(initial.bounds);
   const [view, setView] = useState<'lab' | 'history' | 'guide'>('lab');
   const [busy, setBusy] = useState('');
   const [run, setRun] = useState<Run | null>(null);
   const [runs, setRuns] = useState<RunSummary[]>([]);
   const [projects, setProjects] = useState<Project[]>([]);
-  const [projectId, setProjectId] = useState<string>();
+  const [projectId, setProjectId] = useState<string | undefined>(initial.projectId);
   const [step, setStep] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [comparisons, setComparisons] = useState<Comparison[]>([]);
@@ -66,7 +74,9 @@ export default function App() {
   const [connected, setConnected] = useState(false);
   const [serviceReady, setServiceReady] = useState(false);
   const [query, setQuery] = useState('');
-  const [previous, setPrevious] = useState<Economy | null>(null);
+  const [undo, setUndo] = useState<
+    { model: Economy; source: Source; bounds: Bounds; projectId?: string }[]
+  >([]);
   const latestRequest = useRef(0);
   const closeModal = useCallback(() => setModal(null), []);
   const refresh = useCallback(async () => {
@@ -88,12 +98,15 @@ export default function App() {
   useEffect(() => {
     if (modelSchema.safeParse(model).success) {
       try {
-        localStorage.setItem('hengju-draft-v1', JSON.stringify({ model, source }));
+        localStorage.setItem(
+          'hengju-draft-v1',
+          JSON.stringify({ model, source, bounds, projectId }),
+        );
       } catch {
         /* Manual save remains available. */
       }
     }
-  }, [model, source]);
+  }, [model, source, bounds, projectId]);
   useEffect(() => {
     if (!toast || toast.error) return;
     const id = setTimeout(() => setToast(null), 4500);
@@ -110,17 +123,19 @@ export default function App() {
   }, [playing, step, run]);
   const stale = Boolean(
     run &&
-    (JSON.stringify(run.model) !== JSON.stringify(model) ||
-      JSON.stringify(run.result.bounds) !== JSON.stringify(bounds)),
+    (!sameModel(run.model, model) || JSON.stringify(run.result.bounds) !== JSON.stringify(bounds)),
   );
+  const remember = () =>
+    setUndo((history) => [...history.slice(-29), { model, source, bounds, projectId }]);
   const changeModel = (next: Economy) => {
-    setPrevious(model);
+    remember();
     setModel(next);
+    setSource('custom');
     setPlaying(false);
   };
   const load = (next: Economy, nextSource: Source = 'custom') => {
     latestRequest.current++;
-    setPrevious(model);
+    remember();
     setModel(structuredClone(next));
     setSource(nextSource);
     setRun(null);
@@ -236,7 +251,7 @@ export default function App() {
             <History size={18} />
             实验记录{runs.length > 0 && <span>{runs.length}</span>}
           </button>
-          <button onClick={() => setModal('projects')}>
+          <button disabled={Boolean(busy)} onClick={() => setModal('projects')}>
             <FolderOpen size={18} />
             我的规则<span>{projects.length || ''}</span>
           </button>
@@ -290,7 +305,7 @@ export default function App() {
           <div>
             <i className={serviceReady ? 'online' : ''} />
             <span>{serviceReady ? '本地服务已连接' : '正在连接本地服务'}</span>
-            <small>v0.1</small>
+            <small>v0.2</small>
           </div>
         </div>
       </aside>
@@ -354,14 +369,19 @@ export default function App() {
                 <div className="experiment-tools">
                   <button
                     className="icon-button"
-                    title="撤销上一次规则修改"
+                    title="撤销上一次规则修改，最多保留 30 步"
                     aria-label="撤销修改"
-                    disabled={!previous || Boolean(busy)}
+                    disabled={!undo.length || Boolean(busy)}
                     onClick={() => {
+                      const previous = undo.at(-1);
                       if (previous) {
-                        const current = model;
-                        setModel(previous);
-                        setPrevious(current);
+                        setModel(previous.model);
+                        setSource(previous.source);
+                        setBounds(previous.bounds);
+                        setProjectId(previous.projectId);
+                        setUndo(undo.slice(0, -1));
+                        setPlaying(false);
+                        setComparisons([]);
                       }
                     }}
                   >
@@ -480,6 +500,49 @@ export default function App() {
                         <span>{targetName}</span>
                       </div>
                     </label>
+                    <div className="restore-selector">
+                      <span>必须恢复初始库存</span>
+                      {model.resources
+                        .filter((r) => r.id !== model.contract.target)
+                        .map((r) => (
+                          <label key={r.id}>
+                            <input
+                              type="checkbox"
+                              checked={model.contract.restore.includes(r.id)}
+                              disabled={
+                                Boolean(busy) ||
+                                (model.contract.restore.length === 1 &&
+                                  model.contract.restore.includes(r.id))
+                              }
+                              onChange={(e) =>
+                                changeModel({
+                                  ...model,
+                                  contract: {
+                                    ...model.contract,
+                                    restore: e.target.checked
+                                      ? [...model.contract.restore, r.id]
+                                      : model.contract.restore.filter((id) => id !== r.id),
+                                  },
+                                })
+                              }
+                            />
+                            {r.name}
+                          </label>
+                        ))}
+                      {model.contract.restore.length < model.resources.length - 1 && (
+                        <p className="scope-warning">
+                          {model.resources
+                            .filter(
+                              (r) =>
+                                r.id !== model.contract.target &&
+                                !model.contract.restore.includes(r.id),
+                            )
+                            .map((r) => r.name)
+                            .join('、')}
+                          未要求恢复，可能通过消耗这些资源获得净增。此约束不等同于闭合套利检查。
+                        </p>
+                      )}
+                    </div>
                   </fieldset>
                   <div className="scope-section">
                     <div className="scope-heading">
@@ -546,6 +609,7 @@ export default function App() {
                   </div>
                 </aside>
               </div>
+              <PlaytestEditor model={model} onChange={changeModel} disabled={Boolean(busy)} />
               <ResultPanel
                 run={run}
                 step={step}
@@ -679,7 +743,7 @@ export default function App() {
                   [
                     '04',
                     '对照修改',
-                    '比较候选参数，重放原路径并重新搜索。载入方案后正式验证，再导出报告；同时检查正常收益和玩家体验是否被破坏。',
+                    '先声明正常玩法保留用例，再比较候选参数。系统重放原路径、重新搜索并复查保留用例，未满足保留要求的方案不能直接载入。',
                   ],
                 ].map(([n, title, text]) => (
                   <article key={n}>
@@ -720,7 +784,11 @@ export default function App() {
                     ；确定性验证与回放始终可独立使用。
                   </p>
                 </div>
-                <button className="button button-secondary" onClick={() => setModal('ai')}>
+                <button
+                  className="button button-secondary"
+                  disabled={Boolean(busy)}
+                  onClick={() => setModal('ai')}
+                >
                   打开文字建模
                 </button>
               </div>
@@ -746,8 +814,9 @@ export default function App() {
           mode={modal}
           configured={connected}
           onClose={closeModal}
-          onImport={(m, s) => {
+          onImport={(m, s, importedBounds) => {
             load(m, s);
+            if (importedBounds) setBounds(importedBounds);
             setToast({ text: '规则已载入。确认验证约束后，就可以开始实验。' });
           }}
         />
@@ -762,6 +831,7 @@ export default function App() {
               projects.map((p) => (
                 <button
                   key={p.id}
+                  disabled={Boolean(busy)}
                   onClick={() => {
                     load(p.model);
                     setProjectId(p.id);

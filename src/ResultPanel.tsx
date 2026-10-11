@@ -111,6 +111,22 @@ export default function ResultPanel({
   const restoredNames = model.contract.restore
     .map((id) => model.resources.find((r) => r.id === id)!.name)
     .join('、');
+  const excluded = model.resources.filter(
+    (r) => r.id !== model.contract.target && !model.contract.restore.includes(r.id),
+  );
+  const exportEvidence = () =>
+    download(
+      '衡局-实验凭证.json',
+      JSON.stringify(
+        {
+          format: 'hengju-evidence',
+          formatVersion: 1,
+          run,
+        },
+        null,
+        2,
+      ),
+    );
   const exportReport = () => {
     const text = [
       '# 衡局验证报告',
@@ -118,6 +134,7 @@ export default function ResultPanel({
       '项目：' + model.title,
       '时间：' + run.createdAt,
       '规则 SHA-256：' + run.modelHash,
+      '引擎版本：' + (run.engineVersion ?? '旧记录未保存版本'),
       '',
       '结论：' +
         (result.status === 'counterexample'
@@ -142,6 +159,14 @@ export default function ResultPanel({
         model.contract.allowedProfit +
         '。',
       '',
+      ...(excluded.length
+        ? [
+            '未要求恢复的资源：' +
+              excluded.map((r) => r.name).join('、') +
+              '。可能消耗这些资源，不应解读为完整闭合套利。',
+            '',
+          ]
+        : []),
       '## 操作证据',
       '| 步骤 | 操作 | ' + model.resources.map((r) => r.name).join(' | ') + ' |',
       '| --- | --- | ' + model.resources.map(() => '---').join(' | ') + ' |',
@@ -155,6 +180,20 @@ export default function ResultPanel({
           model.resources.map((r) => s.inventory[r.id]).join(' | ') +
           ' |',
       ),
+      '',
+      '## 正常玩法保留检查',
+      ...(run.playtests?.length
+        ? run.playtests.map(
+            (t) =>
+              '- ' + t.name + '：' + (t.status === 'pass' ? '通过' : '未通过') + '；' + t.message,
+          )
+        : ['未评估：此记录没有保留用例检查。']),
+      '',
+      '## 完整复现输入',
+      '将以下 JSON 载入衡局，按记录中的搜索范围重新验证。也可以导出实验凭证，使用 node scripts/verify-evidence.mjs 文件路径 独立核对。',
+      '```json',
+      JSON.stringify({ model, bounds: result.bounds }, null, 2),
+      '```',
       '',
       '## 解释范围',
       '这是固定整数资源模型的有界验证。未发现反例不等于全局安全，也不代表整体游戏平衡。样例库使用合成规则；自定义输入的准确性需由使用者确认。',
@@ -172,10 +211,16 @@ export default function ResultPanel({
           <p className="eyebrow">02 / OBSERVE & VERIFY</p>
           <h2>让结果自己说话。</h2>
         </div>
-        <button className="button button-secondary compact" onClick={exportReport}>
-          <Download size={15} />
-          导出报告
-        </button>
+        <div className="result-exports">
+          <button className="button button-secondary compact" onClick={exportEvidence}>
+            <Fingerprint size={15} />
+            导出实验凭证
+          </button>
+          <button className="button button-secondary compact" onClick={exportReport}>
+            <Download size={15} />
+            导出报告
+          </button>
+        </div>
       </div>
       {stale && (
         <div className="stale-notice" role="status">
@@ -230,6 +275,22 @@ export default function ResultPanel({
             </div>
           </div>
         </div>
+        {excluded.length > 0 && (
+          <p className="scope-warning result-scope">
+            本次未约束 {excluded.map((r) => r.name).join('、')}{' '}
+            的期末库存；可能消耗这些资源换取净增。
+          </p>
+        )}
+        {(run.playtests?.length ?? 0) > 0 && (
+          <div className="run-playtests">
+            <strong>正常玩法保留检查</strong>
+            {run.playtests!.map((t) => (
+              <p key={t.id} className={t.status === 'pass' ? 'check-pass' : 'check-fail'}>
+                {t.name} · {t.status === 'pass' ? '通过' : '未通过'}：{t.message}
+              </p>
+            ))}
+          </div>
+        )}
         {selected && (
           <div className="witness-area">
             <div className="replay-heading">
@@ -325,7 +386,7 @@ export default function ResultPanel({
             </div>
             <div>
               <h3>小改一处，再做一次实验。</h3>
-              <p>从这条反例推导参数调整，重放旧路径，再搜索其他路径。</p>
+              <p>从反例推导参数调整，同时检查违规路径和必须保留的正常玩法。</p>
             </div>
             <button
               className="button button-primary compact"
@@ -344,7 +405,15 @@ export default function ResultPanel({
             <>
               <div className="repair-grid">
                 {comparisons.map((comparison) => (
-                  <article className="repair-card" key={comparison.patch.id}>
+                  <article
+                    className={
+                      'repair-card ' +
+                      (comparison.playtests.after.some((t) => t.status !== 'pass')
+                        ? 'repair-conflict'
+                        : '')
+                    }
+                    key={comparison.patch.id}
+                  >
                     <div className="repair-card-top">
                       <span>
                         候选方案 {String(comparisons.indexOf(comparison) + 1).padStart(2, '0')}
@@ -367,12 +436,46 @@ export default function ResultPanel({
                         : '原路径已无法执行'}
                     </p>
                     <p>重新访问 {comparison.result.visited} 个状态 · 同一搜索范围</p>
+                    <div className="repair-playtests">
+                      <strong>正常玩法影响</strong>
+                      {!comparison.playtests.after.length && <p>未设置保留用例 · 未评估玩法影响</p>}
+                      {comparison.playtests.after.map((t, index) => {
+                        const before = comparison.playtests.before[index];
+                        const regressed = before?.status === 'pass' && t.status !== 'pass';
+                        return (
+                          <div
+                            key={t.id}
+                            className={t.status === 'pass' ? 'check-pass' : 'check-fail'}
+                          >
+                            <b>
+                              {regressed
+                                ? '破坏正常玩法'
+                                : t.status === 'pass'
+                                  ? '保留要求满足'
+                                  : '原有要求仍未满足'}
+                            </b>
+                            <p>{t.name}</p>
+                            <p>
+                              修改前{before?.status === 'pass' ? '通过' : '未通过'} → 修改后
+                              {t.status === 'pass' ? '通过' : '未通过'}
+                            </p>
+                            <p>{t.message}</p>
+                          </div>
+                        );
+                      })}
+                    </div>
                     <button
                       className="button button-secondary"
-                      disabled={Boolean(busy) || stale}
+                      disabled={
+                        Boolean(busy) ||
+                        stale ||
+                        comparison.playtests.after.some((t) => t.status !== 'pass')
+                      }
                       onClick={() => onApply(comparison)}
                     >
-                      载入此方案
+                      {comparison.playtests.after.some((t) => t.status !== 'pass')
+                        ? '未满足保留要求'
+                        : '载入此方案'}
                       <ArrowRight size={14} />
                     </button>
                   </article>
@@ -380,7 +483,7 @@ export default function ResultPanel({
               </div>
               <p className="repair-footnote">
                 <AlertTriangle size={13} />
-                参数调整可能改变正常收益和游戏体验。候选通过的是这项约束检查，采用前仍需设计者评估。
+                保留检查只覆盖你声明的操作序列和最低库存。未发现违规路径、且保留用例通过，仍不等于整体游戏平衡。
               </p>
             </>
           )}
