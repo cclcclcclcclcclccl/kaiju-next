@@ -1,0 +1,56 @@
+{
+  "version": "0.2.0",
+  "checkedAt": "2026-10-11T14:20:21.715Z",
+  "coreApiProviderEvidenceTests": {
+    "passed": 16,
+    "failed": 0
+  },
+  "browser": {
+    "startTime": "2026-10-11T14:14:49.468Z",
+    "duration": 32448.863,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "build": "passed",
+  "format": "passed",
+  "accessibility": [
+    {
+      "stage": "desktop initial laboratory",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "stage": "desktop witness and repair comparison",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "stage": "mobile disconnected model dialog",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "stage": "编辑资源与标题",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "stage": "编辑熔炼金属资源",
+      "violations": 0,
+      "incomplete": 1
+    },
+    {
+      "stage": "添加保留用例",
+      "violations": 0,
+      "incomplete": 1
+    }
+  ],
+  "limits": [
+    "Synthetic scenarios; no real designer trial",
+    "Model preview uses mocked provider; no live model quality evaluation",
+    "Automatic accessibility checks do not establish complete conformance",
+    "Prior fresh-directory timing belongs to v0.1"
+  ]
+}

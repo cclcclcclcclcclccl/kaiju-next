@@ -1,0 +1,23 @@
+{
+  "modelHash": "751be93a0674502093a89f02fb49ae5d5476182094cb6ca0bdbf0001bd0d25fd",
+  "recordedEngine": "0.2.0",
+  "verifierEngine": "0.2.0",
+  "witnessReplayed": true,
+  "recordedStatus": "counterexample",
+  "rerunStatus": "counterexample",
+  "boundedConclusionReproduced": true,
+  "playtests": [
+    {
+      "id": "starter_craft",
+      "name": "新手用 6 金币完成第一次熔炼",
+      "status": "pass",
+      "message": "路径可执行，期末库存满足要求",
+      "inventory": {
+        "gold": 0,
+        "ore": 0,
+        "ingot": 1
+      }
+    }
+  ],
+  "note": "指纹用于检查内容一致性，不证明作者身份。预算耗尽时不确认未发现反例的结论；用例只覆盖声明路径。"
+}

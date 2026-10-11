@@ -1,0 +1,178 @@
+{
+  "format": "hengju-evidence",
+  "formatVersion": 1,
+  "run": {
+    "id": "5658284f-bcbf-4f97-a345-b550a3ce8a58",
+    "createdAt": "2026-10-11T14:15:02.286Z",
+    "modelHash": "751be93a0674502093a89f02fb49ae5d5476182094cb6ca0bdbf0001bd0d25fd",
+    "engineVersion": "0.2.0",
+    "playtests": [
+      {
+        "id": "starter_craft",
+        "name": "新手用 6 金币完成第一次熔炼",
+        "status": "pass",
+        "message": "路径可执行，期末库存满足要求",
+        "inventory": {
+          "gold": 0,
+          "ore": 0,
+          "ingot": 1
+        }
+      }
+    ],
+    "model": {
+      "schemaVersion": 1,
+      "title": "雾港炼金坊",
+      "description": "一个合成的工坊经济：玩家购买矿石，熔炼金属，再卖回商店。设计者希望封闭交易不会凭空增加金币。",
+      "resources": [
+        {
+          "id": "gold",
+          "name": "金币",
+          "initial": 12
+        },
+        {
+          "id": "ore",
+          "name": "矿石",
+          "initial": 0
+        },
+        {
+          "id": "ingot",
+          "name": "金属锭",
+          "initial": 0
+        }
+      ],
+      "actions": [
+        {
+          "id": "buy",
+          "name": "购买矿石",
+          "cost": {
+            "gold": 3
+          },
+          "gain": {
+            "ore": 1
+          }
+        },
+        {
+          "id": "smelt",
+          "name": "熔炼金属",
+          "cost": {
+            "ore": 2
+          },
+          "gain": {
+            "ingot": 1
+          }
+        },
+        {
+          "id": "sell",
+          "name": "出售金属",
+          "cost": {
+            "ingot": 1
+          },
+          "gain": {
+            "gold": 7
+          }
+        }
+      ],
+      "playtests": [
+        {
+          "id": "starter_craft",
+          "name": "新手用 6 金币完成第一次熔炼",
+          "initial": {
+            "gold": 6
+          },
+          "actions": [
+            "buy",
+            "buy",
+            "smelt"
+          ],
+          "minimum": {
+            "ingot": 1
+          }
+        }
+      ],
+      "contract": {
+        "target": "gold",
+        "restore": [
+          "ore",
+          "ingot"
+        ],
+        "allowedProfit": 0
+      }
+    },
+    "result": {
+      "status": "counterexample",
+      "bounds": {
+        "maxDepth": 8,
+        "maxStates": 12000,
+        "maxMillis": 1500
+      },
+      "visited": 8,
+      "expanded": 5,
+      "elapsedMs": 2.81,
+      "deepest": 4,
+      "actions": [
+        "buy",
+        "buy",
+        "smelt",
+        "sell"
+      ],
+      "trace": [
+        {
+          "step": 0,
+          "actionId": null,
+          "actionName": "初始状态",
+          "inventory": {
+            "gold": 12,
+            "ore": 0,
+            "ingot": 0
+          },
+          "profit": 0
+        },
+        {
+          "step": 1,
+          "actionId": "buy",
+          "actionName": "购买矿石",
+          "inventory": {
+            "gold": 9,
+            "ore": 1,
+            "ingot": 0
+          },
+          "profit": -3
+        },
+        {
+          "step": 2,
+          "actionId": "buy",
+          "actionName": "购买矿石",
+          "inventory": {
+            "gold": 6,
+            "ore": 2,
+            "ingot": 0
+          },
+          "profit": -6
+        },
+        {
+          "step": 3,
+          "actionId": "smelt",
+          "actionName": "熔炼金属",
+          "inventory": {
+            "gold": 6,
+            "ore": 0,
+            "ingot": 1
+          },
+          "profit": -6
+        },
+        {
+          "step": 4,
+          "actionId": "sell",
+          "actionName": "出售金属",
+          "inventory": {
+            "gold": 13,
+            "ore": 0,
+            "ingot": 0
+          },
+          "profit": 1
+        }
+      ],
+      "profit": 1
+    }
+  }
+}
