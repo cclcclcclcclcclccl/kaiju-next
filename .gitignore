@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+build/
+coverage/
+playwright-report/
+test-results/
+*.log
+.DS_Store
+Thumbs.db
+
+# These directories may contain personal data or unredacted conversations.
+private/
+evidence/raw-private/
+
