@@ -1,4 +1,5 @@
 import HeroInsights from './pro/HeroInsights.tsx';
+import { HeroResources } from './pro/ResourceCenter.tsx';
 import Jungle from './pro/Jungle.tsx';
 import { useMemo, useState } from 'react';
 import { Search, ArrowUpRight, Plus, Check, BookOpen, Star } from 'lucide-react';
@@ -101,6 +102,8 @@ export function HeroDetail({
           ['.skill-section', '技能'],
           ['#hero-stats', '分段表现'],
           ['#hero-relations', '搭配克制'],
+          ['#hero-updates', '版本追踪'],
+          ['#hero-skins', '皮肤'],
           ['#hero-guide', '英雄攻略'],
           ['#hero-builds', '出装铭文'],
           ['#hero-personal-guide', '我的打法'],
@@ -229,6 +232,7 @@ export function HeroDetail({
         onEdit={onEditRecord ? () => onEditRecord(hero.id) : undefined}
       />
       {hero.roles.includes('打野') && <Jungle hero={hero} />}
+      <HeroResources hero={hero} />
     </Modal>
   );
 }

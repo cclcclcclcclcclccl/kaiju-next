@@ -15,6 +15,7 @@ import { levelNames } from './model.ts';
 export type Page =
   | 'home'
   | 'heroes'
+  | 'resources'
   | 'draft'
   | 'journal'
   | 'pool'

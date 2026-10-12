@@ -9,6 +9,7 @@ import {
 import type { Hero } from '../../src/player/model.ts';
 import type { PlayerStore } from '../player/store.ts';
 import { providerConfig } from '../player/provider.ts';
+import { ocrReady, screenshotRequest, recognizeScreenshot } from './ocr.ts';
 const credentials = z
   .object({
     username: z
@@ -56,7 +57,20 @@ export async function proRoutes(ctx: {
     send(200, { user, friends: user ? root.identity.friends(user.id) : [] });
     return true;
   }
+  if (method === 'GET' && path === '/api/pro/ocr-status') {
+    send(200, { ready: ocrReady(), engine: 'RapidOCR 本地中文识别' });
+    return true;
+  }
   if (method !== 'POST') return false;
+  if (path === '/api/pro/recognize-profile') {
+    const data = screenshotRequest.parse(await body(req, 12 * 1024 * 1024));
+    try {
+      send(200, await recognizeScreenshot(data.image));
+    } catch (e) {
+      send(503, { error: (e as Error).message });
+    }
+    return true;
+  }
   if (path === '/api/auth/register' || path === '/api/auth/login') {
     const data = credentials.parse(await body(req)),
       key = req.socket.remoteAddress ?? 'local',

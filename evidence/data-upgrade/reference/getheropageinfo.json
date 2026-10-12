@@ -1,0 +1,8 @@
+{
+  "endpoint": "https://kohcamp.qq.com/gametoolbox/hero/getheropageinfo",
+  "status": 200,
+  "data": {
+    "returnCode": "-30314",
+    "returnMsg": "登录态参数不全"
+  }
+}

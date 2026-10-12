@@ -71,6 +71,7 @@ test('player profile persists real inputs and practice route records a personal 
   page,
 }) => {
   await page.locator('nav').getByRole('button', { name: '玩家档案' }).click();
+  await page.locator('.manual-profile > summary').click();
   await page.getByRole('button', { name: '添加英雄记录' }).click();
   await page.getByLabel('记录英雄1', { exact: true }).selectOption(String(id('李白')));
   await page.getByLabel('游戏内战力1', { exact: true }).fill('8500');
@@ -82,6 +83,7 @@ test('player profile persists real inputs and practice route records a personal 
   await expect(page.getByRole('status')).toContainText('档案已保存');
   await page.reload();
   await page.locator('nav').getByRole('button', { name: '玩家档案' }).click();
+  await page.locator('.manual-profile > summary').click();
   await expect(page.getByLabel('游戏内战力1', { exact: true })).toHaveValue('8500');
   await page.locator('nav').getByRole('button', { name: '英雄图鉴', exact: true }).click();
   await page.getByLabel('搜索英雄', { exact: true }).fill('李白');
@@ -187,6 +189,7 @@ test('two browser accounts become friends only after acceptance and can use shar
     await expect(a.getByLabel('英雄熟练度')).toBeVisible();
     await a.keyboard.press('Escape');
     await a.locator('nav').getByRole('button', { name: '玩家档案' }).click();
+    await a.locator('.manual-profile > summary').click();
     await a.getByRole('checkbox', { name: '向已接受的好友展示英雄池及本页记录' }).check();
     await a.getByRole('button', { name: '保存玩家档案' }).click();
     await expect(a.locator('main').getByRole('status')).toContainText('档案已保存');

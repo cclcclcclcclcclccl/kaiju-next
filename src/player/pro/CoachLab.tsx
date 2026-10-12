@@ -11,6 +11,7 @@ import type { CoachResult, CoachSettings, CoachInput, CoachMove } from './coach.
 import type { SocialData } from './Social.tsx';
 import type { SquadMember } from './squad.ts';
 import { api, download } from '../../api.ts';
+import Arena from './Arena.tsx';
 
 const defaultSettings: CoachSettings = {
   depth: 4,
@@ -459,6 +460,7 @@ export default function CoachLab({
           </button>
         </div>
       )}
+      <Arena />
     </section>
   );
 }

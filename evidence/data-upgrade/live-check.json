@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-10-12T15:10:03.170Z",
+  "url": "http://127.0.0.1:4318",
+  "dataPreserved": true,
+  "before": {
+    "workspace": {
+      "sha256": "28a0efc0285e7f54d1da5ed3e046be549a60b53b7854800bf0332d45084a3500",
+      "counts": {
+        "pool": 1,
+        "matches": 0,
+        "plans": 0
+      }
+    },
+    "pro": {
+      "sha256": "0863ae099736d9aaf9d0e7dc1cae487db0c506a138aa8feccce9478808551d93",
+      "counts": {
+        "heroes": 0,
+        "snapshots": 1,
+        "reviews": 0
+      }
+    }
+  },
+  "after": {
+    "workspace": {
+      "sha256": "28a0efc0285e7f54d1da5ed3e046be549a60b53b7854800bf0332d45084a3500"
+    },
+    "pro": {
+      "sha256": "0863ae099736d9aaf9d0e7dc1cae487db0c506a138aa8feccce9478808551d93"
+    }
+  },
+  "ocr": {
+    "ready": true,
+    "engine": "RapidOCR 本地中文识别"
+  },
+  "equipment": 115,
+  "skins": 825,
+  "updates": 20,
+  "tierHeroes": 133,
+  "coverage": "36 / 133\n当前筛选有官方热度 · 红框禁用率 ≥ 20% · 蓝框出场率 < 2.5%",
+  "consoleErrors": [],
+  "stale": false
+}

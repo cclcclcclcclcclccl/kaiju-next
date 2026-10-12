@@ -1,0 +1,1280 @@
+{
+  "generatedAt": "2026-10-12T14:33:20.772Z",
+  "method": "Fixed seeds, paired policies, 2 practice bans and 10 legal picks; first 3 development and last 3 held-out. No learned weights, game-outcome predictor or professional replay labels.",
+  "summaries": [
+    {
+      "phase": "development",
+      "policy": "greedy",
+      "games": 3,
+      "legalGames": 3,
+      "completeRoles": true,
+      "meanRootRoles": 2.266666666666667,
+      "meanMs": 236
+    },
+    {
+      "phase": "development",
+      "policy": "coverage",
+      "games": 3,
+      "legalGames": 3,
+      "completeRoles": true,
+      "meanRootRoles": 3,
+      "meanMs": 220
+    },
+    {
+      "phase": "held-out",
+      "policy": "greedy",
+      "games": 3,
+      "legalGames": 3,
+      "completeRoles": true,
+      "meanRootRoles": 2.4,
+      "meanMs": 207
+    },
+    {
+      "phase": "held-out",
+      "policy": "coverage",
+      "games": 3,
+      "legalGames": 3,
+      "completeRoles": true,
+      "meanRootRoles": 3,
+      "meanMs": 218
+    }
+  ],
+  "results": [
+    {
+      "seed": 117,
+      "policy": "greedy",
+      "moves": [
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 135,
+          "role": "对抗路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "游走",
+          "heroId": 118
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "中路",
+          "heroId": 148
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 152,
+          "role": "中路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 162,
+          "role": "打野"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "对抗路",
+          "heroId": 125
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "打野",
+          "heroId": 502
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 171,
+          "role": "游走"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 192,
+          "role": "发育路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "发育路",
+          "heroId": 196
+        }
+      ],
+      "draft": {
+        "role": "中路",
+        "allies": {
+          "对抗路": 135,
+          "中路": 152,
+          "打野": 162,
+          "游走": 171,
+          "发育路": 192
+        },
+        "enemies": {
+          "游走": 118,
+          "中路": 148,
+          "对抗路": 125,
+          "打野": 502,
+          "发育路": 196
+        },
+        "banned": [
+          545,
+          129
+        ],
+        "onlyPool": false,
+        "pool": []
+      },
+      "nodes": 968,
+      "elapsedMs": 272,
+      "depths": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "legal": true,
+      "coverage": 5,
+      "meanRootRoles": 2.4,
+      "note": "固定种子选人模拟；对照为一手贪心或随机合法策略。只评估工程约束，不预测胜率，不证明职业水平，不自动学习或改写权重。",
+      "phase": "development"
+    },
+    {
+      "seed": 117,
+      "policy": "coverage",
+      "moves": [
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 108,
+          "role": "中路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "游走",
+          "heroId": 126
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "中路",
+          "heroId": 148
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 503,
+          "role": "对抗路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 159,
+          "role": "游走"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "对抗路",
+          "heroId": 125
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "打野",
+          "heroId": 502
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 116,
+          "role": "打野"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 173,
+          "role": "发育路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "发育路",
+          "heroId": 196
+        }
+      ],
+      "draft": {
+        "role": "中路",
+        "allies": {
+          "中路": 108,
+          "对抗路": 503,
+          "游走": 159,
+          "打野": 116,
+          "发育路": 173
+        },
+        "enemies": {
+          "游走": 126,
+          "中路": 148,
+          "对抗路": 125,
+          "打野": 502,
+          "发育路": 196
+        },
+        "banned": [
+          545,
+          129
+        ],
+        "onlyPool": false,
+        "pool": []
+      },
+      "nodes": 979,
+      "elapsedMs": 223,
+      "depths": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "legal": true,
+      "coverage": 5,
+      "meanRootRoles": 3,
+      "note": "固定种子选人模拟；对照为一手贪心或随机合法策略。只评估工程约束，不预测胜率，不证明职业水平，不自动学习或改写权重。",
+      "phase": "development"
+    },
+    {
+      "seed": 218,
+      "policy": "greedy",
+      "moves": [
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 108,
+          "role": "中路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 168,
+          "role": "游走"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 154,
+          "role": "对抗路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 113,
+          "role": "游走"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 128,
+          "role": "对抗路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 563,
+          "role": "中路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 133,
+          "role": "发育路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 129,
+          "role": "打野"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 151,
+          "role": "发育路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 193,
+          "role": "打野"
+        }
+      ],
+      "draft": {
+        "role": "中路",
+        "allies": {
+          "游走": 168,
+          "对抗路": 154,
+          "中路": 563,
+          "发育路": 133,
+          "打野": 193
+        },
+        "enemies": {
+          "中路": 108,
+          "游走": 113,
+          "对抗路": 128,
+          "打野": 129,
+          "发育路": 151
+        },
+        "banned": [
+          163,
+          514
+        ],
+        "onlyPool": false,
+        "pool": []
+      },
+      "nodes": 985,
+      "elapsedMs": 226,
+      "depths": [
+        3,
+        3,
+        3,
+        3,
+        1
+      ],
+      "legal": true,
+      "coverage": 5,
+      "meanRootRoles": 2,
+      "note": "固定种子选人模拟；对照为一手贪心或随机合法策略。只评估工程约束，不预测胜率，不证明职业水平，不自动学习或改写权重。",
+      "phase": "development"
+    },
+    {
+      "seed": 218,
+      "policy": "coverage",
+      "moves": [
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 108,
+          "role": "中路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 168,
+          "role": "游走"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 154,
+          "role": "对抗路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 113,
+          "role": "游走"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 128,
+          "role": "对抗路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 196,
+          "role": "发育路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 563,
+          "role": "中路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 169,
+          "role": "发育路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 177,
+          "role": "打野"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 193,
+          "role": "打野"
+        }
+      ],
+      "draft": {
+        "role": "中路",
+        "allies": {
+          "游走": 168,
+          "对抗路": 154,
+          "发育路": 196,
+          "中路": 563,
+          "打野": 193
+        },
+        "enemies": {
+          "中路": 108,
+          "游走": 113,
+          "对抗路": 128,
+          "发育路": 169,
+          "打野": 177
+        },
+        "banned": [
+          163,
+          514
+        ],
+        "onlyPool": false,
+        "pool": []
+      },
+      "nodes": 981,
+      "elapsedMs": 227,
+      "depths": [
+        3,
+        3,
+        3,
+        3,
+        1
+      ],
+      "legal": true,
+      "coverage": 5,
+      "meanRootRoles": 3,
+      "note": "固定种子选人模拟；对照为一手贪心或随机合法策略。只评估工程约束，不预测胜率，不证明职业水平，不自动学习或改写权重。",
+      "phase": "development"
+    },
+    {
+      "seed": 319,
+      "policy": "greedy",
+      "moves": [
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 135,
+          "role": "对抗路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 140,
+          "role": "对抗路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 124,
+          "role": "中路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 136,
+          "role": "中路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 175,
+          "role": "游走"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 113,
+          "role": "游走"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 128,
+          "role": "打野"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 111,
+          "role": "发育路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 153,
+          "role": "打野"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 151,
+          "role": "发育路"
+        }
+      ],
+      "draft": {
+        "role": "中路",
+        "allies": {
+          "对抗路": 135,
+          "中路": 136,
+          "游走": 175,
+          "发育路": 111,
+          "打野": 153
+        },
+        "enemies": {
+          "对抗路": 140,
+          "中路": 124,
+          "游走": 113,
+          "打野": 128,
+          "发育路": 151
+        },
+        "banned": [
+          141,
+          155
+        ],
+        "onlyPool": false,
+        "pool": []
+      },
+      "nodes": 1035,
+      "elapsedMs": 209,
+      "depths": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "legal": true,
+      "coverage": 5,
+      "meanRootRoles": 2.4,
+      "note": "固定种子选人模拟；对照为一手贪心或随机合法策略。只评估工程约束，不预测胜率，不证明职业水平，不自动学习或改写权重。",
+      "phase": "development"
+    },
+    {
+      "seed": 319,
+      "policy": "coverage",
+      "moves": [
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 134,
+          "role": "对抗路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 135,
+          "role": "对抗路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 119,
+          "role": "中路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 190,
+          "role": "中路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 107,
+          "role": "打野"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 149,
+          "role": "游走"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 137,
+          "role": "打野"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 168,
+          "role": "游走"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 196,
+          "role": "发育路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 192,
+          "role": "发育路"
+        }
+      ],
+      "draft": {
+        "role": "中路",
+        "allies": {
+          "对抗路": 134,
+          "中路": 190,
+          "打野": 107,
+          "游走": 168,
+          "发育路": 196
+        },
+        "enemies": {
+          "对抗路": 135,
+          "中路": 119,
+          "游走": 149,
+          "打野": 137,
+          "发育路": 192
+        },
+        "banned": [
+          141,
+          155
+        ],
+        "onlyPool": false,
+        "pool": []
+      },
+      "nodes": 1006,
+      "elapsedMs": 210,
+      "depths": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "legal": true,
+      "coverage": 5,
+      "meanRootRoles": 3,
+      "note": "固定种子选人模拟；对照为一手贪心或随机合法策略。只评估工程约束，不预测胜率，不证明职业水平，不自动学习或改写权重。",
+      "phase": "development"
+    },
+    {
+      "seed": 421,
+      "policy": "greedy",
+      "moves": [
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 108,
+          "role": "中路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 135,
+          "role": "对抗路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 119,
+          "role": "中路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 113,
+          "role": "游走"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 154,
+          "role": "对抗路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 191,
+          "role": "游走"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 199,
+          "role": "发育路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 116,
+          "role": "打野"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 111,
+          "role": "发育路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 150,
+          "role": "打野"
+        }
+      ],
+      "draft": {
+        "role": "中路",
+        "allies": {
+          "中路": 108,
+          "游走": 113,
+          "对抗路": 154,
+          "打野": 116,
+          "发育路": 111
+        },
+        "enemies": {
+          "对抗路": 135,
+          "中路": 119,
+          "游走": 191,
+          "发育路": 199,
+          "打野": 150
+        },
+        "banned": [
+          168,
+          171
+        ],
+        "onlyPool": false,
+        "pool": []
+      },
+      "nodes": 1002,
+      "elapsedMs": 225,
+      "depths": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "legal": true,
+      "coverage": 5,
+      "meanRootRoles": 2.4,
+      "note": "固定种子选人模拟；对照为一手贪心或随机合法策略。只评估工程约束，不预测胜率，不证明职业水平，不自动学习或改写权重。",
+      "phase": "held-out"
+    },
+    {
+      "seed": 421,
+      "policy": "coverage",
+      "moves": [
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 108,
+          "role": "中路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 135,
+          "role": "对抗路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 119,
+          "role": "中路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 154,
+          "role": "对抗路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 113,
+          "role": "游走"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 191,
+          "role": "游走"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 199,
+          "role": "发育路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 116,
+          "role": "打野"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 111,
+          "role": "发育路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 150,
+          "role": "打野"
+        }
+      ],
+      "draft": {
+        "role": "中路",
+        "allies": {
+          "中路": 108,
+          "对抗路": 154,
+          "游走": 113,
+          "打野": 116,
+          "发育路": 111
+        },
+        "enemies": {
+          "对抗路": 135,
+          "中路": 119,
+          "游走": 191,
+          "发育路": 199,
+          "打野": 150
+        },
+        "banned": [
+          168,
+          171
+        ],
+        "onlyPool": false,
+        "pool": []
+      },
+      "nodes": 1008,
+      "elapsedMs": 232,
+      "depths": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "legal": true,
+      "coverage": 5,
+      "meanRootRoles": 3,
+      "note": "固定种子选人模拟；对照为一手贪心或随机合法策略。只评估工程约束，不预测胜率，不证明职业水平，不自动学习或改写权重。",
+      "phase": "held-out"
+    },
+    {
+      "seed": 522,
+      "policy": "greedy",
+      "moves": [
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "对抗路",
+          "heroId": 581
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 121,
+          "role": "对抗路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 126,
+          "role": "打野"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "打野",
+          "heroId": 522
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "中路",
+          "heroId": 523
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 105,
+          "role": "游走"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 112,
+          "role": "发育路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "发育路",
+          "heroId": 524
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "游走",
+          "heroId": 149
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 152,
+          "role": "中路"
+        }
+      ],
+      "draft": {
+        "role": "中路",
+        "allies": {
+          "对抗路": 121,
+          "打野": 126,
+          "游走": 105,
+          "发育路": 112,
+          "中路": 152
+        },
+        "enemies": {
+          "对抗路": 581,
+          "打野": 522,
+          "中路": 523,
+          "发育路": 524,
+          "游走": 149
+        },
+        "banned": [
+          508,
+          528
+        ],
+        "onlyPool": false,
+        "pool": []
+      },
+      "nodes": 929,
+      "elapsedMs": 188,
+      "depths": [
+        3,
+        3,
+        3,
+        3,
+        1
+      ],
+      "legal": true,
+      "coverage": 5,
+      "meanRootRoles": 2.4,
+      "note": "固定种子选人模拟；对照为一手贪心或随机合法策略。只评估工程约束，不预测胜率，不证明职业水平，不自动学习或改写权重。",
+      "phase": "held-out"
+    },
+    {
+      "seed": 522,
+      "policy": "coverage",
+      "moves": [
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "对抗路",
+          "heroId": 581
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 121,
+          "role": "对抗路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 126,
+          "role": "打野"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "打野",
+          "heroId": 522
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "中路",
+          "heroId": 523
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 105,
+          "role": "游走"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 112,
+          "role": "发育路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "发育路",
+          "heroId": 524
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "role": "游走",
+          "heroId": 149
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 152,
+          "role": "中路"
+        }
+      ],
+      "draft": {
+        "role": "中路",
+        "allies": {
+          "对抗路": 121,
+          "打野": 126,
+          "游走": 105,
+          "发育路": 112,
+          "中路": 152
+        },
+        "enemies": {
+          "对抗路": 581,
+          "打野": 522,
+          "中路": 523,
+          "发育路": 524,
+          "游走": 149
+        },
+        "banned": [
+          508,
+          528
+        ],
+        "onlyPool": false,
+        "pool": []
+      },
+      "nodes": 930,
+      "elapsedMs": 190,
+      "depths": [
+        3,
+        3,
+        3,
+        3,
+        1
+      ],
+      "legal": true,
+      "coverage": 5,
+      "meanRootRoles": 3,
+      "note": "固定种子选人模拟；对照为一手贪心或随机合法策略。只评估工程约束，不预测胜率，不证明职业水平，不自动学习或改写权重。",
+      "phase": "held-out"
+    },
+    {
+      "seed": 623,
+      "policy": "greedy",
+      "moves": [
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 135,
+          "role": "对抗路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 140,
+          "role": "对抗路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 141,
+          "role": "中路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 109,
+          "role": "中路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 156,
+          "role": "游走"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 105,
+          "role": "游走"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 190,
+          "role": "打野"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 169,
+          "role": "发育路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 533,
+          "role": "打野"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 584,
+          "role": "发育路"
+        }
+      ],
+      "draft": {
+        "role": "中路",
+        "allies": {
+          "对抗路": 135,
+          "中路": 109,
+          "游走": 156,
+          "发育路": 169,
+          "打野": 533
+        },
+        "enemies": {
+          "对抗路": 140,
+          "中路": 141,
+          "游走": 105,
+          "打野": 190,
+          "发育路": 584
+        },
+        "banned": [
+          115,
+          184
+        ],
+        "onlyPool": false,
+        "pool": []
+      },
+      "nodes": 1018,
+      "elapsedMs": 207,
+      "depths": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "legal": true,
+      "coverage": 5,
+      "meanRootRoles": 2.4,
+      "note": "固定种子选人模拟；对照为一手贪心或随机合法策略。只评估工程约束，不预测胜率，不证明职业水平，不自动学习或改写权重。",
+      "phase": "held-out"
+    },
+    {
+      "seed": 623,
+      "policy": "coverage",
+      "moves": [
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 108,
+          "role": "中路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 135,
+          "role": "对抗路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 119,
+          "role": "中路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 154,
+          "role": "对抗路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 113,
+          "role": "游走"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 168,
+          "role": "游走"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 196,
+          "role": "发育路"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 128,
+          "role": "打野"
+        },
+        {
+          "team": "allies",
+          "kind": "pick",
+          "heroId": 177,
+          "role": "发育路"
+        },
+        {
+          "team": "enemies",
+          "kind": "pick",
+          "heroId": 533,
+          "role": "打野"
+        }
+      ],
+      "draft": {
+        "role": "中路",
+        "allies": {
+          "中路": 108,
+          "对抗路": 154,
+          "游走": 113,
+          "打野": 128,
+          "发育路": 177
+        },
+        "enemies": {
+          "对抗路": 135,
+          "中路": 119,
+          "游走": 168,
+          "发育路": 196,
+          "打野": 533
+        },
+        "banned": [
+          115,
+          184
+        ],
+        "onlyPool": false,
+        "pool": []
+      },
+      "nodes": 1028,
+      "elapsedMs": 232,
+      "depths": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "legal": true,
+      "coverage": 5,
+      "meanRootRoles": 3,
+      "note": "固定种子选人模拟；对照为一手贪心或随机合法策略。只评估工程约束，不预测胜率，不证明职业水平，不自动学习或改写权重。",
+      "phase": "held-out"
+    }
+  ]
+}

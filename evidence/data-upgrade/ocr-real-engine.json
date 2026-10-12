@@ -1,0 +1,211 @@
+{
+  "kind": "synthetic screenshot through actual local OCR, not actual player layout validation",
+  "result": {
+    "width": 1080,
+    "height": 1000,
+    "lines": [
+      {
+        "text": "OCR 测试样张（合成，非真实玩家数据）",
+        "confidence": 0.96699,
+        "box": [
+          [
+            43,
+            50
+          ],
+          [
+            759,
+            50
+          ],
+          [
+            759,
+            97
+          ],
+          [
+            43,
+            97
+          ]
+        ]
+      },
+      {
+        "text": "李白",
+        "confidence": 0.99982,
+        "box": [
+          [
+            37,
+            165
+          ],
+          [
+            130,
+            165
+          ],
+          [
+            130,
+            223
+          ],
+          [
+            37,
+            223
+          ]
+        ]
+      },
+      {
+        "text": "总场次：230",
+        "confidence": 0.99951,
+        "box": [
+          [
+            42,
+            289
+          ],
+          [
+            278,
+            289
+          ],
+          [
+            278,
+            337
+          ],
+          [
+            42,
+            337
+          ]
+        ]
+      },
+      {
+        "text": "胜率：57.83%",
+        "confidence": 0.99979,
+        "box": [
+          [
+            41,
+            410
+          ],
+          [
+            305,
+            408
+          ],
+          [
+            306,
+            455
+          ],
+          [
+            41,
+            457
+          ]
+        ]
+      },
+      {
+        "text": "综合评分：9.1",
+        "confidence": 0.9998,
+        "box": [
+          [
+            41,
+            529
+          ],
+          [
+            300,
+            529
+          ],
+          [
+            300,
+            577
+          ],
+          [
+            41,
+            577
+          ]
+        ]
+      },
+      {
+        "text": "荣耀战力：9500",
+        "confidence": 0.99985,
+        "box": [
+          [
+            41,
+            649
+          ],
+          [
+            339,
+            647
+          ],
+          [
+            340,
+            694
+          ],
+          [
+            41,
+            697
+          ]
+        ]
+      },
+      {
+        "text": "历史最高战力：12000",
+        "confidence": 0.99996,
+        "box": [
+          [
+            41,
+            771
+          ],
+          [
+            443,
+            769
+          ],
+          [
+            443,
+            815
+          ],
+          [
+            41,
+            818
+          ]
+        ]
+      }
+    ],
+    "sha256": "110638d311c69177e8b2e6a3d110deb523c919b56f11ec5fbea5c667a0bc175b",
+    "engine": "RapidOCR 3.10 / local CPU"
+  },
+  "extracted": {
+    "heroId": 131,
+    "fields": [
+      {
+        "key": "games",
+        "label": "累计场次",
+        "value": 230,
+        "confidence": 0.99951,
+        "evidence": "总场次：230",
+        "ambiguous": false
+      },
+      {
+        "key": "winRate",
+        "label": "累计胜率 %",
+        "value": 57.83,
+        "confidence": 0.99979,
+        "evidence": "胜率：57.83%",
+        "ambiguous": false
+      },
+      {
+        "key": "averageRating",
+        "label": "平均评分",
+        "value": 9.1,
+        "confidence": 0.9998,
+        "evidence": "综合评分：9.1",
+        "ambiguous": false
+      },
+      {
+        "key": "power",
+        "label": "当前战力",
+        "value": 9500,
+        "confidence": 0.99985,
+        "evidence": "荣耀战力：9500",
+        "ambiguous": false
+      },
+      {
+        "key": "historicalPeakPower",
+        "label": "历史最高战力",
+        "value": 12000,
+        "confidence": 0.99996,
+        "evidence": "历史最高战力：12000",
+        "ambiguous": false
+      }
+    ],
+    "warnings": []
+  }
+}

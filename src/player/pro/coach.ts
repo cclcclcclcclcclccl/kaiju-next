@@ -101,7 +101,12 @@ export function applyCoachMove(draft: Draft, move: CoachMove): Draft {
 export function searchCoach(
   heroes: Hero[],
   input: CoachInput,
-  options: { maxMs?: number; maxNodes?: number; now?: number } = {},
+  options: {
+    maxMs?: number;
+    maxNodes?: number;
+    now?: number;
+    candidatePolicy?: 'greedy' | 'coverage';
+  } = {},
 ): CoachResult {
   const started = performance.now(),
     now = options.now ?? Date.now();
@@ -252,7 +257,20 @@ export function searchCoach(
         });
       }
     }
-    return list.sort((a, b) => b.prior - a.prior || a.move.heroId - b.move.heroId).slice(0, width);
+    list.sort((a, b) => b.prior - a.prior || a.move.heroId - b.move.heroId);
+    if (options.candidatePolicy === 'greedy') return list.slice(0, width);
+    // Preserve the best response for each open role before using remaining slots for raw score.
+    // This prevents a narrow beam from considering only (for example) support picks.
+    const roles = new Set<Role>(),
+      covered: RankedMove[] = [];
+    for (const candidate of list)
+      if (!roles.has(candidate.move.role) && covered.length < width) {
+        roles.add(candidate.move.role);
+        covered.push(candidate);
+      }
+    for (const candidate of list)
+      if (covered.length < width && !covered.includes(candidate)) covered.push(candidate);
+    return covered.sort((a, b) => b.prior - a.prior || a.move.heroId - b.move.heroId);
   };
   const banMoves = (): RankedMove[] => {
     const targets = moves(draft, opposite(rootSide), Math.min(20, cfg.width * 3));
@@ -398,6 +416,9 @@ export function searchCoach(
     candidateWidth: cfg.width,
     side: rootSide,
     assumptions: [
+      options.candidatePolicy === 'greedy'
+        ? '候选按即时分截断（对照基线）'
+        : '候选优先保留各空缺分路的最佳应对，再补充高分英雄；候选宽度小于空位数时无法覆盖全部分路',
       `在每步最多 ${cfg.width} 个候选中做${cfg.strategy === 'robust' ? '极大极小对抗搜索' : '对手偏好加权搜索'}，不是遍历全部合法棋树`,
       `已完成 ${completedDepth} 手推演；${cfg.action === 'ban' ? '本次先比较一手禁用，再模拟选人；不模拟剩余全部禁用轮次' : '每一手是一位英雄，蓝方选人次序为 1–2–2–2–2–1'}`,
       knownOpponents.size

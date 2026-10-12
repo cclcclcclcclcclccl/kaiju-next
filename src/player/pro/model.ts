@@ -121,7 +121,7 @@ export const heroMetricSchema = z
     peakCoefficient: z.number().min(0).max(500).optional(),
     challengeCoefficient: z.number().min(0).max(500).optional(),
     inPool: z.boolean().optional(),
-    dataSource: z.enum(['manual', 'file']).optional(),
+    dataSource: z.enum(['manual', 'file', 'screenshot']).optional(),
     observedOn: dateText,
     evidence: z.string().max(300).default(''),
   })

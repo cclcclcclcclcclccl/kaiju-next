@@ -20,6 +20,7 @@ test('detailed profile saves rate-only input, drives pool cards and opens the co
   request,
 }) => {
   await page.locator('nav').getByRole('button', { name: '玩家档案', exact: true }).click();
+  await page.locator('.manual-profile > summary').click();
   await page.getByLabel('本赛季最高巅峰分', { exact: true }).fill('1900');
   await page.getByLabel('巅峰能量', { exact: true }).fill('35');
   await page.getByLabel('账号巅峰加成 %', { exact: true }).fill('30');
@@ -76,6 +77,8 @@ test('complete roster links to atlas, correct rune colors and personal guides on
   page,
 }) => {
   await page.locator('nav').getByRole('button', { name: '分段梯度', exact: true }).click();
+  await expect(page.locator('.tier-portrait')).toHaveCount(heroes.length);
+  await page.getByRole('button', { name: '详细数据表', exact: true }).click();
   await expect(page.locator('.roster-table tbody tr')).toHaveCount(heroes.length);
   await page.getByLabel('搜索全部英雄').fill('李白');
   await page.getByRole('button', { name: '打开李白图鉴' }).click();

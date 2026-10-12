@@ -1,0 +1,283 @@
+{
+  "checkedAt": "2026-10-12T14:42:24.516Z",
+  "equipment": 115,
+  "skins": 825,
+  "updates": [
+    {
+      "id": 810642,
+      "title": "10月12日服务器优化升级公告",
+      "publishedAt": "2026-10-11 19:22:39",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=810642",
+      "environment": "正式服",
+      "heroIds": [],
+      "kind": "官方资讯",
+      "textLength": 0
+    },
+    {
+      "id": 810733,
+      "title": "10月10日体验服不停机更新公告",
+      "publishedAt": "2026-10-10 16:59:41",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=810733",
+      "environment": "体验服",
+      "heroIds": [
+        119,
+        126,
+        134,
+        525,
+        558
+      ],
+      "kind": "版本公告",
+      "textLength": 830
+    },
+    {
+      "id": 810600,
+      "title": "10月9日挂车行为专项打击处罚公告",
+      "publishedAt": "2026-10-09 10:32:13",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=810600",
+      "environment": "正式服",
+      "heroIds": [],
+      "kind": "官方资讯",
+      "textLength": 0
+    },
+    {
+      "id": 810599,
+      "title": "10月9日言语违规专项打击处罚公告",
+      "publishedAt": "2026-10-09 10:31:33",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=810599",
+      "environment": "正式服",
+      "heroIds": [],
+      "kind": "官方资讯",
+      "textLength": 0
+    },
+    {
+      "id": 810598,
+      "title": "10月9日“演员”行为专项打击处罚公告",
+      "publishedAt": "2026-10-09 10:30:56",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=810598",
+      "environment": "正式服",
+      "heroIds": [],
+      "kind": "官方资讯",
+      "textLength": 0
+    },
+    {
+      "id": 810597,
+      "title": "10月9日外挂专项打击处罚公告",
+      "publishedAt": "2026-10-09 10:30:13",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=810597",
+      "environment": "正式服",
+      "heroIds": [],
+      "kind": "官方资讯",
+      "textLength": 0
+    },
+    {
+      "id": 810034,
+      "title": "10月8日版本更新公告",
+      "publishedAt": "2026-10-07 16:27:28",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=810034",
+      "environment": "正式服",
+      "heroIds": [
+        110,
+        112,
+        115,
+        118,
+        123,
+        127,
+        129,
+        130,
+        140,
+        198,
+        501,
+        524,
+        547,
+        558
+      ],
+      "kind": "版本公告",
+      "textLength": 854
+    },
+    {
+      "id": 809955,
+      "title": "9月29日体验服不停机更新公告",
+      "publishedAt": "2026-09-29 16:52:01",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=809955",
+      "environment": "体验服",
+      "heroIds": [],
+      "kind": "版本公告",
+      "textLength": 230
+    },
+    {
+      "id": 809863,
+      "title": "英雄平衡性调整 | 马超、海月平衡",
+      "publishedAt": "2026-09-28 16:52:52",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=809863",
+      "environment": "正式服",
+      "heroIds": [
+        518,
+        521
+      ],
+      "kind": "版本公告",
+      "textLength": 204
+    },
+    {
+      "id": 809860,
+      "title": "9月29日版本更新公告",
+      "publishedAt": "2026-09-28 16:44:03",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=809860",
+      "environment": "正式服",
+      "heroIds": [
+        107,
+        111,
+        112,
+        118,
+        123,
+        125,
+        128,
+        132,
+        138,
+        142,
+        151,
+        159,
+        167,
+        168,
+        176,
+        177,
+        180,
+        190,
+        191,
+        194,
+        195,
+        199,
+        501,
+        506,
+        508,
+        510,
+        518,
+        521,
+        523,
+        531,
+        536,
+        547,
+        558,
+        563,
+        564
+      ],
+      "kind": "版本公告",
+      "textLength": 4606
+    },
+    {
+      "id": 809513,
+      "title": "9月24日体验服不停机更新公告",
+      "publishedAt": "2026-09-24 17:29:45",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=809513",
+      "environment": "体验服",
+      "heroIds": [
+        517,
+        518,
+        521
+      ],
+      "kind": "版本公告",
+      "textLength": 509
+    },
+    {
+      "id": 809318,
+      "title": "9月24日问题修复版本更新公告",
+      "publishedAt": "2026-09-23 23:52:24",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=809318",
+      "environment": "正式服",
+      "heroIds": [],
+      "kind": "版本公告",
+      "textLength": 0
+    },
+    {
+      "id": 809094,
+      "title": "9月23日问题修复版本更新公告",
+      "publishedAt": "2026-09-23 11:43:45",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=809094",
+      "environment": "正式服",
+      "heroIds": [],
+      "kind": "版本公告",
+      "textLength": 0
+    },
+    {
+      "id": 809090,
+      "title": "9月23日S45赛季“月照长安”版本异常问题说明",
+      "publishedAt": "2026-09-23 09:37:08",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=809090",
+      "environment": "正式服",
+      "heroIds": [],
+      "kind": "版本公告",
+      "textLength": 0
+    },
+    {
+      "id": 808920,
+      "title": "9月23日卡顿优化版本更新公告",
+      "publishedAt": "2026-09-23 06:07:13",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=808920",
+      "environment": "正式服",
+      "heroIds": [],
+      "kind": "版本公告",
+      "textLength": 0
+    },
+    {
+      "id": 808854,
+      "title": "S45赛季【月照长安】9月23日即将开启",
+      "publishedAt": "2026-09-22 16:33:12",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=808854",
+      "environment": "正式服",
+      "heroIds": [],
+      "kind": "官方资讯",
+      "textLength": 0
+    },
+    {
+      "id": 808620,
+      "title": "9月23日正式服S45赛季「月照长安」版本更新公告",
+      "publishedAt": "2026-09-21 18:00:40",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=808620",
+      "environment": "正式服",
+      "heroIds": [],
+      "kind": "版本公告",
+      "textLength": 0
+    },
+    {
+      "id": 808711,
+      "title": "9月17日“演员”行为专项打击处罚公告",
+      "publishedAt": "2026-09-17 16:37:08",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=808711",
+      "environment": "正式服",
+      "heroIds": [],
+      "kind": "官方资讯",
+      "textLength": 0
+    },
+    {
+      "id": 808710,
+      "title": "9月17日言语违规专项打击处罚公告",
+      "publishedAt": "2026-09-17 16:36:28",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=808710",
+      "environment": "正式服",
+      "heroIds": [],
+      "kind": "官方资讯",
+      "textLength": 0
+    },
+    {
+      "id": 808709,
+      "title": "9月17日外挂专项打击处罚公告",
+      "publishedAt": "2026-09-17 16:35:34",
+      "source": "https://pvp.qq.com/web201706/newsdetail.shtml?tid=808709",
+      "environment": "正式服",
+      "heroIds": [],
+      "kind": "官方资讯",
+      "textLength": 0
+    }
+  ],
+  "sources": [
+    "https://pvp.qq.com/web201605/js/item.json",
+    "https://pvp.qq.com/zlkdatasys/heroskinlist.json",
+    "https://apps.game.qq.com/cmc/cross",
+    "https://game.gtimg.cn/images/js/pvpcommon/api.js"
+  ],
+  "warnings": [
+    "皮肤英雄暂未映射：时之魔女",
+    "皮肤英雄暂未映射：大圣娶亲",
+    "已去除官方重复皮肤记录：黄金射手座",
+    "官方 ID 对应多个皮肤，已按名称分开：英喵野望"
+  ]
+}

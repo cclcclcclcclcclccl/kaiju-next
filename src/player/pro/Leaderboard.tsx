@@ -201,7 +201,7 @@ export default function Leaderboard({
           {demo ? '退出合成演示' : '查看算法演示'}
         </button>
       </div>
-      <AllHeroRanks segment={segment} onOpen={onOpen} />
+      <AllHeroRanks segment={segment} onOpen={onOpen} selectedSnapshot={snapshot} />
       <label className="check-control">
         <input
           type="checkbox"

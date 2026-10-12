@@ -12,6 +12,7 @@ import { providerConfig } from './provider.ts';
 import type { PlayerStore } from './store.ts';
 import { createOfficialRanks } from '../pro/official.ts';
 import { officialQuerySchema } from '../../src/player/pro/official.ts';
+import { createResources } from '../pro/resources.ts';
 export class PlayerHttpError extends Error {
   status: number;
   constructor(status: number, message: string) {
@@ -38,9 +39,14 @@ async function body(req: IncomingMessage, limit = 128 * 1024) {
 export function createPlayerApp(
   rootStore: PlayerStore,
   heroes: Hero[],
-  options: { dist?: string; officialRanks?: ReturnType<typeof createOfficialRanks> } = {},
+  options: {
+    dist?: string;
+    officialRanks?: ReturnType<typeof createOfficialRanks>;
+    resources?: ReturnType<typeof createResources>;
+  } = {},
 ) {
   const officialRanks = options.officialRanks ?? createOfficialRanks();
+  const resources = options.resources;
   const ids = new Set(heroes.map((h) => h.id));
   const validateIds = (values: (number | undefined)[]) => {
     if (values.some((id) => id !== undefined && !ids.has(id)))
@@ -59,7 +65,7 @@ export function createPlayerApp(
     res.setHeader('Referrer-Policy', 'no-referrer');
     res.setHeader(
       'Content-Security-Policy',
-      "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://game.gtimg.cn; media-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'none'",
+      "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://game.gtimg.cn https://game-1255653016.file.myqcloud.com; media-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'none'",
     );
     try {
       const host = req.headers.host ?? '';
@@ -84,6 +90,14 @@ export function createPlayerApp(
       )
         throw new PlayerHttpError(401, '登录已过期，请重新登录');
       const store = user ? rootStore.forUser(user.id) : rootStore;
+      if (method === 'GET' && url.pathname === '/api/resources') {
+        if (!resources) return send(503, { error: '资料更新服务未配置' });
+        try {
+          return send(200, await resources.get());
+        } catch {
+          return send(502, { error: '官方资料暂不可用，请稍后重试' });
+        }
+      }
       if (method === 'GET' && url.pathname === '/api/official/hero-rank') {
         const query = officialQuerySchema.parse(Object.fromEntries(url.searchParams));
         try {

@@ -1,6 +1,6 @@
 {
   "name": "kaiju-player-companion",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -13,7 +13,10 @@
     "test": "node --test server/player/*.test.ts",
     "test:e2e": "playwright test",
     "format:check": "prettier --check \"src/player/**/*.{ts,tsx,css}\" \"server/{player,pro}/**/*.ts\" \"tests/player/**/*.ts\" \"scripts/player/*.mjs\" \"*.{ts,json}\"",
-    "data:refresh": "node scripts/player/refresh-data.mjs"
+    "data:refresh": "node scripts/player/refresh-data.mjs",
+    "ocr:setup": "node scripts/player/setup-ocr.mjs",
+    "resources:refresh": "node scripts/player/refresh-resources.mjs",
+    "bp:evaluate": "node scripts/player/benchmark-coach.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",

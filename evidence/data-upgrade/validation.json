@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-10-12T15:12:28.472Z",
+  "version": "0.9.0",
+  "core": {
+    "passed": 43,
+    "failed": 0
+  },
+  "browser": {
+    "startTime": "2026-10-12T14:42:41.571Z",
+    "duration": 108046.061,
+    "expected": 27,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "build": "passed; pre-existing 1.23MB hero bundle warning remains",
+  "format": "passed",
+  "ocr": "Actual local engine and HTTP/UI flow on explicitly synthetic fixture; real player layouts not evaluated",
+  "bp": {
+    "games": 12,
+    "allLegal": true,
+    "summaries": [
+      {
+        "phase": "development",
+        "policy": "greedy",
+        "games": 3,
+        "legalGames": 3,
+        "completeRoles": true,
+        "meanRootRoles": 2.266666666666667,
+        "meanMs": 236
+      },
+      {
+        "phase": "development",
+        "policy": "coverage",
+        "games": 3,
+        "legalGames": 3,
+        "completeRoles": true,
+        "meanRootRoles": 3,
+        "meanMs": 220
+      },
+      {
+        "phase": "held-out",
+        "policy": "greedy",
+        "games": 3,
+        "legalGames": 3,
+        "completeRoles": true,
+        "meanRootRoles": 2.4,
+        "meanMs": 207
+      },
+      {
+        "phase": "held-out",
+        "policy": "coverage",
+        "games": 3,
+        "legalGames": 3,
+        "completeRoles": true,
+        "meanRootRoles": 3,
+        "meanMs": 218
+      }
+    ],
+    "limitation": "No learned weights or professional outcome evidence"
+  },
+  "live": "live-check.json",
+  "dataSources": "official-resource-verification.json",
+  "limitations": [
+    "complete six-segment stats unavailable",
+    "no private game backend",
+    "skin usage is one dated third-party observation only",
+    "duration-bucket win rates unavailable",
+    "no realtime cross-web tactical validation"
+  ],
+  "finalTargetedRegression": {
+    "startTime": "2026-10-12T15:14:49.077Z",
+    "duration": 23161.414,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "finalChange": "User-confirmed screenshot observation date and complete T0-T9 board rendering"
+}

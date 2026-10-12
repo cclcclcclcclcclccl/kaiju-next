@@ -7,6 +7,7 @@ import ProfilePage from './pro/Profile.tsx';
 import Social from './pro/Social.tsx';
 import Systems from './pro/Systems.tsx';
 import Replay from './pro/Replay.tsx';
+import ResourceCenter from './pro/ResourceCenter.tsx';
 import { BarChart3, Users, Video, Network, Gauge } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 import {
@@ -201,6 +202,7 @@ export default function App() {
     { id: 'home' as Page, label: '备战首页', icon: LayoutDashboard },
     { id: 'heroes' as Page, label: '英雄图鉴', icon: BookOpen },
     { id: 'tier' as Page, label: '分段梯度', icon: BarChart3 },
+    { id: 'resources' as Page, label: '装备与版本', icon: BookOpen },
     { id: 'draft' as Page, label: '阵容备战', icon: Swords },
     { id: 'journal' as Page, label: '对局手记', icon: NotebookPen },
     { id: 'pool' as Page, label: '我的英雄池', icon: Heart },
@@ -264,7 +266,7 @@ export default function App() {
             <span>
               <i />
               {ready ? '本地工作台已连接' : '正在连接本地服务'}
-              <small>v0.8</small>
+              <small>v0.9</small>
             </span>
           </div>
         </aside>
@@ -344,6 +346,7 @@ export default function App() {
             ) : (
               <>
                 {page === 'tier' && <Leaderboard onOpen={openHero} />}
+                {page === 'resources' && <ResourceCenter onOpen={openHero} />}
                 {page === 'profile' && <ProfilePage focusHeroId={profileHero} />}
                 {page === 'social' && <Social />}
                 {page === 'replay' && <Replay />}
