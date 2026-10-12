@@ -1,0 +1,96 @@
+{
+  "createdAt": "2026-10-12T15:29:41.785Z",
+  "status": "needs-review",
+  "sourceImage": "mini-data-loaded.png",
+  "sha256": "af85c7cbee51cdfe054471c1dc88dd157194a809d8f13a7506139b02a8cffbb3",
+  "engine": "RapidOCR 3.10 / local CPU",
+  "dateText": [
+    "2026年10月11日",
+    "数据更新：2026年10月12日10:36"
+  ],
+  "rows": [
+    {
+      "heroId": 525,
+      "name": "鲁班大师",
+      "role": "游走",
+      "winRate": 52.1,
+      "pickRate": 11.7,
+      "banRate": 84.5,
+      "ocrConfidence": 0.99958,
+      "evidence": [
+        "鲁班大师#2",
+        "游走",
+        "52.1%",
+        "11.7%",
+        "84.5%"
+      ]
+    },
+    {
+      "heroId": 509,
+      "name": "盾山",
+      "role": "游走",
+      "winRate": 53.9,
+      "pickRate": 7.9,
+      "banRate": 87,
+      "ocrConfidence": 0.99923,
+      "evidence": [
+        "盾山#3",
+        "游走",
+        "53.9%",
+        "7.9%",
+        "87.0%"
+      ]
+    },
+    {
+      "heroId": 521,
+      "name": "海月",
+      "role": "中路",
+      "winRate": 50.3,
+      "pickRate": 5.9,
+      "banRate": 86.8,
+      "ocrConfidence": 0.99914,
+      "evidence": [
+        "海月#4",
+        "中路",
+        "50.3%",
+        "5.9%",
+        "86.8%"
+      ]
+    },
+    {
+      "heroId": 577,
+      "name": "少司缘",
+      "role": "游走",
+      "winRate": 51.1,
+      "pickRate": 32.3,
+      "banRate": 48.6,
+      "ocrConfidence": 0.99769,
+      "evidence": [
+        "少司缘#5",
+        "游走",
+        "51.1%",
+        "32.3%",
+        "48.6%"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "text": "元流之子...#1",
+      "reason": "英雄名被截断，需打开详情或完整显示后核对"
+    }
+  ],
+  "requiredMetadata": [
+    "数据来源",
+    "选中的分段（不从同时可见的标签猜测）",
+    "数据日期与获取日期",
+    "版本",
+    "胜率人群与时间范围",
+    "选禁分母"
+  ],
+  "notes": [
+    "数字为截图原始显示精度，不推算隐藏小数或场次",
+    "未确认的元数据不能进入正式自研梯度",
+    "这是识别后待核对文件，不是已完成同步"
+  ]
+}

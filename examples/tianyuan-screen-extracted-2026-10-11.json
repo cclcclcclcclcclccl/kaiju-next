@@ -1,0 +1,43 @@
+{
+  "title": "天元之弈截图提取 · 4位英雄（已核对）",
+  "segment": "巅峰千强",
+  "patch": "来源未标注版本号（2026-10-11页面）",
+  "startDate": "2026-10-11",
+  "endDate": "2026-10-11",
+  "sourceName": "天元之弈数据站 · 人工核对页面",
+  "sourceUrl": "#小程序://天元之弈/u6nCjaHUkuIRe6u",
+  "denominator": "unknown",
+  "winRateScope": "all",
+  "winRateWindow": "version",
+  "scopeNotes": "所选数据日2026-10-11，截图于2026-10-12获得。本次OCR读取后对照真实截图核对，所有三率均保留列表一位小数精度。千强页面胜率按来源说明为全量含较低分段、版本累计；选禁分母、场次、版本号未知。截断名称未匹配。仅4位局部记录，不代表实时全榜。",
+  "rows": [
+    {
+      "heroId": 525,
+      "role": "游走",
+      "winRate": 52.1,
+      "pickRate": 11.7,
+      "banRate": 84.5
+    },
+    {
+      "heroId": 509,
+      "role": "游走",
+      "winRate": 53.9,
+      "pickRate": 7.9,
+      "banRate": 87
+    },
+    {
+      "heroId": 521,
+      "role": "中路",
+      "winRate": 50.3,
+      "pickRate": 5.9,
+      "banRate": 86.8
+    },
+    {
+      "heroId": 577,
+      "role": "游走",
+      "winRate": 51.1,
+      "pickRate": 32.3,
+      "banRate": 48.6
+    }
+  ]
+}

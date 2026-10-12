@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-10-12T15:30:46.244Z",
+  "input": "data/reference-audit/mini-data-loaded.png",
+  "date": "2026-10-11",
+  "ocrRows": 4,
+  "verifiedRates": 12,
+  "truncatedRowsExcluded": 1,
+  "schemaValid": true,
+  "importable": "examples/tianyuan-screen-extracted-2026-10-11.json",
+  "databaseWritten": false,
+  "limits": "One previously captured visible screen only; neither a live full-board feed nor a validated model-training dataset"
+}
