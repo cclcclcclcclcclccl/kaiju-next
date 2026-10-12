@@ -16,7 +16,7 @@ private/
 evidence/raw-private/
 
 
-data/
+/data/
 .env.local
 artifacts/browser/
 

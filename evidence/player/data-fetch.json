@@ -1,0 +1,72 @@
+{
+  "fetchedAt": "2026-10-12T02:30:15.522Z",
+  "source": "https://pvp.qq.com/web201605/js/herolist.json",
+  "count": 133,
+  "skillPages": 117,
+  "failures": [
+    {
+      "id": 549,
+      "reason": "HTTP 404"
+    },
+    {
+      "id": 519,
+      "reason": "HTTP 404"
+    },
+    {
+      "id": 582,
+      "reason": "HTTP 404"
+    },
+    {
+      "id": 517,
+      "reason": "HTTP 404"
+    },
+    {
+      "id": 581,
+      "reason": "HTTP 404"
+    },
+    {
+      "id": 577,
+      "reason": "HTTP 404"
+    },
+    {
+      "id": 550,
+      "reason": "HTTP 404"
+    },
+    {
+      "id": 584,
+      "reason": "HTTP 404"
+    },
+    {
+      "id": 558,
+      "reason": "HTTP 404"
+    },
+    {
+      "id": 151,
+      "reason": "HTTP 404"
+    },
+    {
+      "id": 172,
+      "reason": "HTTP 404"
+    },
+    {
+      "id": 585,
+      "reason": "HTTP 404"
+    },
+    {
+      "id": 188,
+      "reason": "HTTP 404"
+    },
+    {
+      "id": 583,
+      "reason": "HTTP 404"
+    },
+    {
+      "id": 547,
+      "reason": "HTTP 404"
+    },
+    {
+      "id": 138,
+      "reason": "HTTP 404"
+    }
+  ]
+}
