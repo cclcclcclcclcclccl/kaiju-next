@@ -1,5 +1,6 @@
 import StatImport from './StatImport.tsx';
 import StatHistory from './StatHistory.tsx';
+import OfficialStats from './OfficialStats.tsx';
 import { scopeIssue, scopeLabel } from './statistics.ts';
 import { useMemo, useState } from 'react';
 import { ArrowUpRight, Download, Upload, Info } from 'lucide-react';
@@ -207,6 +208,15 @@ export default function Leaderboard({
         />
         隐藏出场率低于 2.5% 的英雄（只筛选显示，不重算梯度）
       </label>
+      <OfficialStats
+        segment={segment}
+        role={role}
+        query={query}
+        hideLowPick={hideLowPick}
+        order={order}
+        onOpen={onOpen}
+      />
+      <h2 className="snapshot-heading">我的统计快照 · 开局梯度</h2>
       {demo && (
         <div className="pro-notice">
           当前是明确标注的合成数据，用于检查算法，不代表真实英雄强度，不会保存或进入 BP。
@@ -285,7 +295,7 @@ export default function Leaderboard({
       {!shown ? (
         <Empty
           title="这个分段还没有可靠统计"
-          description="目前没有取得可直接接入的分段数据源。可以录入有出处的统计表，或粘贴已有表格；缺失值保持未知，不替你填造榜单。"
+          description="上方可查看已接通的官方公开榜。自己的梯度计算需要可核对的统计口径和样本量；可录入有出处的统计表，缺失值保持未知。"
           action={
             <button className="btn secondary" onClick={template}>
               <Download size={15} />

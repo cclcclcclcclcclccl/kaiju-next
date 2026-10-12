@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-12T09:32:08.443Z",
+  "status": {
+    "product": "开局 NEXT",
+    "version": "0.7.0",
+    "modelConfigured": false,
+    "heroCount": 133
+  },
+  "officialSource": {
+    "sourceUpdatedOn": "2026-10-11",
+    "fetchedAt": "2026-10-12T09:22:55.932Z",
+    "count": 10,
+    "first": {
+      "heroId": 521,
+      "name": "海月",
+      "heat": "T0",
+      "winRate": 49.88,
+      "pickRate": 5.9,
+      "banRate": 80.06
+    }
+  },
+  "overflow": false,
+  "browserErrors": [],
+  "accessibilityViolations": {
+    "desktop": [],
+    "mobile": []
+  }
+}

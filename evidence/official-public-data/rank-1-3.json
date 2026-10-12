@@ -1,0 +1,94 @@
+{
+  "source": "王者营地官方公开分享榜",
+  "sourceUrl": "https://camp.qq.com/h5/webdist/hero-rank/index.html",
+  "endpoint": "https://kohcamp.qq.com/gametoolbox/hero/getsharepagedetailranklistbyid",
+  "query": {
+    "segment": 1,
+    "position": 3
+  },
+  "sourceUpdatedOn": "2026-10-11",
+  "fetchedAt": "2026-10-12T09:22:55.767Z",
+  "coverage": "partial",
+  "rows": [
+    {
+      "heroId": 169,
+      "name": "后羿",
+      "heat": "T0",
+      "winRate": 52.15,
+      "pickRate": 27.1,
+      "banRate": 1.61
+    },
+    {
+      "heroId": 112,
+      "name": "鲁班七号",
+      "heat": "T1",
+      "winRate": 49.26,
+      "pickRate": 19.1,
+      "banRate": 1.18
+    },
+    {
+      "heroId": 132,
+      "name": "马可波罗",
+      "heat": "T1",
+      "winRate": 48.93,
+      "pickRate": 17.1,
+      "banRate": 5.42
+    },
+    {
+      "heroId": 174,
+      "name": "虞姬",
+      "heat": "T1",
+      "winRate": 50.38,
+      "pickRate": 14.9,
+      "banRate": 13.2
+    },
+    {
+      "heroId": 111,
+      "name": "孙尚香",
+      "heat": "T1",
+      "winRate": 46.66,
+      "pickRate": 16.2,
+      "banRate": 1.77
+    },
+    {
+      "heroId": 151,
+      "name": "孙权",
+      "heat": "T1",
+      "winRate": 51.33,
+      "pickRate": 14.7,
+      "banRate": 5.46
+    },
+    {
+      "heroId": 196,
+      "name": "百里守约",
+      "heat": "T1",
+      "winRate": 50.64,
+      "pickRate": 13.5,
+      "banRate": 6.99
+    },
+    {
+      "heroId": 173,
+      "name": "李元芳",
+      "heat": "T2",
+      "winRate": 52,
+      "pickRate": 13.3,
+      "banRate": 2.2
+    },
+    {
+      "heroId": 508,
+      "name": "伽罗",
+      "heat": "T2",
+      "winRate": 54.07,
+      "pickRate": 12.8,
+      "banRate": 3.98
+    },
+    {
+      "heroId": 155,
+      "name": "艾琳",
+      "heat": "T2",
+      "winRate": 48.39,
+      "pickRate": 11.5,
+      "banRate": 1.96
+    }
+  ]
+}

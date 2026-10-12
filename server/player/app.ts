@@ -10,6 +10,8 @@ import type { Hero } from '../../src/player/model.ts';
 import { recommend, noteFor } from '../../src/player/tactics.ts';
 import { providerConfig } from './provider.ts';
 import type { PlayerStore } from './store.ts';
+import { createOfficialRanks } from '../pro/official.ts';
+import { officialQuerySchema } from '../../src/player/pro/official.ts';
 export class PlayerHttpError extends Error {
   status: number;
   constructor(status: number, message: string) {
@@ -36,8 +38,9 @@ async function body(req: IncomingMessage, limit = 128 * 1024) {
 export function createPlayerApp(
   rootStore: PlayerStore,
   heroes: Hero[],
-  options: { dist?: string } = {},
+  options: { dist?: string; officialRanks?: ReturnType<typeof createOfficialRanks> } = {},
 ) {
+  const officialRanks = options.officialRanks ?? createOfficialRanks();
   const ids = new Set(heroes.map((h) => h.id));
   const validateIds = (values: (number | undefined)[]) => {
     if (values.some((id) => id !== undefined && !ids.has(id)))
@@ -81,6 +84,14 @@ export function createPlayerApp(
       )
         throw new PlayerHttpError(401, '登录已过期，请重新登录');
       const store = user ? rootStore.forUser(user.id) : rootStore;
+      if (method === 'GET' && url.pathname === '/api/official/hero-rank') {
+        const query = officialQuerySchema.parse(Object.fromEntries(url.searchParams));
+        try {
+          return send(200, await officialRanks.get(query));
+        } catch {
+          return send(502, { error: '暂时无法读取官方公开榜，请稍后重试；没有用示例数据代替。' });
+        }
+      }
       if (
         await proRoutes({
           path: url.pathname,
@@ -100,7 +111,7 @@ export function createPlayerApp(
       if (method === 'GET' && url.pathname === '/api/status')
         return send(200, {
           product: '开局 NEXT',
-          version: '0.6.0',
+          version: '0.7.0',
           modelConfigured: Boolean(providerConfig()),
           heroCount: heroes.length,
         });

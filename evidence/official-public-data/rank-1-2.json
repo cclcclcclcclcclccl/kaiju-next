@@ -1,0 +1,94 @@
+{
+  "source": "王者营地官方公开分享榜",
+  "sourceUrl": "https://camp.qq.com/h5/webdist/hero-rank/index.html",
+  "endpoint": "https://kohcamp.qq.com/gametoolbox/hero/getsharepagedetailranklistbyid",
+  "query": {
+    "segment": 1,
+    "position": 2
+  },
+  "sourceUpdatedOn": "2026-10-11",
+  "fetchedAt": "2026-10-12T09:22:55.781Z",
+  "coverage": "partial",
+  "rows": [
+    {
+      "heroId": 142,
+      "name": "安琪拉",
+      "heat": "T0",
+      "winRate": 49.38,
+      "pickRate": 36.4,
+      "banRate": 9.25
+    },
+    {
+      "heroId": 109,
+      "name": "妲己",
+      "heat": "T0",
+      "winRate": 50.08,
+      "pickRate": 31.1,
+      "banRate": 14.34
+    },
+    {
+      "heroId": 108,
+      "name": "墨子",
+      "heat": "T0",
+      "winRate": 51.95,
+      "pickRate": 12.8,
+      "banRate": 64.16
+    },
+    {
+      "heroId": 106,
+      "name": "小乔",
+      "heat": "T0",
+      "winRate": 47.82,
+      "pickRate": 26.9,
+      "banRate": 1.22
+    },
+    {
+      "heroId": 152,
+      "name": "王昭君",
+      "heat": "T0",
+      "winRate": 50.84,
+      "pickRate": 18.5,
+      "banRate": 12.87
+    },
+    {
+      "heroId": 127,
+      "name": "甄姬",
+      "heat": "T2",
+      "winRate": 53.1,
+      "pickRate": 13.6,
+      "banRate": 1.72
+    },
+    {
+      "heroId": 191,
+      "name": "大乔",
+      "heat": "T2",
+      "winRate": 48.41,
+      "pickRate": 9,
+      "banRate": 30.01
+    },
+    {
+      "heroId": 540,
+      "name": "金蝉",
+      "heat": "T2",
+      "winRate": 49.61,
+      "pickRate": 7.7,
+      "banRate": 39.77
+    },
+    {
+      "heroId": 504,
+      "name": "米莱狄",
+      "heat": "T2",
+      "winRate": 47.73,
+      "pickRate": 9.3,
+      "banRate": 26.17
+    },
+    {
+      "heroId": 148,
+      "name": "姜子牙",
+      "heat": "T2",
+      "winRate": 50.81,
+      "pickRate": 10.9,
+      "banRate": 7.25
+    }
+  ]
+}

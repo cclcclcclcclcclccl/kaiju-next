@@ -1,0 +1,348 @@
+{
+  "checkedAt": "2026-10-12T09:22:56.086Z",
+  "page": "https://camp.qq.com/h5/webdist/hero-rank/index.html",
+  "script": "https://camp.qq.com/h5/webdist/hero-rank/static/js/main.807f0b35.js",
+  "scriptSha256": "6d70b4641b309bf20136cd7384651db18eac5dfb87efb6045b77487ff04918df",
+  "endpoint": "https://kohcamp.qq.com/gametoolbox/hero/getsharepagedetailranklistbyid",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "kohDimGender": "2"
+  },
+  "authentication": "none",
+  "requestExample": {
+    "cSystem": null,
+    "h5Get": 1,
+    "rankId": 0,
+    "position": 2,
+    "segment": 3,
+    "eId": null
+  },
+  "summary": [
+    {
+      "segment": 1,
+      "queries": 5,
+      "records": 50,
+      "uniqueHeroes": 40
+    },
+    {
+      "segment": 3,
+      "queries": 5,
+      "records": 50,
+      "uniqueHeroes": 42
+    },
+    {
+      "segment": 4,
+      "queries": 5,
+      "records": 50,
+      "uniqueHeroes": 40
+    }
+  ],
+  "queries": [
+    {
+      "segment": 1,
+      "position": 1,
+      "count": 10,
+      "sourceUpdatedOn": "2026-10-11",
+      "ids": [
+        507,
+        549,
+        123,
+        50702,
+        126,
+        50701,
+        135,
+        517,
+        187,
+        193
+      ]
+    },
+    {
+      "segment": 1,
+      "position": 2,
+      "count": 10,
+      "sourceUpdatedOn": "2026-10-11",
+      "ids": [
+        142,
+        109,
+        108,
+        106,
+        152,
+        127,
+        191,
+        540,
+        504,
+        148
+      ]
+    },
+    {
+      "segment": 1,
+      "position": 3,
+      "count": 10,
+      "sourceUpdatedOn": "2026-10-11",
+      "ids": [
+        169,
+        112,
+        132,
+        174,
+        111,
+        151,
+        196,
+        173,
+        508,
+        155
+      ]
+    },
+    {
+      "segment": 1,
+      "position": 4,
+      "count": 10,
+      "sourceUpdatedOn": "2026-10-11",
+      "ids": [
+        505,
+        108,
+        159,
+        152,
+        184,
+        175,
+        126,
+        577,
+        135,
+        191
+      ]
+    },
+    {
+      "segment": 1,
+      "position": 5,
+      "count": 10,
+      "sourceUpdatedOn": "2026-10-11",
+      "ids": [
+        549,
+        167,
+        107,
+        126,
+        173,
+        517,
+        193,
+        130,
+        170,
+        190
+      ]
+    },
+    {
+      "segment": 3,
+      "position": 1,
+      "count": 10,
+      "sourceUpdatedOn": "2026-10-11",
+      "ids": [
+        180,
+        537,
+        123,
+        507,
+        518,
+        558,
+        135,
+        105,
+        120,
+        193
+      ]
+    },
+    {
+      "segment": 3,
+      "position": 2,
+      "count": 10,
+      "sourceUpdatedOn": "2026-10-11",
+      "ids": [
+        521,
+        108,
+        191,
+        138,
+        106,
+        523,
+        179,
+        190,
+        127,
+        142
+      ]
+    },
+    {
+      "segment": 3,
+      "position": 3,
+      "count": 10,
+      "sourceUpdatedOn": "2026-10-11",
+      "ids": [
+        519,
+        196,
+        151,
+        584,
+        132,
+        174,
+        155,
+        169,
+        133,
+        545
+      ]
+    },
+    {
+      "segment": 3,
+      "position": 4,
+      "count": 10,
+      "sourceUpdatedOn": "2026-10-11",
+      "ids": [
+        577,
+        108,
+        191,
+        585,
+        509,
+        175,
+        171,
+        159,
+        505,
+        135
+      ]
+    },
+    {
+      "segment": 3,
+      "position": 5,
+      "count": 10,
+      "sourceUpdatedOn": "2026-10-11",
+      "ids": [
+        107,
+        180,
+        167,
+        518,
+        558,
+        190,
+        170,
+        193,
+        549,
+        538
+      ]
+    },
+    {
+      "segment": 4,
+      "position": 1,
+      "count": 10,
+      "sourceUpdatedOn": "2026-10-11",
+      "ids": [
+        549,
+        123,
+        180,
+        507,
+        126,
+        135,
+        50702,
+        105,
+        50701,
+        166
+      ]
+    },
+    {
+      "segment": 4,
+      "position": 2,
+      "count": 10,
+      "sourceUpdatedOn": "2026-10-11",
+      "ids": [
+        127,
+        108,
+        106,
+        109,
+        191,
+        142,
+        152,
+        540,
+        138,
+        148
+      ]
+    },
+    {
+      "segment": 4,
+      "position": 3,
+      "count": 10,
+      "sourceUpdatedOn": "2026-10-11",
+      "ids": [
+        169,
+        132,
+        196,
+        174,
+        519,
+        173,
+        151,
+        192,
+        133,
+        112
+      ]
+    },
+    {
+      "segment": 4,
+      "position": 4,
+      "count": 10,
+      "sourceUpdatedOn": "2026-10-11",
+      "ids": [
+        505,
+        159,
+        577,
+        108,
+        191,
+        184,
+        152,
+        540,
+        126,
+        135
+      ]
+    },
+    {
+      "segment": 4,
+      "position": 5,
+      "count": 10,
+      "sourceUpdatedOn": "2026-10-11",
+      "ids": [
+        107,
+        549,
+        180,
+        126,
+        167,
+        173,
+        538,
+        130,
+        131,
+        121
+      ]
+    }
+  ],
+  "tournament": {
+    "page": "https://pvp.qq.com/matchdata/index.html",
+    "endpoint": "https://prod.comp.smoba.qq.com/leaguesite/league/hero/settle_list/open?league_id=20260004",
+    "code": 200,
+    "heroRows": 83
+  },
+  "limitations": [
+    "分享榜每个分段分路返回10条，非全英雄",
+    "未提供游戏版本、统计起止时间和英雄样本量",
+    "没有核实选禁共同分母，未计算BP总率",
+    "没有找到巅峰1800+、万强、千强的匿名官方接口",
+    "官方热度不作为开局自研梯度"
+  ],
+  "rejectedEndpoints": [
+    {
+      "path": "/gametoolbox/hero/getdetailranklistbyid",
+      "returnCode": -30314,
+      "message": "登录态参数不全"
+    },
+    {
+      "path": "/gametoolbox/hero/getheropageinfo",
+      "returnCode": -30314,
+      "message": "登录态参数不全"
+    },
+    {
+      "path": "/gametoolbox/hero/getherofringedata",
+      "returnCode": -30314,
+      "message": "登录态参数不全"
+    },
+    {
+      "path": "/gametoolbox/hero/getheroextrainfo",
+      "returnCode": -30314,
+      "message": "登录态参数不全"
+    }
+  ]
+}

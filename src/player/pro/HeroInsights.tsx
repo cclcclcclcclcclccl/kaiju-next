@@ -7,6 +7,7 @@ import { tierList, latestSnapshot, usableSnapshot } from './analytics.ts';
 import { scopeIssue, scopeLabel } from './statistics.ts';
 import StatHistory from './StatHistory.tsx';
 import { usePro } from './context.tsx';
+import { OfficialHeroStats } from './OfficialStats.tsx';
 export default function HeroInsights({
   hero,
   context,
@@ -41,6 +42,8 @@ export default function HeroInsights({
             ))}
           </select>
         </div>
+        <OfficialHeroStats heroId={hero.id} segment={segment} role={role} />
+        <h4>我的统计快照 · 开局梯度</h4>
         <div className="metric-strip">
           {[
             ['梯度', stat?.tier ?? '待接入'],

@@ -1,0 +1,183 @@
+{
+  "checkedAt": "2026-10-12T11:11:46.103Z",
+  "version": "0.7.0",
+  "core": {
+    "command": "npm test",
+    "passed": 28,
+    "failed": 0
+  },
+  "browser": {
+    "command": "npm run test:e2e",
+    "stats": {
+      "startTime": "2026-10-12T09:26:04.256Z",
+      "duration": 52825.095,
+      "expected": 19,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "tests": [
+      {
+        "title": "tier import is real, keeps provenance and supplies per-hero metrics",
+        "file": "expansion.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "player profile persists real inputs and practice route records a personal timing",
+        "file": "expansion.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "a system loads its core picks and round BP can ban, advance and undo",
+        "file": "expansion.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "real video playback captures a frame and preserves evidence-based review on reopen",
+        "file": "expansion.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "two browser accounts become friends only after acceptance and can use shared pools in BP",
+        "file": "expansion.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "new modules pass automatic accessibility checks and fit a mobile viewport",
+        "file": "expansion.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "hero discovery uses real skills and persists the personal hero pool",
+        "file": "flows.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "draft changes and bans change candidates; a real plan exports and reopens",
+        "file": "flows.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "a match journal drives a real practice target, can be edited and survives refresh",
+        "file": "flows.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "mobile navigation, atlas and draft fit a 390px viewport",
+        "file": "flows.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "accessibility audits cover homepage, draft and mobile hero detail",
+        "file": "flows.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "reopening a saved alternative preserves the chosen candidate",
+        "file": "flows.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "AI feedback displays valid output and discards a response for an outdated lineup",
+        "file": "flows.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "official data stays attributed, partial and distinct from personal tiers across filters and hero details",
+        "file": "official.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "official request failure is visible and can recover without synthetic substitution",
+        "file": "official.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "a player can enter a sourced table without JSON and keep an unpublished sample count unknown",
+        "file": "refinement.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "five accepted and sharing accounts produce a persistent visible squad result that loads into BP",
+        "file": "refinement.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "mixed source metrics stay visible but cannot masquerade as a segment tier or a BP rate",
+        "file": "statistics.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      },
+      {
+        "title": "history shows sourced percentage-point changes, excludes incompatible batches and works on a phone",
+        "file": "statistics.spec.ts",
+        "ok": true,
+        "status": [
+          "expected"
+        ]
+      }
+    ]
+  },
+  "build": {
+    "command": "npm run build",
+    "success": true,
+    "warning": "Existing heroes data chunk is 692 kB; exceeds 500 kB warning threshold."
+  },
+  "finalTypecheck": "npx tsc --noEmit passed after the retry cooldown correction",
+  "format": "npm run format:check passed",
+  "source": "See source-verification.json for real anonymous upstream results; browser fixtures are separate.",
+  "visualReview": "Desktop, mobile and hero screenshots inspected after image load and navigation transitions completed."
+}
