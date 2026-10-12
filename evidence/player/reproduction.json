@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-12T03:16:15.4939738Z",
+  "commit": "5d5be5a79686a92837947f486e3a9921df097a8d",
+  "elapsedSeconds": 33.207,
+  "environment": {
+    "os": "Windows",
+    "node": "v24.16.0",
+    "npm": "11.13.0",
+    "preinstalledNode": true,
+    "existingNpmCache": true,
+    "coldOperatingSystem": false
+  },
+  "steps": [
+    "git archive",
+    "expand to a new directory",
+    "npm ci",
+    "npm run build",
+    "npm test (7 passed)",
+    "start service on isolated port",
+    "GET status, empty workspace and built homepage"
+  ],
+  "result": "passed",
+  "directory": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\.reproduction\\player-20261012-111541",
+  "modelCalls": 0,
+  "note": "Timing uses preinstalled Node/npm and the existing npm cache; not a clean-OS or cold-network benchmark."
+}

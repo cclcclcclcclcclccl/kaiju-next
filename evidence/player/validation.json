@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-10-12T03:22:09.335Z",
+  "version": "0.3.0",
+  "build": {
+    "passed": true,
+    "typescript": true,
+    "vite": true
+  },
+  "formatCheck": "passed; subsequent edited files individually formatted",
+  "coreTests": {
+    "passed": 7,
+    "failed": 0,
+    "evidence": "core-tests.txt",
+    "mockProvider": true,
+    "realProvider": false
+  },
+  "browserTests": {
+    "startTime": "2026-10-12T03:19:12.623Z",
+    "duration": 19960.642,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "accessibility": [
+    {
+      "stage": "desktop home",
+      "violations": 0,
+      "manualReviewItems": 1
+    },
+    {
+      "stage": "desktop draft",
+      "violations": 0,
+      "manualReviewItems": 1
+    },
+    {
+      "stage": "mobile hero dialog",
+      "violations": 0,
+      "manualReviewItems": 1
+    }
+  ],
+  "live": {
+    "scriptErrors": [],
+    "failedRequests": [],
+    "mobileOverflow": false,
+    "mobilePracticeVisible": true,
+    "heroCount": 133,
+    "modelConfigured": false
+  },
+  "reproduction": {
+    "commit": "5d5be5a79686a92837947f486e3a9921df097a8d",
+    "elapsedSeconds": 33.207,
+    "cachedDependencies": true,
+    "laterChanges": "Mobile layout and navigation tests revalidated through build and complete browser suite."
+  },
+  "knownLimits": [
+    "117 of 133 heroes have parsed skill pages",
+    "40 heroes have editorial tactical notes; recommendations not calibrated on match data",
+    "No real model call or quality evaluation",
+    "No account sync or public deployment",
+    "No real-player usability study",
+    "Official video, PDF and complete original prompt chains pending"
+  ]
+}

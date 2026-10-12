@@ -67,7 +67,7 @@ npm run format:check
 
 刷新公开英雄快照：`npm run data:refresh`。这会联网重新获取目录与技能页，并更新数据及失败清单。目录快照固定在仓库中，正常运行不需要重新抓取。
 
-证据入口：[新版验收记录](evidence/player/validation.json)、[资料获取记录](evidence/player/data-fetch.json)、[无障碍检查](evidence/player/accessibility.json)、[本轮实际迭代](evidence/iterations/004-player-rebuild.md)。新的安装计时单独记录，不沿用旧版的 26.189 秒数据。
+证据入口：[新版验收记录](evidence/player/validation.json)、[资料获取记录](evidence/player/data-fetch.json)、[无障碍检查](evidence/player/accessibility.json)、[本轮实际迭代](evidence/iterations/004-player-rebuild.md)。提交 5d5be5a 的新目录实际复现为 **33.207 秒**，含归档、安装、构建、核心测试和启动检查；使用预装 Node/npm 及已有缓存。后续手机布局修改已通过构建和完整浏览器复验。详见 [复现记录](evidence/player/reproduction.json)，不沿用旧方向计时。
 
 ## 结构与参赛进度
 

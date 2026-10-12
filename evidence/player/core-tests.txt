@@ -1,0 +1,19 @@
+
+> kaiju-player-companion@0.3.0 test
+> node --test server/player/*.test.ts
+
+✔ published catalog has unique heroes, source links and known tactical note names (1.7341ms)
+✔ recommendations respect official lane, all ten slots, bans and actual personal pool (2.0133ms)
+✔ new enemy mobility adds a conditional protection reason; unknown teammates are explicit (0.4075ms)
+✔ duplicate picks, fake dates and nonsensical statistics cannot be saved (7.6402ms)
+✔ personal pool and match edits persist across database reopen; a changed target resets completion (28.9522ms)
+✔ API validates input, persists an actual plan, prevents cross-origin writes and reports unconfigured AI (97.6762ms)
+✔ configured coach uses draft context, validates provider output and recovers after failure (41.5698ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 558.0748
