@@ -1,0 +1,43 @@
+{
+  "title": "天元之弈页面观察 · 4位英雄（人工核对）",
+  "segment": "巅峰千强",
+  "patch": "来源未标注版本号（2026-10-11页面）",
+  "startDate": "2026-10-11",
+  "endDate": "2026-10-11",
+  "sourceName": "天元之弈数据站 · 人工核对页面",
+  "sourceUrl": "#小程序://天元之弈/u6nCjaHUkuIRe6u",
+  "denominator": "unknown",
+  "winRateScope": "all",
+  "winRateWindow": "version",
+  "scopeNotes": "2026-10-12现场观察，所选数据日2026-10-11。来源说明千强为QQ双区各分路约1000名；胜率为含更低分段的全量、版本累计数据。选禁分母、场次、版本号未核实。海月来自详情页两位小数，其余来自列表一位小数。仅4位局部记录，不能代表完整榜单。",
+  "rows": [
+    {
+      "heroId": 521,
+      "role": "中路",
+      "winRate": 50.32,
+      "pickRate": 5.93,
+      "banRate": 86.83
+    },
+    {
+      "heroId": 525,
+      "role": "游走",
+      "winRate": 52.1,
+      "pickRate": 11.7,
+      "banRate": 84.5
+    },
+    {
+      "heroId": 509,
+      "role": "游走",
+      "winRate": 53.9,
+      "pickRate": 7.9,
+      "banRate": 87
+    },
+    {
+      "heroId": 577,
+      "role": "游走",
+      "winRate": 51.1,
+      "pickRate": 32.3,
+      "banRate": 48.6
+    }
+  ]
+}

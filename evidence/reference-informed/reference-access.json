@@ -1,0 +1,95 @@
+{
+  "observedOn": "2026-10-12",
+  "reference": "天元之弈数据站 / 天元之弈助手",
+  "shareToken": "#小程序://天元之弈/u6nCjaHUkuIRe6u",
+  "openedSuccessfully": true,
+  "userOpenedWindow": true,
+  "pagesReviewed": [
+    "首页",
+    "英雄数据及更多筛选",
+    "梯度榜可见部分",
+    "海月详情",
+    "海月历史趋势与调整标记",
+    "海月克制/组合可见部分",
+    "工具目录",
+    "战力计算器及说明",
+    "OCR英雄推荐分路选择页"
+  ],
+  "dataDateVisible": "2026-10-11",
+  "updatedAtVisible": "2026-10-12 10:36",
+  "sourceDeclarations": {
+    "top1000": "QQ双区各分路约1000名",
+    "winRateTime": "版本累计",
+    "winRatePopulation": "全量数据，含更低分段样本"
+  },
+  "powerExample": {
+    "performance": 6100,
+    "peakScore": 2100,
+    "challengeWins": 0,
+    "challengeOpeningPeak": 2100,
+    "displayedPeakCoefficientPercent": 206.3,
+    "displayedPerChallengeWinPercent": 1.6,
+    "displayedPower": 12584,
+    "fullFormulaVerified": false,
+    "officialClientVerified": false
+  },
+  "bpScreenshotRecognition": {
+    "entryVisible": true,
+    "uploadedAnyFile": false,
+    "effectivenessTested": false
+  },
+  "method": "Restored the user-opened target window; captured only its bounds with DPI-aware screen capture, cropped to relevant page regions. PrintWindow initially returned black. No messages or chat access.",
+  "artifacts": [
+    {
+      "file": "references/mini-bp.png",
+      "sha256": "8856ed62abc8d3295ebb869e4beb78e7a09b95ae4355a7c3d32f127ba35479f5"
+    },
+    {
+      "file": "references/mini-data-loaded.png",
+      "sha256": "9c630a0c2a2d209139ac0e2343594807d11406bda2ecc0a9e41b08abe3a51957"
+    },
+    {
+      "file": "references/mini-data.png",
+      "sha256": "60e337fdd3f4f2a14b583479b524803cb68494d51478c1e8ac7bd445b1acb884"
+    },
+    {
+      "file": "references/mini-extra.png",
+      "sha256": "60dad0b4cf124a6530c14348a95bbfdb93c94dbaf076c878f0947e2934224537"
+    },
+    {
+      "file": "references/mini-hero-bottom.png",
+      "sha256": "001d14d69918b042d987d98911c8502208429c5a9ba0724f9b98d81161ec276c"
+    },
+    {
+      "file": "references/mini-hero-trend.png",
+      "sha256": "6985ab0277ee2918e58e2e45b97c854b393b1a75fb3d6100b6ae8974dccbe159"
+    },
+    {
+      "file": "references/mini-power-rules.png",
+      "sha256": "44e1efe7a13cf1b55afcb585a83501aa813692399dd6d140c9c75fbd2881326a"
+    },
+    {
+      "file": "references/mini-power.png",
+      "sha256": "b1a662b09816bc60e2e0a70b2fd10cb2c8b46aaf42ba8740b774936c3bcf65f5"
+    },
+    {
+      "file": "references/mini-tier-detail.png",
+      "sha256": "f000f52e8b09fd0bf3875416efeff77a5ab31d91c3c8e3f8af89ff4fbb8ef735"
+    },
+    {
+      "file": "references/mini-tiers-loaded.png",
+      "sha256": "fcf1afe152c12cde697ddfbcd9637bc554a0c2f0d565fa248cd699616c11a130"
+    },
+    {
+      "file": "references/mini-tools.png",
+      "sha256": "ad5f789e696df33bf477ef1e5e4dab5ec07856d84d9d0648d4def82c19373e80"
+    }
+  ],
+  "boundaries": [
+    "No full tier formula was obtained from the inspected sections.",
+    "No authorized automatic export or API obtained.",
+    "Observed relationship metrics are not validated causal counter effects.",
+    "Only four manually checked rows were imported locally; partial observation, no fabricated sample counts.",
+    "Native mobile 王者营地 remains uninspected; prior public web research remains in evidence/refinement."
+  ]
+}

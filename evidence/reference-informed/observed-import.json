@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-12T08:52:37.249Z",
+  "destination": "Local guest workspace at 127.0.0.1:4318",
+  "snapshotId": "a8a1f6c2-ef7c-49a4-9291-2583a58752e6",
+  "rows": 4,
+  "source": "examples/tianyuan-observed-2026-10-11.json",
+  "screenshots": [
+    "references/mini-data-loaded.png",
+    "references/mini-tier-detail.png",
+    "references/mini-data.png"
+  ],
+  "manualTranscription": true,
+  "automatedFeed": false,
+  "fieldsNotPublished": [
+    "games",
+    "patch identifier",
+    "pick-ban denominator"
+  ],
+  "dataDate": "2026-10-11",
+  "observedOn": "2026-10-12",
+  "note": "Four factual observations from visible pages; not a complete ranking. No games or coefficients invented. Existing snapshots retained."
+}

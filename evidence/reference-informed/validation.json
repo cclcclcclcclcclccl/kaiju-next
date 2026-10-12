@@ -1,0 +1,135 @@
+{
+  "recordedAt": "2026-10-12T08:55:21.262Z",
+  "version": "0.6.0",
+  "sourceRevision": "e5cdbf2388d53db2175fa1ba1129e0694b6985ba",
+  "checks": {
+    "core": {
+      "command": "npm test",
+      "passed": 24,
+      "failed": 0
+    },
+    "browser": {
+      "command": "npm run test:e2e",
+      "startTime": "2026-10-12T08:40:19.321Z",
+      "duration": 51772.971,
+      "expected": 17,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "evidence": "browser-results.json"
+    },
+    "focused": {
+      "command": "npx playwright test tests/player/statistics.spec.ts --reporter=list",
+      "passed": 2,
+      "failed": 0,
+      "reason": "Rechecked readable mobile chart after CSS adjustment."
+    },
+    "build": {
+      "passed": true,
+      "warnings": [
+        "Hero text chunk 692 KB remains; no lazy detail loading.",
+        "Upstream Zod PURE annotation warning."
+      ]
+    },
+    "format": {
+      "passed": true
+    },
+    "accessibility": {
+      "states": 11,
+      "violations": 0,
+      "incomplete": [
+        {
+          "file": "accessibility-core.json",
+          "page": "desktop home",
+          "count": 1
+        },
+        {
+          "file": "accessibility-core.json",
+          "page": "desktop draft",
+          "count": 1
+        },
+        {
+          "file": "accessibility-core.json",
+          "page": "mobile hero dialog",
+          "count": 1
+        },
+        {
+          "file": "accessibility.json",
+          "page": "分段梯度",
+          "count": 1
+        },
+        {
+          "file": "accessibility.json",
+          "page": "玩家档案",
+          "count": 1
+        },
+        {
+          "file": "accessibility.json",
+          "page": "体系练习",
+          "count": 1
+        },
+        {
+          "file": "accessibility.json",
+          "page": "录像复盘",
+          "count": 1
+        },
+        {
+          "file": "accessibility.json",
+          "page": "好友与组队",
+          "count": 1
+        },
+        {
+          "file": "accessibility-import.json",
+          "page": null,
+          "count": 1
+        },
+        {
+          "file": "accessibility-squad.json",
+          "page": null,
+          "count": 1
+        },
+        {
+          "file": "accessibility-history.json",
+          "page": null,
+          "count": 1
+        }
+      ],
+      "fullCertification": false
+    },
+    "live": {
+      "status": {
+        "product": "开局 NEXT",
+        "version": "0.6.0",
+        "modelConfigured": false,
+        "heroCount": 133
+      },
+      "states": 5,
+      "errors": [],
+      "overflow": false,
+      "httpFailures": [],
+      "apiWrites": 0,
+      "evidence": "live-check.json"
+    },
+    "manualObservationImport": {
+      "rows": 4,
+      "checkedInBrowser": true,
+      "evidence": "observed-import.json"
+    }
+  },
+  "testedBoundaries": [
+    "Mixed/cumulative/unknown scopes cannot acquire official tiers, intervals or BP meta weights even with large games counts.",
+    "Unknown pick-ban denominator keeps raw metrics and withholds BP sum.",
+    "History rejects incompatible versions, sources, segments, definitions and durations.",
+    "Same-day imports are deduplicated and history is bounded to thirty observations.",
+    "New browser scenarios use independent test accounts without blanket deletion."
+  ],
+  "knownLimits": [
+    "Scope is user-declared, not independently authenticated.",
+    "Tier thresholds, BP weights and five-player recommendations remain uncalibrated against real gameplay.",
+    "History is based on user imports; no automatic feed or patch timeline.",
+    "The four real observed rows are only a partial snapshot, not a representative full list.",
+    "No verified piecewise power formula, official account sync, real vision service or whole-match analysis.",
+    "No public multi-device deployment or final competition submission."
+  ],
+  "checksAfterFullRegression": "Mobile chart labels, screenshot framing and form layout received final CSS improvements; focused browser tests, build, format and read-only live capture passed. No ranking or API logic changed after the complete regression."
+}
