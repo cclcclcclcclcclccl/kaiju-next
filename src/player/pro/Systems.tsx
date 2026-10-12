@@ -1,3 +1,4 @@
+import Squad from './Squad.tsx';
 import { useState } from 'react';
 import { ArrowRight, Check, BookOpen } from 'lucide-react';
 import { SYSTEMS } from './systems.ts';
@@ -16,6 +17,7 @@ export default function Systems({ pool, onLoad }: { pool: Pool; onLoad: (draft: 
           <p>先看英雄池是否覆盖，再练共同目标与沟通。</p>
         </div>
       </div>
+      <Squad pool={pool} onLoad={onLoad} />
       <div className="systems-grid">
         {SYSTEMS.map((s) => {
           const count = s.heroes.filter((n) =>

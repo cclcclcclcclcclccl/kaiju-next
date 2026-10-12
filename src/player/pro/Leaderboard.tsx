@@ -1,9 +1,10 @@
+import StatImport from './StatImport.tsx';
 import { useMemo, useState } from 'react';
 import { ArrowUpRight, Download, Upload, Info } from 'lucide-react';
 import { heroes, heroById } from '../catalog.ts';
 import { ROLES } from '../model.ts';
 import type { Hero } from '../model.ts';
-import { SEGMENTS, snapshotSchema } from './model.ts';
+import { SEGMENTS } from './model.ts';
 import type { StatSnapshot } from './model.ts';
 import { tierList, sortedSnapshots, usableSnapshot } from './analytics.ts';
 import { usePro } from './context.tsx';
@@ -18,10 +19,10 @@ export default function Leaderboard({
   const [segment, setSegment] = useState<string>(SEGMENTS[0]),
     [role, setRole] = useState<string>('中路'),
     [selected, setSelected] = useState(''),
+    [query, setQuery] = useState(''),
+    [order, setOrder] = useState('tier'),
     [importing, setImporting] = useState(false),
-    [raw, setRaw] = useState(''),
-    [error, setError] = useState(''),
-    [busy, setBusy] = useState(false),
+    [sourceMessage, setSourceMessage] = useState(''),
     [method, setMethod] = useState(false),
     [demo, setDemo] = useState(false);
   const snapshots = sortedSnapshots(data.snapshots, segment),
@@ -52,25 +53,23 @@ export default function Leaderboard({
     }),
     [role],
   );
-  const shown = demo ? example : snapshot,
-    ranking = shown ? tierList(shown, role) : [];
-  const save = async () => {
-    setBusy(true);
-    setError('');
-    try {
-      const parsed = snapshotSchema.parse(JSON.parse(raw));
-      await api('/pro/snapshot', parsed);
-      await refresh();
-      setSegment(parsed.segment);
-      setSelected('');
-      setDemo(false);
-      setImporting(false);
-    } catch (e) {
-      setError(e instanceof SyntaxError ? '文件不是有效 JSON' : (e as Error).message);
-    } finally {
-      setBusy(false);
-    }
-  };
+  const shown = demo ? example : snapshot;
+  const allRanking = shown ? tierList(shown, role) : [];
+  const ranking = allRanking
+    .filter((r) => !query || heroById(r.row.heroId)?.name.includes(query.trim()))
+    .sort((a, b) =>
+      order === 'tier'
+        ? Number(b.tier.startsWith('T')) - Number(a.tier.startsWith('T')) ||
+          b.score - a.score ||
+          b.row.winRate - a.row.winRate
+        : order === 'win'
+          ? b.row.winRate - a.row.winRate
+          : order === 'pick'
+            ? b.row.pickRate - a.row.pickRate
+            : order === 'ban'
+              ? b.row.banRate - a.row.banRate
+              : b.bp - a.bp,
+    );
   const template = () =>
     download(
       '开局-统计导入模板.json',
@@ -110,7 +109,6 @@ export default function Leaderboard({
         <button
           className="btn primary"
           onClick={() => {
-            setError('');
             setImporting(true);
           }}
         >
@@ -154,6 +152,29 @@ export default function Leaderboard({
             ))}
           </select>
         </label>
+        <label>
+          找英雄
+          <input
+            aria-label="搜索梯度英雄"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="英雄名称"
+          />
+        </label>
+        <label>
+          排序依据
+          <select
+            aria-label="统计排序依据"
+            value={order}
+            onChange={(e) => setOrder(e.target.value)}
+          >
+            <option value="tier">综合梯度</option>
+            <option value="win">胜率</option>
+            <option value="pick">出场率</option>
+            <option value="ban">禁用率</option>
+            <option value="bp">BP 率</option>
+          </select>
+        </label>
         <button className="btn secondary" onClick={() => setMethod(true)}>
           <Info size={16} />
           怎么算的
@@ -175,10 +196,36 @@ export default function Leaderboard({
           <span>
             {shown.startDate} 至 {shown.endDate} · {shown.sourceName}
           </span>
+          {!demo &&
+            (/^https?:/.test(shown.sourceUrl) ? (
+              <a href={shown.sourceUrl} target="_blank" rel="noreferrer">
+                核对来源 <ArrowUpRight size={13} />
+              </a>
+            ) : (
+              <button
+                className="text-btn"
+                onClick={async () => {
+                  try {
+                    await navigator.clipboard.writeText(shown.sourceUrl);
+                    setSourceMessage('小程序口令已复制，请在微信中打开核对');
+                  } catch {
+                    setSourceMessage(shown.sourceUrl);
+                  }
+                }}
+              >
+                复制小程序来源口令
+              </button>
+            ))}
           {!demo && (
-            <a href={shown.sourceUrl} target="_blank" rel="noreferrer">
-              核对来源 <ArrowUpRight size={13} />
-            </a>
+            <button
+              className="text-btn"
+              onClick={() => {
+                const { id, importedAt, ...input } = shown;
+                download('开局-统计快照.json', JSON.stringify(input, null, 2));
+              }}
+            >
+              导出这批数据
+            </button>
           )}
         </div>
       )}
@@ -190,15 +237,20 @@ export default function Leaderboard({
       )}
       {shown && (
         <p className="data-caption">
-          当前比较覆盖本分路 {ranking.length} 位英雄，其中{' '}
-          {ranking.filter((r) => r.tier.startsWith('T')).length}{' '}
+          当前比较覆盖本分路 {allRanking.length} 位英雄，其中{' '}
+          {allRanking.filter((r) => r.tier.startsWith('T')).length}{' '}
           位满足梯度样本要求。未覆盖的英雄不能据此判为弱势。
+        </p>
+      )}
+      {sourceMessage && (
+        <p role="status" className="data-caption">
+          {sourceMessage}
         </p>
       )}
       {!shown ? (
         <Empty
           title="这个分段还没有可靠统计"
-          description="目前没有取得可直接接入的分段数据源。可导入有出处的 JSON 快照；缺失值保持未知，不替你填造榜单。"
+          description="目前没有取得可直接接入的分段数据源。可以录入有出处的统计表，或粘贴已有表格；缺失值保持未知，不替你填造榜单。"
           action={
             <button className="btn secondary" onClick={template}>
               <Download size={15} />
@@ -246,9 +298,13 @@ export default function Leaderboard({
                     </button>
                   </td>
                   <td>
-                    <strong className="gold">{r.score.toFixed(1)}</strong>
+                    <strong className="gold">
+                      {r.tier.startsWith('T') ? r.score.toFixed(1) : '—'}
+                    </strong>
                     <small>
-                      {r.parts.map((p) => p.label + Math.round(p.weight * 100) + '%').join(' · ')}
+                      {r.tier.startsWith('T')
+                        ? r.parts.map((p) => p.label + Math.round(p.weight * 100) + '%').join(' · ')
+                        : '样本未满足梯度要求，可按原始指标排序'}
                     </small>
                   </td>
                   <td>{r.row.winRate.toFixed(2)}%</td>
@@ -286,7 +342,7 @@ export default function Leaderboard({
               5%；只有同批次全部合格英雄均提供该信号时才纳入，缺项则整项停用并统一归一化权重。各项先转为合格样本的相对百分位。
             </p>
             <p>
-              T0 ≥85，T1 ≥65，T2 ≥40，T3 ≥20，其余 T4。至少需要本分路至少 5 个英雄均达到 500
+              T0 ≥85，T1 ≥65，T2 ≥40，T3 ≥20，其余 T4。需要本分路至少 5 个英雄均达到 500
               场，才显示梯度。只代表当前快照覆盖范围；超过 14 天的统计退出 BP
               评分。阈值、时效与权重是项目设定，尚未经实战效果校准。
             </p>
@@ -297,50 +353,18 @@ export default function Leaderboard({
         </Modal>
       )}
       {importing && (
-        <Modal title="导入带出处的分段统计" onClose={() => setImporting(false)} wide>
-          <p className="dialog-lead">
-            导入一个分段、一个版本、一个时间范围的快照。百分比填写 0–100；没有场次数就省略 games。
-          </p>
-          <div className="pro-actions">
-            <button className="btn secondary" onClick={template}>
-              下载模板
-            </button>
-            <label className="btn secondary">
-              选择 JSON
-              <input
-                type="file"
-                accept=".json,application/json"
-                onChange={async (e) => {
-                  const f = e.target.files?.[0];
-                  if (f) {
-                    if (f.size > 1024 * 1024) {
-                      setError('文件不能超过 1 MB');
-                      return;
-                    }
-                    setRaw(await f.text());
-                  }
-                }}
-              />
-            </label>
-          </div>
-          <label className="field">
-            数据内容
-            <textarea
-              aria-label="统计 JSON"
-              value={raw}
-              rows={12}
-              onChange={(e) => setRaw(e.target.value)}
-            />
-          </label>
-          {error && (
-            <p className="error-message" role="alert">
-              {error}
-            </p>
-          )}
-          <button className="btn primary" disabled={busy || !raw} onClick={save}>
-            {busy ? '核验并保存…' : '核验并导入'}
-          </button>
-        </Modal>
+        <StatImport
+          segment={segment}
+          role={role}
+          onClose={() => setImporting(false)}
+          onSaved={async (next) => {
+            await refresh();
+            setSegment(next);
+            setSelected('');
+            setDemo(false);
+            setImporting(false);
+          }}
+        />
       )}
     </>
   );

@@ -623,3 +623,156 @@
     padding: 13px 18px;
   }
 }
+.stat-entry-list {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0;
+}
+.stat-entry {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr repeat(4, 0.8fr) 32px;
+  gap: 8px;
+  align-items: end;
+  padding: 12px;
+  background: #101925;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.stat-entry label {
+  min-width: 0;
+  display: grid;
+  gap: 7px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.stat-entry input,
+.stat-entry select {
+  width: 100%;
+  min-width: 0;
+  padding: 9px 7px;
+}
+.import-paste {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+  margin: 18px 0;
+}
+.import-paste summary {
+  cursor: pointer;
+  color: var(--gold);
+  font-size: 13px;
+}
+.import-paste textarea {
+  width: 100%;
+  margin: 12px 0;
+}
+.import-preview {
+  margin: 18px 0;
+  padding: 18px;
+}
+.squad-lab {
+  margin: 25px 0;
+}
+.squad-lab h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+.squad-lab > .muted {
+  margin: 17px 0;
+  line-height: 1.8;
+  font-size: 13px;
+}
+.squad-members {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.squad-members label {
+  border: 1px solid var(--line);
+  padding: 12px;
+  border-radius: 8px;
+}
+.squad-members small {
+  color: var(--muted);
+  font-size: 11px;
+}
+.squad-matches {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+.squad-matches article {
+  padding: 16px;
+  background: #101925;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+.squad-matches h3 {
+  font-size: 14px;
+}
+.squad-matches .section-title {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.squad-matches span {
+  font-size: 11px;
+}
+.squad-matches p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 12px 0;
+}
+.squad-matches small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.8;
+}
+.squad-plans {
+  display: grid;
+  gap: 14px;
+}
+.squad-plans .section-title span {
+  color: var(--muted);
+  font-size: 12px;
+}
+.squad-assignments {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+.squad-assignments small {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 11px;
+}
+@media (max-width: 760px) {
+  .stat-entry {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .stat-entry .icon-btn {
+    justify-self: end;
+    grid-column: 2;
+  }
+  .squad-matches,
+  .squad-assignments {
+    grid-template-columns: 1fr;
+  }
+  .squad-lab > .section-title,
+  .squad-plans .section-title {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .squad-lab h2 {
+    line-height: 1.6;
+  }
+  .squad-lab {
+    padding: 18px;
+  }
+}

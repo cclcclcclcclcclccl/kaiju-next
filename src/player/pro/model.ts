@@ -40,8 +40,20 @@ export const snapshotSchema = z
     sourceName: z.string().trim().min(1).max(80),
     sourceUrl: z
       .string()
-      .url()
-      .refine((v) => /^https?:/.test(v)),
+      .trim()
+      .max(600)
+      .refine((v) => {
+        if (v.startsWith('#小程序://')) {
+          const [name, token, ...rest] = v.slice(7).split('/');
+          return !!name && /^[A-Za-z0-9]+$/.test(token ?? '') && rest.length === 0;
+        }
+        try {
+          const u = new URL(v);
+          return ['http:', 'https:'].includes(u.protocol) && !u.username && !u.password;
+        } catch {
+          return false;
+        }
+      }, '请填写有效网页链接或微信小程序分享口令'),
     denominator: z.literal('match'),
     rows: z.array(statRowSchema).min(1).max(1000),
   })

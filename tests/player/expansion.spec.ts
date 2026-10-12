@@ -25,6 +25,7 @@ test('tier import is real, keeps provenance and supplies per-hero metrics', asyn
   await page.locator('nav').getByRole('button', { name: '分段梯度', exact: true }).click();
   await expect(page.getByText('这个分段还没有可靠统计')).toBeVisible();
   await page.getByRole('button', { name: '导入统计快照' }).click();
+  await page.getByRole('button', { name: 'JSON 导入', exact: true }).click();
   const rows = heroes
     .filter((h) => h.roles.includes('中路'))
     .slice(0, 8)
@@ -229,6 +230,6 @@ test('new modules pass automatic accessibility checks and fit a mobile viewport'
       name,
     ).toBe(true);
   }
-  mkdirSync('evidence/expansion', { recursive: true });
-  writeFileSync('evidence/expansion/accessibility.json', JSON.stringify(audits, null, 2));
+  mkdirSync('evidence/refinement', { recursive: true });
+  writeFileSync('evidence/refinement/accessibility.json', JSON.stringify(audits, null, 2));
 });
