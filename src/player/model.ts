@@ -11,7 +11,17 @@ export type Hero = {
   portrait: string;
   cover: string;
   source: string;
-  skills: { name: string; description: string }[];
+  skills: { name: string; description: string; tip?: string; cooldown?: string; cost?: string }[];
+  difficulty?: number | null;
+  relations?: { type: string; heroId: number; reason: string; source: string }[];
+  guide?: {
+    play: string;
+    against: string;
+    teamfight: string;
+    leveling: string;
+    buildNotes: string[];
+    source: string;
+  } | null;
 };
 const heroId = z.number().int().positive().max(10000);
 export const poolSchema = z
@@ -30,6 +40,11 @@ const side = z
 export const draftSchema = z
   .object({
     role: z.enum(ROLES),
+    preference: z.enum(['comfort', 'balanced', 'meta']).optional(),
+    segment: z
+      .enum(['大众分段', '顶端排位', '巅峰1350+', '巅峰1800+', '巅峰万强', '巅峰千强'])
+      .optional(),
+    memberId: z.string().uuid().optional(),
     allies: side,
     enemies: side,
     banned: z.array(heroId).max(10),

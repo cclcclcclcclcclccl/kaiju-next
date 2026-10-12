@@ -1,3 +1,5 @@
+import { latestSnapshot } from '../../src/player/pro/analytics.ts';
+import { proRoutes } from '../pro/routes.ts';
 import { createServer } from 'node:http';
 import type { IncomingMessage } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
@@ -5,7 +7,7 @@ import { resolve, extname, sep } from 'node:path';
 import { z, ZodError } from 'zod';
 import { draftSchema, matchSchema, poolSchema } from '../../src/player/model.ts';
 import type { Hero } from '../../src/player/model.ts';
-import { recommend, notes } from '../../src/player/tactics.ts';
+import { recommend, noteFor } from '../../src/player/tactics.ts';
 import { providerConfig } from './provider.ts';
 import type { PlayerStore } from './store.ts';
 export class PlayerHttpError extends Error {
@@ -15,14 +17,14 @@ export class PlayerHttpError extends Error {
     this.status = status;
   }
 }
-async function body(req: IncomingMessage) {
+async function body(req: IncomingMessage, limit = 128 * 1024) {
   if (!req.headers['content-type']?.startsWith('application/json'))
     throw new PlayerHttpError(415, '请使用 JSON 提交');
   let size = 0;
   const chunks: Buffer[] = [];
   for await (const chunk of req) {
     size += chunk.length;
-    if (size > 128 * 1024) throw new PlayerHttpError(413, '内容不能超过 128 KB');
+    if (size > limit) throw new PlayerHttpError(413, '提交内容过大，请减少图片或记录数量');
     chunks.push(chunk);
   }
   try {
@@ -32,7 +34,7 @@ async function body(req: IncomingMessage) {
   }
 }
 export function createPlayerApp(
-  store: PlayerStore,
+  rootStore: PlayerStore,
   heroes: Hero[],
   options: { dist?: string } = {},
 ) {
@@ -54,7 +56,7 @@ export function createPlayerApp(
     res.setHeader('Referrer-Policy', 'no-referrer');
     res.setHeader(
       'Content-Security-Policy',
-      "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://game.gtimg.cn; connect-src 'self'; object-src 'none'; frame-ancestors 'none'",
+      "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://game.gtimg.cn; media-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'none'",
     );
     try {
       const host = req.headers.host ?? '';
@@ -69,10 +71,36 @@ export function createPlayerApp(
         throw new PlayerHttpError(403, '请求来源不匹配');
       const url = new URL(req.url ?? '/', 'http://' + host),
         method = req.method;
+      const token = req.headers.authorization?.replace(/^Bearer /, '') ?? '';
+      const user = token ? rootStore.identity.accountByToken(token) : null;
+      if (
+        token &&
+        !user &&
+        !url.pathname.startsWith('/api/auth/') &&
+        url.pathname.startsWith('/api/')
+      )
+        throw new PlayerHttpError(401, '登录已过期，请重新登录');
+      const store = user ? rootStore.forUser(user.id) : rootStore;
+      if (
+        await proRoutes({
+          path: url.pathname,
+          method,
+          req,
+          res,
+          root: rootStore,
+          store,
+          user,
+          token,
+          heroes,
+          body,
+          send,
+        })
+      )
+        return;
       if (method === 'GET' && url.pathname === '/api/status')
         return send(200, {
           product: '开局 NEXT',
-          version: '0.3.0',
+          version: '0.4.0',
           modelConfigured: Boolean(providerConfig()),
           heroCount: heroes.length,
         });
@@ -134,9 +162,22 @@ export function createPlayerApp(
           data.heroId,
         ]);
         const hero = heroes.find((h) => h.id === data.heroId)!;
-        const recommendation = recommend(data.draft, heroes).find((r) => r.hero.id === hero.id);
+        const pro = store.pro();
+        const friend =
+          data.draft.memberId && user
+            ? rootStore.identity
+                .friends(user.id)
+                .find((f) => f.user.id === data.draft.memberId && f.shared)
+            : null;
+        if (data.draft.memberId && !friend)
+          throw new PlayerHttpError(403, '该好友未授权分享英雄池');
+        const effective = friend ? { ...data.draft, pool: friend.pool } : data.draft;
+        const recommendation = recommend(effective, heroes, {
+          profile: friend?.profile ?? pro.profile,
+          snapshot: latestSnapshot(pro.snapshots, data.draft.segment ?? '大众分段'),
+        }).find((r) => r.hero.id === hero.id);
         if (!recommendation) throw new PlayerHttpError(400, '阵容已变化，请重新选择当前候选');
-        const note = notes[hero.name];
+        const note = noteFor(hero);
         const summary = [
           hero.name + ' · ' + data.draft.role,
           ...recommendation.reasons,

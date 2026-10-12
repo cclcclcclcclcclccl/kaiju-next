@@ -1,6 +1,6 @@
 {
   "name": "kaiju-player-companion",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -12,7 +12,7 @@
     "build": "tsc --noEmit && vite build",
     "test": "node --test server/player/*.test.ts",
     "test:e2e": "playwright test",
-    "format:check": "prettier --check \"src/player/**/*.{ts,tsx,css}\" \"server/player/**/*.ts\" \"tests/player/**/*.ts\" \"scripts/player/*.mjs\" \"*.{ts,json}\"",
+    "format:check": "prettier --check \"src/player/**/*.{ts,tsx,css}\" \"server/{player,pro}/**/*.ts\" \"tests/player/**/*.ts\" \"scripts/player/*.mjs\" \"*.{ts,json}\"",
     "data:refresh": "node scripts/player/refresh-data.mjs"
   },
   "dependencies": {

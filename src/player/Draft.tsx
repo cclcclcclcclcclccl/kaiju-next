@@ -1,3 +1,8 @@
+import { latestSnapshot, usableSnapshot } from './pro/analytics.ts';
+import { usePro } from './pro/context.tsx';
+import { SEGMENTS } from './pro/model.ts';
+import BpRounds from './pro/BpRounds.tsx';
+import type { SocialData } from './pro/Social.tsx';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   Plus,
@@ -60,7 +65,23 @@ export default function DraftPage({
     [aiError, setAiError] = useState(''),
     [settings, setSettings] = useState(false);
   const epoch = useRef(0);
-  const recommendations = useMemo(() => recommend(draft, heroes), [draft]);
+  const { data: pro } = usePro();
+  const [social, setSocial] = useState<SocialData>({ user: null, friends: [] });
+  useEffect(() => {
+    api<SocialData>('/social')
+      .then(setSocial)
+      .catch(() => {});
+  }, []);
+  const member = social.friends.find((f) => f.user.id === draft.memberId && f.shared);
+  const snapshot = latestSnapshot(pro.snapshots, draft.segment ?? '大众分段');
+  const recommendations = useMemo(
+    () =>
+      recommend(member ? { ...draft, pool: member.pool } : draft, heroes, {
+        profile: member?.profile ?? pro.profile,
+        snapshot,
+      }),
+    [draft, member, pro.profile, snapshot],
+  );
   const current = recommendations.find((r) => r.hero.id === active) ?? recommendations[0];
   const allies = Object.entries(draft.allies)
     .filter(([role, id]) => role !== draft.role && id)
@@ -75,7 +96,7 @@ export default function DraftPage({
     setAi(null);
     setAiError('');
     setAiBusy(false);
-  }, [draft, active]);
+  }, [draft, active, pro.profile, snapshot]);
   const taken = new Set([
     ...Object.values(draft.allies),
     ...Object.values(draft.enemies),
@@ -169,6 +190,64 @@ export default function DraftPage({
           <RefreshCw size={15} />
           载入教学阵容
         </button>
+      </div>
+      <BpRounds draft={draft} onChange={onChange} />
+      <div className="pro-toolbar">
+        <label>
+          选人侧重
+          <select
+            aria-label="选人侧重"
+            value={draft.preference ?? 'balanced'}
+            onChange={(e) =>
+              onChange({ ...draft, preference: e.target.value as 'comfort' | 'balanced' | 'meta' })
+            }
+          >
+            <option value="comfort">更重熟练度</option>
+            <option value="balanced">均衡选择</option>
+            <option value="meta">更重版本</option>
+          </select>
+        </label>
+        <label>
+          参考分段
+          <select
+            aria-label="BP 参考分段"
+            value={draft.segment ?? '大众分段'}
+            onChange={(e) =>
+              onChange({ ...draft, segment: e.target.value as (typeof SEGMENTS)[number] })
+            }
+          >
+            {SEGMENTS.map((s) => (
+              <option key={s}>{s}</option>
+            ))}
+          </select>
+        </label>
+        <label>
+          为谁选英雄
+          <select
+            aria-label="为谁选英雄"
+            value={draft.memberId ?? ''}
+            onChange={(e) => onChange({ ...draft, memberId: e.target.value || undefined })}
+          >
+            <option value="">我自己</option>
+            {social.friends
+              .filter((f) => f.shared)
+              .map((f) => (
+                <option key={f.id} value={f.user.id}>
+                  {f.user.name} · 已共享
+                </option>
+              ))}
+          </select>
+        </label>
+        <span className="muted">
+          {snapshot
+            ? snapshot.patch +
+              ' · ' +
+              snapshot.endDate +
+              (usableSnapshot(snapshot)
+                ? ' · 请核对当前游戏版本'
+                : ' · 统计过旧或日期异常，已停用版本权重')
+            : '此分段未接入统计，版本权重自动让给已知依据'}
+        </span>
       </div>
       <div className="draft-controls">
         <label>
@@ -343,7 +422,7 @@ export default function DraftPage({
       {!recommendations.length ? (
         <Empty
           title="当前没有符合条件的候选"
-          description="可能是英雄池、禁用或已选英雄限制了范围。取消“只从我的英雄池里选”，或添加带战术笔记的本位置英雄。"
+          description="可能是英雄池、禁用或已选英雄限制了范围。取消“只从我的英雄池里选”，或添加这个位置的常用英雄。"
         />
       ) : (
         <>
@@ -365,8 +444,17 @@ export default function DraftPage({
                     {current?.hero.id === r.hero.id && <Check size={12} />}
                   </span>
                 </div>
+                {r.fit && (
+                  <p className="fit-summary">
+                    个人准备度 {r.fit.mastery.score} · {r.fit.mastery.confidence}
+                    <br />
+                    {r.fit.meta === null
+                      ? '版本强度：数据不足'
+                      : '分段梯度 ' + r.fit.stat?.tier + ' · ' + draft.segment}
+                  </p>
+                )}
                 <div className="chips">
-                  {r.reasons.slice(0, 3).map((reason) => (
+                  {r.reasons.slice(0, 4).map((reason) => (
                     <span key={reason}>{reason}</span>
                   ))}
                 </div>
@@ -454,8 +542,8 @@ export default function DraftPage({
         </>
       )}
       <p className="data-caption">
-        当前为 {Object.keys(notes).length}{' '}
-        位英雄整理了战术笔记；其余英雄可以查资料、加入阵容，暂不参与候选排序。所有建议为可解释规则与编辑笔记，不代表实测对局胜率。
+        全部 {heroes.length} 位英雄可参与候选；其中 {Object.keys(notes).length}{' '}
+        位有项目战术笔记，其余结合官方定位与攻略。个人记录和可用分段数据参与排序，缺失统计保持未知；建议不代表对局胜率。
       </p>
       {picker && (
         <Modal

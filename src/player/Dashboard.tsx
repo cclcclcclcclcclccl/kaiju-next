@@ -12,7 +12,17 @@ import { heroes, heroById, heroByName, dataMeta } from './catalog.ts';
 import type { Hero, Pool, Match, SavedPlan } from './model.ts';
 import { Portrait, Empty } from './ui.tsx';
 import { levelNames } from './model.ts';
-export type Page = 'home' | 'heroes' | 'draft' | 'journal' | 'pool';
+export type Page =
+  | 'home'
+  | 'heroes'
+  | 'draft'
+  | 'journal'
+  | 'pool'
+  | 'tier'
+  | 'profile'
+  | 'social'
+  | 'systems'
+  | 'replay';
 export default function Dashboard({
   pool,
   matches,

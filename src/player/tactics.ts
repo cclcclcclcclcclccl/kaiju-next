@@ -1,3 +1,5 @@
+import { personalFit } from './pro/bp.ts';
+import type { DraftContext } from './pro/bp.ts';
 import type { Draft, Hero, Pool } from './model.ts';
 export type Trait =
   'frontline' | 'engage' | 'peel' | 'magic' | 'physical' | 'mobility' | 'poke' | 'sustain';
@@ -297,6 +299,21 @@ const entries: [string, Trait[], string, string, string][] = [
 export const notes: Record<string, Note> = Object.fromEntries(
   entries.map(([name, traits, tip, tradeoff, drill]) => [name, { traits, tip, tradeoff, drill }]),
 );
+export function noteFor(hero: Hero): Note {
+  if (notes[hero.name]) return notes[hero.name];
+  const traits: Trait[] = [];
+  if (hero.classes.includes('坦克')) traits.push('frontline');
+  if (hero.classes.includes('法师')) traits.push('magic');
+  if (hero.classes.some((c) => ['战士', '刺客', '射手'].includes(c))) traits.push('physical');
+  return {
+    traits,
+    tip: hero.guide?.play.slice(0, 240) || '结合公开定位与技能机制确定这局的任务。',
+    tradeoff: '该英雄的能力标签仅按官方职业推断，尚未完成逐项战术校准；请核对技能机制与阵容。',
+    drill:
+      hero.skills.find((s) => s.tip)?.tip?.slice(0, 200) ||
+      '回看一次关键团战，记录技能交出前你掌握的信息。',
+  };
+}
 export type Recommendation = {
   hero: Hero;
   note: Note;
@@ -304,8 +321,14 @@ export type Recommendation = {
   risks: string[];
   level: Pool[number]['level'] | null;
   improves: Trait[];
+  fit?: ReturnType<typeof personalFit>;
+  total?: number;
 };
-export function recommend(draft: Draft, heroes: Hero[]): Recommendation[] {
+export function recommend(
+  draft: Draft,
+  heroes: Hero[],
+  context: DraftContext = {},
+): Recommendation[] {
   const get = (id: number) => heroes.find((h) => h.id === id);
   const others = Object.entries(draft.allies)
     .filter(([role, id]) => role !== draft.role && id)
@@ -316,7 +339,7 @@ export function recommend(draft: Draft, heroes: Hero[]): Recommendation[] {
     .map((id) => get(id!))
     .filter(Boolean) as Hero[];
   const taken = new Set([...others.map((h) => h.id), ...enemies.map((h) => h.id), ...draft.banned]);
-  const coverage = new Set(others.flatMap((h) => notes[h.name]?.traits ?? []));
+  const coverage = new Set(others.flatMap((h) => noteFor(h).traits));
   const unknown = others.filter((h) => !notes[h.name]);
   const essential: Trait[] = ['frontline', 'engage', 'magic', 'physical'];
   const enemyDive = enemies.filter((h) => notes[h.name]?.traits.includes('mobility'));
@@ -324,12 +347,11 @@ export function recommend(draft: Draft, heroes: Hero[]): Recommendation[] {
     .filter(
       (h) =>
         h.roles.includes(draft.role) &&
-        notes[h.name] &&
         !taken.has(h.id) &&
         (!draft.onlyPool || draft.pool.some((p) => p.heroId === h.id)),
     )
     .map((hero) => {
-      const note = notes[hero.name],
+      const note = noteFor(hero),
         level = draft.pool.find((p) => p.heroId === hero.id)?.level ?? null;
       const improves = note.traits.filter((t) => essential.includes(t) && !coverage.has(t));
       const reasons = [
@@ -352,11 +374,53 @@ export function recommend(draft: Draft, heroes: Hero[]): Recommendation[] {
           ? ['部分对手尚无战术笔记，对方威胁可能未完整识别。']
           : []),
       ];
+      const fit = personalFit(hero, draft, context);
+      const partners = (hero.relations ?? []).filter(
+        (r) => r.type === 'partner' && others.some((h) => h.id === r.heroId),
+      );
+      const good = (hero.relations ?? []).filter(
+        (r) => r.type === 'counters' && enemies.some((h) => h.id === r.heroId),
+      );
+      const bad = (hero.relations ?? []).filter(
+        (r) => r.type === 'counteredBy' && enemies.some((h) => h.id === r.heroId),
+      );
+      if (partners.length)
+        reasons.push('官方搭配参考：' + partners.map((r) => get(r.heroId)?.name).join('、'));
+      if (good.length)
+        reasons.push('机制针对参考：' + good.map((r) => get(r.heroId)?.name).join('、'));
+      if (bad.length)
+        risks.push('官方资料提示需提防：' + bad.map((r) => get(r.heroId)?.name).join('、'));
+      if (fit.mastery.games)
+        reasons.push('个人记录：近期 ' + fit.mastery.games + ' 场 · ' + fit.mastery.confidence);
+      if (fit.meta !== null)
+        reasons.push('分段梯度 ' + fit.stat?.tier + ' · ' + context.snapshot?.segment);
+      const team = Math.min(
+        100,
+        Math.max(
+          0,
+          35 +
+            improves.length * 12 +
+            (enemyDive.length && note.traits.includes('peel') ? 10 : 0) +
+            partners.length * 7 +
+            good.length * 5 -
+            bad.length * 9,
+        ),
+      );
+      const total =
+        fit.meta === null
+          ? (fit.mastery.score * fit.weights.personal + team * fit.weights.team) /
+            (fit.weights.personal + fit.weights.team)
+          : fit.mastery.score * fit.weights.personal +
+            team * fit.weights.team +
+            fit.meta * fit.weights.meta;
+      // Preserve the original deterministic ordering when no player preference or evidence is present.
       const score =
-        improves.length * 4 +
-        (level === 'main' ? 7 : level === 'comfortable' ? 5 : level === 'learning' ? 1 : 0) +
-        (enemyDive.length && note.traits.includes('peel') ? 3 : 0);
-      return { hero, note, reasons, risks, level, improves, score };
+        !draft.preference && !context.profile && !context.snapshot
+          ? improves.length * 4 +
+            (level === 'main' ? 7 : level === 'comfortable' ? 5 : level === 'learning' ? 1 : 0) +
+            (enemyDive.length && note.traits.includes('peel') ? 3 : 0)
+          : total;
+      return { hero, note, reasons, risks, level, improves, score, fit, total: Math.round(total) };
     })
     .sort((a, b) => b.score - a.score || a.hero.id - b.hero.id)
     .map(({ score, ...entry }) => entry)
@@ -366,7 +430,7 @@ export function lineupTraits(ids: number[], heroes: Hero[]): Set<Trait> {
   return new Set(
     ids.flatMap((id) => {
       const h = heroes.find((x) => x.id === id);
-      return h ? (notes[h.name]?.traits ?? []) : [];
+      return h ? noteFor(h).traits : [];
     }),
   );
 }

@@ -1,3 +1,5 @@
+import HeroInsights from './pro/HeroInsights.tsx';
+import Jungle from './pro/Jungle.tsx';
 import { useMemo, useState } from 'react';
 import { Search, ArrowUpRight, Plus, Check, BookOpen, Star } from 'lucide-react';
 import { heroes, dataMeta, heroById } from './catalog.ts';
@@ -8,12 +10,14 @@ import { Modal, Portrait, Empty, SourceLink } from './ui.tsx';
 
 export function HeroDetail({
   hero,
+  statsContext,
   pool,
   onPool,
   onClose,
   busy,
 }: {
   hero: Hero;
+  statsContext?: { segment: string; role: string; snapshotId?: string };
   pool: Pool;
   onPool: (pool: Pool) => void;
   onClose: () => void;
@@ -77,6 +81,26 @@ export function HeroDetail({
         )}
         <SourceLink hero={hero} />
       </div>
+      <nav className="detail-jump" aria-label="英雄详情章节">
+        {[
+          ['.skill-section', '技能'],
+          ['#hero-stats', '分段表现'],
+          ['#hero-relations', '搭配克制'],
+          ['#hero-guide', '英雄攻略'],
+          ...(hero.roles.includes('打野') ? [['.jungle-section', '刷野路线']] : []),
+        ].map(([selector, label]) => (
+          <button
+            key={selector}
+            onClick={() =>
+              document
+                .querySelector(selector)
+                ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            }
+          >
+            {label}
+          </button>
+        ))}
+      </nav>
       {note && (
         <section className="tactical-note">
           <p className="eyebrow">开局战术笔记 · 定性建议</p>
@@ -127,6 +151,8 @@ export function HeroDetail({
           。官网页面未提供统一版本号，技能数值以游戏内为准。
         </p>
       </section>
+      <HeroInsights hero={hero} context={statsContext} />
+      {hero.roles.includes('打野') && <Jungle hero={hero} />}
     </Modal>
   );
 }
