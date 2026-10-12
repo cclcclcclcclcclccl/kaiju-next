@@ -7,5 +7,7 @@
 *.mjs text eol=lf
 # Preserve the exact bytes of the supplied competition text.
 docs/source/contest-requirements.original.txt -text
+# Reference evidence hashes describe the exact captured bytes.
+evidence/refinement/references/*.txt -text
 
 *.cmd text eol=crlf

@@ -93,7 +93,7 @@ export default function Squad({ pool, onLoad }: { pool: Pool; onLoad: (draft: Dr
       setError(
         result.length
           ? ''
-          : '当前英雄池组合无法覆盖五个位置。请先补齐缺少分路，或允许练习中的英雄参与。',
+          : '暂未找到覆盖五个位置的方案。请检查成员的熟练英雄与分路，或允许练习中的英雄参与。',
       );
     } catch (e) {
       setError((e as Error).message);
