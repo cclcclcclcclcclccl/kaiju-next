@@ -144,11 +144,15 @@ test('power alone cannot invent mastery; real recent samples influence it and ag
       evidence: '测试',
     },
   ];
-  assert.equal(mastery(id('李白'), [], p, Date.parse('2026-10-12')).score, 20);
+  const historyOnly = mastery(id('李白'), [], p, Date.parse('2026-10-12'));
+  assert.equal(historyOnly.confidence, '缺少近期胜负');
+  assert.ok(historyOnly.trust < 0.45);
+  const noGames = { ...p, heroes: [{ ...p.heroes[0], games: 0, wins: 0 }] };
+  assert.equal(mastery(id('李白'), [], noGames, Date.parse('2026-10-12')).score, 20);
   p.heroes[0].recentGames = 50;
   p.heroes[0].recentWins = 35;
   const fresh = mastery(id('李白'), [], p, Date.parse('2026-10-12')).score;
-  assert.ok(fresh > 20);
+  assert.ok(fresh > historyOnly.score);
   assert.ok(mastery(id('李白'), [], p, Date.parse('2027-10-12')).score < fresh);
   assert.equal(
     profileSchema.safeParse({ ...p, heroes: [{ ...p.heroes[0], recentWins: 60 }] }).success,

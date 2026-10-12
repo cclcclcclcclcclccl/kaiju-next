@@ -70,10 +70,11 @@ test('official data stays attributed, partial and distinct from personal tiers a
 test('official request failure is visible and can recover without synthetic substitution', async ({
   page,
 }) => {
-  let calls = 0;
+  let calls = 0,
+    failing = true;
   await page.route('**/api/official/hero-rank?*', async (route) => {
     calls++;
-    if (calls === 1) {
+    if (failing) {
       await route.fulfill({ status: 502, json: { error: '官方请求失败（测试）' } });
       return;
     }
@@ -108,8 +109,10 @@ test('official request failure is visible and can recover without synthetic subs
   const panel = page.getByRole('region', { name: '官方公开统计' });
   await expect(panel.getByRole('alert')).toContainText('官方请求失败');
   await expect(panel.locator('tbody')).toHaveCount(0);
+  const initialCalls = calls;
+  failing = false;
   await panel.getByRole('button', { name: '读取官方数据' }).click();
-  await expect.poll(() => calls).toBe(2);
+  await expect.poll(() => calls).toBeGreaterThan(initialCalls);
   await expect(panel.getByRole('alert')).toHaveCount(0);
   await expect(panel).toContainText('上次成功获取的记录');
   await expect(panel).toContainText('49.88%');

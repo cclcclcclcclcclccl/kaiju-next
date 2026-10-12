@@ -13,6 +13,19 @@ export type Hero = {
   source: string;
   skills: { name: string; description: string; tip?: string; cooldown?: string; cost?: string }[];
   difficulty?: number | null;
+  mechanics?: {
+    survival: number | null;
+    attack: number | null;
+    skill: number | null;
+    tags: string[];
+  };
+  builds?: {
+    items: { id: number; name: string; price: number; description: string }[];
+    unresolvedItemIds?: number[];
+    note: string;
+  }[];
+  runes?: { id: number; name: string; color: string; description: string }[];
+  runeNote?: string;
   relations?: { type: string; heroId: number; reason: string; source: string }[];
   guide?: {
     play: string;

@@ -3,6 +3,7 @@ import { scopeIssue } from './pro/statistics.ts';
 import { usePro } from './pro/context.tsx';
 import { SEGMENTS } from './pro/model.ts';
 import BpRounds from './pro/BpRounds.tsx';
+import CoachLab from './pro/CoachLab.tsx';
 import type { SocialData } from './pro/Social.tsx';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
@@ -193,6 +194,7 @@ export default function DraftPage({
         </button>
       </div>
       <BpRounds draft={draft} onChange={onChange} />
+      <CoachLab draft={draft} onChange={onChange} onOpen={onOpen} />
       <div className="pro-toolbar">
         <label>
           选人侧重

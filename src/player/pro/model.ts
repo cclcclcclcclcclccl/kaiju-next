@@ -1,4 +1,34 @@
 import { z } from 'zod';
+import { ROLES } from '../model.ts';
+export const PLAY_STYLES = [
+  '稳健发育',
+  '主动游走',
+  '先手开团',
+  '保护队友',
+  '远程消耗',
+  '侧翼切入',
+  '边带牵制',
+] as const;
+export const FOCUS_AREAS = [
+  '技能命中',
+  '进场时机',
+  '站位生存',
+  '兵线发育',
+  '地图意识',
+  '资源转化',
+] as const;
+export const habitsSchema = z
+  .object({
+    roles: z.array(z.enum(ROLES)).max(5),
+    styles: z.array(z.enum(PLAY_STYLES)).max(7),
+    mechanics: z.number().int().min(1).max(5),
+    risk: z.enum(['稳健', '均衡', '主动']),
+    goal: z.enum(['稳定上分', '拓展英雄池', '五排配合']),
+    focus: z.array(z.enum(FOCUS_AREAS)).max(6),
+    weeklyGames: z.number().int().min(0).max(300),
+    notes: z.string().max(500),
+  })
+  .strict();
 export const SEGMENTS = [
   '大众分段',
   '顶端排位',
@@ -73,22 +103,72 @@ export const heroMetricSchema = z
     heroId: z.number().int().positive(),
     power: z.number().int().min(0).max(100000),
     games: z.number().int().min(0).max(100000),
-    wins: z.number().int().min(0).max(100000),
+    wins: z.number().int().min(0).max(100000).optional(),
     recentGames: z.number().int().min(0).max(1000),
-    recentWins: z.number().int().min(0).max(1000),
+    recentWins: z.number().int().min(0).max(1000).optional(),
+    winRate: rate.optional(),
+    recentWinRate: rate.optional(),
+    averageRating: z.number().min(0).max(16).optional(),
+    recentRating: z.number().min(0).max(16).optional(),
+    seasonGames: z.number().int().min(0).max(100000).optional(),
+    seasonWins: z.number().int().min(0).max(100000).optional(),
+    seasonWinRate: rate.optional(),
+    historicalPeakPower: z.number().int().min(0).max(100000).optional(),
+    proficiencyPoints: z.number().int().min(0).max(10000000).optional(),
+    performanceScore: z.number().min(0).max(100000).optional(),
+    rankPerformanceScore: z.number().min(0).max(100000).optional(),
+    peakPerformanceScore: z.number().min(0).max(100000).optional(),
+    peakCoefficient: z.number().min(0).max(500).optional(),
+    challengeCoefficient: z.number().min(0).max(500).optional(),
+    inPool: z.boolean().optional(),
+    dataSource: z.enum(['manual', 'file']).optional(),
     observedOn: dateText,
     evidence: z.string().max(300).default(''),
   })
   .strict()
   .refine(
-    (v) => v.wins <= v.games && v.recentWins <= v.recentGames && v.recentGames <= v.games,
+    (v) =>
+      (v.wins === undefined || v.wins <= v.games) &&
+      (v.recentWins === undefined || v.recentWins <= v.recentGames) &&
+      v.recentGames <= v.games &&
+      (v.seasonGames === undefined || v.seasonGames <= v.games) &&
+      (v.seasonWins === undefined ||
+        (v.seasonGames !== undefined && v.seasonWins <= v.seasonGames)),
     '胜场和近期场次不能超过对应总场次',
-  );
+  )
+  .refine(
+    (v) => v.historicalPeakPower === undefined || v.historicalPeakPower >= v.power,
+    '历史最高战力不能低于当前战力',
+  )
+  .superRefine((v, ctx) => {
+    for (const [games, wins, percentage, field] of [
+      [v.games, v.wins, v.winRate, 'winRate'],
+      [v.recentGames, v.recentWins, v.recentWinRate, 'recentWinRate'],
+      [v.seasonGames, v.seasonWins, v.seasonWinRate, 'seasonWinRate'],
+    ] as const) {
+      if (
+        games &&
+        wins !== undefined &&
+        percentage !== undefined &&
+        Math.abs((wins / games) * 100 - percentage) > 0.11
+      )
+        ctx.addIssue({
+          code: 'custom',
+          path: [field],
+          message: '胜率与对应场次、胜场不一致；可以只填胜场或只填胜率',
+        });
+    }
+  });
 export const profileSchema = z
   .object({
     name: z.string().trim().min(1).max(24),
     season: z.string().trim().max(40),
     peakScore: z.number().int().min(0).max(5000),
+    seasonPeakScore: z.number().int().min(0).max(5000).optional(),
+    peakEnergy: z.number().min(0).max(10000).optional(),
+    peakCoefficient: z.number().min(0).max(500).optional(),
+    challengeCoefficient: z.number().min(0).max(500).optional(),
+    habits: habitsSchema.optional(),
     sharePool: z.boolean(),
     heroes: z.array(heroMetricSchema).max(160),
   })
@@ -98,6 +178,28 @@ export const profileSchema = z
     '同一英雄不能重复录入',
   );
 export type Profile = z.infer<typeof profileSchema>;
+export type HeroMetric = z.infer<typeof heroMetricSchema>;
+export type Habits = z.infer<typeof habitsSchema>;
+export const emptyHabits = (): Habits => ({
+  roles: [],
+  styles: [],
+  mechanics: 3,
+  risk: '均衡',
+  goal: '稳定上分',
+  focus: [],
+  weeklyGames: 10,
+  notes: '',
+});
+export const emptyHeroMetric = (heroId: number): HeroMetric => ({
+  heroId,
+  power: 0,
+  games: 0,
+  recentGames: 0,
+  observedOn: new Date().toLocaleDateString('en-CA'),
+  evidence: '',
+  dataSource: 'manual',
+  inPool: true,
+});
 export const emptyProfile = (): Profile => ({
   name: '我的档案',
   season: '',

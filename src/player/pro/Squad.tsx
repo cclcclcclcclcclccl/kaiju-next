@@ -5,7 +5,9 @@ import { heroes, heroById, heroByName } from '../catalog.ts';
 import { api, download } from '../../api.ts';
 import type { SocialData } from './Social.tsx';
 import type { Pool, Draft, Role } from '../model.ts';
-import { buildSquad, matchSystem } from './squad.ts';
+import { emptyDraft } from '../model.ts';
+import { buildSquad, recommendSystems } from './squad.ts';
+import { effectivePool } from './analytics.ts';
 import type { SquadMember, SquadPlan } from './squad.ts';
 import { SYSTEMS } from './systems.ts';
 import { Portrait } from '../ui.tsx';
@@ -44,7 +46,7 @@ export default function Squad({ pool, onLoad }: { pool: Pool; onLoad: (draft: Dr
     {
       id: 'self',
       name: data.profile.name === '我的档案' ? '我自己' : data.profile.name,
-      pool,
+      pool: effectivePool(pool, data.profile),
       profile: data.profile,
     },
     ...social.friends
@@ -58,19 +60,7 @@ export default function Squad({ pool, onLoad }: { pool: Pool; onLoad: (draft: Dr
   ];
   const members = available.filter((m) => chosen.includes(m.id));
   const matches = useMemo(
-    () =>
-      SYSTEMS.map((s) => ({
-        system: s,
-        match: matchSystem(
-          s.heroes.map((name, i) => ({ heroId: heroByName(name).id, role: s.roles[i] as Role })),
-          members,
-          learning,
-        ),
-      })).sort(
-        (a, b) =>
-          b.match.assigned.length / b.system.heroes.length -
-          a.match.assigned.length / a.system.heroes.length,
-      ),
+    () => recommendSystems(members, heroes, learning),
     [pool, data.profile, social, chosen, learning],
   );
   const solve = async () => {
@@ -114,7 +104,7 @@ export default function Squad({ pool, onLoad }: { pool: Pool; onLoad: (draft: Dr
         </button>
       </div>
       <p className="muted">
-        选择本次一起玩的成员。每人只分配一个英雄；默认只考虑本命和熟练英雄，缺少的位置会明确列出。
+        选择一起玩的成员，按详细记录、打法偏好和位置分工排序。除了固定体系，也会用你们现有英雄池生成可承担的保护、控制或消耗组合。每人只分配一个英雄。
       </p>
       <div className="squad-members">
         {available.map((m) => (
@@ -149,16 +139,23 @@ export default function Squad({ pool, onLoad }: { pool: Pool; onLoad: (draft: Dr
       <div className="squad-matches">
         {matches
           .filter((x) => x.match.assigned.length > 0)
-          .map(({ system: s, match: m }) => (
+          .map(({ system: s, match: m, score, reason, practice }, index) => (
             <article key={s.id}>
               <div className="section-title">
-                <h3>{s.name}</h3>
+                <h3>
+                  {index === 0 ? '优先推荐 · ' : ''}
+                  {s.name}
+                </h3>
                 <span className={m.complete ? 'gold' : 'muted'}>
                   {m.complete
                     ? '核心位置可组成'
                     : m.assigned.length + '/' + s.heroes.length + ' 核心位置可分配'}
                 </span>
               </div>
+              <p className="system-fit">
+                适配 {score} / 100 · {reason}
+              </p>
+              <p>{s.idea}</p>
               <p>
                 {m.assigned.length
                   ? m.assigned
@@ -175,6 +172,32 @@ export default function Squad({ pool, onLoad }: { pool: Pool; onLoad: (draft: Dr
                   。同一成员不能同时补多个位置。
                 </small>
               )}
+              {practice.map((p) => (
+                <p className="data-caption" key={p}>
+                  训练重点：{p}
+                </p>
+              ))}
+              <details>
+                <summary>体系思路与局内分工</summary>
+                <ol>
+                  {s.steps.map((step) => (
+                    <li key={step}>{step}</li>
+                  ))}
+                </ol>
+                <p>需要提防：{s.risk}</p>
+                <p>练习：{s.drill}</p>
+              </details>
+              <button
+                className="btn secondary"
+                onClick={() => {
+                  const draft = { ...emptyDraft(), pool, preference: 'balanced' as const };
+                  for (const assignment of m.assigned)
+                    draft.allies[assignment.role] = assignment.heroId;
+                  onLoad(draft);
+                }}
+              >
+                带入已分配核心
+              </button>
             </article>
           ))}
       </div>

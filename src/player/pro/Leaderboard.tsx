@@ -1,6 +1,7 @@
 import StatImport from './StatImport.tsx';
 import StatHistory from './StatHistory.tsx';
 import OfficialStats from './OfficialStats.tsx';
+import AllHeroRanks from './AllHeroRanks.tsx';
 import { scopeIssue, scopeLabel } from './statistics.ts';
 import { useMemo, useState } from 'react';
 import { ArrowUpRight, Download, Upload, Info } from 'lucide-react';
@@ -200,6 +201,7 @@ export default function Leaderboard({
           {demo ? '退出合成演示' : '查看算法演示'}
         </button>
       </div>
+      <AllHeroRanks segment={segment} onOpen={onOpen} />
       <label className="check-control">
         <input
           type="checkbox"

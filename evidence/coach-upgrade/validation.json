@@ -1,0 +1,87 @@
+{
+  "version": "0.8.0",
+  "recordedAt": "2026-10-12T12:41:29.822Z",
+  "core": {
+    "command": "npm test",
+    "passed": 37,
+    "failed": 0
+  },
+  "browser": {
+    "fullSuite": {
+      "startTime": "2026-10-12T12:34:07.889Z",
+      "duration": 84324.824,
+      "expected": 23,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "finalFocusedAfterPoolDisplayFix": {
+      "startTime": "2026-10-12T12:39:41.795Z",
+      "duration": 17644.622000000003,
+      "expected": 4,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "build": {
+    "command": "npm run build",
+    "passed": true,
+    "warnings": [
+      "Hero data chunk 1232.26 kB; per-hero lazy loading remains pending",
+      "Third-party zod comment annotations removed by Rollup"
+    ]
+  },
+  "format": {
+    "command": "npm run format:check",
+    "passed": true
+  },
+  "data": {
+    "heroCount": 133,
+    "skillPages": 133,
+    "relations": 798,
+    "buildPages": 133,
+    "runePages": 133,
+    "incompleteBuildSchemes": 20,
+    "sha256": "44451b36a8695f5888a4b5c99f966916906f4ed93af78e2bdfb65e1b32dc4fc0"
+  },
+  "live": {
+    "checkedAt": "2026-10-12T12:37:07.078Z",
+    "status": {
+      "product": "开局 NEXT",
+      "version": "0.8.0",
+      "modelConfigured": false,
+      "heroCount": 133
+    },
+    "rosterCount": 133,
+    "official": {
+      "date": "2026-10-11",
+      "rows": 10,
+      "cache": "cached"
+    },
+    "browserErrors": [],
+    "overflow": false,
+    "accessibility": {
+      "desktop": [],
+      "mobile": []
+    },
+    "scope": "Read-only on real user database; no invented player data written. Worker/profile/social interactions validated separately on port 4319."
+  },
+  "existingUserRecordsPreserved": true,
+  "visualReview": [
+    "personal-pool-test.png",
+    "coach-mobile.png",
+    "hero-personal-guide.png",
+    "hero-mobile.png",
+    "adaptive-system-test.png",
+    "live-roster-desktop.png",
+    "live-coach-mobile.png"
+  ],
+  "limitations": [
+    "No private game-account sync",
+    "Anonymous official rank coverage remains partial",
+    "Heuristic search and personalization have no real-match effectiveness validation",
+    "Detailed hero data is still bundled eagerly"
+  ],
+  "testDataNotice": "Profile and friend screenshots use isolated synthetic test accounts, never user game records"
+}

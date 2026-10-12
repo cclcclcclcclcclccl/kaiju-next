@@ -2,12 +2,13 @@ import { useEffect, useState } from 'react';
 import { Save, Download, Upload, Plus, Trash2 } from 'lucide-react';
 import { heroes, heroById } from '../catalog.ts';
 import { Portrait, Modal } from '../ui.tsx';
-import { profileSchema, emptyProfile } from './model.ts';
+import { profileSchema, emptyHabits, emptyHeroMetric } from './model.ts';
+import { MetricFields, HabitFields } from './ProfileFields.tsx';
 import type { Profile } from './model.ts';
 import { mastery, estimatePower } from './analytics.ts';
 import { usePro } from './context.tsx';
 import { api, download } from '../../api.ts';
-export default function ProfilePage() {
+export default function ProfilePage({ focusHeroId }: { focusHeroId?: number }) {
   const { data, refresh } = usePro();
   const [profile, setProfile] = useState<Profile>(data.profile),
     [error, setError] = useState(''),
@@ -24,6 +25,25 @@ export default function ProfilePage() {
     activityPercent: 100,
   });
   useEffect(() => setProfile(data.profile), [data.profile]);
+  useEffect(() => {
+    if (focusHeroId)
+      setProfile((p) =>
+        p.heroes.some((h) => h.heroId === focusHeroId)
+          ? p
+          : { ...p, heroes: [...p.heroes, emptyHeroMetric(focusHeroId)] },
+      );
+  }, [focusHeroId]);
+  useEffect(() => {
+    if (!focusHeroId) return;
+    const timer = setTimeout(
+      () =>
+        document
+          .querySelector('.focused-record')
+          ?.scrollIntoView({ behavior: 'smooth', block: 'start' }),
+      150,
+    );
+    return () => clearTimeout(timer);
+  }, [focusHeroId]);
   const edit = (i: number, key: string, value: string | number) =>
     setProfile((p) => ({
       ...p,
@@ -39,7 +59,11 @@ export default function ProfilePage() {
       await refresh();
       setSuccess('档案已保存，BP 会使用这些记录评估你的个人发挥。');
     } catch (e) {
-      setError((e as Error).message);
+      setError(
+        'issues' in (e as object)
+          ? (e as { issues: { message: string }[] }).issues.map((x) => x.message).join('；')
+          : (e as Error).message,
+      );
     } finally {
       setBusy(false);
     }
@@ -49,19 +73,7 @@ export default function ProfilePage() {
     if (h)
       setProfile((p) => ({
         ...p,
-        heroes: [
-          ...p.heroes,
-          {
-            heroId: h.id,
-            power: 0,
-            games: 0,
-            wins: 0,
-            recentGames: 0,
-            recentWins: 0,
-            observedOn: new Date().toLocaleDateString('en-CA'),
-            evidence: '',
-          },
-        ],
+        heroes: [...p.heroes, emptyHeroMetric(h.id)],
       }));
   };
   let estimate: { peakPercent: number; total: number } | null = null;
@@ -82,7 +94,8 @@ export default function ProfilePage() {
         </button>
       </div>
       <div className="pro-notice">
-        尚未取得王者账号官方同步授权。这里保存你手动核对或文件导入的记录，绝不声称已读取游戏账号。估算值不会覆盖真实战力。
+        数据来源：手动录入或文件导入。游戏账号自动同步尚未接通；你填写的详细记录会直接用于英雄池、个人推荐、教练
+        BP 和好友体系适配。
       </div>
       <div className="surface pro-form">
         <label>
@@ -120,7 +133,40 @@ export default function ProfilePage() {
           />
           向已接受的好友展示英雄池及本页记录
         </label>
+        {(
+          [
+            ['seasonPeakScore', '本赛季最高巅峰分', 5000],
+            ['peakEnergy', '巅峰能量', 10000],
+            ['peakCoefficient', '账号巅峰加成 %', 500],
+            ['challengeCoefficient', '账号挑战赛加成 %', 500],
+          ] as const
+        ).map(([key, label, max]) => (
+          <label key={key}>
+            {label}
+            <input
+              type="number"
+              min={0}
+              max={max}
+              step="0.01"
+              placeholder="未记录"
+              value={profile[key] ?? ''}
+              onChange={(e) =>
+                setProfile({
+                  ...profile,
+                  [key]: e.target.value === '' ? undefined : Number(e.target.value),
+                })
+              }
+            />
+          </label>
+        ))}
       </div>
+      <p className="data-caption">
+        巅峰能量是保护与进度背景，不直接当作操作水平加分。账号巅峰分保留段位背景；英雄系数优先于账号系数，历史最高战力不替代当前战力。
+      </p>
+      <HabitFields
+        value={profile.habits ?? emptyHabits()}
+        onChange={(habits) => setProfile({ ...profile, habits })}
+      />
       <div className="pro-actions">
         <button className="btn secondary" onClick={add}>
           <Plus size={16} />
@@ -145,7 +191,11 @@ export default function ProfilePage() {
               if (!f) return;
               try {
                 if (f.size > 128 * 1024) throw new Error('文件过大');
-                setProfile(profileSchema.parse(JSON.parse(await f.text())));
+                const imported = profileSchema.parse(JSON.parse(await f.text()));
+                setProfile({
+                  ...imported,
+                  heroes: imported.heroes.map((h) => ({ ...h, dataSource: 'file' })),
+                });
                 setSuccess('已载入预览，请核对后保存。');
                 setError('');
               } catch (x) {
@@ -178,7 +228,10 @@ export default function ProfilePage() {
         {profile.heroes.map((h, i) => {
           const m = mastery(h.heroId, [], profile);
           return (
-            <section className="surface" key={i}>
+            <section
+              className={'surface ' + (h.heroId === focusHeroId ? 'focused-record' : '')}
+              key={i}
+            >
               <div className="section-title">
                 <div className="hero-row">
                   <Portrait hero={heroById(h.heroId)} />
@@ -188,7 +241,13 @@ export default function ProfilePage() {
                     onChange={(e) => edit(i, 'heroId', Number(e.target.value))}
                   >
                     {heroes.map((x) => (
-                      <option key={x.id} value={x.id}>
+                      <option
+                        key={x.id}
+                        value={x.id}
+                        disabled={profile.heroes.some(
+                          (other, j) => j !== i && other.heroId === x.id,
+                        )}
+                      >
                         {x.name}
                       </option>
                     ))}
@@ -207,34 +266,35 @@ export default function ProfilePage() {
                   <Trash2 size={17} />
                 </button>
               </div>
-              <div className="pro-form">
-                {[
-                  ['power', '游戏内战力'],
-                  ['games', '总场次'],
-                  ['wins', '总胜场'],
-                  ['recentGames', '近期场次'],
-                  ['recentWins', '近期胜场'],
-                ].map(([key, label]) => (
-                  <label key={key}>
-                    {label}
-                    <input
-                      aria-label={label + (i + 1)}
-                      type="number"
-                      min={0}
-                      value={h[key as keyof typeof h] as number}
-                      onChange={(e) => edit(i, key, Number(e.target.value))}
-                    />
-                  </label>
-                ))}
-                <label>
-                  核对日期
-                  <input
-                    type="date"
-                    value={h.observedOn}
-                    onChange={(e) => edit(i, 'observedOn', e.target.value)}
-                  />
-                </label>
-              </div>
+              <MetricFields
+                record={h}
+                index={i}
+                onChange={(next) =>
+                  setProfile((p) => ({
+                    ...p,
+                    heroes: p.heroes.map((old, j) => (j === i ? next : old)),
+                  }))
+                }
+              />
+              <details className="score-explanation">
+                <summary>
+                  准备度 {m.score} 的计算依据 · {m.confidence}
+                </summary>
+                <ul>
+                  {m.parts.map((p) => (
+                    <li key={p.label}>
+                      <strong>
+                        {p.label} · 权重 {(p.weight * 100).toFixed(0)}%
+                      </strong>
+                      ：{p.evidence}
+                    </li>
+                  ))}
+                </ul>
+                <p>
+                  记录可信权重 {(m.trust * 100).toFixed(0)}%，有实战样本时其余回退到中立基线
+                  50；无样本时仅参考自报标签或未知基线。准备度不是胜率。
+                </p>
+              </details>
               <label className="field">
                 数据依据
                 <input

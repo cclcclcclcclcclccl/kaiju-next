@@ -3,6 +3,7 @@ import { randomUUID, randomBytes, scryptSync, timingSafeEqual, createHash } from
 import { emptyDraft } from '../../src/player/model.ts';
 import type { Draft, Pool, MatchInput, Match, SavedPlan } from '../../src/player/model.ts';
 import { emptyProfile } from '../../src/player/pro/model.ts';
+import { effectivePool } from '../../src/player/pro/analytics.ts';
 import type { Profile, StatSnapshot, Review, JungleRun } from '../../src/player/pro/model.ts';
 export function createPlayerStore(path: string) {
   const db = new DatabaseSync(path);
@@ -254,7 +255,7 @@ export function createPlayerStore(path: string) {
             incoming: String(r.receiver) === userId,
             user: account,
             shared,
-            pool: shared ? data.workspace().pool : [],
+            pool: shared ? effectivePool(data.workspace().pool, profile) : [],
             profile: shared ? profile : null,
           };
         }),

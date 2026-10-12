@@ -1,4 +1,5 @@
 import { ProContext } from './pro/context.tsx';
+import { effectivePool } from './pro/analytics.ts';
 import { emptyPro } from './pro/model.ts';
 import type { ProData } from './pro/model.ts';
 import Leaderboard from './pro/Leaderboard.tsx';
@@ -36,6 +37,7 @@ import { Modal, Portrait } from './ui.tsx';
 type Workspace = { pool: Pool; draft: Draft; matches: Match[]; plans: SavedPlan[] };
 export default function App() {
   const [pro, setPro] = useState<ProData>(emptyPro);
+  const [profileHero, setProfileHero] = useState<number>();
   const refreshPro = async () => setPro(await api<ProData>('/pro'));
   const draftKey =
     'kaiju-draft-v1' +
@@ -112,6 +114,7 @@ export default function App() {
     return () => clearTimeout(id);
   }, [toast]);
   const currentDraft = useMemo(() => ({ ...draft, pool }), [draft, pool]);
+  const registeredPool = useMemo(() => effectivePool(pool, pro.profile), [pool, pro.profile]);
   const go = (p: Page) => {
     setPage(p);
     setMobileMenu(false);
@@ -135,6 +138,11 @@ export default function App() {
     void mutate(async () => setPool(await api<Pool>('/pool', next)), '英雄池已保存').catch(
       () => {},
     );
+  };
+  const editRecord = (id?: number) => {
+    setProfileHero(id);
+    setHero(null);
+    go('profile');
   };
   const saveDraft = () => {
     void mutate(async () => {
@@ -227,8 +235,8 @@ export default function App() {
               <button key={n.id} className={page === n.id ? 'active' : ''} onClick={() => go(n.id)}>
                 <n.icon size={19} />
                 <span>{n.label}</span>
-                {n.id === 'pool' && pool.length > 0 ? (
-                  <small>{pool.length}</small>
+                {n.id === 'pool' && registeredPool.length > 0 ? (
+                  <small>{registeredPool.length}</small>
                 ) : page === n.id ? (
                   <i />
                 ) : null}
@@ -256,7 +264,7 @@ export default function App() {
             <span>
               <i />
               {ready ? '本地工作台已连接' : '正在连接本地服务'}
-              <small>v0.7</small>
+              <small>v0.8</small>
             </span>
           </div>
         </aside>
@@ -336,12 +344,12 @@ export default function App() {
             ) : (
               <>
                 {page === 'tier' && <Leaderboard onOpen={openHero} />}
-                {page === 'profile' && <ProfilePage />}
+                {page === 'profile' && <ProfilePage focusHeroId={profileHero} />}
                 {page === 'social' && <Social />}
                 {page === 'replay' && <Replay />}
                 {page === 'systems' && (
                   <Systems
-                    pool={pool}
+                    pool={registeredPool}
                     onLoad={(d) => {
                       setDraft(d);
                       go('draft');
@@ -351,7 +359,7 @@ export default function App() {
                 )}
                 {page === 'home' && (
                   <Dashboard
-                    pool={pool}
+                    pool={registeredPool}
                     matches={matches}
                     plans={plans}
                     go={go}
@@ -368,6 +376,7 @@ export default function App() {
                     onOpen={openHero}
                     busy={busy}
                     onlyPool={page === 'pool'}
+                    onEditRecord={editRecord}
                   />
                 )}
                 {page === 'draft' && (
@@ -400,6 +409,7 @@ export default function App() {
             onPool={updatePool}
             busy={busy}
             onClose={() => setHero(null)}
+            onEditRecord={editRecord}
           />
         )}
         {toast && (
@@ -466,7 +476,7 @@ export default function App() {
               <p>
                 {configured
                   ? '已配置模型服务，可在备战卡中按需生成解读。'
-                  : '尚未配置模型服务。阵容建议和全部记录功能可直接使用；AI 入口会明确显示未连接。'}
+                  : '教练博弈、个人推荐和体系适配使用本地算法，可直接使用。大模型解读与视觉分析尚未配置，相关入口会显示未连接。'}
                 备战解读发送当前阵容及英雄资料；录像分析发送你选择的最多 6
                 张关键帧及标注。两者都仅在你点击分析时调用。
               </p>

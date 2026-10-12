@@ -149,20 +149,137 @@ export function mastery(heroId: number, pool: Pool, profile?: Profile, now = Dat
   const manual =
     level === 'main' ? 75 : level === 'comfortable' ? 60 : level === 'learning' ? 35 : 20;
   const m = profile?.heroes.find((h) => h.heroId === heroId);
-  if (!m) return { score: manual, confidence: '自报标签', games: 0, power: null };
+  if (!m)
+    return {
+      score: manual,
+      confidence: level ? '仅自报标签' : '未记录',
+      games: 0,
+      power: null,
+      parts: [] as { label: string; value: number; weight: number; evidence: string }[],
+      trust: 0,
+    };
   const freshness = Math.exp(-Math.max(0, (now - Date.parse(m.observedOn)) / 86400000) / 90);
-  const n = m.recentGames,
-    win = (m.recentWins + 10) / (n + 20);
+  const rate = (games: number | undefined, wins: number | undefined, rate: number | undefined) =>
+    games && (wins !== undefined || rate !== undefined)
+      ? (wins ?? (games * rate!) / 100) / games
+      : undefined;
+  const recent = rate(m.recentGames, m.recentWins, m.recentWinRate);
+  const seasonal = rate(m.seasonGames, m.seasonWins, m.seasonWinRate);
+  const lifetime = rate(m.games, m.wins, m.winRate);
+  const n =
+    recent !== undefined
+      ? m.recentGames
+      : seasonal !== undefined
+        ? m.seasonGames!
+        : lifetime !== undefined
+          ? m.games
+          : 0;
+  const selectedWin = recent ?? seasonal ?? lifetime;
+  const sampleWeight = recent !== undefined ? 1 : seasonal !== undefined ? 0.75 : 0.45;
+  const win = selectedWin === undefined ? 0.5 : (selectedWin * n + 10) / (n + 20);
   const experience = clamp((Math.log1p(m.games) / Math.log1p(300)) * 100);
-  const power = clamp((m.power / 15000) * 100);
-  const measured = 0.45 * clamp(((win - 0.35) / 0.4) * 100) + 0.35 * experience + 0.2 * power;
-  const trust = (n / (n + 20)) * freshness;
+  const peakBonus = m.peakCoefficient ?? profile?.peakCoefficient;
+  const challengeBonus = m.challengeCoefficient ?? profile?.challengeCoefficient;
+  const basePower =
+    peakBonus !== undefined && challengeBonus !== undefined
+      ? m.power / (1 + (peakBonus + challengeBonus) / 100)
+      : m.power;
+  const parts: { label: string; value: number; weight: number; evidence: string }[] = [
+    {
+      label: '实战经验',
+      value: experience,
+      weight: 0.3,
+      evidence: `累计 ${m.games} 场；经验按对数增长，避免堆场次无限加分`,
+    },
+  ];
+  if (selectedWin !== undefined)
+    parts.push({
+      label: '平滑胜率',
+      value: clamp(((win - 0.35) / 0.4) * 100),
+      weight: 0.35,
+      evidence: `${recent !== undefined ? '近期' : seasonal !== undefined ? '本赛季' : '累计'} ${n} 场，原始胜率 ${(selectedWin * 100).toFixed(1)}%；使用 20 场中立先验`,
+    });
+  const rating = m.recentRating ?? m.averageRating;
+  if (rating !== undefined)
+    parts.push({
+      label: '个人评分',
+      value: clamp(((rating - 4) / 8) * 100),
+      weight: 0.2,
+      evidence: `${m.recentRating !== undefined ? '近期' : '累计'}平均评分 ${rating} / 16；按同一评分口径使用`,
+    });
+  if (m.power > 0)
+    parts.push({
+      label: '战力参考',
+      value: clamp((basePower / 15000) * 100),
+      weight: 0.1,
+      evidence:
+        peakBonus !== undefined && challengeBonus !== undefined
+          ? `输入加成 ${peakBonus}% + ${challengeBonus}%；仅为去加成的比较近似，不是官方战力公式`
+          : `当前 ${m.power}；系数未齐，仅低权重参考，跨英雄并非严格可比`,
+    });
+  if (m.historicalPeakPower)
+    parts.push({
+      label: '历史保持度',
+      value: clamp((m.power / m.historicalPeakPower) * 100),
+      weight: 0.025,
+      evidence: `当前 ${m.power} / 历史最高 ${m.historicalPeakPower}；不能用历史峰值代替当前发挥`,
+    });
+  const performance =
+    m.performanceScore ??
+    (m.rankPerformanceScore !== undefined || m.peakPerformanceScore !== undefined
+      ? (m.rankPerformanceScore ?? 0) + (m.peakPerformanceScore ?? 0)
+      : undefined);
+  if (performance !== undefined)
+    parts.push({
+      label: '表现分参考',
+      value: clamp((performance / 5000) * 100),
+      weight: 0.015,
+      evidence: `表现分 ${performance}；参考刻度未经当前版本校准，仅小权重参与`,
+    });
+  if (m.proficiencyPoints !== undefined)
+    parts.push({
+      label: '游戏内熟练度',
+      value: clamp((Math.log1p(m.proficiencyPoints) / Math.log1p(10000)) * 100),
+      weight: 0.01,
+      evidence: `游戏内熟练度 ${m.proficiencyPoints}；与胜率分开使用`,
+    });
+  const weight = parts.reduce((sum, p) => sum + p.weight, 0);
+  parts.forEach((p) => (p.weight /= weight));
+  const measured = parts.reduce((sum, p) => sum + p.value * p.weight, 0);
+  const evidenceGames = n || Math.min(m.games, 100);
+  const trust = (evidenceGames / (evidenceGames + 20)) * freshness * (n ? sampleWeight : 0.4);
   return {
-    score: Math.round(manual * (1 - trust) + measured * trust),
-    confidence: n < 20 ? '近期样本偏少' : freshness < 0.5 ? '记录较旧' : '有近期记录',
+    score: Math.round((evidenceGames > 0 ? 50 : manual) * (1 - trust) + measured * trust),
+    confidence:
+      freshness < 0.5
+        ? '记录较旧'
+        : n < 20
+          ? '有效样本偏少'
+          : recent === undefined
+            ? '缺少近期胜负'
+            : '有近期记录',
     games: n,
     power: m.power,
+    parts,
+    trust,
   };
+}
+export function effectivePool(pool: Pool, profile?: Profile): Pool {
+  const result = new Map(pool.map((p) => [p.heroId, p]));
+  for (const record of profile?.heroes ?? []) {
+    if (record.inPool === false) {
+      result.delete(record.heroId);
+      continue;
+    }
+    if (record.games > 0 || record.power > 0 || result.has(record.heroId)) {
+      const score = mastery(record.heroId, pool, profile).score;
+      result.set(record.heroId, {
+        heroId: record.heroId,
+        level: score >= 70 ? 'main' : score >= 45 ? 'comfortable' : 'learning',
+      });
+    }
+  }
+  return [...result.values()];
 }
 export function estimatePower(v: {
   base: number;

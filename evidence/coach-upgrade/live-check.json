@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-12T12:37:07.078Z",
+  "status": {
+    "product": "开局 NEXT",
+    "version": "0.8.0",
+    "modelConfigured": false,
+    "heroCount": 133
+  },
+  "rosterCount": 133,
+  "official": {
+    "date": "2026-10-11",
+    "rows": 10,
+    "cache": "cached"
+  },
+  "browserErrors": [],
+  "overflow": false,
+  "accessibility": {
+    "desktop": [],
+    "mobile": []
+  },
+  "scope": "Read-only on real user database; no invented player data written. Worker/profile/social interactions validated separately on port 4319."
+}

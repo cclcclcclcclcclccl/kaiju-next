@@ -1,6 +1,327 @@
 .sidebar {
   overflow-y: auto;
 }
+.habit-editor,
+.personal-recommendations,
+.coach-lab,
+.all-hero-ranks {
+  padding: 24px;
+  margin: 24px 0;
+}
+.habit-editor fieldset {
+  border: 1px solid #303d4d;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 16px 0;
+  min-width: 0;
+}
+.habit-editor legend {
+  font-size: 13px;
+  padding: 0 7px;
+}
+.habit-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 22px;
+}
+.habit-editor textarea {
+  min-height: 85px;
+  resize: vertical;
+}
+.focused-record {
+  border-color: #caab66 !important;
+}
+.score-explanation,
+.coach-players {
+  border-top: 1px solid #303d4d;
+  padding-top: 14px;
+  margin: 18px 0;
+  font-size: 13px;
+  line-height: 1.9;
+}
+.score-explanation summary,
+.coach-players summary {
+  cursor: pointer;
+  color: #d9e5f2;
+}
+.score-explanation li {
+  margin: 7px 0;
+}
+.personal-cards,
+.coach-candidates {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.personal-cards > article,
+.coach-candidates > article {
+  border: 1px solid #334050;
+  background: #101b29;
+  border-radius: 12px;
+  padding: 18px;
+  min-width: 0;
+}
+.personal-cards ul,
+.coach-candidates ul {
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.85;
+}
+.personal-cards .hero-row,
+.coach-candidates .hero-row,
+.roster-table .hero-row {
+  color: inherit;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+.personal-cards small,
+.coach-candidates small,
+.roster-table small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+.recommend-score {
+  font-size: 22px;
+  color: #e4c17a;
+}
+.recommend-score small {
+  display: inline;
+  font-size: 12px;
+  color: var(--muted);
+}
+.pool-record-summary {
+  padding: 16px;
+  border-top: 1px solid #303d4d;
+}
+.pool-record-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.pool-record-metrics span {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.pool-record-metrics strong {
+  font-size: 17px;
+  color: #e1e9f2;
+}
+.guide-stages,
+.rune-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 18px 0;
+}
+.guide-stages article,
+.rune-grid article {
+  padding: 16px;
+  border: 1px solid #334050;
+  border-radius: 10px;
+  background: #101b29;
+  min-width: 0;
+}
+.guide-stages p,
+.rune-grid p {
+  white-space: pre-line;
+  font-size: 13px;
+  line-height: 1.9;
+}
+.rune-grid span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 6px;
+}
+.hero-builds,
+.personal-guide {
+  padding: 24px 0;
+  border-top: 1px solid #334050;
+}
+.hero-builds .guide-stages {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.hero-builds ol {
+  padding-left: 20px;
+}
+.hero-builds li {
+  margin-bottom: 15px;
+}
+.hero-builds details {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.hero-builds summary {
+  cursor: pointer;
+}
+.skill-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  font-size: 13px;
+  color: #b8cadd;
+}
+.roster-scroll {
+  overflow: auto;
+  max-height: 650px;
+  border: 1px solid #334050;
+  border-radius: 10px;
+}
+.roster-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 970px;
+  width: 100%;
+  font-size: 13px;
+}
+.roster-table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #1c2a3a;
+  color: #c2d1e0;
+  text-align: left;
+  font-weight: 500;
+}
+.roster-table th,
+.roster-table td {
+  padding: 12px;
+  border-bottom: 1px solid #303c4b;
+  font-variant-numeric: tabular-nums;
+}
+.roster-table td:first-child {
+  min-width: 180px;
+}
+.block-source {
+  display: block;
+}
+.coach-lab {
+  border-top: 3px solid #d2b16e;
+}
+.coach-lab .section-title h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.coach-lab .pro-form {
+  padding: 0;
+}
+.coach-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+.coach-metrics > div {
+  padding: 16px;
+  background: #1a293a;
+  border-radius: 8px;
+}
+.coach-metrics strong {
+  display: block;
+  font-size: 23px;
+  color: #efd39a;
+  font-variant-numeric: tabular-nums;
+}
+.coach-metrics span {
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+  color: #b2c1d2;
+}
+.coach-line {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0;
+  display: grid;
+  gap: 8px;
+}
+.coach-line li {
+  border-left: 3px solid #79b5df;
+  background: #172b40;
+  padding: 10px;
+  font-size: 12px;
+  display: flex;
+  gap: 10px;
+}
+.coach-line li.enemies {
+  border-color: #df9292;
+  background: #30252e;
+}
+.coach-line span {
+  color: #b7c8d9;
+}
+.opponent-pool {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  max-height: 220px;
+  overflow: auto;
+  padding: 12px;
+  border: 1px solid #334050;
+  border-radius: 8px;
+}
+.opponent-reply {
+  color: #d7b5b9;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.system-fit {
+  color: #e2c589;
+  font-size: 13px;
+}
+.squad-matches details {
+  margin: 12px 0;
+  font-size: 13px;
+  line-height: 1.9;
+}
+.squad-matches summary {
+  cursor: pointer;
+}
+@media (max-width: 1100px) {
+  .personal-cards,
+  .coach-candidates {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 700px) {
+  .habit-editor,
+  .personal-recommendations,
+  .coach-lab,
+  .all-hero-ranks {
+    padding: 16px;
+  }
+  .personal-cards,
+  .coach-candidates,
+  .guide-stages,
+  .rune-grid,
+  .hero-builds .guide-stages {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .coach-metrics,
+  .opponent-pool {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .coach-lab .section-title,
+  .personal-recommendations .section-title,
+  .all-hero-ranks .section-title {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .all-hero-ranks .pro-toolbar label {
+    min-width: 0;
+    width: 100%;
+  }
+}
 .official-stats {
   padding: 24px;
   margin: 24px 0;

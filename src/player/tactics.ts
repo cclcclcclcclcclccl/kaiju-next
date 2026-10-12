@@ -1,6 +1,8 @@
 import { personalFit } from './pro/bp.ts';
 import type { DraftContext } from './pro/bp.ts';
 import type { Draft, Hero, Pool } from './model.ts';
+import { effectivePool } from './pro/analytics.ts';
+import { styleFit } from './pro/playstyle.ts';
 export type Trait =
   'frontline' | 'engage' | 'peel' | 'magic' | 'physical' | 'mobility' | 'poke' | 'sustain';
 export const traitNames: Record<Trait, string> = {
@@ -305,10 +307,17 @@ export function noteFor(hero: Hero): Note {
   if (hero.classes.includes('坦克')) traits.push('frontline');
   if (hero.classes.includes('法师')) traits.push('magic');
   if (hero.classes.some((c) => ['战士', '刺客', '射手'].includes(c))) traits.push('physical');
+  const tags = (hero.mechanics?.tags ?? []).join('|');
+  if (/控制|开团|突进/.test(tags)) traits.push('engage');
+  if (/保护|护盾/.test(tags) && hero.roles.includes('游走')) traits.push('peel');
+  if (/位移|机动|突进/.test(tags)) traits.push('mobility');
+  if (/远程|消耗/.test(tags)) traits.push('poke');
+  if (/持续|普攻/.test(tags) || hero.classes.includes('射手')) traits.push('sustain');
   return {
     traits,
     tip: hero.guide?.play.slice(0, 240) || '结合公开定位与技能机制确定这局的任务。',
-    tradeoff: '该英雄的能力标签仅按官方职业推断，尚未完成逐项战术校准；请核对技能机制与阵容。',
+    tradeoff:
+      '该英雄的能力标签按官方职业和机制标签推断，尚未完成逐项战术校准；请核对技能机制与阵容。',
     drill:
       hero.skills.find((s) => s.tip)?.tip?.slice(0, 200) ||
       '回看一次关键团战，记录技能交出前你掌握的信息。',
@@ -328,7 +337,9 @@ export function recommend(
   draft: Draft,
   heroes: Hero[],
   context: DraftContext = {},
+  limit = 3,
 ): Recommendation[] {
+  draft = { ...draft, pool: effectivePool(draft.pool, context.profile) };
   const get = (id: number) => heroes.find((h) => h.id === id);
   const others = Object.entries(draft.allies)
     .filter(([role, id]) => role !== draft.role && id)
@@ -375,6 +386,9 @@ export function recommend(
           : []),
       ];
       const fit = personalFit(hero, draft, context);
+      const playstyle = styleFit(hero, note.traits, context.profile);
+      reasons.push(...playstyle.reasons);
+      risks.push(...playstyle.risks);
       const partners = (hero.relations ?? []).filter(
         (r) => r.type === 'partner' && others.some((h) => h.id === r.heroId),
       );
@@ -391,7 +405,7 @@ export function recommend(
       if (bad.length)
         risks.push('官方资料提示需提防：' + bad.map((r) => get(r.heroId)?.name).join('、'));
       if (fit.mastery.games)
-        reasons.push('个人记录：近期 ' + fit.mastery.games + ' 场 · ' + fit.mastery.confidence);
+        reasons.push('个人记录：参考样本 ' + fit.mastery.games + ' 场 · ' + fit.mastery.confidence);
       if (fit.meta !== null)
         reasons.push('分段梯度 ' + fit.stat?.tier + ' · ' + context.snapshot?.segment);
       const team = Math.min(
@@ -419,12 +433,24 @@ export function recommend(
           ? improves.length * 4 +
             (level === 'main' ? 7 : level === 'comfortable' ? 5 : level === 'learning' ? 1 : 0) +
             (enemyDive.length && note.traits.includes('peel') ? 3 : 0)
-          : total;
-      return { hero, note, reasons, risks, level, improves, score, fit, total: Math.round(total) };
+          : context.profile?.habits
+            ? total * 0.88 + playstyle.score * 0.12
+            : total;
+      return {
+        hero,
+        note,
+        reasons,
+        risks,
+        level,
+        improves,
+        score,
+        fit,
+        total: Math.round(context.profile?.habits ? total * 0.88 + playstyle.score * 0.12 : total),
+      };
     })
     .sort((a, b) => b.score - a.score || a.hero.id - b.hero.id)
     .map(({ score, ...entry }) => entry)
-    .slice(0, 3);
+    .slice(0, limit);
 }
 export function lineupTraits(ids: number[], heroes: Hero[]): Set<Trait> {
   return new Set(

@@ -6,6 +6,16 @@ const response = await fetch(source, { signal: AbortSignal.timeout(20000) });
 if (!response.ok) throw new Error('Official catalog HTTP ' + response.status);
 const raw = await response.text();
 const list = JSON.parse(raw);
+const dictionaries = await Promise.all(
+  ['item', 'ming'].map(async (name) => {
+    const response = await fetch(`https://pvp.qq.com/web201605/js/${name}.json`, {
+      signal: AbortSignal.timeout(20000),
+    });
+    if (!response.ok) throw new Error(`Official ${name} HTTP ${response.status}`);
+    return response.json();
+  }),
+);
+const [items, runes] = dictionaries;
 const clean = (s) =>
   String(s ?? '')
     .replace(/<br\s*\/?>/gi, '\n')
@@ -87,6 +97,58 @@ async function worker() {
       skills,
       relations,
       difficulty: valid ? Number(d.difficulty_value) || null : null,
+      mechanics: valid
+        ? {
+            survival: d.survive_value ? Number(d.survive_value) : null,
+            attack: d.attack_value ? Number(d.attack_value) : null,
+            skill: d.skill_value ? Number(d.skill_value) : null,
+            tags: [
+              ...new Set(
+                ['survive_tag', 'attack_tag', 'skill_tag', 'difficulty_tag']
+                  .flatMap((k) => clean(d[k]).split('|'))
+                  .filter(Boolean),
+              ),
+            ],
+          }
+        : undefined,
+      builds: valid
+        ? [1, 2]
+            .map((i) => ({
+              unresolvedItemIds: clean(d['build' + i])
+                .split('|')
+                .filter(
+                  (id) => /^\d+$/.test(id) && !items.some((item) => String(item.item_id) === id),
+                )
+                .map(Number),
+              items: clean(d['build' + i])
+                .split('|')
+                .map((id) => items.find((item) => String(item.item_id) === id))
+                .filter(Boolean)
+                .map((item) => ({
+                  id: item.item_id,
+                  name: clean(item.item_name),
+                  price: Number(item.total_price ?? 0),
+                  description: [clean(item.des1), clean(item.des2)].filter(Boolean).join('\n'),
+                })),
+              note: clean(d['build_tip' + i]),
+            }))
+            .filter((b) => b.items.length)
+        : [],
+      runes: valid
+        ? ['red', 'green', 'blue']
+            .map((color) => {
+              const rune = runes.find((r) => String(r.ming_id) === String(d['fuwenid_' + color]));
+              return rune ? { ...rune, slotColor: color } : undefined;
+            })
+            .filter(Boolean)
+            .map((r) => ({
+              id: Number(r.ming_id),
+              name: clean(r.ming_name),
+              color: r.slotColor,
+              description: clean(r.ming_des),
+            }))
+        : [],
+      runeNote: clean(d.fuwenid_exp),
       guide: valid
         ? {
             play: clean(d.usetips),
@@ -128,6 +190,19 @@ await writeFile(
       count: heroes.length,
       skillPages: heroes.filter((h) => h.skills.length).length,
       relations: heroes.reduce((s, h) => s + h.relations.length, 0),
+      builds: {
+        pages: heroes.filter((h) => h.builds.length).length,
+        unresolved: heroes.flatMap((h) =>
+          h.builds.flatMap((b, index) =>
+            b.unresolvedItemIds.length
+              ? [{ heroId: h.id, scheme: index + 1, itemIds: b.unresolvedItemIds }]
+              : [],
+          ),
+        ),
+      },
+      runePages: heroes.filter((h) => h.runes.length).length,
+      equipmentSource: 'https://pvp.qq.com/web201605/js/item.json',
+      runeSource: 'https://pvp.qq.com/web201605/js/ming.json',
       proofs,
       failures,
     },
