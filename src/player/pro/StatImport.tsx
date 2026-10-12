@@ -8,6 +8,7 @@ import { blankEntry, parsePastedStats, parseStatEntries, inputError } from './im
 import type { StatEntry } from './importers.ts';
 import { Modal } from '../ui.tsx';
 import { api } from '../../api.ts';
+import { scopeIssue, scopeLabel } from './statistics.ts';
 import type { z } from 'zod';
 type Input = z.infer<typeof snapshotSchema>;
 export default function StatImport({
@@ -33,6 +34,12 @@ export default function StatImport({
     sourceUrl: '',
   });
   const [entries, setEntries] = useState<StatEntry[]>([blankEntry(role as Role)]);
+  const [scope, setScope] = useState({
+    denominator: 'unknown',
+    winRateScope: 'unknown',
+    winRateWindow: 'unknown',
+    scopeNotes: '',
+  });
   const [pasted, setPasted] = useState(''),
     [raw, setRaw] = useState(''),
     [error, setError] = useState(''),
@@ -50,7 +57,7 @@ export default function StatImport({
     snapshotSchema.parse(
       mode === 'json'
         ? JSON.parse(raw)
-        : { ...meta, denominator: 'match', rows: parseStatEntries(entries, heroes) },
+        : { ...meta, ...scope, rows: parseStatEntries(entries, heroes) },
     );
   const inspect = () => {
     try {
@@ -189,6 +196,71 @@ export default function StatImport({
               placeholder="https://… 或 #小程序://…"
             />
           </label>
+          <fieldset className="scope-fields">
+            <legend>核对指标口径</legend>
+            <p className="data-caption">
+              按来源说明填写。分段页面中的胜率也可能来自全分段或版本累计；不确定就保留待核对。
+            </p>
+            <div className="pro-form">
+              <label>
+                胜率统计人群
+                <select
+                  aria-label="胜率统计人群"
+                  value={scope.winRateScope}
+                  onChange={(e) => {
+                    reset();
+                    setScope({ ...scope, winRateScope: e.target.value });
+                  }}
+                >
+                  <option value="unknown">待核对</option>
+                  <option value="segment">与所选分段一致</option>
+                  <option value="all">全分段样本</option>
+                </select>
+              </label>
+              <label>
+                胜率时间范围
+                <select
+                  aria-label="胜率时间范围"
+                  value={scope.winRateWindow}
+                  onChange={(e) => {
+                    reset();
+                    setScope({ ...scope, winRateWindow: e.target.value });
+                  }}
+                >
+                  <option value="unknown">待核对</option>
+                  <option value="range">与所填起止日期一致</option>
+                  <option value="version">游戏版本累计</option>
+                </select>
+              </label>
+              <label>
+                出场与禁用分母
+                <select
+                  aria-label="出场与禁用分母"
+                  value={scope.denominator}
+                  onChange={(e) => {
+                    reset();
+                    setScope({ ...scope, denominator: e.target.value });
+                  }}
+                >
+                  <option value="unknown">待核对，不计算 BP 率</option>
+                  <option value="match">已确认采用同一对局分母</option>
+                </select>
+              </label>
+            </div>
+            <label className="field">
+              口径说明
+              <input
+                aria-label="口径说明"
+                maxLength={600}
+                value={scope.scopeNotes}
+                onChange={(e) => {
+                  reset();
+                  setScope({ ...scope, scopeNotes: e.target.value });
+                }}
+                placeholder="例如：来源对千强人群的定义、版本累计规则"
+              />
+            </label>
+          </fieldset>
           <div className="stat-entry-list">
             {entries.map((entry, i) => (
               <div className="stat-entry" key={i}>
@@ -293,7 +365,7 @@ export default function StatImport({
             </button>
           </details>
           <p className="data-caption">
-            胜率、出场率、禁用率需按同一统计口径录入。来源未提供的数值请勿猜填；没有场次数时仍可看原始指标，但不会给正式梯度。
+            来源未提供的数值请勿猜填。口径未核对、指标人群混合或场次不足时，只展示原始指标，不给正式梯度。
           </p>
           <button className="btn secondary" onClick={inspect}>
             <Check size={15} />
@@ -307,6 +379,14 @@ export default function StatImport({
               <p className="data-caption">
                 {preview.patch} · {preview.startDate} 至 {preview.endDate} · {preview.sourceName}
               </p>
+              <p className="data-caption">
+                {scopeLabel({ ...preview, id: 'preview', importedAt: '' })}
+              </p>
+              {scopeIssue({ ...preview, id: 'preview', importedAt: '' }) && (
+                <p className="pro-notice">
+                  {scopeIssue({ ...preview, id: 'preview', importedAt: '' })}
+                </p>
+              )}
               <div className="table-scroll">
                 <table className="pro-table">
                   <thead>

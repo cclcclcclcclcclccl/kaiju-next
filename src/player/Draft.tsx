@@ -1,4 +1,5 @@
 import { latestSnapshot, usableSnapshot } from './pro/analytics.ts';
+import { scopeIssue } from './pro/statistics.ts';
 import { usePro } from './pro/context.tsx';
 import { SEGMENTS } from './pro/model.ts';
 import BpRounds from './pro/BpRounds.tsx';
@@ -243,9 +244,11 @@ export default function DraftPage({
             ? snapshot.patch +
               ' · ' +
               snapshot.endDate +
-              (usableSnapshot(snapshot)
-                ? ' · 请核对当前游戏版本'
-                : ' · 统计过旧或日期异常，已停用版本权重')
+              (scopeIssue(snapshot)
+                ? ' · 统计口径待核对，已停用版本权重'
+                : usableSnapshot(snapshot)
+                  ? ' · 请核对当前游戏版本'
+                  : ' · 统计过旧或日期异常，已停用版本权重')
             : '此分段未接入统计，版本权重自动让给已知依据'}
         </span>
       </div>

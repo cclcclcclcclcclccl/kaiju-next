@@ -1,5 +1,6 @@
 import type { Profile, StatRow, StatSnapshot, ReviewEvent } from './model.ts';
 import type { Pool } from '../model.ts';
+import { scopeIssue } from './statistics.ts';
 export const clamp = (v: number, min = 0, max = 100) => Math.min(max, Math.max(min, v));
 export function wilson(rate: number, n: number) {
   const p = rate / 100,
@@ -19,7 +20,7 @@ export type TierResult = {
   row: StatRow;
   score: number;
   tier: string;
-  bp: number;
+  bp: number | null;
   adjustedWin: number;
   interval: number[] | null;
   confidence: string;
@@ -42,6 +43,7 @@ export function latestSnapshot(snapshots: StatSnapshot[], segment: string) {
   return sortedSnapshots(snapshots, segment)[0];
 }
 export function tierList(snapshot: StatSnapshot, role: string): TierResult[] {
+  const issue = scopeIssue(snapshot);
   const rows = snapshot.rows.filter((r) => r.role === role);
   const adjusted = rows.map((r) =>
     r.games ? (r.winRate * r.games + 50 * 500) / (r.games + 500) : r.winRate,
@@ -106,25 +108,33 @@ export function tierList(snapshot: StatSnapshot, role: string): TierResult[] {
         reliable = !!row.games && row.games >= 500;
       return {
         row,
-        score: Math.round(score * 10) / 10,
-        tier: !enough
-          ? '样本不足'
-          : !reliable
-            ? '待验证'
-            : score >= 85
-              ? 'T0'
-              : score >= 65
-                ? 'T1'
-                : score >= 40
-                  ? 'T2'
-                  : score >= 20
-                    ? 'T3'
-                    : 'T4',
-        bp: row.pickRate + row.banRate,
+        score: issue ? 0 : Math.round(score * 10) / 10,
+        tier: issue
+          ? '口径待核对'
+          : !enough
+            ? '样本不足'
+            : !reliable
+              ? '待验证'
+              : score >= 85
+                ? 'T0'
+                : score >= 65
+                  ? 'T1'
+                  : score >= 40
+                    ? 'T2'
+                    : score >= 20
+                      ? 'T3'
+                      : 'T4',
+        bp: snapshot.denominator === 'match' ? row.pickRate + row.banRate : null,
         adjustedWin: adjusted[i],
-        interval: row.games ? wilson(row.winRate, row.games) : null,
-        confidence: !row.games ? '未提供场次' : row.games < 500 ? '低样本' : '有场次记录',
-        parts,
+        interval: row.games && !issue ? wilson(row.winRate, row.games) : null,
+        confidence: issue
+          ? '口径待核对，场次暂不用于胜率区间'
+          : !row.games
+            ? '未提供场次'
+            : row.games < 500
+              ? '低样本'
+              : '有场次记录',
+        parts: issue ? [] : parts,
       };
     })
     .sort(

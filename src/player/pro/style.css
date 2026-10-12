@@ -628,6 +628,96 @@
   gap: 12px;
   margin: 20px 0;
 }
+.scope-fields {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 16px;
+  min-width: 0;
+}
+.scope-fields legend {
+  color: var(--gold);
+  font-size: 13px;
+  padding: 0 8px;
+}
+.scope-fields .field {
+  margin-top: 14px;
+}
+.stat-history {
+  margin: 24px 0;
+  min-width: 0;
+}
+.stat-history .section-title {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.stat-history .section-title span {
+  font-size: 12px;
+}
+.stat-history .pro-toolbar > label {
+  min-width: 0;
+}
+.stat-history select {
+  max-width: 100%;
+}
+.history-deltas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.history-deltas > div {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  background: #101925;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.history-deltas span {
+  color: var(--muted);
+  font-size: 12px;
+}
+.history-deltas strong {
+  color: var(--gold);
+  font-size: 22px;
+}
+.history-deltas small {
+  font-size: 11px;
+  font-weight: 400;
+}
+.history-chart {
+  width: 100%;
+  display: block;
+  max-height: 250px;
+  color: var(--muted);
+}
+.history-chart text {
+  fill: currentColor;
+  font-size: 11px;
+}
+.stat-history summary {
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--gold);
+}
+@media (max-width: 760px) {
+  .history-deltas {
+    grid-template-columns: 1fr;
+  }
+  .stat-history {
+    padding: 16px;
+  }
+  .stat-history .pro-toolbar {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .history-chart text {
+    font-size: 20px;
+  }
+  .scope-fields .pro-form {
+    grid-template-columns: 1fr;
+  }
+}
 .stat-entry {
   display: grid;
   grid-template-columns: 1.3fr 1fr repeat(4, 0.8fr) 32px;

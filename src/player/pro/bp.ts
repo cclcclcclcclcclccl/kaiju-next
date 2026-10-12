@@ -21,7 +21,7 @@ export function personalFit(hero: Hero, draft: Draft, context: DraftContext) {
     context.snapshot.segment === (draft.segment ?? '大众分段') &&
     stat.row.games &&
     stat.row.games >= 500 &&
-    !['样本不足', '待验证'].includes(stat.tier)
+    /^T[0-4]$/.test(stat.tier)
       ? stat.score
       : null;
   return { mastery: m, meta, weights, stat };

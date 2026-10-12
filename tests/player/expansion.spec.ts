@@ -47,6 +47,8 @@ test('tier import is real, keeps provenance and supplies per-hero metrics', asyn
       sourceName: '合成协议测试，不代表实际胜率',
       sourceUrl: 'https://example.invalid/data',
       denominator: 'match',
+      winRateScope: 'segment',
+      winRateWindow: 'range',
       rows,
     }),
   );
@@ -230,6 +232,6 @@ test('new modules pass automatic accessibility checks and fit a mobile viewport'
       name,
     ).toBe(true);
   }
-  mkdirSync('evidence/refinement', { recursive: true });
-  writeFileSync('evidence/refinement/accessibility.json', JSON.stringify(audits, null, 2));
+  mkdirSync('evidence/reference-informed', { recursive: true });
+  writeFileSync('evidence/reference-informed/accessibility.json', JSON.stringify(audits, null, 2));
 });

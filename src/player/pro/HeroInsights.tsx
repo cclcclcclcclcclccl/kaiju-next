@@ -4,6 +4,8 @@ import { heroById } from '../catalog.ts';
 import { Portrait } from '../ui.tsx';
 import { SEGMENTS } from './model.ts';
 import { tierList, latestSnapshot, usableSnapshot } from './analytics.ts';
+import { scopeIssue, scopeLabel } from './statistics.ts';
+import StatHistory from './StatHistory.tsx';
 import { usePro } from './context.tsx';
 export default function HeroInsights({
   hero,
@@ -45,7 +47,7 @@ export default function HeroInsights({
             ['胜率', stat ? stat.row.winRate.toFixed(2) + '%' : '—'],
             ['出场率', stat ? stat.row.pickRate.toFixed(2) + '%' : '—'],
             ['禁用率', stat ? stat.row.banRate.toFixed(2) + '%' : '—'],
-            ['BP 率', stat ? stat.bp.toFixed(2) + '%' : '—'],
+            ['BP 率', stat?.bp != null ? stat.bp.toFixed(2) + '%' : '—'],
           ].map(([label, value]) => (
             <div key={label}>
               <strong>{value}</strong>
@@ -65,6 +67,19 @@ export default function HeroInsights({
               (usableSnapshot(snapshot!) ? '' : ' · 历史统计，不参与当前 BP')
             : '此分段暂无已导入的可靠统计，数值保留未知。'}
         </p>
+        {snapshot && stat && <p className="data-caption">{scopeLabel(snapshot)}</p>}
+        {snapshot && stat && scopeIssue(snapshot) && (
+          <p className="pro-notice">{scopeIssue(snapshot)}</p>
+        )}
+        {snapshot && stat && (
+          <StatHistory
+            key={snapshot.id + role}
+            current={snapshot}
+            snapshots={data.snapshots}
+            role={role}
+            heroId={hero.id}
+          />
+        )}
       </section>
       <section id="hero-relations">
         <h3>官方搭配与克制说明</h3>

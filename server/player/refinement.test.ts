@@ -31,7 +31,7 @@ test('table import accepts copied percentages, preserves unknown samples and rej
     /英雄/,
   );
   assert.throws(() => parseStatEntries(parsePastedStats('小乔,打野,50,20,1'), heroes), /分路/);
-  assert.throws(() => parseStatEntries(parsePastedStats('小乔,中路,50,80,30'), heroes), /不能超过/);
+  assert.throws(() => parseStatEntries(parsePastedStats('小乔,中路,101,80,30'), heroes));
 });
 test('source provenance accepts the actual WeChat share token while rejecting executable links', () => {
   const input = {

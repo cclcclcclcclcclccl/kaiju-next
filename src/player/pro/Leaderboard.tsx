@@ -1,4 +1,6 @@
 import StatImport from './StatImport.tsx';
+import StatHistory from './StatHistory.tsx';
+import { scopeIssue, scopeLabel } from './statistics.ts';
 import { useMemo, useState } from 'react';
 import { ArrowUpRight, Download, Upload, Info } from 'lucide-react';
 import { heroes, heroById } from '../catalog.ts';
@@ -20,6 +22,7 @@ export default function Leaderboard({
     [role, setRole] = useState<string>('中路'),
     [selected, setSelected] = useState(''),
     [query, setQuery] = useState(''),
+    [hideLowPick, setHideLowPick] = useState(false),
     [order, setOrder] = useState('tier'),
     [importing, setImporting] = useState(false),
     [sourceMessage, setSourceMessage] = useState(''),
@@ -39,6 +42,8 @@ export default function Leaderboard({
       sourceName: '合成示例，非实际游戏数据',
       sourceUrl: 'https://example.invalid',
       denominator: 'match',
+      winRateScope: 'segment',
+      winRateWindow: 'range',
       rows: heroes
         .filter((h) => h.roles.includes(role))
         .slice(0, 10)
@@ -56,7 +61,15 @@ export default function Leaderboard({
   const shown = demo ? example : snapshot;
   const allRanking = shown ? tierList(shown, role) : [];
   const ranking = allRanking
-    .filter((r) => !query || heroById(r.row.heroId)?.name.includes(query.trim()))
+    .filter(
+      (r) =>
+        (!query.trim() ||
+          query
+            .trim()
+            .split(/[\s,，]+/)
+            .some((q) => heroById(r.row.heroId)?.name.includes(q))) &&
+        (!hideLowPick || r.row.pickRate >= 2.5),
+    )
     .sort((a, b) =>
       order === 'tier'
         ? Number(b.tier.startsWith('T')) - Number(a.tier.startsWith('T')) ||
@@ -68,7 +81,7 @@ export default function Leaderboard({
             ? b.row.pickRate - a.row.pickRate
             : order === 'ban'
               ? b.row.banRate - a.row.banRate
-              : b.bp - a.bp,
+              : (b.bp ?? -1) - (a.bp ?? -1),
     );
   const template = () =>
     download(
@@ -82,7 +95,10 @@ export default function Leaderboard({
           endDate: '2026-10-07',
           sourceName: '请填写数据发布者',
           sourceUrl: 'https://请替换为实际来源',
-          denominator: 'match',
+          denominator: 'unknown',
+          winRateScope: 'unknown',
+          winRateWindow: 'unknown',
+          scopeNotes: '请按来源核对胜率人群、时间范围与选禁分母',
           rows: [
             {
               heroId: 109,
@@ -158,7 +174,7 @@ export default function Leaderboard({
             aria-label="搜索梯度英雄"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="英雄名称"
+            placeholder="英雄名称，可用空格或逗号分隔"
           />
         </label>
         <label>
@@ -183,6 +199,14 @@ export default function Leaderboard({
           {demo ? '退出合成演示' : '查看算法演示'}
         </button>
       </div>
+      <label className="check-control">
+        <input
+          type="checkbox"
+          checked={hideLowPick}
+          onChange={(e) => setHideLowPick(e.target.checked)}
+        />
+        隐藏出场率低于 2.5% 的英雄（只筛选显示，不重算梯度）
+      </label>
       {demo && (
         <div className="pro-notice">
           当前是明确标注的合成数据，用于检查算法，不代表真实英雄强度，不会保存或进入 BP。
@@ -233,6 +257,17 @@ export default function Leaderboard({
         <p className="pro-notice">
           这批统计距今超过 14 天或日期异常，仅供历史比较，已退出当前 BP 版本评分。即使在 14
           天内，也请核对版本是否发生调整。
+        </p>
+      )}
+      {shown && (
+        <p className="data-caption">
+          {scopeLabel(shown)}
+          {shown.scopeNotes ? `。${shown.scopeNotes}` : ''}
+        </p>
+      )}
+      {shown && scopeIssue(shown) && (
+        <p className="pro-notice" role="status">
+          {scopeIssue(shown)}
         </p>
       )}
       {shown && (
@@ -304,13 +339,15 @@ export default function Leaderboard({
                     <small>
                       {r.tier.startsWith('T')
                         ? r.parts.map((p) => p.label + Math.round(p.weight * 100) + '%').join(' · ')
-                        : '样本未满足梯度要求，可按原始指标排序'}
+                        : r.tier === '口径待核对'
+                          ? '先核对指标口径，仅展示原始数值'
+                          : '样本未满足梯度要求，可按原始指标排序'}
                     </small>
                   </td>
                   <td>{r.row.winRate.toFixed(2)}%</td>
                   <td>{r.row.pickRate.toFixed(2)}%</td>
                   <td>{r.row.banRate.toFixed(2)}%</td>
-                  <td>{r.bp.toFixed(2)}%</td>
+                  <td>{r.bp === null ? '—' : r.bp.toFixed(2) + '%'}</td>
                   <td>
                     {r.row.games?.toLocaleString() ?? '场次未知'}
                     <small>
@@ -323,19 +360,29 @@ export default function Leaderboard({
               ))}
             </tbody>
           </table>
-          {!ranking.length && <p className="muted">该快照没有此分路的数据。</p>}
+          {!ranking.length && (
+            <p className="muted">
+              {allRanking.length
+                ? '没有符合当前搜索或出场率筛选的英雄。'
+                : '该快照没有此分路的数据。'}
+            </p>
+          )}
         </div>
       )}
+      {shown && !demo && allRanking.length > 0 && (
+        <StatHistory key={shown.id + role} current={shown} snapshots={data.snapshots} role={role} />
+      )}
       <p className="data-caption">
-        导入数据仍需核对真实性和统计口径。跨分段数据不会混排；出场与禁用采用同一对局分母。样本不足或缺失场次时不赋予正式
-        T 梯度。网络评价仅作为带出处的辅助信号。
+        导入数据仍需核对真实性和统计口径。混合或未核对的口径不会进入梯度与 BP
+        评分；只有确认同一对局分母才计算 BP 率。样本不足或缺失场次时不赋予正式 T
+        梯度。网络评价仅作为带出处的辅助信号。
       </p>
       {method && (
         <Modal title="梯度算法 v1 · 可解释、可复算" onClose={() => setMethod(false)} wide>
           <div className="pro-prose">
             <p>
-              先在同一分段、版本、日期范围及分路内比较。胜率按 500 场、50%
-              的先验收缩，避免少量对局登顶；同时显示原始胜率与 Wilson 95% 区间。
+              先核对胜率统计人群和时间范围、出场与禁用分母，再在同一分段、版本、日期范围及分路内比较。版本累计胜率或混合人群只展示原始指标。胜率按
+              500 场、50% 的先验收缩，避免少量对局登顶；同时显示原始胜率与 Wilson 95% 区间。
             </p>
             <p>
               收缩胜率 60%、出场率 15%、禁用率 15%。同口径战力名次和带出处的网络评价各最多占

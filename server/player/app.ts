@@ -100,7 +100,7 @@ export function createPlayerApp(
       if (method === 'GET' && url.pathname === '/api/status')
         return send(200, {
           product: '开局 NEXT',
-          version: '0.5.0',
+          version: '0.6.0',
           modelConfigured: Boolean(providerConfig()),
           heroCount: heroes.length,
         });

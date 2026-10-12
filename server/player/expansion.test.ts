@@ -34,6 +34,8 @@ const fixture = (): StatSnapshot => ({
   sourceName: '受控测试样本',
   sourceUrl: 'https://example.invalid/statistics',
   denominator: 'match',
+  winRateScope: 'segment',
+  winRateWindow: 'range',
   rows: heroes
     .filter((h) => h.roles.includes('中路'))
     .slice(0, 8)

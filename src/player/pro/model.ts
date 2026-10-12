@@ -25,10 +25,6 @@ export const statRowSchema = z
     opinionSource: z.string().url().optional(),
   })
   .strict()
-  .refine(
-    (r) => r.pickRate + r.banRate <= 100.05,
-    '出场率和禁用率需使用同一对局分母，合计不能超过 100%',
-  )
   .refine((r) => r.opinion === undefined || !!r.opinionSource, '评价分必须附来源');
 export const snapshotSchema = z
   .object({
@@ -54,11 +50,18 @@ export const snapshotSchema = z
           return false;
         }
       }, '请填写有效网页链接或微信小程序分享口令'),
-    denominator: z.literal('match'),
+    denominator: z.enum(['match', 'unknown']),
+    winRateScope: z.enum(['segment', 'all', 'unknown']).optional(),
+    winRateWindow: z.enum(['range', 'version', 'unknown']).optional(),
+    scopeNotes: z.string().trim().max(600).optional(),
     rows: z.array(statRowSchema).min(1).max(1000),
   })
   .strict()
   .refine((v) => v.startDate <= v.endDate, '起始日期不能晚于结束日期')
+  .refine(
+    (v) => v.denominator !== 'match' || v.rows.every((r) => r.pickRate + r.banRate <= 100.05),
+    '已确认同一对局分母时，出场率与禁用率合计不能超过 100%',
+  )
   .refine(
     (v) => new Set(v.rows.map((r) => r.heroId + '-' + r.role)).size === v.rows.length,
     '英雄与分路重复',

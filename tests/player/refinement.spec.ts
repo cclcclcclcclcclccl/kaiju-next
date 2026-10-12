@@ -26,9 +26,9 @@ test('a player can enter a sourced table without JSON and keep an unpublished sa
   expect(axe.violations).toEqual([]);
   await page.setViewportSize({ width: 390, height: 844 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-  mkdirSync('evidence/refinement/screenshots', { recursive: true });
+  mkdirSync('evidence/reference-informed/screenshots', { recursive: true });
   await page.screenshot({
-    path: 'evidence/refinement/screenshots/table-import-mobile.png',
+    path: 'evidence/reference-informed/screenshots/table-import-mobile.png',
     animations: 'disabled',
   });
   await page.getByRole('button', { name: '确认保存统计' }).click();
@@ -44,7 +44,7 @@ test('a player can enter a sourced table without JSON and keep an unpublished sa
   ))
     await request.post('/api/pro/snapshot-remove', { data: { id: s.id } });
   writeFileSync(
-    'evidence/refinement/accessibility-import.json',
+    'evidence/reference-informed/accessibility-import.json',
     JSON.stringify({ violations: axe.violations, incomplete: axe.incomplete.length }, null, 2),
   );
 });
@@ -102,10 +102,10 @@ test('five accepted and sharing accounts produce a persistent visible squad resu
     .withTags(['wcag2a', 'wcag2aa', 'wcag21aa'])
     .analyze();
   expect(audit.violations).toEqual([]);
-  mkdirSync('evidence/refinement/screenshots', { recursive: true });
+  mkdirSync('evidence/reference-informed/screenshots', { recursive: true });
   await page.locator('.squad-plans').scrollIntoViewIfNeeded();
   await page.screenshot({
-    path: 'evidence/refinement/screenshots/squad-test-accounts.png',
+    path: 'evidence/reference-informed/screenshots/squad-test-accounts.png',
     animations: 'disabled',
   });
   await page.setViewportSize({ width: 390, height: 844 });
@@ -114,7 +114,7 @@ test('five accepted and sharing accounts produce a persistent visible squad resu
   await expect(page.getByRole('button', { name: '选择我方打野' })).toContainText('李白');
   await expect(page.getByRole('button', { name: '选择我方游走' })).toContainText('张飞');
   writeFileSync(
-    'evidence/refinement/accessibility-squad.json',
+    'evidence/reference-informed/accessibility-squad.json',
     JSON.stringify({ violations: audit.violations, incomplete: audit.incomplete.length }, null, 2),
   );
 });

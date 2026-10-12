@@ -126,9 +126,9 @@ test('mobile navigation, atlas and draft fit a 390px viewport', async ({ page })
   await page.getByLabel('查找待选英雄').fill('小乔');
   await page.locator('.hero-picker button').filter({ hasText: '小乔' }).click();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-  mkdirSync('evidence/refinement/screenshots', { recursive: true });
+  mkdirSync('evidence/reference-informed/screenshots', { recursive: true });
   await page.screenshot({
-    path: 'evidence/refinement/screenshots/draft-mobile.png',
+    path: 'evidence/reference-informed/screenshots/draft-mobile.png',
     fullPage: true,
     animations: 'disabled',
   });
@@ -148,7 +148,10 @@ test('accessibility audits cover homepage, draft and mobile hero detail', async 
       .withTags(['wcag2a', 'wcag2aa', 'wcag21aa'])
       .analyze();
     audits.push({ stage, violations: result.violations, incomplete: result.incomplete.length });
-    writeFileSync('evidence/refinement/accessibility-core.json', JSON.stringify(audits, null, 2));
+    writeFileSync(
+      'evidence/reference-informed/accessibility-core.json',
+      JSON.stringify(audits, null, 2),
+    );
     expect(result.violations, stage).toEqual([]);
   };
   await audit('desktop home');
