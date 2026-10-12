@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-10-12T05:33:05.062Z",
+  "status": {
+    "product": "开局 NEXT",
+    "version": "0.5.0",
+    "modelConfigured": false,
+    "heroCount": 133
+  },
+  "errors": [],
+  "failed": [],
+  "httpFailures": [],
+  "mutations": [],
+  "shots": [
+    {
+      "name": "home-live-desktop",
+      "overflow": false
+    },
+    {
+      "name": "systems-live-desktop",
+      "overflow": false
+    },
+    {
+      "name": "table-empty-live-desktop",
+      "overflow": false
+    },
+    {
+      "name": "table-empty-live-mobile",
+      "overflow": false
+    }
+  ],
+  "note": "Live v0.5.0, clean browser session. Page API writes were blocked. No statistics, accounts, profiles or gameplay fixtures saved to the live database. Screenshots are actual UI."
+}
