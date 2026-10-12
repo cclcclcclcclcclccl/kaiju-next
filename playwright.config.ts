@@ -1,6 +1,6 @@
 import { defineConfig } from '@playwright/test';
 export default defineConfig({
-  testDir: './tests',
+  testDir: './tests/player',
   timeout: 30000,
   workers: 1,
   fullyParallel: false,
@@ -18,7 +18,7 @@ export default defineConfig({
     url: 'http://127.0.0.1:4319/api/status',
     env: {
       PORT: '4319',
-      HENGJU_DATA_DIR: 'data/e2e',
+      PLAYER_DATA_DIR: 'data/player-e2e',
       MODEL_API_KEY: '',
       MODEL_NAME: '',
       MODEL_BASE_URL: '',

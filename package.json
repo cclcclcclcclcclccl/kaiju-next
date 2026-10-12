@@ -1,6 +1,6 @@
 {
-  "name": "hengju-rule-lab",
-  "version": "0.2.0",
+  "name": "kaiju-player-companion",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -10,9 +10,10 @@
     "dev": "node scripts/dev.mjs",
     "start": "node --env-file-if-exists=.env server/index.ts",
     "build": "tsc --noEmit && vite build",
-    "test": "node --test src/core/*.test.ts server/*.test.ts",
+    "test": "node --test server/player/*.test.ts",
     "test:e2e": "playwright test",
-    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\" \"server/**/*.ts\" \"tests/**/*.ts\" \"scripts/*.mjs\" \"*.{ts,json}\""
+    "format:check": "prettier --check \"src/player/**/*.{ts,tsx,css}\" \"server/player/**/*.ts\" \"tests/player/**/*.ts\" \"scripts/player/*.mjs\" \"*.{ts,json}\"",
+    "data:refresh": "node scripts/player/refresh-data.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
