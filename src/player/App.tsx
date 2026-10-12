@@ -237,6 +237,7 @@ export default function App() {
             <button
               className="mobile-menu icon-btn"
               aria-label="展开导航"
+              aria-expanded={mobileMenu}
               onClick={() => setMobileMenu(!mobileMenu)}
             >
               <Menu size={21} />

@@ -132,6 +132,10 @@ test('mobile navigation, atlas and draft fit a 390px viewport', async ({ page })
     fullPage: true,
     animations: 'disabled',
   });
+  await page.getByRole('button', { name: '展开导航' }).click();
+  await page.getByRole('button', { name: '开局首页', exact: true }).click();
+  await expect(page.getByRole('heading', { name: '下一局，从这里开始。' })).toBeVisible();
+  await expect(page.locator('.focus-card')).toBeVisible();
 });
 test('accessibility audits cover homepage, draft and mobile hero detail', async ({ page }) => {
   const audits: {
