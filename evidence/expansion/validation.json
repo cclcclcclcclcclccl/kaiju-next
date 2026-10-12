@@ -1,0 +1,69 @@
+{
+  "checkedAt": "2026-10-12T04:34:48.139Z",
+  "version": "0.4.0",
+  "node": "v24.16.0",
+  "checks": {
+    "core": {
+      "command": "npm test",
+      "passed": 16,
+      "failed": 0
+    },
+    "build": {
+      "command": "npm run build",
+      "passed": true,
+      "warning": "Hero text data chunk 692 KB; upstream Zod pure-annotation warning. Not yet lazily loaded."
+    },
+    "browser": {
+      "command": "npm run test:e2e",
+      "passed": 13,
+      "failed": 0,
+      "durationMs": 41039.358
+    },
+    "format": {
+      "command": "npm run format:check",
+      "passed": true
+    },
+    "accessibility": {
+      "states": 8,
+      "automaticViolations": 0,
+      "incompletePerState": 1
+    },
+    "visual": {
+      "screenshots": 10,
+      "manualInspection": true,
+      "mobileWidth": 390,
+      "overflow": false,
+      "externalImageFailures": 1,
+      "detail": "Official hero 138 cover returns 404; fallback backgrounds and text remain. Initial black-video-frame defect fixed with readiness guard, actual playback and pixel verification."
+    },
+    "reproduction": {
+      "seconds": 29.535,
+      "from": "fresh Git archive and empty database",
+      "existingEnvironment": "Windows with Node/npm and dependency cache",
+      "includes": [
+        "npm ci",
+        "build",
+        "16 core tests",
+        "startup and empty data checks"
+      ]
+    }
+  },
+  "data": {
+    "catalog": 133,
+    "heroesWithSkills": 133,
+    "officialRelations": 798,
+    "liveSixSegmentStatistics": false,
+    "officialGameAccountSync": false,
+    "realModelConfigured": false,
+    "realGameplayEvaluation": false
+  },
+  "limits": [
+    "Tier and BP weights are heuristics without real-match calibration.",
+    "Video fixture is explicitly synthetic; verifies engineering only.",
+    "Vision and coach protocol tests use controlled mock services.",
+    "Social tested on same local server; public multi-device deployment not completed.",
+    "No competitor full-feature parity claim.",
+    "Competition video, PDF, original dialogue chains and remote repository pending."
+  ],
+  "sourceRevision": "e76f32216a7074b8cf4775b5aa1f64c706f03a8c"
+}

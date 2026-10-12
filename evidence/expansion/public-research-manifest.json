@@ -1,0 +1,111 @@
+{
+  "recordedAt": "2026-10-12T04:34:48.133Z",
+  "note": "Public HTML/JS exploratory responses retained locally in ignored data/public-research-v04. These are discovery materials, not verified live statistics. Verified sources are in hero-fetch.json.",
+  "records": [
+    {
+      "name": "camp-main.txt",
+      "bytes": 585306,
+      "sha256": "e013691f70023199fbc640370953a4f77c106072ecddd69c11b79efad4bb102a"
+    },
+    {
+      "name": "new-0.txt",
+      "bytes": 32093,
+      "sha256": "8415b6422c597efde132f2290b114621649db08ebd691a30c3cfe7038bc596ad"
+    },
+    {
+      "name": "new-1.txt",
+      "bytes": 21492,
+      "sha256": "03635b8b72cd77708e27daee802559d0b3bd3e149568359395e84176cd11e645"
+    },
+    {
+      "name": "new-2.txt",
+      "bytes": 1287080,
+      "sha256": "a87f2d3408ebc32625d29c5d32c7d6ef70c5f8b7aed959731d1aaa7c6a5fcc0a"
+    },
+    {
+      "name": "official-0.txt",
+      "bytes": 3723,
+      "sha256": "cbf6af6f5929c5cecc803e4a900065145f51075cf7f2fd0594e7687f2b69962c"
+    },
+    {
+      "name": "official-1.txt",
+      "bytes": 3723,
+      "sha256": "cbf6af6f5929c5cecc803e4a900065145f51075cf7f2fd0594e7687f2b69962c"
+    },
+    {
+      "name": "official-2.txt",
+      "bytes": 43454,
+      "sha256": "1f11ae67fc32ae6069f48e1c1a3c925227bdf23a0a2170b5ecb9ae624fa3f166"
+    },
+    {
+      "name": "official-3.txt",
+      "bytes": 43153,
+      "sha256": "b64ad4ea3c86c83b2540b9b433854218a60d07cc912a62aeaf1d40b95b2959a2"
+    },
+    {
+      "name": "official-4.txt",
+      "bytes": 3723,
+      "sha256": "cbf6af6f5929c5cecc803e4a900065145f51075cf7f2fd0594e7687f2b69962c"
+    },
+    {
+      "name": "official-5.txt",
+      "bytes": 3723,
+      "sha256": "cbf6af6f5929c5cecc803e4a900065145f51075cf7f2fd0594e7687f2b69962c"
+    },
+    {
+      "name": "probe-0.txt",
+      "bytes": 362954,
+      "sha256": "469102f19678056af4758ade7a7f56f594ef5c4dedd874f3496c30fb32ae29a0"
+    },
+    {
+      "name": "probe-1.txt",
+      "bytes": 4220,
+      "sha256": "a852ce1536307ec025aa916be5a34832fd07b30de03969ef2ea9fa347a9cb62f"
+    },
+    {
+      "name": "probe-2.txt",
+      "bytes": 5182,
+      "sha256": "11e3663bb18b6a5068f6929acd35eb6fa46da6e528ed9c75323866d1cc5b7358"
+    },
+    {
+      "name": "probe-3.txt",
+      "bytes": 4220,
+      "sha256": "a852ce1536307ec025aa916be5a34832fd07b30de03969ef2ea9fa347a9cb62f"
+    },
+    {
+      "name": "probe-4.txt",
+      "bytes": 4707,
+      "sha256": "b2defaff607000d601a1d33d2795d6011de3b9609df3b8a12bacee0a2650eb43"
+    },
+    {
+      "name": "script-0.txt",
+      "bytes": 136,
+      "sha256": "9a991fd3164c4f8d86bb853ae0eef25da471a634fcf568ff0f188e657ed9db18"
+    },
+    {
+      "name": "script-1.txt",
+      "bytes": 72973,
+      "sha256": "3b48e872e0a84279e3e33365da63997a29516ea4447ca793a11b8917a3f5d982"
+    },
+    {
+      "name": "script-2.txt",
+      "bytes": 4220,
+      "sha256": "a852ce1536307ec025aa916be5a34832fd07b30de03969ef2ea9fa347a9cb62f"
+    },
+    {
+      "name": "stats-probe-0.txt",
+      "bytes": 4220,
+      "sha256": "a852ce1536307ec025aa916be5a34832fd07b30de03969ef2ea9fa347a9cb62f"
+    },
+    {
+      "name": "stats-probe-1.txt",
+      "bytes": 3688,
+      "sha256": "6306bcc4d5e1540fef0cdbcba4f87006dd21d75d747d5ce78bd38c3fcd22d6f5"
+    },
+    {
+      "name": "stats-probe-3.txt",
+      "bytes": 103336,
+      "sha256": "0ee87a511c972d8a2a40a4da3ffd1a938659ac849f1902be857072dde78f29a9"
+    }
+  ]
+}

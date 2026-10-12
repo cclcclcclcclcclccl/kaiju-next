@@ -1,0 +1,31 @@
+{
+  "limitation": "Fresh Git archive and database. Existing Windows Node/npm and dependency cache. Includes install, build, 16 core tests and live startup, not fresh OS provisioning or browser suite.",
+  "homepageStatus": 200,
+  "steps": [
+    {
+      "seconds": 14.529,
+      "exitCode": 0,
+      "step": "ci"
+    },
+    {
+      "seconds": 12.091,
+      "exitCode": 0,
+      "step": "build"
+    },
+    {
+      "seconds": 1.49,
+      "exitCode": 0,
+      "step": "test"
+    }
+  ],
+  "revision": "e76f32216a7074b8cf4775b5aa1f64c706f03a8c",
+  "seconds": 29.535,
+  "checkedAt": "2026-10-12T04:36:37.5568321Z",
+  "freshData": true,
+  "status": {
+    "product": "开局 NEXT",
+    "version": "0.4.0",
+    "modelConfigured": false,
+    "heroCount": 133
+  }
+}
