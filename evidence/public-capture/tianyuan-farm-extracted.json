@@ -1,0 +1,74 @@
+{
+  "createdAt": "2026-10-13T05:56:55.114Z",
+  "status": "needs-review",
+  "sourceImage": "tianyuan-farm-20261011.png",
+  "sha256": "dcb63baf07abb20c42387baafc6480e0da4b406b708ffa2e8f0abd22f876ead0",
+  "engine": "RapidOCR 3.10 / local CPU",
+  "rows": [
+    {
+      "heroId": 519,
+      "name": "敖隐",
+      "role": "发育路",
+      "winRate": 50.4,
+      "pickRate": 28.8,
+      "banRate": 46.6,
+      "ocrConfidence": 0.999,
+      "evidence": [
+        "敖隐#1",
+        "发育路",
+        "50.4%",
+        "28.8%",
+        "46.6%"
+      ]
+    },
+    {
+      "heroId": 199,
+      "name": "公孙离",
+      "role": "发育路",
+      "winRate": 50.4,
+      "pickRate": 15.3,
+      "banRate": 5,
+      "ocrConfidence": 0.99862,
+      "evidence": [
+        "公孙离#4",
+        "发育路",
+        "50.4%",
+        "15.3%",
+        "5.0%"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "text": "元流之子...#2",
+      "reason": "英雄名被截断，请完整显示后重新采集"
+    },
+    {
+      "text": "司空震#3",
+      "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+    },
+    {
+      "text": "李信#5",
+      "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+    }
+  ],
+  "dateText": [
+    "2026年10月11日",
+    "数据更新：2026年10月12日10:36"
+  ],
+  "dataDates": [
+    "2026-10-11"
+  ],
+  "requiredMetadata": [
+    "数据来源",
+    "所选分段",
+    "数据日期与获取日期",
+    "版本",
+    "胜率人群与时间范围",
+    "选禁分母"
+  ],
+  "notes": [
+    "这是截图识别后待核对文件，未写入玩家数据库",
+    "不从同时可见的标签猜测选中分段，不补隐藏小数或场次"
+  ]
+}

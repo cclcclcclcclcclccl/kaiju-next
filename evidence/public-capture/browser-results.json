@@ -1,0 +1,492 @@
+{
+  "stats": {
+    "startTime": "2026-10-13T06:05:01.246Z",
+    "duration": 122039.845,
+    "expected": 30,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "specs": [
+    {
+      "title": "detailed profile saves rate-only input, drives pool cards and opens the correct editable record",
+      "file": "coach.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 3233
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "complete roster links to atlas, correct rune colors and personal guides on desktop and phone",
+      "file": "coach.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 4375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "real worker considers both sides, applies only one move and invalidates changed input",
+      "file": "coach.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 5101
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "profile-only shared friend records produce a recommended system and disappear after sharing is revoked",
+      "file": "coach.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 1738
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "actual local screenshot OCR needs confirmation, persists records and feeds the pool",
+      "file": "data-upgrade.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 4699
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "official resource cache supports equipment comparison, skin hero links and separated update environments",
+      "file": "data-upgrade.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 1910
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "new interfaces remain usable on mobile with no accessibility violations",
+      "file": "data-upgrade.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 9475
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "full BP arena produces ten legal moves without overwriting current draft",
+      "file": "data-upgrade.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 1951
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tier import is real, keeps provenance and supplies per-hero metrics",
+      "file": "expansion.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 2339
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "player profile persists real inputs and practice route records a personal timing",
+      "file": "expansion.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 2752
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "a system loads its core picks and round BP can ban, advance and undo",
+      "file": "expansion.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 1641
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "real video playback captures a frame and preserves evidence-based review on reopen",
+      "file": "expansion.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 2434
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "two browser accounts become friends only after acceptance and can use shared pools in BP",
+      "file": "expansion.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 7101
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "new modules pass automatic accessibility checks and fit a mobile viewport",
+      "file": "expansion.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 8792
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "hero discovery uses real skills and persists the personal hero pool",
+      "file": "flows.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 1834
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "draft changes and bans change candidates; a real plan exports and reopens",
+      "file": "flows.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 2871
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "a match journal drives a real practice target, can be edited and survives refresh",
+      "file": "flows.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 1990
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "mobile navigation, atlas and draft fit a 390px viewport",
+      "file": "flows.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 3142
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "accessibility audits cover homepage, draft and mobile hero detail",
+      "file": "flows.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 4700
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "reopening a saved alternative preserves the chosen candidate",
+      "file": "flows.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 1358
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "AI feedback displays valid output and discards a response for an outdated lineup",
+      "file": "flows.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 1660
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "official data stays attributed, partial and distinct from personal tiers across filters and hero details",
+      "file": "official.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 4483
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "official request failure is visible and can recover without synthetic substitution",
+      "file": "official.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 1182
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "real table screenshots merge without saving until review, then source stats persist and open correct atlas",
+      "file": "public-capture.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 9848
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "conflicting values require an explicit selection; different dates cannot be merged",
+      "file": "public-capture.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 6441
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "bundled public observations are available with source date and correct hero detail",
+      "file": "public-capture.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 2442
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "a player can enter a sourced table without JSON and keep an unpublished sample count unknown",
+      "file": "refinement.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 4903
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "five accepted and sharing accounts produce a persistent visible squad result that loads into BP",
+      "file": "refinement.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 3090
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "mixed source metrics stay visible but cannot masquerade as a segment tier or a BP rate",
+      "file": "statistics.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 2405
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "history shows sourced percentage-point changes, excludes incompatible batches and works on a phone",
+      "file": "statistics.spec.ts",
+      "ok": true,
+      "tests": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration": 5252
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "reviewedOn": "2026-10-13",
+  "source": "#小程序://天元之弈/u6nCjaHUkuIRe6u",
+  "segment": "巅峰千强",
+  "dataDate": "2026-10-11",
+  "lowPickFilter": false,
+  "method": "Local OCR followed by visual comparison of every accepted name, role and percentage against five original screenshots",
+  "rows": 16,
+  "reports": [
+    {
+      "image": "tianyuan-clash-20261011.png",
+      "sha256": "97a5a89c421946f41bc647d0af5926cae2813c439abda67a71684f9624dd9faf",
+      "rows": 3,
+      "rejected": [
+        {
+          "text": "马超#2",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "司空震#5",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ]
+    },
+    {
+      "image": "tianyuan-jungle-20261011.png",
+      "sha256": "a1a392c2f404c0ca8ceb332b2beeb2abdef207fa83d32af367d945f9a038d5cb",
+      "rows": 4,
+      "rejected": [
+        {
+          "text": "马超#3",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ]
+    },
+    {
+      "image": "tianyuan-middle-20261011.png",
+      "sha256": "db289532a236e95b7b906b8ac1d329786cad7bbe1750b5e3373f97700c2d7472",
+      "rows": 4,
+      "rejected": [
+        {
+          "text": "大乔#2",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ]
+    },
+    {
+      "image": "tianyuan-farm-20261011.png",
+      "sha256": "dcb63baf07abb20c42387baafc6480e0da4b406b708ffa2e8f0abd22f876ead0",
+      "rows": 2,
+      "rejected": [
+        {
+          "text": "元流之子...#2",
+          "reason": "英雄名被截断，请完整显示后重新采集"
+        },
+        {
+          "text": "司空震#3",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "李信#5",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ]
+    },
+    {
+      "image": "tianyuan-roam-20261011.png",
+      "sha256": "1674b6fa0dfd82766f47c860a4cebccfe4279a7632cae16d57e5514674c26477",
+      "rows": 3,
+      "rejected": [
+        {
+          "text": "元流之子...#1",
+          "reason": "英雄名被截断，请完整显示后重新采集"
+        },
+        {
+          "text": "大乔#5",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "First visible page per role only",
+    "Multi-role and catalog-role mismatch rejected",
+    "Source scope copied from prior observed source explanation, no sample counts available",
+    "No authentication or private backend access"
+  ]
+}

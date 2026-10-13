@@ -8,6 +8,7 @@ import { scopeIssue, scopeLabel } from './statistics.ts';
 import StatHistory from './StatHistory.tsx';
 import { usePro } from './context.tsx';
 import { OfficialHeroStats } from './OfficialStats.tsx';
+import { withPublicReference } from './publicReferences.ts';
 export default function HeroInsights({
   hero,
   context,
@@ -19,8 +20,9 @@ export default function HeroInsights({
   const [segment, setSegment] = useState<string>(context?.segment ?? SEGMENTS[0]);
   const [role, setRole] = useState(context?.role ?? hero.roles[0]);
   const snapshot =
-      data.snapshots.find((s) => s.id === context?.snapshotId && s.segment === segment) ??
-      latestSnapshot(data.snapshots, segment),
+      withPublicReference(data.snapshots).find(
+        (s) => s.id === context?.snapshotId && s.segment === segment,
+      ) ?? latestSnapshot(withPublicReference(data.snapshots), segment),
     stat = snapshot ? tierList(snapshot, role).find((r) => r.row.heroId === hero.id) : undefined;
   return (
     <div className="hero-insights">

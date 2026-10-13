@@ -2,6 +2,7 @@ import StatImport from './StatImport.tsx';
 import StatHistory from './StatHistory.tsx';
 import OfficialStats from './OfficialStats.tsx';
 import AllHeroRanks from './AllHeroRanks.tsx';
+import { withPublicReference, publicReference } from './publicReferences.ts';
 import { scopeIssue, scopeLabel } from './statistics.ts';
 import { useMemo, useState } from 'react';
 import { ArrowUpRight, Download, Upload, Info } from 'lucide-react';
@@ -30,7 +31,7 @@ export default function Leaderboard({
     [sourceMessage, setSourceMessage] = useState(''),
     [method, setMethod] = useState(false),
     [demo, setDemo] = useState(false);
-  const snapshots = sortedSnapshots(data.snapshots, segment),
+  const snapshots = sortedSnapshots(withPublicReference(data.snapshots), segment),
     snapshot = snapshots.find((s) => s.id === selected) ?? snapshots[0];
   const example = useMemo<StatSnapshot>(
     () => ({
@@ -161,7 +162,11 @@ export default function Leaderboard({
         </label>
         <label>
           数据批次
-          <select value={snapshot?.id ?? ''} onChange={(e) => setSelected(e.target.value)}>
+          <select
+            aria-label="数据批次"
+            value={snapshot?.id ?? ''}
+            onChange={(e) => setSelected(e.target.value)}
+          >
             {!snapshots.length && <option value="">尚无此分段数据</option>}
             {snapshots.map((s) => (
               <option key={s.id} value={s.id}>
@@ -202,6 +207,24 @@ export default function Leaderboard({
         </button>
       </div>
       <AllHeroRanks segment={segment} onOpen={onOpen} selectedSnapshot={snapshot} />
+      {segment === publicReference.segment && snapshot?.id !== publicReference.id && (
+        <button
+          className="btn secondary"
+          onClick={() => {
+            setSelected(publicReference.id);
+            setDemo(false);
+          }}
+        >
+          查看天元之弈公开参考 · {publicReference.rows.length} 位英雄
+        </button>
+      )}
+      {snapshot?.id === publicReference.id && (
+        <p className="pro-notice">
+          当前是随项目附带的真实页面观察，数据日 {publicReference.endDate}，仅{' '}
+          {publicReference.rows.length}
+          位英雄，不是今天的全量榜单。可导出核对或采集新批次；此参考不写入你的档案。
+        </p>
+      )}
       <label className="check-control">
         <input
           type="checkbox"

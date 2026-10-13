@@ -1,0 +1,92 @@
+[
+  {
+    "file": "evidence/coach-upgrade/adaptive-system-test.png",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/coach-upgrade/adaptive-system-test.png",
+    "sha256": "6d907e3059bfe0f4f1a988cbfeab138b85d59bef4f29918d9e53ce7c6e63601d"
+  },
+  {
+    "file": "evidence/coach-upgrade/coach-desktop.png",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/coach-upgrade/coach-desktop.png",
+    "sha256": "fd6f586daee3bf86607c3989c6646afb37e2afd31e5c7f03eeb65b00b4a519de"
+  },
+  {
+    "file": "evidence/coach-upgrade/coach-mobile.png",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/coach-upgrade/coach-mobile.png",
+    "sha256": "a8314fb29363752bc1406d6b400210932c90571cdca46e4a677622ab12d52822"
+  },
+  {
+    "file": "evidence/coach-upgrade/hero-mobile.png",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/coach-upgrade/hero-mobile.png",
+    "sha256": "38678e87a3b27a8f9fd37ec0d5e33eeead47a19e26b5aaf38dc9bdad773d38c6"
+  },
+  {
+    "file": "evidence/coach-upgrade/hero-personal-guide.png",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/coach-upgrade/hero-personal-guide.png",
+    "sha256": "78f4fe765605cb82fbe17d8d3f94dcce6b38be81541078caf747e76a2e08cf2f"
+  },
+  {
+    "file": "evidence/coach-upgrade/personal-pool-test.png",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/coach-upgrade/personal-pool-test.png",
+    "sha256": "be2916b797813e43ffd04e6f16f8483375c1bb1f27f760e1c7706127bbb63f43"
+  },
+  {
+    "file": "evidence/data-upgrade/equipment.png",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/data-upgrade/equipment.png",
+    "sha256": "f8875bf2e1fe3ac13624b7332eb1301d5339eac845a1dd3e329ef6b4923fca45"
+  },
+  {
+    "file": "evidence/data-upgrade/official-updates.png",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/data-upgrade/official-updates.png",
+    "sha256": "ce2e49a423bf6ddf66ff390b2f15986cdbd71aaf6e4c7a0f942a1ccdb6ead5e6"
+  },
+  {
+    "file": "evidence/data-upgrade/分段梯度-mobile.png",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/data-upgrade/分段梯度-mobile.png",
+    "sha256": "0988873ff6508142893dd317535b4f197e11d55f8a593df5e75bb330f0fc6aa2"
+  },
+  {
+    "file": "evidence/data-upgrade/装备与版本-mobile.png",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/data-upgrade/装备与版本-mobile.png",
+    "sha256": "00bb92e394e59d54df5d9eaab45041863f36552aa5a15b990748ca69f89f5a95"
+  },
+  {
+    "file": "evidence/reference-informed/accessibility-history.json",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/reference-informed/accessibility-history.json",
+    "sha256": "0180f0f16e8cfe8b166e5cd205a915edbbf446e28cddffc0fd187fd231d690ab"
+  },
+  {
+    "file": "evidence/reference-informed/accessibility-import.json",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/reference-informed/accessibility-import.json",
+    "sha256": "0180f0f16e8cfe8b166e5cd205a915edbbf446e28cddffc0fd187fd231d690ab"
+  },
+  {
+    "file": "evidence/reference-informed/accessibility.json",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/reference-informed/accessibility.json",
+    "sha256": "cc980def1eb6e3341553230f3a1cfab169a04012ae231009f180916c847d9eda"
+  },
+  {
+    "file": "evidence/reference-informed/screenshots/draft-mobile.png",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/reference-informed/screenshots/draft-mobile.png",
+    "sha256": "41e8cf707244fdbfdeb33aacaca937b7e976f8026b3f5b50e7981d7cf52e7586"
+  },
+  {
+    "file": "evidence/reference-informed/screenshots/history-synthetic-desktop.png",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/reference-informed/screenshots/history-synthetic-desktop.png",
+    "sha256": "38ddfd406c153851a8d1354850176da9039e1900125fcc8e33d4862f364402dc"
+  },
+  {
+    "file": "evidence/reference-informed/screenshots/history-synthetic-mobile.png",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/reference-informed/screenshots/history-synthetic-mobile.png",
+    "sha256": "97456a124f026dc9e49e3f3de86a1301ff26cf14cd602451cd408cf40cebc2d0"
+  },
+  {
+    "file": "evidence/reference-informed/screenshots/squad-test-accounts.png",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/reference-informed/screenshots/squad-test-accounts.png",
+    "sha256": "52ad329892a39eab4d8ddb3a5354a42cab4abf57237abe4b7fd48d665fc8014c"
+  },
+  {
+    "file": "evidence/reference-informed/screenshots/table-import-mobile.png",
+    "backup": "evidence/public-capture/regression-artifacts/evidence/reference-informed/screenshots/table-import-mobile.png",
+    "sha256": "f0d327bf4dd4db378d0ca3e9d8cbf55409ea5562815082acfb8b00f95af604be"
+  }
+]

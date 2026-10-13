@@ -1727,3 +1727,45 @@
   outline: 2px solid var(--gold);
   outline-offset: 3px;
 }
+.table-capture {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  background: var(--bg);
+}
+.table-capture p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+.table-capture .pro-table {
+  min-width: 640px;
+}
+.table-capture .pro-table td:nth-child(3) {
+  max-width: 180px;
+  overflow-wrap: anywhere;
+}
+.table-capture .pro-table select {
+  max-width: 230px;
+}
+.table-capture input[type='file'] {
+  max-width: 100%;
+}
+.table-capture caption {
+  text-align: left;
+  padding: 12px 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+.table-capture .check-control {
+  margin: 18px 0;
+}
+@media (max-width: 760px) {
+  .table-capture {
+    padding: 14px;
+  }
+  .tier-band.unknown .tier-band-label strong {
+    line-height: 1.8;
+    padding: 0 8px;
+  }
+}

@@ -24,7 +24,8 @@ export default function AllHeroRanks({
     [query, setQuery] = useState(''),
     [sort, setSort] = useState('name');
   const [view, setView] = useState<'board' | 'table'>('board'),
-    [basis, setBasis] = useState<'heat' | 'strength'>('heat');
+    [basis, setBasis] = useState<'heat' | 'strength' | 'source'>('heat');
+  useEffect(() => setBasis(OFFICIAL_SEGMENTS[segment] ? 'heat' : 'source'), [segment]);
   const [state, setState] = useState<{
     segment: string;
     packets: { role: Role; result: OfficialRankResult }[];
@@ -81,7 +82,8 @@ export default function AllHeroRanks({
         tier,
         official,
         raw,
-        win: tier?.row.winRate ?? raw?.winRate,
+        stats: basis === 'heat' ? raw : tier?.row,
+        win: basis === 'heat' ? raw?.winRate : tier?.row.winRate,
       };
     })
     .sort((a, b) =>
@@ -123,8 +125,12 @@ export default function AllHeroRanks({
         </div>
         <label>
           看板依据
-          <select value={basis} onChange={(e) => setBasis(e.target.value as 'heat' | 'strength')}>
+          <select
+            value={basis}
+            onChange={(e) => setBasis(e.target.value as 'heat' | 'strength' | 'source')}
+          >
             <option value="heat">王者营地官方热度（部分覆盖）</option>
+            <option value="source">来源原始统计（无需样本量即可查看）</option>
             <option value="strength">开局综合梯度（合格统计快照）</option>
           </select>
         </label>
@@ -132,17 +138,28 @@ export default function AllHeroRanks({
       <p className="pro-notice">
         {basis === 'heat'
           ? '当前按官方分享榜的热度分组。T 标签来自官方热度，不等同于对局强度；每路最多公开 10 条，未覆盖英雄放入“暂无数据”。'
-          : '当前按同分段、同分路的合格快照计算强度分。样本量或统计口径不足时保持待评级；不会拿热度填补强度。'}{' '}
+          : basis === 'source'
+            ? '直接展示当前来源批次公布的三率。未公布场次也能查看；人群、时间范围未一致时不生成强度层级，也不把选禁率强行相加。'
+            : '当前按同分段、同分路的合格快照计算强度分。样本量或统计口径不足时保持待评级；不会拿热度填补强度。'}{' '}
         全部分路视图按英雄第一定位展示，具体分路可切换查看。
       </p>
       <div className="rank-coverage">
         <strong>
-          {rows.filter((r) => (basis === 'heat' ? !!r.raw : !!r.tier?.tier.startsWith('T'))).length}{' '}
+          {
+            rows.filter((r) =>
+              basis === 'heat'
+                ? !!r.raw
+                : basis === 'source'
+                  ? !!r.tier
+                  : !!r.tier?.tier.startsWith('T'),
+            ).length
+          }{' '}
           / {rows.length}
         </strong>
         <span>
-          当前筛选有{basis === 'heat' ? '官方热度' : '合格强度评级'} · 红框禁用率 ≥ 20% · 蓝框出场率
-          &lt; 2.5%
+          当前筛选有
+          {basis === 'heat' ? '官方热度' : basis === 'source' ? '来源原始统计' : '合格强度评级'} ·
+          红框禁用率 ≥ 20% · 蓝框出场率 &lt; 2.5%
         </span>
       </div>
       <div className="pro-toolbar">
@@ -186,20 +203,28 @@ export default function AllHeroRanks({
       )}
       {view === 'board' && (
         <div className="tier-board" aria-label="英雄梯度分组">
-          {['T0', 'T1', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'T8', 'T9', '暂无数据'].map((group) => {
-            const entries = rows.filter(
-              (r) =>
-                (basis === 'heat'
-                  ? r.raw?.heat
-                  : r.tier?.tier.startsWith('T')
-                    ? r.tier.tier
-                    : undefined) === (group === '暂无数据' ? undefined : group),
+          {(basis === 'source'
+            ? ['已有原始统计', '未收录']
+            : ['T0', 'T1', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'T8', 'T9', '暂无数据']
+          ).map((group) => {
+            const entries = rows.filter((r) =>
+              basis === 'source'
+                ? group === '已有原始统计'
+                  ? !!r.tier
+                  : !r.tier
+                : (basis === 'heat'
+                    ? r.raw?.heat
+                    : r.tier?.tier.startsWith('T')
+                      ? r.tier.tier
+                      : undefined) === (group === '暂无数据' ? undefined : group),
             );
             if (!entries.length) return null;
             return (
               <section
                 key={group}
-                className={'tier-band ' + (group === '暂无数据' ? 'unknown' : '')}
+                className={
+                  'tier-band ' + (basis === 'source' || group === '暂无数据' ? 'unknown' : '')
+                }
               >
                 <div className="tier-band-label">
                   <strong>{group}</strong>
@@ -227,13 +252,18 @@ export default function AllHeroRanks({
                           onOpen(r.hero, {
                             segment,
                             role: r.role,
-                            snapshotId: basis === 'strength' ? snapshot?.id : undefined,
+                            snapshotId: basis !== 'heat' ? snapshot?.id : undefined,
                           })
                         }
                       >
                         <Portrait hero={r.hero} />
                         <strong>{r.hero.name}</strong>
                         <small>{win === undefined ? '数据待接入' : `胜 ${win.toFixed(1)}%`}</small>
+                        {basis === 'source' && r.tier && (
+                          <small>
+                            出 {pick}% · 禁 {ban}%
+                          </small>
+                        )}
                         {basis === 'strength' && r.tier?.tier.startsWith('T') && (
                           <span className="tier-score">{r.tier.score.toFixed(1)}</span>
                         )}
@@ -263,13 +293,17 @@ export default function AllHeroRanks({
               </tr>
             </thead>
             <tbody>
-              {rows.map(({ hero, role, tier, raw, official, win }) => (
+              {rows.map(({ hero, role, tier, raw, official, win, stats }) => (
                 <tr key={hero.id}>
                   <td>
                     <button
                       className="hero-row"
                       onClick={() =>
-                        onOpen(hero, { segment, role, snapshotId: tier ? snapshot?.id : undefined })
+                        onOpen(hero, {
+                          segment,
+                          role,
+                          snapshotId: basis !== 'heat' ? snapshot?.id : undefined,
+                        })
                       }
                       aria-label={'打开' + hero.name + '图鉴'}
                     >
@@ -286,30 +320,18 @@ export default function AllHeroRanks({
                   <td>{tier?.tier ?? '待评级'}</td>
                   <td>{raw?.heat ?? '—'}</td>
                   <td>{win !== undefined ? win.toFixed(2) + '%' : '—'}</td>
-                  <td>
-                    {tier
-                      ? tier.row.pickRate.toFixed(2) + '%'
-                      : raw
-                        ? raw.pickRate.toFixed(2) + '%'
-                        : '—'}
-                  </td>
-                  <td>
-                    {tier
-                      ? tier.row.banRate.toFixed(2) + '%'
-                      : raw
-                        ? raw.banRate.toFixed(2) + '%'
-                        : '—'}
-                  </td>
+                  <td>{stats ? stats.pickRate.toFixed(2) + '%' : '—'}</td>
+                  <td>{stats ? stats.banRate.toFixed(2) + '%' : '—'}</td>
                   <td>
                     <small>
-                      {tier
-                        ? `梯度与三率：${snapshot!.sourceName} · ${snapshot!.endDate}`
-                        : !official
-                          ? '暂无此分段统计，资料可正常查看'
+                      {basis !== 'heat' && tier
+                        ? `三率：${snapshot!.sourceName} · ${snapshot!.endDate}`
+                        : !stats
+                          ? '当前依据暂无三率，资料可正常查看'
                           : ''}
                       {official && (
                         <span className="block-source">
-                          {tier ? '热度' : '三率与热度'}：官方分享榜 ·{' '}
+                          {basis === 'heat' ? '三率与热度' : '热度'}：官方分享榜 ·{' '}
                           {official.result.data.sourceUpdatedOn}
                           {official.result.cache === 'stale' ? ' · 旧缓存' : ''}
                         </span>

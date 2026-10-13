@@ -1,0 +1,62 @@
+{
+  "version": "0.10.0",
+  "checkedOn": "2026-10-13",
+  "core": {
+    "passed": 47,
+    "failed": 0,
+    "command": "npm test"
+  },
+  "browser": {
+    "passed": 30,
+    "failed": 0,
+    "command": "npm run test:e2e",
+    "stats": {
+      "startTime": "2026-10-13T06:05:01.246Z",
+      "duration": 122039.845,
+      "expected": 30,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "build": {
+    "passed": true,
+    "command": "npm run build",
+    "knownWarning": "Hero data chunk 1.23 MB, details not yet lazy-loaded; dependency PURE annotations removed by Rollup"
+  },
+  "format": {
+    "passed": true,
+    "command": "npm run format:check"
+  },
+  "publicSource": {
+    "source": "天元之弈助手",
+    "segment": "巅峰千强",
+    "dataDate": "2026-10-11",
+    "reviewedOn": "2026-10-13",
+    "heroes": 16,
+    "percentages": 48,
+    "pages": 5,
+    "scope": "Partial first visible pages; no sample counts; no automated full leaderboard feed"
+  },
+  "realOCR": {
+    "passed": true,
+    "case": "Two actual identical Tianyuan screenshots with different file names deduplicate, review, save to isolated test DB and link to exact hero"
+  },
+  "initialFailure": {
+    "cause": "Batch selector lacked a stable accessible name used by the new test",
+    "fixed": "Added aria-label and reran all 30 tests"
+  },
+  "live": {
+    "version": "0.10.0",
+    "playerDataUnchanged": true,
+    "pageErrors": [],
+    "mobileOverflow": false
+  },
+  "limits": [
+    "Camp screenshot layout not verified; supported three-column layout only",
+    "Partial Tianyuan reference; not current full rankings",
+    "No official account synchronization or private backend",
+    "BP is not validated at professional level",
+    "Remote official images can fail and use text fallback"
+  ]
+}

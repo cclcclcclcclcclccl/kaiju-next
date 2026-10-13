@@ -1,0 +1,98 @@
+{
+  "createdAt": "2026-10-13T05:56:51.774Z",
+  "status": "needs-review",
+  "sourceImage": "tianyuan-jungle-20261011.png",
+  "sha256": "a1a392c2f404c0ca8ceb332b2beeb2abdef207fa83d32af367d945f9a038d5cb",
+  "engine": "RapidOCR 3.10 / local CPU",
+  "rows": [
+    {
+      "heroId": 531,
+      "name": "镜",
+      "role": "打野",
+      "winRate": 52.4,
+      "pickRate": 19.9,
+      "banRate": 46.5,
+      "ocrConfidence": 0.95932,
+      "evidence": [
+        "镜#1",
+        "打野",
+        "52.4%",
+        "19.9%",
+        "46.5%"
+      ]
+    },
+    {
+      "heroId": 502,
+      "name": "裴擒虎",
+      "role": "打野",
+      "winRate": 50.3,
+      "pickRate": 22.3,
+      "banRate": 37.3,
+      "ocrConfidence": 0.99976,
+      "evidence": [
+        "裴擒虎#2",
+        "打野",
+        "50.3%",
+        "22.3%",
+        "37.3%"
+      ]
+    },
+    {
+      "heroId": 107,
+      "name": "赵云",
+      "role": "打野",
+      "winRate": 48.1,
+      "pickRate": 21.4,
+      "banRate": 9.6,
+      "ocrConfidence": 0.9988,
+      "evidence": [
+        "赵云#4",
+        "打野",
+        "48.1%",
+        "21.4%",
+        "9.6%"
+      ]
+    },
+    {
+      "heroId": 533,
+      "name": "阿古朵",
+      "role": "打野",
+      "winRate": 52.5,
+      "pickRate": 13,
+      "banRate": 9.6,
+      "ocrConfidence": 0.99974,
+      "evidence": [
+        "阿古朵#5",
+        "打野",
+        "52.5%",
+        "13.0%",
+        "9.6%"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "text": "马超#3",
+      "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+    }
+  ],
+  "dateText": [
+    "2026年10月11日",
+    "数据更新：2026年10月12日10:36"
+  ],
+  "dataDates": [
+    "2026-10-11"
+  ],
+  "requiredMetadata": [
+    "数据来源",
+    "所选分段",
+    "数据日期与获取日期",
+    "版本",
+    "胜率人群与时间范围",
+    "选禁分母"
+  ],
+  "notes": [
+    "这是截图识别后待核对文件，未写入玩家数据库",
+    "不从同时可见的标签猜测选中分段，不补隐藏小数或场次"
+  ]
+}

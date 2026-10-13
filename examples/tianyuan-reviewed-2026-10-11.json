@@ -1,0 +1,127 @@
+{
+  "title": "天元之弈公开参考 · 16位英雄（已核对）",
+  "segment": "巅峰千强",
+  "patch": "来源未标注版本号（2026-10-11页面）",
+  "startDate": "2026-10-11",
+  "endDate": "2026-10-11",
+  "sourceName": "天元之弈数据站 · 人工核对页面",
+  "sourceUrl": "#小程序://天元之弈/u6nCjaHUkuIRe6u",
+  "denominator": "unknown",
+  "winRateScope": "all",
+  "winRateWindow": "version",
+  "scopeNotes": "数据日2026-10-11，页面更新时间2026-10-12 10:36；本次2026-10-13读取五个分路首屏，关闭隐藏低出场率开关。保留列表一位小数原精度。千强页面胜率按此前来源说明为全量含较低分段、版本累计；选禁分母、场次、版本号未知。只纳入完整名称且单一明确分路的16位英雄；截断名称、多分路及与目录定位冲突的行未采用。不是实时或全量榜单，原始截图与逐行核对记录在 evidence/public-capture。",
+  "rows": [
+    {
+      "heroId": 140,
+      "role": "对抗路",
+      "winRate": 52.4,
+      "pickRate": 9.1,
+      "banRate": 62.5
+    },
+    {
+      "heroId": 125,
+      "role": "对抗路",
+      "winRate": 52.4,
+      "pickRate": 20.4,
+      "banRate": 16.4
+    },
+    {
+      "heroId": 180,
+      "role": "对抗路",
+      "winRate": 49.5,
+      "pickRate": 17.6,
+      "banRate": 13.1
+    },
+    {
+      "heroId": 531,
+      "role": "打野",
+      "winRate": 52.4,
+      "pickRate": 19.9,
+      "banRate": 46.5
+    },
+    {
+      "heroId": 502,
+      "role": "打野",
+      "winRate": 50.3,
+      "pickRate": 22.3,
+      "banRate": 37.3
+    },
+    {
+      "heroId": 107,
+      "role": "打野",
+      "winRate": 48.1,
+      "pickRate": 21.4,
+      "banRate": 9.6
+    },
+    {
+      "heroId": 533,
+      "role": "打野",
+      "winRate": 52.5,
+      "pickRate": 13,
+      "banRate": 9.6
+    },
+    {
+      "heroId": 521,
+      "role": "中路",
+      "winRate": 50.3,
+      "pickRate": 5.9,
+      "banRate": 86.8
+    },
+    {
+      "heroId": 515,
+      "role": "中路",
+      "winRate": 51.8,
+      "pickRate": 23.3,
+      "banRate": 12.3
+    },
+    {
+      "heroId": 179,
+      "role": "中路",
+      "winRate": 50.2,
+      "pickRate": 21.7,
+      "banRate": 9.6
+    },
+    {
+      "heroId": 312,
+      "role": "中路",
+      "winRate": 48.1,
+      "pickRate": 22,
+      "banRate": 6.7
+    },
+    {
+      "heroId": 519,
+      "role": "发育路",
+      "winRate": 50.4,
+      "pickRate": 28.8,
+      "banRate": 46.6
+    },
+    {
+      "heroId": 199,
+      "role": "发育路",
+      "winRate": 50.4,
+      "pickRate": 15.3,
+      "banRate": 5
+    },
+    {
+      "heroId": 525,
+      "role": "游走",
+      "winRate": 52.1,
+      "pickRate": 11.7,
+      "banRate": 84.5
+    },
+    {
+      "heroId": 509,
+      "role": "游走",
+      "winRate": 53.9,
+      "pickRate": 7.9,
+      "banRate": 87
+    },
+    {
+      "heroId": 577,
+      "role": "游走",
+      "winRate": 51.1,
+      "pickRate": 32.3,
+      "banRate": 48.6
+    }
+  ]
+}

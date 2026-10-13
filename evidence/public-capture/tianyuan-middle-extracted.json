@@ -1,0 +1,98 @@
+{
+  "createdAt": "2026-10-13T05:57:01.720Z",
+  "status": "needs-review",
+  "sourceImage": "tianyuan-middle-20261011.png",
+  "sha256": "db289532a236e95b7b906b8ac1d329786cad7bbe1750b5e3373f97700c2d7472",
+  "engine": "RapidOCR 3.10 / local CPU",
+  "rows": [
+    {
+      "heroId": 521,
+      "name": "海月",
+      "role": "中路",
+      "winRate": 50.3,
+      "pickRate": 5.9,
+      "banRate": 86.8,
+      "ocrConfidence": 0.99846,
+      "evidence": [
+        "海月#1",
+        "中路",
+        "50.3%",
+        "5.9%",
+        "86.8%"
+      ]
+    },
+    {
+      "heroId": 515,
+      "name": "嫦娥",
+      "role": "中路",
+      "winRate": 51.8,
+      "pickRate": 23.3,
+      "banRate": 12.3,
+      "ocrConfidence": 0.99975,
+      "evidence": [
+        "嫦娥#3",
+        "中路",
+        "51.8%",
+        "23.3%",
+        "12.3%"
+      ]
+    },
+    {
+      "heroId": 179,
+      "name": "女娲",
+      "role": "中路",
+      "winRate": 50.2,
+      "pickRate": 21.7,
+      "banRate": 9.6,
+      "ocrConfidence": 0.99536,
+      "evidence": [
+        "女娲#4",
+        "中路",
+        "50.2%",
+        "21.7%",
+        "9.6%"
+      ]
+    },
+    {
+      "heroId": 312,
+      "name": "沈梦溪",
+      "role": "中路",
+      "winRate": 48.1,
+      "pickRate": 22,
+      "banRate": 6.7,
+      "ocrConfidence": 0.99958,
+      "evidence": [
+        "沈梦溪#5",
+        "中路",
+        "48.1%",
+        "22.0%",
+        "6.7%"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "text": "大乔#2",
+      "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+    }
+  ],
+  "dateText": [
+    "2026年10月11日",
+    "数据更新：2026年10月12日10:36"
+  ],
+  "dataDates": [
+    "2026-10-11"
+  ],
+  "requiredMetadata": [
+    "数据来源",
+    "所选分段",
+    "数据日期与获取日期",
+    "版本",
+    "胜率人群与时间范围",
+    "选禁分母"
+  ],
+  "notes": [
+    "这是截图识别后待核对文件，未写入玩家数据库",
+    "不从同时可见的标签猜测选中分段，不补隐藏小数或场次"
+  ]
+}

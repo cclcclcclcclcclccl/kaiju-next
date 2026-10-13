@@ -10,6 +10,7 @@ import type { Hero } from '../../src/player/model.ts';
 import type { PlayerStore } from '../player/store.ts';
 import { providerConfig } from '../player/provider.ts';
 import { ocrReady, screenshotRequest, recognizeScreenshot } from './ocr.ts';
+import { extractPublicTable } from '../../src/player/pro/publicTable.ts';
 const credentials = z
   .object({
     username: z
@@ -62,10 +63,14 @@ export async function proRoutes(ctx: {
     return true;
   }
   if (method !== 'POST') return false;
-  if (path === '/api/pro/recognize-profile') {
+  if (path === '/api/pro/recognize-profile' || path === '/api/pro/recognize-stat-table') {
     const data = screenshotRequest.parse(await body(req, 12 * 1024 * 1024));
     try {
-      send(200, await recognizeScreenshot(data.image));
+      const result = await recognizeScreenshot(data.image);
+      send(
+        200,
+        path.endsWith('recognize-stat-table') ? extractPublicTable(result, heroes) : result,
+      );
     } catch (e) {
       send(503, { error: (e as Error).message });
     }

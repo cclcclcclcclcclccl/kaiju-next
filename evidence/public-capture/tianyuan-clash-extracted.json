@@ -1,0 +1,86 @@
+{
+  "createdAt": "2026-10-13T05:56:48.509Z",
+  "status": "needs-review",
+  "sourceImage": "tianyuan-clash-20261011.png",
+  "sha256": "97a5a89c421946f41bc647d0af5926cae2813c439abda67a71684f9624dd9faf",
+  "engine": "RapidOCR 3.10 / local CPU",
+  "rows": [
+    {
+      "heroId": 140,
+      "name": "关羽",
+      "role": "对抗路",
+      "winRate": 52.4,
+      "pickRate": 9.1,
+      "banRate": 62.5,
+      "ocrConfidence": 0.99626,
+      "evidence": [
+        "关羽#1",
+        "对抗路",
+        "52.4%",
+        "9.1%",
+        "62.5%"
+      ]
+    },
+    {
+      "heroId": 125,
+      "name": "元歌",
+      "role": "对抗路",
+      "winRate": 52.4,
+      "pickRate": 20.4,
+      "banRate": 16.4,
+      "ocrConfidence": 0.99961,
+      "evidence": [
+        "元歌#3",
+        "对抗路",
+        "52.4%",
+        "20.4%",
+        "16.4%"
+      ]
+    },
+    {
+      "heroId": 180,
+      "name": "哪吒",
+      "role": "对抗路",
+      "winRate": 49.5,
+      "pickRate": 17.6,
+      "banRate": 13.1,
+      "ocrConfidence": 0.9984,
+      "evidence": [
+        "哪吒#4",
+        "对抗路",
+        "49.5%",
+        "17.6%",
+        "13.1%"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "text": "马超#2",
+      "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+    },
+    {
+      "text": "司空震#5",
+      "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+    }
+  ],
+  "dateText": [
+    "2026年10月11日",
+    "数据更新：2026年10月12日10:36"
+  ],
+  "dataDates": [
+    "2026-10-11"
+  ],
+  "requiredMetadata": [
+    "数据来源",
+    "所选分段",
+    "数据日期与获取日期",
+    "版本",
+    "胜率人群与时间范围",
+    "选禁分母"
+  ],
+  "notes": [
+    "这是截图识别后待核对文件，未写入玩家数据库",
+    "不从同时可见的标签猜测选中分段，不补隐藏小数或场次"
+  ]
+}

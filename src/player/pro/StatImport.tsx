@@ -10,6 +10,7 @@ import { Modal } from '../ui.tsx';
 import { api } from '../../api.ts';
 import { scopeIssue, scopeLabel } from './statistics.ts';
 import type { z } from 'zod';
+import TableCapture from './TableCapture.tsx';
 type Input = z.infer<typeof snapshotSchema>;
 export default function StatImport({
   segment,
@@ -23,7 +24,7 @@ export default function StatImport({
   onSaved: (segment: string) => Promise<void>;
 }) {
   const today = new Date().toLocaleDateString('en-CA');
-  const [mode, setMode] = useState<'table' | 'json'>('table');
+  const [mode, setMode] = useState<'table' | 'json' | 'screenshots'>('table');
   const [meta, setMeta] = useState({
     title: '',
     segment,
@@ -88,6 +89,15 @@ export default function StatImport({
       </p>
       <div className="pro-actions">
         <button
+          className={'btn ' + (mode === 'screenshots' ? 'primary' : 'secondary')}
+          onClick={() => {
+            setMode('screenshots');
+            reset();
+          }}
+        >
+          榜单截图识别
+        </button>
+        <button
           className={'btn ' + (mode === 'table' ? 'primary' : 'secondary')}
           onClick={() => {
             setMode('table');
@@ -106,8 +116,67 @@ export default function StatImport({
           JSON 导入
         </button>
       </div>
-      {mode === 'table' ? (
+      {mode !== 'json' ? (
         <>
+          {mode === 'screenshots' && (
+            <>
+              <div className="pro-toolbar">
+                <label>
+                  常用数据来源
+                  <select
+                    aria-label="选择榜单来源"
+                    defaultValue=""
+                    onChange={(e) => {
+                      reset();
+                      const t = e.target.value === 'tianyuan';
+                      setMeta((m) => ({
+                        ...m,
+                        sourceName: t ? '天元之弈数据站 · 截图核对' : '王者营地 · 截图核对',
+                        sourceUrl: t
+                          ? '#小程序://天元之弈/u6nCjaHUkuIRe6u'
+                          : 'https://camp.qq.com/h5/webdist/hero-rank/index.html',
+                        patch: m.patch || '来源未标注版本，待核对',
+                      }));
+                      setScope({
+                        denominator: 'unknown',
+                        winRateScope: 'unknown',
+                        winRateWindow: 'unknown',
+                        scopeNotes: '',
+                      });
+                    }}
+                  >
+                    <option value="" disabled>
+                      选择实际截图来源
+                    </option>
+                    <option value="tianyuan">天元之弈数据站</option>
+                    <option value="camp">王者营地</option>
+                  </select>
+                </label>
+              </div>
+              <TableCapture
+                key={meta.sourceUrl}
+                onInvalidate={reset}
+                onApply={({ entries, date, hashes }) => {
+                  reset();
+                  setEntries(entries);
+                  setMeta((m) => ({
+                    ...m,
+                    title: m.title || '榜单截图核对批次',
+                    ...(date ? { startDate: date, endDate: date } : {}),
+                  }));
+                  setScope((s) => ({
+                    ...s,
+                    scopeNotes: (
+                      '截图识别后人工核对；图片 SHA256：' +
+                      hashes.map((h) => h.slice(0, 16)).join('、') +
+                      '。' +
+                      s.scopeNotes
+                    ).slice(0, 600),
+                  }));
+                }}
+              />
+            </>
+          )}
           <div className="pro-form">
             <label>
               批次名称
@@ -457,7 +526,7 @@ export default function StatImport({
       <div className="pro-actions">
         <button
           className="btn primary"
-          disabled={busy || (mode === 'table' ? !preview : !raw)}
+          disabled={busy || (mode !== 'json' ? !preview : !raw)}
           onClick={save}
         >
           <Save size={15} />
