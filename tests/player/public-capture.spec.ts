@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import AxeBuilder from '@axe-core/playwright';
 import { extractPublicTable } from '../../src/player/pro/publicTable.ts';
 import { heroes } from '../../src/player/catalog.ts';
-const folder = 'evidence/public-capture';
+const folder = process.env.PUBLIC_CAPTURE_EVIDENCE_DIR ?? 'evidence/public-capture';
 async function openImport(page: any) {
   await page.goto('/');
   await page.locator('nav').getByRole('button', { name: '分段梯度', exact: true }).click();
@@ -20,7 +20,7 @@ test('real table screenshots merge without saving until review, then source stat
   const file = {
     name: 'page-a.png',
     mimeType: 'image/png',
-    buffer: readFileSync(folder + '/source-table-20261011.png'),
+    buffer: readFileSync('evidence/public-capture/source-table-20261011.png'),
   };
   await page.getByLabel('批量上传榜单截图').setInputFiles([file, { ...file, name: 'page-b.png' }]);
   await page.getByRole('button', { name: '识别 2 张榜单截图', exact: true }).click();
@@ -74,7 +74,7 @@ test('conflicting values require an explicit selection; different dates cannot b
   const file = {
     name: 'page-a.png',
     mimeType: 'image/png',
-    buffer: readFileSync(folder + '/source-table-20261011.png'),
+    buffer: readFileSync('evidence/public-capture/source-table-20261011.png'),
   };
   await page.getByLabel('批量上传榜单截图').setInputFiles([file, { ...file, name: 'page-b.png' }]);
   await page.getByRole('button', { name: '识别 2 张榜单截图' }).click();
@@ -108,7 +108,7 @@ test('bundled public observations are available with source date and correct her
   await page.locator('nav').getByRole('button', { name: '分段梯度', exact: true }).click();
   await page.getByLabel('统计分段', { exact: true }).selectOption('巅峰千强');
   await page.getByLabel('数据批次', { exact: true }).selectOption('public-tianyuan-2026-10-11');
-  await expect(page.locator('.all-hero-ranks')).toContainText('16 / 133');
+  await expect(page.locator('.all-hero-ranks')).toContainText('100 / 133');
   await page.getByLabel('搜索全部英雄').fill('镜');
   await expect(page.locator('.tier-portrait')).toContainText('52.4%');
   await page

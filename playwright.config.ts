@@ -18,6 +18,7 @@ export default defineConfig({
     url: 'http://127.0.0.1:4319/api/status',
     env: {
       PORT: '4319',
+      RANK_AUTO_REFRESH: '0',
       PLAYER_DATA_DIR: 'data/player-e2e',
       MODEL_API_KEY: '',
       MODEL_NAME: '',

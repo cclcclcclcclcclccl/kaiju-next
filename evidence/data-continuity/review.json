@@ -1,0 +1,181 @@
+{
+  "reviewedOn": "2026-10-13",
+  "dataDate": "2026-10-11",
+  "selectedSegment": "巅峰千强",
+  "visibleTailRank": 133,
+  "acceptedHeroes": 100,
+  "percentages": 300,
+  "originalScreens": 17,
+  "method": "Each accepted OCR name, role and three percentages compared visually against original continuous screenshots; first-screen headers reused only in parser context",
+  "lowPickFilter": false,
+  "scopeVerifiedAgain": "Source footer in daily-page-16.png",
+  "duplicateRows": 29,
+  "conflicts": 0,
+  "gaps": [
+    {
+      "heroId": 105,
+      "name": "廉颇",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 110,
+      "name": "嬴政",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 113,
+      "name": "庄周",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 121,
+      "name": "芈月",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 126,
+      "name": "夏侯惇",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 135,
+      "name": "项羽",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 138,
+      "name": "王维",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 153,
+      "name": "兰陵王",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 172,
+      "name": "蚩奼",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 173,
+      "name": "李元芳",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 176,
+      "name": "杨玉环",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 178,
+      "name": "杨戬",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 186,
+      "name": "太乙真人",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 187,
+      "name": "东皇太一",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 190,
+      "name": "诸葛亮",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 191,
+      "name": "大乔",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 501,
+      "name": "明世隐",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 507,
+      "name": "李信",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 511,
+      "name": "猪八戒",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 518,
+      "name": "马超",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 523,
+      "name": "西施",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 524,
+      "name": "蒙犽",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 529,
+      "name": "盘古",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 537,
+      "name": "司空震",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 542,
+      "name": "暃",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 547,
+      "name": "卢雅那",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 549,
+      "name": "心魔六耳",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 563,
+      "name": "海诺",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 581,
+      "name": "元流之子(坦克)",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 582,
+      "name": "元流之子(法师)",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 583,
+      "name": "元流之子(刺客)",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 584,
+      "name": "元流之子(射手)",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    },
+    {
+      "heroId": 585,
+      "name": "元流之子(辅助)",
+      "reason": "No unambiguous accepted row; consult original OCR and rejected evidence"
+    }
+  ]
+}

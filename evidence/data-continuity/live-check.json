@@ -1,0 +1,152 @@
+{
+  "checkedOn": "2026-10-13",
+  "status": {
+    "product": "开局 NEXT",
+    "version": "0.11.0",
+    "modelConfigured": false,
+    "heroCount": 133
+  },
+  "refresh": {
+    "running": false,
+    "intervalMinutes": 35,
+    "startedAt": "2026-10-13T14:31:18.782Z",
+    "results": [
+      {
+        "segment": 1,
+        "position": 1,
+        "state": "cached",
+        "sourceDate": "2026-10-12",
+        "fetchedAt": "2026-10-13T14:30:37.414Z",
+        "rows": 10
+      },
+      {
+        "segment": 1,
+        "position": 2,
+        "state": "cached",
+        "sourceDate": "2026-10-12",
+        "fetchedAt": "2026-10-13T14:30:37.415Z",
+        "rows": 10
+      },
+      {
+        "segment": 1,
+        "position": 3,
+        "state": "cached",
+        "sourceDate": "2026-10-12",
+        "fetchedAt": "2026-10-13T14:30:37.419Z",
+        "rows": 10
+      },
+      {
+        "segment": 1,
+        "position": 4,
+        "state": "cached",
+        "sourceDate": "2026-10-12",
+        "fetchedAt": "2026-10-13T14:30:37.419Z",
+        "rows": 10
+      },
+      {
+        "segment": 1,
+        "position": 5,
+        "state": "cached",
+        "sourceDate": "2026-10-12",
+        "fetchedAt": "2026-10-13T14:30:37.398Z",
+        "rows": 10
+      },
+      {
+        "segment": 3,
+        "position": 1,
+        "state": "fresh",
+        "sourceDate": "2026-10-12",
+        "fetchedAt": "2026-10-13T14:31:19.185Z",
+        "rows": 10
+      },
+      {
+        "segment": 3,
+        "position": 2,
+        "state": "fresh",
+        "sourceDate": "2026-10-12",
+        "fetchedAt": "2026-10-13T14:31:19.347Z",
+        "rows": 10
+      },
+      {
+        "segment": 3,
+        "position": 3,
+        "state": "fresh",
+        "sourceDate": "2026-10-12",
+        "fetchedAt": "2026-10-13T14:31:19.613Z",
+        "rows": 10
+      },
+      {
+        "segment": 3,
+        "position": 4,
+        "state": "fresh",
+        "sourceDate": "2026-10-12",
+        "fetchedAt": "2026-10-13T14:31:19.792Z",
+        "rows": 10
+      },
+      {
+        "segment": 3,
+        "position": 5,
+        "state": "fresh",
+        "sourceDate": "2026-10-12",
+        "fetchedAt": "2026-10-13T14:31:20.021Z",
+        "rows": 10
+      },
+      {
+        "segment": 4,
+        "position": 1,
+        "state": "fresh",
+        "sourceDate": "2026-10-12",
+        "fetchedAt": "2026-10-13T14:31:20.143Z",
+        "rows": 10
+      },
+      {
+        "segment": 4,
+        "position": 2,
+        "state": "fresh",
+        "sourceDate": "2026-10-12",
+        "fetchedAt": "2026-10-13T14:31:20.362Z",
+        "rows": 10
+      },
+      {
+        "segment": 4,
+        "position": 3,
+        "state": "fresh",
+        "sourceDate": "2026-10-12",
+        "fetchedAt": "2026-10-13T14:31:20.551Z",
+        "rows": 10
+      },
+      {
+        "segment": 4,
+        "position": 4,
+        "state": "fresh",
+        "sourceDate": "2026-10-12",
+        "fetchedAt": "2026-10-13T14:31:20.781Z",
+        "rows": 10
+      },
+      {
+        "segment": 4,
+        "position": 5,
+        "state": "fresh",
+        "sourceDate": "2026-10-12",
+        "fetchedAt": "2026-10-13T14:31:20.942Z",
+        "rows": 10
+      }
+    ],
+    "completedAt": "2026-10-13T14:31:20.949Z",
+    "nextCheckAt": "2026-10-13T15:06:20.949Z",
+    "automatic": true
+  },
+  "before": {
+    "workspace": "4b2ebdd0f3c3167d3a1bd87558e32a7230b9ef504a27d58e80e99663594f7908",
+    "pro": "0863ae099736d9aaf9d0e7dc1cae487db0c506a138aa8feccce9478808551d93"
+  },
+  "after": {
+    "workspace": "4b2ebdd0f3c3167d3a1bd87558e32a7230b9ef504a27d58e80e99663594f7908",
+    "pro": "0863ae099736d9aaf9d0e7dc1cae487db0c506a138aa8feccce9478808551d93"
+  },
+  "playerDataUnchanged": true,
+  "latestCoverage": "96 / 133\n当前筛选有来源原始统计 · 红框禁用率 ≥ 20% · 蓝框出场率 < 2.5%",
+  "historicalCoverage": "100 / 133\n当前筛选有来源原始统计 · 红框禁用率 ≥ 20% · 蓝框出场率 < 2.5%",
+  "pageErrors": [],
+  "mobileOverflow": false
+}

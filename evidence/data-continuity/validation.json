@@ -1,0 +1,95 @@
+{
+  "checkedOn": "2026-10-13",
+  "version": "0.11.0",
+  "coverage": {
+    "catalog": 133,
+    "tianyuan": {
+      "dataDate": "2026-10-12",
+      "heroOverallRows": 133,
+      "availableWinRates": 132,
+      "missingWinHero": "明世隐",
+      "singleRoleSubset": 96,
+      "previousDateRows": 100,
+      "evidenceFiles": 23
+    },
+    "official": {
+      "scopes": 15,
+      "rows": 150,
+      "coverage": "partial"
+    }
+  },
+  "tests": {
+    "core": {
+      "passed": 54,
+      "failed": 0
+    },
+    "browser": {
+      "startTime": "2026-10-13T14:55:26.003Z",
+      "duration": 44897.149,
+      "expected": 7,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "typecheck": "passed",
+    "format": "passed",
+    "build": "passed",
+    "buildNotes": [
+      "Existing hero catalog chunk exceeds 500 kB warning; no build error"
+    ]
+  },
+  "live": {
+    "url": "http://127.0.0.1:4318",
+    "playerDataUnchanged": true,
+    "pageErrors": [],
+    "mobileOverflow": false,
+    "automaticRefresh": true,
+    "scheduledIntervalMinutes": 35,
+    "fullTimerCycleObserved": false
+  },
+  "environment": {
+    "version": "环境梯度 v1.0",
+    "tiers": {
+      "T0": 13,
+      "T1": 18,
+      "T2": 26,
+      "T3": 27,
+      "T4": 49
+    },
+    "sensitiveCount": 26,
+    "professionallyValidated": false
+  },
+  "sourceHashes": {
+    "2026-10-12/daily-page-09.png": "e18091e43e960b5a46cecaf7cd8ddc73f3382ac55a4eda81473208ef70a546a2",
+    "2026-10-12/daily-page-04.png": "570f5154a96bd3d357594af7ff4380d50b9d5af3717535f8d1a2308540ad9098",
+    "2026-10-12/daily-page-01.png": "e7022f368d442fdcf428c98acdc83a9a54b05b977920fe2a139883221eb27216",
+    "2026-10-12/daily-page-02.png": "c3fe0feba1d1870a5a912cbb0e06431def2eec68f56b0992939ff973ba1ddd3d",
+    "2026-10-12/daily-page-05.png": "a8ff1e6e897c8d3f6760d9fe26e8d93d2e990bbd22100d62b3837ce739c7292f",
+    "2026-10-12/daily-page-06.png": "b9d35d4a16fbf1c9eae9fb93476b8fb068695e2eb0591f7d338d0ec646747bc6",
+    "2026-10-12/daily-page-14.png": "ac7236de5e9b54e3a112517079dceea0553943d4c7437a10b85e7a60e2333bff",
+    "2026-10-12/daily-page-15.png": "d6cc06f8a829f712c8fdcae798b20962b6bc54272e005587cdea24b7929a41cb",
+    "2026-10-12/daily-page-13.png": "42ca868b6c17dcaddfc72311004f58441bf3f90871571882f8db78c85a015728",
+    "2026-10-12/daily-page-07.png": "72a3ca92945a98a3b5ab5a65fd1ca5aa716c2f0ef3593767aac818de0c8cb5a7",
+    "2026-10-12/daily-page-10.png": "2dca85fa087ecc696c33d01dad82c834304e2c03130ad2b8faf9910be4f8f145",
+    "2026-10-12/daily-page-12.png": "6abd36c3e3ad1f20bd4064c98c8a7eeb2b4d1eacd492d77bc63311857f5efb28",
+    "2026-10-12/daily-page-16.png": "c05168681c6d51a05dbec667b777c22478058c258b08f8baca497fea491828b7",
+    "2026-10-12/daily-page-11.png": "2354c67d55f9289ca6dc08ba97174f26de3e2b2a13a15c1a19797e9f874c4e7a",
+    "2026-10-12/daily-page-08.png": "8605b37e9779814c21d7d20c121d7a5b14beeb4adae67102efee14a3a42b2fa8",
+    "2026-10-12/daily-page-03.png": "ae2d6288e660e2f1dfc114d02168d0ae590fe0579abd29ca4c847eeef80a8a64",
+    "identities/identity-501.png": "85c04c75cd0037ab700b4c78f9012114d0d85f560ff254d6a8b140130126062f",
+    "2026-10-12/daily-page-00.png": "1e14df1f5a0f0a7b242e40ae5bbf76228c428f3bfbd74e463868ff6fe605efa3",
+    "identities/identity-581.png": "e92115df37463fc5b421b74af1ad46c84c767c4106826b2772008cb80b2a6519",
+    "identities/identity-582.png": "394df1c6ebc1f2b2517338fa20bfa1c414e0695a8a250b6162073ee2368cd821",
+    "identities/identity-583.png": "70369ebcc44c885fba55aa83186c521e762b389538b3023392336512d201b43f",
+    "identities/identity-584.png": "2290a9570c670eb956b18032dfd56c3e34238cc6166841bfce9de476c0e29a6e",
+    "identities/identity-585-confirmed.png": "2c67840608550a2a6551d314d821ce50614a77495bd23d54e851676104af9c8a"
+  },
+  "observationSha256": "622dbdb259f57d0b3a6d17f4ca145206352a055fb5de0508b22e750442dfd0c1",
+  "limitations": [
+    "No private official backend access",
+    "Tianyuan capture is reviewed visible-page data, not unattended live synchronization",
+    "Win rates are overall population and version cumulative",
+    "Unknown sample counts, patch and pick/ban denominator",
+    "Six full segment datasets, complete skin-use and game-duration win rates remain unavailable"
+  ]
+}

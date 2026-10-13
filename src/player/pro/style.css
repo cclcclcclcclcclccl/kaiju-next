@@ -1769,3 +1769,35 @@
     padding: 0 8px;
   }
 }
+.data-updates {
+  padding: 14px 18px;
+  margin-bottom: 18px;
+}
+.data-updates summary {
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 600;
+}
+.data-updates p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+.environment-method {
+  margin: 16px 0;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.environment-method summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.environment-method p,
+.aggregate-hero-stats details p {
+  line-height: 1.8;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.aggregate-hero-stats {
+  margin-top: 20px;
+}

@@ -1,0 +1,1807 @@
+{
+  "id": "tianyuan-aggregate-2026-10-12",
+  "segment": "巅峰千强",
+  "dataDate": "2026-10-12",
+  "capturedOn": "2026-10-13",
+  "sourceUpdatedAt": "2026-10-13 08:46",
+  "sourceName": "天元之弈数据站",
+  "sourceUrl": "#小程序://天元之弈/u6nCjaHUkuIRe6u",
+  "measurement": "hero-overall",
+  "winRateScope": "all",
+  "winRateWindow": "version",
+  "denominator": "unknown",
+  "sampleCounts": null,
+  "patch": null,
+  "notes": "133位英雄的总体列表观察。分路是来源定位标签，不是这些分路各自的统计。132位完整三率，明世隐总胜率未公布。人工补录只取列表数值，详情仅用于核实截断名称，不混用单日详情胜率。",
+  "rows": [
+    {
+      "heroId": 105,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 46,
+      "pickRate": 4.7,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-09.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 106,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 48.2,
+      "pickRate": 12.2,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-04.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 107,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 48,
+      "pickRate": 22.6,
+      "banRate": 10.6,
+      "evidence": [
+        "2026-10-12/daily-page-01.png",
+        "2026-10-12/daily-page-02.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 108,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 49,
+      "pickRate": 8.7,
+      "banRate": 0.5,
+      "evidence": [
+        "2026-10-12/daily-page-05.png",
+        "2026-10-12/daily-page-06.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 109,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 46.3,
+      "pickRate": 1.5,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-14.png",
+        "2026-10-12/daily-page-15.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 110,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 45.4,
+      "pickRate": 2.3,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-13.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 111,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 52.1,
+      "pickRate": 6.6,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-07.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 112,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 52.7,
+      "pickRate": 4.4,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-10.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 113,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 49.2,
+      "pickRate": 1.5,
+      "banRate": 1.3,
+      "evidence": [
+        "2026-10-12/daily-page-12.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 114,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 47.9,
+      "pickRate": 2.8,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-12.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 115,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 51,
+      "pickRate": 3,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-12.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 116,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 50.6,
+      "pickRate": 1,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-15.png",
+        "2026-10-12/daily-page-16.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 117,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 50,
+      "pickRate": 4.5,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-10.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 118,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 50.1,
+      "pickRate": 1.9,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-14.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 119,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 48.9,
+      "pickRate": 3.2,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-11.png",
+        "2026-10-12/daily-page-12.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 120,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 46.5,
+      "pickRate": 5.8,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-08.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 121,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 51.5,
+      "pickRate": 5.7,
+      "banRate": 0.2,
+      "evidence": [
+        "2026-10-12/daily-page-08.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 123,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 45.9,
+      "pickRate": 2.6,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-12.png",
+        "2026-10-12/daily-page-13.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 124,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 51.7,
+      "pickRate": 1.2,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-15.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 125,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 52.5,
+      "pickRate": 15.8,
+      "banRate": 15,
+      "evidence": [
+        "2026-10-12/daily-page-02.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 126,
+      "sourceRoles": [
+        "对抗路",
+        "游走"
+      ],
+      "winRate": 51,
+      "pickRate": 5.1,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-09.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 127,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 47.7,
+      "pickRate": 5.5,
+      "banRate": 0.4,
+      "evidence": [
+        "2026-10-12/daily-page-08.png",
+        "2026-10-12/daily-page-09.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 128,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 50,
+      "pickRate": 14.3,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-04.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 129,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 51.6,
+      "pickRate": 3.7,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-11.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 130,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 47.6,
+      "pickRate": 4.9,
+      "banRate": 1.1,
+      "evidence": [
+        "2026-10-12/daily-page-08.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 131,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 50.5,
+      "pickRate": 5.7,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-08.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 132,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 49.9,
+      "pickRate": 3.1,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-12.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 133,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 48.9,
+      "pickRate": 6.1,
+      "banRate": 0.2,
+      "evidence": [
+        "2026-10-12/daily-page-07.png",
+        "2026-10-12/daily-page-08.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 134,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 49.2,
+      "pickRate": 5.1,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-09.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 135,
+      "sourceRoles": [
+        "对抗路",
+        "游走"
+      ],
+      "winRate": 48,
+      "pickRate": 7.2,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-06.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 136,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 52,
+      "pickRate": 8.2,
+      "banRate": 1.1,
+      "evidence": [
+        "2026-10-12/daily-page-05.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 137,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 50.3,
+      "pickRate": 3.2,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-11.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 138,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 47.2,
+      "pickRate": 19.1,
+      "banRate": 10.5,
+      "evidence": [
+        "2026-10-12/daily-page-02.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 139,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 50.2,
+      "pickRate": 6.2,
+      "banRate": 0.6,
+      "evidence": [
+        "2026-10-12/daily-page-07.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 140,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 52.4,
+      "pickRate": 10.8,
+      "banRate": 58.9,
+      "evidence": [
+        "2026-10-12/daily-page-01.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 141,
+      "sourceRoles": [
+        "中路",
+        "对抗路"
+      ],
+      "winRate": 52.1,
+      "pickRate": 7.4,
+      "banRate": 0.9,
+      "evidence": [
+        "2026-10-12/daily-page-06.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 142,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 47.8,
+      "pickRate": 4.8,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-09.png",
+        "2026-10-12/daily-page-10.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 144,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 47.6,
+      "pickRate": 1.1,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-15.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 146,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 53.4,
+      "pickRate": 9.7,
+      "banRate": 2.6,
+      "evidence": [
+        "2026-10-12/daily-page-04.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 148,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 43.7,
+      "pickRate": 1.2,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-15.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 149,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 49.5,
+      "pickRate": 11,
+      "banRate": 0.8,
+      "evidence": [
+        "2026-10-12/daily-page-04.png",
+        "2026-10-12/daily-page-05.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 150,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 50.6,
+      "pickRate": 10.7,
+      "banRate": 0.7,
+      "evidence": [
+        "2026-10-12/daily-page-05.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 151,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 47.9,
+      "pickRate": 3.9,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-11.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 152,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 46.1,
+      "pickRate": 2,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-13.png",
+        "2026-10-12/daily-page-14.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 153,
+      "sourceRoles": [
+        "对抗路",
+        "打野"
+      ],
+      "winRate": 49.5,
+      "pickRate": 1.8,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-14.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 154,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 51.5,
+      "pickRate": 5.4,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-09.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 155,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 49.3,
+      "pickRate": 9.1,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-06.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 156,
+      "sourceRoles": [
+        "游走",
+        "中路"
+      ],
+      "winRate": 52,
+      "pickRate": 3.7,
+      "banRate": 2.3,
+      "evidence": [
+        "2026-10-12/daily-page-08.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 157,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 50.6,
+      "pickRate": 8.1,
+      "banRate": 0.7,
+      "evidence": [
+        "2026-10-12/daily-page-06.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 159,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 47.2,
+      "pickRate": 2.3,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-13.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 162,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 47.9,
+      "pickRate": 2,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-13.png",
+        "2026-10-12/daily-page-14.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 163,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 50.8,
+      "pickRate": 4.5,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-10.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 166,
+      "sourceRoles": [
+        "对抗路",
+        "游走"
+      ],
+      "winRate": 51.1,
+      "pickRate": 6.8,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-07.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 167,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 49,
+      "pickRate": 10.3,
+      "banRate": 1.6,
+      "evidence": [
+        "2026-10-12/daily-page-04.png",
+        "2026-10-12/daily-page-05.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 168,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 50.4,
+      "pickRate": 4,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-10.png",
+        "2026-10-12/daily-page-11.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 169,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 50.1,
+      "pickRate": 6.7,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-07.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 170,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 49.5,
+      "pickRate": 3,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-12.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 171,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 47.7,
+      "pickRate": 17.3,
+      "banRate": 2.3,
+      "evidence": [
+        "2026-10-12/daily-page-03.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 172,
+      "sourceRoles": [
+        "发育路",
+        "对抗路"
+      ],
+      "winRate": 50.3,
+      "pickRate": 12.8,
+      "banRate": 0.2,
+      "evidence": [
+        "2026-10-12/daily-page-04.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 173,
+      "sourceRoles": [
+        "打野",
+        "发育路"
+      ],
+      "winRate": 49.8,
+      "pickRate": 2.6,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-12.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 174,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 48.3,
+      "pickRate": 6.2,
+      "banRate": 0.6,
+      "evidence": [
+        "2026-10-12/daily-page-07.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 175,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 47,
+      "pickRate": 5.2,
+      "banRate": 0.7,
+      "evidence": [
+        "2026-10-12/daily-page-08.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 176,
+      "sourceRoles": [
+        "中路",
+        "游走"
+      ],
+      "winRate": 49.6,
+      "pickRate": 10.9,
+      "banRate": 0.2,
+      "evidence": [
+        "2026-10-12/daily-page-05.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 177,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 50.7,
+      "pickRate": 9.1,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-06.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 178,
+      "sourceRoles": [
+        "打野",
+        "对抗路"
+      ],
+      "winRate": 48.3,
+      "pickRate": 7.1,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-06.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 179,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 50.3,
+      "pickRate": 20.7,
+      "banRate": 9.9,
+      "evidence": [
+        "2026-10-12/daily-page-02.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 180,
+      "sourceRoles": [
+        "对抗路",
+        "打野"
+      ],
+      "winRate": 49.5,
+      "pickRate": 17.4,
+      "banRate": 14.8,
+      "evidence": [
+        "2026-10-12/daily-page-02.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 182,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 47.6,
+      "pickRate": 1.2,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-15.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 183,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 51.5,
+      "pickRate": 4,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-10.png",
+        "2026-10-12/daily-page-11.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 184,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 47.7,
+      "pickRate": 1.1,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-15.png",
+        "2026-10-12/daily-page-16.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 186,
+      "sourceRoles": [
+        "游走",
+        "中路"
+      ],
+      "winRate": 52.4,
+      "pickRate": 11.5,
+      "banRate": 1.1,
+      "evidence": [
+        "2026-10-12/daily-page-04.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 187,
+      "sourceRoles": [
+        "对抗路",
+        "游走"
+      ],
+      "winRate": 49.8,
+      "pickRate": 1.3,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-14.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 188,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 48.6,
+      "pickRate": 8.8,
+      "banRate": 1,
+      "evidence": [
+        "2026-10-12/daily-page-05.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 189,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 51.8,
+      "pickRate": 3,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-11.png",
+        "2026-10-12/daily-page-12.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 190,
+      "sourceRoles": [
+        "中路",
+        "打野"
+      ],
+      "winRate": 51.9,
+      "pickRate": 16.9,
+      "banRate": 1.1,
+      "evidence": [
+        "2026-10-12/daily-page-03.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 191,
+      "sourceRoles": [
+        "中路",
+        "游走"
+      ],
+      "winRate": 53.4,
+      "pickRate": 14.5,
+      "banRate": 33.9,
+      "evidence": [
+        "2026-10-12/daily-page-02.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 192,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 51.3,
+      "pickRate": 4.2,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-10.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 193,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 48.9,
+      "pickRate": 5.2,
+      "banRate": 1,
+      "evidence": [
+        "2026-10-12/daily-page-08.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 194,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 51.2,
+      "pickRate": 22.6,
+      "banRate": 6.9,
+      "evidence": [
+        "2026-10-12/daily-page-02.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 195,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 50.9,
+      "pickRate": 8.5,
+      "banRate": 0.7,
+      "evidence": [
+        "2026-10-12/daily-page-05.png",
+        "2026-10-12/daily-page-06.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 196,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 49.3,
+      "pickRate": 17.1,
+      "banRate": 2.4,
+      "evidence": [
+        "2026-10-12/daily-page-03.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 197,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 47.5,
+      "pickRate": 4.8,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-09.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 198,
+      "sourceRoles": [
+        "对抗路",
+        "打野"
+      ],
+      "winRate": 51,
+      "pickRate": 1.5,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-14.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 199,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 50.3,
+      "pickRate": 11.8,
+      "banRate": 5.9,
+      "evidence": [
+        "2026-10-12/daily-page-03.png",
+        "2026-10-12/daily-page-04.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 312,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 48.2,
+      "pickRate": 20.7,
+      "banRate": 6.2,
+      "evidence": [
+        "2026-10-12/daily-page-02.png",
+        "2026-10-12/daily-page-03.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 501,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": null,
+      "pickRate": 0.4,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-16.png",
+        "identities/identity-501.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 502,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 50.3,
+      "pickRate": 17.3,
+      "banRate": 38.1,
+      "evidence": [
+        "2026-10-12/daily-page-01.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 503,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 48.3,
+      "pickRate": 17.1,
+      "banRate": 1.2,
+      "evidence": [
+        "2026-10-12/daily-page-03.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 504,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 47.3,
+      "pickRate": 0.7,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-16.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 505,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 47.2,
+      "pickRate": 3.8,
+      "banRate": 0.5,
+      "evidence": [
+        "2026-10-12/daily-page-10.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 506,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 50.2,
+      "pickRate": 1.1,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-15.png",
+        "2026-10-12/daily-page-16.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 507,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 51.1,
+      "pickRate": 13.7,
+      "banRate": 0.9,
+      "evidence": [
+        "2026-10-12/daily-page-04.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 508,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 49.1,
+      "pickRate": 0.8,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-16.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 509,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 54,
+      "pickRate": 9.1,
+      "banRate": 85.5,
+      "evidence": [
+        "2026-10-12/daily-page-00.png",
+        "2026-10-12/daily-page-01.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 510,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 52.9,
+      "pickRate": 3.2,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-11.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 511,
+      "sourceRoles": [
+        "对抗路",
+        "打野"
+      ],
+      "winRate": 49.2,
+      "pickRate": 5.6,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-08.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 513,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 52.3,
+      "pickRate": 2.5,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-13.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 514,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 50.3,
+      "pickRate": 1.7,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-14.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 515,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 51.9,
+      "pickRate": 18.3,
+      "banRate": 9.7,
+      "evidence": [
+        "2026-10-12/daily-page-02.png",
+        "2026-10-12/daily-page-03.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 517,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 50.6,
+      "pickRate": 4.5,
+      "banRate": 0.2,
+      "evidence": [
+        "2026-10-12/daily-page-09.png",
+        "2026-10-12/daily-page-10.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 518,
+      "sourceRoles": [
+        "打野",
+        "对抗路"
+      ],
+      "winRate": 50.6,
+      "pickRate": 22.1,
+      "banRate": 29.9,
+      "evidence": [
+        "2026-10-12/daily-page-02.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 519,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 50.4,
+      "pickRate": 29.5,
+      "banRate": 47.5,
+      "evidence": [
+        "2026-10-12/daily-page-01.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 521,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 50.3,
+      "pickRate": 6.7,
+      "banRate": 86.4,
+      "evidence": [
+        "2026-10-12/daily-page-00.png",
+        "2026-10-12/daily-page-01.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 522,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 49.1,
+      "pickRate": 2.3,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-13.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 523,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 51.1,
+      "pickRate": 6.1,
+      "banRate": 0.4,
+      "evidence": [
+        "2026-10-12/daily-page-07.png",
+        "2026-10-12/daily-page-08.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 524,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 48.5,
+      "pickRate": 1.9,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-14.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 525,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 52.1,
+      "pickRate": 11.6,
+      "banRate": 83.7,
+      "evidence": [
+        "2026-10-12/daily-page-00.png",
+        "2026-10-12/daily-page-01.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 527,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 52.5,
+      "pickRate": 6.8,
+      "banRate": 0.8,
+      "evidence": [
+        "2026-10-12/daily-page-06.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 528,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 48.2,
+      "pickRate": 2.6,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-12.png",
+        "2026-10-12/daily-page-13.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 529,
+      "sourceRoles": [
+        "打野",
+        "对抗路"
+      ],
+      "winRate": 50.7,
+      "pickRate": 2.3,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-13.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 531,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 52.4,
+      "pickRate": 14.9,
+      "banRate": 45.3,
+      "evidence": [
+        "2026-10-12/daily-page-01.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 533,
+      "sourceRoles": [
+        "打野",
+        "发育路"
+      ],
+      "winRate": 52.5,
+      "pickRate": 10.9,
+      "banRate": 8,
+      "evidence": [
+        "2026-10-12/daily-page-03.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 534,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 49,
+      "pickRate": 2.9,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-12.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 536,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 49.7,
+      "pickRate": 10.1,
+      "banRate": 0.2,
+      "evidence": [
+        "2026-10-12/daily-page-05.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 537,
+      "sourceRoles": [
+        "对抗路",
+        "发育路"
+      ],
+      "winRate": 49.3,
+      "pickRate": 15.6,
+      "banRate": 8.3,
+      "evidence": [
+        "2026-10-12/daily-page-03.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 538,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 48.6,
+      "pickRate": 4.8,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-09.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 540,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 46.1,
+      "pickRate": 1.1,
+      "banRate": 0.8,
+      "evidence": [
+        "2026-10-12/daily-page-14.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 542,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 48.1,
+      "pickRate": 7.6,
+      "banRate": 0.2,
+      "evidence": [
+        "2026-10-12/daily-page-06.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 544,
+      "sourceRoles": [
+        "游走",
+        "对抗路"
+      ],
+      "winRate": 47.3,
+      "pickRate": 4.6,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-10.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 545,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 49.3,
+      "pickRate": 10.7,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-05.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 547,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 50,
+      "pickRate": 4.5,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-10.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 548,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 51.3,
+      "pickRate": 14.6,
+      "banRate": 0.4,
+      "evidence": [
+        "2026-10-12/daily-page-03.png",
+        "2026-10-12/daily-page-04.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 549,
+      "sourceRoles": [
+        "打野",
+        "对抗路"
+      ],
+      "winRate": 45.6,
+      "pickRate": 3.4,
+      "banRate": 0.7,
+      "evidence": [
+        "2026-10-12/daily-page-11.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 550,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 48.2,
+      "pickRate": 6.1,
+      "banRate": 1.1,
+      "evidence": [
+        "2026-10-12/daily-page-07.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 558,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 49.5,
+      "pickRate": 11.6,
+      "banRate": 1,
+      "evidence": [
+        "2026-10-12/daily-page-04.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 563,
+      "sourceRoles": [
+        "中路",
+        "对抗路"
+      ],
+      "winRate": 49,
+      "pickRate": 6.6,
+      "banRate": 0.5,
+      "evidence": [
+        "2026-10-12/daily-page-06.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 564,
+      "sourceRoles": [
+        "对抗路"
+      ],
+      "winRate": 51.3,
+      "pickRate": 3.8,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-11.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 577,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 51.1,
+      "pickRate": 26.9,
+      "banRate": 50.9,
+      "evidence": [
+        "2026-10-12/daily-page-00.png",
+        "2026-10-12/daily-page-01.png"
+      ],
+      "review": "ocr-visual"
+    },
+    {
+      "heroId": 581,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 50.3,
+      "pickRate": 2.4,
+      "banRate": 0.1,
+      "evidence": [
+        "2026-10-12/daily-page-13.png",
+        "identities/identity-581.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 582,
+      "sourceRoles": [
+        "中路"
+      ],
+      "winRate": 46.1,
+      "pickRate": 0.8,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-16.png",
+        "identities/identity-582.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 583,
+      "sourceRoles": [
+        "打野"
+      ],
+      "winRate": 48.3,
+      "pickRate": 1.8,
+      "banRate": 0,
+      "evidence": [
+        "2026-10-12/daily-page-14.png",
+        "identities/identity-583.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 584,
+      "sourceRoles": [
+        "发育路"
+      ],
+      "winRate": 48.5,
+      "pickRate": 24.4,
+      "banRate": 4.3,
+      "evidence": [
+        "2026-10-12/daily-page-02.png",
+        "identities/identity-584.png"
+      ],
+      "review": "manual-visual"
+    },
+    {
+      "heroId": 585,
+      "sourceRoles": [
+        "游走"
+      ],
+      "winRate": 50.7,
+      "pickRate": 10.5,
+      "banRate": 86.5,
+      "evidence": [
+        "2026-10-12/daily-page-00.png",
+        "identities/identity-585-confirmed.png"
+      ],
+      "review": "manual-visual"
+    }
+  ]
+}

@@ -3,7 +3,12 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { heroes } from '../../src/player/catalog.ts';
 import { extractPublicTable, mergePublicTables } from '../../src/player/pro/publicTable.ts';
-import { withPublicReference, publicReference } from '../../src/player/pro/publicReferences.ts';
+import {
+  withPublicReference,
+  publicReference,
+  previousPublicReference,
+  publicReferences,
+} from '../../src/player/pro/publicReferences.ts';
 import type { OcrData } from '../../src/player/pro/screenshot.ts';
 const fixture = () =>
   JSON.parse(readFileSync('tests/fixtures/tianyuan-table-ocr.json', 'utf8')) as OcrData;
@@ -71,10 +76,15 @@ test('batch merger deduplicates identical files and rows, retains conflicts and 
 });
 test('public reference remains selectable without writing data or replacing an existing same-segment batch', () => {
   const existing: any[] = [];
-  assert.equal(withPublicReference(existing).length, 1);
+  assert.equal(withPublicReference(existing).length, 2);
   assert.equal(existing.length, 0);
-  assert.equal(publicReference.rows.length, 16);
+  assert.equal(publicReference.rows.length, 96);
+  assert.equal(previousPublicReference.rows.length, 100);
+  assert.equal(publicReference.endDate, '2026-10-12');
   const owned = { ...publicReference, id: 'owned' };
-  assert.deepEqual(withPublicReference([owned]), [owned, publicReference]);
-  assert.deepEqual(withPublicReference([publicReference]), [publicReference]);
+  assert.deepEqual(withPublicReference([owned]), [owned, ...publicReferences]);
+  assert.deepEqual(withPublicReference([publicReference]), [
+    publicReference,
+    previousPublicReference,
+  ]);
 });

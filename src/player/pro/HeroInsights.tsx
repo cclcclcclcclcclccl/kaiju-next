@@ -1,3 +1,4 @@
+import { AggregateHeroStats } from './EnvironmentBoard.tsx';
 import { useState } from 'react';
 import type { Hero } from '../model.ts';
 import { heroById } from '../catalog.ts';
@@ -45,45 +46,51 @@ export default function HeroInsights({
           </select>
         </div>
         <OfficialHeroStats heroId={hero.id} segment={segment} role={role} />
-        <h4>我的统计快照 · 开局梯度</h4>
-        <div className="metric-strip">
-          {[
-            ['梯度', stat?.tier ?? '待接入'],
-            ['胜率', stat ? stat.row.winRate.toFixed(2) + '%' : '—'],
-            ['出场率', stat ? stat.row.pickRate.toFixed(2) + '%' : '—'],
-            ['禁用率', stat ? stat.row.banRate.toFixed(2) + '%' : '—'],
-            ['BP 率', stat?.bp != null ? stat.bp.toFixed(2) + '%' : '—'],
-          ].map(([label, value]) => (
-            <div key={label}>
-              <strong>{value}</strong>
-              <span>{label}</span>
+        {segment === '巅峰千强' && snapshot?.id === 'public-tianyuan-2026-10-12' ? (
+          <AggregateHeroStats heroId={hero.id} />
+        ) : (
+          <>
+            <h4>统计快照 · 开局梯度</h4>
+            <div className="metric-strip">
+              {[
+                ['梯度', stat?.tier ?? '待接入'],
+                ['胜率', stat ? stat.row.winRate.toFixed(2) + '%' : '—'],
+                ['出场率', stat ? stat.row.pickRate.toFixed(2) + '%' : '—'],
+                ['禁用率', stat ? stat.row.banRate.toFixed(2) + '%' : '—'],
+                ['BP 率', stat?.bp != null ? stat.bp.toFixed(2) + '%' : '—'],
+              ].map(([label, value]) => (
+                <div key={label}>
+                  <strong>{value}</strong>
+                  <span>{label}</span>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-        <p className="data-caption">
-          {stat
-            ? snapshot!.sourceName +
-              ' · ' +
-              snapshot!.patch +
-              ' · ' +
-              snapshot!.endDate +
-              ' · ' +
-              role +
-              (usableSnapshot(snapshot!) ? '' : ' · 历史统计，不参与当前 BP')
-            : '此分段暂无已导入的可靠统计，数值保留未知。'}
-        </p>
-        {snapshot && stat && <p className="data-caption">{scopeLabel(snapshot)}</p>}
-        {snapshot && stat && scopeIssue(snapshot) && (
-          <p className="pro-notice">{scopeIssue(snapshot)}</p>
-        )}
-        {snapshot && stat && (
-          <StatHistory
-            key={snapshot.id + role}
-            current={snapshot}
-            snapshots={data.snapshots}
-            role={role}
-            heroId={hero.id}
-          />
+            <p className="data-caption">
+              {stat
+                ? snapshot!.sourceName +
+                  ' · ' +
+                  snapshot!.patch +
+                  ' · ' +
+                  snapshot!.endDate +
+                  ' · ' +
+                  role +
+                  (usableSnapshot(snapshot!) ? '' : ' · 历史统计，不参与当前 BP')
+                : '此分段暂无已导入的可靠统计，数值保留未知。'}
+            </p>
+            {snapshot && stat && <p className="data-caption">{scopeLabel(snapshot)}</p>}
+            {snapshot && stat && scopeIssue(snapshot) && (
+              <p className="pro-notice">{scopeIssue(snapshot)}</p>
+            )}
+            {snapshot && stat && (
+              <StatHistory
+                key={snapshot.id + role}
+                current={snapshot}
+                snapshots={data.snapshots}
+                role={role}
+                heroId={hero.id}
+              />
+            )}
+          </>
         )}
       </section>
       <section id="hero-relations">

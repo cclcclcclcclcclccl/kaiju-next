@@ -1,0 +1,94 @@
+{
+  "source": "王者营地官方公开分享榜",
+  "sourceUrl": "https://camp.qq.com/h5/webdist/hero-rank/index.html",
+  "endpoint": "https://kohcamp.qq.com/gametoolbox/hero/getsharepagedetailranklistbyid",
+  "query": {
+    "segment": 1,
+    "position": 1
+  },
+  "sourceUpdatedOn": "2026-10-12",
+  "fetchedAt": "2026-10-13T07:53:51.424Z",
+  "coverage": "partial",
+  "rows": [
+    {
+      "heroId": 507,
+      "name": "李信",
+      "heat": "T0",
+      "winRate": 53.23,
+      "pickRate": 18.2,
+      "banRate": 29.1
+    },
+    {
+      "heroId": 549,
+      "name": "心魔六耳",
+      "heat": "T0",
+      "winRate": 50.9,
+      "pickRate": 17.3,
+      "banRate": 19.16
+    },
+    {
+      "heroId": 123,
+      "name": "吕布",
+      "heat": "T1",
+      "winRate": 48.58,
+      "pickRate": 18,
+      "banRate": 7.1
+    },
+    {
+      "heroId": 126,
+      "name": "夏侯惇",
+      "heat": "T1",
+      "winRate": 53.93,
+      "pickRate": 16,
+      "banRate": 5.8
+    },
+    {
+      "heroId": 50702,
+      "name": "李信(狂暴形态)",
+      "heat": "T1",
+      "winRate": 54.88,
+      "pickRate": 10.7,
+      "banRate": 29.1
+    },
+    {
+      "heroId": 135,
+      "name": "项羽",
+      "heat": "T2",
+      "winRate": 49.5,
+      "pickRate": 14,
+      "banRate": 2.86
+    },
+    {
+      "heroId": 187,
+      "name": "东皇太一",
+      "heat": "T2",
+      "winRate": 49.21,
+      "pickRate": 8.5,
+      "banRate": 33.15
+    },
+    {
+      "heroId": 517,
+      "name": "大司命",
+      "heat": "T2",
+      "winRate": 48.35,
+      "pickRate": 10.3,
+      "banRate": 7.58
+    },
+    {
+      "heroId": 50701,
+      "name": "李信(统御形态)",
+      "heat": "T2",
+      "winRate": 50.9,
+      "pickRate": 7.6,
+      "banRate": 29.1
+    },
+    {
+      "heroId": 166,
+      "name": "亚瑟",
+      "heat": "T2",
+      "winRate": 49.16,
+      "pickRate": 10.6,
+      "banRate": 0.57
+    }
+  ]
+}

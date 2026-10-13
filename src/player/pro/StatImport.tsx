@@ -21,7 +21,7 @@ export default function StatImport({
   segment: string;
   role: string;
   onClose: () => void;
-  onSaved: (segment: string) => Promise<void>;
+  onSaved: (segment: string, id: string) => Promise<void>;
 }) {
   const today = new Date().toLocaleDateString('en-CA');
   const [mode, setMode] = useState<'table' | 'json' | 'screenshots'>('table');
@@ -74,8 +74,8 @@ export default function StatImport({
     try {
       const input = mode === 'json' ? parse() : preview;
       if (!input) throw new Error('请先预览并核对');
-      await api('/pro/snapshot', input);
-      await onSaved(input.segment);
+      const saved = await api<{ id: string }>('/pro/snapshot', input);
+      await onSaved(input.segment, saved.id);
     } catch (e) {
       setError(inputError(e));
     } finally {

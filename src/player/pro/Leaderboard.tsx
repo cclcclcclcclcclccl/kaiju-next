@@ -2,7 +2,9 @@ import StatImport from './StatImport.tsx';
 import StatHistory from './StatHistory.tsx';
 import OfficialStats from './OfficialStats.tsx';
 import AllHeroRanks from './AllHeroRanks.tsx';
-import { withPublicReference, publicReference } from './publicReferences.ts';
+import DataUpdates from './DataUpdates.tsx';
+import { aggregateObservation } from './environment.ts';
+import { withPublicReference, publicReference, publicReferences } from './publicReferences.ts';
 import { scopeIssue, scopeLabel } from './statistics.ts';
 import { useMemo, useState } from 'react';
 import { ArrowUpRight, Download, Upload, Info } from 'lucide-react';
@@ -31,6 +33,7 @@ export default function Leaderboard({
     [sourceMessage, setSourceMessage] = useState(''),
     [method, setMethod] = useState(false),
     [demo, setDemo] = useState(false);
+  const [officialRevision, setOfficialRevision] = useState('');
   const snapshots = sortedSnapshots(withPublicReference(data.snapshots), segment),
     snapshot = snapshots.find((s) => s.id === selected) ?? snapshots[0];
   const example = useMemo<StatSnapshot>(
@@ -135,6 +138,7 @@ export default function Leaderboard({
           导入统计快照
         </button>
       </div>
+      <DataUpdates onUpdated={setOfficialRevision} />
       <div className="pro-toolbar">
         <label>
           统计分段
@@ -170,7 +174,7 @@ export default function Leaderboard({
             {!snapshots.length && <option value="">尚无此分段数据</option>}
             {snapshots.map((s) => (
               <option key={s.id} value={s.id}>
-                {s.title} · {s.endDate}
+                {s.id === publicReference.id ? '天元之弈133位总体记录' : s.title} · {s.endDate}
               </option>
             ))}
           </select>
@@ -206,7 +210,12 @@ export default function Leaderboard({
           {demo ? '退出合成演示' : '查看算法演示'}
         </button>
       </div>
-      <AllHeroRanks segment={segment} onOpen={onOpen} selectedSnapshot={snapshot} />
+      <AllHeroRanks
+        segment={segment}
+        onOpen={onOpen}
+        selectedSnapshot={snapshot}
+        refreshToken={officialRevision}
+      />
       {segment === publicReference.segment && snapshot?.id !== publicReference.id && (
         <button
           className="btn secondary"
@@ -215,14 +224,16 @@ export default function Leaderboard({
             setDemo(false);
           }}
         >
-          查看天元之弈公开参考 · {publicReference.rows.length} 位英雄
+          查看天元之弈公开参考 · {aggregateObservation.rows.length} 位英雄
         </button>
       )}
-      {snapshot?.id === publicReference.id && (
+      {snapshot && publicReferences.some((r) => r.id === snapshot.id) && (
         <p className="pro-notice">
-          当前是随项目附带的真实页面观察，数据日 {publicReference.endDate}，仅{' '}
-          {publicReference.rows.length}
-          位英雄，不是今天的全量榜单。可导出核对或采集新批次；此参考不写入你的档案。
+          当前是随项目附带的真实页面观察，数据日 {snapshot.endDate}。
+          {snapshot.id === publicReference.id
+            ? '上方总表覆盖133位英雄，其中132位胜率可用；下方保留96位单一分路标签的原始快照子集供核对。'
+            : `历史批次收录${snapshot.rows.length}位英雄。`}
+          不是实时榜单；此参考不写入你的档案。
         </p>
       )}
       <label className="check-control">
@@ -234,6 +245,7 @@ export default function Leaderboard({
         隐藏出场率低于 2.5% 的英雄（只筛选显示，不重算梯度）
       </label>
       <OfficialStats
+        key={officialRevision}
         segment={segment}
         role={role}
         query={query}
@@ -241,7 +253,11 @@ export default function Leaderboard({
         order={order}
         onOpen={onOpen}
       />
-      <h2 className="snapshot-heading">我的统计快照 · 开局梯度</h2>
+      <h2 className="snapshot-heading">
+        {snapshot?.id === publicReference.id && !demo
+          ? '原始快照子集 · 按来源分路标签筛选'
+          : '我的统计快照 · 开局梯度'}
+      </h2>
       {demo && (
         <div className="pro-notice">
           当前是明确标注的合成数据，用于检查算法，不代表真实英雄强度，不会保存或进入 BP。
@@ -439,10 +455,10 @@ export default function Leaderboard({
           segment={segment}
           role={role}
           onClose={() => setImporting(false)}
-          onSaved={async (next) => {
+          onSaved={async (next, id) => {
             await refresh();
             setSegment(next);
-            setSelected('');
+            setSelected(id);
             setDemo(false);
             setImporting(false);
           }}

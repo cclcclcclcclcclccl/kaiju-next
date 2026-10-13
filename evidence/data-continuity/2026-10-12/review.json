@@ -1,0 +1,164 @@
+{
+  "reviewedOn": "2026-10-13",
+  "sourceUpdatedAt": "2026-10-13 08:46",
+  "dataDate": "2026-10-12",
+  "segment": "巅峰千强",
+  "visibleTailRank": 133,
+  "acceptedHeroes": 96,
+  "percentages": 288,
+  "originalScreens": 17,
+  "method": "OCR name, single role and each displayed percentage visually compared with original screenshots; no previous-date fill",
+  "lowPickFilter": false,
+  "scopeEvidence": "daily-page-16.png",
+  "conflicts": 0,
+  "gaps": [
+    {
+      "heroId": 121,
+      "name": "芈月"
+    },
+    {
+      "heroId": 126,
+      "name": "夏侯惇"
+    },
+    {
+      "heroId": 135,
+      "name": "项羽"
+    },
+    {
+      "heroId": 138,
+      "name": "王维"
+    },
+    {
+      "heroId": 141,
+      "name": "貂蝉"
+    },
+    {
+      "heroId": 153,
+      "name": "兰陵王"
+    },
+    {
+      "heroId": 156,
+      "name": "张良"
+    },
+    {
+      "heroId": 166,
+      "name": "亚瑟"
+    },
+    {
+      "heroId": 172,
+      "name": "蚩奼"
+    },
+    {
+      "heroId": 173,
+      "name": "李元芳"
+    },
+    {
+      "heroId": 176,
+      "name": "杨玉环"
+    },
+    {
+      "heroId": 178,
+      "name": "杨戬"
+    },
+    {
+      "heroId": 180,
+      "name": "哪吒"
+    },
+    {
+      "heroId": 186,
+      "name": "太乙真人"
+    },
+    {
+      "heroId": 187,
+      "name": "东皇太一"
+    },
+    {
+      "heroId": 190,
+      "name": "诸葛亮"
+    },
+    {
+      "heroId": 191,
+      "name": "大乔"
+    },
+    {
+      "heroId": 198,
+      "name": "梦奇"
+    },
+    {
+      "heroId": 501,
+      "name": "明世隐"
+    },
+    {
+      "heroId": 507,
+      "name": "李信"
+    },
+    {
+      "heroId": 511,
+      "name": "猪八戒"
+    },
+    {
+      "heroId": 518,
+      "name": "马超"
+    },
+    {
+      "heroId": 524,
+      "name": "蒙犽"
+    },
+    {
+      "heroId": 529,
+      "name": "盘古"
+    },
+    {
+      "heroId": 533,
+      "name": "阿古朵"
+    },
+    {
+      "heroId": 537,
+      "name": "司空震"
+    },
+    {
+      "heroId": 540,
+      "name": "金蝉"
+    },
+    {
+      "heroId": 542,
+      "name": "暃"
+    },
+    {
+      "heroId": 544,
+      "name": "赵怀真"
+    },
+    {
+      "heroId": 547,
+      "name": "卢雅那"
+    },
+    {
+      "heroId": 549,
+      "name": "心魔六耳"
+    },
+    {
+      "heroId": 563,
+      "name": "海诺"
+    },
+    {
+      "heroId": 581,
+      "name": "元流之子(坦克)"
+    },
+    {
+      "heroId": 582,
+      "name": "元流之子(法师)"
+    },
+    {
+      "heroId": 583,
+      "name": "元流之子(刺客)"
+    },
+    {
+      "heroId": 584,
+      "name": "元流之子(射手)"
+    },
+    {
+      "heroId": 585,
+      "name": "元流之子(辅助)"
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import { createPlayerApp } from './player/app.ts';
 import type { Hero } from '../src/player/model.ts';
 import { createOfficialRanks } from './pro/official.ts';
 import { createResources } from './pro/resources.ts';
+import { createRankRefresh, scheduleRankRefresh } from './pro/refresh.ts';
 const dataDir = resolve(process.env.PLAYER_DATA_DIR ?? 'data');
 mkdirSync(dataDir, { recursive: true });
 const heroes = JSON.parse(
@@ -12,25 +13,34 @@ const heroes = JSON.parse(
 ).heroes as Hero[];
 const store = createPlayerStore(resolve(dataDir, 'kaiju.sqlite'));
 const resources = createResources(heroes, resolve(dataDir, 'public-resources'));
+const officialRanks = createOfficialRanks({ cacheDir: resolve(dataDir, 'official-ranks') });
+const rankRefresh = createRankRefresh(officialRanks, resolve(dataDir, 'official-rank-history'));
 // Refresh only while this local service is running; failures preserve original timestamps.
 const refreshTimer = setInterval(() => void resources.get().catch(() => {}), 15 * 60 * 1000);
 refreshTimer.unref();
 const server = createPlayerApp(store, heroes, {
   dist: resolve('dist'),
-  officialRanks: createOfficialRanks({ cacheDir: resolve(dataDir, 'official-ranks') }),
+  officialRanks,
+  rankRefresh,
   resources,
 });
 const port = Number(process.env.PORT ?? 4318);
-server.listen(port, '127.0.0.1', () => console.log('开局 NEXT 已启动：http://127.0.0.1:' + port));
+let stopRefresh: (() => void) | undefined;
+server.listen(port, '127.0.0.1', () => {
+  console.log('开局 NEXT 已启动：http://127.0.0.1:' + port);
+  if (process.env.RANK_AUTO_REFRESH !== '0') stopRefresh = scheduleRankRefresh(rankRefresh);
+});
 server.on('error', (error) => {
   console.error(error.message);
   store.close();
   process.exitCode = 1;
 });
 for (const signal of ['SIGINT', 'SIGTERM'] as const)
-  process.on(signal, () =>
+  process.on(signal, () => {
+    stopRefresh?.();
+    clearInterval(refreshTimer);
     server.close(() => {
       store.close();
       process.exit(0);
-    }),
-  );
+    });
+  });

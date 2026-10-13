@@ -13,6 +13,7 @@ import type { PlayerStore } from './store.ts';
 import { createOfficialRanks } from '../pro/official.ts';
 import { officialQuerySchema } from '../../src/player/pro/official.ts';
 import { createResources } from '../pro/resources.ts';
+import type { createRankRefresh } from '../pro/refresh.ts';
 export class PlayerHttpError extends Error {
   status: number;
   constructor(status: number, message: string) {
@@ -43,6 +44,7 @@ export function createPlayerApp(
     dist?: string;
     officialRanks?: ReturnType<typeof createOfficialRanks>;
     resources?: ReturnType<typeof createResources>;
+    rankRefresh?: ReturnType<typeof createRankRefresh>;
   } = {},
 ) {
   const officialRanks = options.officialRanks ?? createOfficialRanks();
@@ -90,6 +92,13 @@ export function createPlayerApp(
       )
         throw new PlayerHttpError(401, '登录已过期，请重新登录');
       const store = user ? rootStore.forUser(user.id) : rootStore;
+      if (method === 'GET' && url.pathname === '/api/official/update-status')
+        return send(
+          200,
+          options.rankRefresh
+            ? await options.rankRefresh.status()
+            : { running: false, intervalMinutes: 35, results: [] },
+        );
       if (method === 'GET' && url.pathname === '/api/resources') {
         if (!resources) return send(503, { error: '资料更新服务未配置' });
         try {
@@ -125,7 +134,7 @@ export function createPlayerApp(
       if (method === 'GET' && url.pathname === '/api/status')
         return send(200, {
           product: '开局 NEXT',
-          version: '0.10.0',
+          version: '0.11.0',
           modelConfigured: Boolean(providerConfig()),
           heroCount: heroes.length,
         });

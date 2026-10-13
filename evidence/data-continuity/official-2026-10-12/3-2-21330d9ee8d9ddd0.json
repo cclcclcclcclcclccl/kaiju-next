@@ -1,0 +1,94 @@
+{
+  "source": "王者营地官方公开分享榜",
+  "sourceUrl": "https://camp.qq.com/h5/webdist/hero-rank/index.html",
+  "endpoint": "https://kohcamp.qq.com/gametoolbox/hero/getsharepagedetailranklistbyid",
+  "query": {
+    "segment": 3,
+    "position": 2
+  },
+  "sourceUpdatedOn": "2026-10-12",
+  "fetchedAt": "2026-10-13T07:53:52.323Z",
+  "coverage": "partial",
+  "rows": [
+    {
+      "heroId": 521,
+      "name": "海月",
+      "heat": "T0",
+      "winRate": 49.93,
+      "pickRate": 6,
+      "banRate": 78.28
+    },
+    {
+      "heroId": 108,
+      "name": "墨子",
+      "heat": "T0",
+      "winRate": 51.61,
+      "pickRate": 14.3,
+      "banRate": 38.55
+    },
+    {
+      "heroId": 138,
+      "name": "王维",
+      "heat": "T1",
+      "winRate": 51.33,
+      "pickRate": 15.2,
+      "banRate": 27.48
+    },
+    {
+      "heroId": 191,
+      "name": "大乔",
+      "heat": "T1",
+      "winRate": 49.08,
+      "pickRate": 10.6,
+      "banRate": 44.4
+    },
+    {
+      "heroId": 106,
+      "name": "小乔",
+      "heat": "T1",
+      "winRate": 47.94,
+      "pickRate": 17.6,
+      "banRate": 0.24
+    },
+    {
+      "heroId": 190,
+      "name": "诸葛亮",
+      "heat": "T2",
+      "winRate": 53.33,
+      "pickRate": 12.3,
+      "banRate": 1.05
+    },
+    {
+      "heroId": 179,
+      "name": "女娲",
+      "heat": "T2",
+      "winRate": 51.36,
+      "pickRate": 11.7,
+      "banRate": 5.04
+    },
+    {
+      "heroId": 127,
+      "name": "甄姬",
+      "heat": "T2",
+      "winRate": 48.86,
+      "pickRate": 11.8,
+      "banRate": 1.45
+    },
+    {
+      "heroId": 540,
+      "name": "金蝉",
+      "heat": "T2",
+      "winRate": 47.4,
+      "pickRate": 7.4,
+      "banRate": 37.56
+    },
+    {
+      "heroId": 142,
+      "name": "安琪拉",
+      "heat": "T2",
+      "winRate": 47.31,
+      "pickRate": 11.5,
+      "banRate": 0.44
+    }
+  ]
+}

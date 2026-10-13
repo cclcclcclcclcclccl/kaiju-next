@@ -1,0 +1,5625 @@
+{
+  "status": "needs-visual-review",
+  "capturedOn": "2026-10-13T07:52:28.369Z",
+  "headerSource": {
+    "file": "daily-page-00.png",
+    "sha256": "1dd362ee704b483316b4cd9d09f69bea57e7550803010d57e7d55066414124cf"
+  },
+  "geometry": {
+    "width": 642,
+    "height": 1181,
+    "bodyY": [
+      90,
+      1080
+    ],
+    "headerOffsetY": -580
+  },
+  "notes": [
+    "Headers inherited only from the visually reviewed continuous scroll session",
+    "No role expansion or sample counts invented; source snapshots remain unmodified"
+  ],
+  "captures": [
+    {
+      "sha256": "1dd362ee704b483316b4cd9d09f69bea57e7550803010d57e7d55066414124cf",
+      "engine": "RapidOCR 3.10 / local CPU",
+      "rows": [
+        {
+          "heroId": 525,
+          "name": "鲁班大师",
+          "role": "游走",
+          "winRate": 52.1,
+          "pickRate": 11.7,
+          "banRate": 84.5,
+          "ocrConfidence": 0.99958,
+          "evidence": [
+            "鲁班大师#2",
+            "游走",
+            "52.1%",
+            "11.7%",
+            "84.5%"
+          ]
+        },
+        {
+          "heroId": 509,
+          "name": "盾山",
+          "role": "游走",
+          "winRate": 53.9,
+          "pickRate": 7.9,
+          "banRate": 87,
+          "ocrConfidence": 0.99923,
+          "evidence": [
+            "盾山#3",
+            "游走",
+            "53.9%",
+            "7.9%",
+            "87.0%"
+          ]
+        },
+        {
+          "heroId": 521,
+          "name": "海月",
+          "role": "中路",
+          "winRate": 50.3,
+          "pickRate": 5.9,
+          "banRate": 86.8,
+          "ocrConfidence": 0.99914,
+          "evidence": [
+            "海月#4",
+            "中路",
+            "50.3%",
+            "5.9%",
+            "86.8%"
+          ]
+        },
+        {
+          "heroId": 577,
+          "name": "少司缘",
+          "role": "游走",
+          "winRate": 51.1,
+          "pickRate": 32.3,
+          "banRate": 48.6,
+          "ocrConfidence": 0.99769,
+          "evidence": [
+            "少司缘#5",
+            "游走",
+            "51.1%",
+            "32.3%",
+            "48.6%"
+          ]
+        }
+      ],
+      "rejected": [
+        {
+          "text": "元流之子...#1",
+          "reason": "英雄名被截断，请完整显示后重新采集"
+        }
+      ],
+      "dateText": [
+        "2026年10月11日",
+        "数据更新：2026年10月12日10:36"
+      ],
+      "dataDates": [
+        "2026-10-11"
+      ],
+      "fileName": "daily-page-00.png"
+    },
+    {
+      "sha256": "b305e14eee77fb3d5f80a5866d456f410a89120fd70a10423f3ffbab1a165445",
+      "engine": "RapidOCR 3.10 / local CPU",
+      "rows": [
+        {
+          "heroId": 525,
+          "name": "鲁班大师",
+          "role": "游走",
+          "winRate": 52.1,
+          "pickRate": 11.7,
+          "banRate": 84.5,
+          "ocrConfidence": 0.99942,
+          "evidence": [
+            "鲁班大师#2",
+            "游走",
+            "52.1%",
+            "11.7%",
+            "84.5%"
+          ]
+        },
+        {
+          "heroId": 509,
+          "name": "盾山",
+          "role": "游走",
+          "winRate": 53.9,
+          "pickRate": 7.9,
+          "banRate": 87,
+          "ocrConfidence": 0.89657,
+          "evidence": [
+            "盾山#3",
+            "游走",
+            "53.9%",
+            "7.9%",
+            "87.0%"
+          ]
+        },
+        {
+          "heroId": 521,
+          "name": "海月",
+          "role": "中路",
+          "winRate": 50.3,
+          "pickRate": 5.9,
+          "banRate": 86.8,
+          "ocrConfidence": 0.93099,
+          "evidence": [
+            "海月#4",
+            "中路",
+            "50.3%",
+            "5.9%",
+            "86.8%"
+          ]
+        },
+        {
+          "heroId": 577,
+          "name": "少司缘",
+          "role": "游走",
+          "winRate": 51.1,
+          "pickRate": 32.3,
+          "banRate": 48.6,
+          "ocrConfidence": 0.99792,
+          "evidence": [
+            "少司缘#5",
+            "游走",
+            "51.1%",
+            "32.3%",
+            "48.6%"
+          ]
+        },
+        {
+          "heroId": 519,
+          "name": "敖隐",
+          "role": "发育路",
+          "winRate": 50.4,
+          "pickRate": 28.8,
+          "banRate": 46.6,
+          "ocrConfidence": 0.99795,
+          "evidence": [
+            "敖隐#6",
+            "发育路",
+            "50.4%",
+            "28.8%",
+            "46.6%"
+          ]
+        },
+        {
+          "heroId": 140,
+          "name": "关羽",
+          "role": "对抗路",
+          "winRate": 52.4,
+          "pickRate": 9.1,
+          "banRate": 62.5,
+          "ocrConfidence": 0.99682,
+          "evidence": [
+            "关羽#7",
+            "对抗路",
+            "52.4%",
+            "9.1%",
+            "62.5%"
+          ]
+        },
+        {
+          "heroId": 531,
+          "name": "镜",
+          "role": "打野",
+          "winRate": 52.4,
+          "pickRate": 19.9,
+          "banRate": 46.5,
+          "ocrConfidence": 0.96901,
+          "evidence": [
+            "镜#8",
+            "打野",
+            "52.4%",
+            "19.9%",
+            "46.5%"
+          ]
+        },
+        {
+          "heroId": 502,
+          "name": "裴擒虎",
+          "role": "打野",
+          "winRate": 50.3,
+          "pickRate": 22.3,
+          "banRate": 37.3,
+          "ocrConfidence": 0.9005,
+          "evidence": [
+            "裴擒虎#9",
+            "打野",
+            "50.3%",
+            "22.3%",
+            "37.3%"
+          ]
+        },
+        {
+          "heroId": 125,
+          "name": "元歌",
+          "role": "对抗路",
+          "winRate": 52.4,
+          "pickRate": 20.4,
+          "banRate": 16.4,
+          "ocrConfidence": 0.99982,
+          "evidence": [
+            "元歌#12",
+            "对抗路",
+            "52.4%",
+            "20.4%",
+            "16.4%"
+          ]
+        }
+      ],
+      "rejected": [
+        {
+          "text": "马超#10",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "大乔#11",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ],
+      "dateText": [],
+      "dataDates": [],
+      "fileName": "daily-page-01.png"
+    },
+    {
+      "sha256": "86ee0ed0b414d4716c437c4d28f49eaadc1c21452ef3e7173519d0acf5ba5bb4",
+      "engine": "RapidOCR 3.10 / local CPU",
+      "rows": [
+        {
+          "heroId": 125,
+          "name": "元歌",
+          "role": "对抗路",
+          "winRate": 52.4,
+          "pickRate": 20.4,
+          "banRate": 16.4,
+          "ocrConfidence": 0.99964,
+          "evidence": [
+            "元歌#12",
+            "对抗路",
+            "52.4%",
+            "20.4%",
+            "16.4%"
+          ]
+        },
+        {
+          "heroId": 515,
+          "name": "嫦娥",
+          "role": "中路",
+          "winRate": 51.8,
+          "pickRate": 23.3,
+          "banRate": 12.3,
+          "ocrConfidence": 0.99959,
+          "evidence": [
+            "嫦娥#13",
+            "中路",
+            "51.8%",
+            "23.3%",
+            "12.3%"
+          ]
+        },
+        {
+          "heroId": 194,
+          "name": "苏烈",
+          "role": "游走",
+          "winRate": 51.2,
+          "pickRate": 26,
+          "banRate": 6.2,
+          "ocrConfidence": 0.99961,
+          "evidence": [
+            "苏烈#15",
+            "游走",
+            "51.2%",
+            "26.0%",
+            "6.2%"
+          ]
+        },
+        {
+          "heroId": 179,
+          "name": "女娲",
+          "role": "中路",
+          "winRate": 50.2,
+          "pickRate": 21.7,
+          "banRate": 9.6,
+          "ocrConfidence": 0.99784,
+          "evidence": [
+            "女娲#16",
+            "中路",
+            "50.2%",
+            "21.7%",
+            "9.6%"
+          ]
+        },
+        {
+          "heroId": 107,
+          "name": "赵云",
+          "role": "打野",
+          "winRate": 48.1,
+          "pickRate": 21.4,
+          "banRate": 9.6,
+          "ocrConfidence": 0.99967,
+          "evidence": [
+            "赵云#17",
+            "打野",
+            "48.1%",
+            "21.4%",
+            "9.6%"
+          ]
+        },
+        {
+          "heroId": 180,
+          "name": "哪吒",
+          "role": "对抗路",
+          "winRate": 49.5,
+          "pickRate": 17.6,
+          "banRate": 13.1,
+          "ocrConfidence": 0.99937,
+          "evidence": [
+            "哪吒#18",
+            "对抗路",
+            "49.5%",
+            "17.6%",
+            "13.1%"
+          ]
+        },
+        {
+          "heroId": 312,
+          "name": "沈梦溪",
+          "role": "中路",
+          "winRate": 48.1,
+          "pickRate": 22,
+          "banRate": 6.7,
+          "ocrConfidence": 0.9995,
+          "evidence": [
+            "沈梦溪#19",
+            "中路",
+            "48.1%",
+            "22.0%",
+            "6.7%"
+          ]
+        }
+      ],
+      "rejected": [
+        {
+          "text": "马超#10",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "大乔#11",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "元流之...#14",
+          "reason": "英雄名被截断，请完整显示后重新采集"
+        },
+        {
+          "text": "司空震#20",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ],
+      "dateText": [],
+      "dataDates": [],
+      "fileName": "daily-page-02.png"
+    },
+    {
+      "sha256": "5887f6f5a6cb6cc87b095d98f3fd9e4450e6fd911d9f0c4da56e6c98945e7d61",
+      "engine": "RapidOCR 3.10 / local CPU",
+      "rows": [
+        {
+          "heroId": 312,
+          "name": "沈梦溪",
+          "role": "中路",
+          "winRate": 48.1,
+          "pickRate": 22,
+          "banRate": 6.7,
+          "ocrConfidence": 0.99973,
+          "evidence": [
+            "沈梦溪#19",
+            "中路",
+            "48.1%",
+            "22.0%",
+            "6.7%"
+          ]
+        },
+        {
+          "heroId": 533,
+          "name": "阿古朵",
+          "role": "打野",
+          "winRate": 52.5,
+          "pickRate": 13,
+          "banRate": 9.6,
+          "ocrConfidence": 0.98103,
+          "evidence": [
+            "阿古朵#22",
+            "打野",
+            "52.5%",
+            "13.0%",
+            "9.6%"
+          ]
+        },
+        {
+          "heroId": 199,
+          "name": "公孙离",
+          "role": "发育路",
+          "winRate": 50.4,
+          "pickRate": 15.3,
+          "banRate": 5,
+          "ocrConfidence": 0.99964,
+          "evidence": [
+            "公孙离#24",
+            "发育路",
+            "50.4%",
+            "15.3%",
+            "5.0%"
+          ]
+        },
+        {
+          "heroId": 171,
+          "name": "张飞",
+          "role": "游走",
+          "winRate": 47.8,
+          "pickRate": 18,
+          "banRate": 2,
+          "ocrConfidence": 0.99975,
+          "evidence": [
+            "张飞#25",
+            "游走",
+            "47.8%",
+            "18.0%",
+            "2.0%"
+          ]
+        },
+        {
+          "heroId": 503,
+          "name": "狂铁",
+          "role": "对抗路",
+          "winRate": 48.2,
+          "pickRate": 16.7,
+          "banRate": 2.3,
+          "ocrConfidence": 0.99688,
+          "evidence": [
+            "狂铁#26",
+            "对抗路",
+            "48.2%",
+            "16.7%",
+            "2.3%"
+          ]
+        },
+        {
+          "heroId": 548,
+          "name": "戈娅",
+          "role": "发育路",
+          "winRate": 51.3,
+          "pickRate": 14.9,
+          "banRate": 0.4,
+          "ocrConfidence": 0.91761,
+          "evidence": [
+            "戈娅 #28",
+            "发育路",
+            "51.3%",
+            "14.9%",
+            "0.4%"
+          ]
+        },
+        {
+          "heroId": 196,
+          "name": "百里守约",
+          "role": "发育路",
+          "winRate": 49.3,
+          "pickRate": 14,
+          "banRate": 1.2,
+          "ocrConfidence": 0.99956,
+          "evidence": [
+            "百里守约#29",
+            "发育路",
+            "49.3%",
+            "14.0%",
+            "1.2%"
+          ]
+        }
+      ],
+      "rejected": [
+        {
+          "text": "司空震#20",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "王维#21",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "诸葛亮#23",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "李信#27",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ],
+      "dateText": [],
+      "dataDates": [],
+      "fileName": "daily-page-03.png"
+    },
+    {
+      "sha256": "7b3e1c1f2ca6288827062f7e4dca9aebdb2b14cb2eed6268a74b73b48111701f",
+      "engine": "RapidOCR 3.10 / local CPU",
+      "rows": [
+        {
+          "heroId": 548,
+          "name": "戈娅",
+          "role": "发育路",
+          "winRate": 51.3,
+          "pickRate": 14.9,
+          "banRate": 0.4,
+          "ocrConfidence": 0.99971,
+          "evidence": [
+            "戈娅#28",
+            "发育路",
+            "51.3%",
+            "14.9%",
+            "0.4%"
+          ]
+        },
+        {
+          "heroId": 196,
+          "name": "百里守约",
+          "role": "发育路",
+          "winRate": 49.3,
+          "pickRate": 14,
+          "banRate": 1.2,
+          "ocrConfidence": 0.99857,
+          "evidence": [
+            "百里守约#29",
+            "发育路",
+            "49.3%",
+            "14.0%",
+            "1.2%"
+          ]
+        },
+        {
+          "heroId": 106,
+          "name": "小乔",
+          "role": "中路",
+          "winRate": 48.1,
+          "pickRate": 14.2,
+          "banRate": 0.1,
+          "ocrConfidence": 0.96048,
+          "evidence": [
+            "小乔#30",
+            "中路",
+            "48.1%",
+            "14.2%",
+            "0.1%"
+          ]
+        },
+        {
+          "heroId": 146,
+          "name": "露娜",
+          "role": "打野",
+          "winRate": 53.3,
+          "pickRate": 11.3,
+          "banRate": 2.7,
+          "ocrConfidence": 0.99974,
+          "evidence": [
+            "露娜#31",
+            "打野",
+            "53.3%",
+            "11.3%",
+            "2.7%"
+          ]
+        },
+        {
+          "heroId": 558,
+          "name": "影",
+          "role": "对抗路",
+          "winRate": 49.5,
+          "pickRate": 12.7,
+          "banRate": 0.9,
+          "ocrConfidence": 0.97794,
+          "evidence": [
+            "影#32",
+            "对抗路",
+            "49.5%",
+            "12.7%",
+            "0.9%"
+          ]
+        },
+        {
+          "heroId": 128,
+          "name": "曹操",
+          "role": "对抗路",
+          "winRate": 50.1,
+          "pickRate": 12.7,
+          "banRate": 0.1,
+          "ocrConfidence": 0.99979,
+          "evidence": [
+            "曹操#35",
+            "对抗路",
+            "50.1%",
+            "12.7%",
+            "0.1%"
+          ]
+        },
+        {
+          "heroId": 149,
+          "name": "刘邦",
+          "role": "游走",
+          "winRate": 49.5,
+          "pickRate": 11.8,
+          "banRate": 0.9,
+          "ocrConfidence": 0.99957,
+          "evidence": [
+            "刘邦#36",
+            "游走",
+            "49.5%",
+            "11.8%",
+            "0.9%"
+          ]
+        },
+        {
+          "heroId": 167,
+          "name": "孙悟空",
+          "role": "打野",
+          "winRate": 49,
+          "pickRate": 10,
+          "banRate": 2,
+          "ocrConfidence": 0.99983,
+          "evidence": [
+            "孙悟空#37",
+            "打野",
+            "49.0%",
+            "10.0%",
+            "2.0%"
+          ]
+        }
+      ],
+      "rejected": [
+        {
+          "text": "李信#27",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "太乙真人#33",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "杨玉环#34",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ],
+      "dateText": [],
+      "dataDates": [],
+      "fileName": "daily-page-04.png"
+    },
+    {
+      "sha256": "79c27828cd6fb1f997953eef73e1d2ef364635af86ec47b9d9a569c2c6fd3bb9",
+      "engine": "RapidOCR 3.10 / local CPU",
+      "rows": [
+        {
+          "heroId": 149,
+          "name": "刘邦",
+          "role": "游走",
+          "winRate": 49.5,
+          "pickRate": 11.8,
+          "banRate": 0.9,
+          "ocrConfidence": 0.99337,
+          "evidence": [
+            "刘邦#36",
+            "游走",
+            "49.5%",
+            "11.8%",
+            "0.9%"
+          ]
+        },
+        {
+          "heroId": 167,
+          "name": "孙悟空",
+          "role": "打野",
+          "winRate": 49,
+          "pickRate": 10,
+          "banRate": 2,
+          "ocrConfidence": 0.99983,
+          "evidence": [
+            "孙悟空#37",
+            "打野",
+            "49.0%",
+            "10.0%",
+            "2.0%"
+          ]
+        },
+        {
+          "heroId": 177,
+          "name": "苍",
+          "role": "发育路",
+          "winRate": 50.6,
+          "pickRate": 11.5,
+          "banRate": 0.1,
+          "ocrConfidence": 0.9992,
+          "evidence": [
+            "苍#38",
+            "发育路",
+            "50.6%",
+            "11.5%",
+            "0.1%"
+          ]
+        },
+        {
+          "heroId": 536,
+          "name": "夏洛特",
+          "role": "对抗路",
+          "winRate": 49.7,
+          "pickRate": 10.8,
+          "banRate": 0.2,
+          "ocrConfidence": 0.9996,
+          "evidence": [
+            "夏洛特#40",
+            "对抗路",
+            "49.7%",
+            "10.8%",
+            "0.2%"
+          ]
+        },
+        {
+          "heroId": 195,
+          "name": "百里玄策",
+          "role": "打野",
+          "winRate": 50.8,
+          "pickRate": 9.9,
+          "banRate": 0.7,
+          "ocrConfidence": 0.99948,
+          "evidence": [
+            "百里玄策#41",
+            "打野",
+            "50.8%",
+            "9.9%",
+            "0.7%"
+          ]
+        },
+        {
+          "heroId": 545,
+          "name": "莱西奥",
+          "role": "发育路",
+          "winRate": 49.4,
+          "pickRate": 10.4,
+          "banRate": 0,
+          "ocrConfidence": 0.98702,
+          "evidence": [
+            "莱西奥#42",
+            "发育路",
+            "49.4%",
+            "10.4%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 150,
+          "name": "韩信",
+          "role": "打野",
+          "winRate": 50.4,
+          "pickRate": 8.5,
+          "banRate": 0.5,
+          "ocrConfidence": 0.99953,
+          "evidence": [
+            "韩信#43",
+            "打野",
+            "50.4%",
+            "8.5%",
+            "0.5%"
+          ]
+        },
+        {
+          "heroId": 157,
+          "name": "不知火舞",
+          "role": "中路",
+          "winRate": 50.7,
+          "pickRate": 8.7,
+          "banRate": 0.2,
+          "ocrConfidence": 0.99677,
+          "evidence": [
+            "不知火舞#44",
+            "中路",
+            "50.7%",
+            "8.7%",
+            "0.2%"
+          ]
+        },
+        {
+          "heroId": 155,
+          "name": "艾琳",
+          "role": "发育路",
+          "winRate": 49.2,
+          "pickRate": 8.7,
+          "banRate": 0,
+          "ocrConfidence": 0.99976,
+          "evidence": [
+            "艾琳#45",
+            "发育路",
+            "49.2%",
+            "8.7%",
+            "0.0%"
+          ]
+        }
+      ],
+      "rejected": [
+        {
+          "text": "大禹#46",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ],
+      "dateText": [],
+      "dataDates": [],
+      "fileName": "daily-page-05.png"
+    },
+    {
+      "sha256": "9fac7e1344a752e5cde69017e40eb52eadb132a7c482f44bab3c9d1ca113bc21",
+      "engine": "RapidOCR 3.10 / local CPU",
+      "rows": [
+        {
+          "heroId": 157,
+          "name": "不知火舞",
+          "role": "中路",
+          "winRate": 50.7,
+          "pickRate": 8.7,
+          "banRate": 0.2,
+          "ocrConfidence": 0.99971,
+          "evidence": [
+            "不知火舞#44",
+            "中路",
+            "50.7%",
+            "8.7%",
+            "0.2%"
+          ]
+        },
+        {
+          "heroId": 155,
+          "name": "艾琳",
+          "role": "发育路",
+          "winRate": 49.2,
+          "pickRate": 8.7,
+          "banRate": 0,
+          "ocrConfidence": 0.99975,
+          "evidence": [
+            "艾琳#45",
+            "发育路",
+            "49.2%",
+            "8.7%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 188,
+          "name": "大禹",
+          "role": "游走",
+          "winRate": 48.5,
+          "pickRate": 7.9,
+          "banRate": 0.7,
+          "ocrConfidence": 0.99044,
+          "evidence": [
+            "大禹#46",
+            "游走",
+            "48.5%",
+            "7.9%",
+            "0.7%"
+          ]
+        },
+        {
+          "heroId": 527,
+          "name": "蒙恬",
+          "role": "对抗路",
+          "winRate": 52.6,
+          "pickRate": 7.5,
+          "banRate": 0.5,
+          "ocrConfidence": 0.99944,
+          "evidence": [
+            "蒙恬#47",
+            "对抗路",
+            "52.6%",
+            "7.5%",
+            "0.5%"
+          ]
+        },
+        {
+          "heroId": 139,
+          "name": "老夫子",
+          "role": "对抗路",
+          "winRate": 50.2,
+          "pickRate": 6.7,
+          "banRate": 1.4,
+          "ocrConfidence": 0.99968,
+          "evidence": [
+            "老夫子#48",
+            "对抗路",
+            "50.2%",
+            "6.7%",
+            "1.4%"
+          ]
+        },
+        {
+          "heroId": 550,
+          "name": "空空儿",
+          "role": "游走",
+          "winRate": 48.2,
+          "pickRate": 6.7,
+          "banRate": 1.1,
+          "ocrConfidence": 0.91271,
+          "evidence": [
+            "空空儿#49",
+            "游走",
+            "48.2%",
+            "6.7%",
+            "1.1%"
+          ]
+        },
+        {
+          "heroId": 154,
+          "name": "花木兰",
+          "role": "对抗路",
+          "winRate": 51.5,
+          "pickRate": 7.7,
+          "banRate": 0.1,
+          "ocrConfidence": 0.9997,
+          "evidence": [
+            "花木兰#50",
+            "对抗路",
+            "51.5%",
+            "7.7%",
+            "0.1%"
+          ]
+        },
+        {
+          "heroId": 111,
+          "name": "孙尚香",
+          "role": "发育路",
+          "winRate": 52.2,
+          "pickRate": 7.7,
+          "banRate": 0,
+          "ocrConfidence": 0.99981,
+          "evidence": [
+            "孙尚香#51",
+            "发育路",
+            "52.2%",
+            "7.7%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 136,
+          "name": "武则天",
+          "role": "中路",
+          "winRate": 52.2,
+          "pickRate": 6.8,
+          "banRate": 0.8,
+          "ocrConfidence": 0.99964,
+          "evidence": [
+            "武则天#52",
+            "中路",
+            "52.2%",
+            "6.8%",
+            "0.8%"
+          ]
+        },
+        {
+          "heroId": 108,
+          "name": "墨子",
+          "role": "游走",
+          "winRate": 49,
+          "pickRate": 7.2,
+          "banRate": 0.4,
+          "ocrConfidence": 0.99958,
+          "evidence": [
+            "墨子#53",
+            "游走",
+            "49.0%",
+            "7.2%",
+            "0.4%"
+          ]
+        },
+        {
+          "heroId": 141,
+          "name": "貂蝉",
+          "role": "中路",
+          "winRate": 51.9,
+          "pickRate": 7,
+          "banRate": 0.4,
+          "ocrConfidence": 0.94858,
+          "evidence": [
+            "貂蝉#54",
+            "中路",
+            "51.9%",
+            "7.0%",
+            "0.4%"
+          ]
+        }
+      ],
+      "rejected": [],
+      "dateText": [],
+      "dataDates": [],
+      "fileName": "daily-page-06.png"
+    },
+    {
+      "sha256": "f9c60644221745c44eb70b0760372f9da9626f0d57d18417f2d238f2a12aeed9",
+      "engine": "RapidOCR 3.10 / local CPU",
+      "rows": [
+        {
+          "heroId": 108,
+          "name": "墨子",
+          "role": "游走",
+          "winRate": 49,
+          "pickRate": 7.2,
+          "banRate": 0.4,
+          "ocrConfidence": 0.99802,
+          "evidence": [
+            "墨子#53",
+            "游走",
+            "49.0%",
+            "7.2%",
+            "0.4%"
+          ]
+        },
+        {
+          "heroId": 141,
+          "name": "貂蝉",
+          "role": "中路",
+          "winRate": 51.9,
+          "pickRate": 7,
+          "banRate": 0.4,
+          "ocrConfidence": 0.9997,
+          "evidence": [
+            "貂蝉#54",
+            "中路",
+            "51.9%",
+            "7.0%",
+            "0.4%"
+          ]
+        },
+        {
+          "heroId": 174,
+          "name": "虞姬",
+          "role": "发育路",
+          "winRate": 48.4,
+          "pickRate": 6,
+          "banRate": 0.6,
+          "ocrConfidence": 0.99899,
+          "evidence": [
+            "虞姬#57",
+            "发育路",
+            "48.4%",
+            "6.0%",
+            "0.6%"
+          ]
+        },
+        {
+          "heroId": 193,
+          "name": "铠",
+          "role": "打野",
+          "winRate": 48.9,
+          "pickRate": 5.2,
+          "banRate": 1,
+          "ocrConfidence": 0.99961,
+          "evidence": [
+            "铠#59",
+            "打野",
+            "48.9%",
+            "5.2%",
+            "1.0%"
+          ]
+        },
+        {
+          "heroId": 166,
+          "name": "亚瑟",
+          "role": "对抗路",
+          "winRate": 51.1,
+          "pickRate": 5.5,
+          "banRate": 0,
+          "ocrConfidence": 0.99655,
+          "evidence": [
+            "亚瑟#62",
+            "对抗路",
+            "51.1%",
+            "5.5%",
+            "0.0%"
+          ]
+        }
+      ],
+      "rejected": [
+        {
+          "text": "西施#55",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "杨戬#58",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "项羽#60",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "海诺#61",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "狄仁杰#63",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ],
+      "dateText": [],
+      "dataDates": [],
+      "fileName": "daily-page-07.png"
+    },
+    {
+      "sha256": "5296dbb8239221f0ab338940e7da36ceead055abaefe2d33ff729d95795c8d9b",
+      "engine": "RapidOCR 3.10 / local CPU",
+      "rows": [
+        {
+          "heroId": 166,
+          "name": "亚瑟",
+          "role": "对抗路",
+          "winRate": 51.1,
+          "pickRate": 5.5,
+          "banRate": 0,
+          "ocrConfidence": 0.9996,
+          "evidence": [
+            "亚瑟#62",
+            "对抗路",
+            "51.1%",
+            "5.5%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 133,
+          "name": "狄仁杰",
+          "role": "发育路",
+          "winRate": 48.9,
+          "pickRate": 5.1,
+          "banRate": 0.1,
+          "ocrConfidence": 0.99981,
+          "evidence": [
+            "狄仁杰#63",
+            "发育路",
+            "48.9%",
+            "5.1%",
+            "0.1%"
+          ]
+        },
+        {
+          "heroId": 156,
+          "name": "张良",
+          "role": "游走",
+          "winRate": 52,
+          "pickRate": 3.1,
+          "banRate": 2,
+          "ocrConfidence": 0.99949,
+          "evidence": [
+            "张良#64",
+            "游走",
+            "52.0%",
+            "3.1%",
+            "2.0%"
+          ]
+        },
+        {
+          "heroId": 134,
+          "name": "达摩",
+          "role": "对抗路",
+          "winRate": 49.1,
+          "pickRate": 5.1,
+          "banRate": 0,
+          "ocrConfidence": 0.95342,
+          "evidence": [
+            "达摩#65",
+            "对抗路",
+            "49.1%",
+            "5.1%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 120,
+          "name": "白起",
+          "role": "对抗路",
+          "winRate": 46.4,
+          "pickRate": 4.6,
+          "banRate": 0,
+          "ocrConfidence": 0.99947,
+          "evidence": [
+            "白起#67",
+            "对抗路",
+            "46.4%",
+            "4.6%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 127,
+          "name": "甄姬",
+          "role": "中路",
+          "winRate": 47.8,
+          "pickRate": 4.3,
+          "banRate": 0.3,
+          "ocrConfidence": 0.99512,
+          "evidence": [
+            "甄姬#68",
+            "中路",
+            "47.8%",
+            "4.3%",
+            "0.3%"
+          ]
+        },
+        {
+          "heroId": 130,
+          "name": "宫本武藏",
+          "role": "打野",
+          "winRate": 47.8,
+          "pickRate": 3.8,
+          "banRate": 0.8,
+          "ocrConfidence": 0.9986,
+          "evidence": [
+            "宫本武藏#69",
+            "打野",
+            "47.8%",
+            "3.8%",
+            "0.8%"
+          ]
+        },
+        {
+          "heroId": 517,
+          "name": "大司命",
+          "role": "打野",
+          "winRate": 50.5,
+          "pickRate": 4.3,
+          "banRate": 0.2,
+          "ocrConfidence": 0.99963,
+          "evidence": [
+            "大司命#70",
+            "打野",
+            "50.5%",
+            "4.3%",
+            "0.2%"
+          ]
+        },
+        {
+          "heroId": 169,
+          "name": "后羿",
+          "role": "发育路",
+          "winRate": 50,
+          "pickRate": 4.4,
+          "banRate": 0,
+          "ocrConfidence": 0.99949,
+          "evidence": [
+            "后羿#71",
+            "发育路",
+            "50.0%",
+            "4.4%",
+            "0.0%"
+          ]
+        }
+      ],
+      "rejected": [
+        {
+          "text": "海诺#61",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ],
+      "dateText": [],
+      "dataDates": [],
+      "fileName": "daily-page-08.png"
+    },
+    {
+      "sha256": "838313fb7360ff7febe10c72ceb173304c23fc308a432cc3e470a08ae27c25fc",
+      "engine": "RapidOCR 3.10 / local CPU",
+      "rows": [
+        {
+          "heroId": 517,
+          "name": "大司命",
+          "role": "打野",
+          "winRate": 50.5,
+          "pickRate": 4.3,
+          "banRate": 0.2,
+          "ocrConfidence": 0.99927,
+          "evidence": [
+            "大司命#70",
+            "打野",
+            "50.5%",
+            "4.3%",
+            "0.2%"
+          ]
+        },
+        {
+          "heroId": 169,
+          "name": "后羿",
+          "role": "发育路",
+          "winRate": 50,
+          "pickRate": 4.4,
+          "banRate": 0,
+          "ocrConfidence": 0.99938,
+          "evidence": [
+            "后羿#71",
+            "发育路",
+            "50.0%",
+            "4.4%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 129,
+          "name": "典韦",
+          "role": "打野",
+          "winRate": 51.5,
+          "pickRate": 4.2,
+          "banRate": 0.1,
+          "ocrConfidence": 0.99819,
+          "evidence": [
+            "典韦#72",
+            "打野",
+            "51.5%",
+            "4.2%",
+            "0.1%"
+          ]
+        },
+        {
+          "heroId": 175,
+          "name": "钟馗",
+          "role": "游走",
+          "winRate": 47.3,
+          "pickRate": 4,
+          "banRate": 0.3,
+          "ocrConfidence": 0.99583,
+          "evidence": [
+            "钟馗#73",
+            "游走",
+            "47.3%",
+            "4.0%",
+            "0.3%"
+          ]
+        },
+        {
+          "heroId": 564,
+          "name": "姬小满",
+          "role": "对抗路",
+          "winRate": 51.4,
+          "pickRate": 4.3,
+          "banRate": 0,
+          "ocrConfidence": 0.99902,
+          "evidence": [
+            "姬小满#74",
+            "对抗路",
+            "51.4%",
+            "4.3%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 131,
+          "name": "李白",
+          "role": "打野",
+          "winRate": 50.4,
+          "pickRate": 4.2,
+          "banRate": 0.1,
+          "ocrConfidence": 0.99909,
+          "evidence": [
+            "李白#75",
+            "打野",
+            "50.4%",
+            "4.2%",
+            "0.1%"
+          ]
+        },
+        {
+          "heroId": 510,
+          "name": "孙策",
+          "role": "对抗路",
+          "winRate": 53,
+          "pickRate": 4.1,
+          "banRate": 0,
+          "ocrConfidence": 0.99894,
+          "evidence": [
+            "孙策#77",
+            "对抗路",
+            "53.0%",
+            "4.1%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 115,
+          "name": "高渐离",
+          "role": "中路",
+          "winRate": 51,
+          "pickRate": 4,
+          "banRate": 0,
+          "ocrConfidence": 0.9968,
+          "evidence": [
+            "高渐离#78",
+            "中路",
+            "51.0%",
+            "4.0%",
+            "0.0%"
+          ]
+        }
+      ],
+      "rejected": [
+        {
+          "text": "廉颇#76",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "夏侯惇#79",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "牛魔#80",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ],
+      "dateText": [],
+      "dataDates": [],
+      "fileName": "daily-page-09.png"
+    },
+    {
+      "sha256": "458dc59a12360669484d33794d9819a9eb7c538d864c3edd926a01fadb0b1048",
+      "engine": "RapidOCR 3.10 / local CPU",
+      "rows": [
+        {
+          "heroId": 115,
+          "name": "高渐离",
+          "role": "中路",
+          "winRate": 51,
+          "pickRate": 4,
+          "banRate": 0,
+          "ocrConfidence": 0.99625,
+          "evidence": [
+            "高渐离#78",
+            "中路",
+            "51.0%",
+            "4.0%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 168,
+          "name": "牛魔",
+          "role": "游走",
+          "winRate": 50.5,
+          "pickRate": 4,
+          "banRate": 0.1,
+          "ocrConfidence": 0.99978,
+          "evidence": [
+            "牛魔#80",
+            "游走",
+            "50.5%",
+            "4.0%",
+            "0.1%"
+          ]
+        },
+        {
+          "heroId": 544,
+          "name": "赵怀真",
+          "role": "游走",
+          "winRate": 47.2,
+          "pickRate": 3.9,
+          "banRate": 0.1,
+          "ocrConfidence": 0.99958,
+          "evidence": [
+            "赵怀真#81",
+            "游走",
+            "47.2%",
+            "3.9%",
+            "0.1%"
+          ]
+        },
+        {
+          "heroId": 538,
+          "name": "云缨",
+          "role": "打野",
+          "winRate": 48.7,
+          "pickRate": 4,
+          "banRate": 0.1,
+          "ocrConfidence": 0.99591,
+          "evidence": [
+            "云缨#83",
+            "打野",
+            "48.7%",
+            "4.0%",
+            "0.1%"
+          ]
+        },
+        {
+          "heroId": 197,
+          "name": "弈星",
+          "role": "中路",
+          "winRate": 47.5,
+          "pickRate": 3.9,
+          "banRate": 0,
+          "ocrConfidence": 0.99627,
+          "evidence": [
+            "弈星#84",
+            "中路",
+            "47.5%",
+            "3.9%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 163,
+          "name": "橘右京",
+          "role": "打野",
+          "winRate": 50.7,
+          "pickRate": 3.6,
+          "banRate": 0.1,
+          "ocrConfidence": 0.99766,
+          "evidence": [
+            "橘右京#85",
+            "打野",
+            "50.7%",
+            "3.6%",
+            "0.1%"
+          ]
+        },
+        {
+          "heroId": 513,
+          "name": "上官婉儿",
+          "role": "中路",
+          "winRate": 52.3,
+          "pickRate": 3.5,
+          "banRate": 0.1,
+          "ocrConfidence": 0.99917,
+          "evidence": [
+            "上官婉儿#86",
+            "中路",
+            "52.3%",
+            "3.5%",
+            "0.1%"
+          ]
+        },
+        {
+          "heroId": 117,
+          "name": "钟无艳",
+          "role": "对抗路",
+          "winRate": 50.1,
+          "pickRate": 3.6,
+          "banRate": 0,
+          "ocrConfidence": 0.99959,
+          "evidence": [
+            "钟无艳#87",
+            "对抗路",
+            "50.1%",
+            "3.6%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 192,
+          "name": "黄忠",
+          "role": "发育路",
+          "winRate": 51.3,
+          "pickRate": 3.5,
+          "banRate": 0,
+          "ocrConfidence": 0.97127,
+          "evidence": [
+            "黄忠#88",
+            "发育路",
+            "51.3%",
+            "3.5%",
+            "0.0%"
+          ]
+        }
+      ],
+      "rejected": [
+        {
+          "text": "夏侯惇#79",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "猪八戒#82",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ],
+      "dateText": [],
+      "dataDates": [],
+      "fileName": "daily-page-10.png"
+    },
+    {
+      "sha256": "86f8e7e46f89a88acb56f78749f16199036cd4592a83fa4f3f288a1bcb03900c",
+      "engine": "RapidOCR 3.10 / local CPU",
+      "rows": [
+        {
+          "heroId": 117,
+          "name": "钟无艳",
+          "role": "对抗路",
+          "winRate": 50.1,
+          "pickRate": 3.6,
+          "banRate": 0,
+          "ocrConfidence": 0.99959,
+          "evidence": [
+            "钟无艳#87",
+            "对抗路",
+            "50.1%",
+            "3.6%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 192,
+          "name": "黄忠",
+          "role": "发育路",
+          "winRate": 51.3,
+          "pickRate": 3.5,
+          "banRate": 0,
+          "ocrConfidence": 0.97306,
+          "evidence": [
+            "黄忠#88",
+            "发育路",
+            "51.3%",
+            "3.5%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 137,
+          "name": "司马懿",
+          "role": "打野",
+          "winRate": 50.4,
+          "pickRate": 3.1,
+          "banRate": 0.1,
+          "ocrConfidence": 0.99985,
+          "evidence": [
+            "司马懿#90",
+            "打野",
+            "50.4%",
+            "3.1%",
+            "0.1%"
+          ]
+        },
+        {
+          "heroId": 142,
+          "name": "安琪拉",
+          "role": "中路",
+          "winRate": 47.8,
+          "pickRate": 3.2,
+          "banRate": 0,
+          "ocrConfidence": 0.99981,
+          "evidence": [
+            "安琪拉#91",
+            "中路",
+            "47.8%",
+            "3.2%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 505,
+          "name": "瑶",
+          "role": "游走",
+          "winRate": 47.4,
+          "pickRate": 2.9,
+          "banRate": 0.2,
+          "ocrConfidence": 0.97712,
+          "evidence": [
+            "瑶#93",
+            "游走",
+            "47.4%",
+            "2.9%",
+            "0.2%"
+          ]
+        },
+        {
+          "heroId": 112,
+          "name": "鲁班七号",
+          "role": "发育路",
+          "winRate": 52.7,
+          "pickRate": 2.8,
+          "banRate": 0,
+          "ocrConfidence": 0.9998,
+          "evidence": [
+            "鲁班七号#94",
+            "发育路",
+            "52.7%",
+            "2.8%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 170,
+          "name": "刘备",
+          "role": "打野",
+          "winRate": 49.5,
+          "pickRate": 2.6,
+          "banRate": 0.1,
+          "ocrConfidence": 0.9995,
+          "evidence": [
+            "刘备#95",
+            "打野",
+            "49.5%",
+            "2.6%",
+            "0.1%"
+          ]
+        }
+      ],
+      "rejected": [
+        {
+          "text": "心魔六耳#89",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "卢雅那#92",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "李元芳#96",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "雅典娜#97",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ],
+      "dateText": [],
+      "dataDates": [],
+      "fileName": "daily-page-11.png"
+    },
+    {
+      "sha256": "947308f72fe81c03de5e83bbbbc3ff44bc5c1d2e939772053ff7d9bb377aa6a2",
+      "engine": "RapidOCR 3.10 / local CPU",
+      "rows": [
+        {
+          "heroId": 170,
+          "name": "刘备",
+          "role": "打野",
+          "winRate": 49.5,
+          "pickRate": 2.6,
+          "banRate": 0.1,
+          "ocrConfidence": 0.9996,
+          "evidence": [
+            "刘备#95",
+            "打野",
+            "49.5%",
+            "2.6%",
+            "0.1%"
+          ]
+        },
+        {
+          "heroId": 183,
+          "name": "雅典娜",
+          "role": "打野",
+          "winRate": 51.5,
+          "pickRate": 2.4,
+          "banRate": 0.1,
+          "ocrConfidence": 0.99966,
+          "evidence": [
+            "雅典娜#97",
+            "打野",
+            "51.5%",
+            "2.4%",
+            "0.1%"
+          ]
+        },
+        {
+          "heroId": 151,
+          "name": "孙权",
+          "role": "发育路",
+          "winRate": 47.8,
+          "pickRate": 2.4,
+          "banRate": 0,
+          "ocrConfidence": 0.98544,
+          "evidence": [
+            "孙权#98",
+            "发育路",
+            "47.8%",
+            "2.4%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 132,
+          "name": "马可波罗",
+          "role": "发育路",
+          "winRate": 49.9,
+          "pickRate": 2.4,
+          "banRate": 0,
+          "ocrConfidence": 0.99977,
+          "evidence": [
+            "马可波罗#99",
+            "发育路",
+            "49.9%",
+            "2.4%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 534,
+          "name": "桑启",
+          "role": "游走",
+          "winRate": 49.1,
+          "pickRate": 2.2,
+          "banRate": 0,
+          "ocrConfidence": 0.99536,
+          "evidence": [
+            "桑启#100",
+            "游走",
+            "49.1%",
+            "2.2%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 528,
+          "name": "澜",
+          "role": "打野",
+          "winRate": 48,
+          "pickRate": 2.2,
+          "banRate": 0,
+          "ocrConfidence": 0.9247,
+          "evidence": [
+            "澜#101",
+            "打野",
+            "48.0%",
+            "2.2%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 123,
+          "name": "吕布",
+          "role": "对抗路",
+          "winRate": 45.9,
+          "pickRate": 1.9,
+          "banRate": 0.1,
+          "ocrConfidence": 0.99905,
+          "evidence": [
+            "吕布#103",
+            "对抗路",
+            "45.9%",
+            "1.9%",
+            "0.1%"
+          ]
+        },
+        {
+          "heroId": 189,
+          "name": "鬼谷子",
+          "role": "游走",
+          "winRate": 52,
+          "pickRate": 2,
+          "banRate": 0,
+          "ocrConfidence": 0.99956,
+          "evidence": [
+            "鬼谷子#104",
+            "游走",
+            "52.0%",
+            "2.0%",
+            "0.0%"
+          ]
+        }
+      ],
+      "rejected": [
+        {
+          "text": "李元芳#96",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "元流之...#102",
+          "reason": "英雄名被截断，请完整显示后重新采集"
+        }
+      ],
+      "dateText": [],
+      "dataDates": [],
+      "fileName": "daily-page-12.png"
+    },
+    {
+      "sha256": "5df346c045f274a0ab5fd49eacf1151f4a6e25be8c327552d2b6190f7c847faf",
+      "engine": "RapidOCR 3.10 / local CPU",
+      "rows": [
+        {
+          "heroId": 189,
+          "name": "鬼谷子",
+          "role": "游走",
+          "winRate": 52,
+          "pickRate": 2,
+          "banRate": 0,
+          "ocrConfidence": 0.99959,
+          "evidence": [
+            "鬼谷子#104",
+            "游走",
+            "52.0%",
+            "2.0%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 119,
+          "name": "扁鹊",
+          "role": "中路",
+          "winRate": 48.8,
+          "pickRate": 1.8,
+          "banRate": 0,
+          "ocrConfidence": 0.99403,
+          "evidence": [
+            "扁鹊#106",
+            "中路",
+            "48.8%",
+            "1.8%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 114,
+          "name": "刘禅",
+          "role": "游走",
+          "winRate": 47.7,
+          "pickRate": 1.5,
+          "banRate": 0,
+          "ocrConfidence": 0.99962,
+          "evidence": [
+            "刘禅#109",
+            "游走",
+            "47.7%",
+            "1.5%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 506,
+          "name": "云中君",
+          "role": "打野",
+          "winRate": 50.3,
+          "pickRate": 1.5,
+          "banRate": 0,
+          "ocrConfidence": 0.87743,
+          "evidence": [
+            "云中君#110",
+            "打野",
+            "50.3%",
+            "1.5%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 159,
+          "name": "朵莉亚",
+          "role": "游走",
+          "winRate": 47.4,
+          "pickRate": 1.4,
+          "banRate": 0.1,
+          "ocrConfidence": 0.99949,
+          "evidence": [
+            "朵莉亚#111",
+            "游走",
+            "47.4%",
+            "1.4%",
+            "0.1%"
+          ]
+        },
+        {
+          "heroId": 522,
+          "name": "曜",
+          "role": "打野",
+          "winRate": 49,
+          "pickRate": 1.2,
+          "banRate": 0,
+          "ocrConfidence": 0.96196,
+          "evidence": [
+            "曜#113",
+            "打野",
+            "49.0%",
+            "1.2%",
+            "0.0%"
+          ]
+        }
+      ],
+      "rejected": [
+        {
+          "text": "庄周#107",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "元流之...#108",
+          "reason": "英雄名被截断，请完整显示后重新采集"
+        },
+        {
+          "text": "盘古#112",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "娜可露露#114",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ],
+      "dateText": [],
+      "dataDates": [],
+      "fileName": "daily-page-13.png"
+    },
+    {
+      "sha256": "9d846a4e8aa7864af5fd2cd7f0eac2d0c76952a764369c10f20bc5264a775d12",
+      "engine": "RapidOCR 3.10 / local CPU",
+      "rows": [
+        {
+          "heroId": 522,
+          "name": "曜",
+          "role": "打野",
+          "winRate": 49,
+          "pickRate": 1.2,
+          "banRate": 0,
+          "ocrConfidence": 0.99944,
+          "evidence": [
+            "曜#113",
+            "打野",
+            "49.0%",
+            "1.2%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 162,
+          "name": "娜可露露",
+          "role": "打野",
+          "winRate": 48.2,
+          "pickRate": 1.2,
+          "banRate": 0,
+          "ocrConfidence": 0.95446,
+          "evidence": [
+            "娜可露露#114",
+            "打野",
+            "48.2%",
+            "1.2%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 540,
+          "name": "金蝉",
+          "role": "中路",
+          "winRate": 46.3,
+          "pickRate": 0.8,
+          "banRate": 0.4,
+          "ocrConfidence": 0.98766,
+          "evidence": [
+            "金蝉#115",
+            "中路",
+            "46.3%",
+            "0.8%",
+            "0.4%"
+          ]
+        },
+        {
+          "heroId": 182,
+          "name": "干将莫邪",
+          "role": "中路",
+          "winRate": 47.7,
+          "pickRate": 1.2,
+          "banRate": 0,
+          "ocrConfidence": 0.9964,
+          "evidence": [
+            "干将莫邪#116",
+            "中路",
+            "47.7%",
+            "1.2%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 144,
+          "name": "程咬金",
+          "role": "对抗路",
+          "winRate": 47.8,
+          "pickRate": 1,
+          "banRate": 0,
+          "ocrConfidence": 0.99954,
+          "evidence": [
+            "程咬金#119",
+            "对抗路",
+            "47.8%",
+            "1.0%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 124,
+          "name": "周瑜",
+          "role": "中路",
+          "winRate": 51.5,
+          "pickRate": 1.1,
+          "banRate": 0,
+          "ocrConfidence": 0.99975,
+          "evidence": [
+            "周瑜#120",
+            "中路",
+            "51.5%",
+            "1.1%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 198,
+          "name": "梦奇",
+          "role": "对抗路",
+          "winRate": 51.1,
+          "pickRate": 0.9,
+          "banRate": 0,
+          "ocrConfidence": 0.9615,
+          "evidence": [
+            "梦奇#121",
+            "对抗路",
+            "51.1%",
+            "0.9%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 118,
+          "name": "孙膑",
+          "role": "游走",
+          "winRate": 50.3,
+          "pickRate": 0.8,
+          "banRate": 0,
+          "ocrConfidence": 0.95453,
+          "evidence": [
+            "孙膑#122",
+            "游走",
+            "50.3%",
+            "0.8%",
+            "0.0%"
+          ]
+        }
+      ],
+      "rejected": [
+        {
+          "text": "盘古#112",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "东皇太一#118",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ],
+      "dateText": [],
+      "dataDates": [],
+      "fileName": "daily-page-14.png"
+    },
+    {
+      "sha256": "6c6cd4580d53dfdd50c223abb648a6f0df2800f89426a03cf115a178c1503b6d",
+      "engine": "RapidOCR 3.10 / local CPU",
+      "rows": [
+        {
+          "heroId": 198,
+          "name": "梦奇",
+          "role": "对抗路",
+          "winRate": 51.1,
+          "pickRate": 0.9,
+          "banRate": 0,
+          "ocrConfidence": 0.99953,
+          "evidence": [
+            "梦奇#121",
+            "对抗路",
+            "51.1%",
+            "0.9%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 118,
+          "name": "孙膑",
+          "role": "游走",
+          "winRate": 50.3,
+          "pickRate": 0.8,
+          "banRate": 0,
+          "ocrConfidence": 0.95453,
+          "evidence": [
+            "孙膑#122",
+            "游走",
+            "50.3%",
+            "0.8%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 514,
+          "name": "亚连",
+          "role": "对抗路",
+          "winRate": 50.6,
+          "pickRate": 0.8,
+          "banRate": 0,
+          "ocrConfidence": 0.98766,
+          "evidence": [
+            "亚连#123",
+            "对抗路",
+            "50.6%",
+            "0.8%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 152,
+          "name": "王昭君",
+          "role": "中路",
+          "winRate": 46.3,
+          "pickRate": 0.6,
+          "banRate": 0,
+          "ocrConfidence": 0.99912,
+          "evidence": [
+            "王昭君#125",
+            "中路",
+            "46.3%",
+            "0.6%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 148,
+          "name": "姜子牙",
+          "role": "中路",
+          "winRate": 43.6,
+          "pickRate": 0.6,
+          "banRate": 0,
+          "ocrConfidence": 0.87948,
+          "evidence": [
+            "姜子牙 #126",
+            "中路",
+            "43.6%",
+            "0.6%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 109,
+          "name": "妲己",
+          "role": "中路",
+          "winRate": 46.4,
+          "pickRate": 0.5,
+          "banRate": 0,
+          "ocrConfidence": 0.93093,
+          "evidence": [
+            "妲己#127",
+            "中路",
+            "46.4%",
+            "0.5%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 116,
+          "name": "阿轲",
+          "role": "打野",
+          "winRate": 50.6,
+          "pickRate": 0.5,
+          "banRate": 0,
+          "ocrConfidence": 0.99907,
+          "evidence": [
+            "阿轲#128",
+            "打野",
+            "50.6%",
+            "0.5%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 184,
+          "name": "蔡文姬",
+          "role": "游走",
+          "winRate": 47.4,
+          "pickRate": 0.3,
+          "banRate": 0,
+          "ocrConfidence": 0.99947,
+          "evidence": [
+            "蔡文姬#129",
+            "游走",
+            "47.4%",
+            "0.3%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 508,
+          "name": "伽罗",
+          "role": "发育路",
+          "winRate": 49,
+          "pickRate": 0.3,
+          "banRate": 0,
+          "ocrConfidence": 0.99962,
+          "evidence": [
+            "伽罗#130",
+            "发育路",
+            "49.0%",
+            "0.3%",
+            "0.0%"
+          ]
+        }
+      ],
+      "rejected": [
+        {
+          "text": "兰陵王#124",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        },
+        {
+          "text": "米莱狄#131",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ],
+      "dateText": [],
+      "dataDates": [],
+      "fileName": "daily-page-15.png"
+    },
+    {
+      "sha256": "05a51cd698f68ed151c904df4886bb0f35ae73a80b483427dda49e04acad40aa",
+      "engine": "RapidOCR 3.10 / local CPU",
+      "rows": [
+        {
+          "heroId": 109,
+          "name": "妲己",
+          "role": "中路",
+          "winRate": 46.4,
+          "pickRate": 0.5,
+          "banRate": 0,
+          "ocrConfidence": 0.90213,
+          "evidence": [
+            "妲己#127",
+            "中路",
+            "46.4%",
+            "0.5%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 116,
+          "name": "阿轲",
+          "role": "打野",
+          "winRate": 50.6,
+          "pickRate": 0.5,
+          "banRate": 0,
+          "ocrConfidence": 0.99935,
+          "evidence": [
+            "阿轲#128",
+            "打野",
+            "50.6%",
+            "0.5%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 184,
+          "name": "蔡文姬",
+          "role": "游走",
+          "winRate": 47.4,
+          "pickRate": 0.3,
+          "banRate": 0,
+          "ocrConfidence": 0.99956,
+          "evidence": [
+            "蔡文姬#129",
+            "游走",
+            "47.4%",
+            "0.3%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 508,
+          "name": "伽罗",
+          "role": "发育路",
+          "winRate": 49,
+          "pickRate": 0.3,
+          "banRate": 0,
+          "ocrConfidence": 0.99962,
+          "evidence": [
+            "伽罗#130",
+            "发育路",
+            "49.0%",
+            "0.3%",
+            "0.0%"
+          ]
+        },
+        {
+          "heroId": 504,
+          "name": "米莱狄",
+          "role": "中路",
+          "winRate": 46.6,
+          "pickRate": 0.2,
+          "banRate": 0,
+          "ocrConfidence": 0.99958,
+          "evidence": [
+            "米莱狄#131",
+            "中路",
+            "46.6%",
+            "0.2%",
+            "0.0%"
+          ]
+        }
+      ],
+      "rejected": [
+        {
+          "text": "元流之...#132",
+          "reason": "英雄名被截断，请完整显示后重新采集"
+        },
+        {
+          "text": "明世隐#133",
+          "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写"
+        }
+      ],
+      "dateText": [],
+      "dataDates": [],
+      "fileName": "daily-page-16.png"
+    }
+  ],
+  "merged": {
+    "rows": [
+      {
+        "key": "525:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 525,
+              "name": "鲁班大师",
+              "role": "游走",
+              "winRate": 52.1,
+              "pickRate": 11.7,
+              "banRate": 84.5,
+              "ocrConfidence": 0.99942,
+              "evidence": [
+                "鲁班大师#2",
+                "游走",
+                "52.1%",
+                "11.7%",
+                "84.5%"
+              ]
+            },
+            "files": [
+              "daily-page-00.png",
+              "daily-page-01.png"
+            ],
+            "hashes": [
+              "1dd362ee704b483316b4cd9d09f69bea57e7550803010d57e7d55066414124cf",
+              "b305e14eee77fb3d5f80a5866d456f410a89120fd70a10423f3ffbab1a165445"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "509:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 509,
+              "name": "盾山",
+              "role": "游走",
+              "winRate": 53.9,
+              "pickRate": 7.9,
+              "banRate": 87,
+              "ocrConfidence": 0.89657,
+              "evidence": [
+                "盾山#3",
+                "游走",
+                "53.9%",
+                "7.9%",
+                "87.0%"
+              ]
+            },
+            "files": [
+              "daily-page-00.png",
+              "daily-page-01.png"
+            ],
+            "hashes": [
+              "1dd362ee704b483316b4cd9d09f69bea57e7550803010d57e7d55066414124cf",
+              "b305e14eee77fb3d5f80a5866d456f410a89120fd70a10423f3ffbab1a165445"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "521:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 521,
+              "name": "海月",
+              "role": "中路",
+              "winRate": 50.3,
+              "pickRate": 5.9,
+              "banRate": 86.8,
+              "ocrConfidence": 0.93099,
+              "evidence": [
+                "海月#4",
+                "中路",
+                "50.3%",
+                "5.9%",
+                "86.8%"
+              ]
+            },
+            "files": [
+              "daily-page-00.png",
+              "daily-page-01.png"
+            ],
+            "hashes": [
+              "1dd362ee704b483316b4cd9d09f69bea57e7550803010d57e7d55066414124cf",
+              "b305e14eee77fb3d5f80a5866d456f410a89120fd70a10423f3ffbab1a165445"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "577:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 577,
+              "name": "少司缘",
+              "role": "游走",
+              "winRate": 51.1,
+              "pickRate": 32.3,
+              "banRate": 48.6,
+              "ocrConfidence": 0.99769,
+              "evidence": [
+                "少司缘#5",
+                "游走",
+                "51.1%",
+                "32.3%",
+                "48.6%"
+              ]
+            },
+            "files": [
+              "daily-page-00.png",
+              "daily-page-01.png"
+            ],
+            "hashes": [
+              "1dd362ee704b483316b4cd9d09f69bea57e7550803010d57e7d55066414124cf",
+              "b305e14eee77fb3d5f80a5866d456f410a89120fd70a10423f3ffbab1a165445"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "519:发育路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 519,
+              "name": "敖隐",
+              "role": "发育路",
+              "winRate": 50.4,
+              "pickRate": 28.8,
+              "banRate": 46.6,
+              "ocrConfidence": 0.99795,
+              "evidence": [
+                "敖隐#6",
+                "发育路",
+                "50.4%",
+                "28.8%",
+                "46.6%"
+              ]
+            },
+            "files": [
+              "daily-page-01.png"
+            ],
+            "hashes": [
+              "b305e14eee77fb3d5f80a5866d456f410a89120fd70a10423f3ffbab1a165445"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "140:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 140,
+              "name": "关羽",
+              "role": "对抗路",
+              "winRate": 52.4,
+              "pickRate": 9.1,
+              "banRate": 62.5,
+              "ocrConfidence": 0.99682,
+              "evidence": [
+                "关羽#7",
+                "对抗路",
+                "52.4%",
+                "9.1%",
+                "62.5%"
+              ]
+            },
+            "files": [
+              "daily-page-01.png"
+            ],
+            "hashes": [
+              "b305e14eee77fb3d5f80a5866d456f410a89120fd70a10423f3ffbab1a165445"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "531:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 531,
+              "name": "镜",
+              "role": "打野",
+              "winRate": 52.4,
+              "pickRate": 19.9,
+              "banRate": 46.5,
+              "ocrConfidence": 0.96901,
+              "evidence": [
+                "镜#8",
+                "打野",
+                "52.4%",
+                "19.9%",
+                "46.5%"
+              ]
+            },
+            "files": [
+              "daily-page-01.png"
+            ],
+            "hashes": [
+              "b305e14eee77fb3d5f80a5866d456f410a89120fd70a10423f3ffbab1a165445"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "502:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 502,
+              "name": "裴擒虎",
+              "role": "打野",
+              "winRate": 50.3,
+              "pickRate": 22.3,
+              "banRate": 37.3,
+              "ocrConfidence": 0.9005,
+              "evidence": [
+                "裴擒虎#9",
+                "打野",
+                "50.3%",
+                "22.3%",
+                "37.3%"
+              ]
+            },
+            "files": [
+              "daily-page-01.png"
+            ],
+            "hashes": [
+              "b305e14eee77fb3d5f80a5866d456f410a89120fd70a10423f3ffbab1a165445"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "125:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 125,
+              "name": "元歌",
+              "role": "对抗路",
+              "winRate": 52.4,
+              "pickRate": 20.4,
+              "banRate": 16.4,
+              "ocrConfidence": 0.99964,
+              "evidence": [
+                "元歌#12",
+                "对抗路",
+                "52.4%",
+                "20.4%",
+                "16.4%"
+              ]
+            },
+            "files": [
+              "daily-page-01.png",
+              "daily-page-02.png"
+            ],
+            "hashes": [
+              "b305e14eee77fb3d5f80a5866d456f410a89120fd70a10423f3ffbab1a165445",
+              "86ee0ed0b414d4716c437c4d28f49eaadc1c21452ef3e7173519d0acf5ba5bb4"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "515:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 515,
+              "name": "嫦娥",
+              "role": "中路",
+              "winRate": 51.8,
+              "pickRate": 23.3,
+              "banRate": 12.3,
+              "ocrConfidence": 0.99959,
+              "evidence": [
+                "嫦娥#13",
+                "中路",
+                "51.8%",
+                "23.3%",
+                "12.3%"
+              ]
+            },
+            "files": [
+              "daily-page-02.png"
+            ],
+            "hashes": [
+              "86ee0ed0b414d4716c437c4d28f49eaadc1c21452ef3e7173519d0acf5ba5bb4"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "194:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 194,
+              "name": "苏烈",
+              "role": "游走",
+              "winRate": 51.2,
+              "pickRate": 26,
+              "banRate": 6.2,
+              "ocrConfidence": 0.99961,
+              "evidence": [
+                "苏烈#15",
+                "游走",
+                "51.2%",
+                "26.0%",
+                "6.2%"
+              ]
+            },
+            "files": [
+              "daily-page-02.png"
+            ],
+            "hashes": [
+              "86ee0ed0b414d4716c437c4d28f49eaadc1c21452ef3e7173519d0acf5ba5bb4"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "179:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 179,
+              "name": "女娲",
+              "role": "中路",
+              "winRate": 50.2,
+              "pickRate": 21.7,
+              "banRate": 9.6,
+              "ocrConfidence": 0.99784,
+              "evidence": [
+                "女娲#16",
+                "中路",
+                "50.2%",
+                "21.7%",
+                "9.6%"
+              ]
+            },
+            "files": [
+              "daily-page-02.png"
+            ],
+            "hashes": [
+              "86ee0ed0b414d4716c437c4d28f49eaadc1c21452ef3e7173519d0acf5ba5bb4"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "107:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 107,
+              "name": "赵云",
+              "role": "打野",
+              "winRate": 48.1,
+              "pickRate": 21.4,
+              "banRate": 9.6,
+              "ocrConfidence": 0.99967,
+              "evidence": [
+                "赵云#17",
+                "打野",
+                "48.1%",
+                "21.4%",
+                "9.6%"
+              ]
+            },
+            "files": [
+              "daily-page-02.png"
+            ],
+            "hashes": [
+              "86ee0ed0b414d4716c437c4d28f49eaadc1c21452ef3e7173519d0acf5ba5bb4"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "180:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 180,
+              "name": "哪吒",
+              "role": "对抗路",
+              "winRate": 49.5,
+              "pickRate": 17.6,
+              "banRate": 13.1,
+              "ocrConfidence": 0.99937,
+              "evidence": [
+                "哪吒#18",
+                "对抗路",
+                "49.5%",
+                "17.6%",
+                "13.1%"
+              ]
+            },
+            "files": [
+              "daily-page-02.png"
+            ],
+            "hashes": [
+              "86ee0ed0b414d4716c437c4d28f49eaadc1c21452ef3e7173519d0acf5ba5bb4"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "312:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 312,
+              "name": "沈梦溪",
+              "role": "中路",
+              "winRate": 48.1,
+              "pickRate": 22,
+              "banRate": 6.7,
+              "ocrConfidence": 0.9995,
+              "evidence": [
+                "沈梦溪#19",
+                "中路",
+                "48.1%",
+                "22.0%",
+                "6.7%"
+              ]
+            },
+            "files": [
+              "daily-page-02.png",
+              "daily-page-03.png"
+            ],
+            "hashes": [
+              "86ee0ed0b414d4716c437c4d28f49eaadc1c21452ef3e7173519d0acf5ba5bb4",
+              "5887f6f5a6cb6cc87b095d98f3fd9e4450e6fd911d9f0c4da56e6c98945e7d61"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "533:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 533,
+              "name": "阿古朵",
+              "role": "打野",
+              "winRate": 52.5,
+              "pickRate": 13,
+              "banRate": 9.6,
+              "ocrConfidence": 0.98103,
+              "evidence": [
+                "阿古朵#22",
+                "打野",
+                "52.5%",
+                "13.0%",
+                "9.6%"
+              ]
+            },
+            "files": [
+              "daily-page-03.png"
+            ],
+            "hashes": [
+              "5887f6f5a6cb6cc87b095d98f3fd9e4450e6fd911d9f0c4da56e6c98945e7d61"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "199:发育路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 199,
+              "name": "公孙离",
+              "role": "发育路",
+              "winRate": 50.4,
+              "pickRate": 15.3,
+              "banRate": 5,
+              "ocrConfidence": 0.99964,
+              "evidence": [
+                "公孙离#24",
+                "发育路",
+                "50.4%",
+                "15.3%",
+                "5.0%"
+              ]
+            },
+            "files": [
+              "daily-page-03.png"
+            ],
+            "hashes": [
+              "5887f6f5a6cb6cc87b095d98f3fd9e4450e6fd911d9f0c4da56e6c98945e7d61"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "171:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 171,
+              "name": "张飞",
+              "role": "游走",
+              "winRate": 47.8,
+              "pickRate": 18,
+              "banRate": 2,
+              "ocrConfidence": 0.99975,
+              "evidence": [
+                "张飞#25",
+                "游走",
+                "47.8%",
+                "18.0%",
+                "2.0%"
+              ]
+            },
+            "files": [
+              "daily-page-03.png"
+            ],
+            "hashes": [
+              "5887f6f5a6cb6cc87b095d98f3fd9e4450e6fd911d9f0c4da56e6c98945e7d61"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "503:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 503,
+              "name": "狂铁",
+              "role": "对抗路",
+              "winRate": 48.2,
+              "pickRate": 16.7,
+              "banRate": 2.3,
+              "ocrConfidence": 0.99688,
+              "evidence": [
+                "狂铁#26",
+                "对抗路",
+                "48.2%",
+                "16.7%",
+                "2.3%"
+              ]
+            },
+            "files": [
+              "daily-page-03.png"
+            ],
+            "hashes": [
+              "5887f6f5a6cb6cc87b095d98f3fd9e4450e6fd911d9f0c4da56e6c98945e7d61"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "548:发育路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 548,
+              "name": "戈娅",
+              "role": "发育路",
+              "winRate": 51.3,
+              "pickRate": 14.9,
+              "banRate": 0.4,
+              "ocrConfidence": 0.91761,
+              "evidence": [
+                "戈娅 #28",
+                "发育路",
+                "51.3%",
+                "14.9%",
+                "0.4%"
+              ]
+            },
+            "files": [
+              "daily-page-03.png",
+              "daily-page-04.png"
+            ],
+            "hashes": [
+              "5887f6f5a6cb6cc87b095d98f3fd9e4450e6fd911d9f0c4da56e6c98945e7d61",
+              "7b3e1c1f2ca6288827062f7e4dca9aebdb2b14cb2eed6268a74b73b48111701f"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "196:发育路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 196,
+              "name": "百里守约",
+              "role": "发育路",
+              "winRate": 49.3,
+              "pickRate": 14,
+              "banRate": 1.2,
+              "ocrConfidence": 0.99857,
+              "evidence": [
+                "百里守约#29",
+                "发育路",
+                "49.3%",
+                "14.0%",
+                "1.2%"
+              ]
+            },
+            "files": [
+              "daily-page-03.png",
+              "daily-page-04.png"
+            ],
+            "hashes": [
+              "5887f6f5a6cb6cc87b095d98f3fd9e4450e6fd911d9f0c4da56e6c98945e7d61",
+              "7b3e1c1f2ca6288827062f7e4dca9aebdb2b14cb2eed6268a74b73b48111701f"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "106:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 106,
+              "name": "小乔",
+              "role": "中路",
+              "winRate": 48.1,
+              "pickRate": 14.2,
+              "banRate": 0.1,
+              "ocrConfidence": 0.96048,
+              "evidence": [
+                "小乔#30",
+                "中路",
+                "48.1%",
+                "14.2%",
+                "0.1%"
+              ]
+            },
+            "files": [
+              "daily-page-04.png"
+            ],
+            "hashes": [
+              "7b3e1c1f2ca6288827062f7e4dca9aebdb2b14cb2eed6268a74b73b48111701f"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "146:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 146,
+              "name": "露娜",
+              "role": "打野",
+              "winRate": 53.3,
+              "pickRate": 11.3,
+              "banRate": 2.7,
+              "ocrConfidence": 0.99974,
+              "evidence": [
+                "露娜#31",
+                "打野",
+                "53.3%",
+                "11.3%",
+                "2.7%"
+              ]
+            },
+            "files": [
+              "daily-page-04.png"
+            ],
+            "hashes": [
+              "7b3e1c1f2ca6288827062f7e4dca9aebdb2b14cb2eed6268a74b73b48111701f"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "558:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 558,
+              "name": "影",
+              "role": "对抗路",
+              "winRate": 49.5,
+              "pickRate": 12.7,
+              "banRate": 0.9,
+              "ocrConfidence": 0.97794,
+              "evidence": [
+                "影#32",
+                "对抗路",
+                "49.5%",
+                "12.7%",
+                "0.9%"
+              ]
+            },
+            "files": [
+              "daily-page-04.png"
+            ],
+            "hashes": [
+              "7b3e1c1f2ca6288827062f7e4dca9aebdb2b14cb2eed6268a74b73b48111701f"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "128:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 128,
+              "name": "曹操",
+              "role": "对抗路",
+              "winRate": 50.1,
+              "pickRate": 12.7,
+              "banRate": 0.1,
+              "ocrConfidence": 0.99979,
+              "evidence": [
+                "曹操#35",
+                "对抗路",
+                "50.1%",
+                "12.7%",
+                "0.1%"
+              ]
+            },
+            "files": [
+              "daily-page-04.png"
+            ],
+            "hashes": [
+              "7b3e1c1f2ca6288827062f7e4dca9aebdb2b14cb2eed6268a74b73b48111701f"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "149:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 149,
+              "name": "刘邦",
+              "role": "游走",
+              "winRate": 49.5,
+              "pickRate": 11.8,
+              "banRate": 0.9,
+              "ocrConfidence": 0.99337,
+              "evidence": [
+                "刘邦#36",
+                "游走",
+                "49.5%",
+                "11.8%",
+                "0.9%"
+              ]
+            },
+            "files": [
+              "daily-page-04.png",
+              "daily-page-05.png"
+            ],
+            "hashes": [
+              "7b3e1c1f2ca6288827062f7e4dca9aebdb2b14cb2eed6268a74b73b48111701f",
+              "79c27828cd6fb1f997953eef73e1d2ef364635af86ec47b9d9a569c2c6fd3bb9"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "167:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 167,
+              "name": "孙悟空",
+              "role": "打野",
+              "winRate": 49,
+              "pickRate": 10,
+              "banRate": 2,
+              "ocrConfidence": 0.99983,
+              "evidence": [
+                "孙悟空#37",
+                "打野",
+                "49.0%",
+                "10.0%",
+                "2.0%"
+              ]
+            },
+            "files": [
+              "daily-page-04.png",
+              "daily-page-05.png"
+            ],
+            "hashes": [
+              "7b3e1c1f2ca6288827062f7e4dca9aebdb2b14cb2eed6268a74b73b48111701f",
+              "79c27828cd6fb1f997953eef73e1d2ef364635af86ec47b9d9a569c2c6fd3bb9"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "177:发育路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 177,
+              "name": "苍",
+              "role": "发育路",
+              "winRate": 50.6,
+              "pickRate": 11.5,
+              "banRate": 0.1,
+              "ocrConfidence": 0.9992,
+              "evidence": [
+                "苍#38",
+                "发育路",
+                "50.6%",
+                "11.5%",
+                "0.1%"
+              ]
+            },
+            "files": [
+              "daily-page-05.png"
+            ],
+            "hashes": [
+              "79c27828cd6fb1f997953eef73e1d2ef364635af86ec47b9d9a569c2c6fd3bb9"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "536:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 536,
+              "name": "夏洛特",
+              "role": "对抗路",
+              "winRate": 49.7,
+              "pickRate": 10.8,
+              "banRate": 0.2,
+              "ocrConfidence": 0.9996,
+              "evidence": [
+                "夏洛特#40",
+                "对抗路",
+                "49.7%",
+                "10.8%",
+                "0.2%"
+              ]
+            },
+            "files": [
+              "daily-page-05.png"
+            ],
+            "hashes": [
+              "79c27828cd6fb1f997953eef73e1d2ef364635af86ec47b9d9a569c2c6fd3bb9"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "195:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 195,
+              "name": "百里玄策",
+              "role": "打野",
+              "winRate": 50.8,
+              "pickRate": 9.9,
+              "banRate": 0.7,
+              "ocrConfidence": 0.99948,
+              "evidence": [
+                "百里玄策#41",
+                "打野",
+                "50.8%",
+                "9.9%",
+                "0.7%"
+              ]
+            },
+            "files": [
+              "daily-page-05.png"
+            ],
+            "hashes": [
+              "79c27828cd6fb1f997953eef73e1d2ef364635af86ec47b9d9a569c2c6fd3bb9"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "545:发育路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 545,
+              "name": "莱西奥",
+              "role": "发育路",
+              "winRate": 49.4,
+              "pickRate": 10.4,
+              "banRate": 0,
+              "ocrConfidence": 0.98702,
+              "evidence": [
+                "莱西奥#42",
+                "发育路",
+                "49.4%",
+                "10.4%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-05.png"
+            ],
+            "hashes": [
+              "79c27828cd6fb1f997953eef73e1d2ef364635af86ec47b9d9a569c2c6fd3bb9"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "150:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 150,
+              "name": "韩信",
+              "role": "打野",
+              "winRate": 50.4,
+              "pickRate": 8.5,
+              "banRate": 0.5,
+              "ocrConfidence": 0.99953,
+              "evidence": [
+                "韩信#43",
+                "打野",
+                "50.4%",
+                "8.5%",
+                "0.5%"
+              ]
+            },
+            "files": [
+              "daily-page-05.png"
+            ],
+            "hashes": [
+              "79c27828cd6fb1f997953eef73e1d2ef364635af86ec47b9d9a569c2c6fd3bb9"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "157:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 157,
+              "name": "不知火舞",
+              "role": "中路",
+              "winRate": 50.7,
+              "pickRate": 8.7,
+              "banRate": 0.2,
+              "ocrConfidence": 0.99677,
+              "evidence": [
+                "不知火舞#44",
+                "中路",
+                "50.7%",
+                "8.7%",
+                "0.2%"
+              ]
+            },
+            "files": [
+              "daily-page-05.png",
+              "daily-page-06.png"
+            ],
+            "hashes": [
+              "79c27828cd6fb1f997953eef73e1d2ef364635af86ec47b9d9a569c2c6fd3bb9",
+              "9fac7e1344a752e5cde69017e40eb52eadb132a7c482f44bab3c9d1ca113bc21"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "155:发育路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 155,
+              "name": "艾琳",
+              "role": "发育路",
+              "winRate": 49.2,
+              "pickRate": 8.7,
+              "banRate": 0,
+              "ocrConfidence": 0.99975,
+              "evidence": [
+                "艾琳#45",
+                "发育路",
+                "49.2%",
+                "8.7%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-05.png",
+              "daily-page-06.png"
+            ],
+            "hashes": [
+              "79c27828cd6fb1f997953eef73e1d2ef364635af86ec47b9d9a569c2c6fd3bb9",
+              "9fac7e1344a752e5cde69017e40eb52eadb132a7c482f44bab3c9d1ca113bc21"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "188:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 188,
+              "name": "大禹",
+              "role": "游走",
+              "winRate": 48.5,
+              "pickRate": 7.9,
+              "banRate": 0.7,
+              "ocrConfidence": 0.99044,
+              "evidence": [
+                "大禹#46",
+                "游走",
+                "48.5%",
+                "7.9%",
+                "0.7%"
+              ]
+            },
+            "files": [
+              "daily-page-06.png"
+            ],
+            "hashes": [
+              "9fac7e1344a752e5cde69017e40eb52eadb132a7c482f44bab3c9d1ca113bc21"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "527:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 527,
+              "name": "蒙恬",
+              "role": "对抗路",
+              "winRate": 52.6,
+              "pickRate": 7.5,
+              "banRate": 0.5,
+              "ocrConfidence": 0.99944,
+              "evidence": [
+                "蒙恬#47",
+                "对抗路",
+                "52.6%",
+                "7.5%",
+                "0.5%"
+              ]
+            },
+            "files": [
+              "daily-page-06.png"
+            ],
+            "hashes": [
+              "9fac7e1344a752e5cde69017e40eb52eadb132a7c482f44bab3c9d1ca113bc21"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "139:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 139,
+              "name": "老夫子",
+              "role": "对抗路",
+              "winRate": 50.2,
+              "pickRate": 6.7,
+              "banRate": 1.4,
+              "ocrConfidence": 0.99968,
+              "evidence": [
+                "老夫子#48",
+                "对抗路",
+                "50.2%",
+                "6.7%",
+                "1.4%"
+              ]
+            },
+            "files": [
+              "daily-page-06.png"
+            ],
+            "hashes": [
+              "9fac7e1344a752e5cde69017e40eb52eadb132a7c482f44bab3c9d1ca113bc21"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "550:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 550,
+              "name": "空空儿",
+              "role": "游走",
+              "winRate": 48.2,
+              "pickRate": 6.7,
+              "banRate": 1.1,
+              "ocrConfidence": 0.91271,
+              "evidence": [
+                "空空儿#49",
+                "游走",
+                "48.2%",
+                "6.7%",
+                "1.1%"
+              ]
+            },
+            "files": [
+              "daily-page-06.png"
+            ],
+            "hashes": [
+              "9fac7e1344a752e5cde69017e40eb52eadb132a7c482f44bab3c9d1ca113bc21"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "154:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 154,
+              "name": "花木兰",
+              "role": "对抗路",
+              "winRate": 51.5,
+              "pickRate": 7.7,
+              "banRate": 0.1,
+              "ocrConfidence": 0.9997,
+              "evidence": [
+                "花木兰#50",
+                "对抗路",
+                "51.5%",
+                "7.7%",
+                "0.1%"
+              ]
+            },
+            "files": [
+              "daily-page-06.png"
+            ],
+            "hashes": [
+              "9fac7e1344a752e5cde69017e40eb52eadb132a7c482f44bab3c9d1ca113bc21"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "111:发育路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 111,
+              "name": "孙尚香",
+              "role": "发育路",
+              "winRate": 52.2,
+              "pickRate": 7.7,
+              "banRate": 0,
+              "ocrConfidence": 0.99981,
+              "evidence": [
+                "孙尚香#51",
+                "发育路",
+                "52.2%",
+                "7.7%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-06.png"
+            ],
+            "hashes": [
+              "9fac7e1344a752e5cde69017e40eb52eadb132a7c482f44bab3c9d1ca113bc21"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "136:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 136,
+              "name": "武则天",
+              "role": "中路",
+              "winRate": 52.2,
+              "pickRate": 6.8,
+              "banRate": 0.8,
+              "ocrConfidence": 0.99964,
+              "evidence": [
+                "武则天#52",
+                "中路",
+                "52.2%",
+                "6.8%",
+                "0.8%"
+              ]
+            },
+            "files": [
+              "daily-page-06.png"
+            ],
+            "hashes": [
+              "9fac7e1344a752e5cde69017e40eb52eadb132a7c482f44bab3c9d1ca113bc21"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "108:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 108,
+              "name": "墨子",
+              "role": "游走",
+              "winRate": 49,
+              "pickRate": 7.2,
+              "banRate": 0.4,
+              "ocrConfidence": 0.99802,
+              "evidence": [
+                "墨子#53",
+                "游走",
+                "49.0%",
+                "7.2%",
+                "0.4%"
+              ]
+            },
+            "files": [
+              "daily-page-06.png",
+              "daily-page-07.png"
+            ],
+            "hashes": [
+              "9fac7e1344a752e5cde69017e40eb52eadb132a7c482f44bab3c9d1ca113bc21",
+              "f9c60644221745c44eb70b0760372f9da9626f0d57d18417f2d238f2a12aeed9"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "141:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 141,
+              "name": "貂蝉",
+              "role": "中路",
+              "winRate": 51.9,
+              "pickRate": 7,
+              "banRate": 0.4,
+              "ocrConfidence": 0.94858,
+              "evidence": [
+                "貂蝉#54",
+                "中路",
+                "51.9%",
+                "7.0%",
+                "0.4%"
+              ]
+            },
+            "files": [
+              "daily-page-06.png",
+              "daily-page-07.png"
+            ],
+            "hashes": [
+              "9fac7e1344a752e5cde69017e40eb52eadb132a7c482f44bab3c9d1ca113bc21",
+              "f9c60644221745c44eb70b0760372f9da9626f0d57d18417f2d238f2a12aeed9"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "174:发育路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 174,
+              "name": "虞姬",
+              "role": "发育路",
+              "winRate": 48.4,
+              "pickRate": 6,
+              "banRate": 0.6,
+              "ocrConfidence": 0.99899,
+              "evidence": [
+                "虞姬#57",
+                "发育路",
+                "48.4%",
+                "6.0%",
+                "0.6%"
+              ]
+            },
+            "files": [
+              "daily-page-07.png"
+            ],
+            "hashes": [
+              "f9c60644221745c44eb70b0760372f9da9626f0d57d18417f2d238f2a12aeed9"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "193:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 193,
+              "name": "铠",
+              "role": "打野",
+              "winRate": 48.9,
+              "pickRate": 5.2,
+              "banRate": 1,
+              "ocrConfidence": 0.99961,
+              "evidence": [
+                "铠#59",
+                "打野",
+                "48.9%",
+                "5.2%",
+                "1.0%"
+              ]
+            },
+            "files": [
+              "daily-page-07.png"
+            ],
+            "hashes": [
+              "f9c60644221745c44eb70b0760372f9da9626f0d57d18417f2d238f2a12aeed9"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "166:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 166,
+              "name": "亚瑟",
+              "role": "对抗路",
+              "winRate": 51.1,
+              "pickRate": 5.5,
+              "banRate": 0,
+              "ocrConfidence": 0.99655,
+              "evidence": [
+                "亚瑟#62",
+                "对抗路",
+                "51.1%",
+                "5.5%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-07.png",
+              "daily-page-08.png"
+            ],
+            "hashes": [
+              "f9c60644221745c44eb70b0760372f9da9626f0d57d18417f2d238f2a12aeed9",
+              "5296dbb8239221f0ab338940e7da36ceead055abaefe2d33ff729d95795c8d9b"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "133:发育路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 133,
+              "name": "狄仁杰",
+              "role": "发育路",
+              "winRate": 48.9,
+              "pickRate": 5.1,
+              "banRate": 0.1,
+              "ocrConfidence": 0.99981,
+              "evidence": [
+                "狄仁杰#63",
+                "发育路",
+                "48.9%",
+                "5.1%",
+                "0.1%"
+              ]
+            },
+            "files": [
+              "daily-page-08.png"
+            ],
+            "hashes": [
+              "5296dbb8239221f0ab338940e7da36ceead055abaefe2d33ff729d95795c8d9b"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "156:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 156,
+              "name": "张良",
+              "role": "游走",
+              "winRate": 52,
+              "pickRate": 3.1,
+              "banRate": 2,
+              "ocrConfidence": 0.99949,
+              "evidence": [
+                "张良#64",
+                "游走",
+                "52.0%",
+                "3.1%",
+                "2.0%"
+              ]
+            },
+            "files": [
+              "daily-page-08.png"
+            ],
+            "hashes": [
+              "5296dbb8239221f0ab338940e7da36ceead055abaefe2d33ff729d95795c8d9b"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "134:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 134,
+              "name": "达摩",
+              "role": "对抗路",
+              "winRate": 49.1,
+              "pickRate": 5.1,
+              "banRate": 0,
+              "ocrConfidence": 0.95342,
+              "evidence": [
+                "达摩#65",
+                "对抗路",
+                "49.1%",
+                "5.1%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-08.png"
+            ],
+            "hashes": [
+              "5296dbb8239221f0ab338940e7da36ceead055abaefe2d33ff729d95795c8d9b"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "120:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 120,
+              "name": "白起",
+              "role": "对抗路",
+              "winRate": 46.4,
+              "pickRate": 4.6,
+              "banRate": 0,
+              "ocrConfidence": 0.99947,
+              "evidence": [
+                "白起#67",
+                "对抗路",
+                "46.4%",
+                "4.6%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-08.png"
+            ],
+            "hashes": [
+              "5296dbb8239221f0ab338940e7da36ceead055abaefe2d33ff729d95795c8d9b"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "127:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 127,
+              "name": "甄姬",
+              "role": "中路",
+              "winRate": 47.8,
+              "pickRate": 4.3,
+              "banRate": 0.3,
+              "ocrConfidence": 0.99512,
+              "evidence": [
+                "甄姬#68",
+                "中路",
+                "47.8%",
+                "4.3%",
+                "0.3%"
+              ]
+            },
+            "files": [
+              "daily-page-08.png"
+            ],
+            "hashes": [
+              "5296dbb8239221f0ab338940e7da36ceead055abaefe2d33ff729d95795c8d9b"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "130:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 130,
+              "name": "宫本武藏",
+              "role": "打野",
+              "winRate": 47.8,
+              "pickRate": 3.8,
+              "banRate": 0.8,
+              "ocrConfidence": 0.9986,
+              "evidence": [
+                "宫本武藏#69",
+                "打野",
+                "47.8%",
+                "3.8%",
+                "0.8%"
+              ]
+            },
+            "files": [
+              "daily-page-08.png"
+            ],
+            "hashes": [
+              "5296dbb8239221f0ab338940e7da36ceead055abaefe2d33ff729d95795c8d9b"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "517:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 517,
+              "name": "大司命",
+              "role": "打野",
+              "winRate": 50.5,
+              "pickRate": 4.3,
+              "banRate": 0.2,
+              "ocrConfidence": 0.99927,
+              "evidence": [
+                "大司命#70",
+                "打野",
+                "50.5%",
+                "4.3%",
+                "0.2%"
+              ]
+            },
+            "files": [
+              "daily-page-08.png",
+              "daily-page-09.png"
+            ],
+            "hashes": [
+              "5296dbb8239221f0ab338940e7da36ceead055abaefe2d33ff729d95795c8d9b",
+              "838313fb7360ff7febe10c72ceb173304c23fc308a432cc3e470a08ae27c25fc"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "169:发育路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 169,
+              "name": "后羿",
+              "role": "发育路",
+              "winRate": 50,
+              "pickRate": 4.4,
+              "banRate": 0,
+              "ocrConfidence": 0.99938,
+              "evidence": [
+                "后羿#71",
+                "发育路",
+                "50.0%",
+                "4.4%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-08.png",
+              "daily-page-09.png"
+            ],
+            "hashes": [
+              "5296dbb8239221f0ab338940e7da36ceead055abaefe2d33ff729d95795c8d9b",
+              "838313fb7360ff7febe10c72ceb173304c23fc308a432cc3e470a08ae27c25fc"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "129:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 129,
+              "name": "典韦",
+              "role": "打野",
+              "winRate": 51.5,
+              "pickRate": 4.2,
+              "banRate": 0.1,
+              "ocrConfidence": 0.99819,
+              "evidence": [
+                "典韦#72",
+                "打野",
+                "51.5%",
+                "4.2%",
+                "0.1%"
+              ]
+            },
+            "files": [
+              "daily-page-09.png"
+            ],
+            "hashes": [
+              "838313fb7360ff7febe10c72ceb173304c23fc308a432cc3e470a08ae27c25fc"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "175:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 175,
+              "name": "钟馗",
+              "role": "游走",
+              "winRate": 47.3,
+              "pickRate": 4,
+              "banRate": 0.3,
+              "ocrConfidence": 0.99583,
+              "evidence": [
+                "钟馗#73",
+                "游走",
+                "47.3%",
+                "4.0%",
+                "0.3%"
+              ]
+            },
+            "files": [
+              "daily-page-09.png"
+            ],
+            "hashes": [
+              "838313fb7360ff7febe10c72ceb173304c23fc308a432cc3e470a08ae27c25fc"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "564:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 564,
+              "name": "姬小满",
+              "role": "对抗路",
+              "winRate": 51.4,
+              "pickRate": 4.3,
+              "banRate": 0,
+              "ocrConfidence": 0.99902,
+              "evidence": [
+                "姬小满#74",
+                "对抗路",
+                "51.4%",
+                "4.3%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-09.png"
+            ],
+            "hashes": [
+              "838313fb7360ff7febe10c72ceb173304c23fc308a432cc3e470a08ae27c25fc"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "131:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 131,
+              "name": "李白",
+              "role": "打野",
+              "winRate": 50.4,
+              "pickRate": 4.2,
+              "banRate": 0.1,
+              "ocrConfidence": 0.99909,
+              "evidence": [
+                "李白#75",
+                "打野",
+                "50.4%",
+                "4.2%",
+                "0.1%"
+              ]
+            },
+            "files": [
+              "daily-page-09.png"
+            ],
+            "hashes": [
+              "838313fb7360ff7febe10c72ceb173304c23fc308a432cc3e470a08ae27c25fc"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "510:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 510,
+              "name": "孙策",
+              "role": "对抗路",
+              "winRate": 53,
+              "pickRate": 4.1,
+              "banRate": 0,
+              "ocrConfidence": 0.99894,
+              "evidence": [
+                "孙策#77",
+                "对抗路",
+                "53.0%",
+                "4.1%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-09.png"
+            ],
+            "hashes": [
+              "838313fb7360ff7febe10c72ceb173304c23fc308a432cc3e470a08ae27c25fc"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "115:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 115,
+              "name": "高渐离",
+              "role": "中路",
+              "winRate": 51,
+              "pickRate": 4,
+              "banRate": 0,
+              "ocrConfidence": 0.99625,
+              "evidence": [
+                "高渐离#78",
+                "中路",
+                "51.0%",
+                "4.0%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-09.png",
+              "daily-page-10.png"
+            ],
+            "hashes": [
+              "838313fb7360ff7febe10c72ceb173304c23fc308a432cc3e470a08ae27c25fc",
+              "458dc59a12360669484d33794d9819a9eb7c538d864c3edd926a01fadb0b1048"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "168:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 168,
+              "name": "牛魔",
+              "role": "游走",
+              "winRate": 50.5,
+              "pickRate": 4,
+              "banRate": 0.1,
+              "ocrConfidence": 0.99978,
+              "evidence": [
+                "牛魔#80",
+                "游走",
+                "50.5%",
+                "4.0%",
+                "0.1%"
+              ]
+            },
+            "files": [
+              "daily-page-10.png"
+            ],
+            "hashes": [
+              "458dc59a12360669484d33794d9819a9eb7c538d864c3edd926a01fadb0b1048"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "544:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 544,
+              "name": "赵怀真",
+              "role": "游走",
+              "winRate": 47.2,
+              "pickRate": 3.9,
+              "banRate": 0.1,
+              "ocrConfidence": 0.99958,
+              "evidence": [
+                "赵怀真#81",
+                "游走",
+                "47.2%",
+                "3.9%",
+                "0.1%"
+              ]
+            },
+            "files": [
+              "daily-page-10.png"
+            ],
+            "hashes": [
+              "458dc59a12360669484d33794d9819a9eb7c538d864c3edd926a01fadb0b1048"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "538:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 538,
+              "name": "云缨",
+              "role": "打野",
+              "winRate": 48.7,
+              "pickRate": 4,
+              "banRate": 0.1,
+              "ocrConfidence": 0.99591,
+              "evidence": [
+                "云缨#83",
+                "打野",
+                "48.7%",
+                "4.0%",
+                "0.1%"
+              ]
+            },
+            "files": [
+              "daily-page-10.png"
+            ],
+            "hashes": [
+              "458dc59a12360669484d33794d9819a9eb7c538d864c3edd926a01fadb0b1048"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "197:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 197,
+              "name": "弈星",
+              "role": "中路",
+              "winRate": 47.5,
+              "pickRate": 3.9,
+              "banRate": 0,
+              "ocrConfidence": 0.99627,
+              "evidence": [
+                "弈星#84",
+                "中路",
+                "47.5%",
+                "3.9%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-10.png"
+            ],
+            "hashes": [
+              "458dc59a12360669484d33794d9819a9eb7c538d864c3edd926a01fadb0b1048"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "163:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 163,
+              "name": "橘右京",
+              "role": "打野",
+              "winRate": 50.7,
+              "pickRate": 3.6,
+              "banRate": 0.1,
+              "ocrConfidence": 0.99766,
+              "evidence": [
+                "橘右京#85",
+                "打野",
+                "50.7%",
+                "3.6%",
+                "0.1%"
+              ]
+            },
+            "files": [
+              "daily-page-10.png"
+            ],
+            "hashes": [
+              "458dc59a12360669484d33794d9819a9eb7c538d864c3edd926a01fadb0b1048"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "513:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 513,
+              "name": "上官婉儿",
+              "role": "中路",
+              "winRate": 52.3,
+              "pickRate": 3.5,
+              "banRate": 0.1,
+              "ocrConfidence": 0.99917,
+              "evidence": [
+                "上官婉儿#86",
+                "中路",
+                "52.3%",
+                "3.5%",
+                "0.1%"
+              ]
+            },
+            "files": [
+              "daily-page-10.png"
+            ],
+            "hashes": [
+              "458dc59a12360669484d33794d9819a9eb7c538d864c3edd926a01fadb0b1048"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "117:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 117,
+              "name": "钟无艳",
+              "role": "对抗路",
+              "winRate": 50.1,
+              "pickRate": 3.6,
+              "banRate": 0,
+              "ocrConfidence": 0.99959,
+              "evidence": [
+                "钟无艳#87",
+                "对抗路",
+                "50.1%",
+                "3.6%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-10.png",
+              "daily-page-11.png"
+            ],
+            "hashes": [
+              "458dc59a12360669484d33794d9819a9eb7c538d864c3edd926a01fadb0b1048",
+              "86f8e7e46f89a88acb56f78749f16199036cd4592a83fa4f3f288a1bcb03900c"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "192:发育路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 192,
+              "name": "黄忠",
+              "role": "发育路",
+              "winRate": 51.3,
+              "pickRate": 3.5,
+              "banRate": 0,
+              "ocrConfidence": 0.97127,
+              "evidence": [
+                "黄忠#88",
+                "发育路",
+                "51.3%",
+                "3.5%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-10.png",
+              "daily-page-11.png"
+            ],
+            "hashes": [
+              "458dc59a12360669484d33794d9819a9eb7c538d864c3edd926a01fadb0b1048",
+              "86f8e7e46f89a88acb56f78749f16199036cd4592a83fa4f3f288a1bcb03900c"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "137:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 137,
+              "name": "司马懿",
+              "role": "打野",
+              "winRate": 50.4,
+              "pickRate": 3.1,
+              "banRate": 0.1,
+              "ocrConfidence": 0.99985,
+              "evidence": [
+                "司马懿#90",
+                "打野",
+                "50.4%",
+                "3.1%",
+                "0.1%"
+              ]
+            },
+            "files": [
+              "daily-page-11.png"
+            ],
+            "hashes": [
+              "86f8e7e46f89a88acb56f78749f16199036cd4592a83fa4f3f288a1bcb03900c"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "142:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 142,
+              "name": "安琪拉",
+              "role": "中路",
+              "winRate": 47.8,
+              "pickRate": 3.2,
+              "banRate": 0,
+              "ocrConfidence": 0.99981,
+              "evidence": [
+                "安琪拉#91",
+                "中路",
+                "47.8%",
+                "3.2%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-11.png"
+            ],
+            "hashes": [
+              "86f8e7e46f89a88acb56f78749f16199036cd4592a83fa4f3f288a1bcb03900c"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "505:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 505,
+              "name": "瑶",
+              "role": "游走",
+              "winRate": 47.4,
+              "pickRate": 2.9,
+              "banRate": 0.2,
+              "ocrConfidence": 0.97712,
+              "evidence": [
+                "瑶#93",
+                "游走",
+                "47.4%",
+                "2.9%",
+                "0.2%"
+              ]
+            },
+            "files": [
+              "daily-page-11.png"
+            ],
+            "hashes": [
+              "86f8e7e46f89a88acb56f78749f16199036cd4592a83fa4f3f288a1bcb03900c"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "112:发育路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 112,
+              "name": "鲁班七号",
+              "role": "发育路",
+              "winRate": 52.7,
+              "pickRate": 2.8,
+              "banRate": 0,
+              "ocrConfidence": 0.9998,
+              "evidence": [
+                "鲁班七号#94",
+                "发育路",
+                "52.7%",
+                "2.8%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-11.png"
+            ],
+            "hashes": [
+              "86f8e7e46f89a88acb56f78749f16199036cd4592a83fa4f3f288a1bcb03900c"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "170:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 170,
+              "name": "刘备",
+              "role": "打野",
+              "winRate": 49.5,
+              "pickRate": 2.6,
+              "banRate": 0.1,
+              "ocrConfidence": 0.9995,
+              "evidence": [
+                "刘备#95",
+                "打野",
+                "49.5%",
+                "2.6%",
+                "0.1%"
+              ]
+            },
+            "files": [
+              "daily-page-11.png",
+              "daily-page-12.png"
+            ],
+            "hashes": [
+              "86f8e7e46f89a88acb56f78749f16199036cd4592a83fa4f3f288a1bcb03900c",
+              "947308f72fe81c03de5e83bbbbc3ff44bc5c1d2e939772053ff7d9bb377aa6a2"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "183:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 183,
+              "name": "雅典娜",
+              "role": "打野",
+              "winRate": 51.5,
+              "pickRate": 2.4,
+              "banRate": 0.1,
+              "ocrConfidence": 0.99966,
+              "evidence": [
+                "雅典娜#97",
+                "打野",
+                "51.5%",
+                "2.4%",
+                "0.1%"
+              ]
+            },
+            "files": [
+              "daily-page-12.png"
+            ],
+            "hashes": [
+              "947308f72fe81c03de5e83bbbbc3ff44bc5c1d2e939772053ff7d9bb377aa6a2"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "151:发育路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 151,
+              "name": "孙权",
+              "role": "发育路",
+              "winRate": 47.8,
+              "pickRate": 2.4,
+              "banRate": 0,
+              "ocrConfidence": 0.98544,
+              "evidence": [
+                "孙权#98",
+                "发育路",
+                "47.8%",
+                "2.4%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-12.png"
+            ],
+            "hashes": [
+              "947308f72fe81c03de5e83bbbbc3ff44bc5c1d2e939772053ff7d9bb377aa6a2"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "132:发育路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 132,
+              "name": "马可波罗",
+              "role": "发育路",
+              "winRate": 49.9,
+              "pickRate": 2.4,
+              "banRate": 0,
+              "ocrConfidence": 0.99977,
+              "evidence": [
+                "马可波罗#99",
+                "发育路",
+                "49.9%",
+                "2.4%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-12.png"
+            ],
+            "hashes": [
+              "947308f72fe81c03de5e83bbbbc3ff44bc5c1d2e939772053ff7d9bb377aa6a2"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "534:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 534,
+              "name": "桑启",
+              "role": "游走",
+              "winRate": 49.1,
+              "pickRate": 2.2,
+              "banRate": 0,
+              "ocrConfidence": 0.99536,
+              "evidence": [
+                "桑启#100",
+                "游走",
+                "49.1%",
+                "2.2%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-12.png"
+            ],
+            "hashes": [
+              "947308f72fe81c03de5e83bbbbc3ff44bc5c1d2e939772053ff7d9bb377aa6a2"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "528:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 528,
+              "name": "澜",
+              "role": "打野",
+              "winRate": 48,
+              "pickRate": 2.2,
+              "banRate": 0,
+              "ocrConfidence": 0.9247,
+              "evidence": [
+                "澜#101",
+                "打野",
+                "48.0%",
+                "2.2%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-12.png"
+            ],
+            "hashes": [
+              "947308f72fe81c03de5e83bbbbc3ff44bc5c1d2e939772053ff7d9bb377aa6a2"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "123:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 123,
+              "name": "吕布",
+              "role": "对抗路",
+              "winRate": 45.9,
+              "pickRate": 1.9,
+              "banRate": 0.1,
+              "ocrConfidence": 0.99905,
+              "evidence": [
+                "吕布#103",
+                "对抗路",
+                "45.9%",
+                "1.9%",
+                "0.1%"
+              ]
+            },
+            "files": [
+              "daily-page-12.png"
+            ],
+            "hashes": [
+              "947308f72fe81c03de5e83bbbbc3ff44bc5c1d2e939772053ff7d9bb377aa6a2"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "189:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 189,
+              "name": "鬼谷子",
+              "role": "游走",
+              "winRate": 52,
+              "pickRate": 2,
+              "banRate": 0,
+              "ocrConfidence": 0.99956,
+              "evidence": [
+                "鬼谷子#104",
+                "游走",
+                "52.0%",
+                "2.0%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-12.png",
+              "daily-page-13.png"
+            ],
+            "hashes": [
+              "947308f72fe81c03de5e83bbbbc3ff44bc5c1d2e939772053ff7d9bb377aa6a2",
+              "5df346c045f274a0ab5fd49eacf1151f4a6e25be8c327552d2b6190f7c847faf"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "119:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 119,
+              "name": "扁鹊",
+              "role": "中路",
+              "winRate": 48.8,
+              "pickRate": 1.8,
+              "banRate": 0,
+              "ocrConfidence": 0.99403,
+              "evidence": [
+                "扁鹊#106",
+                "中路",
+                "48.8%",
+                "1.8%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-13.png"
+            ],
+            "hashes": [
+              "5df346c045f274a0ab5fd49eacf1151f4a6e25be8c327552d2b6190f7c847faf"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "114:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 114,
+              "name": "刘禅",
+              "role": "游走",
+              "winRate": 47.7,
+              "pickRate": 1.5,
+              "banRate": 0,
+              "ocrConfidence": 0.99962,
+              "evidence": [
+                "刘禅#109",
+                "游走",
+                "47.7%",
+                "1.5%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-13.png"
+            ],
+            "hashes": [
+              "5df346c045f274a0ab5fd49eacf1151f4a6e25be8c327552d2b6190f7c847faf"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "506:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 506,
+              "name": "云中君",
+              "role": "打野",
+              "winRate": 50.3,
+              "pickRate": 1.5,
+              "banRate": 0,
+              "ocrConfidence": 0.87743,
+              "evidence": [
+                "云中君#110",
+                "打野",
+                "50.3%",
+                "1.5%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-13.png"
+            ],
+            "hashes": [
+              "5df346c045f274a0ab5fd49eacf1151f4a6e25be8c327552d2b6190f7c847faf"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "159:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 159,
+              "name": "朵莉亚",
+              "role": "游走",
+              "winRate": 47.4,
+              "pickRate": 1.4,
+              "banRate": 0.1,
+              "ocrConfidence": 0.99949,
+              "evidence": [
+                "朵莉亚#111",
+                "游走",
+                "47.4%",
+                "1.4%",
+                "0.1%"
+              ]
+            },
+            "files": [
+              "daily-page-13.png"
+            ],
+            "hashes": [
+              "5df346c045f274a0ab5fd49eacf1151f4a6e25be8c327552d2b6190f7c847faf"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "522:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 522,
+              "name": "曜",
+              "role": "打野",
+              "winRate": 49,
+              "pickRate": 1.2,
+              "banRate": 0,
+              "ocrConfidence": 0.96196,
+              "evidence": [
+                "曜#113",
+                "打野",
+                "49.0%",
+                "1.2%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-13.png",
+              "daily-page-14.png"
+            ],
+            "hashes": [
+              "5df346c045f274a0ab5fd49eacf1151f4a6e25be8c327552d2b6190f7c847faf",
+              "9d846a4e8aa7864af5fd2cd7f0eac2d0c76952a764369c10f20bc5264a775d12"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "162:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 162,
+              "name": "娜可露露",
+              "role": "打野",
+              "winRate": 48.2,
+              "pickRate": 1.2,
+              "banRate": 0,
+              "ocrConfidence": 0.95446,
+              "evidence": [
+                "娜可露露#114",
+                "打野",
+                "48.2%",
+                "1.2%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-14.png"
+            ],
+            "hashes": [
+              "9d846a4e8aa7864af5fd2cd7f0eac2d0c76952a764369c10f20bc5264a775d12"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "540:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 540,
+              "name": "金蝉",
+              "role": "中路",
+              "winRate": 46.3,
+              "pickRate": 0.8,
+              "banRate": 0.4,
+              "ocrConfidence": 0.98766,
+              "evidence": [
+                "金蝉#115",
+                "中路",
+                "46.3%",
+                "0.8%",
+                "0.4%"
+              ]
+            },
+            "files": [
+              "daily-page-14.png"
+            ],
+            "hashes": [
+              "9d846a4e8aa7864af5fd2cd7f0eac2d0c76952a764369c10f20bc5264a775d12"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "182:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 182,
+              "name": "干将莫邪",
+              "role": "中路",
+              "winRate": 47.7,
+              "pickRate": 1.2,
+              "banRate": 0,
+              "ocrConfidence": 0.9964,
+              "evidence": [
+                "干将莫邪#116",
+                "中路",
+                "47.7%",
+                "1.2%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-14.png"
+            ],
+            "hashes": [
+              "9d846a4e8aa7864af5fd2cd7f0eac2d0c76952a764369c10f20bc5264a775d12"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "144:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 144,
+              "name": "程咬金",
+              "role": "对抗路",
+              "winRate": 47.8,
+              "pickRate": 1,
+              "banRate": 0,
+              "ocrConfidence": 0.99954,
+              "evidence": [
+                "程咬金#119",
+                "对抗路",
+                "47.8%",
+                "1.0%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-14.png"
+            ],
+            "hashes": [
+              "9d846a4e8aa7864af5fd2cd7f0eac2d0c76952a764369c10f20bc5264a775d12"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "124:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 124,
+              "name": "周瑜",
+              "role": "中路",
+              "winRate": 51.5,
+              "pickRate": 1.1,
+              "banRate": 0,
+              "ocrConfidence": 0.99975,
+              "evidence": [
+                "周瑜#120",
+                "中路",
+                "51.5%",
+                "1.1%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-14.png"
+            ],
+            "hashes": [
+              "9d846a4e8aa7864af5fd2cd7f0eac2d0c76952a764369c10f20bc5264a775d12"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "198:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 198,
+              "name": "梦奇",
+              "role": "对抗路",
+              "winRate": 51.1,
+              "pickRate": 0.9,
+              "banRate": 0,
+              "ocrConfidence": 0.9615,
+              "evidence": [
+                "梦奇#121",
+                "对抗路",
+                "51.1%",
+                "0.9%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-14.png",
+              "daily-page-15.png"
+            ],
+            "hashes": [
+              "9d846a4e8aa7864af5fd2cd7f0eac2d0c76952a764369c10f20bc5264a775d12",
+              "6c6cd4580d53dfdd50c223abb648a6f0df2800f89426a03cf115a178c1503b6d"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "118:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 118,
+              "name": "孙膑",
+              "role": "游走",
+              "winRate": 50.3,
+              "pickRate": 0.8,
+              "banRate": 0,
+              "ocrConfidence": 0.95453,
+              "evidence": [
+                "孙膑#122",
+                "游走",
+                "50.3%",
+                "0.8%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-14.png",
+              "daily-page-15.png"
+            ],
+            "hashes": [
+              "9d846a4e8aa7864af5fd2cd7f0eac2d0c76952a764369c10f20bc5264a775d12",
+              "6c6cd4580d53dfdd50c223abb648a6f0df2800f89426a03cf115a178c1503b6d"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "514:对抗路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 514,
+              "name": "亚连",
+              "role": "对抗路",
+              "winRate": 50.6,
+              "pickRate": 0.8,
+              "banRate": 0,
+              "ocrConfidence": 0.98766,
+              "evidence": [
+                "亚连#123",
+                "对抗路",
+                "50.6%",
+                "0.8%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-15.png"
+            ],
+            "hashes": [
+              "6c6cd4580d53dfdd50c223abb648a6f0df2800f89426a03cf115a178c1503b6d"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "152:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 152,
+              "name": "王昭君",
+              "role": "中路",
+              "winRate": 46.3,
+              "pickRate": 0.6,
+              "banRate": 0,
+              "ocrConfidence": 0.99912,
+              "evidence": [
+                "王昭君#125",
+                "中路",
+                "46.3%",
+                "0.6%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-15.png"
+            ],
+            "hashes": [
+              "6c6cd4580d53dfdd50c223abb648a6f0df2800f89426a03cf115a178c1503b6d"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "148:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 148,
+              "name": "姜子牙",
+              "role": "中路",
+              "winRate": 43.6,
+              "pickRate": 0.6,
+              "banRate": 0,
+              "ocrConfidence": 0.87948,
+              "evidence": [
+                "姜子牙 #126",
+                "中路",
+                "43.6%",
+                "0.6%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-15.png"
+            ],
+            "hashes": [
+              "6c6cd4580d53dfdd50c223abb648a6f0df2800f89426a03cf115a178c1503b6d"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "109:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 109,
+              "name": "妲己",
+              "role": "中路",
+              "winRate": 46.4,
+              "pickRate": 0.5,
+              "banRate": 0,
+              "ocrConfidence": 0.90213,
+              "evidence": [
+                "妲己#127",
+                "中路",
+                "46.4%",
+                "0.5%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-15.png",
+              "daily-page-16.png"
+            ],
+            "hashes": [
+              "6c6cd4580d53dfdd50c223abb648a6f0df2800f89426a03cf115a178c1503b6d",
+              "05a51cd698f68ed151c904df4886bb0f35ae73a80b483427dda49e04acad40aa"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "116:打野",
+        "variants": [
+          {
+            "row": {
+              "heroId": 116,
+              "name": "阿轲",
+              "role": "打野",
+              "winRate": 50.6,
+              "pickRate": 0.5,
+              "banRate": 0,
+              "ocrConfidence": 0.99907,
+              "evidence": [
+                "阿轲#128",
+                "打野",
+                "50.6%",
+                "0.5%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-15.png",
+              "daily-page-16.png"
+            ],
+            "hashes": [
+              "6c6cd4580d53dfdd50c223abb648a6f0df2800f89426a03cf115a178c1503b6d",
+              "05a51cd698f68ed151c904df4886bb0f35ae73a80b483427dda49e04acad40aa"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "184:游走",
+        "variants": [
+          {
+            "row": {
+              "heroId": 184,
+              "name": "蔡文姬",
+              "role": "游走",
+              "winRate": 47.4,
+              "pickRate": 0.3,
+              "banRate": 0,
+              "ocrConfidence": 0.99947,
+              "evidence": [
+                "蔡文姬#129",
+                "游走",
+                "47.4%",
+                "0.3%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-15.png",
+              "daily-page-16.png"
+            ],
+            "hashes": [
+              "6c6cd4580d53dfdd50c223abb648a6f0df2800f89426a03cf115a178c1503b6d",
+              "05a51cd698f68ed151c904df4886bb0f35ae73a80b483427dda49e04acad40aa"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "508:发育路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 508,
+              "name": "伽罗",
+              "role": "发育路",
+              "winRate": 49,
+              "pickRate": 0.3,
+              "banRate": 0,
+              "ocrConfidence": 0.99962,
+              "evidence": [
+                "伽罗#130",
+                "发育路",
+                "49.0%",
+                "0.3%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-15.png",
+              "daily-page-16.png"
+            ],
+            "hashes": [
+              "6c6cd4580d53dfdd50c223abb648a6f0df2800f89426a03cf115a178c1503b6d",
+              "05a51cd698f68ed151c904df4886bb0f35ae73a80b483427dda49e04acad40aa"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "504:中路",
+        "variants": [
+          {
+            "row": {
+              "heroId": 504,
+              "name": "米莱狄",
+              "role": "中路",
+              "winRate": 46.6,
+              "pickRate": 0.2,
+              "banRate": 0,
+              "ocrConfidence": 0.99958,
+              "evidence": [
+                "米莱狄#131",
+                "中路",
+                "46.6%",
+                "0.2%",
+                "0.0%"
+              ]
+            },
+            "files": [
+              "daily-page-16.png"
+            ],
+            "hashes": [
+              "05a51cd698f68ed151c904df4886bb0f35ae73a80b483427dda49e04acad40aa"
+            ]
+          }
+        ]
+      }
+    ],
+    "duplicateFiles": 0,
+    "duplicateRows": 29,
+    "dataDates": [
+      "2026-10-11"
+    ],
+    "rejected": [
+      {
+        "text": "元流之子...#1",
+        "reason": "英雄名被截断，请完整显示后重新采集",
+        "fileName": "daily-page-00.png"
+      },
+      {
+        "text": "马超#10",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-01.png"
+      },
+      {
+        "text": "大乔#11",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-01.png"
+      },
+      {
+        "text": "马超#10",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-02.png"
+      },
+      {
+        "text": "大乔#11",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-02.png"
+      },
+      {
+        "text": "元流之...#14",
+        "reason": "英雄名被截断，请完整显示后重新采集",
+        "fileName": "daily-page-02.png"
+      },
+      {
+        "text": "司空震#20",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-02.png"
+      },
+      {
+        "text": "司空震#20",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-03.png"
+      },
+      {
+        "text": "王维#21",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-03.png"
+      },
+      {
+        "text": "诸葛亮#23",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-03.png"
+      },
+      {
+        "text": "李信#27",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-03.png"
+      },
+      {
+        "text": "李信#27",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-04.png"
+      },
+      {
+        "text": "太乙真人#33",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-04.png"
+      },
+      {
+        "text": "杨玉环#34",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-04.png"
+      },
+      {
+        "text": "大禹#46",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-05.png"
+      },
+      {
+        "text": "西施#55",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-07.png"
+      },
+      {
+        "text": "杨戬#58",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-07.png"
+      },
+      {
+        "text": "项羽#60",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-07.png"
+      },
+      {
+        "text": "海诺#61",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-07.png"
+      },
+      {
+        "text": "狄仁杰#63",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-07.png"
+      },
+      {
+        "text": "海诺#61",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-08.png"
+      },
+      {
+        "text": "廉颇#76",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-09.png"
+      },
+      {
+        "text": "夏侯惇#79",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-09.png"
+      },
+      {
+        "text": "牛魔#80",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-09.png"
+      },
+      {
+        "text": "夏侯惇#79",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-10.png"
+      },
+      {
+        "text": "猪八戒#82",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-10.png"
+      },
+      {
+        "text": "心魔六耳#89",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-11.png"
+      },
+      {
+        "text": "卢雅那#92",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-11.png"
+      },
+      {
+        "text": "李元芳#96",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-11.png"
+      },
+      {
+        "text": "雅典娜#97",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-11.png"
+      },
+      {
+        "text": "李元芳#96",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-12.png"
+      },
+      {
+        "text": "元流之...#102",
+        "reason": "英雄名被截断，请完整显示后重新采集",
+        "fileName": "daily-page-12.png"
+      },
+      {
+        "text": "庄周#107",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-13.png"
+      },
+      {
+        "text": "元流之...#108",
+        "reason": "英雄名被截断，请完整显示后重新采集",
+        "fileName": "daily-page-13.png"
+      },
+      {
+        "text": "盘古#112",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-13.png"
+      },
+      {
+        "text": "娜可露露#114",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-13.png"
+      },
+      {
+        "text": "盘古#112",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-14.png"
+      },
+      {
+        "text": "东皇太一#118",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-14.png"
+      },
+      {
+        "text": "兰陵王#124",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-15.png"
+      },
+      {
+        "text": "米莱狄#131",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-15.png"
+      },
+      {
+        "text": "元流之...#132",
+        "reason": "英雄名被截断，请完整显示后重新采集",
+        "fileName": "daily-page-16.png"
+      },
+      {
+        "text": "明世隐#133",
+        "reason": "统计列或分路缺失 / 有多个匹配，未猜测填写",
+        "fileName": "daily-page-16.png"
+      }
+    ]
+  }
+}

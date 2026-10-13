@@ -1,0 +1,715 @@
+{
+  "title": "天元之弈公开参考 · 100位英雄（已核对）",
+  "segment": "巅峰千强",
+  "patch": "来源未标注版本号（2026-10-11页面）",
+  "startDate": "2026-10-11",
+  "endDate": "2026-10-11",
+  "sourceName": "天元之弈数据站 · 人工核对页面",
+  "sourceUrl": "#小程序://天元之弈/u6nCjaHUkuIRe6u",
+  "denominator": "unknown",
+  "winRateScope": "all",
+  "winRateWindow": "version",
+  "scopeNotes": "数据日2026-10-11，页面更新2026-10-12 10:36；2026-10-13连续滚动17屏至榜尾133号，关闭低出场率过滤。逐项核对100位英雄300个百分比，保留列表一位小数。千强页面胜率按页底说明为全量人群含低分段、版本累计；选禁分母、场次与版本号未知。33位尚未入库：含多分路、截断名称、缺失胜率及OCR或目录定位未匹配。不是实时全量榜；不将混合口径用于自研梯度或BP。原图、原始OCR及连续表头上下文见evidence/data-continuity。",
+  "rows": [
+    {
+      "heroId": 525,
+      "role": "游走",
+      "winRate": 52.1,
+      "pickRate": 11.7,
+      "banRate": 84.5
+    },
+    {
+      "heroId": 509,
+      "role": "游走",
+      "winRate": 53.9,
+      "pickRate": 7.9,
+      "banRate": 87
+    },
+    {
+      "heroId": 521,
+      "role": "中路",
+      "winRate": 50.3,
+      "pickRate": 5.9,
+      "banRate": 86.8
+    },
+    {
+      "heroId": 577,
+      "role": "游走",
+      "winRate": 51.1,
+      "pickRate": 32.3,
+      "banRate": 48.6
+    },
+    {
+      "heroId": 519,
+      "role": "发育路",
+      "winRate": 50.4,
+      "pickRate": 28.8,
+      "banRate": 46.6
+    },
+    {
+      "heroId": 140,
+      "role": "对抗路",
+      "winRate": 52.4,
+      "pickRate": 9.1,
+      "banRate": 62.5
+    },
+    {
+      "heroId": 531,
+      "role": "打野",
+      "winRate": 52.4,
+      "pickRate": 19.9,
+      "banRate": 46.5
+    },
+    {
+      "heroId": 502,
+      "role": "打野",
+      "winRate": 50.3,
+      "pickRate": 22.3,
+      "banRate": 37.3
+    },
+    {
+      "heroId": 125,
+      "role": "对抗路",
+      "winRate": 52.4,
+      "pickRate": 20.4,
+      "banRate": 16.4
+    },
+    {
+      "heroId": 515,
+      "role": "中路",
+      "winRate": 51.8,
+      "pickRate": 23.3,
+      "banRate": 12.3
+    },
+    {
+      "heroId": 194,
+      "role": "游走",
+      "winRate": 51.2,
+      "pickRate": 26,
+      "banRate": 6.2
+    },
+    {
+      "heroId": 179,
+      "role": "中路",
+      "winRate": 50.2,
+      "pickRate": 21.7,
+      "banRate": 9.6
+    },
+    {
+      "heroId": 107,
+      "role": "打野",
+      "winRate": 48.1,
+      "pickRate": 21.4,
+      "banRate": 9.6
+    },
+    {
+      "heroId": 180,
+      "role": "对抗路",
+      "winRate": 49.5,
+      "pickRate": 17.6,
+      "banRate": 13.1
+    },
+    {
+      "heroId": 312,
+      "role": "中路",
+      "winRate": 48.1,
+      "pickRate": 22,
+      "banRate": 6.7
+    },
+    {
+      "heroId": 533,
+      "role": "打野",
+      "winRate": 52.5,
+      "pickRate": 13,
+      "banRate": 9.6
+    },
+    {
+      "heroId": 199,
+      "role": "发育路",
+      "winRate": 50.4,
+      "pickRate": 15.3,
+      "banRate": 5
+    },
+    {
+      "heroId": 171,
+      "role": "游走",
+      "winRate": 47.8,
+      "pickRate": 18,
+      "banRate": 2
+    },
+    {
+      "heroId": 503,
+      "role": "对抗路",
+      "winRate": 48.2,
+      "pickRate": 16.7,
+      "banRate": 2.3
+    },
+    {
+      "heroId": 548,
+      "role": "发育路",
+      "winRate": 51.3,
+      "pickRate": 14.9,
+      "banRate": 0.4
+    },
+    {
+      "heroId": 196,
+      "role": "发育路",
+      "winRate": 49.3,
+      "pickRate": 14,
+      "banRate": 1.2
+    },
+    {
+      "heroId": 106,
+      "role": "中路",
+      "winRate": 48.1,
+      "pickRate": 14.2,
+      "banRate": 0.1
+    },
+    {
+      "heroId": 146,
+      "role": "打野",
+      "winRate": 53.3,
+      "pickRate": 11.3,
+      "banRate": 2.7
+    },
+    {
+      "heroId": 558,
+      "role": "对抗路",
+      "winRate": 49.5,
+      "pickRate": 12.7,
+      "banRate": 0.9
+    },
+    {
+      "heroId": 128,
+      "role": "对抗路",
+      "winRate": 50.1,
+      "pickRate": 12.7,
+      "banRate": 0.1
+    },
+    {
+      "heroId": 149,
+      "role": "游走",
+      "winRate": 49.5,
+      "pickRate": 11.8,
+      "banRate": 0.9
+    },
+    {
+      "heroId": 167,
+      "role": "打野",
+      "winRate": 49,
+      "pickRate": 10,
+      "banRate": 2
+    },
+    {
+      "heroId": 177,
+      "role": "发育路",
+      "winRate": 50.6,
+      "pickRate": 11.5,
+      "banRate": 0.1
+    },
+    {
+      "heroId": 536,
+      "role": "对抗路",
+      "winRate": 49.7,
+      "pickRate": 10.8,
+      "banRate": 0.2
+    },
+    {
+      "heroId": 195,
+      "role": "打野",
+      "winRate": 50.8,
+      "pickRate": 9.9,
+      "banRate": 0.7
+    },
+    {
+      "heroId": 545,
+      "role": "发育路",
+      "winRate": 49.4,
+      "pickRate": 10.4,
+      "banRate": 0
+    },
+    {
+      "heroId": 150,
+      "role": "打野",
+      "winRate": 50.4,
+      "pickRate": 8.5,
+      "banRate": 0.5
+    },
+    {
+      "heroId": 157,
+      "role": "中路",
+      "winRate": 50.7,
+      "pickRate": 8.7,
+      "banRate": 0.2
+    },
+    {
+      "heroId": 155,
+      "role": "发育路",
+      "winRate": 49.2,
+      "pickRate": 8.7,
+      "banRate": 0
+    },
+    {
+      "heroId": 188,
+      "role": "游走",
+      "winRate": 48.5,
+      "pickRate": 7.9,
+      "banRate": 0.7
+    },
+    {
+      "heroId": 527,
+      "role": "对抗路",
+      "winRate": 52.6,
+      "pickRate": 7.5,
+      "banRate": 0.5
+    },
+    {
+      "heroId": 139,
+      "role": "对抗路",
+      "winRate": 50.2,
+      "pickRate": 6.7,
+      "banRate": 1.4
+    },
+    {
+      "heroId": 550,
+      "role": "游走",
+      "winRate": 48.2,
+      "pickRate": 6.7,
+      "banRate": 1.1
+    },
+    {
+      "heroId": 154,
+      "role": "对抗路",
+      "winRate": 51.5,
+      "pickRate": 7.7,
+      "banRate": 0.1
+    },
+    {
+      "heroId": 111,
+      "role": "发育路",
+      "winRate": 52.2,
+      "pickRate": 7.7,
+      "banRate": 0
+    },
+    {
+      "heroId": 136,
+      "role": "中路",
+      "winRate": 52.2,
+      "pickRate": 6.8,
+      "banRate": 0.8
+    },
+    {
+      "heroId": 108,
+      "role": "游走",
+      "winRate": 49,
+      "pickRate": 7.2,
+      "banRate": 0.4
+    },
+    {
+      "heroId": 141,
+      "role": "中路",
+      "winRate": 51.9,
+      "pickRate": 7,
+      "banRate": 0.4
+    },
+    {
+      "heroId": 174,
+      "role": "发育路",
+      "winRate": 48.4,
+      "pickRate": 6,
+      "banRate": 0.6
+    },
+    {
+      "heroId": 193,
+      "role": "打野",
+      "winRate": 48.9,
+      "pickRate": 5.2,
+      "banRate": 1
+    },
+    {
+      "heroId": 166,
+      "role": "对抗路",
+      "winRate": 51.1,
+      "pickRate": 5.5,
+      "banRate": 0
+    },
+    {
+      "heroId": 133,
+      "role": "发育路",
+      "winRate": 48.9,
+      "pickRate": 5.1,
+      "banRate": 0.1
+    },
+    {
+      "heroId": 156,
+      "role": "游走",
+      "winRate": 52,
+      "pickRate": 3.1,
+      "banRate": 2
+    },
+    {
+      "heroId": 134,
+      "role": "对抗路",
+      "winRate": 49.1,
+      "pickRate": 5.1,
+      "banRate": 0
+    },
+    {
+      "heroId": 120,
+      "role": "对抗路",
+      "winRate": 46.4,
+      "pickRate": 4.6,
+      "banRate": 0
+    },
+    {
+      "heroId": 127,
+      "role": "中路",
+      "winRate": 47.8,
+      "pickRate": 4.3,
+      "banRate": 0.3
+    },
+    {
+      "heroId": 130,
+      "role": "打野",
+      "winRate": 47.8,
+      "pickRate": 3.8,
+      "banRate": 0.8
+    },
+    {
+      "heroId": 517,
+      "role": "打野",
+      "winRate": 50.5,
+      "pickRate": 4.3,
+      "banRate": 0.2
+    },
+    {
+      "heroId": 169,
+      "role": "发育路",
+      "winRate": 50,
+      "pickRate": 4.4,
+      "banRate": 0
+    },
+    {
+      "heroId": 129,
+      "role": "打野",
+      "winRate": 51.5,
+      "pickRate": 4.2,
+      "banRate": 0.1
+    },
+    {
+      "heroId": 175,
+      "role": "游走",
+      "winRate": 47.3,
+      "pickRate": 4,
+      "banRate": 0.3
+    },
+    {
+      "heroId": 564,
+      "role": "对抗路",
+      "winRate": 51.4,
+      "pickRate": 4.3,
+      "banRate": 0
+    },
+    {
+      "heroId": 131,
+      "role": "打野",
+      "winRate": 50.4,
+      "pickRate": 4.2,
+      "banRate": 0.1
+    },
+    {
+      "heroId": 510,
+      "role": "对抗路",
+      "winRate": 53,
+      "pickRate": 4.1,
+      "banRate": 0
+    },
+    {
+      "heroId": 115,
+      "role": "中路",
+      "winRate": 51,
+      "pickRate": 4,
+      "banRate": 0
+    },
+    {
+      "heroId": 168,
+      "role": "游走",
+      "winRate": 50.5,
+      "pickRate": 4,
+      "banRate": 0.1
+    },
+    {
+      "heroId": 544,
+      "role": "游走",
+      "winRate": 47.2,
+      "pickRate": 3.9,
+      "banRate": 0.1
+    },
+    {
+      "heroId": 538,
+      "role": "打野",
+      "winRate": 48.7,
+      "pickRate": 4,
+      "banRate": 0.1
+    },
+    {
+      "heroId": 197,
+      "role": "中路",
+      "winRate": 47.5,
+      "pickRate": 3.9,
+      "banRate": 0
+    },
+    {
+      "heroId": 163,
+      "role": "打野",
+      "winRate": 50.7,
+      "pickRate": 3.6,
+      "banRate": 0.1
+    },
+    {
+      "heroId": 513,
+      "role": "中路",
+      "winRate": 52.3,
+      "pickRate": 3.5,
+      "banRate": 0.1
+    },
+    {
+      "heroId": 117,
+      "role": "对抗路",
+      "winRate": 50.1,
+      "pickRate": 3.6,
+      "banRate": 0
+    },
+    {
+      "heroId": 192,
+      "role": "发育路",
+      "winRate": 51.3,
+      "pickRate": 3.5,
+      "banRate": 0
+    },
+    {
+      "heroId": 137,
+      "role": "打野",
+      "winRate": 50.4,
+      "pickRate": 3.1,
+      "banRate": 0.1
+    },
+    {
+      "heroId": 142,
+      "role": "中路",
+      "winRate": 47.8,
+      "pickRate": 3.2,
+      "banRate": 0
+    },
+    {
+      "heroId": 505,
+      "role": "游走",
+      "winRate": 47.4,
+      "pickRate": 2.9,
+      "banRate": 0.2
+    },
+    {
+      "heroId": 112,
+      "role": "发育路",
+      "winRate": 52.7,
+      "pickRate": 2.8,
+      "banRate": 0
+    },
+    {
+      "heroId": 170,
+      "role": "打野",
+      "winRate": 49.5,
+      "pickRate": 2.6,
+      "banRate": 0.1
+    },
+    {
+      "heroId": 183,
+      "role": "打野",
+      "winRate": 51.5,
+      "pickRate": 2.4,
+      "banRate": 0.1
+    },
+    {
+      "heroId": 151,
+      "role": "发育路",
+      "winRate": 47.8,
+      "pickRate": 2.4,
+      "banRate": 0
+    },
+    {
+      "heroId": 132,
+      "role": "发育路",
+      "winRate": 49.9,
+      "pickRate": 2.4,
+      "banRate": 0
+    },
+    {
+      "heroId": 534,
+      "role": "游走",
+      "winRate": 49.1,
+      "pickRate": 2.2,
+      "banRate": 0
+    },
+    {
+      "heroId": 528,
+      "role": "打野",
+      "winRate": 48,
+      "pickRate": 2.2,
+      "banRate": 0
+    },
+    {
+      "heroId": 123,
+      "role": "对抗路",
+      "winRate": 45.9,
+      "pickRate": 1.9,
+      "banRate": 0.1
+    },
+    {
+      "heroId": 189,
+      "role": "游走",
+      "winRate": 52,
+      "pickRate": 2,
+      "banRate": 0
+    },
+    {
+      "heroId": 119,
+      "role": "中路",
+      "winRate": 48.8,
+      "pickRate": 1.8,
+      "banRate": 0
+    },
+    {
+      "heroId": 114,
+      "role": "游走",
+      "winRate": 47.7,
+      "pickRate": 1.5,
+      "banRate": 0
+    },
+    {
+      "heroId": 506,
+      "role": "打野",
+      "winRate": 50.3,
+      "pickRate": 1.5,
+      "banRate": 0
+    },
+    {
+      "heroId": 159,
+      "role": "游走",
+      "winRate": 47.4,
+      "pickRate": 1.4,
+      "banRate": 0.1
+    },
+    {
+      "heroId": 522,
+      "role": "打野",
+      "winRate": 49,
+      "pickRate": 1.2,
+      "banRate": 0
+    },
+    {
+      "heroId": 162,
+      "role": "打野",
+      "winRate": 48.2,
+      "pickRate": 1.2,
+      "banRate": 0
+    },
+    {
+      "heroId": 540,
+      "role": "中路",
+      "winRate": 46.3,
+      "pickRate": 0.8,
+      "banRate": 0.4
+    },
+    {
+      "heroId": 182,
+      "role": "中路",
+      "winRate": 47.7,
+      "pickRate": 1.2,
+      "banRate": 0
+    },
+    {
+      "heroId": 144,
+      "role": "对抗路",
+      "winRate": 47.8,
+      "pickRate": 1,
+      "banRate": 0
+    },
+    {
+      "heroId": 124,
+      "role": "中路",
+      "winRate": 51.5,
+      "pickRate": 1.1,
+      "banRate": 0
+    },
+    {
+      "heroId": 198,
+      "role": "对抗路",
+      "winRate": 51.1,
+      "pickRate": 0.9,
+      "banRate": 0
+    },
+    {
+      "heroId": 118,
+      "role": "游走",
+      "winRate": 50.3,
+      "pickRate": 0.8,
+      "banRate": 0
+    },
+    {
+      "heroId": 514,
+      "role": "对抗路",
+      "winRate": 50.6,
+      "pickRate": 0.8,
+      "banRate": 0
+    },
+    {
+      "heroId": 152,
+      "role": "中路",
+      "winRate": 46.3,
+      "pickRate": 0.6,
+      "banRate": 0
+    },
+    {
+      "heroId": 148,
+      "role": "中路",
+      "winRate": 43.6,
+      "pickRate": 0.6,
+      "banRate": 0
+    },
+    {
+      "heroId": 109,
+      "role": "中路",
+      "winRate": 46.4,
+      "pickRate": 0.5,
+      "banRate": 0
+    },
+    {
+      "heroId": 116,
+      "role": "打野",
+      "winRate": 50.6,
+      "pickRate": 0.5,
+      "banRate": 0
+    },
+    {
+      "heroId": 184,
+      "role": "游走",
+      "winRate": 47.4,
+      "pickRate": 0.3,
+      "banRate": 0
+    },
+    {
+      "heroId": 508,
+      "role": "发育路",
+      "winRate": 49,
+      "pickRate": 0.3,
+      "banRate": 0
+    },
+    {
+      "heroId": 504,
+      "role": "中路",
+      "winRate": 46.6,
+      "pickRate": 0.2,
+      "banRate": 0
+    }
+  ]
+}

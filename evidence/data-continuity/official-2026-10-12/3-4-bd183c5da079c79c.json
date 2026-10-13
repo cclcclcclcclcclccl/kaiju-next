@@ -1,0 +1,94 @@
+{
+  "source": "王者营地官方公开分享榜",
+  "sourceUrl": "https://camp.qq.com/h5/webdist/hero-rank/index.html",
+  "endpoint": "https://kohcamp.qq.com/gametoolbox/hero/getsharepagedetailranklistbyid",
+  "query": {
+    "segment": 3,
+    "position": 4
+  },
+  "sourceUpdatedOn": "2026-10-12",
+  "fetchedAt": "2026-10-13T07:53:52.661Z",
+  "coverage": "partial",
+  "rows": [
+    {
+      "heroId": 577,
+      "name": "少司缘",
+      "heat": "T0",
+      "winRate": 49.51,
+      "pickRate": 13.5,
+      "banRate": 58.26
+    },
+    {
+      "heroId": 108,
+      "name": "墨子",
+      "heat": "T0",
+      "winRate": 51.61,
+      "pickRate": 14.3,
+      "banRate": 38.55
+    },
+    {
+      "heroId": 191,
+      "name": "大乔",
+      "heat": "T1",
+      "winRate": 49.08,
+      "pickRate": 10.6,
+      "banRate": 44.4
+    },
+    {
+      "heroId": 585,
+      "name": "元流之子(辅助)",
+      "heat": "T1",
+      "winRate": 51.62,
+      "pickRate": 10.6,
+      "banRate": 35.1
+    },
+    {
+      "heroId": 175,
+      "name": "钟馗",
+      "heat": "T1",
+      "winRate": 48.77,
+      "pickRate": 13,
+      "banRate": 20.22
+    },
+    {
+      "heroId": 509,
+      "name": "盾山",
+      "heat": "T2",
+      "winRate": 54.18,
+      "pickRate": 4.6,
+      "banRate": 69.36
+    },
+    {
+      "heroId": 505,
+      "name": "瑶",
+      "heat": "T2",
+      "winRate": 48.33,
+      "pickRate": 9.5,
+      "banRate": 23.82
+    },
+    {
+      "heroId": 159,
+      "name": "朵莉亚",
+      "heat": "T2",
+      "winRate": 47.2,
+      "pickRate": 10.7,
+      "banRate": 11.51
+    },
+    {
+      "heroId": 135,
+      "name": "项羽",
+      "heat": "T2",
+      "winRate": 48.84,
+      "pickRate": 12,
+      "banRate": 0.72
+    },
+    {
+      "heroId": 540,
+      "name": "金蝉",
+      "heat": "T2",
+      "winRate": 47.4,
+      "pickRate": 7.4,
+      "banRate": 37.56
+    }
+  ]
+}
