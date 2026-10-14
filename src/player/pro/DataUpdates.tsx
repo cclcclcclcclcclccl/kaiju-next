@@ -49,7 +49,7 @@ export default function DataUpdates({ onUpdated }: { onUpdated: (revision: strin
       </p>
       <p>
         天元之弈：数据日 {aggregateObservation.dataDate}，{aggregateObservation.rows.length}{' '}
-        位英雄来自人工核对的历史页面批次，此批次不自动改写。新版“天元联网全榜”直接读取公开接口，服务运行时每轮完成后60分钟检查四分段。检查时间不等于来源数据日。
+        位英雄来自人工核对的历史页面批次，此批次不自动改写。新版“开局强度与全榜”直接读取公开接口，服务运行时每轮完成后60分钟检查四分段。检查时间不等于来源数据日。
       </p>
       {status?.persistenceError && <p role="alert">{status.persistenceError}</p>}
       <div className="table-scroll" tabIndex={0} role="region" aria-label="可横向滚动的更新状态表">
@@ -88,6 +88,7 @@ export default function DataUpdates({ onUpdated }: { onUpdated: (revision: strin
         </table>
       </div>
       <p className="data-caption">
+        “已获取”和“有效缓存”表示本次读取状态，不保证来源数据属于今天；请同时检查来源日期。日期未知的记录不能作为今日数据。
         公开分享榜每路最多十条，不是全英雄完整统计。每次不同内容按原来源日期归档，失败不伪造新日期。
       </p>
     </details>

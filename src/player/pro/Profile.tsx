@@ -56,7 +56,7 @@ export default function ProfilePage({ focusHeroId }: { focusHeroId?: number }) {
     setBusy(true);
     try {
       const d = profileSchema.parse(profile);
-      await api('/pro/profile', d);
+      await api('/pro/profile-save', { expected: data.profile, profile: d });
       await refresh();
       setSuccess('档案已保存，BP 会使用这些记录评估你的个人发挥。');
     } catch (e) {
@@ -82,7 +82,7 @@ export default function ProfilePage({ focusHeroId }: { focusHeroId?: number }) {
     estimate = estimatePower(formula);
   } catch {}
   return (
-    <>
+    <fieldset className="profile-workspace" disabled={busy} aria-label="玩家档案编辑区">
       <div className="page-heading">
         <div>
           <p className="eyebrow">PLAYER PROFILE / YOUR REAL COMFORT ZONE</p>
@@ -98,7 +98,40 @@ export default function ProfilePage({ focusHeroId }: { focusHeroId?: number }) {
         优先上传截图建立档案；手动补录与文件导入在下方折叠区。游戏账号自动同步尚未接通，核对后的记录直接用于英雄池、推荐、BP
         和体系适配。
       </div>
-      <ScreenshotImport profile={profile} onSaved={refresh} />
+      <div className="detail-actions">
+        <button
+          className="btn secondary"
+          disabled={busy}
+          onClick={() => download('开局-当前档案草稿.json', JSON.stringify(profile, null, 2))}
+        >
+          导出当前档案草稿
+        </button>
+        <button
+          className="btn secondary"
+          disabled={busy}
+          onClick={async () => {
+            setBusy(true);
+            setError('');
+            setSuccess('');
+            try {
+              await refresh();
+              setSuccess('已用保存版本替换当前草稿。');
+            } catch (e) {
+              setError((e as Error).message);
+            } finally {
+              setBusy(false);
+            }
+          }}
+        >
+          读取已保存版本（替换当前草稿）
+        </button>
+      </div>
+      <ScreenshotImport
+        profile={profile}
+        expectedProfile={data.profile}
+        onSaved={refresh}
+        onBusy={setBusy}
+      />
       {data.profile.heroes.length > 0 && (
         <section className="surface profile-overview">
           <div className="section-title">
@@ -397,6 +430,6 @@ export default function ProfilePage({ focusHeroId }: { focusHeroId?: number }) {
           </p>
         </Modal>
       )}
-    </>
+    </fieldset>
   );
 }

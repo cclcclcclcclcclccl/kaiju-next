@@ -1,0 +1,93 @@
+{
+  "checkedAt": "2026-10-14T12:35:32.793Z",
+  "status": {
+    "product": "开局 NEXT",
+    "version": "0.15.0",
+    "modelConfigured": false,
+    "heroCount": 133
+  },
+  "preservation": [
+    {
+      "table": "settings",
+      "rows": 2,
+      "sha256": "d64fb6ad73085cb5fb4e79b8b2042e575cd5d32becdb51924ba41ec80a296fb9",
+      "unchanged": true
+    },
+    {
+      "table": "matches",
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "unchanged": true
+    },
+    {
+      "table": "plans",
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "unchanged": true
+    },
+    {
+      "table": "accounts",
+      "rows": 1,
+      "sha256": "e9b852eeae615a7fea2e97768820bfc381a06f5feb8468ed7f2ac5d08a0f1930",
+      "unchanged": true
+    },
+    {
+      "table": "sessions",
+      "rows": 1,
+      "sha256": "f3a2bbbdc020c556332965d0bce71ccc3bd64ad41cfe2b8acd9f785223d9add2",
+      "unchanged": true
+    },
+    {
+      "table": "friendships",
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "unchanged": true
+    },
+    {
+      "table": "pool_history",
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "unchanged": true
+    }
+  ],
+  "integrity": {
+    "integrity_check": "ok"
+  },
+  "guestHero544Retained": true,
+  "pageErrors": [],
+  "coreTests": {
+    "passed": 68,
+    "failed": 0
+  },
+  "browserInitial": {
+    "startTime": "2026-10-14T12:31:02.315Z",
+    "duration": 55434.891,
+    "expected": 14,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "browserFinal": {
+    "startTime": "2026-10-14T12:34:06.989Z",
+    "duration": 24035.941,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "history": {
+    "files": 1821,
+    "restored": 16,
+    "allOriginalHashesMatch": true
+  },
+  "limitations": [
+    "profile CAS checks whole profile, no automatic merge",
+    "legacy direct profile endpoint retained",
+    "pool backup does not include detailed records or reviews",
+    "three requested source scopes remain stale"
+  ],
+  "typescript": "passed",
+  "productionBuild": "passed",
+  "format": "passed",
+  "visualInspection": "live profile page inspected"
+}

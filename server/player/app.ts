@@ -146,7 +146,7 @@ export function createPlayerApp(
       if (method === 'GET' && url.pathname === '/api/status')
         return send(200, {
           product: '开局 NEXT',
-          version: '0.14.0',
+          version: '0.15.0',
           modelConfigured: Boolean(providerConfig()),
           heroCount: heroes.length,
         });
@@ -191,6 +191,14 @@ export function createPlayerApp(
             ? { error: '此英雄已在另一个页面修改，已保留服务器记录。请重新核对后再操作。' }
             : result.pool,
         );
+      }
+      if (method === 'POST' && url.pathname === '/api/pool-restore') {
+        const data = z
+          .object({ pool: poolSchema })
+          .strict()
+          .parse(await body(req));
+        validateIds(data.pool.map((p) => p.heroId));
+        return send(200, store.mergePool(data.pool, '从备份补入英雄（保留已有记录）'));
       }
       if (method === 'POST' && url.pathname === '/api/pool-import-guest') {
         if (!user) throw new PlayerHttpError(400, '当前已经是本机访客工作台');

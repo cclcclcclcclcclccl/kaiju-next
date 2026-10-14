@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { api, download } from '../../api.ts';
 import { heroById } from '../catalog.ts';
 import type { Pool } from '../model.ts';
-import { levelNames } from '../model.ts';
+import { levelNames, poolSchema } from '../model.ts';
 
 type PoolStatus = {
   mode: 'guest' | 'account';
@@ -31,6 +31,8 @@ export default function PoolStorage({
   const [working, setWorking] = useState(false);
   const [message, setMessage] = useState('');
   const sequence = useRef(0);
+  const fileSequence = useRef(0);
+  const [backup, setBackup] = useState<Pool>();
   useEffect(() => {
     const version = ++sequence.current;
     void api<PoolStatus>('/pool-status')
@@ -47,7 +49,7 @@ export default function PoolStorage({
       sequence.current++;
     };
   }, [pool]);
-  async function readOrImport(importGuest: boolean) {
+  async function readOrImport(importGuest: boolean, restore?: Pool) {
     if (busy || working) return;
     setWorking(true);
     onWorking(true);
@@ -56,13 +58,17 @@ export default function PoolStorage({
     sequence.current++;
     try {
       if (importGuest) await api<Pool>('/pool-import-guest', {});
+      if (restore) await api<Pool>('/pool-restore', { pool: restore });
       const fresh = await api<PoolStatus>('/pool-status');
       setStatus(fresh);
       onSavedPool(fresh.pool);
+      if (restore) setBackup(undefined);
       setMessage(
-        importGuest
-          ? '访客记录已复制，当前账号已有的英雄记录保持原样。'
-          : '已重新读取当前身份的英雄池。',
+        restore
+          ? '备份中的缺失英雄已补入，已有英雄与熟练度保持原样。'
+          : importGuest
+            ? '访客记录已复制，当前账号已有的英雄记录保持原样。'
+            : '已重新读取当前身份的英雄池。',
       );
     } catch (e) {
       setError((e as Error).message);
@@ -80,7 +86,7 @@ export default function PoolStorage({
           {busy || working
             ? '正在处理…'
             : error
-              ? '连接失败，请重试'
+              ? '操作未完成，请查看提示'
               : status
                 ? '已连接本机数据库'
                 : '正在确认…'}
@@ -152,8 +158,68 @@ export default function PoolStorage({
           导出自选英雄备份
         </button>
       </div>
+      <details>
+        <summary>从自选英雄备份恢复</summary>
+        <p className="data-caption">
+          选择本站导出的英雄池 JSON。先预览，再确认补入；这份备份不包含详细战绩、截图和录像复盘。
+        </p>
+        <label>
+          选择英雄池备份文件
+          <input
+            type="file"
+            accept=".json,application/json"
+            disabled={busy || working}
+            onChange={async (e) => {
+              const file = e.target.files?.[0];
+              e.target.value = '';
+              const version = ++fileSequence.current;
+              setBackup(undefined);
+              setError('');
+              setMessage('');
+              if (!file) return;
+              try {
+                if (file.size > 256 * 1024) throw Error('备份文件不能超过 256 KB');
+                const raw = JSON.parse(await file.text());
+                if (raw?.format !== 'kaiju-pool-backup-v1')
+                  throw Error('不是本站的自选英雄备份，请选择“导出自选英雄备份”生成的文件');
+                const parsed = poolSchema.parse(raw.pool);
+                if (parsed.some((p) => !heroById(p.heroId)))
+                  throw Error('备份包含当前目录中不存在的英雄');
+                if (version === fileSequence.current) setBackup(parsed);
+              } catch (e) {
+                if (version === fileSequence.current)
+                  setError('备份校验失败：' + (e instanceof Error ? e.message : '格式错误'));
+              }
+            }}
+          />
+        </label>
+        {backup && (
+          <div className="pro-notice">
+            <p>
+              备份包含 {backup.length} 位英雄，预计补入{' '}
+              {backup.filter((p) => !pool.some((c) => c.heroId === p.heroId)).length}{' '}
+              位。重复英雄保留当前熟练度。
+            </p>
+            <p>{names(backup)}</p>
+            <button
+              className="btn primary"
+              disabled={busy || working}
+              onClick={() => void readOrImport(false, backup)}
+            >
+              确认补入备份英雄
+            </button>
+            <button
+              className="btn secondary"
+              disabled={busy || working}
+              onClick={() => setBackup(undefined)}
+            >
+              取消恢复
+            </button>
+          </div>
+        )}
+      </details>
       {message && <p role="status">{message}</p>}
-      {error && <p role="alert">保存状态读取失败：{error}</p>}
+      {error && <p role="alert">{error}</p>}
       {!!status?.history.length && (
         <details>
           <summary>最近保存记录 · {status.history.length} 次</summary>

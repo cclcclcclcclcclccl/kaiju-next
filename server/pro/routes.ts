@@ -146,6 +146,24 @@ export async function proRoutes(ctx: {
     send(201, store.addRun(d));
     return true;
   }
+  if (path === '/api/pro/profile-save') {
+    const d = z
+      .object({ expected: profileSchema, profile: profileSchema })
+      .strict()
+      .parse(await body(req, 512 * 1024));
+    check(d.profile.heroes.map((h) => h.heroId));
+    const result = store.saveProfile(d.expected, d.profile);
+    send(
+      result.conflict ? 409 : 200,
+      result.conflict
+        ? {
+            error:
+              '档案已在另一个页面更新，本次未覆盖。当前草稿已保留，可先导出，再读取已保存版本。',
+          }
+        : { saved: true },
+    );
+    return true;
+  }
   if (path === '/api/pro/profile') {
     const d = profileSchema.parse(await body(req));
     check(d.heroes.map((h) => h.heroId));

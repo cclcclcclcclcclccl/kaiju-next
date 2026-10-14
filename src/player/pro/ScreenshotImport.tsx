@@ -7,17 +7,21 @@ import type { OcrData, ExtractedField, ScreenshotScope } from './screenshot.ts';
 import { api } from '../../api.ts';
 export default function ScreenshotImport({
   profile,
+  expectedProfile,
   onSaved,
+  onBusy,
 }: {
   profile: Profile;
+  expectedProfile: Profile;
   onSaved: () => Promise<void>;
+  onBusy: (busy: boolean) => void;
 }) {
   const [scope, setScope] = useState<ScreenshotScope>('lifetime'),
     [observedOn, setObservedOn] = useState(new Date().toLocaleDateString('en-CA')),
     [heroId, setHeroId] = useState<number>(),
     [image, setImage] = useState(''),
     [fileName, setFileName] = useState(''),
-    [busy, setBusy] = useState(false),
+    [busy, setWorking] = useState(false),
     [message, setMessage] = useState(''),
     [error, setError] = useState(''),
     [ocr, setOcr] = useState<OcrData>(),
@@ -25,6 +29,10 @@ export default function ScreenshotImport({
     [selected, setSelected] = useState<string[]>([]),
     [warnings, setWarnings] = useState<string[]>([]),
     [ready, setReady] = useState<boolean>();
+  const setBusy = (value: boolean) => {
+    setWorking(value);
+    onBusy(value);
+  };
   useEffect(() => {
     api<{ ready: boolean }>('/pro/ocr-status')
       .then((r) => setReady(r.ready))
@@ -71,7 +79,7 @@ export default function ScreenshotImport({
         ocr!.sha256,
         observedOn,
       );
-      await api('/pro/profile', updated);
+      await api('/pro/profile-save', { expected: expectedProfile, profile: updated });
       await onSaved();
       setOcr(undefined);
       setFields([]);

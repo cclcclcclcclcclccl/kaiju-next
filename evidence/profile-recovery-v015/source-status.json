@@ -1,0 +1,57 @@
+[
+  {
+    "mode": 1,
+    "status": 200,
+    "query": {
+      "kind": "stats",
+      "date": "2026-10-13",
+      "mode": 1
+    },
+    "cache": "stale",
+    "sourceUpdatedAt": "2026-10-14T01:24:53.818Z",
+    "fetchedAt": "2026-10-14T04:56:22.318Z",
+    "records": 135,
+    "warning": "本次更新失败，显示此前同一查询的缓存；来源日期和获取时间未改写。"
+  },
+  {
+    "mode": 3,
+    "status": 200,
+    "query": {
+      "kind": "stats",
+      "date": "2026-10-13",
+      "mode": 3
+    },
+    "cache": "stale",
+    "sourceUpdatedAt": "2026-10-14T01:24:54.776Z",
+    "fetchedAt": "2026-10-14T04:56:23.183Z",
+    "records": 135,
+    "warning": "本次更新失败，显示此前同一查询的缓存；来源日期和获取时间未改写。"
+  },
+  {
+    "mode": 4,
+    "status": 200,
+    "query": {
+      "kind": "stats",
+      "date": "2026-10-13",
+      "mode": 4
+    },
+    "cache": "stale",
+    "sourceUpdatedAt": "2026-10-14T01:24:55.571Z",
+    "fetchedAt": "2026-10-14T04:56:23.652Z",
+    "records": 135,
+    "warning": "本次更新失败，显示此前同一查询的缓存；来源日期和获取时间未改写。"
+  },
+  {
+    "mode": 5,
+    "status": 200,
+    "query": {
+      "kind": "stats",
+      "date": "2026-10-13",
+      "mode": 5
+    },
+    "cache": "fresh",
+    "sourceUpdatedAt": "2026-10-14T12:07:08.078Z",
+    "fetchedAt": "2026-10-14T12:30:42.738Z",
+    "records": 133
+  }
+]

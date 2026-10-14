@@ -2,7 +2,8 @@ import { DatabaseSync } from 'node:sqlite';
 import { randomUUID, randomBytes, scryptSync, timingSafeEqual, createHash } from 'node:crypto';
 import { emptyDraft } from '../../src/player/model.ts';
 import type { Draft, Pool, MatchInput, Match, SavedPlan } from '../../src/player/model.ts';
-import { emptyProfile } from '../../src/player/pro/model.ts';
+import { emptyProfile, profileSchema } from '../../src/player/pro/model.ts';
+import { isDeepStrictEqual } from 'node:util';
 import { effectivePool } from '../../src/player/pro/analytics.ts';
 import type { Profile, StatSnapshot, Review, JungleRun } from '../../src/player/pro/model.ts';
 export function createPlayerStore(path: string) {
@@ -103,12 +104,12 @@ export function createPlayerStore(path: string) {
           }
           return { conflict: false, pool: writePool(next, '按英雄保存') };
         }),
-      mergePool: (incoming: Pool) =>
+      mergePool: (incoming: Pool, reason = '复制访客英雄池（保留已有记录）') =>
         transaction(() => {
           const current = get('pool', []) as Pool;
           return writePool(
             [...current, ...incoming.filter((p) => !current.some((c) => c.heroId === p.heroId))],
-            '复制访客英雄池（保留已有记录）',
+            reason,
           );
         }),
       poolHistory: () =>
@@ -196,6 +197,13 @@ export function createPlayerStore(path: string) {
         return r;
       },
       profile: (profile: Profile) => set('profile', profile) as Profile,
+      saveProfile: (expected: Profile, profile: Profile) =>
+        transaction(() => {
+          const current = profileSchema.parse(get('profile', emptyProfile()));
+          if (!isDeepStrictEqual(current, expected)) return { conflict: true };
+          set('profile', profile);
+          return { conflict: false };
+        }),
       addSnapshot: (input: Omit<StatSnapshot, 'id' | 'importedAt'>) => {
         const s = { ...input, id: randomUUID(), importedAt: new Date().toISOString() };
         set('snapshots', [s, ...(get('snapshots', []) as StatSnapshot[])]);

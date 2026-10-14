@@ -7,6 +7,28 @@ import type { AddressInfo } from 'node:net';
 import type { Hero } from '../../src/player/model.ts';
 import { createPlayerStore } from './store.ts';
 import { createPlayerApp } from './app.ts';
+import { emptyProfile } from '../../src/player/pro/model.ts';
+
+test('profile compare-and-save rejects stale manual or screenshot writes and isolates owners', () => {
+  const store = createPlayerStore(':memory:');
+  try {
+    const expected = emptyProfile();
+    assert.equal(store.saveProfile(expected, { ...expected, peakScore: 1800 }).conflict, false);
+    assert.equal(store.saveProfile(expected, { ...expected, peakEnergy: 30 }).conflict, true);
+    assert.equal(store.pro().profile.peakScore, 1800);
+    assert.equal(store.pro().profile.peakEnergy, undefined);
+    assert.equal(
+      store.forUser('other').saveProfile(expected, { ...expected, peakScore: 1600 }).conflict,
+      false,
+    );
+    assert.equal(store.pro().profile.peakScore, 1800);
+    const latest = store.pro().profile;
+    assert.equal(store.saveProfile(latest, { ...latest, peakEnergy: 30 }).conflict, false);
+    assert.equal(store.pro().profile.peakEnergy, 30);
+  } finally {
+    store.close();
+  }
+});
 
 test('independent hero edits survive stale clients and reopen; same-hero conflicts are atomic and audited', () => {
   const dir = mkdtempSync(join(tmpdir(), 'kaiju-pool-'));
@@ -138,4 +160,55 @@ test('pool API isolates accounts and history, merges guest records once, and rej
     401,
   );
   assert.deepEqual((await get(auth.token)).pool, merged.pool);
+  const profile = emptyProfile();
+  assert.equal(
+    (
+      await post(
+        '/api/pro/profile-save',
+        { expected: profile, profile: { ...profile, peakScore: 1900 } },
+        auth.token,
+      )
+    ).status,
+    200,
+  );
+  assert.equal(
+    (
+      await post(
+        '/api/pro/profile-save',
+        { expected: profile, profile: { ...profile, peakScore: 1800 } },
+        auth.token,
+      )
+    ).status,
+    409,
+  );
+  assert.equal((await post('/api/pro/profile-save', { profile }, auth.token)).status, 400);
+  assert.equal(store.pro().profile.peakScore, profile.peakScore);
+  assert.equal(
+    (
+      await post(
+        '/api/pool-restore',
+        {
+          pool: [
+            { heroId: 544, level: 'main' },
+            { heroId: 107, level: 'learning' },
+          ],
+        },
+        auth.token,
+      )
+    ).status,
+    200,
+  );
+  assert.deepEqual((await get(auth.token)).pool, [
+    ...merged.pool,
+    { heroId: 107, level: 'learning' },
+  ]);
+  assert.equal(
+    (await post('/api/pool-restore', { pool: [{ heroId: 999999, level: 'main' }] }, auth.token))
+      .status,
+    400,
+  );
+  assert.deepEqual((await get()).pool, [
+    { heroId: 544, level: 'main' },
+    { heroId: 190, level: 'learning' },
+  ]);
 });
