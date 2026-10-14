@@ -16,6 +16,8 @@ import {
   tianyuanTierSchema,
 } from './tianyuan.ts';
 import type { TianyuanPacket, TianyuanStat, TianyuanQuery } from './tianyuan.ts';
+import { strengthRanks, STRENGTH_TIERS, STRENGTH_VERSION } from './strength.ts';
+import { StrengthExplanation, StrengthMethod } from './StrengthExplain.tsx';
 
 function useSource<T>(query: TianyuanQuery | undefined) {
   const key = query
@@ -53,7 +55,12 @@ function Provenance({ packet }: { packet: TianyuanPacket }) {
   return (
     <details className="source-proof">
       <summary>
-        {packet.cache === 'stale' ? '更新失败 · 正在显示旧缓存 · ' : ''}数据来源、时间与原始凭据
+        {packet.cache === 'stale' ? '更新失败 · 正在显示旧缓存 · ' : ''}
+        {packet.query.kind === 'stats'
+          ? Object.entries(TIANYUAN_MODES).find(([, mode]) => mode === packet.query.mode)?.[0] +
+            ' · '
+          : ''}
+        数据来源、时间与原始凭据
       </summary>
       <p>
         <a href={packet.url} target="_blank" rel="noreferrer">
@@ -90,9 +97,9 @@ export default function TianyuanLive({
     [date, setDate] = useState(sourceDate()),
     [query, setQuery] = useState(''),
     [role, setRole] = useState('全部'),
-    [basis, setBasis] = useState('stats'),
+    [basis, setBasis] = useState('own'),
     [view, setView] = useState('board'),
-    [sort, setSort] = useState('pick');
+    [sort, setSort] = useState('strength');
   const validDate =
     /^\d{4}-\d{2}-\d{2}$/.test(date) &&
     Number.isFinite(Date.parse(date)) &&
@@ -104,53 +111,73 @@ export default function TianyuanLive({
     validDate && basis === 'tier' && segment === '巅峰千强' ? { kind: 'tier', date } : undefined,
   );
   const packet = stats.packet;
+  const top = useSource<TianyuanStat[]>(
+    validDate && basis === 'own' && segment === '巅峰千强'
+      ? { kind: 'stats', date, mode: 4 }
+      : undefined,
+  );
+  const ranking = packet
+    ? strengthRanks(packet.data, TIANYUAN_MODES[segment], role, top.packet?.data)
+    : undefined;
+  const ownById = new Map(ranking?.rows.map((r) => [r.row.heroId, r]));
   const rankById = new Map(tier.packet?.data.tiers.map((r) => [r.heroId, r]));
-  const rows = (packet?.data ?? [])
+  const rows = (basis === 'own' ? (ranking?.rows.map((r) => r.row) ?? []) : (packet?.data ?? []))
     .filter(
       (r) =>
         (role === '全部' || r.roles.includes(role)) &&
         (!query.trim() || r.heroName.includes(query.trim())),
     )
     .sort((a, b) =>
-      basis === 'tier'
-        ? (rankById.get(a.heroId)?.rankInRole ?? 999) - (rankById.get(b.heroId)?.rankInRole ?? 999)
-        : sort === 'name'
-          ? a.heroName.localeCompare(b.heroName, 'zh-CN')
-          : sort === 'win'
-            ? (b.winRate ?? -1) - (a.winRate ?? -1)
-            : sort === 'ban'
-              ? b.banRate - a.banRate
-              : b.pickRate - a.pickRate,
+      basis === 'own' && sort === 'strength'
+        ? (ownById.get(b.heroId)?.score ?? -1) - (ownById.get(a.heroId)?.score ?? -1) ||
+          a.heroId - b.heroId
+        : basis === 'tier'
+          ? (rankById.get(a.heroId)?.rankInRole ?? 999) -
+            (rankById.get(b.heroId)?.rankInRole ?? 999)
+          : sort === 'name'
+            ? a.heroName.localeCompare(b.heroName, 'zh-CN')
+            : sort === 'win'
+              ? (b.winRate ?? -1) - (a.winRate ?? -1)
+              : sort === 'ban'
+                ? b.banRate - a.banRate
+                : b.pickRate - a.pickRate,
     );
   const open = (r: TianyuanStat) => {
     const hero = heroById(r.baseHeroId ?? r.heroId);
     if (hero)
       onOpen(hero, {
         segment,
-        role: hero.roles[0],
+        role,
         snapshotId: `tianyuan:${date}:${TIANYUAN_MODES[segment]}:${r.heroId}`,
       });
   };
-  const groups = basis === 'tier' ? ['T0', 'T0.5', 'T1', 'T2', 'T3', 'T4', '未评级'] : ['公开三率'];
+  const groupedOwn = basis === 'own' && sort === 'strength';
+  const groups = groupedOwn
+    ? [...STRENGTH_TIERS, '待评估']
+    : basis === 'tier'
+      ? [...STRENGTH_TIERS, '未评级']
+      : [basis === 'own' ? '指标排序' : '公开三率'];
   return (
     <section className="surface tianyuan-live" aria-label="天元之弈联网全榜">
       <div className="section-title">
         <div>
           <p className="eyebrow">PUBLIC DATA / 可追溯的全英雄榜</p>
-          <h2>真实数据，直接核对来源。</h2>
+          <h2>开局强度梯度</h2>
         </div>
         <button
           className="btn secondary"
           onClick={() => {
             stats.reload();
             tier.reload();
+            top.reload();
           }}
         >
           重新读取
         </button>
       </div>
       <p className="data-caption">
-        来源：天元之弈数据站公开接口。保留两位小数和来源形态，不把李信的光、暗形态合成额外英雄；原始胜率与发布者梯度分开显示。
+        数据来源：天元之弈公开接口 · 强度计算：{STRENGTH_VERSION}
+        。先看适合当前环境的英雄，再检查评分依据。
       </p>
       <div className="pro-toolbar">
         <label>
@@ -159,7 +186,8 @@ export default function TianyuanLive({
             value={segment}
             onChange={(e) => {
               setSegment(e.target.value);
-              setBasis('stats');
+              setBasis('own');
+              setSort('strength');
             }}
           >
             {Object.keys(TIANYUAN_MODES).map((s) => (
@@ -191,6 +219,7 @@ export default function TianyuanLive({
         <label>
           联网排序
           <select value={sort} onChange={(e) => setSort(e.target.value)}>
+            {basis === 'own' && <option value="strength">开局强度</option>}
             <option value="pick">出场率</option>
             <option value="ban">禁用率</option>
             <option value="win">胜率</option>
@@ -199,13 +228,31 @@ export default function TianyuanLive({
         </label>
       </div>
       <div className="resource-tabs">
-        <button className={basis === 'stats' ? 'active' : ''} onClick={() => setBasis('stats')}>
+        <button
+          className={basis === 'own' ? 'active' : ''}
+          onClick={() => {
+            setBasis('own');
+            setSort('strength');
+          }}
+        >
+          开局强度梯度
+        </button>
+        <button
+          className={basis === 'stats' ? 'active' : ''}
+          onClick={() => {
+            setBasis('stats');
+            setSort('pick');
+          }}
+        >
           真实三率全榜
         </button>
         <button
           className={basis === 'tier' ? 'active' : ''}
           disabled={segment !== '巅峰千强'}
-          onClick={() => setBasis('tier')}
+          onClick={() => {
+            setBasis('tier');
+            setSort('pick');
+          }}
         >
           天元来源梯度
         </button>
@@ -213,6 +260,23 @@ export default function TianyuanLive({
           {view === 'board' ? '查看完整数据表' : '切回头像看板'}
         </button>
       </div>
+      {basis === 'own' && (
+        <>
+          <StrengthMethod mode={TIANYUAN_MODES[segment]} />
+          <p className="strength-summary">
+            {ranking
+              ? `${ranking.rows.filter((r) => r.score !== null).length} 位已评级 · ${ranking.rows.filter((r) => r.sensitive).length} 位在参数检查中跨档`
+              : '等待读取真实数据'}{' '}
+            · 点击英雄可看加减分与排名范围。
+          </p>
+          {segment === '巅峰千强' && (
+            <p className="pro-notice">
+              千强代理强度：采用同日顶端排位胜率参考，结合千强选禁环境；不是千强独立胜率估计。
+            </p>
+          )}
+          {top.packet && <Provenance packet={top.packet} />}
+        </>
+      )}
       <p className="pro-notice">
         {segment === '巅峰千强'
           ? '千强页面胜率是全量人群、版本累计；选禁数据与它的统计人群不完全相同。'
@@ -223,9 +287,11 @@ export default function TianyuanLive({
           : ''}
       </p>
       {!validDate && <p role="alert">请选择有效日期。</p>}
-      {(stats.loading || tier.loading) && <p role="status">正在读取有来源的公开记录……</p>}
-      {(stats.error || tier.error) && (
-        <p role="alert">{stats.error ?? tier.error}；没有用其他日期或示例数据填充。</p>
+      {(stats.loading || tier.loading || top.loading) && (
+        <p role="status">正在读取有来源的公开记录……</p>
+      )}
+      {(stats.error || tier.error || top.error) && (
+        <p role="alert">{stats.error ?? tier.error ?? top.error}；没有用其他日期或示例数据填充。</p>
       )}
       {packet && (
         <>
@@ -243,13 +309,14 @@ export default function TianyuanLive({
       )}
       {basis === 'tier' && tier.packet && <Provenance packet={tier.packet} />}
       {packet &&
-        (basis === 'stats' || tier.packet) &&
+        (basis !== 'tier' || tier.packet) &&
         (view === 'board' ? (
           <div className="tier-board">
             {groups.map((group) => {
-              const entries = rows.filter(
-                (r) =>
-                  basis !== 'tier' || (rankById.get(r.heroId)?.tierInRole ?? '未评级') === group,
+              const entries = rows.filter((r) =>
+                groupedOwn
+                  ? (ownById.get(r.heroId)?.tier ?? '待评估') === group
+                  : basis !== 'tier' || (rankById.get(r.heroId)?.tierInRole ?? '未评级') === group,
               );
               return entries.length ? (
                 <section
@@ -273,7 +340,26 @@ export default function TianyuanLive({
                       >
                         <Portrait hero={heroById(r.baseHeroId ?? r.heroId)} />
                         <strong>{r.heroName}</strong>
-                        <small>胜 {percentage(r.winRate)}</small>
+                        {basis === 'own' && (
+                          <>
+                            <span className="tier-score">
+                              {ownById.get(r.heroId)?.score?.toFixed(1) ?? '待评估'}
+                            </span>
+                            <small>
+                              {ownById.get(r.heroId)?.tier} ·{' '}
+                              {ownById.get(r.heroId)?.score == null
+                                ? '证据不足'
+                                : ownById.get(r.heroId)?.sensitive
+                                  ? '边界敏感'
+                                  : '参数较稳'}
+                            </small>
+                          </>
+                        )}
+                        <small>
+                          {basis === 'own' && segment === '巅峰千强'
+                            ? '顶端胜 ' + percentage(ownById.get(r.heroId)?.winRateUsed)
+                            : '胜 ' + percentage(r.winRate)}
+                        </small>
                         <small>出 {percentage(r.pickRate)}</small>
                         <small>禁 {percentage(r.banRate)}</small>
                         {basis === 'tier' && rankById.has(r.heroId) && (
@@ -297,6 +383,13 @@ export default function TianyuanLive({
               <thead>
                 <tr>
                   <th>英雄 / 形态</th>
+                  {basis === 'own' && (
+                    <>
+                      <th>开局梯度</th>
+                      <th>强度分</th>
+                      <th>排名范围</th>
+                    </>
+                  )}
                   <th>来源分路</th>
                   <th>胜率</th>
                   <th>出场率</th>
@@ -313,6 +406,13 @@ export default function TianyuanLive({
                         {r.heroName}
                       </button>
                     </td>
+                    {basis === 'own' && (
+                      <>
+                        <td>{ownById.get(r.heroId)?.tier}</td>
+                        <td>{ownById.get(r.heroId)?.score?.toFixed(2) ?? '待评估'}</td>
+                        <td>{ownById.get(r.heroId)?.rankRange?.join('–') ?? '—'}</td>
+                      </>
+                    )}
                     <td>{r.roles}</td>
                     <td>{percentage(r.winRate)}</td>
                     <td>{percentage(r.pickRate)}</td>
@@ -356,12 +456,24 @@ export function TianyuanHero({
     ...(kind === 'stats' ? { mode } : { heroId: hero.id }),
   });
   const packet = data.packet;
+  const top = useSource<TianyuanStat[]>(
+    kind === 'stats' && mode === 5 ? { kind: 'stats', date, mode: 4 } : undefined,
+  );
+  const strength =
+    kind === 'stats' && packet
+      ? strengthRanks(
+          packet.data as TianyuanStat[],
+          mode,
+          context?.role ?? '全部',
+          top.packet?.data,
+        ).rows.find((r) => r.row.heroId === hero.id)
+      : undefined;
   const row =
     kind === 'stats'
       ? (packet?.data as TianyuanStat[] | undefined)?.find((r) => r.heroId === recordId)
       : undefined;
   return (
-    <section className="tianyuan-hero">
+    <section className="tianyuan-hero" id="hero-stats">
       <h3>天元公开统计 · {hero.name}</h3>
       <p className="data-caption">
         日期选择 {date} · {Object.entries(TIANYUAN_MODES).find(([, n]) => n === mode)?.[0]}
@@ -399,6 +511,11 @@ export function TianyuanHero({
             (row ? (
               <>
                 <h4>{row.heroName} · 总体三率</h4>
+                {recordId === hero.id && strength && (
+                  <StrengthExplanation item={strength} role={context?.role ?? '全部'} />
+                )}
+                {top.packet && <Provenance packet={top.packet} />}
+                {top.error && <p role="alert">顶端排位参考暂不可用，千强代理强度暂不评级。</p>}
                 <div className="metric-strip">
                   {[
                     ['胜率', percentage(row.winRate)],

@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-10-14T11:31:16.832Z",
+  "url": "https://tianyuanzhiyi.com/api/herostats?date=2026-10-13&gameMode=4",
+  "status": 200,
+  "schema": "rejected",
+  "issues": [
+    {
+      "path": [],
+      "message": "Too small: expected array to have >=1 items"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "version": "0.13.0",
+  "checkedAt": "2026-10-14T11:33:03.608Z",
+  "core": {
+    "passed": 65,
+    "failed": 0,
+    "file": "core-tests.txt"
+  },
+  "browser": {
+    "distinct": 35,
+    "latestPassed": 35,
+    "runs": [
+      {
+        "file": "browser-first-pass.json",
+        "stats": {
+          "startTime": "2026-10-14T11:22:44.060Z",
+          "duration": 159556.061,
+          "expected": 34,
+          "skipped": 0,
+          "unexpected": 1,
+          "flaky": 0
+        }
+      },
+      {
+        "file": "browser-targeted-pass.json",
+        "stats": {
+          "startTime": "2026-10-14T11:27:45.665Z",
+          "duration": 33114.727,
+          "expected": 7,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        }
+      },
+      {
+        "file": "browser-final-pass.json",
+        "stats": {
+          "startTime": "2026-10-14T11:31:04.259Z",
+          "duration": 17685.115,
+          "expected": 3,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        }
+      }
+    ],
+    "issueFixed": "An all-position ranking context was passed into positional personal guidance, causing detail rendering to crash. Validate role before choosing personal guide; related seven scenarios passed after fix. Final three also passed after source labels changed."
+  },
+  "buildPassed": true,
+  "formatPassed": true,
+  "buildWarning": "Existing 1.23 MB hero data chunk",
+  "algorithm": {
+    "version": "开局强度 v2.0",
+    "boards": 24,
+    "inputDate": "2026-10-13",
+    "publisherTierDifferences": 92,
+    "weightsTrained": false,
+    "matchOutcomeAccuracyEvaluated": false
+  },
+  "live": {
+    "verifiedAt": "2026-10-14T11:32:16.327Z",
+    "status": {
+      "product": "开局 NEXT",
+      "version": "0.13.0",
+      "modelConfigured": false,
+      "heroCount": 133
+    },
+    "defaultSort": "strength",
+    "heroCoverage": 133,
+    "example": {
+      "hero": "赵云",
+      "score": 83.15546122036619,
+      "tier": "T0",
+      "rankRange": [
+        1,
+        1
+      ]
+    },
+    "sourceHashes": [
+      "4b160dc305b86281cbe081efc145c1904ebd0c40911ee674407095b32c380fe8",
+      "ee87a865142163b39dcf9777ad670fcb45e0602863364fcb747e7e0fc6ffea6a"
+    ],
+    "sourceCaches": [
+      "cached",
+      "stale"
+    ],
+    "sourceFetchedAt": [
+      "2026-10-14T11:11:43.883Z",
+      "2026-10-14T04:56:23.652Z"
+    ],
+    "searchPreservesScore": true,
+    "metricSortVerified": true,
+    "axeViolations": 0,
+    "mobileOverflow": false,
+    "pageErrors": [],
+    "playerDataUnchanged": true,
+    "before": {
+      "workspace": "4b2ebdd0f3c3167d3a1bd87558e32a7230b9ef504a27d58e80e99663594f7908",
+      "pro": "0863ae099736d9aaf9d0e7dc1cae487db0c506a138aa8feccce9478808551d93"
+    },
+    "after": {
+      "workspace": "4b2ebdd0f3c3167d3a1bd87558e32a7230b9ef504a27d58e80e99663594f7908",
+      "pro": "0863ae099736d9aaf9d0e7dc1cae487db0c506a138aa8feccce9478808551d93"
+    },
+    "realGameReviewPerformed": false
+  },
+  "sourceRefresh": {
+    "checkedAt": "2026-10-14T11:31:16.832Z",
+    "url": "https://tianyuanzhiyi.com/api/herostats?date=2026-10-13&gameMode=4",
+    "status": 200,
+    "schema": "rejected",
+    "issues": [
+      {
+        "path": [],
+        "message": "Too small: expected array to have >=1 items"
+      }
+    ]
+  },
+  "historicalFilesPreserved": 1736,
+  "regressionFilesArchived": 27,
+  "review": {
+    "localHandoffVerified": true,
+    "realGameQualityEvaluated": false,
+    "modelTrainingPerformed": false,
+    "externalMultiStagePipelineImplemented": false,
+    "reason": "Auto-review rejected unspecified external data egress; user selected current Codex chat, implemented local file handoff without new network calls."
+  }
+}

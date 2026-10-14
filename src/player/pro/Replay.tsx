@@ -6,6 +6,8 @@ import { reviewSchema } from './model.ts';
 import type { ReviewEvent, Review } from './model.ts';
 import { reviewFindings } from './analytics.ts';
 import { api, download } from '../../api.ts';
+import { reviewEvidence } from './reviewEvidence.ts';
+import type { ReviewHandoff, CodexReview } from './codexReview.ts';
 const fmt = (s: number) => Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0');
 type ModelResult = {
   findings: { eventId: string; observation: string; advice: string; uncertainty: string }[];
@@ -26,6 +28,11 @@ export default function Replay() {
     [busy, setBusy] = useState(false),
     [result, setResult] = useState<ModelResult | null>(null);
   const current = events.find((e) => e.id === active);
+  const evidence = reviewEvidence(events);
+  const [assessment, setAssessment] = useState('未核对');
+  const [correction, setCorrection] = useState('');
+  const [handoff, setHandoff] = useState<ReviewHandoff | null>(null);
+  const [codexResult, setCodexResult] = useState<CodexReview | null>(null);
   const epoch = useRef(0);
   useEffect(
     () => () => {
@@ -36,6 +43,10 @@ export default function Replay() {
   useEffect(() => {
     epoch.current++;
     setResult(null);
+    setAssessment('未核对');
+    setCorrection('');
+    setHandoff(null);
+    setCodexResult(null);
   }, [events, heroId]);
   const change = (key: string, value: unknown) =>
     setEvents((es) => es.map((e) => (e.id === active ? { ...e, [key]: value } : e)));
@@ -118,6 +129,56 @@ export default function Replay() {
       setBusy(false);
     }
   };
+  const prepareCodex = async () => {
+    const version = ++epoch.current;
+    setBusy(true);
+    setMessage('');
+    try {
+      const prepared = await api<ReviewHandoff>(
+        '/pro/review-handoff',
+        reviewSchema.parse({
+          title,
+          heroId,
+          videoName,
+          events: events.map((e) => ({
+            ...e,
+            observation: e.observation.trim() || '（用户未填写观察，请只依据实际画面判断）',
+          })),
+        }),
+      );
+      if (epoch.current === version) {
+        setHandoff(prepared);
+        setCodexResult(null);
+        setMessage('复盘包已写入本机。把下方指令发到当前 Codex 对话，分析完成后点击读取结果。');
+      }
+    } catch (e) {
+      if (epoch.current === version) setMessage((e as Error).message);
+    } finally {
+      setBusy(false);
+    }
+  };
+  const readCodex = async () => {
+    if (!handoff) return;
+    const version = ++epoch.current;
+    setBusy(true);
+    setMessage('');
+    try {
+      const output = await api<{ state: 'pending' | 'complete'; result?: CodexReview }>(
+        '/pro/review-handoff-result',
+        { id: handoff.id },
+      );
+      if (epoch.current === version) {
+        if (output.state === 'complete' && output.result) {
+          setCodexResult(output.result);
+          setMessage('已读取当前 Codex 对话的复盘结果，输入指纹与图像引用核对通过。');
+        } else setMessage('当前对话尚未写入 result.json。请先把复盘指令发送到这里并完成分析。');
+      }
+    } catch (e) {
+      if (epoch.current === version) setMessage((e as Error).message);
+    } finally {
+      setBusy(false);
+    }
+  };
   const reopen = async (id: string) => {
     setMessage('');
     try {
@@ -146,6 +207,83 @@ export default function Replay() {
           保存这份复盘
         </button>
       </div>
+      <section className="surface replay-readiness" aria-label="复盘模型与证据状态">
+        <h2>交给当前 Codex 对话复盘</h2>
+        <p>
+          在这里准备真实画面，在当前聊天中让我逐帧分析，然后读取结果。不需要为这条流程另外配置模型密钥，也不会从网页自动发送聊天消息。
+        </p>
+        <p className="data-caption">
+          {configured ? '另已配置可选视觉接口，实战能力待验证。' : '网页自动视觉接口尚未连接。'}
+          当前对话分析不等于经过王者荣耀专项训练或职业级评测。
+        </p>
+        <div className="metric-strip">
+          <div>
+            <strong>{evidence.frames}</strong>
+            <span>实际关键帧</span>
+          </div>
+          <div>
+            <strong>{evidence.notes}</strong>
+            <span>已填写观察</span>
+          </div>
+          <div>
+            <strong>{evidence.unknownFields}</strong>
+            <span>未知条件</span>
+          </div>
+        </div>
+        {evidence.issues.map((issue) => (
+          <p className="data-caption" key={issue}>
+            {issue}
+          </p>
+        ))}
+        <div className="pro-actions">
+          <button
+            className="btn primary"
+            disabled={busy || !evidence.frames}
+            onClick={prepareCodex}
+          >
+            准备当前对话复盘包
+          </button>
+          {handoff && (
+            <button className="btn secondary" disabled={busy} onClick={readCodex}>
+              读取 Codex 复盘结果
+            </button>
+          )}
+        </div>
+        {handoff && (
+          <div className="codex-handoff">
+            <p>
+              已整理 {handoff.frames} 张真实截图。本机目录：<code>{handoff.directory}</code>
+            </p>
+            <label className="field">
+              发给当前对话的指令
+              <textarea aria-label="当前对话复盘指令" readOnly rows={5} value={handoff.prompt} />
+            </label>
+            <button
+              className="text-btn"
+              onClick={() =>
+                void navigator.clipboard
+                  .writeText(handoff.prompt)
+                  .then(() => setMessage('复盘指令已复制，请粘贴到当前 Codex 对话。'))
+                  .catch(() => setMessage('未能自动复制，请选中上方文字手动复制。'))
+              }
+            >
+              复制复盘指令
+            </button>
+            <p className="data-caption">
+              准备复盘包只写本机文件。需要你在聊天中发起分析；材料修改后需重新准备。文件保留在本机，页面切换后可通过已复制的路径找回。
+            </p>
+          </div>
+        )}
+        <details className="environment-method">
+          <summary>模型接入与后续评测怎么做</summary>
+          <p>
+            接入前需确定支持图片的模型服务、地址，以及允许发送的截图和笔记范围。计划采用画面取证、战术比较、原图复核三个阶段；本轮尚未启用这条新流程，也没有进行专项训练。
+          </p>
+          <p>
+            真实能力需要用经过人工校正的对局决策样本评测，分别检查可见事实、隐藏信息误判、建议可执行性和证据支持。校正样本需划分训练与独立测试集；重复运行同一批示例不代表训练有效。
+          </p>
+        </details>
+      </section>
       <div className="pro-actions">
         <button
           className="btn secondary"
@@ -164,6 +302,63 @@ export default function Replay() {
         </button>
         {savedId && <span className="muted">正在编辑已保存记录，再次保存会更新同一份复盘。</span>}
       </div>
+      <details className="surface review-evaluation">
+        <summary>留下可复核的纠错样本 · 展开填写</summary>
+        <p className="data-caption">
+          把实际画面、原分析与你的校正一起导出，供后续人工评测。此处只生成本地文件，不会训练模型；校正文字需导出后保存。
+        </p>
+        <label className="field">
+          人工核对结果
+          <select
+            aria-label="复盘人工核对"
+            value={assessment}
+            onChange={(e) => setAssessment(e.target.value)}
+          >
+            <option>未核对</option>
+            <option>建议有证据支持</option>
+            <option>建议存在错误</option>
+            <option>证据不足，无法判断</option>
+          </select>
+        </label>
+        <label className="field">
+          具体错误或正确依据
+          <textarea
+            aria-label="复盘校正依据"
+            value={correction}
+            maxLength={2000}
+            onChange={(e) => setCorrection(e.target.value)}
+            placeholder="指出对应时间点、画面依据、建议哪里不成立，以及更合理的选择。"
+          />
+        </label>
+        <button
+          className="btn secondary"
+          disabled={!events.some((e) => e.frame) || assessment === '未核对' || !correction.trim()}
+          onClick={() =>
+            download(
+              '开局-待人工审核的复盘样本.json',
+              JSON.stringify(
+                {
+                  schema: 'kaiju-review-evaluation-v1',
+                  createdAt: new Date().toISOString(),
+                  status: 'human-labelled-unverified',
+                  title,
+                  heroId,
+                  videoName,
+                  events,
+                  analysis: codexResult ?? result,
+                  assessment,
+                  correction,
+                  trainingPerformed: false,
+                },
+                null,
+                2,
+              ),
+            )
+          }
+        >
+          导出待审核评测样本
+        </button>
+      </details>
       <div className="pro-toolbar">
         <label>
           复盘标题
@@ -393,6 +588,42 @@ export default function Replay() {
           </div>
         </section>
       )}
+      {codexResult && (
+        <section className="surface pro-prose" aria-label="当前 Codex 对话复盘结果">
+          <h2>当前对话的逐帧判断</h2>
+          <p>{codexResult.scope}</p>
+          {codexResult.findings.map((f) => (
+            <article key={f.eventId}>
+              <h3>
+                {fmt(events.find((e) => e.id === f.eventId)?.second ?? 0)} ·{' '}
+                {f.verdict === 'supported' ? '有证据的建议' : '证据不足，暂缓判断'}
+              </h3>
+              <p>
+                <strong>观察：</strong>
+                {f.observation}
+              </p>
+              <p>
+                <strong>建议：</strong>
+                {f.advice}
+              </p>
+              <p>
+                <strong>替代选择：</strong>
+                {f.alternative}
+              </p>
+              <p>
+                <strong>下一次练习：</strong>
+                {f.drill}
+              </p>
+              <small>{f.uncertainty}</small>
+            </article>
+          ))}
+          {codexResult.limitations.map((x) => (
+            <p className="data-caption" key={x}>
+              {x}
+            </p>
+          ))}
+        </section>
+      )}
       {result && (
         <section className="surface pro-prose">
           <h2>AI 对所选画面的分析</h2>
@@ -423,6 +654,7 @@ export default function Replay() {
                   videoName,
                   events,
                   analysis: result,
+                  codexAnalysis: codexResult,
                   scope: '带证据的局部复盘；非完整录像自动理解',
                 },
                 null,

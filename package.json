@@ -1,6 +1,6 @@
 {
   "name": "kaiju-player-companion",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -19,7 +19,8 @@
     "bp:evaluate": "node scripts/player/benchmark-coach.mjs",
     "ranks:refresh": "node scripts/player/refresh-ranks.mjs",
     "tiers:evaluate": "node scripts/player/evaluate-environment.mjs",
-    "tianyuan:collect": "node scripts/player/collect-tianyuan.mjs"
+    "tianyuan:collect": "node scripts/player/collect-tianyuan.mjs",
+    "strength:evaluate": "node scripts/player/evaluate-strength.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",

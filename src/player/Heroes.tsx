@@ -121,6 +121,9 @@ export function HeroDetail({
           </button>
         ))}
       </nav>
+      {statsContext?.snapshotId?.startsWith('tianyuan:') && (
+        <HeroInsights hero={hero} context={statsContext} />
+      )}
       {note && (
         <section className="tactical-note">
           <p className="eyebrow">开局战术笔记 · 定性建议</p>
@@ -181,7 +184,9 @@ export function HeroDetail({
           。官网页面未提供统一版本号，技能数值以游戏内为准。
         </p>
       </section>
-      <HeroInsights hero={hero} context={statsContext} />
+      {!statsContext?.snapshotId?.startsWith('tianyuan:') && (
+        <HeroInsights hero={hero} context={statsContext} />
+      )}
       <section id="hero-builds" className="hero-builds">
         <h3>官方出装与铭文资料</h3>
         <p className="data-caption">
@@ -228,7 +233,9 @@ export function HeroDetail({
       </section>
       <PersonalGuide
         hero={hero}
-        role={(statsContext?.role ?? hero.roles[0]) as Role}
+        role={
+          (ROLES.includes(statsContext?.role as Role) ? statsContext!.role : hero.roles[0]) as Role
+        }
         onEdit={onEditRecord ? () => onEditRecord(hero.id) : undefined}
       />
       {hero.roles.includes('打野') && <Jungle hero={hero} />}

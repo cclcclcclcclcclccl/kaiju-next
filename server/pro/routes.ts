@@ -11,6 +11,8 @@ import type { PlayerStore } from '../player/store.ts';
 import { providerConfig } from '../player/provider.ts';
 import { ocrReady, screenshotRequest, recognizeScreenshot } from './ocr.ts';
 import { extractPublicTable } from '../../src/player/pro/publicTable.ts';
+import { createReviewHandoff } from './reviewHandoff.ts';
+import { resolve } from 'node:path';
 const credentials = z
   .object({
     username: z
@@ -198,6 +200,39 @@ export async function proRoutes(ctx: {
       .parse(await body(req));
     const r = store.pro().reviews.find((r) => r.id === d.id);
     send(r ? 200 : 404, r ?? { error: '复盘不存在' });
+    return true;
+  }
+  if (path === '/api/pro/review-handoff' || path === '/api/pro/review-handoff-result') {
+    const service = createReviewHandoff(
+      resolve(process.env.PLAYER_DATA_DIR ?? 'data', 'review-handoff'),
+    );
+    const owner = user?.id ?? 'guest';
+    if (path.endsWith('-result')) {
+      const d = z
+        .object({ id: z.string().uuid() })
+        .strict()
+        .parse(await body(req));
+      try {
+        send(200, await service.result(owner, d.id));
+      } catch {
+        send(422, { error: '复盘包不存在、证据已变化或结果引用未通过核对；未载入结果。' });
+      }
+    } else {
+      const d = reviewSchema.parse(await body(req, 12 * 1024 * 1024));
+      check([d.heroId]);
+      if (!d.events.some((e) => e.frame)) {
+        send(400, { error: '请先截取至少一个真实画面' });
+        return true;
+      }
+      send(
+        201,
+        await service.prepare(
+          owner,
+          d,
+          heroes.find((h) => h.id === d.heroId)!,
+        ),
+      );
+    }
     return true;
   }
   if (path === '/api/pro/review-analyze') {
