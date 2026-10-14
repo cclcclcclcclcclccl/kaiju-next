@@ -14,6 +14,7 @@ import { ROLES, matchSchema } from './model.ts';
 import type { Match, MatchInput } from './model.ts';
 import { notes } from './tactics.ts';
 import { Modal, Portrait, Empty } from './ui.tsx';
+import { download } from '../api.ts';
 const today = () => new Date().toLocaleDateString('en-CA');
 const blank = (): MatchInput => ({
   heroId: heroes[0].id,
@@ -385,6 +386,13 @@ export default function Journal({
           )}
           <div className="modal-actions">
             <span className="muted">保存在本机，可随时修改。</span>
+            <button
+              className="btn secondary"
+              disabled={busy}
+              onClick={() => download('开局-手记草稿.json', JSON.stringify(entry, null, 2))}
+            >
+              导出当前手记草稿
+            </button>
             <button className="btn primary" onClick={save} disabled={busy}>
               <Check size={16} />
               保存手记

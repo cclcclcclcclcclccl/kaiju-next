@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-14T13:18:02.285Z",
+  "status": {
+    "product": "开局 NEXT",
+    "version": "0.16.0",
+    "modelConfigured": false,
+    "heroCount": 133,
+    "identity": {
+      "mode": "guest",
+      "name": "访客"
+    }
+  },
+  "allPersonalTableHashesStillMatch": true,
+  "databaseIntegrity": "ok",
+  "zhaoHuaizhenRetained": true
+}

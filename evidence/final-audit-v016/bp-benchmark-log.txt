@@ -1,0 +1,12 @@
+{"seed":117,"policy":"greedy","legal":true,"ms":271,"roles":2.4,"nodes":968}
+{"seed":117,"policy":"coverage","legal":true,"ms":219,"roles":3,"nodes":979}
+{"seed":218,"policy":"greedy","legal":true,"ms":221,"roles":2,"nodes":985}
+{"seed":218,"policy":"coverage","legal":true,"ms":224,"roles":3,"nodes":981}
+{"seed":319,"policy":"greedy","legal":true,"ms":206,"roles":2.4,"nodes":1035}
+{"seed":319,"policy":"coverage","legal":true,"ms":208,"roles":3,"nodes":1006}
+{"seed":421,"policy":"greedy","legal":true,"ms":227,"roles":2.4,"nodes":1002}
+{"seed":421,"policy":"coverage","legal":true,"ms":229,"roles":3,"nodes":1008}
+{"seed":522,"policy":"greedy","legal":true,"ms":192,"roles":2.4,"nodes":929}
+{"seed":522,"policy":"coverage","legal":true,"ms":187,"roles":3,"nodes":930}
+{"seed":623,"policy":"greedy","legal":true,"ms":209,"roles":2.4,"nodes":1018}
+{"seed":623,"policy":"coverage","legal":true,"ms":231,"roles":3,"nodes":1028}

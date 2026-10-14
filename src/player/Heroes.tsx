@@ -330,7 +330,10 @@ export default function Heroes({
                     loading="lazy"
                     alt=""
                     onError={(e) => {
-                      e.currentTarget.style.opacity = '0';
+                      if (!e.currentTarget.dataset.fallback) {
+                        e.currentTarget.dataset.fallback = 'portrait';
+                        e.currentTarget.src = h.portrait;
+                      } else e.currentTarget.style.opacity = '0';
                     }}
                   />
                   <span className="hero-watermark">{h.name}</span>

@@ -1899,6 +1899,22 @@
   margin: 0;
   min-width: 0;
 }
+.backup-center .roster-table {
+  min-width: 0;
+  width: 100%;
+}
+.backup-center input[type='file'] {
+  max-width: 100%;
+}
+.backup-center .check-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0;
+}
+.backup-center .check-row input {
+  width: auto;
+}
 .equipment-statistics .roster-table {
   min-width: 0;
   width: 100%;

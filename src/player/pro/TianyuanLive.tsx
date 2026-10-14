@@ -18,6 +18,7 @@ import {
 import type { TianyuanPacket, TianyuanStat, TianyuanQuery } from './tianyuan.ts';
 import { strengthRanks, STRENGTH_TIERS, STRENGTH_VERSION } from './strength.ts';
 import { StrengthExplanation, StrengthMethod } from './StrengthExplain.tsx';
+import SourceHealth from './SourceHealth.tsx';
 
 export function useSource<T>(query: TianyuanQuery | undefined) {
   const key = query
@@ -227,6 +228,7 @@ export default function TianyuanLive({
           </select>
         </label>
       </div>
+      <SourceHealth />
       <div className="resource-tabs">
         <button
           className={basis === 'own' ? 'active' : ''}

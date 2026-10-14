@@ -4,6 +4,7 @@ import { emptyDraft } from '../../src/player/model.ts';
 import type { Draft, Pool, MatchInput, Match, SavedPlan } from '../../src/player/model.ts';
 import { emptyProfile, profileSchema } from '../../src/player/pro/model.ts';
 import { isDeepStrictEqual } from 'node:util';
+import type { PersonalState } from '../../src/player/pro/backup.ts';
 import { effectivePool } from '../../src/player/pro/analytics.ts';
 import type { Profile, StatSnapshot, Review, JungleRun } from '../../src/player/pro/model.ts';
 export function createPlayerStore(path: string) {
@@ -67,7 +68,56 @@ export function createPlayerStore(path: string) {
       }
       return pool;
     };
+    const personalState = (): PersonalState => ({
+      pool: get('pool', []) as Pool,
+      draft: get('draft', emptyDraft()) as Draft,
+      matches: db
+        .prepare('SELECT payload FROM matches WHERE owner=? ORDER BY id')
+        .all(owner)
+        .map((r) => JSON.parse(String(r.payload))),
+      plans: db
+        .prepare('SELECT payload FROM plans WHERE owner=? ORDER BY id')
+        .all(owner)
+        .map((r) => JSON.parse(String(r.payload))),
+      profile: get('profile', emptyProfile()) as Profile,
+      snapshots: get('snapshots', []) as StatSnapshot[],
+      reviews: get('reviews', []) as Review[],
+      runs: get('runs', []) as JungleRun[],
+    });
+    const stateRevision = () =>
+      createHash('sha256').update(JSON.stringify(personalState())).digest('hex');
     return {
+      personalState,
+      stateRevision,
+      restoreCheckpoint: () => get('restore-checkpoint', null) as PersonalState | null,
+      restorePersonal: (expected: string, incoming: PersonalState) =>
+        transaction(() => {
+          if (stateRevision() !== expected) return { conflict: true };
+          set('restore-checkpoint', personalState());
+          writePool(incoming.pool, '恢复完整个人备份');
+          const { memberId: _member, ...draft } = incoming.draft;
+          set('draft', draft);
+          set('profile', { ...incoming.profile, sharePool: false });
+          for (const name of ['snapshots', 'reviews', 'runs'] as const) set(name, incoming[name]);
+          for (const [table, rows] of [
+            ['matches', incoming.matches],
+            ['plans', incoming.plans],
+          ] as const) {
+            db.prepare('DELETE FROM ' + table + ' WHERE owner=?').run(owner);
+            for (const row of rows) {
+              const id = randomUUID();
+              const payload = { ...row, id };
+              if ('draft' in payload) {
+                const { memberId: _friend, ...planDraft } = payload.draft;
+                payload.draft = planDraft;
+              }
+              db.prepare(
+                'INSERT INTO ' + table + '(id,payload,created_at,owner) VALUES(?,?,?,?)',
+              ).run(id, JSON.stringify(payload), row.createdAt, owner);
+            }
+          }
+          return { conflict: false };
+        }),
       close: () => db.close(),
       workspace: () => ({
         pool: get('pool', []) as Pool,
@@ -152,6 +202,10 @@ export function createPlayerStore(path: string) {
         );
         return match;
       },
+      matchById: (id: string) => {
+        const row = db.prepare('SELECT payload FROM matches WHERE id=? AND owner=?').get(id, owner);
+        return row ? (JSON.parse(String(row.payload)) as Match) : null;
+      },
       updateMatch: (id: string, input: MatchInput) => {
         const row = db.prepare('SELECT payload FROM matches WHERE id=? AND owner=?').get(id, owner);
         if (!row) return null;
@@ -226,6 +280,38 @@ export function createPlayerStore(path: string) {
         set('reviews', old ? records.map((x) => (x.id === old.id ? r : x)) : [r, ...records]);
         return r;
       },
+      reviewRevision: (id: string) => {
+        const review = (get('reviews', []) as Review[]).find((r) => r.id === id);
+        return review ? createHash('sha256').update(JSON.stringify(review)).digest('hex') : null;
+      },
+      saveReview: (
+        input: Omit<Review, 'id' | 'createdAt'>,
+        id: string | undefined,
+        expected: string | null,
+      ) =>
+        transaction(() => {
+          const records = get('reviews', []) as Review[],
+            old = records.find((r) => r.id === id);
+          const revision = old
+            ? createHash('sha256').update(JSON.stringify(old)).digest('hex')
+            : null;
+          if ((id && !old) || revision !== expected)
+            return { conflict: true, review: null, revision: null };
+          const review = {
+            ...input,
+            id: old?.id ?? randomUUID(),
+            createdAt: old?.createdAt ?? new Date().toISOString(),
+          };
+          set(
+            'reviews',
+            old ? records.map((r) => (r.id === id ? review : r)) : [review, ...records],
+          );
+          return {
+            conflict: false,
+            review,
+            revision: createHash('sha256').update(JSON.stringify(review)).digest('hex'),
+          };
+        }),
       removeReview: (id: string) =>
         set(
           'reviews',

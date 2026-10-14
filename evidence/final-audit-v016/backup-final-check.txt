@@ -1,0 +1,10 @@
+[WebServer] (node:50164) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:38856) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\player\final-audit.spec.ts:46:1 › complete backup round trip includes frames, previews changes and leaves a downloadable pre-restore checkpoint (3.7s)
+
+  1 passed (7.5s)

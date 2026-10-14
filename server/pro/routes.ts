@@ -13,6 +13,7 @@ import { ocrReady, screenshotRequest, recognizeScreenshot } from './ocr.ts';
 import { extractPublicTable } from '../../src/player/pro/publicTable.ts';
 import { createReviewHandoff } from './reviewHandoff.ts';
 import { resolve } from 'node:path';
+import { backupSchema, backupCounts, backupHeroIds } from '../../src/player/pro/backup.ts';
 const credentials = z
   .object({
     username: z
@@ -56,6 +57,24 @@ export async function proRoutes(ctx: {
     });
     return true;
   }
+  if (method === 'GET' && (path === '/api/backup' || path === '/api/backup/checkpoint')) {
+    const data = path.endsWith('checkpoint') ? store.restoreCheckpoint() : store.personalState();
+    if (!data) {
+      send(404, { error: '当前空间没有恢复前备份' });
+      return true;
+    }
+    const backup = backupSchema.parse({
+      format: 'kaiju-personal-backup-v1',
+      exportedAt: new Date().toISOString(),
+      data,
+    });
+    if (Buffer.byteLength(JSON.stringify(backup)) > 64 * 1024 * 1024) {
+      send(413, { error: '个人资料超过 64 MB，请先保留本机数据库备份，暂不支持网页完整导出' });
+      return true;
+    }
+    send(200, backup);
+    return true;
+  }
   if (method === 'GET' && path === '/api/social') {
     send(200, { user, friends: user ? root.identity.friends(user.id) : [] });
     return true;
@@ -65,6 +84,61 @@ export async function proRoutes(ctx: {
     return true;
   }
   if (method !== 'POST') return false;
+  if (path === '/api/backup/preview' || path === '/api/backup/restore') {
+    const d = z
+      .object({
+        backup: backupSchema,
+        expectedRevision: z
+          .string()
+          .regex(/^[a-f0-9]{64}$/)
+          .optional(),
+        confirmed: z.literal(true).optional(),
+      })
+      .strict()
+      .parse(await body(req, 65 * 1024 * 1024));
+    if (Buffer.byteLength(JSON.stringify(d.backup)) > 64 * 1024 * 1024) {
+      send(413, { error: '个人备份超过 64 MB，暂不支持网页恢复' });
+      return true;
+    }
+    check(backupHeroIds(d.backup.data));
+    if (path.endsWith('preview')) {
+      send(200, {
+        revision: store.stateRevision(),
+        current: backupCounts(store.personalState()),
+        incoming: backupCounts(d.backup.data),
+        scope: user ? '独立账号 · ' + user.name : '本机访客',
+      });
+      return true;
+    }
+    if (!d.expectedRevision || !d.confirmed) {
+      send(400, { error: '请先预览并确认恢复到当前空间' });
+      return true;
+    }
+    if (
+      Buffer.byteLength(
+        JSON.stringify({
+          format: 'kaiju-personal-backup-v1',
+          exportedAt: new Date().toISOString(),
+          data: store.personalState(),
+        }),
+      ) >
+      64 * 1024 * 1024
+    ) {
+      send(413, {
+        error:
+          '当前资料超过网页恢复容量，无法保证恢复前备份可下载；已阻止替换，请先保留数据库备份。',
+      });
+      return true;
+    }
+    const result = store.restorePersonal(d.expectedRevision, d.backup.data);
+    send(
+      result.conflict ? 409 : 200,
+      result.conflict
+        ? { error: '预览后个人资料已有修改，请重新预览；没有执行恢复。' }
+        : { restored: true },
+    );
+    return true;
+  }
   if (path === '/api/pro/recognize-profile' || path === '/api/pro/recognize-stat-table') {
     const data = screenshotRequest.parse(await body(req, 12 * 1024 * 1024));
     try {
@@ -189,6 +263,33 @@ export async function proRoutes(ctx: {
     send(200, store.removeSnapshot(d.id));
     return true;
   }
+  if (path === '/api/pro/review-save') {
+    const d = z
+      .object({
+        id: z.string().uuid().optional(),
+        expectedRevision: z
+          .string()
+          .regex(/^[a-f0-9]{64}$/)
+          .nullable(),
+        review: reviewSchema,
+      })
+      .strict()
+      .parse(await body(req, 12 * 1024 * 1024));
+    check([d.review.heroId]);
+    const result = store.saveReview(d.review, d.id, d.expectedRevision);
+    if (result.conflict || !result.review)
+      send(409, {
+        error:
+          '这份复盘已被修改或删除，本次未覆盖。当前编辑内容保留，请先导出再重新打开已保存复盘。',
+      });
+    else
+      send(200, {
+        ...result.review,
+        events: result.review.events.map(({ frame, ...e }) => e),
+        revision: result.revision,
+      });
+    return true;
+  }
   if (path === '/api/pro/review') {
     const raw = await body(req, 12 * 1024 * 1024);
     const { id, ...input } = z
@@ -217,7 +318,10 @@ export async function proRoutes(ctx: {
       .strict()
       .parse(await body(req));
     const r = store.pro().reviews.find((r) => r.id === d.id);
-    send(r ? 200 : 404, r ?? { error: '复盘不存在' });
+    send(
+      r ? 200 : 404,
+      r ? { ...r, revision: store.reviewRevision(r.id) } : { error: '复盘不存在' },
+    );
     return true;
   }
   if (path === '/api/pro/review-handoff' || path === '/api/pro/review-handoff-result') {

@@ -23,6 +23,7 @@ export function createTianyuan(options: {
     retry = new Map<string, number>();
   let queue: Promise<unknown> = Promise.resolve(),
     lastRequest = 0;
+  const checks = new Map<string, { checkedAt: string; state: string; error?: string }>();
   function get(input: TianyuanQuery): Promise<TianyuanPacket> {
     const q = tianyuanQuerySchema.parse(input);
     if (q.heroId && !options.heroIds.includes(q.heroId)) throw Error('英雄不在资料目录中');
@@ -32,7 +33,20 @@ export function createTianyuan(options: {
     if (['duration', 'analysis'].includes(q.kind)) delete q.date;
     const key = [q.kind, q.date ?? 'undated', q.mode ?? 0, q.heroId ?? 0].join('-');
     if (active.has(key)) return active.get(key)!;
-    const pending = read(q, key).finally(() => active.delete(key));
+    const pending = read(q, key)
+      .then((packet) => {
+        checks.set(key, { checkedAt: new Date(now()).toISOString(), state: packet.cache });
+        return packet;
+      })
+      .catch((error) => {
+        checks.set(key, {
+          checkedAt: new Date(now()).toISOString(),
+          state: 'error',
+          error: (error as Error).message,
+        });
+        throw error;
+      })
+      .finally(() => active.delete(key));
     active.set(key, pending);
     return pending;
   }
@@ -114,7 +128,46 @@ export function createTianyuan(options: {
       throw new Error('天元之弈公开数据暂不可用：' + (error as Error).message);
     }
   }
-  return { get };
+  async function status() {
+    const date = sourceDate(now());
+    const rows = await Promise.all(
+      [1, 3, 4, 5].map(async (mode) => {
+        const key = ['stats', date, mode, 0].join('-'),
+          q = { kind: 'stats' as const, date, mode };
+        let packet = memory.get(key);
+        if (!packet)
+          try {
+            const saved = JSON.parse(
+              await readFile(join(options.directory, 'cache', key + '.json'), 'utf8'),
+            ) as TianyuanPacket;
+            if (saved.url !== tianyuanUrl(q)) throw Error('来源不匹配');
+            saved.data = parseTianyuan(saved.data, q);
+            packet = saved;
+          } catch {}
+        const age = packet ? now() - Date.parse(packet.fetchedAt) : Infinity,
+          check = checks.get(key);
+        return {
+          mode,
+          queryDate: date,
+          records: packet ? (packet.data as TianyuanStat[]).length : 0,
+          state:
+            check?.state === 'stale' || check?.state === 'error'
+              ? check.state
+              : packet
+                ? age >= 0 && age < 3600000
+                  ? 'cached'
+                  : 'expired'
+                : 'missing',
+          checkedAt: check?.checkedAt,
+          fetchedAt: packet?.fetchedAt,
+          sourceUpdatedAt: packet?.sourceUpdatedAt,
+          inProgress: active.has(key),
+        };
+      }),
+    );
+    return { rows, observedAt: new Date(now()).toISOString() };
+  }
+  return { get, status };
 }
 
 export function scheduleTianyuan(source: Pick<ReturnType<typeof createTianyuan>, 'get'>) {

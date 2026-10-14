@@ -4,6 +4,8 @@ import { createServer } from 'node:http';
 import type { IncomingMessage } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
+import { gzip } from 'node:zlib';
+import { promisify, isDeepStrictEqual } from 'node:util';
 import { z, ZodError } from 'zod';
 import { draftSchema, matchSchema, poolSchema } from '../../src/player/model.ts';
 import type { Hero } from '../../src/player/model.ts';
@@ -58,6 +60,8 @@ export function createPlayerApp(
       throw new PlayerHttpError(400, '英雄不在官方资料目录中');
   };
   let coachBusy = false;
+  const gzipAsync = promisify(gzip);
+  const compressed = new Map<string, { mtime: number; size: number; body: Promise<Buffer> }>();
   return createServer(async (req, res) => {
     const send = (status: number, value: unknown) => {
       res.writeHead(status, {
@@ -143,12 +147,20 @@ export function createPlayerApp(
         })
       )
         return;
+      if (method === 'GET' && url.pathname === '/api/tianyuan/status')
+        return send(
+          200,
+          options.tianyuan
+            ? await options.tianyuan.status()
+            : { rows: [], observedAt: new Date().toISOString() },
+        );
       if (method === 'GET' && url.pathname === '/api/status')
         return send(200, {
           product: '开局 NEXT',
-          version: '0.15.0',
+          version: '0.16.0',
           modelConfigured: Boolean(providerConfig()),
           heroCount: heroes.length,
+          identity: { mode: user ? 'account' : 'guest', name: user?.name ?? '访客' },
         });
       if (method === 'GET' && url.pathname === '/api/workspace')
         return send(200, store.workspace());
@@ -221,19 +233,29 @@ export function createPlayerApp(
       }
       if (method === 'POST' && url.pathname === '/api/match-update') {
         const data = z
-          .object({ id: z.string().uuid(), match: matchSchema })
+          .object({ id: z.string().uuid(), match: matchSchema, expected: z.unknown().optional() })
           .strict()
           .parse(await body(req));
         validateIds([data.match.heroId]);
+        if (
+          data.expected !== undefined &&
+          !isDeepStrictEqual(store.matchById(data.id), data.expected)
+        )
+          throw new PlayerHttpError(409, '这条手记已在别处修改，请先导出当前编辑内容再重新读取。');
         const match = store.updateMatch(data.id, data.match);
         if (!match) throw new PlayerHttpError(404, '没有找到这条手记');
         return send(200, match);
       }
       if (method === 'POST' && url.pathname === '/api/match-check') {
         const data = z
-          .object({ id: z.string().uuid(), done: z.boolean() })
+          .object({ id: z.string().uuid(), done: z.boolean(), expected: z.unknown().optional() })
           .strict()
           .parse(await body(req));
+        if (
+          data.expected !== undefined &&
+          !isDeepStrictEqual(store.matchById(data.id), data.expected)
+        )
+          throw new PlayerHttpError(409, '这条训练目标已变化，请重新读取后再标记。');
         const match = store.toggleMatch(data.id, data.done);
         if (!match) throw new PlayerHttpError(404, '没有找到这条手记');
         return send(200, match);
@@ -362,11 +384,46 @@ export function createPlayerApp(
         '.png': 'image/png',
         '.json': 'application/json',
       };
+      const canGzip =
+        ['.js', '.css', '.html', '.json', '.svg'].includes(extname(file)) &&
+        info.size > 1024 &&
+        (req.headers['accept-encoding'] ?? '').split(',').some((part) => {
+          const [encoding, ...params] = part.trim().split(';');
+          const quality = params.find((p) => p.trim().startsWith('q='));
+          return encoding === 'gzip' && (!quality || Number(quality.trim().slice(2)) > 0);
+        });
+      let content: Buffer | undefined;
+      if (canGzip) {
+        let entry = compressed.get(file);
+        if (!entry || entry.mtime !== info.mtimeMs || entry.size !== info.size) {
+          if (compressed.size >= 20) compressed.delete(compressed.keys().next().value!);
+          entry = {
+            mtime: info.mtimeMs,
+            size: info.size,
+            body: readFile(file).then((bytes) => gzipAsync(bytes)),
+          };
+          compressed.set(file, entry);
+        }
+        try {
+          content = await entry.body;
+        } catch (error) {
+          compressed.delete(file);
+          throw error;
+        }
+      } else if (method !== 'HEAD') content = await readFile(file);
       res.writeHead(200, {
         'Content-Type': types[extname(file)] ?? 'application/octet-stream',
-        'Cache-Control': extname(file) === '.html' ? 'no-cache' : 'public,max-age=3600',
+        'Cache-Control':
+          extname(file) === '.html'
+            ? 'no-cache'
+            : /[.-][A-Za-z0-9_-]{8,}\.(js|css)$/.test(file)
+              ? 'public,max-age=31536000,immutable'
+              : 'public,max-age=3600',
+        Vary: 'Accept-Encoding',
+        'Content-Length': content?.length ?? info.size,
+        ...(canGzip ? { 'Content-Encoding': 'gzip' } : {}),
       });
-      res.end(method === 'HEAD' ? undefined : await readFile(file));
+      res.end(method === 'HEAD' ? undefined : content);
     } catch (error) {
       if (res.headersSent) {
         res.end();

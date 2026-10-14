@@ -25,7 +25,8 @@ import {
   Info,
   Menu,
 } from 'lucide-react';
-import { api } from '../api.ts';
+import { api, ApiError } from '../api.ts';
+import BackupCenter from './pro/BackupCenter.tsx';
 import { heroes, dataMeta, heroById, heroByName } from './catalog.ts';
 import { emptyDraft, draftSchema } from './model.ts';
 import type { Draft, Hero, Pool, Match, MatchInput, SavedPlan } from './model.ts';
@@ -39,6 +40,9 @@ type Workspace = { pool: Pool; draft: Draft; matches: Match[]; plans: SavedPlan[
 export default function App() {
   const [pro, setPro] = useState<ProData>(emptyPro);
   const [profileHero, setProfileHero] = useState<number>();
+  const [backupOpen, setBackupOpen] = useState(false),
+    [expired, setExpired] = useState(false),
+    [identity, setIdentity] = useState('访客');
   const refreshPro = async () => setPro(await api<ProData>('/pro'));
   const draftKey =
     'kaiju-draft-v1' +
@@ -71,7 +75,7 @@ export default function App() {
     try {
       const [workspace, status, proData] = await Promise.all([
         api<Workspace>('/workspace'),
-        api<{ modelConfigured: boolean }>('/status'),
+        api<{ modelConfigured: boolean; identity?: { name: string } }>('/status'),
         api<ProData>('/pro'),
       ]);
       setPool(workspace.pool);
@@ -79,6 +83,8 @@ export default function App() {
       setMatches(workspace.matches);
       setPlans(workspace.plans);
       setConfigured(status.modelConfigured);
+      setIdentity(status.identity?.name ?? '访客');
+      setExpired(false);
       let restored = workspace.draft;
       try {
         const local = draftSchema.safeParse(JSON.parse(localStorage.getItem(draftKey) ?? 'null'));
@@ -95,7 +101,14 @@ export default function App() {
       setDraft(restored);
       setReady(true);
     } catch (e) {
-      setToast({ text: '无法连接本地服务。请启动项目后点击重试。', error: true });
+      const invalid = e instanceof ApiError && e.status === 401;
+      setExpired(invalid);
+      setToast({
+        text: invalid
+          ? '登录已过期，个人资料仍在。请退出失效登录后重新登录原账号。'
+          : '无法连接本地服务。请启动项目后点击重试。',
+        error: true,
+      });
     }
   };
   useEffect(() => {
@@ -117,6 +130,11 @@ export default function App() {
   const currentDraft = useMemo(() => ({ ...draft, pool }), [draft, pool]);
   const registeredPool = useMemo(() => effectivePool(pool, pro.profile), [pool, pro.profile]);
   const go = (p: Page) => {
+    if (
+      p !== page &&
+      !window.dispatchEvent(new Event('kaiju-before-navigate', { cancelable: true }))
+    )
+      return;
     setPage(p);
     setMobileMenu(false);
     setGlobalSearch('');
@@ -181,14 +199,14 @@ export default function App() {
     await mutate(async () => {
       const saved = await api<Match>(
         id ? '/match-update' : '/matches',
-        id ? { id, match: input } : input,
+        id ? { id, match: input, expected: matches.find((m) => m.id === id) } : input,
       );
       setMatches((rows) => (id ? rows.map((m) => (m.id === id ? saved : m)) : [saved, ...rows]));
     }, '对局手记已保存，下一局目标已更新');
   };
   const checkMatch = (m: Match, done: boolean) => {
     void mutate(async () => {
-      const saved = await api<Match>('/match-check', { id: m.id, done });
+      const saved = await api<Match>('/match-check', { id: m.id, done, expected: m });
       setMatches((rows) => rows.map((x) => (x.id === m.id ? saved : x)));
     }).catch(() => {});
   };
@@ -287,7 +305,7 @@ export default function App() {
             <span>
               <i />
               {ready ? '本地工作台已连接' : '正在连接本地服务'}
-              <small>v0.15</small>
+              <small>v0.16</small>
             </span>
           </div>
         </aside>
@@ -351,18 +369,50 @@ export default function App() {
                 <FolderOpen size={17} />
                 <span>备战档案</span>
               </button>
-              <span className="avatar">蔡</span>
+              <button
+                aria-label="备份与恢复"
+                className="archive-button"
+                onClick={() => setBackupOpen(true)}
+              >
+                <FolderOpen size={17} />
+                <span>备份与恢复</span>
+              </button>
+              <button
+                className="avatar"
+                title={identity}
+                aria-label={'当前身份：' + identity}
+                onClick={() => go('social')}
+              >
+                {[...identity][0]}
+              </button>
             </div>
           </header>
           <main>
             {!ready ? (
               <div className="loading-state">
                 <Aperture size={30} />
-                <h1>准备你的备战台</h1>
-                <p>英雄资料与个人记录正在就位。</p>
-                <button className="btn secondary" onClick={load}>
-                  重试连接
-                </button>
+                <h1>{expired ? '登录已过期' : '准备你的备战台'}</h1>
+                <p>
+                  {expired
+                    ? '账号资料仍保存在本机。退出失效登录后，可到好友与组队重新登录原账号。'
+                    : '英雄资料与个人记录正在就位。'}
+                </p>
+                {expired ? (
+                  <button
+                    className="btn primary"
+                    onClick={() => {
+                      localStorage.removeItem('kaiju-token');
+                      localStorage.removeItem('kaiju-user');
+                      location.reload();
+                    }}
+                  >
+                    退出失效登录，进入访客
+                  </button>
+                ) : (
+                  <button className="btn secondary" onClick={load}>
+                    重试连接
+                  </button>
+                )}
               </div>
             ) : (
               <>
@@ -448,6 +498,19 @@ export default function App() {
               <X size={15} />
             </button>
           </div>
+        )}
+        {backupOpen && (
+          <Modal title="个人资料备份与恢复" wide onClose={() => setBackupOpen(false)}>
+            <BackupCenter
+              onRestored={() => {
+                localStorage.removeItem(draftKey);
+                sessionStorage.removeItem(
+                  'kaiju-profile-draft:' + (localStorage.getItem('kaiju-user') ?? 'guest'),
+                );
+                location.reload();
+              }}
+            />
+          </Modal>
         )}
         {archive && (
           <Modal title="我的备战档案" onClose={() => setArchive(false)}>

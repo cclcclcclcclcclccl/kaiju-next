@@ -1,0 +1,118 @@
+{
+  "checkedAt": "2026-10-14T13:11:23.964Z",
+  "status": {
+    "product": "开局 NEXT",
+    "version": "0.16.0",
+    "modelConfigured": false,
+    "heroCount": 133,
+    "identity": {
+      "mode": "guest",
+      "name": "访客"
+    }
+  },
+  "guestZhaoHuaizhenPreserved": true,
+  "backupCounts": {
+    "pool": 2,
+    "draft": "object",
+    "matches": 0,
+    "plans": 0,
+    "profile": "object",
+    "snapshots": 1,
+    "reviews": 0,
+    "runs": 0
+  },
+  "compression": {
+    "asset": "heroes-ETk_yhUU.js",
+    "decodedBytes": 1232263,
+    "transferredBytes": 284510,
+    "reductionPercent": 76.9
+  },
+  "sources": {
+    "rows": [
+      {
+        "mode": 1,
+        "queryDate": "2026-10-13",
+        "records": 135,
+        "state": "stale",
+        "checkedAt": "2026-10-14T13:05:18.691Z",
+        "fetchedAt": "2026-10-14T04:56:22.318Z",
+        "sourceUpdatedAt": "2026-10-14T01:24:53.818Z",
+        "inProgress": false
+      },
+      {
+        "mode": 3,
+        "queryDate": "2026-10-13",
+        "records": 135,
+        "state": "stale",
+        "checkedAt": "2026-10-14T13:05:19.220Z",
+        "fetchedAt": "2026-10-14T04:56:23.183Z",
+        "sourceUpdatedAt": "2026-10-14T01:24:54.776Z",
+        "inProgress": false
+      },
+      {
+        "mode": 4,
+        "queryDate": "2026-10-13",
+        "records": 135,
+        "state": "stale",
+        "checkedAt": "2026-10-14T13:05:20.213Z",
+        "fetchedAt": "2026-10-14T04:56:23.652Z",
+        "sourceUpdatedAt": "2026-10-14T01:24:55.571Z",
+        "inProgress": false
+      },
+      {
+        "mode": 5,
+        "queryDate": "2026-10-13",
+        "records": 133,
+        "state": "cached",
+        "checkedAt": "2026-10-14T13:05:20.215Z",
+        "fetchedAt": "2026-10-14T12:30:42.738Z",
+        "sourceUpdatedAt": "2026-10-14T12:07:08.078Z",
+        "inProgress": false
+      }
+    ],
+    "observedAt": "2026-10-14T13:11:19.536Z"
+  },
+  "liveBrowserErrors": [],
+  "personalTables": {
+    "settings": {
+      "unchanged": true,
+      "sha256": "b6b58b89d5dacb6af7468436e436cdeaaa2961a8310a265079f049e0c77cde35",
+      "rows": 2
+    },
+    "matches": {
+      "unchanged": true,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "rows": 0
+    },
+    "plans": {
+      "unchanged": true,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "rows": 0
+    },
+    "accounts": {
+      "unchanged": true,
+      "sha256": "842e46a7796af4de0f4f6245b3a0121dfff0d5c03b3258fa54de5d15f4ef130b",
+      "rows": 1
+    },
+    "sessions": {
+      "unchanged": true,
+      "sha256": "3f6fff9df232767cb08288b2107311baf5ed7c230215bb856726ddcb700d6a98",
+      "rows": 1
+    },
+    "friendships": {
+      "unchanged": true,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "rows": 0
+    },
+    "pool_history": {
+      "unchanged": true,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "rows": 0
+    }
+  },
+  "databaseIntegrity": "ok",
+  "historicalEvidence": {
+    "verified": 1845,
+    "regressionOutputsArchived": 35
+  }
+}

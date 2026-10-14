@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo, useRef } from 'react';
 import { Save, Download, Upload, Plus, Trash2 } from 'lucide-react';
 import { heroes, heroById } from '../catalog.ts';
 import { Portrait, Modal } from '../ui.tsx';
@@ -11,7 +11,21 @@ import { usePro } from './context.tsx';
 import { api, download } from '../../api.ts';
 export default function ProfilePage({ focusHeroId }: { focusHeroId?: number }) {
   const { data, refresh } = usePro();
-  const [profile, setProfile] = useState<Profile>(data.profile),
+  const draftKey = 'kaiju-profile-draft:' + (localStorage.getItem('kaiju-user') ?? 'guest');
+  const recovered = useMemo(() => {
+    try {
+      const raw = JSON.parse(sessionStorage.getItem(draftKey) ?? 'null');
+      if (raw)
+        return { base: profileSchema.parse(raw.base), draft: profileSchema.parse(raw.draft) };
+    } catch {}
+    return undefined;
+  }, [draftKey]);
+  const [base, setBase] = useState<Profile>(recovered?.base ?? data.profile);
+  const [draftNotice, setDraftNotice] = useState(
+    recovered ? '已恢复本标签页未保存草稿。保存时仍会核对服务器版本。' : '',
+  );
+  const previousData = useRef(data.profile);
+  const [profile, setProfile] = useState<Profile>(recovered?.draft ?? data.profile),
     [error, setError] = useState(''),
     [success, setSuccess] = useState(''),
     [busy, setBusy] = useState(false),
@@ -25,7 +39,33 @@ export default function ProfilePage({ focusHeroId }: { focusHeroId?: number }) {
     challengePercent: 0,
     activityPercent: 100,
   });
-  useEffect(() => setProfile(data.profile), [data.profile]);
+  useEffect(() => {
+    if (previousData.current === data.profile) return;
+    previousData.current = data.profile;
+    setBase(data.profile);
+    setProfile(data.profile);
+    setDraftNotice('');
+  }, [data.profile]);
+  useEffect(() => {
+    const dirty = JSON.stringify(profile) !== JSON.stringify(base);
+    try {
+      if (!dirty) sessionStorage.removeItem(draftKey);
+      else if (profileSchema.safeParse(profile).success) {
+        sessionStorage.setItem(draftKey, JSON.stringify({ base, draft: profile }));
+        setDraftNotice(
+          '未保存草稿已暂存于本标签页，刷新或切换栏目后可恢复；关闭标签页后不保证保留。',
+        );
+      } else setDraftNotice('草稿有未填完或不合法字段，请补齐或导出当前草稿后再离开。');
+    } catch {
+      setDraftNotice('浏览器暂存空间不足，请保存或导出当前草稿。');
+    }
+    const warn = (event: BeforeUnloadEvent) => {
+      event.preventDefault();
+      event.returnValue = '';
+    };
+    if (dirty) window.addEventListener('beforeunload', warn);
+    return () => window.removeEventListener('beforeunload', warn);
+  }, [profile, base, draftKey]);
   useEffect(() => {
     if (focusHeroId)
       setProfile((p) =>
@@ -56,7 +96,7 @@ export default function ProfilePage({ focusHeroId }: { focusHeroId?: number }) {
     setBusy(true);
     try {
       const d = profileSchema.parse(profile);
-      await api('/pro/profile-save', { expected: data.profile, profile: d });
+      await api('/pro/profile-save', { expected: base, profile: d });
       await refresh();
       setSuccess('档案已保存，BP 会使用这些记录评估你的个人发挥。');
     } catch (e) {
@@ -98,6 +138,7 @@ export default function ProfilePage({ focusHeroId }: { focusHeroId?: number }) {
         优先上传截图建立档案；手动补录与文件导入在下方折叠区。游戏账号自动同步尚未接通，核对后的记录直接用于英雄池、推荐、BP
         和体系适配。
       </div>
+      {draftNotice && <p className="pro-notice">{draftNotice}</p>}
       <div className="detail-actions">
         <button
           className="btn secondary"
@@ -128,7 +169,7 @@ export default function ProfilePage({ focusHeroId }: { focusHeroId?: number }) {
       </div>
       <ScreenshotImport
         profile={profile}
-        expectedProfile={data.profile}
+        expectedProfile={base}
         onSaved={refresh}
         onBusy={setBusy}
       />

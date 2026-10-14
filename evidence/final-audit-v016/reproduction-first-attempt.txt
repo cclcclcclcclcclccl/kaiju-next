@@ -1,0 +1,14 @@
+
+added 79 packages in 14s
+server/player/environment.test.ts(29,36): error TS7006: Parameter 'r' implicitly has an 'any' type.
+server/player/environment.test.ts(29,58): error TS7006: Parameter 'a' implicitly has an 'any' type.
+server/player/environment.test.ts(29,61): error TS7006: Parameter 'b' implicitly has an 'any' type.
+server/player/environment.test.ts(33,39): error TS7006: Parameter 'r' implicitly has an 'any' type.
+server/player/environment.test.ts(33,70): error TS7006: Parameter 'r' implicitly has an 'any' type.
+server/player/environment.test.ts(36,48): error TS7006: Parameter 'r' implicitly has an 'any' type.
+server/player/environment.test.ts(42,16): error TS7006: Parameter 'r' implicitly has an 'any' type.
+server/player/environment.test.ts(43,26): error TS7006: Parameter 'e' implicitly has an 'any' type.
+server/player/environment.test.ts(45,52): error TS7006: Parameter 'r' implicitly has an 'any' type.
+src/player/pro/environment.ts(1,22): error TS2307: Cannot find module '../../../examples/tianyuan-complete-observation-2026-10-12.json' or its corresponding type declarations.
+src/player/pro/publicReferences.ts(1,22): error TS2307: Cannot find module '../../../examples/tianyuan-expanded-2026-10-11.json' or its corresponding type declarations.
+src/player/pro/publicReferences.ts(2,20): error TS2307: Cannot find module '../../../examples/tianyuan-expanded-2026-10-12.json' or its corresponding type declarations.

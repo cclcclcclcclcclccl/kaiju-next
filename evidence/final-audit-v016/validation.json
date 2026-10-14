@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-10-14T13:18:32.171Z",
+  "version": "0.16.0",
+  "coreTests": {
+    "passed": 74,
+    "failed": 0,
+    "log": "core-tests.txt"
+  },
+  "browserTests": {
+    "startTime": "2026-10-14T13:01:13.451Z",
+    "duration": 174040.108,
+    "expected": 44,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "finalBackupBrowserRecheck": {
+    "startTime": "2026-10-14T13:17:04.856Z",
+    "duration": 7491.607999999999,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "typecheck": true,
+  "build": true,
+  "format": true,
+  "reproduction": {
+    "checkedAt": "2026-10-14T13:17:45.657Z",
+    "elapsedSeconds": 33,
+    "freshInstall": true,
+    "freshBuild": true,
+    "freshDatabase": true,
+    "status": {
+      "product": "开局 NEXT",
+      "version": "0.16.0",
+      "modelConfigured": false,
+      "heroCount": 133,
+      "identity": {
+        "mode": "guest",
+        "name": "访客"
+      }
+    },
+    "node": "v24.16.0",
+    "sourceDirectory": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\.reproduction\\audit-1791983832566",
+    "note": "Core local startup verified; OCR model installation and external data availability are separate prerequisites."
+  },
+  "liveCheck": "live-validation.json",
+  "finalRestart": {
+    "checkedAt": "2026-10-14T13:18:02.285Z",
+    "status": {
+      "product": "开局 NEXT",
+      "version": "0.16.0",
+      "modelConfigured": false,
+      "heroCount": 133,
+      "identity": {
+        "mode": "guest",
+        "name": "访客"
+      }
+    },
+    "allPersonalTableHashesStillMatch": true,
+    "databaseIntegrity": "ok",
+    "zhaoHuaizhenRetained": true
+  },
+  "compression": {
+    "asset": "heroes-ETk_yhUU.js",
+    "decodedBytes": 1232263,
+    "transferredBytes": 284510,
+    "reductionPercent": 76.9
+  },
+  "historicalEvidence": {
+    "verified": 1845,
+    "regressionOutputsArchived": 35
+  },
+  "bp": {
+    "games": 12,
+    "allLegal": true,
+    "syntheticOnly": true,
+    "trained": false
+  },
+  "strength": {
+    "boards": 24,
+    "sourceDate": "2026-10-13",
+    "method": "开局强度 v2.0",
+    "realMatchCalibration": false
+  },
+  "limitsDocument": "docs/24-release-audit-and-blockers.md",
+  "note": "Automated engineering checks do not establish professional BP strength, real gameplay OCR/vision accuracy, data completeness, or contest award outcomes."
+}

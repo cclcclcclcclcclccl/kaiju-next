@@ -18,6 +18,7 @@ export default function Replay() {
   const { data, refresh, configured } = usePro();
   const video = useRef<HTMLVideoElement>(null);
   const [savedId, setSavedId] = useState<string>();
+  const [savedRevision, setSavedRevision] = useState<string | null>(null);
   const [url, setUrl] = useState(''),
     [videoName, setVideoName] = useState(''),
     [title, setTitle] = useState('我的对局复盘'),
@@ -34,6 +35,28 @@ export default function Replay() {
   const [handoff, setHandoff] = useState<ReviewHandoff | null>(null);
   const [codexResult, setCodexResult] = useState<CodexReview | null>(null);
   const epoch = useRef(0);
+  const [savedContent, setSavedContent] = useState('');
+  const content = JSON.stringify({ title, heroId, videoName, events });
+  const dirty = Boolean(savedId || events.length > 0) && content !== savedContent;
+  const allowDiscard = () =>
+    !dirty || window.confirm('这份复盘有未保存修改。请先保存或导出；确定要放弃修改吗？');
+  useEffect(() => {
+    if (!dirty) return;
+    const unload = (event: BeforeUnloadEvent) => {
+      event.preventDefault();
+      event.returnValue = '';
+    };
+    const navigate = (event: Event) => {
+      if (!window.confirm('这份复盘有未保存修改。离开前请保存或导出，确定离开吗？'))
+        event.preventDefault();
+    };
+    window.addEventListener('beforeunload', unload);
+    window.addEventListener('kaiju-before-navigate', navigate);
+    return () => {
+      window.removeEventListener('beforeunload', unload);
+      window.removeEventListener('kaiju-before-navigate', navigate);
+    };
+  }, [dirty]);
   useEffect(
     () => () => {
       if (url) URL.revokeObjectURL(url);
@@ -103,11 +126,14 @@ export default function Replay() {
     setBusy(true);
     setMessage('');
     try {
-      const saved = await api<Review>('/pro/review', {
-        ...payload(),
+      const saved = await api<Review & { revision: string }>('/pro/review-save', {
+        review: payload(),
+        expectedRevision: savedRevision,
         ...(savedId ? { id: savedId } : {}),
       });
       setSavedId(saved.id);
+      setSavedRevision(saved.revision);
+      setSavedContent(content);
       await refresh();
       setMessage('复盘与关键帧已保存到当前账号');
     } catch (e) {
@@ -180,22 +206,35 @@ export default function Replay() {
     }
   };
   const reopen = async (id: string) => {
+    if (!allowDiscard()) return;
     setMessage('');
+    setBusy(true);
     try {
-      const r = await api<Review>('/pro/review-get', { id });
+      const r = await api<Review & { revision: string }>('/pro/review-get', { id });
       setSavedId(r.id);
+      setSavedRevision(r.revision);
       setTitle(r.title);
       setHeroId(r.heroId);
       setVideoName(r.videoName);
       setEvents(r.events);
+      setSavedContent(
+        JSON.stringify({
+          title: r.title,
+          heroId: r.heroId,
+          videoName: r.videoName,
+          events: r.events,
+        }),
+      );
       setActive(r.events[0]?.id ?? '');
       setUrl('');
     } catch (e) {
       setMessage((e as Error).message);
+    } finally {
+      setBusy(false);
     }
   };
   return (
-    <>
+    <fieldset className="profile-workspace" disabled={busy} aria-label="复盘编辑区">
       <div className="page-heading">
         <div>
           <p className="eyebrow">REPLAY ROOM / EVIDENCE BEFORE JUDGMENT</p>
@@ -289,7 +328,9 @@ export default function Replay() {
           className="btn secondary"
           disabled={busy}
           onClick={() => {
+            if (!allowDiscard()) return;
             setSavedId(undefined);
+            setSavedRevision(null);
             setUrl('');
             setVideoName('');
             setTitle('我的对局复盘');
@@ -684,6 +725,6 @@ export default function Replay() {
           <p className="muted">保存后可从这里重新打开，截图和观察不会丢失。</p>
         )}
       </section>
-    </>
+    </fieldset>
   );
 }

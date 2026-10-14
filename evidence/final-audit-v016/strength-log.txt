@@ -1,0 +1,30 @@
+{
+  "boards": 24,
+  "publisherTierDifferences": 92,
+  "global": [
+    {
+      "mode": 1,
+      "heroes": 133,
+      "sensitive": 82,
+      "top": "赵云"
+    },
+    {
+      "mode": 3,
+      "heroes": 133,
+      "sensitive": 80,
+      "top": "嫦娥"
+    },
+    {
+      "mode": 4,
+      "heroes": 133,
+      "sensitive": 84,
+      "top": "赵云"
+    },
+    {
+      "mode": 5,
+      "heroes": 133,
+      "sensitive": 78,
+      "top": "赵云"
+    }
+  ]
+}
