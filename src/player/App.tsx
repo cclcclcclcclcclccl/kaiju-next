@@ -9,7 +9,7 @@ import Systems from './pro/Systems.tsx';
 import Replay from './pro/Replay.tsx';
 import ResourceCenter from './pro/ResourceCenter.tsx';
 import { BarChart3, Users, Video, Network, Gauge } from 'lucide-react';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, useRef } from 'react';
 import {
   Aperture,
   LayoutDashboard,
@@ -136,10 +136,31 @@ export default function App() {
     }
   };
   const updatePool = (next: Pool) => {
-    void mutate(async () => setPool(await api<Pool>('/pool', next)), '英雄池已保存').catch(
-      () => {},
-    );
+    if (poolSaving.current) return;
+    const ids = new Set([...pool, ...next].map((p) => p.heroId));
+    const changes = [...ids]
+      .map((heroId) => ({
+        heroId,
+        expected: pool.find((p) => p.heroId === heroId)?.level ?? null,
+        level: next.find((p) => p.heroId === heroId)?.level ?? null,
+      }))
+      .filter((c) => c.expected !== c.level);
+    if (!changes.length) return;
+    poolSaving.current = true;
+    void mutate(
+      async () => setPool(await api<Pool>('/pool-edit', { changes })),
+      '英雄池已写入本机数据库',
+    )
+      .catch(async () => {
+        try {
+          setPool((await api<Workspace>('/workspace')).pool);
+        } catch {}
+      })
+      .finally(() => {
+        poolSaving.current = false;
+      });
   };
+  const poolSaving = useRef(false);
   const editRecord = (id?: number) => {
     setProfileHero(id);
     setHero(null);
@@ -266,7 +287,7 @@ export default function App() {
             <span>
               <i />
               {ready ? '本地工作台已连接' : '正在连接本地服务'}
-              <small>v0.13</small>
+              <small>v0.14</small>
             </span>
           </div>
         </aside>
@@ -379,6 +400,7 @@ export default function App() {
                     onOpen={openHero}
                     busy={busy}
                     onlyPool={page === 'pool'}
+                    onSavedPool={setPool}
                     onEditRecord={editRecord}
                   />
                 )}

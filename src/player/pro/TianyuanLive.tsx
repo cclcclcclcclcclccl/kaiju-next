@@ -19,7 +19,7 @@ import type { TianyuanPacket, TianyuanStat, TianyuanQuery } from './tianyuan.ts'
 import { strengthRanks, STRENGTH_TIERS, STRENGTH_VERSION } from './strength.ts';
 import { StrengthExplanation, StrengthMethod } from './StrengthExplain.tsx';
 
-function useSource<T>(query: TianyuanQuery | undefined) {
+export function useSource<T>(query: TianyuanQuery | undefined) {
   const key = query
     ? new URLSearchParams(Object.entries(query).map(([k, v]) => [k, String(v)])).toString()
     : '';
@@ -51,7 +51,7 @@ function useSource<T>(query: TianyuanQuery | undefined) {
 }
 const percentage = (value: number | null | undefined) =>
   value == null ? '未公布' : value.toFixed(2) + '%';
-function Provenance({ packet }: { packet: TianyuanPacket }) {
+export function Provenance({ packet }: { packet: TianyuanPacket }) {
   return (
     <details className="source-proof">
       <summary>

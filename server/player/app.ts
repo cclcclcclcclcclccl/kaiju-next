@@ -146,7 +146,7 @@ export function createPlayerApp(
       if (method === 'GET' && url.pathname === '/api/status')
         return send(200, {
           product: '开局 NEXT',
-          version: '0.13.0',
+          version: '0.14.0',
           modelConfigured: Boolean(providerConfig()),
           heroCount: heroes.length,
         });
@@ -156,6 +156,45 @@ export function createPlayerApp(
         const data = poolSchema.parse(await body(req));
         validateIds(data.map((p) => p.heroId));
         return send(200, store.pool(data));
+      }
+      if (method === 'GET' && url.pathname === '/api/pool-status') {
+        const history = store.poolHistory();
+        return send(200, {
+          mode: user ? 'account' : 'guest',
+          name: user?.name ?? '本机访客',
+          pool: store.workspace().pool,
+          savedAt: history[0]?.savedAt ?? null,
+          history,
+          guestPool: user ? rootStore.workspace().pool : [],
+        });
+      }
+      if (method === 'POST' && url.pathname === '/api/pool-edit') {
+        const level = z.enum(['learning', 'comfortable', 'main']).nullable();
+        const data = z
+          .object({
+            changes: z
+              .array(
+                z.object({ heroId: z.number().int().positive(), expected: level, level }).strict(),
+              )
+              .min(1)
+              .max(150),
+          })
+          .strict()
+          .parse(await body(req));
+        validateIds(data.changes.map((c) => c.heroId));
+        if (new Set(data.changes.map((c) => c.heroId)).size !== data.changes.length)
+          throw new PlayerHttpError(400, '重复的英雄修改');
+        const result = store.poolEdit(data.changes);
+        return send(
+          result.conflict ? 409 : 200,
+          result.conflict
+            ? { error: '此英雄已在另一个页面修改，已保留服务器记录。请重新核对后再操作。' }
+            : result.pool,
+        );
+      }
+      if (method === 'POST' && url.pathname === '/api/pool-import-guest') {
+        if (!user) throw new PlayerHttpError(400, '当前已经是本机访客工作台');
+        return send(200, store.mergePool(rootStore.workspace().pool));
       }
       if (method === 'POST' && url.pathname === '/api/draft') {
         const data = draftSchema.parse(await body(req));

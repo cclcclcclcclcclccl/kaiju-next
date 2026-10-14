@@ -12,6 +12,7 @@ import { usePro } from './pro/context.tsx';
 import { mastery, effectivePool } from './pro/analytics.ts';
 import PersonalRecommendations, { PersonalGuide } from './pro/PersonalRecommendations.tsx';
 import type { Role } from './model.ts';
+import PoolStorage from './pro/PoolStorage.tsx';
 
 export function HeroDetail({
   hero,
@@ -247,9 +248,10 @@ export default function Heroes({
   pool,
   onPool,
   onOpen,
-  busy,
+  busy: parentBusy,
   onlyPool = false,
   onEditRecord,
+  onSavedPool,
 }: {
   pool: Pool;
   onPool: (pool: Pool) => void;
@@ -257,8 +259,11 @@ export default function Heroes({
   busy: boolean;
   onlyPool?: boolean;
   onEditRecord?: (id?: number) => void;
+  onSavedPool?: (pool: Pool) => void;
 }) {
   const { data } = usePro();
+  const [storageBusy, setStorageBusy] = useState(false);
+  const busy = parentBusy || storageBusy;
   const combinedPool = useMemo(() => effectivePool(pool, data.profile), [pool, data.profile]);
   const [query, setQuery] = useState(''),
     [role, setRole] = useState('全部');
@@ -286,8 +291,8 @@ export default function Heroes({
         </div>
         <span className="outline-tag">{onlyPool ? combinedPool.length : heroes.length} 位英雄</span>
       </div>
-      {onlyPool && onEditRecord && (
-        <PersonalRecommendations pool={pool} onOpen={onOpen} onEdit={() => onEditRecord()} />
+      {onlyPool && onSavedPool && (
+        <PoolStorage pool={pool} busy={busy} onSavedPool={onSavedPool} onWorking={setStorageBusy} />
       )}
       <div className="atlas-toolbar">
         <div className="filter-tabs">
@@ -427,6 +432,20 @@ export default function Heroes({
             );
           })}
         </div>
+      ) : onlyPool && combinedPool.length > 0 ? (
+        <div className="surface">
+          <h2>当前筛选没有匹配英雄</h2>
+          <p>英雄池仍有 {combinedPool.length} 位英雄，清除筛选即可查看。</p>
+          <button
+            className="btn secondary"
+            onClick={() => {
+              setQuery('');
+              setRole('全部');
+            }}
+          >
+            清除英雄池筛选
+          </button>
+        </div>
       ) : (
         <Empty
           title={onlyPool ? '从真正会玩的英雄开始' : '没有找到这个英雄'}
@@ -434,6 +453,9 @@ export default function Heroes({
             onlyPool ? '在英雄图鉴中点击加号，把常玩的英雄加入这里。' : '试着换一个名字或分路筛选。'
           }
         />
+      )}
+      {onlyPool && onEditRecord && (
+        <PersonalRecommendations pool={pool} onOpen={onOpen} onEdit={() => onEditRecord()} />
       )}
       <p className="data-caption">
         英雄目录与立绘：腾讯王者荣耀官方公开资料 · 战术笔记：本项目整理的定性建议 ·

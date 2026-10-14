@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-10-14T12:14:26.622Z",
+  "status": {
+    "product": "开局 NEXT",
+    "version": "0.14.0",
+    "modelConfigured": false,
+    "heroCount": 133
+  },
+  "preservation": [
+    {
+      "table": "settings",
+      "rows": 2,
+      "sha256": "d64fb6ad73085cb5fb4e79b8b2042e575cd5d32becdb51924ba41ec80a296fb9",
+      "unchanged": true
+    },
+    {
+      "table": "matches",
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "unchanged": true
+    },
+    {
+      "table": "plans",
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "unchanged": true
+    },
+    {
+      "table": "accounts",
+      "rows": 1,
+      "sha256": "e9b852eeae615a7fea2e97768820bfc381a06f5feb8468ed7f2ac5d08a0f1930",
+      "unchanged": true
+    },
+    {
+      "table": "sessions",
+      "rows": 1,
+      "sha256": "f3a2bbbdc020c556332965d0bce71ccc3bd64ad41cfe2b8acd9f785223d9add2",
+      "unchanged": true
+    },
+    {
+      "table": "friendships",
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "unchanged": true
+    }
+  ],
+  "integrity": {
+    "integrity_check": "ok"
+  },
+  "guestHero544Retained": true,
+  "equipment": [
+    {
+      "heroId": 544,
+      "count": 10,
+      "cache": "cached",
+      "fetchedAt": "2026-10-14T12:04:25.826Z",
+      "rawSha256": "a7063e685e6f24c72cb7bfd9c31bb23d8cd4ebe300974afc57348bb5597efa9a"
+    },
+    {
+      "heroId": 521,
+      "count": 10,
+      "cache": "cached",
+      "fetchedAt": "2026-10-14T12:04:26.544Z",
+      "rawSha256": "c1e2cae068a61cbd288c91e8a4f817609b753f892628746ad8385e50698b0ead"
+    }
+  ],
+  "browser": {
+    "scope": "fresh guest context, read-only",
+    "pageErrors": [],
+    "mobileOverflow": false
+  }
+}

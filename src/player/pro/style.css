@@ -1871,3 +1871,33 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+/* Keep persistence and query scope visible before optional advice. */
+.pool-storage,
+.equipment-statistics {
+  padding: 22px;
+  margin-bottom: 24px;
+  min-width: 0;
+}
+.pool-storage .section-title,
+.equipment-statistics .section-title {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.pool-history {
+  padding-left: 20px;
+  overflow-wrap: anywhere;
+}
+.pool-history li {
+  margin: 16px 0;
+}
+.pool-history p {
+  margin: 6px 0;
+}
+.equipment-statistics .roster-table {
+  min-width: 0;
+  width: 100%;
+}
+.equipment-statistics .roster-table th,
+.equipment-statistics .roster-table td {
+  padding: 12px 8px;
+}

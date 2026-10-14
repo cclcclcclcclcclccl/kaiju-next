@@ -5,6 +5,7 @@ import { heroes, heroById } from '../catalog.ts';
 import type { Hero } from '../model.ts';
 import type { ResourceResult, UpdateArticle } from './resources.ts';
 import SkinObservation from './SkinObservation.tsx';
+import EquipmentStats from './EquipmentStats.tsx';
 let cached: ResourceResult | undefined, pending: Promise<ResourceResult> | undefined;
 function requestResources() {
   if (pending) return pending;
@@ -118,7 +119,7 @@ export function HeroResources({ hero }: { hero: Hero }) {
         <h3>皮肤图录 · {skins.length} 款已接入</h3>
         <SkinObservation heroId={hero.id} />
         <p className="data-caption">
-          官方目录与文案。目录不保证覆盖全部历史皮肤；使用率与独立玩家评价尚缺可靠数据源。
+          官方目录与文案。目录不保证覆盖全部历史皮肤；来源皮肤使用率见上方观察面板，独立玩家评价尚待核验。
         </p>
         <div className="skin-grid compact">
           {skins.map((s) => (
@@ -130,7 +131,9 @@ export function HeroResources({ hero }: { hero: Hero }) {
                   {s.quality || '官方未标注品质'} · {s.releasedOn || '上架日期未知'}
                 </small>
                 <p>{s.description || '暂无官方介绍'}</p>
-                <span className="data-caption">使用率 — · 暂无来源</span>
+                <span className="data-caption">
+                  使用率 — · 图录未关联统计，请查看上方使用率面板
+                </span>
               </div>
             </article>
           ))}
@@ -180,6 +183,7 @@ export default function ResourceCenter({ onOpen }: { onOpen: (hero: Hero) => voi
       <div className="resource-tabs" role="group" aria-label="资料分类">
         {[
           ['equipment', '装备库', Shield],
+          ['equipment-stats', '装备出场率 / 胜率', Shield],
           ['skins', '皮肤图录', Sparkles],
           ['updates', '版本动态', Radio],
         ].map(([key, label, Icon]) => {
@@ -201,6 +205,7 @@ export default function ResourceCenter({ onOpen }: { onOpen: (hero: Hero) => voi
           );
         })}
       </div>
+      {tab === 'equipment-stats' && <EquipmentStats onOpen={onOpen} />}
       {error && (
         <p role="alert" className="pro-notice">
           {error}
@@ -241,7 +246,10 @@ export default function ResourceCenter({ onOpen }: { onOpen: (hero: Hero) => voi
               </div>
               <p className="pro-notice">
                 先比较机制，再决定出装。选择最多 3
-                件装备并排查看总价和效果。装备胜率、出场率暂无可靠公开统计，不能用价格或英雄胜率代替。
+                件装备并排查看总价和效果。出场率与胜率已接入按英雄查询的公开统计。
+                <button className="text-btn" onClick={() => setTab('equipment-stats')}>
+                  查看装备出场率与胜率 →
+                </button>
               </p>
               {chosen.length > 0 && (
                 <section className="surface equipment-compare" aria-label="装备对比">
@@ -343,7 +351,7 @@ export default function ResourceCenter({ onOpen }: { onOpen: (hero: Hero) => voi
                 </span>
               </div>
               <p className="pro-notice">
-                这里是官方目录已公开的皮肤，不保证等于游戏全量。文案为官方介绍；使用率、时间趋势和独立评价仍待接入可核验来源。
+                这里是官方目录已公开的皮肤，不保证等于游戏全量。文案为官方介绍；按英雄的来源使用率可进入图鉴的皮肤面板查看，时间趋势和独立评价仍待核验。
               </p>
               <div className="skin-grid">
                 {skins.slice(0, limit).map((s) => (
@@ -366,7 +374,7 @@ export default function ResourceCenter({ onOpen }: { onOpen: (hero: Hero) => voi
                         {s.heroName} · 查看图鉴 ↗
                       </button>
                       <p>{s.description || '暂无官方介绍'}</p>
-                      <p className="data-caption">使用率 — · 暂无来源</p>
+                      <p className="data-caption">使用率 — · 图录未关联统计，请进入英雄图鉴查看</p>
                     </div>
                   </article>
                 ))}

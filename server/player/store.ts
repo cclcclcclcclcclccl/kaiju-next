@@ -30,6 +30,9 @@ export function createPlayerStore(path: string) {
           code: String(r.code),
         }
       : null;
+  db.exec(
+    'CREATE TABLE IF NOT EXISTS pool_history(id INTEGER PRIMARY KEY AUTOINCREMENT, owner TEXT NOT NULL, before_json TEXT NOT NULL, after_json TEXT NOT NULL, reason TEXT NOT NULL, created_at TEXT NOT NULL)',
+  );
   function scoped(owner: string) {
     const key = (k: string) => (owner === 'local' ? k : 'account:' + owner + ':' + k);
     const get = (k: string, fallback: unknown) => {
@@ -41,6 +44,27 @@ export function createPlayerStore(path: string) {
         'INSERT INTO settings VALUES(?,?) ON CONFLICT(key) DO UPDATE SET payload=excluded.payload',
       ).run(key(k), JSON.stringify(value));
       return value;
+    };
+    const transaction = <T>(fn: () => T): T => {
+      db.exec('BEGIN IMMEDIATE');
+      try {
+        const result = fn();
+        db.exec('COMMIT');
+        return result;
+      } catch (e) {
+        db.exec('ROLLBACK');
+        throw e;
+      }
+    };
+    const writePool = (pool: Pool, reason: string) => {
+      const old = get('pool', []) as Pool;
+      if (JSON.stringify(old) !== JSON.stringify(pool)) {
+        db.prepare(
+          'INSERT INTO pool_history(owner,before_json,after_json,reason,created_at) VALUES(?,?,?,?,?)',
+        ).run(owner, JSON.stringify(old), JSON.stringify(pool), reason, new Date().toISOString());
+        set('pool', pool);
+      }
+      return pool;
     };
     return {
       close: () => db.close(),
@@ -56,7 +80,50 @@ export function createPlayerStore(path: string) {
           .all(owner)
           .map((r) => JSON.parse(String(r.payload))) as SavedPlan[],
       }),
-      pool: (pool: Pool) => set('pool', pool) as Pool,
+      pool: (pool: Pool) => transaction(() => writePool(pool, '完整英雄池保存')),
+      poolEdit: (
+        changes: {
+          heroId: number;
+          expected: Pool[number]['level'] | null;
+          level: Pool[number]['level'] | null;
+        }[],
+      ) =>
+        transaction(() => {
+          const current = get('pool', []) as Pool;
+          if (
+            changes.some(
+              (c) => (current.find((p) => p.heroId === c.heroId)?.level ?? null) !== c.expected,
+            )
+          )
+            return { conflict: true, pool: current };
+          let next = [...current];
+          for (const c of changes) {
+            next = next.filter((p) => p.heroId !== c.heroId);
+            if (c.level) next.push({ heroId: c.heroId, level: c.level });
+          }
+          return { conflict: false, pool: writePool(next, '按英雄保存') };
+        }),
+      mergePool: (incoming: Pool) =>
+        transaction(() => {
+          const current = get('pool', []) as Pool;
+          return writePool(
+            [...current, ...incoming.filter((p) => !current.some((c) => c.heroId === p.heroId))],
+            '复制访客英雄池（保留已有记录）',
+          );
+        }),
+      poolHistory: () =>
+        db
+          .prepare(
+            'SELECT id,reason,created_at AS savedAt,before_json,after_json FROM pool_history WHERE owner=? ORDER BY id DESC LIMIT 20',
+          )
+          .all(owner)
+          .map((r) => ({
+            id: Number(r.id),
+            reason: String(r.reason),
+            savedAt: String(r.savedAt),
+            before: JSON.parse(String(r.before_json)) as Pool,
+            after: JSON.parse(String(r.after_json)) as Pool,
+          })),
       draft: (draft: Draft) => set('draft', draft) as Draft,
       addMatch: (input: MatchInput) => {
         const match: Match = {

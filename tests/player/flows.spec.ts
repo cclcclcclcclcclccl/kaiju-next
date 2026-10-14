@@ -21,7 +21,7 @@ test('hero discovery uses real skills and persists the personal hero pool', asyn
   await page.getByRole('button', { name: '加入我的英雄池', exact: true }).click();
   await expect(page.getByLabel('英雄熟练度', { exact: true })).toBeVisible();
   await page.getByLabel('英雄熟练度', { exact: true }).selectOption('main');
-  await expect(page.getByRole('status')).toContainText('英雄池已保存');
+  await expect(page.getByRole('status')).toContainText('英雄池已写入本机数据库');
   await page.keyboard.press('Escape');
   await page.reload();
   await page
