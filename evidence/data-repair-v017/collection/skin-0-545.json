@@ -1,0 +1,40 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=545",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 545
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:17:55.973Z",
+  "rawSha256": "2aeca7c039a310f7af1891586b85beba0618254c659b5dfa2a33d64149422d3e",
+  "cache": "fresh",
+  "data": {
+    "heroId": 545,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "西部游侠",
+        "pickRate": 50.2
+      },
+      {
+        "skinName": "光弋星穹",
+        "pickRate": 26.16
+      },
+      {
+        "skinName": "末日机甲",
+        "pickRate": 14.3
+      },
+      {
+        "skinName": "踏浪烽翎",
+        "pickRate": 9.02
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.32
+      }
+    ]
+  }
+}

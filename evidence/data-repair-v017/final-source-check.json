@@ -1,0 +1,23 @@
+[
+  {
+    "query": {
+      "kind": "equip",
+      "heroId": 115,
+      "date": "2026-10-13"
+    },
+    "state": "fresh",
+    "rawSha256": "bd766c1499619373d27adb3a663f1160229116b47e0104bc8d3bd83fb9cd493f",
+    "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=115",
+    "records": 10
+  },
+  {
+    "query": {
+      "kind": "tier",
+      "date": "2026-10-14"
+    },
+    "state": "fresh",
+    "rawSha256": "ef7ed20d47a9ec47b1a82f727ecea0bd8e27d3d58f96df6aaee169cb18b36a23",
+    "url": "https://tianyuanzhiyi.com/api/global/tier?date=2026-10-14",
+    "records": 133
+  }
+]

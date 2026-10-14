@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=540",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 540
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:17:44.913Z",
+  "rawSha256": "e7ac2310663a666dc32645f77137eca539ea0074383bba76ca2149369dcea1d8",
+  "cache": "fresh",
+  "data": {
+    "heroId": 540,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 12211,
+        "equipmentName": "梦魇之牙",
+        "pickRate": 80.7,
+        "winRate": 44.47
+      },
+      {
+        "equipmentId": 1235,
+        "equipmentName": "痛苦面具",
+        "pickRate": 53.43,
+        "winRate": 49.85
+      },
+      {
+        "equipmentId": 1426,
+        "equipmentName": "疾步之靴",
+        "pickRate": 49.44,
+        "winRate": 46.45
+      },
+      {
+        "equipmentId": 1727,
+        "equipmentName": "日暮之流",
+        "pickRate": 39.87,
+        "winRate": 52.4
+      },
+      {
+        "equipmentId": 1424,
+        "equipmentName": "秘法之靴",
+        "pickRate": 26.79,
+        "winRate": 46.43
+      },
+      {
+        "equipmentId": 1232,
+        "equipmentName": "博学者之怒",
+        "pickRate": 24.24,
+        "winRate": 51.32
+      },
+      {
+        "equipmentId": 1234,
+        "equipmentName": "凝冰之息",
+        "pickRate": 19.94,
+        "winRate": 49.6
+      },
+      {
+        "equipmentId": 1423,
+        "equipmentName": "冷静之靴",
+        "pickRate": 17.7,
+        "winRate": 41.44
+      },
+      {
+        "equipmentId": 1233,
+        "equipmentName": "回响之杖",
+        "pickRate": 14.67,
+        "winRate": 47.83
+      },
+      {
+        "equipmentId": 1238,
+        "equipmentName": "贤者天书",
+        "pickRate": 13.56,
+        "winRate": 52.94
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=196",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 196
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:14:21.182Z",
+  "rawSha256": "d2e2c3ff819e31a1cc589dd10587a569b59fea9cef3b62a2fae35d7e77fe69cd",
+  "cache": "fresh",
+  "data": {
+    "heroId": 196,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1133,
+        "equipmentName": "无尽战刃",
+        "pickRate": 99.84,
+        "winRate": 49.27
+      },
+      {
+        "equipmentId": 1136,
+        "equipmentName": "影刃",
+        "pickRate": 85.9,
+        "winRate": 52.51
+      },
+      {
+        "equipmentId": 1155,
+        "equipmentName": "仁者破晓",
+        "pickRate": 81.72,
+        "winRate": 55.77
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 41.76,
+        "winRate": 52.64
+      },
+      {
+        "equipmentId": 1126,
+        "equipmentName": "末世",
+        "pickRate": 40.4,
+        "winRate": 65.41
+      },
+      {
+        "equipmentId": 1425,
+        "equipmentName": "急速战靴",
+        "pickRate": 29.48,
+        "winRate": 38.22
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 19.4,
+        "winRate": 50.63
+      },
+      {
+        "equipmentId": 1141,
+        "equipmentName": "逐日之弓",
+        "pickRate": 11.69,
+        "winRate": 71.04
+      },
+      {
+        "equipmentId": 1161,
+        "equipmentName": "幽影袖箭",
+        "pickRate": 10.4,
+        "winRate": 60.91
+      },
+      {
+        "equipmentId": 1138,
+        "equipmentName": "强者破军",
+        "pickRate": 6.25,
+        "winRate": 61.96
+      }
+    ]
+  }
+}

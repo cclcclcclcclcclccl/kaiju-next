@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=549",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 549
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:18:14.363Z",
+  "rawSha256": "150afb48b936ebfe7d4f4a80d0a8abe4091e352ffb7a39d983c88acaf42e008c",
+  "cache": "fresh",
+  "data": {
+    "heroId": 549,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "pickRate": 91.46,
+        "winRate": 49
+      },
+      {
+        "equipmentId": 1133,
+        "equipmentName": "无尽战刃",
+        "pickRate": 91.31,
+        "winRate": 47.4
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 55.52,
+        "winRate": 46.93
+      },
+      {
+        "equipmentId": 1533,
+        "equipmentName": "贪婪之噬",
+        "pickRate": 54.17,
+        "winRate": 52.61
+      },
+      {
+        "equipmentId": 1534,
+        "equipmentName": "怒龙剑盾",
+        "pickRate": 35.94,
+        "winRate": 57.14
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 21.59,
+        "winRate": 46.67
+      },
+      {
+        "equipmentId": 1127,
+        "equipmentName": "名刀·司命",
+        "pickRate": 19.05,
+        "winRate": 59.7
+      },
+      {
+        "equipmentId": 1126,
+        "equipmentName": "末世",
+        "pickRate": 17.75,
+        "winRate": 63.51
+      },
+      {
+        "equipmentId": 1134,
+        "equipmentName": "宗师之力",
+        "pickRate": 16.22,
+        "winRate": 60.06
+      },
+      {
+        "equipmentId": 13310,
+        "equipmentName": "冰痕之握",
+        "pickRate": 13.58,
+        "winRate": 47.35
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=174",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 174
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:12:36.059Z",
+  "rawSha256": "c41f184f87b9a91b5fcf553be51ffe307d225d6b9bb00f709381a3533623e643",
+  "cache": "fresh",
+  "data": {
+    "heroId": 174,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "神鉴启示录",
+        "pickRate": 45.04
+      },
+      {
+        "skinName": "启明星使",
+        "pickRate": 17.35
+      },
+      {
+        "skinName": "愿照·岁时盈",
+        "pickRate": 11.66
+      },
+      {
+        "skinName": "溯影追猎",
+        "pickRate": 5.98
+      },
+      {
+        "skinName": "无限倾心",
+        "pickRate": 5.39
+      },
+      {
+        "skinName": "加勒比小姐",
+        "pickRate": 3.94
+      },
+      {
+        "skinName": "夏日便利店",
+        "pickRate": 3.64
+      },
+      {
+        "skinName": "云霓雀翎",
+        "pickRate": 3.35
+      },
+      {
+        "skinName": "霸王别姬",
+        "pickRate": 2.04
+      },
+      {
+        "skinName": "凯尔特女王",
+        "pickRate": 1.02
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.58
+      }
+    ]
+  }
+}

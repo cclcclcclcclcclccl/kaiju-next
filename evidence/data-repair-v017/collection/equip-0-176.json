@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=176",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 176
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:12:49.144Z",
+  "rawSha256": "fcda066e33d69e596608dd264f31bf58ac72c64069783c2ce0a90bb39b2d3605",
+  "cache": "fresh",
+  "data": {
+    "heroId": 176,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1236,
+        "equipmentName": "巫术法杖",
+        "pickRate": 68.15,
+        "winRate": 52.73
+      },
+      {
+        "equipmentId": 1727,
+        "equipmentName": "日暮之流",
+        "pickRate": 55.9,
+        "winRate": 56.93
+      },
+      {
+        "equipmentId": 1226,
+        "equipmentName": "圣杯",
+        "pickRate": 42.88,
+        "winRate": 52.31
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 39.34,
+        "winRate": 52.95
+      },
+      {
+        "equipmentId": 12211,
+        "equipmentName": "梦魇之牙",
+        "pickRate": 35.95,
+        "winRate": 50.9
+      },
+      {
+        "equipmentId": 1423,
+        "equipmentName": "冷静之靴",
+        "pickRate": 28.44,
+        "winRate": 46.01
+      },
+      {
+        "equipmentId": 1424,
+        "equipmentName": "秘法之靴",
+        "pickRate": 27.15,
+        "winRate": 47.97
+      },
+      {
+        "equipmentId": 1232,
+        "equipmentName": "博学者之怒",
+        "pickRate": 24.12,
+        "winRate": 62.15
+      },
+      {
+        "equipmentId": 1737,
+        "equipmentName": "极影·形昭",
+        "pickRate": 16.34,
+        "winRate": 45.93
+      },
+      {
+        "equipmentId": 1238,
+        "equipmentName": "贤者天书",
+        "pickRate": 14.25,
+        "winRate": 65.04
+      }
+    ]
+  }
+}

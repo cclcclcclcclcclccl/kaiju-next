@@ -1,0 +1,52 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=180",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 180
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:13:06.242Z",
+  "rawSha256": "2b5ac77a5513ba6fa334d0ad3e6d0b1389b06bb54460c29666d9369bacb84c32",
+  "cache": "fresh",
+  "data": {
+    "heroId": 180,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "魔丸·哪吒",
+        "pickRate": 43.73
+      },
+      {
+        "skinName": "雪上飞焰",
+        "pickRate": 34.9
+      },
+      {
+        "skinName": "三太子",
+        "pickRate": 8.57
+      },
+      {
+        "skinName": "次元突破",
+        "pickRate": 4.6
+      },
+      {
+        "skinName": "罗小黑战记",
+        "pickRate": 4.6
+      },
+      {
+        "skinName": "热血海滩",
+        "pickRate": 1.85
+      },
+      {
+        "skinName": "逐梦之翼",
+        "pickRate": 1.16
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.58
+      }
+    ]
+  }
+}

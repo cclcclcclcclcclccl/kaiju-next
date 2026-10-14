@@ -1,0 +1,44 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=179",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 179
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:13:01.181Z",
+  "rawSha256": "2d0b399162f3a3a7440a74b6df7d064ff502bcf7a45b6661199c935476f55317",
+  "cache": "fresh",
+  "data": {
+    "heroId": 179,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "补天",
+        "pickRate": 62.02
+      },
+      {
+        "skinName": "愿照·千秋盛",
+        "pickRate": 17.27
+      },
+      {
+        "skinName": "万灵启世",
+        "pickRate": 13.3
+      },
+      {
+        "skinName": "尼罗河女神",
+        "pickRate": 6.1
+      },
+      {
+        "skinName": "朔望之晖",
+        "pickRate": 1.1
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.21
+      }
+    ]
+  }
+}

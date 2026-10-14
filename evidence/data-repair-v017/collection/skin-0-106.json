@@ -1,0 +1,68 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=106",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 106
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:07:09.618Z",
+  "rawSha256": "7f5fed33e7dd4d7f599734975040cbe181fa8efc7b38661abba43e60e9074bd5",
+  "cache": "fresh",
+  "data": {
+    "heroId": 106,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "天鹅之梦",
+        "pickRate": 30.85
+      },
+      {
+        "skinName": "线条小狗",
+        "pickRate": 19.67
+      },
+      {
+        "skinName": "时之魔女",
+        "pickRate": 19.45
+      },
+      {
+        "skinName": "缤纷独角兽",
+        "pickRate": 6.93
+      },
+      {
+        "skinName": "音你心动",
+        "pickRate": 5.81
+      },
+      {
+        "skinName": "青蛇",
+        "pickRate": 5.74
+      },
+      {
+        "skinName": "山海·琳琅生",
+        "pickRate": 5.22
+      },
+      {
+        "skinName": "万圣前夜",
+        "pickRate": 3.5
+      },
+      {
+        "skinName": "丁香结",
+        "pickRate": 1.42
+      },
+      {
+        "skinName": "纯白花嫁",
+        "pickRate": 0.67
+      },
+      {
+        "skinName": "秘证寻踪",
+        "pickRate": 0.6
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.15
+      }
+    ]
+  }
+}

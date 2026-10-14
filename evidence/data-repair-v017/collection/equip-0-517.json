@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=517",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 517
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:16:19.189Z",
+  "rawSha256": "67cce3d721ae1625e91cf77abba2660bcdd88abc3e32714555bbc77e7c880cd9",
+  "cache": "fresh",
+  "data": {
+    "heroId": 517,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1533,
+        "equipmentName": "贪婪之噬",
+        "pickRate": 93.12,
+        "winRate": 52.29
+      },
+      {
+        "equipmentId": 1136,
+        "equipmentName": "影刃",
+        "pickRate": 82.26,
+        "winRate": 53.15
+      },
+      {
+        "equipmentId": 1126,
+        "equipmentName": "末世",
+        "pickRate": 60.54,
+        "winRate": 60.28
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 55.22,
+        "winRate": 48.72
+      },
+      {
+        "equipmentId": 1534,
+        "equipmentName": "怒龙剑盾",
+        "pickRate": 34.27,
+        "winRate": 54.84
+      },
+      {
+        "equipmentId": 11311,
+        "equipmentName": "纯净苍穹",
+        "pickRate": 29.83,
+        "winRate": 65.48
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 27.47,
+        "winRate": 51.86
+      },
+      {
+        "equipmentId": 1127,
+        "equipmentName": "名刀·司命",
+        "pickRate": 21.83,
+        "winRate": 65.11
+      },
+      {
+        "equipmentId": 1334,
+        "equipmentName": "不死鸟之眼",
+        "pickRate": 13.33,
+        "winRate": 56.08
+      },
+      {
+        "equipmentId": 1133,
+        "equipmentName": "无尽战刃",
+        "pickRate": 9.94,
+        "winRate": 60.99
+      }
+    ]
+  }
+}

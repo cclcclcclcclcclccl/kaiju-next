@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=125",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 125
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:09:07.127Z",
+  "rawSha256": "8e6987a7e9635b4b0b8134eeea77149f365fee8573a9ac2baf94bde6856bd0b6",
+  "cache": "fresh",
+  "data": {
+    "heroId": 125,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "pickRate": 99.56,
+        "winRate": 52.2
+      },
+      {
+        "equipmentId": 1138,
+        "equipmentName": "强者破军",
+        "pickRate": 92.9,
+        "winRate": 53.77
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 81.29,
+        "winRate": 51.2
+      },
+      {
+        "equipmentId": 1128,
+        "equipmentName": "寒霜袭侵",
+        "pickRate": 65.57,
+        "winRate": 61.11
+      },
+      {
+        "equipmentId": 1131,
+        "equipmentName": "碎星锤",
+        "pickRate": 44.71,
+        "winRate": 60.74
+      },
+      {
+        "equipmentId": 1332,
+        "equipmentName": "霸者重装",
+        "pickRate": 9.66,
+        "winRate": 64.94
+      },
+      {
+        "equipmentId": 1423,
+        "equipmentName": "冷静之靴",
+        "pickRate": 5.28,
+        "winRate": 45.34
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 4.5,
+        "winRate": 53.17
+      },
+      {
+        "equipmentId": 13310,
+        "equipmentName": "冰痕之握",
+        "pickRate": 3.82,
+        "winRate": 62.44
+      },
+      {
+        "equipmentId": 1426,
+        "equipmentName": "疾步之靴",
+        "pickRate": 3.18,
+        "winRate": 60.87
+      }
+    ]
+  }
+}

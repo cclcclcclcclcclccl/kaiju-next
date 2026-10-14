@@ -13,6 +13,11 @@ import { mastery, effectivePool } from './pro/analytics.ts';
 import PersonalRecommendations, { PersonalGuide } from './pro/PersonalRecommendations.tsx';
 import type { Role } from './model.ts';
 import PoolStorage from './pro/PoolStorage.tsx';
+import { useSource, Provenance } from './pro/TianyuanLive.tsx';
+import { sourceDate, TIANYUAN_MODES } from './pro/tianyuan.ts';
+import type { TianyuanStat } from './pro/tianyuan.ts';
+import { sourceBoard, sourceTierDate } from './pro/publicBoard.ts';
+import type { SourceTier } from './pro/publicBoard.ts';
 
 export function HeroDetail({
   hero,
@@ -122,9 +127,7 @@ export function HeroDetail({
           </button>
         ))}
       </nav>
-      {statsContext?.snapshotId?.startsWith('tianyuan:') && (
-        <HeroInsights hero={hero} context={statsContext} />
-      )}
+      <HeroInsights hero={hero} context={statsContext} part="stats" />
       {note && (
         <section className="tactical-note">
           <p className="eyebrow">开局战术笔记 · 定性建议</p>
@@ -185,9 +188,7 @@ export function HeroDetail({
           。官网页面未提供统一版本号，技能数值以游戏内为准。
         </p>
       </section>
-      {!statsContext?.snapshotId?.startsWith('tianyuan:') && (
-        <HeroInsights hero={hero} context={statsContext} />
-      )}
+      <HeroInsights hero={hero} context={statsContext} part="details" />
       <section id="hero-builds" className="hero-builds">
         <h3>官方出装与铭文资料</h3>
         <p className="data-caption">
@@ -255,7 +256,7 @@ export default function Heroes({
 }: {
   pool: Pool;
   onPool: (pool: Pool) => void;
-  onOpen: (h: Hero) => void;
+  onOpen: (h: Hero, context?: { segment: string; role: string; snapshotId?: string }) => void;
   busy: boolean;
   onlyPool?: boolean;
   onEditRecord?: (id?: number) => void;
@@ -263,6 +264,31 @@ export default function Heroes({
 }) {
   const { data } = usePro();
   const [storageBusy, setStorageBusy] = useState(false);
+  const [statSegment, setStatSegment] = useState('巅峰千强');
+  const [statDate, setStatDate] = useState(sourceDate());
+  const tierDate = sourceTierDate();
+  const publicStats = useSource<TianyuanStat[]>({
+    kind: 'stats',
+    date: statDate,
+    mode: TIANYUAN_MODES[statSegment],
+  });
+  const publicTiers = useSource<{ queryDate: string; tiers: SourceTier[] }>({
+    kind: 'tier',
+    date: tierDate,
+  });
+  const sourceById = new Map(
+    sourceBoard(publicTiers.packet?.data.tiers ?? [], publicStats.packet?.data ?? []).map((r) => [
+      r.tier.heroId,
+      r,
+    ]),
+  );
+  const statsById = new Map(publicStats.packet?.data.map((r) => [r.heroId, r]));
+  const openHero = (h: Hero) =>
+    onOpen(h, {
+      segment: statSegment,
+      role: '全部',
+      snapshotId: `tianyuan:${statDate}:${TIANYUAN_MODES[statSegment]}:${h.id}:${tierDate}`,
+    });
   const busy = parentBusy || storageBusy;
   const combinedPool = useMemo(() => effectivePool(pool, data.profile), [pool, data.profile]);
   const [query, setQuery] = useState(''),
@@ -312,6 +338,49 @@ export default function Heroes({
           />
         </label>
       </div>
+      <section className="atlas-source-summary" aria-label="图鉴数据来源">
+        <div className="pro-toolbar">
+          <label>
+            图鉴统计分段
+            <select value={statSegment} onChange={(e) => setStatSegment(e.target.value)}>
+              {Object.keys(TIANYUAN_MODES).map((s) => (
+                <option key={s}>{s}</option>
+              ))}
+            </select>
+          </label>
+          <label>
+            图鉴统计日期
+            <input
+              type="date"
+              value={statDate}
+              max={sourceDate()}
+              onChange={(e) => {
+                if (e.target.value) setStatDate(e.target.value);
+              }}
+            />
+          </label>
+          <button
+            className="btn secondary"
+            onClick={() => {
+              publicStats.reload();
+              publicTiers.reload();
+            }}
+          >
+            刷新图鉴统计
+          </button>
+        </div>
+        <p className="data-caption">
+          天元综合梯度 {tierDate} · 三率 {statDate} {statSegment} ·
+          综合梯度不随三率分段变化。点击英雄查看完整数据与来源。
+        </p>
+        {(publicStats.loading || publicTiers.loading) && (
+          <p role="status">正在读取图鉴梯度与三率……</p>
+        )}
+        {publicStats.error && <p role="alert">三率未取得：{publicStats.error}</p>}
+        {publicTiers.error && <p role="alert">梯度未取得：{publicTiers.error}</p>}
+        {publicStats.packet && <Provenance packet={publicStats.packet} />}
+        {publicTiers.packet && <Provenance packet={publicTiers.packet} />}
+      </section>
       {list.length ? (
         <div className="hero-grid">
           {list.map((h) => {
@@ -322,7 +391,7 @@ export default function Heroes({
               <article className="hero-card" key={h.id}>
                 <button
                   className="hero-art"
-                  onClick={() => onOpen(h)}
+                  onClick={() => openHero(h)}
                   aria-label={'查看' + h.name + '资料'}
                 >
                   <img
@@ -344,7 +413,7 @@ export default function Heroes({
                 </button>
                 <div className="hero-card-info">
                   <div>
-                    <button onClick={() => onOpen(h)}>{h.name}</button>
+                    <button onClick={() => openHero(h)}>{h.name}</button>
                     <p>{h.title}</p>
                   </div>
                   <button
@@ -365,6 +434,27 @@ export default function Heroes({
                   >
                     {level || record ? <Star size={18} fill="currentColor" /> : <Plus size={19} />}
                   </button>
+                </div>
+                <div className="atlas-public-metrics" aria-label={h.name + '来源表现'}>
+                  <strong>天元 {sourceById.get(h.id)?.label ?? '未评级'}</strong>
+                  <span>
+                    胜{' '}
+                    {statsById.get(h.id)?.winRate == null
+                      ? '未公布'
+                      : statsById.get(h.id)!.winRate!.toFixed(2) + '%'}
+                  </span>
+                  <span>
+                    出{' '}
+                    {statsById.get(h.id)?.pickRate == null
+                      ? '未公布'
+                      : statsById.get(h.id)!.pickRate.toFixed(2) + '%'}
+                  </span>
+                  <span>
+                    禁{' '}
+                    {statsById.get(h.id)?.banRate == null
+                      ? '未公布'
+                      : statsById.get(h.id)!.banRate.toFixed(2) + '%'}
+                  </span>
                 </div>
                 {onlyPool && (
                   <div className="pool-record-summary">

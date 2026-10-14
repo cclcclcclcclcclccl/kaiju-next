@@ -1,0 +1,44 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=115",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 115
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:07:56.018Z",
+  "rawSha256": "6f61261dd71079d075617a30d69ccd03c84de10309619d71232cb2921d279967",
+  "cache": "fresh",
+  "data": {
+    "heroId": 115,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "燃音魔法",
+        "pickRate": 64.53
+      },
+      {
+        "skinName": "天秀·音浪",
+        "pickRate": 27.09
+      },
+      {
+        "skinName": "金属狂潮",
+        "pickRate": 4.19
+      },
+      {
+        "skinName": "死亡摇滚",
+        "pickRate": 2.51
+      },
+      {
+        "skinName": "玩趣恶龙",
+        "pickRate": 1.12
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.56
+      }
+    ]
+  }
+}

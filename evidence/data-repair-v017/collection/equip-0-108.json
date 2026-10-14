@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=108",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 108
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:07:22.638Z",
+  "rawSha256": "bb1f61ac6a69978e13d2b2350700c6948a797b7e52b72d8cf07056832fc6c860",
+  "cache": "fresh",
+  "data": {
+    "heroId": 108,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 76.08,
+        "winRate": 48.75
+      },
+      {
+        "equipmentId": 1721,
+        "equipmentName": "极影·救赎",
+        "pickRate": 64.46,
+        "winRate": 48.55
+      },
+      {
+        "equipmentId": 1226,
+        "equipmentName": "圣杯",
+        "pickRate": 55.23,
+        "winRate": 52.85
+      },
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "pickRate": 44.02,
+        "winRate": 52.98
+      },
+      {
+        "equipmentId": 1737,
+        "equipmentName": "极影·形昭",
+        "pickRate": 23.86,
+        "winRate": 43.82
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "pickRate": 17.98,
+        "winRate": 57.26
+      },
+      {
+        "equipmentId": 1424,
+        "equipmentName": "秘法之靴",
+        "pickRate": 11.61,
+        "winRate": 44.19
+      },
+      {
+        "equipmentId": 1333,
+        "equipmentName": "不祥征兆",
+        "pickRate": 10.38,
+        "winRate": 59.1
+      },
+      {
+        "equipmentId": 1423,
+        "equipmentName": "冷静之靴",
+        "pickRate": 9.75,
+        "winRate": 42.8
+      },
+      {
+        "equipmentId": 12211,
+        "equipmentName": "梦魇之牙",
+        "pickRate": 8.96,
+        "winRate": 50.8
+      }
+    ]
+  }
+}

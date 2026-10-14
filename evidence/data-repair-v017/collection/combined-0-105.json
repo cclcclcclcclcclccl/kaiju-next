@@ -1,0 +1,64 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-10-13&heroId=105",
+  "query": {
+    "kind": "combined",
+    "date": "2026-10-13",
+    "heroId": 105
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T14:49:12.975Z",
+  "rawSha256": "2ded14055e08abb95b106dd66d9e10a0427c8176e722d7371b42c45c95f27147",
+  "cache": "cached",
+  "data": {
+    "heroId": 105,
+    "positions": {
+      "0": {
+        "pickRate": 6.35,
+        "winRate": 44.33
+      },
+      "4": {
+        "pickRate": 93.65,
+        "winRate": 46.14
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "闪现",
+        "pickRate": 45.5,
+        "winRate": 45.96
+      },
+      {
+        "skillName": "雾行千山",
+        "pickRate": 23.28,
+        "winRate": 46.44
+      },
+      {
+        "skillName": "终结",
+        "pickRate": 14.81,
+        "winRate": 45.53
+      },
+      {
+        "skillName": "晕眩",
+        "pickRate": 14.29,
+        "winRate": 45.19
+      },
+      {
+        "skillName": "治疗术",
+        "pickRate": 1.06,
+        "winRate": 55.07
+      },
+      {
+        "skillName": "弱化",
+        "pickRate": 0.53,
+        "winRate": 48.81
+      },
+      {
+        "skillName": "传送",
+        "pickRate": 0.53,
+        "winRate": 56.67
+      }
+    ]
+  }
+}

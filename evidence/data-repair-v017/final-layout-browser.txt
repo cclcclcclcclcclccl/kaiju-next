@@ -1,0 +1,14 @@
+[WebServer] (node:38856) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:716) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\player\public-board-repair.spec.ts:41:1 › atlas entry shows Lianpo published tier and selected segment metrics without manual import (3.5s)
+  ok 2 tests\player\public-board-repair.spec.ts:71:1 › default source board matches every published label and score; metric sorting actually changes order (2.4s)
+  ok 3 tests\player\public-board-repair.spec.ts:117:1 › published tiers remain available when the separate statistics source fails (1.4s)
+  ok 4 tests\player\tianyuan.spec.ts:8:1 › public four-segment board preserves forms, source tiers, hero metrics and unknown dates on mobile (7.3s)
+  ok 5 tests\player\tianyuan.spec.ts:99:1 › public query failure never shows another date or synthetic values (1.2s)
+
+  5 passed (20.2s)

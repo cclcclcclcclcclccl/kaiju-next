@@ -1,0 +1,56 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=132",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 132
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:09:41.713Z",
+  "rawSha256": "55f184c7fafa7eec0b81d1354064a4a6f4bbf428277e3ec4f49ea06b84032b97",
+  "cache": "fresh",
+  "data": {
+    "heroId": 132,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "怪盗基德",
+        "pickRate": 30.14
+      },
+      {
+        "skinName": "暗影游猎",
+        "pickRate": 28.12
+      },
+      {
+        "skinName": "激情绿茵",
+        "pickRate": 22.03
+      },
+      {
+        "skinName": "深海之息",
+        "pickRate": 11.88
+      },
+      {
+        "skinName": "山海·玄木吟",
+        "pickRate": 4.93
+      },
+      {
+        "skinName": "星界特工",
+        "pickRate": 1.74
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.58
+      },
+      {
+        "skinName": "潮玩牛仔",
+        "pickRate": 0.29
+      },
+      {
+        "skinName": "妄想实况",
+        "pickRate": 0.29
+      }
+    ]
+  }
+}

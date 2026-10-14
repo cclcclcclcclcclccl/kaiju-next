@@ -16,6 +16,10 @@ test('public four-segment board preserves forms, source tiers, hero metrics and 
       mode: p.has('mode') ? Number(p.get('mode')) : undefined,
       heroId: p.has('heroId') ? Number(p.get('heroId')) : undefined,
     } as TianyuanQuery;
+    if (q.kind === 'tier' && q.date !== '2026-10-13') {
+      await route.fulfill({ status: 502, json: { error: '该测试夹具仅包含2026-10-13' } });
+      return;
+    }
     const file =
       q.kind === 'stats' ? 'stats-' + q.mode : q.kind === 'tier' ? 'tier' : q.kind + '-521';
     const raw = readFileSync('tests/fixtures/tianyuan/' + file + '.json', 'utf8');
@@ -36,11 +40,12 @@ test('public four-segment board preserves forms, source tiers, hero metrics and 
   await page.goto('/');
   await page.locator('nav').getByRole('button', { name: '分段梯度', exact: true }).click();
   await page.getByLabel('联网数据日期').fill('2026-10-13');
+  await page.getByLabel('来源梯度日期').fill('2026-10-13');
   const panel = page.locator('.tianyuan-live');
   await expect(panel.locator('.tier-portrait')).toHaveCount(133);
-  await expect(page.getByLabel('联网排序')).toHaveValue('strength');
-  await expect(panel.locator('.tier-portrait').first()).toContainText('赵云');
-  await expect(panel).toContainText('千强代理强度');
+  await expect(page.getByLabel('联网排序')).toHaveValue('tier');
+  await expect(panel.locator('.tier-portrait').first()).toContainText('元流之子');
+  await expect(panel).toContainText('不再使用开局实验评分替代');
   await page.getByLabel('联网榜单分段').selectOption('大众分段');
   await expect(panel.locator('.tier-portrait')).toHaveCount(133);
   await page.getByRole('button', { name: '真实三率全榜', exact: true }).click();
@@ -51,8 +56,9 @@ test('public four-segment board preserves forms, source tiers, hero metrics and 
   await page.getByLabel('联网榜单分段').selectOption('巅峰千强');
   await page.getByLabel('联网英雄搜索').fill('赵云');
   await panel.getByRole('button', { name: '查看赵云公开详情', exact: true }).click();
-  await expect(page.getByLabel('开局强度评分解释')).toContainText('83.16');
-  await expect(page.getByLabel('开局强度评分解释')).toContainText('27 组参数检查');
+  await expect(page.getByLabel('英雄来源梯度')).toContainText('天元综合梯度');
+  await expect(page.getByLabel('英雄分段三率')).toContainText('胜率');
+  await expect(page.getByLabel('开局强度评分解释')).toHaveCount(0);
   await page.keyboard.press('Escape');
   await page.getByLabel('联网英雄搜索').fill('');
   await page.getByRole('button', { name: '天元来源梯度', exact: true }).click();

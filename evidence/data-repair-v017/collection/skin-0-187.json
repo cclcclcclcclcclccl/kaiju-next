@@ -1,0 +1,44 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=187",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 187
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:13:31.552Z",
+  "rawSha256": "207add90d77b437ccce4b93c033128e8e833b9264d0a89ca51902d6df899291f",
+  "cache": "fresh",
+  "data": {
+    "heroId": 187,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "噬灭天穹",
+        "pickRate": 33.33
+      },
+      {
+        "skinName": "灼幽烈阳",
+        "pickRate": 28.57
+      },
+      {
+        "skinName": "东海龙王",
+        "pickRate": 25.17
+      },
+      {
+        "skinName": "逐梦之光",
+        "pickRate": 6.12
+      },
+      {
+        "skinName": "金福满堂",
+        "pickRate": 6.12
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.68
+      }
+    ]
+  }
+}

@@ -7,6 +7,7 @@ import { createOfficialRanks } from './pro/official.ts';
 import { createResources } from './pro/resources.ts';
 import { createRankRefresh, scheduleRankRefresh } from './pro/refresh.ts';
 import { createTianyuan, scheduleTianyuan } from './pro/tianyuan.ts';
+import { createKplCases } from './pro/kpl.ts';
 const dataDir = resolve(process.env.PLAYER_DATA_DIR ?? 'data');
 mkdirSync(dataDir, { recursive: true });
 const heroes = JSON.parse(
@@ -29,6 +30,7 @@ const server = createPlayerApp(store, heroes, {
   rankRefresh,
   resources,
   tianyuan,
+  kplCases: createKplCases(resolve(dataDir, 'kpl')),
 });
 const port = Number(process.env.PORT ?? 4318);
 let stopRefresh: (() => void) | undefined;

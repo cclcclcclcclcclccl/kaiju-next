@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=140",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 140
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:10:25.209Z",
+  "rawSha256": "e0d1c150ec158b30fefb814ebc24ff1103895f16d74e455067dd92c4c09f503c",
+  "cache": "fresh",
+  "data": {
+    "heroId": 140,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "pickRate": 85.68,
+        "winRate": 52.7
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 75.82,
+        "winRate": 51.98
+      },
+      {
+        "equipmentId": 1534,
+        "equipmentName": "怒龙剑盾",
+        "pickRate": 70.87,
+        "winRate": 55.43
+      },
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "pickRate": 50.86,
+        "winRate": 53.53
+      },
+      {
+        "equipmentId": 1347,
+        "equipmentName": "永夜守护",
+        "pickRate": 34.71,
+        "winRate": 58.71
+      },
+      {
+        "equipmentId": 1328,
+        "equipmentName": "血魔之怒",
+        "pickRate": 20.2,
+        "winRate": 61.76
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 17.97,
+        "winRate": 50
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "pickRate": 14.83,
+        "winRate": 55.54
+      },
+      {
+        "equipmentId": 1333,
+        "equipmentName": "不祥征兆",
+        "pickRate": 10.96,
+        "winRate": 57.88
+      },
+      {
+        "equipmentId": 1331,
+        "equipmentName": "红莲斗篷",
+        "pickRate": 10.05,
+        "winRate": 55.87
+      }
+    ]
+  }
+}

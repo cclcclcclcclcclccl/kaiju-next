@@ -1,6 +1,23 @@
 import { test, expect } from '@playwright/test';
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
+
+test('official KPL case library shows actual per-game links and never claims completed training', async ({
+  page,
+}) => {
+  const packet = JSON.parse(readFileSync('tests/fixtures/kpl/cases.json', 'utf8'));
+  await page.route('**/api/kpl/cases', (route) => route.fulfill({ json: packet }));
+  await page.goto('/');
+  await page.locator('nav').getByRole('button', { name: '录像复盘', exact: true }).click();
+  await page.locator('.kpl-cases>summary').click();
+  await expect(page.locator('.kpl-cases')).toContainText('3 场系列赛 / 12 局回放索引');
+  await expect(page.locator('.kpl-cases')).toContainText('已训练样本：0');
+  const links = page.locator('.kpl-cases a').filter({ hasText: '前往官方回放' });
+  await expect(links).toHaveCount(12);
+  await expect(links.first()).toHaveAttribute('href', packet.matches[0].rounds[0].url);
+  await page.setViewportSize({ width: 390, height: 844 });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});
 test('current-chat replay package is local, accepts tied results and exports an untrained evaluation sample', async ({
   page,
 }) => {
@@ -21,6 +38,9 @@ test('current-chat replay package is local, accepts tied results and exports an 
   await expect(prompt).toBeVisible();
   const directory = (await prompt.inputValue()).match(/「(.+?)」/)![1];
   const packet = JSON.parse(readFileSync(join(directory, 'input.json'), 'utf8'));
+  const decisions = JSON.parse(readFileSync(join(directory, 'DECISIONS.json'), 'utf8'));
+  expect(decisions.decisions).toHaveLength(1);
+  expect(readFileSync(join(directory, 'COACHING_PROTOCOL.md'), 'utf8')).toContain('反证检查');
   expect(packet.material.events[0].observation).toContain('未填写观察');
   await page.getByRole('button', { name: '读取 Codex 复盘结果' }).click();
   await expect(page.getByRole('status')).toContainText('尚未写入');

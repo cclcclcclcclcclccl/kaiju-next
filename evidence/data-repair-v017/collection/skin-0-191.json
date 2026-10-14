@@ -1,0 +1,64 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=191",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 191
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:13:52.023Z",
+  "rawSha256": "f2d0a11dc20d8727f19b555439d6761c46136f17048a1649bf0dd152653b3322",
+  "cache": "fresh",
+  "data": {
+    "heroId": 191,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "时之奇旅",
+        "pickRate": 23.3
+      },
+      {
+        "skinName": "猫狗日记",
+        "pickRate": 17.71
+      },
+      {
+        "skinName": "伊势巫女",
+        "pickRate": 14.91
+      },
+      {
+        "skinName": "守护之力",
+        "pickRate": 11.12
+      },
+      {
+        "skinName": "挚爱花嫁",
+        "pickRate": 10.39
+      },
+      {
+        "skinName": "白鹤梁神女",
+        "pickRate": 7.79
+      },
+      {
+        "skinName": "微风如诗",
+        "pickRate": 5.13
+      },
+      {
+        "skinName": "乘龙·忆丹青",
+        "pickRate": 4.19
+      },
+      {
+        "skinName": "白蛇",
+        "pickRate": 3.6
+      },
+      {
+        "skinName": "绒语心约",
+        "pickRate": 1.66
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.2
+      }
+    ]
+  }
+}

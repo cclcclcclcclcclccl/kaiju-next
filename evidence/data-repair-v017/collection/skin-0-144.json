@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=144",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 144
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:10:37.477Z",
+  "rawSha256": "1bed594204bdd47a1cfa4c5c40a4044ecf6ce2cc8ee6e1192f448d680bc81120",
+  "cache": "fresh",
+  "data": {
+    "heroId": 144,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "功夫厨神",
+        "pickRate": 42.86
+      },
+      {
+        "skinName": "活力突击",
+        "pickRate": 39.56
+      },
+      {
+        "skinName": "群星魔术团",
+        "pickRate": 13.19
+      },
+      {
+        "skinName": "演武夺筹",
+        "pickRate": 1.1
+      },
+      {
+        "skinName": "无双福将",
+        "pickRate": 1.1
+      },
+      {
+        "skinName": "爱与正义",
+        "pickRate": 1.1
+      },
+      {
+        "skinName": "华尔街大亨",
+        "pickRate": 1.1
+      }
+    ]
+  }
+}

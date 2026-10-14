@@ -1,0 +1,64 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=142",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 142
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:10:32.185Z",
+  "rawSha256": "35acb3d955ab54d5651236714026d2770608ed712925d159c860e5c39bf87d97",
+  "cache": "fresh",
+  "data": {
+    "heroId": 142,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "旅行日记",
+        "pickRate": 34.47
+      },
+      {
+        "skinName": "颠倒童话·魔镜",
+        "pickRate": 24.21
+      },
+      {
+        "skinName": "酷洛米之心",
+        "pickRate": 21.58
+      },
+      {
+        "skinName": "心灵骇客",
+        "pickRate": 4.47
+      },
+      {
+        "skinName": "时之奇旅",
+        "pickRate": 4.47
+      },
+      {
+        "skinName": "乘龙·聚宝船",
+        "pickRate": 3.95
+      },
+      {
+        "skinName": "玩偶对对碰",
+        "pickRate": 2.89
+      },
+      {
+        "skinName": "糖果风暴",
+        "pickRate": 1.58
+      },
+      {
+        "skinName": "魔法小厨娘",
+        "pickRate": 1.32
+      },
+      {
+        "skinName": "如懿",
+        "pickRate": 0.53
+      },
+      {
+        "skinName": "追逃游戏",
+        "pickRate": 0.53
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-14T15:29:52.113Z",
+  "elapsedSeconds": 31,
+  "freshInstall": true,
+  "freshBuild": true,
+  "freshDatabase": true,
+  "status": {
+    "product": "开局 NEXT",
+    "version": "0.17.0",
+    "modelConfigured": false,
+    "heroCount": 133,
+    "identity": {
+      "mode": "guest",
+      "name": "访客"
+    }
+  },
+  "node": "v24.16.0",
+  "sourceDirectory": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\.reproduction\\audit-1791991761272",
+  "note": "Core local startup verified; OCR model installation and external data availability are separate prerequisites."
+}

@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=194",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 194
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:14:11.458Z",
+  "rawSha256": "02e0063da5f3f0e31f38e59ce63a5318f4127084a6d418833fdf30a35f7f8659",
+  "cache": "fresh",
+  "data": {
+    "heroId": 194,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "pickRate": 84.28,
+        "winRate": 54.93
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 75.57,
+        "winRate": 51.5
+      },
+      {
+        "equipmentId": 1724,
+        "equipmentName": "近卫·救赎",
+        "pickRate": 65.11,
+        "winRate": 51.75
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "pickRate": 37.79,
+        "winRate": 62.02
+      },
+      {
+        "equipmentId": 1426,
+        "equipmentName": "疾步之靴",
+        "pickRate": 19.83,
+        "winRate": 52.26
+      },
+      {
+        "equipmentId": 1333,
+        "equipmentName": "不祥征兆",
+        "pickRate": 17.49,
+        "winRate": 59.35
+      },
+      {
+        "equipmentId": 1753,
+        "equipmentName": "近卫·奔狼",
+        "pickRate": 16.04,
+        "winRate": 57.4
+      },
+      {
+        "equipmentId": 1754,
+        "equipmentName": "近卫·形昭",
+        "pickRate": 13.65,
+        "winRate": 45.55
+      },
+      {
+        "equipmentId": 1347,
+        "equipmentName": "永夜守护",
+        "pickRate": 4.42,
+        "winRate": 62.21
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 3.99,
+        "winRate": 52.21
+      }
+    ]
+  }
+}

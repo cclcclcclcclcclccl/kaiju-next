@@ -61,7 +61,9 @@ test('mixed source metrics stay visible but cannot masquerade as a segment tier 
   expect(data.snapshots[0].denominator).toBe('unknown');
   await row.getByRole('button').click();
   await expect(page.getByRole('dialog')).toContainText('不生成分段梯度或参与 BP 评分');
-  await expect(page.locator('.metric-strip')).toContainText('口径待核对');
+  await expect(page.getByRole('dialog').locator('details[open] .metric-strip')).toContainText(
+    '口径待核对',
+  );
 });
 
 test('history shows sourced percentage-point changes, excludes incompatible batches and works on a phone', async ({

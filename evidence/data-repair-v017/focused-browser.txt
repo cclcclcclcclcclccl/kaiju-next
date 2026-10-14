@@ -1,0 +1,61 @@
+[WebServer] (node:10296) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 1 worker
+
+(node:42540) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\player\official.spec.ts:5:1 › official data stays attributed, partial and distinct from personal tiers across filters and hero details (5.6s)
+  ok  2 tests\player\official.spec.ts:71:1 › official request failure is visible and can recover without synthetic substitution (1.5s)
+  x   3 tests\player\public-board-repair.spec.ts:41:1 › atlas entry shows Lianpo published tier and selected segment metrics without manual import (7.3s)
+(node:47252) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  4 tests\player\public-board-repair.spec.ts:71:1 › default source board matches every published label and score; metric sorting actually changes order (2.3s)
+  ok  5 tests\player\public-board-repair.spec.ts:117:1 › published tiers remain available when the separate statistics source fails (1.9s)
+  ok  6 tests\player\review-handoff.spec.ts:4:1 › current-chat replay package is local, accepts tied results and exports an untrained evaluation sample (2.9s)
+  ok  7 tests\player\statistics.spec.ts:31:1 › mixed source metrics stay visible but cannot masquerade as a segment tier or a BP rate (2.6s)
+  ok  8 tests\player\statistics.spec.ts:69:1 › history shows sourced percentage-point changes, excludes incompatible batches and works on a phone (5.8s)
+  ok  9 tests\player\tianyuan.spec.ts:8:1 › public four-segment board preserves forms, source tiers, hero metrics and unknown dates on mobile (7.9s)
+  ok 10 tests\player\tianyuan.spec.ts:99:1 › public query failure never shows another date or synthetic values (1.2s)
+
+
+  1) tests\player\public-board-repair.spec.ts:41:1 › atlas entry shows Lianpo published tier and selected segment metrics without manual import
+
+    Error: expect(locator).toHaveValue(expected) failed
+
+    Locator: getByLabel('英雄统计分段', { exact: true })
+    Expected: "1"
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toHaveValue" getByLabel('英雄统计分段', { exact: true }) with timeout 5000ms
+      - waiting for getByLabel('英雄统计分段', { exact: true })
+
+
+      56 |   await expect(page.getByLabel('英雄来源梯度')).toContainText('28.89');
+      57 |   await expect(page.getByLabel('英雄分段三率')).toContainText(source.winRate.toFixed(2) + '%');
+    > 58 |   await expect(page.getByLabel('英雄统计分段', { exact: true })).toHaveValue('1');
+         |                                                            ^
+      59 |   await expect(page.getByRole('dialog')).not.toContainText('待接入');
+      60 |   await expect(page.getByLabel('开局强度评分解释')).toHaveCount(0);
+      61 |   await page.setViewportSize({ width: 390, height: 844 });
+        at D:\学习相关\传智杯\AI创新应用挑战赛\tests\player\public-board-repair.spec.ts:58:60
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\public-board-repair-atlas--fece0-trics-without-manual-import\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\public-board-repair-atlas--fece0-trics-without-manual-import\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\public-board-repair-atlas--fece0-trics-without-manual-import\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\public-board-repair-atlas--fece0-trics-without-manual-import\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests\player\public-board-repair.spec.ts:41:1 › atlas entry shows Lianpo published tier and selected segment metrics without manual import
+  9 passed (47.0s)

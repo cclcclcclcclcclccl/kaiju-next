@@ -8,6 +8,7 @@ import {
   sourceDate,
 } from '../../src/player/pro/tianyuan.ts';
 import type { TianyuanPacket, TianyuanQuery, TianyuanStat } from '../../src/player/pro/tianyuan.ts';
+import { sourceTierDate } from '../../src/player/pro/publicBoard.ts';
 
 export function createTianyuan(options: {
   directory: string;
@@ -180,7 +181,7 @@ export function scheduleTianyuan(source: Pick<ReturnType<typeof createTianyuan>,
       await source.get({ kind: 'stats', date, mode }).catch(() => {});
     }
     if (stopped) return;
-    await source.get({ kind: 'tier', date }).catch(() => {});
+    await source.get({ kind: 'tier', date: sourceTierDate() }).catch(() => {});
     if (!stopped) {
       timer = setTimeout(() => void run(), 60 * 60 * 1000);
       timer.unref();

@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=186",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 186
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:13:26.472Z",
+  "rawSha256": "04234442d6eed020c4291539dea6231bccf8dbb9a6c83db088afea4334728e8b",
+  "cache": "fresh",
+  "data": {
+    "heroId": 186,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "华丽摇滚",
+        "pickRate": 30.13
+      },
+      {
+        "skinName": "瓦猫非猫",
+        "pickRate": 29.42
+      },
+      {
+        "skinName": "圆桌骑士",
+        "pickRate": 18.5
+      },
+      {
+        "skinName": "谧流熔炉",
+        "pickRate": 11.32
+      },
+      {
+        "skinName": "劲辣红锅",
+        "pickRate": 6.88
+      },
+      {
+        "skinName": "饕餮",
+        "pickRate": 2.63
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 1.11
+      }
+    ]
+  }
+}

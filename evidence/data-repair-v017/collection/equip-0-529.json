@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=529",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 529
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:17:09.650Z",
+  "rawSha256": "e3eac70895f2bce6864a9d2861d56d7a9049a041aa61a609ed73087811488a26",
+  "cache": "fresh",
+  "data": {
+    "heroId": 529,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "pickRate": 77.64,
+        "winRate": 51.1
+      },
+      {
+        "equipmentId": 1533,
+        "equipmentName": "贪婪之噬",
+        "pickRate": 67.56,
+        "winRate": 53.43
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 57.4,
+        "winRate": 52.41
+      },
+      {
+        "equipmentId": 1127,
+        "equipmentName": "名刀·司命",
+        "pickRate": 46.26,
+        "winRate": 57.12
+      },
+      {
+        "equipmentId": 1128,
+        "equipmentName": "寒霜袭侵",
+        "pickRate": 34.55,
+        "winRate": 57.65
+      },
+      {
+        "equipmentId": 1328,
+        "equipmentName": "血魔之怒",
+        "pickRate": 27.56,
+        "winRate": 64.01
+      },
+      {
+        "equipmentId": 1425,
+        "equipmentName": "急速战靴",
+        "pickRate": 18.78,
+        "winRate": 39.83
+      },
+      {
+        "equipmentId": 1135,
+        "equipmentName": "闪电匕首",
+        "pickRate": 18.13,
+        "winRate": 55.61
+      },
+      {
+        "equipmentId": 13310,
+        "equipmentName": "冰痕之握",
+        "pickRate": 14.31,
+        "winRate": 54.55
+      },
+      {
+        "equipmentId": 1534,
+        "equipmentName": "怒龙剑盾",
+        "pickRate": 13.66,
+        "winRate": 55.36
+      }
+    ]
+  }
+}

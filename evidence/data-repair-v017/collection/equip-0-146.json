@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=146",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 146
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:10:45.393Z",
+  "rawSha256": "6d33cfbccd1bb273ff08b7e0e37607d49e4e1cc3cfb13c5034722919df6521cd",
+  "cache": "fresh",
+  "data": {
+    "heroId": 146,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1240,
+        "equipmentName": "噬神之书",
+        "pickRate": 96.67,
+        "winRate": 53.2
+      },
+      {
+        "equipmentId": 1237,
+        "equipmentName": "时之预言",
+        "pickRate": 94.43,
+        "winRate": 54.58
+      },
+      {
+        "equipmentId": 1531,
+        "equipmentName": "符文大剑",
+        "pickRate": 84.73,
+        "winRate": 59.02
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 75.79,
+        "winRate": 51.86
+      },
+      {
+        "equipmentId": 1231,
+        "equipmentName": "虚无法杖",
+        "pickRate": 55.14,
+        "winRate": 63.73
+      },
+      {
+        "equipmentId": 1232,
+        "equipmentName": "博学者之怒",
+        "pickRate": 29.89,
+        "winRate": 67.21
+      },
+      {
+        "equipmentId": 1244,
+        "equipmentName": "破茧之衣",
+        "pickRate": 15.17,
+        "winRate": 64.59
+      },
+      {
+        "equipmentId": 1238,
+        "equipmentName": "贤者天书",
+        "pickRate": 9.03,
+        "winRate": 62.31
+      },
+      {
+        "equipmentId": 1424,
+        "equipmentName": "秘法之靴",
+        "pickRate": 6.28,
+        "winRate": 36.73
+      },
+      {
+        "equipmentId": 1337,
+        "equipmentName": "贤者的庇护",
+        "pickRate": 6.11,
+        "winRate": 84.02
+      }
+    ]
+  }
+}

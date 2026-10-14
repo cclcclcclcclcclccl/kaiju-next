@@ -58,9 +58,11 @@ test('tier import is real, keeps provenance and supplies per-hero metrics', asyn
   await expect(page.locator('.pro-table tbody tr')).toHaveCount(8);
   await expect(page.locator('.source-strip')).toContainText('TEST-ONLY');
   await page.locator('.pro-table tbody tr').first().getByRole('button').click();
-  await expect(page.getByLabel('英雄统计分段')).toHaveValue('巅峰1800+');
+  await expect(page.getByLabel('历史英雄统计分段', { exact: true })).toHaveValue('巅峰1800+');
   await expect(page.getByLabel('英雄统计分路')).toHaveValue('中路');
-  await expect(page.locator('.metric-strip')).not.toContainText('待接入');
+  await expect(page.getByRole('dialog').locator('details[open] .metric-strip')).not.toContainText(
+    '待接入',
+  );
   await expect(page.getByRole('dialog')).toContainText('官方搭配与克制说明');
   await page.keyboard.press('Escape');
   await page.reload();

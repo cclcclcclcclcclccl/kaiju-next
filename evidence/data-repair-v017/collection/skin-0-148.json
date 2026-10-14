@@ -1,0 +1,44 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=148",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 148
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:10:47.506Z",
+  "rawSha256": "7641dd4de1bccdc3c8cf4e151a68b15a99cd4b867c0cb119b3ef9d138ed6e325",
+  "cache": "fresh",
+  "data": {
+    "heroId": 148,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "弘道录",
+        "pickRate": 27.87
+      },
+      {
+        "skinName": "炽热元素使",
+        "pickRate": 18.03
+      },
+      {
+        "skinName": "星梦巡礼",
+        "pickRate": 16.39
+      },
+      {
+        "skinName": "天穹之誓",
+        "pickRate": 15.57
+      },
+      {
+        "skinName": "时尚教父",
+        "pickRate": 12.3
+      },
+      {
+        "skinName": "闲日渔趣",
+        "pickRate": 9.84
+      }
+    ]
+  }
+}

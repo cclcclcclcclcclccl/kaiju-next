@@ -1,0 +1,64 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=199",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 199
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:14:42.146Z",
+  "rawSha256": "70778379ea66e93b92f9bbbd635a68980d22cbb795af58022ad6877049c5c583",
+  "cache": "fresh",
+  "data": {
+    "heroId": 199,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "离恨烟",
+        "pickRate": 33.93
+      },
+      {
+        "skinName": "云诺千山",
+        "pickRate": 26.11
+      },
+      {
+        "skinName": "祈雪灵祝",
+        "pickRate": 13.1
+      },
+      {
+        "skinName": "记忆之芯",
+        "pickRate": 9.01
+      },
+      {
+        "skinName": "花间舞",
+        "pickRate": 5.87
+      },
+      {
+        "skinName": "涂山容容",
+        "pickRate": 4.25
+      },
+      {
+        "skinName": "玉兔公主",
+        "pickRate": 2.81
+      },
+      {
+        "skinName": "碎光执事",
+        "pickRate": 2.21
+      },
+      {
+        "skinName": "蜜橘之夏",
+        "pickRate": 1.87
+      },
+      {
+        "skinName": "无限星赏官",
+        "pickRate": 0.68
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.17
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=111",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 111
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:07:34.899Z",
+  "rawSha256": "1ee89fdfb9e04a6e00f6fb451b0ab95fab575305e0eb1dfe401199956116e7f7",
+  "cache": "fresh",
+  "data": {
+    "heroId": 111,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "末日机甲",
+        "pickRate": 55.56
+      },
+      {
+        "skinName": "云端乐园",
+        "pickRate": 33.48
+      },
+      {
+        "skinName": "水果甜心",
+        "pickRate": 4.35
+      },
+      {
+        "skinName": "沉稳之力",
+        "pickRate": 1.65
+      },
+      {
+        "skinName": "乘龙·问璇玑",
+        "pickRate": 1.65
+      },
+      {
+        "skinName": "异界灵契",
+        "pickRate": 1.5
+      },
+      {
+        "skinName": "时之恋人",
+        "pickRate": 0.9
+      },
+      {
+        "skinName": "火炮千金",
+        "pickRate": 0.3
+      },
+      {
+        "skinName": "杀手不太冷",
+        "pickRate": 0.15
+      },
+      {
+        "skinName": "蔷薇恋人",
+        "pickRate": 0.15
+      },
+      {
+        "skinName": "音你闪耀",
+        "pickRate": 0.15
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.15
+      }
+    ]
+  }
+}

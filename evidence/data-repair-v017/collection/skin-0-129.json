@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=129",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 129
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:09:24.212Z",
+  "rawSha256": "213f82ce598c9ba7db8eaf38070aec7e115d49d55fed570900bc47adf0acffc9",
+  "cache": "fresh",
+  "data": {
+    "heroId": 129,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "战鼓燎原",
+        "pickRate": 46.53
+      },
+      {
+        "skinName": "岱宗",
+        "pickRate": 19.46
+      },
+      {
+        "skinName": "蓝屏警告",
+        "pickRate": 18.79
+      },
+      {
+        "skinName": "铁甲之心",
+        "pickRate": 8.28
+      },
+      {
+        "skinName": "黄金武士",
+        "pickRate": 5.59
+      },
+      {
+        "skinName": "铁骨偃魂",
+        "pickRate": 1.12
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.22
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-10-13&heroId=149",
+  "query": {
+    "kind": "combined",
+    "date": "2026-10-13",
+    "heroId": 149
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:10:56.408Z",
+  "rawSha256": "79b27149e2a7e4857bfb9f5378176890a1ddcbba49709d9aa86d7cfe0851cc93",
+  "cache": "fresh",
+  "data": {
+    "heroId": 149,
+    "positions": {
+      "0": {
+        "pickRate": 5.14,
+        "winRate": 43.7
+      },
+      "4": {
+        "pickRate": 94.69,
+        "winRate": 50
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "终结",
+        "pickRate": 94.21,
+        "winRate": 49.62
+      },
+      {
+        "skillName": "闪现",
+        "pickRate": 2.41,
+        "winRate": 51.76
+      },
+      {
+        "skillName": "治疗术",
+        "pickRate": 1.29,
+        "winRate": 51.29
+      },
+      {
+        "skillName": "晕眩",
+        "pickRate": 0.96,
+        "winRate": 48.16
+      },
+      {
+        "skillName": "传送",
+        "pickRate": 0.64,
+        "winRate": 41.33
+      }
+    ]
+  }
+}

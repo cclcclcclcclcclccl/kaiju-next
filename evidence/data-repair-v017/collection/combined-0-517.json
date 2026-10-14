@@ -1,0 +1,49 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-10-13&heroId=517",
+  "query": {
+    "kind": "combined",
+    "date": "2026-10-13",
+    "heroId": 517
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:16:20.136Z",
+  "rawSha256": "de7f899455912e3368a755f45b312ac7bfb9808e33823df0afa8cf2a546e5f58",
+  "cache": "fresh",
+  "data": {
+    "heroId": 517,
+    "positions": {
+      "0": {
+        "pickRate": 5.9,
+        "winRate": 46.97
+      },
+      "3": {
+        "pickRate": 94.1,
+        "winRate": 51.09
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "惩击",
+        "pickRate": 94.1,
+        "winRate": 51.11
+      },
+      {
+        "skillName": "雾行千山",
+        "pickRate": 3.32,
+        "winRate": 50.81
+      },
+      {
+        "skillName": "弱化",
+        "pickRate": 1.48,
+        "winRate": 45.07
+      },
+      {
+        "skillName": "闪现",
+        "pickRate": 1.11,
+        "winRate": 47.62
+      }
+    ]
+  }
+}

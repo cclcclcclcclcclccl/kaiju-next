@@ -1,0 +1,39 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-10-13&heroId=182",
+  "query": {
+    "kind": "combined",
+    "date": "2026-10-13",
+    "heroId": 182
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:13:15.351Z",
+  "rawSha256": "c32bc2cb4c061bafebea4aa078e7188fa7c6bfaec2225a16ca2dd8d50f75e8f5",
+  "cache": "fresh",
+  "data": {
+    "heroId": 182,
+    "positions": {
+      "1": {
+        "pickRate": 98.44,
+        "winRate": 47.59
+      },
+      "2": {
+        "pickRate": 1.56,
+        "winRate": 42.71
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "闪现",
+        "pickRate": 96.88,
+        "winRate": 47.51
+      },
+      {
+        "skillName": "雾行千山",
+        "pickRate": 3.13,
+        "winRate": 45.45
+      }
+    ]
+  }
+}

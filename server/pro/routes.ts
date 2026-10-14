@@ -1,3 +1,4 @@
+import { REVIEW_PROTOCOL } from '../../src/player/pro/reviewProtocol.ts';
 import { z } from 'zod';
 import type { IncomingMessage, ServerResponse } from 'node:http';
 import {
@@ -412,6 +413,8 @@ export async function proRoutes(ctx: {
             {
               role: 'system',
               content:
+                REVIEW_PROTOCOL +
+                '\n' +
                 '你是王者荣耀复盘教练。只使用提供的画面和带时间戳的用户标注，区分画面观察与用户描述，不猜测战争迷雾、队友意图、画面之外的经济或技能状态，不因胜败倒推决策好坏。必须为每个建议绑定一个给定 eventId，指出证据不足之处。截图只能支持局部分析，不代表已观看整局录像。输出严格 JSON：{"findings":[{"eventId":"原ID","observation":"可见证据及来源","advice":"下一次可执行的替代选择","uncertainty":"无法确定的内容"}]}。',
             },
             { role: 'user', content },
@@ -440,6 +443,11 @@ export async function proRoutes(ctx: {
       const parsed = schema.parse(JSON.parse(out.choices[0].message.content));
       if (parsed.findings.some((f) => !events.some((e) => e.id === f.eventId)))
         throw new Error('模型引用了不存在的关键帧');
+      if (
+        new Set(parsed.findings.map((f) => f.eventId)).size !== events.length ||
+        parsed.findings.length !== events.length
+      )
+        throw Error('模型遗漏或重复关键帧');
       send(200, { ...parsed, model: config.model, scope: '仅所选关键帧，不能视为完整视频理解' });
     } catch {
       send(502, { error: '视觉模型未完成有效分析；请核对所配置模型是否支持图片，或稍后重试' });

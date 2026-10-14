@@ -1,0 +1,56 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=190",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 190
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:13:46.663Z",
+  "rawSha256": "277acbca0258c0262e83846b8ec6c402762fb69a53097af613631593b3b05882",
+  "cache": "fresh",
+  "data": {
+    "heroId": 190,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "星域神启",
+        "pickRate": 56.43
+      },
+      {
+        "skinName": "黄金分割率",
+        "pickRate": 20.44
+      },
+      {
+        "skinName": "天机白泽",
+        "pickRate": 7.42
+      },
+      {
+        "skinName": "时雨天司",
+        "pickRate": 5.65
+      },
+      {
+        "skinName": "星航指挥官",
+        "pickRate": 5.59
+      },
+      {
+        "skinName": "武陵仙君",
+        "pickRate": 1.78
+      },
+      {
+        "skinName": "掌控之力",
+        "pickRate": 1.4
+      },
+      {
+        "skinName": "鹤羽星尊",
+        "pickRate": 1.18
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.11
+      }
+    ]
+  }
+}

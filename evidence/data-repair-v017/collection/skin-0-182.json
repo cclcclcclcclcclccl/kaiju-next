@@ -1,0 +1,52 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=182",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 182
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:13:11.303Z",
+  "rawSha256": "3885086992b37604cb73db724b1edbee35bfa3e9f29ca5d26c7da7dab5c713e5",
+  "cache": "fresh",
+  "data": {
+    "heroId": 182,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "冰霜恋舞曲",
+        "pickRate": 70.5
+      },
+      {
+        "skinName": "久胜战神",
+        "pickRate": 11
+      },
+      {
+        "skinName": "千山共赴",
+        "pickRate": 7.5
+      },
+      {
+        "skinName": "第七人偶",
+        "pickRate": 4.5
+      },
+      {
+        "skinName": "胡桃夹子",
+        "pickRate": 3.5
+      },
+      {
+        "skinName": "雾都夜雨",
+        "pickRate": 1.5
+      },
+      {
+        "skinName": "真爱魔法",
+        "pickRate": 1
+      },
+      {
+        "skinName": "画中仙",
+        "pickRate": 0.5
+      }
+    ]
+  }
+}

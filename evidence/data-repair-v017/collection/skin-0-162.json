@@ -1,0 +1,28 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=162",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 162
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:11:45.724Z",
+  "rawSha256": "2fb0d0aea5921aa74e55682ea1922abf090fca736667fd5207ff972a9fa350b0",
+  "cache": "fresh",
+  "data": {
+    "heroId": 162,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "晚萤",
+        "pickRate": 65.07
+      },
+      {
+        "skinName": "前尘镜",
+        "pickRate": 34.93
+      }
+    ]
+  }
+}

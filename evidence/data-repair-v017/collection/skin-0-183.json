@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=183",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 183
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:13:16.381Z",
+  "rawSha256": "f20f6c377f03ad16872f23e42889effd1a2585a378ab8fa9cd7dee28ccabb59b",
+  "cache": "fresh",
+  "data": {
+    "heroId": 183,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "冰冠公主",
+        "pickRate": 33.08
+      },
+      {
+        "skinName": "神奇女侠",
+        "pickRate": 31.58
+      },
+      {
+        "skinName": "战争女神",
+        "pickRate": 15.29
+      },
+      {
+        "skinName": "单词大作战",
+        "pickRate": 11.03
+      },
+      {
+        "skinName": "潮玩士官长",
+        "pickRate": 4.26
+      },
+      {
+        "skinName": "黎明之约",
+        "pickRate": 2.51
+      },
+      {
+        "skinName": "执弈定局",
+        "pickRate": 2.26
+      }
+    ]
+  }
+}

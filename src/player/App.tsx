@@ -305,7 +305,7 @@ export default function App() {
             <span>
               <i />
               {ready ? '本地工作台已连接' : '正在连接本地服务'}
-              <small>v0.16</small>
+              <small>v0.17</small>
             </span>
           </div>
         </aside>

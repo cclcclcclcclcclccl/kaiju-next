@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=139",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 139
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:10:20.069Z",
+  "rawSha256": "8028a3368fa38a651b12aa525cdccd672ca715889b7dff3e5f5e48a952bd6111",
+  "cache": "fresh",
+  "data": {
+    "heroId": 139,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1135,
+        "equipmentName": "闪电匕首",
+        "pickRate": 99.04,
+        "winRate": 49.11
+      },
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "pickRate": 86.79,
+        "winRate": 50.69
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 80.37,
+        "winRate": 49.29
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "pickRate": 64.5,
+        "winRate": 58.81
+      },
+      {
+        "equipmentId": 11311,
+        "equipmentName": "纯净苍穹",
+        "pickRate": 39.13,
+        "winRate": 63
+      },
+      {
+        "equipmentId": 1425,
+        "equipmentName": "急速战靴",
+        "pickRate": 15.89,
+        "winRate": 46.99
+      },
+      {
+        "equipmentId": 1336,
+        "equipmentName": "极寒风暴",
+        "pickRate": 8.81,
+        "winRate": 58.15
+      },
+      {
+        "equipmentId": 1353,
+        "equipmentName": "旭日初光",
+        "pickRate": 7.08,
+        "winRate": 66.89
+      },
+      {
+        "equipmentId": 1126,
+        "equipmentName": "末世",
+        "pickRate": 2.9,
+        "winRate": 64.46
+      },
+      {
+        "equipmentId": 1337,
+        "equipmentName": "贤者的庇护",
+        "pickRate": 2.56,
+        "winRate": 80.37
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=120",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 120
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:08:44.321Z",
+  "rawSha256": "478aa95fc46b9b6c238d085150c942c3d7f4ba15165f886824ef098e308a27ea",
+  "cache": "fresh",
+  "data": {
+    "heroId": 120,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "星夜王子",
+        "pickRate": 73.78
+      },
+      {
+        "skinName": "苍鳞隐世",
+        "pickRate": 13.95
+      },
+      {
+        "skinName": "死霸装",
+        "pickRate": 3.53
+      },
+      {
+        "skinName": "白色死神",
+        "pickRate": 3.53
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 3.03
+      },
+      {
+        "skinName": "狰",
+        "pickRate": 1.34
+      },
+      {
+        "skinName": "夜都怪侠",
+        "pickRate": 0.5
+      },
+      {
+        "skinName": "乐园追猎者",
+        "pickRate": 0.34
+      }
+    ]
+  }
+}

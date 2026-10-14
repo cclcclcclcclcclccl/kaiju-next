@@ -1,0 +1,56 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=114",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 114
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:07:51.061Z",
+  "rawSha256": "e017a87409bdb5ae3aed38820053c80c3467188a23247d039a1f97cff44d3aff",
+  "cache": "fresh",
+  "data": {
+    "heroId": 114,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "天才门将",
+        "pickRate": 44.85
+      },
+      {
+        "skinName": "电玩·爆裂旋风",
+        "pickRate": 19.85
+      },
+      {
+        "skinName": "鸭鸭历险记",
+        "pickRate": 16.91
+      },
+      {
+        "skinName": "超级夜猫侠",
+        "pickRate": 10.29
+      },
+      {
+        "skinName": "英喵野望",
+        "pickRate": 2.57
+      },
+      {
+        "skinName": "绅士熊喵",
+        "pickRate": 1.84
+      },
+      {
+        "skinName": "秘密基地",
+        "pickRate": 1.84
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 1.1
+      },
+      {
+        "skinName": "唤灵魔甲",
+        "pickRate": 0.74
+      }
+    ]
+  }
+}

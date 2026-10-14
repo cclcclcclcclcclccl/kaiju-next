@@ -1,0 +1,40 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=125",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 125
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:09:04.102Z",
+  "rawSha256": "7df2754ade3861ba77578d37f194358ddbd015c1ea0704047626e4c97b13f3cb",
+  "cache": "fresh",
+  "data": {
+    "heroId": 125,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "诡秘之主",
+        "pickRate": 63.2
+      },
+      {
+        "skinName": "云间偶戏",
+        "pickRate": 19.09
+      },
+      {
+        "skinName": "午夜歌剧院",
+        "pickRate": 9.57
+      },
+      {
+        "skinName": "无心",
+        "pickRate": 8.07
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.06
+      }
+    ]
+  }
+}

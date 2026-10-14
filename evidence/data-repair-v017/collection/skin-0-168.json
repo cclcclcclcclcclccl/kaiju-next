@@ -1,0 +1,52 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=168",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 168
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:12:05.849Z",
+  "rawSha256": "0c02666e700ac70623b43b559d4f244e395d1fda0dbb9a3ce1914b307acb3630",
+  "cache": "fresh",
+  "data": {
+    "heroId": 168,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "星界战将",
+        "pickRate": 38.1
+      },
+      {
+        "skinName": "奔雷神使",
+        "pickRate": 27.92
+      },
+      {
+        "skinName": "西部大镖客",
+        "pickRate": 15.15
+      },
+      {
+        "skinName": "牛运亨通",
+        "pickRate": 6.71
+      },
+      {
+        "skinName": "小牛鸭",
+        "pickRate": 6.49
+      },
+      {
+        "skinName": "制霸全明星",
+        "pickRate": 2.6
+      },
+      {
+        "skinName": "御旌",
+        "pickRate": 2.6
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.43
+      }
+    ]
+  }
+}

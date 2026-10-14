@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=513",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 513
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:16:00.798Z",
+  "rawSha256": "83c950a548f44ce9b723a8e0f41e2973aeb0eac6b1c4b0aaee7dcd47755b6095",
+  "cache": "fresh",
+  "data": {
+    "heroId": 513,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "妄想奇谈",
+        "pickRate": 59.71
+      },
+      {
+        "skinName": "群星魔术团",
+        "pickRate": 9.6
+      },
+      {
+        "skinName": "春霖将至",
+        "pickRate": 9.19
+      },
+      {
+        "skinName": "天狼绘梦者",
+        "pickRate": 7.52
+      },
+      {
+        "skinName": "修竹墨客",
+        "pickRate": 7.31
+      },
+      {
+        "skinName": "梁祝",
+        "pickRate": 4.18
+      },
+      {
+        "skinName": "神器·万象笔",
+        "pickRate": 2.51
+      }
+    ]
+  }
+}

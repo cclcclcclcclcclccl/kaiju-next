@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=144",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 144
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:10:40.232Z",
+  "rawSha256": "57fd991bbf97cddd99a628445d6e3100ad262782ecbab67a9ef1523f357418d7",
+  "cache": "fresh",
+  "data": {
+    "heroId": 144,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1334,
+        "equipmentName": "不死鸟之眼",
+        "pickRate": 93.37,
+        "winRate": 50.82
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 80.78,
+        "winRate": 49.89
+      },
+      {
+        "equipmentId": 1331,
+        "equipmentName": "红莲斗篷",
+        "pickRate": 62.07,
+        "winRate": 49.32
+      },
+      {
+        "equipmentId": 1336,
+        "equipmentName": "极寒风暴",
+        "pickRate": 53.74,
+        "winRate": 54.75
+      },
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "pickRate": 26.53,
+        "winRate": 55.77
+      },
+      {
+        "equipmentId": 1327,
+        "equipmentName": "反伤刺甲",
+        "pickRate": 26.36,
+        "winRate": 57.42
+      },
+      {
+        "equipmentId": 1347,
+        "equipmentName": "永夜守护",
+        "pickRate": 18.2,
+        "winRate": 60.75
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 15.99,
+        "winRate": 41.49
+      },
+      {
+        "equipmentId": 1534,
+        "equipmentName": "怒龙剑盾",
+        "pickRate": 14.46,
+        "winRate": 48.24
+      },
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "pickRate": 8.5,
+        "winRate": 60
+      }
+    ]
+  }
+}

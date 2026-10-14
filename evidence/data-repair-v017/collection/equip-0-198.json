@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=198",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 198
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:14:34.956Z",
+  "rawSha256": "dd4a5c604b3fa886885344bb244453edd8edbfc6bafcfac08682ecf71d344994",
+  "cache": "fresh",
+  "data": {
+    "heroId": 198,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1128,
+        "equipmentName": "寒霜袭侵",
+        "pickRate": 89.98,
+        "winRate": 50.61
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 83.77,
+        "winRate": 48.89
+      },
+      {
+        "equipmentId": 1533,
+        "equipmentName": "贪婪之噬",
+        "pickRate": 64.27,
+        "winRate": 56.44
+      },
+      {
+        "equipmentId": 11311,
+        "equipmentName": "纯净苍穹",
+        "pickRate": 53.81,
+        "winRate": 53.64
+      },
+      {
+        "equipmentId": 13310,
+        "equipmentName": "冰痕之握",
+        "pickRate": 21.79,
+        "winRate": 57.5
+      },
+      {
+        "equipmentId": 11210,
+        "equipmentName": "制裁之刃",
+        "pickRate": 21.57,
+        "winRate": 55.56
+      },
+      {
+        "equipmentId": 1136,
+        "equipmentName": "影刃",
+        "pickRate": 21.35,
+        "winRate": 54.08
+      },
+      {
+        "equipmentId": 1534,
+        "equipmentName": "怒龙剑盾",
+        "pickRate": 18.41,
+        "winRate": 56.8
+      },
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "pickRate": 18.3,
+        "winRate": 56.55
+      },
+      {
+        "equipmentId": 1159,
+        "equipmentName": "逐风",
+        "pickRate": 6.64,
+        "winRate": 36.07
+      }
+    ]
+  }
+}

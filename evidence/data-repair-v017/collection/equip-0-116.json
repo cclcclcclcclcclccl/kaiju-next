@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=116",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 116
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:08:18.150Z",
+  "rawSha256": "442c79505518c018d059d233aecfe01db6d40e128583e53e98ec2cc352328e00",
+  "cache": "fresh",
+  "data": {
+    "heroId": 116,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "pickRate": 96.5,
+        "winRate": 48.4
+      },
+      {
+        "equipmentId": 1533,
+        "equipmentName": "贪婪之噬",
+        "pickRate": 94.44,
+        "winRate": 49.02
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 78.6,
+        "winRate": 48.69
+      },
+      {
+        "equipmentId": 13310,
+        "equipmentName": "冰痕之握",
+        "pickRate": 68.31,
+        "winRate": 56.93
+      },
+      {
+        "equipmentId": 1126,
+        "equipmentName": "末世",
+        "pickRate": 36.01,
+        "winRate": 69.14
+      },
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "pickRate": 21.6,
+        "winRate": 62.86
+      },
+      {
+        "equipmentId": 1534,
+        "equipmentName": "怒龙剑盾",
+        "pickRate": 17.08,
+        "winRate": 61.45
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 11.73,
+        "winRate": 33.33
+      },
+      {
+        "equipmentId": 1333,
+        "equipmentName": "不祥征兆",
+        "pickRate": 6.17,
+        "winRate": 56.67
+      },
+      {
+        "equipmentId": 1133,
+        "equipmentName": "无尽战刃",
+        "pickRate": 5.97,
+        "winRate": 24.14
+      }
+    ]
+  }
+}

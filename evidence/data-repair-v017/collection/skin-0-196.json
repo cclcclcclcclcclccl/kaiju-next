@@ -1,0 +1,52 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=196",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 196
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:14:17.926Z",
+  "rawSha256": "dc0aa358c3e02c9eb5ed419166ea1486f28fcbdb973f794c4d508cd3e80ba028",
+  "cache": "fresh",
+  "data": {
+    "heroId": 196,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "绝影神枪",
+        "pickRate": 65.09
+      },
+      {
+        "skinName": "暗夜巡卫",
+        "pickRate": 12.49
+      },
+      {
+        "skinName": "特工魅影",
+        "pickRate": 6.94
+      },
+      {
+        "skinName": "雪豹·霜爪",
+        "pickRate": 5.49
+      },
+      {
+        "skinName": "真我赫兹",
+        "pickRate": 4.16
+      },
+      {
+        "skinName": "朱雀志",
+        "pickRate": 2.77
+      },
+      {
+        "skinName": "百相守梦",
+        "pickRate": 1.85
+      },
+      {
+        "skinName": "碎云",
+        "pickRate": 1.21
+      }
+    ]
+  }
+}

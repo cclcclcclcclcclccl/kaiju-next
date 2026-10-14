@@ -1,0 +1,52 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=502",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 502
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:14:57.825Z",
+  "rawSha256": "1476aa032e6bf0fc54bf313c0a0dab25102de2aba4dc8ef944b741db5fcf657b",
+  "cache": "fresh",
+  "data": {
+    "heroId": 502,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "祥瑞亨通",
+        "pickRate": 58.9
+      },
+      {
+        "skinName": "梅西",
+        "pickRate": 15.85
+      },
+      {
+        "skinName": "寅虎·赤拳",
+        "pickRate": 12.81
+      },
+      {
+        "skinName": "街头旋风",
+        "pickRate": 8.2
+      },
+      {
+        "skinName": "天狼狩猎者",
+        "pickRate": 1.9
+      },
+      {
+        "skinName": "李小龙",
+        "pickRate": 1.85
+      },
+      {
+        "skinName": "擒涛扼浪",
+        "pickRate": 0.27
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.22
+      }
+    ]
+  }
+}

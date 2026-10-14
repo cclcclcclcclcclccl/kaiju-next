@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=581",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 581
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:18:51.235Z",
+  "rawSha256": "706561c20941c081c963d065fb7f674e816d74471b811896ed7004f032f8dc13",
+  "cache": "fresh",
+  "data": {
+    "heroId": 581,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 85.28,
+        "winRate": 50.86
+      },
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "pickRate": 70.5,
+        "winRate": 54.36
+      },
+      {
+        "equipmentId": 1721,
+        "equipmentName": "极影·救赎",
+        "pickRate": 66.67,
+        "winRate": 49.82
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "pickRate": 39.17,
+        "winRate": 61.8
+      },
+      {
+        "equipmentId": 1534,
+        "equipmentName": "怒龙剑盾",
+        "pickRate": 16.55,
+        "winRate": 60.29
+      },
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "pickRate": 14.6,
+        "winRate": 50.83
+      },
+      {
+        "equipmentId": 1353,
+        "equipmentName": "旭日初光",
+        "pickRate": 11.8,
+        "winRate": 57.73
+      },
+      {
+        "equipmentId": 1331,
+        "equipmentName": "红莲斗篷",
+        "pickRate": 9.31,
+        "winRate": 56.21
+      },
+      {
+        "equipmentId": 1737,
+        "equipmentName": "极影·形昭",
+        "pickRate": 8.09,
+        "winRate": 54.89
+      },
+      {
+        "equipmentId": 1423,
+        "equipmentName": "冷静之靴",
+        "pickRate": 7.91,
+        "winRate": 40
+      }
+    ]
+  }
+}

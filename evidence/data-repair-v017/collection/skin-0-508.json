@@ -1,0 +1,56 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=508",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 508
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:15:40.857Z",
+  "rawSha256": "3959d12907146d2f784218d7fc485c5bd079d5526ee0bf39f89875ad2e3a24a7",
+  "cache": "fresh",
+  "data": {
+    "heroId": 508,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "炽翼辉光",
+        "pickRate": 23.73
+      },
+      {
+        "skinName": "最初的交响",
+        "pickRate": 20.34
+      },
+      {
+        "skinName": "月影弦鸣",
+        "pickRate": 14.41
+      },
+      {
+        "skinName": "箭羽风息",
+        "pickRate": 11.86
+      },
+      {
+        "skinName": "沧流箭",
+        "pickRate": 11.86
+      },
+      {
+        "skinName": "太华",
+        "pickRate": 11.02
+      },
+      {
+        "skinName": "琥珀纪元",
+        "pickRate": 4.24
+      },
+      {
+        "skinName": "天狼溯光者",
+        "pickRate": 1.69
+      },
+      {
+        "skinName": "花见巫女",
+        "pickRate": 0.85
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=175",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 175
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:12:44.170Z",
+  "rawSha256": "73e124a7dc7bb39e5388d37e4013befa7766e9c9154b3c5ddafe320b5f9c128a",
+  "cache": "fresh",
+  "data": {
+    "heroId": 175,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "pickRate": 86.68,
+        "winRate": 49.64
+      },
+      {
+        "equipmentId": 1426,
+        "equipmentName": "疾步之靴",
+        "pickRate": 52.19,
+        "winRate": 46.89
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 43.14,
+        "winRate": 46.13
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "pickRate": 32.83,
+        "winRate": 57.69
+      },
+      {
+        "equipmentId": 1737,
+        "equipmentName": "极影·形昭",
+        "pickRate": 32.26,
+        "winRate": 42.87
+      },
+      {
+        "equipmentId": 1754,
+        "equipmentName": "近卫·形昭",
+        "pickRate": 28.65,
+        "winRate": 46.48
+      },
+      {
+        "equipmentId": 1724,
+        "equipmentName": "近卫·救赎",
+        "pickRate": 18.28,
+        "winRate": 50.49
+      },
+      {
+        "equipmentId": 1721,
+        "equipmentName": "极影·救赎",
+        "pickRate": 11.55,
+        "winRate": 44.53
+      },
+      {
+        "equipmentId": 1333,
+        "equipmentName": "不祥征兆",
+        "pickRate": 10.22,
+        "winRate": 57.65
+      },
+      {
+        "equipmentId": 1347,
+        "equipmentName": "永夜守护",
+        "pickRate": 7.1,
+        "winRate": 58.05
+      }
+    ]
+  }
+}

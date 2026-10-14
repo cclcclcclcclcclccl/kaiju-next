@@ -1,4 +1,4 @@
-import TianyuanLive from './TianyuanLive.tsx';
+import TianyuanLive from './PublicLeaderboard.tsx';
 import StatImport from './StatImport.tsx';
 import StatHistory from './StatHistory.tsx';
 import OfficialStats from './OfficialStats.tsx';
@@ -142,7 +142,7 @@ export default function Leaderboard({
       </div>
       <div className="resource-tabs" aria-label="榜单数据来源">
         <button className={live ? 'active' : ''} onClick={() => setLive(true)}>
-          开局强度与全榜
+          来源梯度与全榜
         </button>
         <button className={!live ? 'active' : ''} onClick={() => setLive(false)}>
           历史快照与官方榜

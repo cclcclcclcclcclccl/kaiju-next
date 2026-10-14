@@ -1,0 +1,72 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=169",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 169
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:12:10.889Z",
+  "rawSha256": "b894bbfd89c018572921298b2c9c286faa942e9b7270c09e1b05388475198b26",
+  "cache": "fresh",
+  "data": {
+    "heroId": 169,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "石田雨龙",
+        "pickRate": 26.09
+      },
+      {
+        "skinName": "黄金射手座",
+        "pickRate": 21.44
+      },
+      {
+        "skinName": "神树通天",
+        "pickRate": 15.14
+      },
+      {
+        "skinName": "天穹守望者",
+        "pickRate": 8.4
+      },
+      {
+        "skinName": "完美运算",
+        "pickRate": 6.15
+      },
+      {
+        "skinName": "千劫归真",
+        "pickRate": 5.55
+      },
+      {
+        "skinName": "如梦令",
+        "pickRate": 5.1
+      },
+      {
+        "skinName": "阿尔法小队",
+        "pickRate": 4.65
+      },
+      {
+        "skinName": "辉光之辰",
+        "pickRate": 2.85
+      },
+      {
+        "skinName": "精灵王",
+        "pickRate": 2.85
+      },
+      {
+        "skinName": "无尽星芒",
+        "pickRate": 1.35
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.3
+      },
+      {
+        "skinName": "圣弓游侠",
+        "pickRate": 0.15
+      }
+    ]
+  }
+}

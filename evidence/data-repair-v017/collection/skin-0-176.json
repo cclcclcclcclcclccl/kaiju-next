@@ -1,0 +1,44 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=176",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 176
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:12:46.099Z",
+  "rawSha256": "5e1255087f1a671f77b7d17e24b1858e8412c0586817a5ccb1f59ab712a309dd",
+  "cache": "fresh",
+  "data": {
+    "heroId": 176,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "霓裳曲",
+        "pickRate": 38.63
+      },
+      {
+        "skinName": "银翎春语",
+        "pickRate": 26.04
+      },
+      {
+        "skinName": "星之鸣奏",
+        "pickRate": 15.89
+      },
+      {
+        "skinName": "寅虎·心曲",
+        "pickRate": 11.64
+      },
+      {
+        "skinName": "遇见飞天",
+        "pickRate": 7.4
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.39
+      }
+    ]
+  }
+}

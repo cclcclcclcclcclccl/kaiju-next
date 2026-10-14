@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=503",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 503
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:15:07.136Z",
+  "rawSha256": "d5f992a587bf0fb5ac70697d0f70d09ec01c9b0dcc124c131e552d6ba1e3fade",
+  "cache": "fresh",
+  "data": {
+    "heroId": 503,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "龙之律动",
+        "pickRate": 57.71
+      },
+      {
+        "skinName": "电玩高手",
+        "pickRate": 16.5
+      },
+      {
+        "skinName": "命运角斗场",
+        "pickRate": 16.44
+      },
+      {
+        "skinName": "铁影缉凶",
+        "pickRate": 3.24
+      },
+      {
+        "skinName": "御狮",
+        "pickRate": 3.06
+      },
+      {
+        "skinName": "特工战影",
+        "pickRate": 2.76
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.3
+      }
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "checkedAt": "2026-10-14T15:36:03.666Z",
+  "version": "0.17.0",
+  "core": {
+    "passed": 77,
+    "failed": 0
+  },
+  "browser": {
+    "startTime": "2026-10-14T15:30:01.704Z",
+    "duration": 181475.972,
+    "expected": 48,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "finalLayout": {
+    "startTime": "2026-10-14T15:34:44.992Z",
+    "duration": 20159.471,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "build": true,
+  "typecheck": true,
+  "format": true,
+  "reproduction": {
+    "checkedAt": "2026-10-14T15:29:52.113Z",
+    "elapsedSeconds": 31,
+    "freshInstall": true,
+    "freshBuild": true,
+    "freshDatabase": true,
+    "status": {
+      "product": "开局 NEXT",
+      "version": "0.17.0",
+      "modelConfigured": false,
+      "heroCount": 133,
+      "identity": {
+        "mode": "guest",
+        "name": "访客"
+      }
+    },
+    "node": "v24.16.0",
+    "sourceDirectory": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\.reproduction\\audit-1791991761272",
+    "note": "Core local startup verified; OCR model installation and external data availability are separate prerequisites."
+  },
+  "sourceCollection": {
+    "total": 670,
+    "firstPass": 669,
+    "resolvedRetries": 1
+  },
+  "tierDate": "2026-10-14",
+  "statsDate": "2026-10-13",
+  "knownHeroes": [
+    {
+      "id": 126,
+      "name": "夏侯惇",
+      "tier": "T2",
+      "score": 35.49
+    },
+    {
+      "id": 531,
+      "name": "镜",
+      "tier": "T0",
+      "score": 86.71
+    },
+    {
+      "id": 508,
+      "name": "伽罗",
+      "tier": "T4",
+      "score": 13.14
+    },
+    {
+      "id": 105,
+      "name": "廉颇",
+      "tier": "T3",
+      "score": 28.89
+    }
+  ],
+  "kpl": {
+    "matches": 3,
+    "rounds": 12,
+    "trained": false
+  },
+  "personalDataUnchanged": true,
+  "databaseIntegrity": "ok",
+  "historicalEvidence": {
+    "verified": 1900,
+    "archivedNewOutputs": 29
+  },
+  "livePageErrors": [],
+  "trainingPerformed": false,
+  "limits": [
+    "综合梯度未提供独立分段参数",
+    "三率匿名访问只开放指定历史日期",
+    "没有原始对局样本量和完整口径审计",
+    "未训练复盘模型、未验证KPL级效果",
+    "KPL素材为回放索引，未下载或观看整局视频"
+  ]
+}

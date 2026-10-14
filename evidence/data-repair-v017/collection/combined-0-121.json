@@ -1,0 +1,35 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-10-13&heroId=121",
+  "query": {
+    "kind": "combined",
+    "date": "2026-10-13",
+    "heroId": 121
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:08:53.051Z",
+  "rawSha256": "34ec5086785dc9f40106c22f85a311321b769dd7f5b13ed7a253c8cc58874473",
+  "cache": "fresh",
+  "data": {
+    "heroId": 121,
+    "positions": {
+      "0": {
+        "pickRate": 99.17,
+        "winRate": 51.59
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "狂暴",
+        "pickRate": 97.93,
+        "winRate": 51.63
+      },
+      {
+        "skillName": "传送",
+        "pickRate": 1.24,
+        "winRate": 42.86
+      }
+    ]
+  }
+}

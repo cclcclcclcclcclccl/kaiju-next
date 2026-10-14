@@ -1,0 +1,52 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=155",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 155
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:11:25.416Z",
+  "rawSha256": "61b0a2107813c5f1765905d2e9e7b9ecc403ca5cb5cb20790eeee41aae238ca6",
+  "cache": "fresh",
+  "data": {
+    "heroId": 155,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "繁夏笺",
+        "pickRate": 54.39
+      },
+      {
+        "skinName": "陌上桑",
+        "pickRate": 13.78
+      },
+      {
+        "skinName": "奇遇舞章",
+        "pickRate": 8.77
+      },
+      {
+        "skinName": "觅芳踪",
+        "pickRate": 8.65
+      },
+      {
+        "skinName": "女武神",
+        "pickRate": 6.77
+      },
+      {
+        "skinName": "鹤鸣心笺",
+        "pickRate": 5.89
+      },
+      {
+        "skinName": "流音漫舞",
+        "pickRate": 1
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.75
+      }
+    ]
+  }
+}

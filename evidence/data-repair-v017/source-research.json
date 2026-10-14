@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-14T15:26:50.423Z",
+  "sourcePage": "https://tianyuanzhiyi.com/tier",
+  "sourceScript": "https://tianyuanzhiyi.com/_next/static/chunks/app/tier/page-cbda95b355b3857e.js",
+  "scriptSha256": "172bb60823eadeea637a81b882a34b76d36dcfba47c1fd9dfb0f20b486fb06c3",
+  "thresholdExcerpt": "P=[{tier:\"T0\",minScore:70},{tier:\"T0.5\",minScore:60},{tier:\"T1\",minScore:45},{tier:\"T2\",minScore:30},{tier:\"T3\",minScore:15},{tier:\"T4\",minScore:0}],D=P.map(e=>e.tier),O=e=>{for(let r=0;r<P.length;r++)if(e>=P[r].minScore)return{...P[r],index:r};return{...P[P.length-1],index:P.length-1}},_=e=>{var r,a;let{heroData:t,displayMode:l,selectedR",
+  "observedBehavior": [
+    "Source uses finalNormalizedTierScore descending, then trueHeroPowerInRole",
+    "Thresholds T0>=70,T0.5>=60,T1>=45,T2>=30,T3>=15,T4>=0",
+    "Role filters distinguish primary and secondary roles",
+    "Source date defaults to today after 09:00 Asia/Shanghai",
+    "Global tier query has date only, no gameMode parameter"
+  ],
+  "statsDateProbe": {
+    "error": "您当前时段只能访问 2026-10-13 及之前的数据."
+  },
+  "kpl": {
+    "site": "https://kpl.qq.com/",
+    "anonymousReadEndpoints": [
+      "getScheduleList",
+      "getScheduleDetail",
+      "getProgrammeList"
+    ],
+    "videoDownloaded": false,
+    "videoWatched": false,
+    "modelTrained": false
+  }
+}

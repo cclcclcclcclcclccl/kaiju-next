@@ -31,6 +31,19 @@ test('local Codex handoff preserves image bytes and binds returned findings to i
       heroes[0],
     );
     assert.equal(packet.frames, 2);
+    const timeline = JSON.parse(await readFile(join(packet.directory, 'DECISIONS.json'), 'utf8'));
+    const firstDecision = JSON.parse(
+      await readFile(join(packet.directory, timeline.decisions[0].file), 'utf8'),
+    );
+    assert.deepEqual(
+      firstDecision.events.map((e: { id: string }) => e.id),
+      [events[0].id],
+    );
+    assert(!JSON.stringify(firstDecision).includes(events[1].id));
+    assert.match(
+      await readFile(join(packet.directory, 'COACHING_PROTOCOL.md'), 'utf8'),
+      /观战全图视野不等于选手视野/,
+    );
     assert.deepEqual(
       await readFile(join(packet.directory, events[0].id + '.jpg')),
       Buffer.from('/9j/2Q==', 'base64'),

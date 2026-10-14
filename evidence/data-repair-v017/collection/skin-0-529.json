@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=529",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 529
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:17:06.921Z",
+  "rawSha256": "48e320f94990bc7c81ead81d5bc26f69166e1a2ccf3f9fdf7799dd558b9f2d23",
+  "cache": "fresh",
+  "data": {
+    "heroId": 529,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "创世神祝",
+        "pickRate": 43.21
+      },
+      {
+        "skinName": "撼世英歌",
+        "pickRate": 25.1
+      },
+      {
+        "skinName": "冰霜神祇",
+        "pickRate": 14.81
+      },
+      {
+        "skinName": "敬我三分",
+        "pickRate": 10.29
+      },
+      {
+        "skinName": "重装意志",
+        "pickRate": 3.7
+      },
+      {
+        "skinName": "经纬探寻者",
+        "pickRate": 2.47
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.41
+      }
+    ]
+  }
+}

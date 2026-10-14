@@ -49,7 +49,7 @@ test('official data stays attributed, partial and distinct from personal tiers a
   await panel.getByRole('button', { name: '海月' }).click();
   const detail = page.getByRole('dialog');
   await expect(detail.locator('.official-hero-stats')).toContainText('热度 T0 · 胜率 49.88%');
-  await expect(detail.getByLabel('英雄统计分段')).toHaveValue('巅峰1350+');
+  await expect(detail.getByLabel('历史英雄统计分段')).toHaveValue('巅峰1350+');
   await page.keyboard.press('Escape');
   await page.getByLabel('搜索梯度英雄').fill('不存在');
   await expect(panel).toContainText('当前公开记录里没有符合筛选条件的英雄');

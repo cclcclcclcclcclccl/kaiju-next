@@ -1,0 +1,56 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=113",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 113
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:07:44.969Z",
+  "rawSha256": "20bd5f05e8707b8705db09d4bc72c6f095bb7749f03709982f7bee5da9111698",
+  "cache": "fresh",
+  "data": {
+    "heroId": 113,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "高山流水",
+        "pickRate": 34.68
+      },
+      {
+        "skinName": "牧神诗旅",
+        "pickRate": 20.16
+      },
+      {
+        "skinName": "锦麟游梦",
+        "pickRate": 13.71
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 8.87
+      },
+      {
+        "skinName": "云端筑梦师",
+        "pickRate": 7.26
+      },
+      {
+        "skinName": "奇妙博物学",
+        "pickRate": 4.84
+      },
+      {
+        "skinName": "鲤鱼之梦",
+        "pickRate": 4.03
+      },
+      {
+        "skinName": "蜃楼王",
+        "pickRate": 3.23
+      },
+      {
+        "skinName": "天秀·幻梦",
+        "pickRate": 3.23
+      }
+    ]
+  }
+}

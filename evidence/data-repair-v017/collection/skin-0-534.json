@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=534",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 534
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:17:21.721Z",
+  "rawSha256": "456c1979418992f9f7ed257fc6a21db1324912bbfb17a6a1b3c19540f7f56b9d",
+  "cache": "fresh",
+  "data": {
+    "heroId": 534,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "鸣野蒿",
+        "pickRate": 69.71
+      },
+      {
+        "skinName": "奇遇星旅",
+        "pickRate": 9.43
+      },
+      {
+        "skinName": "画中游",
+        "pickRate": 9.14
+      },
+      {
+        "skinName": "线条小狗",
+        "pickRate": 7.71
+      },
+      {
+        "skinName": "海盐诗旅",
+        "pickRate": 2
+      },
+      {
+        "skinName": "青衿临川",
+        "pickRate": 1.71
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.29
+      }
+    ]
+  }
+}

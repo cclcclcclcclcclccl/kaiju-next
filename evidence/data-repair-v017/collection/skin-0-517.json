@@ -1,0 +1,40 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=517",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 517
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:16:16.230Z",
+  "rawSha256": "ff71c5bd9fef1986c24c1b745cc385dae251aab320551c103d3a341dd98b9b45",
+  "cache": "fresh",
+  "data": {
+    "heroId": 517,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "暗都幽影",
+        "pickRate": 40.19
+      },
+      {
+        "skinName": "意贯长戈",
+        "pickRate": 27.24
+      },
+      {
+        "skinName": "东方月初",
+        "pickRate": 21.9
+      },
+      {
+        "skinName": "死亡执政官",
+        "pickRate": 10.1
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.57
+      }
+    ]
+  }
+}

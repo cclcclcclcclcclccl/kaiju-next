@@ -1,0 +1,32 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=519",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 519
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:16:26.189Z",
+  "rawSha256": "a63bd2d8a0fd3f7f12b41eaee48d8a3e6e96ade735548c52b47ccb8820ca69f4",
+  "cache": "fresh",
+  "data": {
+    "heroId": 519,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "灵珠·敖丙",
+        "pickRate": 54.38
+      },
+      {
+        "skinName": "赤刃凌霄",
+        "pickRate": 44.71
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.91
+      }
+    ]
+  }
+}

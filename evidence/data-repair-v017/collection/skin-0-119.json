@@ -1,0 +1,52 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=119",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 119
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:08:34.851Z",
+  "rawSha256": "609de972d377a1aae808e673987496731f254b9e83051f89a5900eec87830396",
+  "cache": "fresh",
+  "data": {
+    "heroId": 119,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "双面药师",
+        "pickRate": 58.24
+      },
+      {
+        "skinName": "灵蛊蚀心",
+        "pickRate": 14.18
+      },
+      {
+        "skinName": "化身博士",
+        "pickRate": 8.43
+      },
+      {
+        "skinName": "救世之瞳",
+        "pickRate": 6.9
+      },
+      {
+        "skinName": "奇幻香踪",
+        "pickRate": 5.75
+      },
+      {
+        "skinName": "炼金王",
+        "pickRate": 3.07
+      },
+      {
+        "skinName": "无尽旅途",
+        "pickRate": 2.68
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.77
+      }
+    ]
+  }
+}

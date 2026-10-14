@@ -1,0 +1,40 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=563",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 563
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:18:26.615Z",
+  "rawSha256": "3acdd059d0581af0042e8f96125e200c28d555a38e2131fa8cbe76d6ca4e48c4",
+  "cache": "fresh",
+  "data": {
+    "heroId": 563,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "心动手记",
+        "pickRate": 44.65
+      },
+      {
+        "skinName": "星光竞辉",
+        "pickRate": 27.61
+      },
+      {
+        "skinName": "时空谍影",
+        "pickRate": 16.77
+      },
+      {
+        "skinName": "烬夜裁决",
+        "pickRate": 9.55
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 1.42
+      }
+    ]
+  }
+}

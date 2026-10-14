@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=154",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 154
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:11:23.410Z",
+  "rawSha256": "d5a6bba71dfc7d289ae7625babf45b86fe7d953edda080e5a5a0d5e0577b1186",
+  "cache": "fresh",
+  "data": {
+    "heroId": 154,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "pickRate": 99.64,
+        "winRate": 52.56
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 86.65,
+        "winRate": 51.22
+      },
+      {
+        "equipmentId": 1338,
+        "equipmentName": "暴烈之甲",
+        "pickRate": 85.15,
+        "winRate": 53.21
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "pickRate": 70.36,
+        "winRate": 57.18
+      },
+      {
+        "equipmentId": 11311,
+        "equipmentName": "纯净苍穹",
+        "pickRate": 56.88,
+        "winRate": 59.18
+      },
+      {
+        "equipmentId": 1131,
+        "equipmentName": "碎星锤",
+        "pickRate": 23.71,
+        "winRate": 59.78
+      },
+      {
+        "equipmentId": 1132,
+        "equipmentName": "泣血之刃",
+        "pickRate": 5.59,
+        "winRate": 65.9
+      },
+      {
+        "equipmentId": 1337,
+        "equipmentName": "贤者的庇护",
+        "pickRate": 4.41,
+        "winRate": 76.61
+      },
+      {
+        "equipmentId": 1138,
+        "equipmentName": "强者破军",
+        "pickRate": 3.76,
+        "winRate": 52.74
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 3.61,
+        "winRate": 58.57
+      }
+    ]
+  }
+}

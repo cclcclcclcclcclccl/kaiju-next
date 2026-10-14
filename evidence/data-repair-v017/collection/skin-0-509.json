@@ -1,0 +1,40 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=509",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 509
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:15:45.647Z",
+  "rawSha256": "188dee91d1bbb2e1bfa95ddd89a4984b02f927769a6d0b0532d3a8bc55d100fe",
+  "cache": "fresh",
+  "data": {
+    "heroId": 509,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "极冰防御线",
+        "pickRate": 44.42
+      },
+      {
+        "skinName": "梦圆繁星",
+        "pickRate": 37.17
+      },
+      {
+        "skinName": "圆桌骑士",
+        "pickRate": 9.67
+      },
+      {
+        "skinName": "御銮",
+        "pickRate": 6.1
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 2.65
+      }
+    ]
+  }
+}

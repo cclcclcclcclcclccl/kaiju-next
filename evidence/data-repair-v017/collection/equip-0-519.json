@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=519",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 519
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:16:29.252Z",
+  "rawSha256": "b4632229ee54725fab6d5758ba840b6c3fb2c5e42fb073238d37c9e417c130e4",
+  "cache": "fresh",
+  "data": {
+    "heroId": 519,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1133,
+        "equipmentName": "无尽战刃",
+        "pickRate": 80.89,
+        "winRate": 50.69
+      },
+      {
+        "equipmentId": 1155,
+        "equipmentName": "仁者破晓",
+        "pickRate": 69.59,
+        "winRate": 54.96
+      },
+      {
+        "equipmentId": 1136,
+        "equipmentName": "影刃",
+        "pickRate": 68.22,
+        "winRate": 53.86
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 51.74,
+        "winRate": 52.23
+      },
+      {
+        "equipmentId": 1126,
+        "equipmentName": "末世",
+        "pickRate": 36.48,
+        "winRate": 61.98
+      },
+      {
+        "equipmentId": 1138,
+        "equipmentName": "强者破军",
+        "pickRate": 27.86,
+        "winRate": 59.03
+      },
+      {
+        "equipmentId": 13310,
+        "equipmentName": "冰痕之握",
+        "pickRate": 21.14,
+        "winRate": 50.68
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 19.75,
+        "winRate": 49.57
+      },
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "pickRate": 18.73,
+        "winRate": 51.24
+      },
+      {
+        "equipmentId": 1423,
+        "equipmentName": "冷静之靴",
+        "pickRate": 11.18,
+        "winRate": 44.9
+      }
+    ]
+  }
+}

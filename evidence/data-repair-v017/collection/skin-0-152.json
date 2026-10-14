@@ -1,0 +1,56 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=152",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 152
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:11:07.579Z",
+  "rawSha256": "9eb04dfa420334f051d7d0939367caebc60ce8eb466e885ed5088bb71732d0ba",
+  "cache": "fresh",
+  "data": {
+    "heroId": 152,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "长夜焕生",
+        "pickRate": 28.06
+      },
+      {
+        "skinName": "映山客",
+        "pickRate": 24.46
+      },
+      {
+        "skinName": "永恒水手月亮",
+        "pickRate": 15.83
+      },
+      {
+        "skinName": "星穹之声",
+        "pickRate": 13.67
+      },
+      {
+        "skinName": "偶像歌手",
+        "pickRate": 8.63
+      },
+      {
+        "skinName": "乞巧织情",
+        "pickRate": 5.76
+      },
+      {
+        "skinName": "精灵公主",
+        "pickRate": 2.16
+      },
+      {
+        "skinName": "凤凰于飞",
+        "pickRate": 0.72
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.72
+      }
+    ]
+  }
+}

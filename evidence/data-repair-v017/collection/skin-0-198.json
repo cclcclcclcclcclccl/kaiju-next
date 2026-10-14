@@ -1,0 +1,44 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=198",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 198
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:14:31.134Z",
+  "rawSha256": "331dbef8c297fd635b4415d1ca3809c23ec056cb3e4235dabd3a4c5e7f94a4b3",
+  "cache": "fresh",
+  "data": {
+    "heroId": 198,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "胖达荣荣",
+        "pickRate": 83.44
+      },
+      {
+        "skinName": "天降福星",
+        "pickRate": 7.36
+      },
+      {
+        "skinName": "美梦成真",
+        "pickRate": 4.29
+      },
+      {
+        "skinName": "顽趣",
+        "pickRate": 2.45
+      },
+      {
+        "skinName": "迷路珍兽",
+        "pickRate": 1.23
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 1.23
+      }
+    ]
+  }
+}

@@ -135,6 +135,8 @@ export const tianyuanCombinedSchema = z.object({
   ),
 });
 export function parseTianyuan(raw: unknown, q: TianyuanQuery) {
+  if (raw && typeof raw === 'object' && 'error' in raw && typeof raw.error === 'string')
+    throw Error('来源提示：' + raw.error.slice(0, 240));
   const schemas = {
     stats: tianyuanStatsSchema,
     tier: tianyuanTierSchema,
@@ -152,14 +154,14 @@ export function parseTianyuan(raw: unknown, q: TianyuanQuery) {
     const value = data as {
       heroId?: number;
       queryDate?: string;
-      tiers?: { heroId: number; date: string }[];
+      tiers?: { heroId: number; date: string; role: string }[];
     };
     if (q.heroId && value.heroId !== q.heroId) throw Error('来源英雄身份不匹配');
     if (value.queryDate && value.queryDate !== q.date) throw Error('来源返回日期不匹配');
     if (
       value.tiers &&
       (value.tiers.some((r) => r.date !== q.date) ||
-        new Set(value.tiers.map((r) => r.heroId)).size !== value.tiers.length)
+        new Set(value.tiers.map((r) => r.heroId + ':' + r.role)).size !== value.tiers.length)
     )
       throw Error('梯度日期或身份不一致');
   }

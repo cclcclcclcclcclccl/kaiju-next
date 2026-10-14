@@ -8,6 +8,8 @@ import { reviewFindings } from './analytics.ts';
 import { api, download } from '../../api.ts';
 import { reviewEvidence } from './reviewEvidence.ts';
 import type { ReviewHandoff, CodexReview } from './codexReview.ts';
+import { REVIEW_DIMENSIONS } from './reviewProtocol.ts';
+import KplCases from './KplCases.tsx';
 const fmt = (s: number) => Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0');
 type ModelResult = {
   findings: { eventId: string; observation: string; advice: string; uncertainty: string }[];
@@ -314,15 +316,25 @@ export default function Replay() {
           </div>
         )}
         <details className="environment-method">
-          <summary>模型接入与后续评测怎么做</summary>
+          <summary>复盘分析流程与真实训练状态</summary>
           <p>
-            接入前需确定支持图片的模型服务、地址，以及允许发送的截图和笔记范围。计划采用画面取证、战术比较、原图复核三个阶段；本轮尚未启用这条新流程，也没有进行专项训练。
+            当前对话复盘包已按决策时间拆分材料，包含画面取证、战术比较、反证复核三轮协议。每个决策包只列出当时及之前的证据。流程改进不等于模型训练；当前没有完成专项训练或
+            KPL 级效果验证。
           </p>
+          <ul>
+            {REVIEW_DIMENSIONS.map(([title, body]) => (
+              <li key={title}>
+                <strong>{title}：</strong>
+                {body}
+              </li>
+            ))}
+          </ul>
           <p>
             真实能力需要用经过人工校正的对局决策样本评测，分别检查可见事实、隐藏信息误判、建议可执行性和证据支持。校正样本需划分训练与独立测试集；重复运行同一批示例不代表训练有效。
           </p>
         </details>
       </section>
+      <KplCases />
       <div className="pro-actions">
         <button
           className="btn secondary"

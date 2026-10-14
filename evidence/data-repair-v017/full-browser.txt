@@ -1,0 +1,181 @@
+[WebServer] (node:9960) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 47 tests using 1 worker
+
+(node:26288) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\player\coach.spec.ts:18:1 › detailed profile saves rate-only input, drives pool cards and opens the correct editable record (3.0s)
+  ok  2 tests\player\coach.spec.ts:76:1 › complete roster links to atlas, correct rune colors and personal guides on desktop and phone (4.7s)
+  ok  3 tests\player\coach.spec.ts:112:1 › real worker considers both sides, applies only one move and invalidates changed input (5.0s)
+  ok  4 tests\player\coach.spec.ts:172:1 › profile-only shared friend records produce a recommended system and disappear after sharing is revoked (1.7s)
+  ok  5 tests\player\data-continuity.spec.ts:3:1 › update status separates dates, stale records and missing scopes; reference retains alternate source roles (3.7s)
+  ok  6 tests\player\data-upgrade.spec.ts:6:1 › actual local screenshot OCR needs confirmation, persists records and feeds the pool (5.2s)
+  ok  7 tests\player\data-upgrade.spec.ts:42:1 › official resource cache supports equipment comparison, skin hero links and separated update environments (2.0s)
+  ok  8 tests\player\data-upgrade.spec.ts:70:1 › new interfaces remain usable on mobile with no accessibility violations (9.7s)
+  ok  9 tests\player\data-upgrade.spec.ts:91:1 › full BP arena produces ten legal moves without overwriting current draft (2.0s)
+  ok 10 tests\player\environment.spec.ts:4:1 › complete source roster and environment tiers preserve identity, missing values, detail context and filter-independent scores (10.9s)
+  x  11 tests\player\expansion.spec.ts:24:1 › tier import is real, keeps provenance and supplies per-hero metrics (2.7s)
+(node:31056) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 12 tests\player\expansion.spec.ts:72:1 › player profile persists real inputs and practice route records a personal timing (3.0s)
+  ok 13 tests\player\expansion.spec.ts:101:1 › a system loads its core picks and round BP can ban, advance and undo (1.9s)
+  ok 14 tests\player\expansion.spec.ts:116:1 › real video playback captures a frame and preserves evidence-based review on reopen (2.5s)
+  ok 15 tests\player\expansion.spec.ts:165:1 › two browser accounts become friends only after acceptance and can use shared pools in BP (6.5s)
+  ok 16 tests\player\expansion.spec.ts:221:1 › new modules pass automatic accessibility checks and fit a mobile viewport (8.7s)
+  ok 17 tests\player\final-audit.spec.ts:6:1 › expired login has an explicit recovery path and never deletes stored guest heroes (1.3s)
+  ok 18 tests\player\final-audit.spec.ts:26:1 › profile draft survives navigation and refresh but retains stale baseline protection (1.5s)
+  ok 19 tests\player\final-audit.spec.ts:46:1 › complete backup round trip includes frames, previews changes and leaves a downloadable pre-restore checkpoint (2.8s)
+  ok 20 tests\player\final-audit.spec.ts:129:1 › unsaved review navigation is explicit and cancel keeps the current editor (1.4s)
+  ok 21 tests\player\flows.spec.ts:13:1 › hero discovery uses real skills and persists the personal hero pool (2.0s)
+  ok 22 tests\player\flows.spec.ts:33:1 › draft changes and bans change candidates; a real plan exports and reopens (2.6s)
+  ok 23 tests\player\flows.spec.ts:74:1 › a match journal drives a real practice target, can be edited and survives refresh (2.0s)
+  ok 24 tests\player\flows.spec.ts:113:1 › mobile navigation, atlas and draft fit a 390px viewport (3.2s)
+  ok 25 tests\player\flows.spec.ts:140:1 › accessibility audits cover homepage, draft and mobile hero detail (4.7s)
+  ok 26 tests\player\flows.spec.ts:165:1 › reopening a saved alternative preserves the chosen candidate (1.4s)
+  ok 27 tests\player\flows.spec.ts:178:1 › AI feedback displays valid output and discards a response for an outdated lineup (1.6s)
+  ok 28 tests\player\official.spec.ts:5:1 › official data stays attributed, partial and distinct from personal tiers across filters and hero details (4.5s)
+  ok 29 tests\player\official.spec.ts:71:1 › official request failure is visible and can recover without synthetic substitution (1.5s)
+  ok 30 tests\player\profile-recovery.spec.ts:5:1 › stale profile edits preserve both server record and local draft until explicit reload (2.4s)
+  ok 31 tests\player\profile-recovery.spec.ts:35:1 › exported pool restores after preview, preserves existing mastery, and rejects malformed backups (2.1s)
+  ok 32 tests\player\public-board-repair.spec.ts:41:1 › atlas entry shows Lianpo published tier and selected segment metrics without manual import (3.1s)
+  ok 33 tests\player\public-board-repair.spec.ts:71:1 › default source board matches every published label and score; metric sorting actually changes order (2.0s)
+  ok 34 tests\player\public-board-repair.spec.ts:117:1 › published tiers remain available when the separate statistics source fails (1.4s)
+  x  35 tests\player\public-capture.spec.ts:15:1 › real table screenshots merge without saving until review, then source stats persist and open correct atlas (10.7s)
+(node:39624) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 36 tests\player\public-capture.spec.ts:58:1 › conflicting values require an explicit selection; different dates cannot be merged (7.2s)
+  x  37 tests\player\public-capture.spec.ts:105:1 › bundled public observations are available with source date and correct hero detail (2.5s)
+(node:3980) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 38 tests\player\refinement.spec.ts:7:1 › a player can enter a sourced table without JSON and keep an unpublished sample count unknown (5.5s)
+  ok 39 tests\player\refinement.spec.ts:56:1 › five accepted and sharing accounts produce a persistent visible squad result that loads into BP (3.4s)
+  ok 40 tests\player\reliability.spec.ts:13:1 › guest pool is discoverable from a new account, merges without deleting guest and survives reload (2.8s)
+  ok 41 tests\player\reliability.spec.ts:64:1 › two browser pages preserve independent hero additions and reject stale same-hero changes (3.0s)
+  ok 42 tests\player\reliability.spec.ts:97:1 › equipment rates have a direct entry, real fixture values, sorting and no stale data on query failure (2.5s)
+  ok 43 tests\player\review-handoff.spec.ts:4:1 › current-chat replay package is local, accepts tied results and exports an untrained evaluation sample (2.6s)
+  ok 44 tests\player\statistics.spec.ts:31:1 › mixed source metrics stay visible but cannot masquerade as a segment tier or a BP rate (2.5s)
+  ok 45 tests\player\statistics.spec.ts:69:1 › history shows sourced percentage-point changes, excludes incompatible batches and works on a phone (5.0s)
+  ok 46 tests\player\tianyuan.spec.ts:8:1 › public four-segment board preserves forms, source tiers, hero metrics and unknown dates on mobile (7.3s)
+  ok 47 tests\player\tianyuan.spec.ts:99:1 › public query failure never shows another date or synthetic values (1.2s)
+
+
+  1) tests\player\expansion.spec.ts:24:1 › tier import is real, keeps provenance and supplies per-hero metrics
+
+    Error: expect(locator).toHaveValue(expected) failed
+
+    Locator: getByLabel('英雄统计分段')
+    Expected: "巅峰1800+"
+    Error: strict mode violation: getByLabel('英雄统计分段') resolved to 2 elements:
+        1) <select aria-label="英雄统计分段">…</select> aka getByLabel('英雄统计分段', { exact: true })
+        2) <select aria-label="历史英雄统计分段">…</select> aka getByLabel('历史英雄统计分段')
+
+    Call log:
+      - Expect "toHaveValue" getByLabel('英雄统计分段') with timeout 5000ms
+      - waiting for getByLabel('英雄统计分段')
+
+
+      59 |   await expect(page.locator('.source-strip')).toContainText('TEST-ONLY');
+      60 |   await page.locator('.pro-table tbody tr').first().getByRole('button').click();
+    > 61 |   await expect(page.getByLabel('英雄统计分段')).toHaveValue('巅峰1800+');
+         |                                           ^
+      62 |   await expect(page.getByLabel('英雄统计分路')).toHaveValue('中路');
+      63 |   await expect(page.locator('.metric-strip')).not.toContainText('待接入');
+      64 |   await expect(page.getByRole('dialog')).toContainText('官方搭配与克制说明');
+        at D:\学习相关\传智杯\AI创新应用挑战赛\tests\player\expansion.spec.ts:61:43
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\expansion-tier-import-is-r-7a273-d-supplies-per-hero-metrics\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\expansion-tier-import-is-r-7a273-d-supplies-per-hero-metrics\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\expansion-tier-import-is-r-7a273-d-supplies-per-hero-metrics\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\expansion-tier-import-is-r-7a273-d-supplies-per-hero-metrics\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) tests\player\public-capture.spec.ts:15:1 › real table screenshots merge without saving until review, then source stats persist and open correct atlas
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('dialog').locator('.hero-insights')
+    Expected substring: "52.10%"
+    Error: strict mode violation: getByRole('dialog').locator('.hero-insights') resolved to 2 elements:
+        1) <div class="hero-insights">…</div> aka getByRole('dialog', { name: '鲁班大师 · 神匠' }).locator('div').filter({ hasText: '分段表现 · 鲁班大师 · 天元公开统计英雄统计分段大众分段巅峰1350+顶端排位巅峰千强英雄统计日期英雄梯度日期T0天元综合梯度99.82' })
+        2) <div class="hero-insights">…</div> aka getByRole('dialog', { name: '鲁班大师 · 神匠' }).locator('div').filter({ hasText: '官方搭配与克制说明这是官网提供的定性攻略快照，可能滞后于当前版本，不是对位胜率。鲁适合搭配鲁班七号鲁班大师能帮助短腿脆皮队友位移，提高其生存能力官方原始资料 ↗' })
+
+    Call log:
+      - Expect "toContainText" getByRole('dialog').locator('.hero-insights') with timeout 5000ms
+      - waiting for getByRole('dialog').locator('.hero-insights')
+
+
+      52 |   await expect(page.locator('.tier-portrait')).toContainText('52.1%');
+      53 |   await page.locator('.all-hero-ranks').getByRole('button', { name: '打开鲁班大师图鉴' }).click();
+    > 54 |   await expect(page.getByRole('dialog').locator('.hero-insights')).toContainText('52.10%');
+         |                                                                    ^
+      55 |   await page.keyboard.press('Escape');
+      56 |   await request.post('/api/pro/snapshot-remove', { data: { id: saved.id } });
+      57 | });
+        at D:\学习相关\传智杯\AI创新应用挑战赛\tests\player\public-capture.spec.ts:54:68
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\public-capture-real-table--cf4fe-sist-and-open-correct-atlas\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\public-capture-real-table--cf4fe-sist-and-open-correct-atlas\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\public-capture-real-table--cf4fe-sist-and-open-correct-atlas\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\public-capture-real-table--cf4fe-sist-and-open-correct-atlas\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) tests\player\public-capture.spec.ts:105:1 › bundled public observations are available with source date and correct hero detail
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('dialog').locator('.hero-insights')
+    Expected substring: "52.40%"
+    Error: strict mode violation: getByRole('dialog').locator('.hero-insights') resolved to 2 elements:
+        1) <div class="hero-insights">…</div> aka getByRole('dialog', { name: '镜 · 破镜之刃' }).locator('div').filter({ hasText: '分段表现 · 镜 · 天元公开统计英雄统计分段大众分段巅峰' })
+        2) <div class="hero-insights">…</div> aka getByRole('dialog', { name: '镜 · 破镜之刃' }).locator('div').filter({ hasText: '官方搭配与克制说明这是官网提供的定性攻略快照，可能滞后于当前版本，不是对位胜率。鬼适合搭配鬼谷子镜的爆发会是一个小范围的伤害组合，当对手被鬼谷子拉在一起时可以打' })
+
+    Call log:
+      - Expect "toContainText" getByRole('dialog').locator('.hero-insights') with timeout 5000ms
+      - waiting for getByRole('dialog').locator('.hero-insights')
+
+
+      118 |     .getByRole('button', { name: '打开镜图鉴', exact: true })
+      119 |     .click();
+    > 120 |   await expect(page.getByRole('dialog').locator('.hero-insights')).toContainText('52.40%');
+          |                                                                    ^
+      121 |   await expect(page.getByRole('dialog').locator('.hero-insights')).toContainText('2026-10-11');
+      122 |   await page.keyboard.press('Escape');
+      123 |   await page.getByRole('button', { name: '详细数据表', exact: true }).click();
+        at D:\学习相关\传智杯\AI创新应用挑战赛\tests\player\public-capture.spec.ts:120:68
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\public-capture-bundled-pub-1f817-ate-and-correct-hero-detail\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\public-capture-bundled-pub-1f817-ate-and-correct-hero-detail\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\public-capture-bundled-pub-1f817-ate-and-correct-hero-detail\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\public-capture-bundled-pub-1f817-ate-and-correct-hero-detail\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    tests\player\expansion.spec.ts:24:1 › tier import is real, keeps provenance and supplies per-hero metrics
+    tests\player\public-capture.spec.ts:15:1 › real table screenshots merge without saving until review, then source stats persist and open correct atlas
+    tests\player\public-capture.spec.ts:105:1 › bundled public observations are available with source date and correct hero detail
+  44 passed (3.1m)

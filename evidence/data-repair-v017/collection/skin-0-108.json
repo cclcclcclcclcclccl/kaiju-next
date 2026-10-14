@@ -1,0 +1,56 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=108",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 108
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:07:19.698Z",
+  "rawSha256": "960172b428d36780fe173924a2ce2e01a8b36ff34737ecb32343cec26e06eb6b",
+  "cache": "fresh",
+  "data": {
+    "heroId": 108,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "迪迦奥特曼",
+        "pickRate": 47.17
+      },
+      {
+        "skinName": "金属风暴",
+        "pickRate": 20
+      },
+      {
+        "skinName": "龙骑士",
+        "pickRate": 14.97
+      },
+      {
+        "skinName": "黄金天蝎座",
+        "pickRate": 8.45
+      },
+      {
+        "skinName": "碎光执事",
+        "pickRate": 4.81
+      },
+      {
+        "skinName": "进击墨子号",
+        "pickRate": 1.82
+      },
+      {
+        "skinName": "神迹守卫",
+        "pickRate": 1.18
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.86
+      },
+      {
+        "skinName": "降魔",
+        "pickRate": 0.75
+      }
+    ]
+  }
+}

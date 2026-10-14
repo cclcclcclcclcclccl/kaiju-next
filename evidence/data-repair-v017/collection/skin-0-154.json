@@ -1,0 +1,56 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=154",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 154
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:11:20.305Z",
+  "rawSha256": "76f42d5f5c2abe720591e482c1f3368cab0cc129fb1aa89855183a0775803f6e",
+  "cache": "fresh",
+  "data": {
+    "heroId": 154,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "九霄神辉",
+        "pickRate": 38.28
+      },
+      {
+        "skinName": "水晶猎龙者",
+        "pickRate": 21.25
+      },
+      {
+        "skinName": "燃星之曲",
+        "pickRate": 18.13
+      },
+      {
+        "skinName": "异界灵契",
+        "pickRate": 15.2
+      },
+      {
+        "skinName": "默契交锋",
+        "pickRate": 2.56
+      },
+      {
+        "skinName": "兔女郎",
+        "pickRate": 2.2
+      },
+      {
+        "skinName": "剑舞者",
+        "pickRate": 1.83
+      },
+      {
+        "skinName": "冠军飞将",
+        "pickRate": 0.37
+      },
+      {
+        "skinName": "青春决赛季",
+        "pickRate": 0.18
+      }
+    ]
+  }
+}

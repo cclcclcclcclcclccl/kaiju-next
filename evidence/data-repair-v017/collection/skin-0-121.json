@@ -1,0 +1,56 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=121",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 121
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:08:48.693Z",
+  "rawSha256": "469ff95cc0868b1ea70d5d65c4559d79f56cdef8b45a97ef47e50f5e97e2f366",
+  "cache": "fresh",
+  "data": {
+    "heroId": 121,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "白晶晶",
+        "pickRate": 31.55
+      },
+      {
+        "skinName": "红桃皇后",
+        "pickRate": 23.3
+      },
+      {
+        "skinName": "西海龙王·敖闰",
+        "pickRate": 18.76
+      },
+      {
+        "skinName": "大秦宣太后",
+        "pickRate": 7.84
+      },
+      {
+        "skinName": "瑰影绮梦",
+        "pickRate": 7.22
+      },
+      {
+        "skinName": "幻夜卜梦",
+        "pickRate": 5.98
+      },
+      {
+        "skinName": "浮光幕影",
+        "pickRate": 3.92
+      },
+      {
+        "skinName": "重明",
+        "pickRate": 0.82
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.62
+      }
+    ]
+  }
+}

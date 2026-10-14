@@ -1,0 +1,52 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=131",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 131
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:09:36.697Z",
+  "rawSha256": "c54339ad41d1eb2e5acf03a18ef58b036182d533e7e8d5516520f8cac2b904f7",
+  "cache": "fresh",
+  "data": {
+    "heroId": 131,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "鸣剑·曳影",
+        "pickRate": 55.99
+      },
+      {
+        "skinName": "碎月剑心",
+        "pickRate": 30.99
+      },
+      {
+        "skinName": "凤求凰",
+        "pickRate": 4.93
+      },
+      {
+        "skinName": "千年之狐",
+        "pickRate": 4.05
+      },
+      {
+        "skinName": "诗剑行",
+        "pickRate": 2.99
+      },
+      {
+        "skinName": "敏锐之力",
+        "pickRate": 0.53
+      },
+      {
+        "skinName": "谪仙醉月",
+        "pickRate": 0.35
+      },
+      {
+        "skinName": "范海辛",
+        "pickRate": 0.18
+      }
+    ]
+  }
+}

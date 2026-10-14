@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=126",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 126
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:09:09.124Z",
+  "rawSha256": "65139ef6d38cb7456933db4d22268095eaf398a5ff1dcd6684ec6e29ad9b684b",
+  "cache": "fresh",
+  "data": {
+    "heroId": 126,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "乘风破浪",
+        "pickRate": 51.36
+      },
+      {
+        "skinName": "无限飓风号",
+        "pickRate": 20.67
+      },
+      {
+        "skinName": "霜北刀",
+        "pickRate": 16.7
+      },
+      {
+        "skinName": "战争骑士",
+        "pickRate": 6.47
+      },
+      {
+        "skinName": "匿光决锋者",
+        "pickRate": 2.71
+      },
+      {
+        "skinName": "朔风刀",
+        "pickRate": 1.88
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.21
+      }
+    ]
+  }
+}

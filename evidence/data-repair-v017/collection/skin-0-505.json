@@ -1,0 +1,52 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=505",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 505
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:15:24.206Z",
+  "rawSha256": "3b6db99d0aad15a8a0df7da79b8cf4a3fe7d0aed6033deaecc50320050c490df",
+  "cache": "fresh",
+  "data": {
+    "heroId": 505,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "大耳狗之梦",
+        "pickRate": 42.2
+      },
+      {
+        "skinName": "拾光映像",
+        "pickRate": 15.6
+      },
+      {
+        "skinName": "时之祈愿",
+        "pickRate": 13.76
+      },
+      {
+        "skinName": "森",
+        "pickRate": 10.55
+      },
+      {
+        "skinName": "真我赫兹",
+        "pickRate": 8.94
+      },
+      {
+        "skinName": "山海·碧波行",
+        "pickRate": 5.96
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 1.83
+      },
+      {
+        "skinName": "遇见神鹿",
+        "pickRate": 1.15
+      }
+    ]
+  }
+}

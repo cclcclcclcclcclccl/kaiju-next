@@ -1,0 +1,56 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=312",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 312
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:14:46.438Z",
+  "rawSha256": "f5b940f80e142370057a3547a2b4baf837383ec45e86f99ec7e4c65140fee77e",
+  "cache": "fresh",
+  "data": {
+    "heroId": 312,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "月团寄思",
+        "pickRate": 41.27
+      },
+      {
+        "skinName": "鸭鸭历险记",
+        "pickRate": 16.93
+      },
+      {
+        "skinName": "龙舞盛年",
+        "pickRate": 12.51
+      },
+      {
+        "skinName": "匿光破解者",
+        "pickRate": 11.13
+      },
+      {
+        "skinName": "棒球奇才",
+        "pickRate": 10.79
+      },
+      {
+        "skinName": "鲨炮海盗猫",
+        "pickRate": 4.42
+      },
+      {
+        "skinName": "星空之诺",
+        "pickRate": 1.62
+      },
+      {
+        "skinName": "大漠名商",
+        "pickRate": 1.24
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.1
+      }
+    ]
+  }
+}

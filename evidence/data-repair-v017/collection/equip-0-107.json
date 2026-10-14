@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=107",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 107
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:07:17.738Z",
+  "rawSha256": "7cde7a5b5ce1c76f76836ad39026459032f9c26f5cc4ee578336f0479e7089e9",
+  "cache": "fresh",
+  "data": {
+    "heroId": 107,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1533,
+        "equipmentName": "贪婪之噬",
+        "pickRate": 96.98,
+        "winRate": 48.85
+      },
+      {
+        "equipmentId": 1534,
+        "equipmentName": "怒龙剑盾",
+        "pickRate": 90.99,
+        "winRate": 50.82
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 78.18,
+        "winRate": 47.12
+      },
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "pickRate": 69.95,
+        "winRate": 50.62
+      },
+      {
+        "equipmentId": 1328,
+        "equipmentName": "血魔之怒",
+        "pickRate": 51.5,
+        "winRate": 59.8
+      },
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "pickRate": 19.97,
+        "winRate": 59.7
+      },
+      {
+        "equipmentId": 1332,
+        "equipmentName": "霸者重装",
+        "pickRate": 10.99,
+        "winRate": 65.39
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "pickRate": 9.1,
+        "winRate": 57.23
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 8.89,
+        "winRate": 47.52
+      },
+      {
+        "equipmentId": 1337,
+        "equipmentName": "贤者的庇护",
+        "pickRate": 6.32,
+        "winRate": 77.38
+      }
+    ]
+  }
+}

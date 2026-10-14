@@ -1,0 +1,64 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=109",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 109
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:07:24.809Z",
+  "rawSha256": "fa9d349b3820b52095afffe40ecab21eb206a865e76085dbfd9bffb2b03e86cb",
+  "cache": "fresh",
+  "data": {
+    "heroId": 109,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "青丘·九尾",
+        "pickRate": 36.42
+      },
+      {
+        "skinName": "女仆咖啡",
+        "pickRate": 26.49
+      },
+      {
+        "skinName": "愿照·众生和",
+        "pickRate": 16.56
+      },
+      {
+        "skinName": "时之奇旅",
+        "pickRate": 5.3
+      },
+      {
+        "skinName": "时之彼端",
+        "pickRate": 4.64
+      },
+      {
+        "skinName": "灵卜魔法",
+        "pickRate": 3.31
+      },
+      {
+        "skinName": "少女阿狸",
+        "pickRate": 1.99
+      },
+      {
+        "skinName": "线条小狗",
+        "pickRate": 1.99
+      },
+      {
+        "skinName": "魅力维加斯",
+        "pickRate": 1.32
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 1.32
+      },
+      {
+        "skinName": "热情桑巴",
+        "pickRate": 0.66
+      }
+    ]
+  }
+}

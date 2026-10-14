@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=189",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 189
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:13:41.643Z",
+  "rawSha256": "f17bb93827786b599b1a4a7fa0ac67145a8bb1fe57fc1bb08c502a8636b9326c",
+  "cache": "fresh",
+  "data": {
+    "heroId": 189,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "阿摩司公爵",
+        "pickRate": 78.04
+      },
+      {
+        "skinName": "五谷丰年",
+        "pickRate": 11.82
+      },
+      {
+        "skinName": "幻乐之宴",
+        "pickRate": 4.05
+      },
+      {
+        "skinName": "原初探秘者",
+        "pickRate": 2.7
+      },
+      {
+        "skinName": "克喵",
+        "pickRate": 1.69
+      },
+      {
+        "skinName": "天穹祈灯",
+        "pickRate": 1.35
+      },
+      {
+        "skinName": "谜偶窥秘",
+        "pickRate": 0.34
+      }
+    ]
+  }
+}

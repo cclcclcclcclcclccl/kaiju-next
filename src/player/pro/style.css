@@ -624,12 +624,14 @@
   margin: 10px 0;
 }
 .hero-insights > section,
+.hero-reference-details > section,
 .jungle-section {
   margin-top: 30px;
   border-top: 1px solid var(--line);
   padding-top: 24px;
 }
 .hero-insights h3,
+.hero-reference-details h3,
 .jungle-section h3 {
   font-size: 16px;
 }
@@ -1922,4 +1924,19 @@
 .equipment-statistics .roster-table th,
 .equipment-statistics .roster-table td {
   padding: 12px 8px;
+}
+
+.atlas-source-summary {
+  margin-bottom: 20px;
+}
+.atlas-public-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 12px;
+  padding: 0 16px 16px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.atlas-public-metrics strong {
+  color: var(--gold);
 }

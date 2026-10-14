@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=175",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 175
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:12:41.080Z",
+  "rawSha256": "c6769075c88460fe762010e9991fe4c780da93a95de9261f441411ba5ce1ff73",
+  "cache": "fresh",
+  "data": {
+    "heroId": 175,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "乐园奇幻夜",
+        "pickRate": 36.34
+      },
+      {
+        "skinName": "地府判官",
+        "pickRate": 26.74
+      },
+      {
+        "skinName": "锁墨魂",
+        "pickRate": 17.73
+      },
+      {
+        "skinName": "虚灵犬护",
+        "pickRate": 8.14
+      },
+      {
+        "skinName": "驱傩正仪",
+        "pickRate": 6.25
+      },
+      {
+        "skinName": "神迹守卫",
+        "pickRate": 3.92
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.87
+      }
+    ]
+  }
+}

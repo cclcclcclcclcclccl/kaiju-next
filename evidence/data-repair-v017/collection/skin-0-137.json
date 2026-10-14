@@ -1,0 +1,32 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=137",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 137
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:10:06.916Z",
+  "rawSha256": "abce1a5c6578a73cff3b192b5933df37c360ee19a59321d6483d921762516ce5",
+  "cache": "fresh",
+  "data": {
+    "heroId": 137,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "九山相柳",
+        "pickRate": 76.37
+      },
+      {
+        "skinName": "暗渊魔法",
+        "pickRate": 21.44
+      },
+      {
+        "skinName": "魇语军师",
+        "pickRate": 2.19
+      }
+    ]
+  }
+}

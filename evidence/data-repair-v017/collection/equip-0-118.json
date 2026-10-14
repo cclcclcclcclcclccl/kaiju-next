@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=118",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 118
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:08:29.466Z",
+  "rawSha256": "10aec8791f925081517a3916676c888ad3197fb752c28ccf5b3675d25ce4133d",
+  "cache": "fresh",
+  "data": {
+    "heroId": 118,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1721,
+        "equipmentName": "极影·救赎",
+        "pickRate": 72.73,
+        "winRate": 50
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 60.61,
+        "winRate": 48.33
+      },
+      {
+        "equipmentId": 1353,
+        "equipmentName": "旭日初光",
+        "pickRate": 59.16,
+        "winRate": 54.15
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "pickRate": 27.42,
+        "winRate": 57.37
+      },
+      {
+        "equipmentId": 1424,
+        "equipmentName": "秘法之靴",
+        "pickRate": 27.27,
+        "winRate": 50.26
+      },
+      {
+        "equipmentId": 1333,
+        "equipmentName": "不祥征兆",
+        "pickRate": 21.36,
+        "winRate": 60.14
+      },
+      {
+        "equipmentId": 12211,
+        "equipmentName": "梦魇之牙",
+        "pickRate": 11.11,
+        "winRate": 55.84
+      },
+      {
+        "equipmentId": 1737,
+        "equipmentName": "极影·形昭",
+        "pickRate": 8.08,
+        "winRate": 42.86
+      },
+      {
+        "equipmentId": 1234,
+        "equipmentName": "凝冰之息",
+        "pickRate": 7.5,
+        "winRate": 65.38
+      },
+      {
+        "equipmentId": 1747,
+        "equipmentName": "极影·星泉",
+        "pickRate": 7.07,
+        "winRate": 69.39
+      }
+    ]
+  }
+}

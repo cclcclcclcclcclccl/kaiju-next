@@ -1,0 +1,174 @@
+{
+  "checkedAt": "2026-10-14T15:36:03.489Z",
+  "status": {
+    "product": "开局 NEXT",
+    "version": "0.17.0",
+    "modelConfigured": false,
+    "heroCount": 133,
+    "identity": {
+      "mode": "guest",
+      "name": "访客"
+    }
+  },
+  "tier": {
+    "date": "2026-10-14",
+    "rawSha256": "ef7ed20d47a9ec47b1a82f727ecea0bd8e27d3d58f96df6aaee169cb18b36a23",
+    "selected": [
+      {
+        "heroId": 126,
+        "heroName": "夏侯惇",
+        "date": "2026-10-14",
+        "role": "对抗路/游走(次分路)",
+        "finalNormalizedTierScore": 35.49,
+        "tierInRole": "T2",
+        "rankInRole": 82,
+        "trueHeroPowerInRole": 12076.7,
+        "lowPick": false,
+        "highBan": false
+      },
+      {
+        "heroId": 531,
+        "heroName": "镜",
+        "date": "2026-10-14",
+        "role": "打野",
+        "finalNormalizedTierScore": 86.71,
+        "tierInRole": "T0",
+        "rankInRole": 8,
+        "trueHeroPowerInRole": 14403,
+        "lowPick": false,
+        "highBan": true
+      },
+      {
+        "heroId": 508,
+        "heroName": "伽罗",
+        "date": "2026-10-14",
+        "role": "发育路",
+        "finalNormalizedTierScore": 13.14,
+        "tierInRole": "T4",
+        "rankInRole": 127,
+        "trueHeroPowerInRole": 10848.6,
+        "lowPick": true,
+        "highBan": false
+      },
+      {
+        "heroId": 105,
+        "heroName": "廉颇",
+        "date": "2026-10-14",
+        "role": "游走",
+        "finalNormalizedTierScore": 28.89,
+        "tierInRole": "T3",
+        "rankInRole": 107,
+        "trueHeroPowerInRole": 11501.6,
+        "lowPick": true,
+        "highBan": false
+      }
+    ]
+  },
+  "stats": {
+    "date": "2026-10-13",
+    "rawSha256": "b962ca6c3c34625e0c82075c699634ae12a441efe29f8d2efa444157f7c6e0a6",
+    "lianpo": {
+      "heroId": 105,
+      "baseHeroId": 105,
+      "heroName": "廉颇",
+      "roles": "游走",
+      "winRate": 51.71,
+      "pickRate": 9.6,
+      "banRate": 5.39,
+      "dbUpdatedAt": "2026-10-14T13:44:00.796Z",
+      "qAreaTop10Power": 11578,
+      "qAreaTop100Power": 10230
+    }
+  },
+  "sourceHealth": {
+    "rows": [
+      {
+        "mode": 1,
+        "queryDate": "2026-10-13",
+        "records": 135,
+        "state": "cached",
+        "checkedAt": "2026-10-14T15:36:00.342Z",
+        "fetchedAt": "2026-10-14T15:17:07.354Z",
+        "sourceUpdatedAt": "2026-10-14T13:44:01.149Z",
+        "inProgress": false
+      },
+      {
+        "mode": 3,
+        "queryDate": "2026-10-13",
+        "records": 135,
+        "state": "cached",
+        "checkedAt": "2026-10-14T15:27:59.260Z",
+        "fetchedAt": "2026-10-14T15:17:07.952Z",
+        "sourceUpdatedAt": "2026-10-14T13:44:01.942Z",
+        "inProgress": false
+      },
+      {
+        "mode": 4,
+        "queryDate": "2026-10-13",
+        "records": 135,
+        "state": "cached",
+        "checkedAt": "2026-10-14T15:27:59.262Z",
+        "fetchedAt": "2026-10-14T15:17:08.912Z",
+        "sourceUpdatedAt": "2026-10-14T13:44:02.672Z",
+        "inProgress": false
+      },
+      {
+        "mode": 5,
+        "queryDate": "2026-10-13",
+        "records": 133,
+        "state": "cached",
+        "checkedAt": "2026-10-14T15:36:00.953Z",
+        "fetchedAt": "2026-10-14T15:17:10.034Z",
+        "sourceUpdatedAt": "2026-10-14T12:07:08.078Z",
+        "inProgress": false
+      }
+    ],
+    "observedAt": "2026-10-14T15:36:03.493Z"
+  },
+  "collection": {
+    "total": 670,
+    "firstPass": 669,
+    "resolvedRetries": 1
+  },
+  "kpl": {
+    "matches": 3,
+    "rounds": 12,
+    "trained": false
+  },
+  "tables": {
+    "settings": {
+      "unchanged": true,
+      "sha256": "b6b58b89d5dacb6af7468436e436cdeaaa2961a8310a265079f049e0c77cde35"
+    },
+    "matches": {
+      "unchanged": true,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "plans": {
+      "unchanged": true,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "accounts": {
+      "unchanged": true,
+      "sha256": "842e46a7796af4de0f4f6245b3a0121dfff0d5c03b3258fa54de5d15f4ef130b"
+    },
+    "sessions": {
+      "unchanged": true,
+      "sha256": "3f6fff9df232767cb08288b2107311baf5ed7c230215bb856726ddcb700d6a98"
+    },
+    "friendships": {
+      "unchanged": true,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "pool_history": {
+      "unchanged": true,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  },
+  "databaseIntegrity": "ok",
+  "historicalEvidence": {
+    "verified": 1900,
+    "archivedNewOutputs": 29
+  },
+  "livePageErrors": []
+}

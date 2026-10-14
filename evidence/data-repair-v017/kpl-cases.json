@@ -1,0 +1,860 @@
+{
+  "source": "KPL 官方赛事网站",
+  "sourceUrl": "https://kpl.qq.com/",
+  "fetchedAt": "2026-10-14T15:25:11.268Z",
+  "cache": "fresh",
+  "trained": false,
+  "sources": [
+    {
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleList",
+      "request": {
+        "direction": 1,
+        "pivot_scheduleid": "",
+        "page_size": 15
+      },
+      "rawSha256": "508636e72f986fc9dd125b29cc6b4e80c13a11f76cf4555a13c76275ba1d2c8b"
+    },
+    {
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleDetail",
+      "request": {
+        "seasonid": "KPL2026S3",
+        "scheduleid": "KPL2026S3M3W2D2"
+      },
+      "rawSha256": "407dc75a0d1151705230701b1e84124db433324b0e7dac1bd3338e43b36640da"
+    },
+    {
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleDetail",
+      "request": {
+        "seasonid": "KPL2026S3",
+        "scheduleid": "KPL2026S3M3W2D1"
+      },
+      "rawSha256": "4eba983711be45e366cef7d90ca4febe61500809ce1ca9e208e8ddc28c8da0cb"
+    },
+    {
+      "url": "https://kplshop-op.timi-esports.qq.com/kplow/getScheduleDetail",
+      "request": {
+        "seasonid": "KPL2026S3",
+        "scheduleid": "KPL2026S3M3W1D2"
+      },
+      "rawSha256": "7e504e9efb699b1200987ee1c09bc554e5ecab5620250e145dc0ee96db66be22"
+    }
+  ],
+  "matches": [
+    {
+      "id": "KPL2026S3M3W2D2",
+      "season": "KPL2026S3",
+      "title": "2026KPL年度总决赛 擂台赛 10月14日(周三) 重庆狼队 1:3 杭州LGD.NBW",
+      "startedAt": "2026-10-14T12:00:00.000Z",
+      "rounds": [
+        {
+          "round": 1,
+          "url": "https://kpl.qq.com/PlayBack?seasonid=KPL2026S3&scheduleid=KPL2026S3M3W2D2&round=1&vid=5001834824107615719",
+          "heroes": [
+            {
+              "id": 135,
+              "name": "项羽",
+              "playerId": "60010840",
+              "hasPlayerView": false
+            },
+            {
+              "id": 107,
+              "name": "赵云",
+              "playerId": "60011891",
+              "hasPlayerView": true
+            },
+            {
+              "id": 106,
+              "name": "小乔",
+              "playerId": "60011430",
+              "hasPlayerView": true
+            },
+            {
+              "id": 548,
+              "name": "戈娅",
+              "playerId": "60011739",
+              "hasPlayerView": true
+            },
+            {
+              "id": 175,
+              "name": "钟馗",
+              "playerId": "60011846",
+              "hasPlayerView": true
+            },
+            {
+              "id": 503,
+              "name": "狂铁",
+              "playerId": "60011527",
+              "hasPlayerView": true
+            },
+            {
+              "id": 538,
+              "name": "云缨",
+              "playerId": "60012075",
+              "hasPlayerView": true
+            },
+            {
+              "id": 136,
+              "name": "武则天",
+              "playerId": "60010463",
+              "hasPlayerView": true
+            },
+            {
+              "id": 155,
+              "name": "艾琳",
+              "playerId": "60011158",
+              "hasPlayerView": true
+            },
+            {
+              "id": 509,
+              "name": "盾山",
+              "playerId": "60011264",
+              "hasPlayerView": true
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "url": "https://kpl.qq.com/PlayBack?seasonid=KPL2026S3&scheduleid=KPL2026S3M3W2D2&round=2&vid=5001834821970810649",
+          "heroes": [
+            {
+              "id": 140,
+              "name": "关羽",
+              "playerId": "60010840",
+              "hasPlayerView": true
+            },
+            {
+              "id": 511,
+              "name": "猪八戒",
+              "playerId": "60011891",
+              "hasPlayerView": true
+            },
+            {
+              "id": 136,
+              "name": "武则天",
+              "playerId": "60011430",
+              "hasPlayerView": true
+            },
+            {
+              "id": 196,
+              "name": "百里守约",
+              "playerId": "60011739",
+              "hasPlayerView": true
+            },
+            {
+              "id": 577,
+              "name": "少司缘",
+              "playerId": "60011846",
+              "hasPlayerView": true
+            },
+            {
+              "id": 518,
+              "name": "马超",
+              "playerId": "60011527",
+              "hasPlayerView": true
+            },
+            {
+              "id": 126,
+              "name": "夏侯惇",
+              "playerId": "60012075",
+              "hasPlayerView": true
+            },
+            {
+              "id": 148,
+              "name": "姜子牙",
+              "playerId": "60010463",
+              "hasPlayerView": true
+            },
+            {
+              "id": 519,
+              "name": "敖隐",
+              "playerId": "60011158",
+              "hasPlayerView": true
+            },
+            {
+              "id": 194,
+              "name": "苏烈",
+              "playerId": "60011264",
+              "hasPlayerView": true
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "url": "https://kpl.qq.com/PlayBack?seasonid=KPL2026S3&scheduleid=KPL2026S3M3W2D2&round=3&vid=5001834824057828428",
+          "heroes": [
+            {
+              "id": 128,
+              "name": "曹操",
+              "playerId": "60010840",
+              "hasPlayerView": true
+            },
+            {
+              "id": 126,
+              "name": "夏侯惇",
+              "playerId": "60011891",
+              "hasPlayerView": true
+            },
+            {
+              "id": 138,
+              "name": "王维",
+              "playerId": "60011430",
+              "hasPlayerView": true
+            },
+            {
+              "id": 155,
+              "name": "艾琳",
+              "playerId": "60011739",
+              "hasPlayerView": true
+            },
+            {
+              "id": 509,
+              "name": "盾山",
+              "playerId": "60011846",
+              "hasPlayerView": true
+            },
+            {
+              "id": 536,
+              "name": "夏洛特",
+              "playerId": "60011527",
+              "hasPlayerView": true
+            },
+            {
+              "id": 533,
+              "name": "阿古朵",
+              "playerId": "60012075",
+              "hasPlayerView": true
+            },
+            {
+              "id": 312,
+              "name": "沈梦溪",
+              "playerId": "60010463",
+              "hasPlayerView": true
+            },
+            {
+              "id": 548,
+              "name": "戈娅",
+              "playerId": "60011158",
+              "hasPlayerView": true
+            },
+            {
+              "id": 550,
+              "name": "空空儿",
+              "playerId": "60011264",
+              "hasPlayerView": true
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "url": "https://kpl.qq.com/PlayBack?seasonid=KPL2026S3&scheduleid=KPL2026S3M3W2D2&round=4&vid=5001834824050834710",
+          "heroes": [
+            {
+              "id": 503,
+              "name": "狂铁",
+              "playerId": "60010204",
+              "hasPlayerView": true
+            },
+            {
+              "id": 178,
+              "name": "杨戬",
+              "playerId": "60012248",
+              "hasPlayerView": true
+            },
+            {
+              "id": 142,
+              "name": "安琪拉",
+              "playerId": "60011430",
+              "hasPlayerView": true
+            },
+            {
+              "id": 584,
+              "name": "元流之子·射手",
+              "playerId": "60011739",
+              "hasPlayerView": true
+            },
+            {
+              "id": 194,
+              "name": "苏烈",
+              "playerId": "60011846",
+              "hasPlayerView": true
+            },
+            {
+              "id": 128,
+              "name": "曹操",
+              "playerId": "60011527",
+              "hasPlayerView": true
+            },
+            {
+              "id": 107,
+              "name": "赵云",
+              "playerId": "60012075",
+              "hasPlayerView": true
+            },
+            {
+              "id": 106,
+              "name": "小乔",
+              "playerId": "60010463",
+              "hasPlayerView": true
+            },
+            {
+              "id": 196,
+              "name": "百里守约",
+              "playerId": "60011158",
+              "hasPlayerView": true
+            },
+            {
+              "id": 105,
+              "name": "廉颇",
+              "playerId": "60011264",
+              "hasPlayerView": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KPL2026S3M3W2D1",
+      "season": "KPL2026S3",
+      "title": "2026KPL年度总决赛 擂台赛 10月14日(周三) 北京JDG 3:0 济南RW侠",
+      "startedAt": "2026-10-14T09:00:00.000Z",
+      "rounds": [
+        {
+          "round": 1,
+          "url": "https://kpl.qq.com/PlayBack?seasonid=KPL2026S3&scheduleid=KPL2026S3M3W2D1&round=1&vid=5001834824052594571",
+          "heroes": [
+            {
+              "id": 536,
+              "name": "夏洛特",
+              "playerId": "60012238",
+              "hasPlayerView": true
+            },
+            {
+              "id": 178,
+              "name": "杨戬",
+              "playerId": "60011747",
+              "hasPlayerView": true
+            },
+            {
+              "id": 521,
+              "name": "海月",
+              "playerId": "60010953",
+              "hasPlayerView": true
+            },
+            {
+              "id": 196,
+              "name": "百里守约",
+              "playerId": "60012195",
+              "hasPlayerView": true
+            },
+            {
+              "id": 159,
+              "name": "朵莉亚",
+              "playerId": "60011055",
+              "hasPlayerView": true
+            },
+            {
+              "id": 503,
+              "name": "狂铁",
+              "playerId": "60011676",
+              "hasPlayerView": true
+            },
+            {
+              "id": 107,
+              "name": "赵云",
+              "playerId": "60010581",
+              "hasPlayerView": true
+            },
+            {
+              "id": 312,
+              "name": "沈梦溪",
+              "playerId": "60011787",
+              "hasPlayerView": true
+            },
+            {
+              "id": 199,
+              "name": "公孙离",
+              "playerId": "60011737",
+              "hasPlayerView": true
+            },
+            {
+              "id": 171,
+              "name": "张飞",
+              "playerId": "70010356",
+              "hasPlayerView": true
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "url": "https://kpl.qq.com/PlayBack?seasonid=KPL2026S3&scheduleid=KPL2026S3M3W2D1&round=2&vid=5001834824065384632",
+          "heroes": [
+            {
+              "id": 121,
+              "name": "芈月",
+              "playerId": "60012238",
+              "hasPlayerView": true
+            },
+            {
+              "id": 126,
+              "name": "夏侯惇",
+              "playerId": "60011747",
+              "hasPlayerView": true
+            },
+            {
+              "id": 136,
+              "name": "武则天",
+              "playerId": "60010953",
+              "hasPlayerView": true
+            },
+            {
+              "id": 545,
+              "name": "莱西奥",
+              "playerId": "60012195",
+              "hasPlayerView": true
+            },
+            {
+              "id": 171,
+              "name": "张飞",
+              "playerId": "60011055",
+              "hasPlayerView": true
+            },
+            {
+              "id": 536,
+              "name": "夏洛特",
+              "playerId": "60011676",
+              "hasPlayerView": true
+            },
+            {
+              "id": 163,
+              "name": "橘右京",
+              "playerId": "60010581",
+              "hasPlayerView": true
+            },
+            {
+              "id": 521,
+              "name": "海月",
+              "playerId": "60011787",
+              "hasPlayerView": true
+            },
+            {
+              "id": 519,
+              "name": "敖隐",
+              "playerId": "60011737",
+              "hasPlayerView": true
+            },
+            {
+              "id": 194,
+              "name": "苏烈",
+              "playerId": "70010356",
+              "hasPlayerView": true
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "url": "https://kpl.qq.com/PlayBack?seasonid=KPL2026S3&scheduleid=KPL2026S3M3W2D1&round=3&vid=5001834824108649996",
+          "heroes": [
+            {
+              "id": 558,
+              "name": "影",
+              "playerId": "60011991",
+              "hasPlayerView": true
+            },
+            {
+              "id": 193,
+              "name": "铠",
+              "playerId": "60011747",
+              "hasPlayerView": true
+            },
+            {
+              "id": 563,
+              "name": "海诺",
+              "playerId": "60012230",
+              "hasPlayerView": true
+            },
+            {
+              "id": 548,
+              "name": "戈娅",
+              "playerId": "60012195",
+              "hasPlayerView": true
+            },
+            {
+              "id": 525,
+              "name": "鲁班大师",
+              "playerId": "60011055",
+              "hasPlayerView": true
+            },
+            {
+              "id": 518,
+              "name": "马超",
+              "playerId": "60011676",
+              "hasPlayerView": true
+            },
+            {
+              "id": 198,
+              "name": "梦奇",
+              "playerId": "60010581",
+              "hasPlayerView": true
+            },
+            {
+              "id": 157,
+              "name": "不知火舞",
+              "playerId": "60011787",
+              "hasPlayerView": true
+            },
+            {
+              "id": 133,
+              "name": "狄仁杰",
+              "playerId": "60011737",
+              "hasPlayerView": true
+            },
+            {
+              "id": 585,
+              "name": "元流之子·辅助",
+              "playerId": "70010356",
+              "hasPlayerView": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KPL2026S3M3W1D2",
+      "season": "KPL2026S3",
+      "title": "2026KPL年度总决赛 擂台赛 10月12日(周一) 北京WB 2:3 深圳DYG",
+      "startedAt": "2026-10-12T12:00:00.000Z",
+      "rounds": [
+        {
+          "round": 1,
+          "url": "https://kpl.qq.com/PlayBack?seasonid=KPL2026S3&scheduleid=KPL2026S3M3W1D2&round=1&vid=5001834823842463547",
+          "heroes": [
+            {
+              "id": 128,
+              "name": "曹操",
+              "playerId": "60011036",
+              "hasPlayerView": true
+            },
+            {
+              "id": 502,
+              "name": "裴擒虎",
+              "playerId": "60010353",
+              "hasPlayerView": true
+            },
+            {
+              "id": 521,
+              "name": "海月",
+              "playerId": "60011929",
+              "hasPlayerView": true
+            },
+            {
+              "id": 584,
+              "name": "元流之子·射手",
+              "playerId": "60012155",
+              "hasPlayerView": true
+            },
+            {
+              "id": 577,
+              "name": "少司缘",
+              "playerId": "70010342",
+              "hasPlayerView": true
+            },
+            {
+              "id": 536,
+              "name": "夏洛特",
+              "playerId": "60011720",
+              "hasPlayerView": true
+            },
+            {
+              "id": 533,
+              "name": "阿古朵",
+              "playerId": "60011909",
+              "hasPlayerView": true
+            },
+            {
+              "id": 136,
+              "name": "武则天",
+              "playerId": "60010954",
+              "hasPlayerView": true
+            },
+            {
+              "id": 545,
+              "name": "莱西奥",
+              "playerId": "60010760",
+              "hasPlayerView": true
+            },
+            {
+              "id": 171,
+              "name": "张飞",
+              "playerId": "60010968",
+              "hasPlayerView": true
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "url": "https://kpl.qq.com/PlayBack?seasonid=KPL2026S3&scheduleid=KPL2026S3M3W1D2&round=2&vid=5001834823834891009",
+          "heroes": [
+            {
+              "id": 503,
+              "name": "狂铁",
+              "playerId": "60011036",
+              "hasPlayerView": true
+            },
+            {
+              "id": 130,
+              "name": "宫本武藏",
+              "playerId": "60010353",
+              "hasPlayerView": true
+            },
+            {
+              "id": 179,
+              "name": "女娲",
+              "playerId": "60011929",
+              "hasPlayerView": true
+            },
+            {
+              "id": 199,
+              "name": "公孙离",
+              "playerId": "60012155",
+              "hasPlayerView": true
+            },
+            {
+              "id": 186,
+              "name": "太乙真人",
+              "playerId": "70010342",
+              "hasPlayerView": true
+            },
+            {
+              "id": 558,
+              "name": "影",
+              "playerId": "60011720",
+              "hasPlayerView": true
+            },
+            {
+              "id": 178,
+              "name": "杨戬",
+              "playerId": "60011909",
+              "hasPlayerView": true
+            },
+            {
+              "id": 521,
+              "name": "海月",
+              "playerId": "60010954",
+              "hasPlayerView": true
+            },
+            {
+              "id": 196,
+              "name": "百里守约",
+              "playerId": "60010760",
+              "hasPlayerView": true
+            },
+            {
+              "id": 194,
+              "name": "苏烈",
+              "playerId": "60010968",
+              "hasPlayerView": true
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "url": "https://kpl.qq.com/PlayBack?seasonid=KPL2026S3&scheduleid=KPL2026S3M3W1D2&round=3&vid=5001834823832747948",
+          "heroes": [
+            {
+              "id": 518,
+              "name": "马超",
+              "playerId": "60011036",
+              "hasPlayerView": true
+            },
+            {
+              "id": 163,
+              "name": "橘右京",
+              "playerId": "60010353",
+              "hasPlayerView": true
+            },
+            {
+              "id": 106,
+              "name": "小乔",
+              "playerId": "60011929",
+              "hasPlayerView": true
+            },
+            {
+              "id": 519,
+              "name": "敖隐",
+              "playerId": "60012155",
+              "hasPlayerView": true
+            },
+            {
+              "id": 544,
+              "name": "赵怀真",
+              "playerId": "70010342",
+              "hasPlayerView": true
+            },
+            {
+              "id": 140,
+              "name": "关羽",
+              "playerId": "60011720",
+              "hasPlayerView": true
+            },
+            {
+              "id": 193,
+              "name": "铠",
+              "playerId": "60011909",
+              "hasPlayerView": true
+            },
+            {
+              "id": 138,
+              "name": "王维",
+              "playerId": "60010954",
+              "hasPlayerView": true
+            },
+            {
+              "id": 199,
+              "name": "公孙离",
+              "playerId": "60010760",
+              "hasPlayerView": true
+            },
+            {
+              "id": 186,
+              "name": "太乙真人",
+              "playerId": "60010968",
+              "hasPlayerView": true
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "url": "https://kpl.qq.com/PlayBack?seasonid=KPL2026S3&scheduleid=KPL2026S3M3W1D2&round=4&vid=5001834823842166094",
+          "heroes": [
+            {
+              "id": 537,
+              "name": "司空震",
+              "playerId": "60011036",
+              "hasPlayerView": true
+            },
+            {
+              "id": 107,
+              "name": "赵云",
+              "playerId": "60012116",
+              "hasPlayerView": true
+            },
+            {
+              "id": 176,
+              "name": "杨玉环",
+              "playerId": "60011929",
+              "hasPlayerView": true
+            },
+            {
+              "id": 548,
+              "name": "戈娅",
+              "playerId": "60012155",
+              "hasPlayerView": true
+            },
+            {
+              "id": 171,
+              "name": "张飞",
+              "playerId": "60011807",
+              "hasPlayerView": true
+            },
+            {
+              "id": 128,
+              "name": "曹操",
+              "playerId": "60011720",
+              "hasPlayerView": true
+            },
+            {
+              "id": 517,
+              "name": "大司命",
+              "playerId": "60011909",
+              "hasPlayerView": true
+            },
+            {
+              "id": 312,
+              "name": "沈梦溪",
+              "playerId": "60010954",
+              "hasPlayerView": true
+            },
+            {
+              "id": 584,
+              "name": "元流之子·射手",
+              "playerId": "60010760",
+              "hasPlayerView": true
+            },
+            {
+              "id": 168,
+              "name": "牛魔",
+              "playerId": "60010968",
+              "hasPlayerView": true
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "url": "https://kpl.qq.com/PlayBack?seasonid=KPL2026S3&scheduleid=KPL2026S3M3W1D2&round=5&vid=5001834823839867326",
+          "heroes": [
+            {
+              "id": 536,
+              "name": "夏洛特",
+              "playerId": "60011036",
+              "hasPlayerView": true
+            },
+            {
+              "id": 170,
+              "name": "刘备",
+              "playerId": "60010353",
+              "hasPlayerView": true
+            },
+            {
+              "id": 523,
+              "name": "西施",
+              "playerId": "60011929",
+              "hasPlayerView": true
+            },
+            {
+              "id": 196,
+              "name": "百里守约",
+              "playerId": "60012155",
+              "hasPlayerView": true
+            },
+            {
+              "id": 194,
+              "name": "苏烈",
+              "playerId": "70010342",
+              "hasPlayerView": true
+            },
+            {
+              "id": 503,
+              "name": "狂铁",
+              "playerId": "60011720",
+              "hasPlayerView": true
+            },
+            {
+              "id": 107,
+              "name": "赵云",
+              "playerId": "60011909",
+              "hasPlayerView": true
+            },
+            {
+              "id": 142,
+              "name": "安琪拉",
+              "playerId": "60010954",
+              "hasPlayerView": true
+            },
+            {
+              "id": 519,
+              "name": "敖隐",
+              "playerId": "60010760",
+              "hasPlayerView": true
+            },
+            {
+              "id": 577,
+              "name": "少司缘",
+              "playerId": "60010968",
+              "hasPlayerView": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

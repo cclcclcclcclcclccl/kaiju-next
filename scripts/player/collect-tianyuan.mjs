@@ -5,9 +5,12 @@ import { createTianyuan } from '../../server/pro/tianyuan.ts';
 import { sourceDate } from '../../src/player/pro/tianyuan.ts';
 const date = process.argv[2] ?? sourceDate();
 const full = process.argv.includes('--full');
+const requestedOutput = process.argv.find((arg) => arg.startsWith('--output='))?.slice(9);
 const directory = resolve(process.env.PLAYER_DATA_DIR ?? 'data', 'tianyuan');
 const source = createTianyuan({ directory, heroIds: heroes.map((h) => h.id) });
-const output = resolve('evidence/tianyuan-public-api', date);
+const output = requestedOutput
+  ? resolve(requestedOutput)
+  : resolve('evidence/tianyuan-public-api', date);
 await mkdir(output, { recursive: true });
 const report = {
   requestedDate: date,

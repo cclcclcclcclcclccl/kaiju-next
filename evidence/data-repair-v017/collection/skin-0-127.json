@@ -1,0 +1,60 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=127",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 127
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:09:14.153Z",
+  "rawSha256": "71015fd52f311b92e0a7883b13c0ff8039d835d6a213333e21884478f77200e2",
+  "cache": "fresh",
+  "data": {
+    "heroId": 127,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "雪境奇遇",
+        "pickRate": 41.29
+      },
+      {
+        "skinName": "冰雪圆舞曲",
+        "pickRate": 30.14
+      },
+      {
+        "skinName": "至美·化雀舞",
+        "pickRate": 12.4
+      },
+      {
+        "skinName": "游园惊梦",
+        "pickRate": 5.02
+      },
+      {
+        "skinName": "花好人间",
+        "pickRate": 3.77
+      },
+      {
+        "skinName": "逆浪荇歌",
+        "pickRate": 3.14
+      },
+      {
+        "skinName": "女儿国国王",
+        "pickRate": 1.88
+      },
+      {
+        "skinName": "幽恒",
+        "pickRate": 1.57
+      },
+      {
+        "skinName": "落雪兰心",
+        "pickRate": 0.63
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.16
+      }
+    ]
+  }
+}

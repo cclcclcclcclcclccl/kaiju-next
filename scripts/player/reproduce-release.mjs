@@ -3,7 +3,8 @@ import { join, resolve } from 'node:path';
 import { spawn } from 'node:child_process';
 import assert from 'node:assert/strict';
 const root = resolve('.reproduction', 'audit-' + Date.now());
-const output = resolve('evidence/final-audit-v016');
+const output = resolve(process.argv[2] ?? 'evidence/final-audit-v016');
+const expectedVersion = JSON.parse(readFileSync('package.json', 'utf8')).version;
 mkdirSync(root, { recursive: true });
 mkdirSync(output, { recursive: true });
 for (const name of [
@@ -70,7 +71,7 @@ try {
     } catch {}
     await new Promise((r) => setTimeout(r, 100));
   }
-  assert.equal(status?.version, '0.16.0');
+  assert.equal(status?.version, expectedVersion);
   assert.equal(status.heroCount, 133);
   const workspace = await (await fetch('http://127.0.0.1:4320/api/workspace')).json();
   assert.deepEqual(workspace.pool, []);

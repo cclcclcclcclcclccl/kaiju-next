@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=124",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 124
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:09:02.101Z",
+  "rawSha256": "9c6aec3679f5d37089d62dedd31fc7674b255149b282cf79f2c10c195d8e7f30",
+  "cache": "fresh",
+  "data": {
+    "heroId": 124,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 12211,
+        "equipmentName": "梦魇之牙",
+        "pickRate": 89.77,
+        "winRate": 53.22
+      },
+      {
+        "equipmentId": 1235,
+        "equipmentName": "痛苦面具",
+        "pickRate": 86.54,
+        "winRate": 53.19
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 65.41,
+        "winRate": 53.29
+      },
+      {
+        "equipmentId": 1727,
+        "equipmentName": "日暮之流",
+        "pickRate": 57.2,
+        "winRate": 56.71
+      },
+      {
+        "equipmentId": 1424,
+        "equipmentName": "秘法之靴",
+        "pickRate": 24.9,
+        "winRate": 48.11
+      },
+      {
+        "equipmentId": 1347,
+        "equipmentName": "永夜守护",
+        "pickRate": 21.27,
+        "winRate": 65.19
+      },
+      {
+        "equipmentId": 1234,
+        "equipmentName": "凝冰之息",
+        "pickRate": 17.09,
+        "winRate": 48.82
+      },
+      {
+        "equipmentId": 1239,
+        "equipmentName": "辉月",
+        "pickRate": 14.27,
+        "winRate": 49.06
+      },
+      {
+        "equipmentId": 1237,
+        "equipmentName": "时之预言",
+        "pickRate": 12.92,
+        "winRate": 57.29
+      },
+      {
+        "equipmentId": 1240,
+        "equipmentName": "噬神之书",
+        "pickRate": 6.46,
+        "winRate": 64.58
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=146",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 146
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:10:42.336Z",
+  "rawSha256": "7f99634f4922e4eb1f1036611f927f4f82a611d3587c405e067e8c39bf1e3c73",
+  "cache": "fresh",
+  "data": {
+    "heroId": 146,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "霜月吟",
+        "pickRate": 59.48
+      },
+      {
+        "skinName": "紫霞仙子",
+        "pickRate": 34.45
+      },
+      {
+        "skinName": "哥特玫瑰",
+        "pickRate": 2.62
+      },
+      {
+        "skinName": "一生所爱",
+        "pickRate": 2.38
+      },
+      {
+        "skinName": "启示之音",
+        "pickRate": 0.6
+      },
+      {
+        "skinName": "瓷语鉴心",
+        "pickRate": 0.24
+      },
+      {
+        "skinName": "绯红之刃",
+        "pickRate": 0.12
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.12
+      }
+    ]
+  }
+}

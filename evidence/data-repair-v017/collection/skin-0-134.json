@@ -1,0 +1,52 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=134",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 134
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:09:51.944Z",
+  "rawSha256": "f9bbb26d06fe14bda9462d46526c5bc162a60fef66b3e88629d02f53cc05345c",
+  "cache": "fresh",
+  "data": {
+    "heroId": 134,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "黄金狮子座",
+        "pickRate": 72.21
+      },
+      {
+        "skinName": "拳王",
+        "pickRate": 16.81
+      },
+      {
+        "skinName": "大发明家",
+        "pickRate": 4.25
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 2.83
+      },
+      {
+        "skinName": "星君·亢金",
+        "pickRate": 1.77
+      },
+      {
+        "skinName": "爆裂喵拳",
+        "pickRate": 1.42
+      },
+      {
+        "skinName": "沙漠行僧",
+        "pickRate": 0.53
+      },
+      {
+        "skinName": "星际陆战队",
+        "pickRate": 0.18
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=135",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 135
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:09:56.824Z",
+  "rawSha256": "ad9df6b708a7734c1a2353f28bb32579cee3eba749dedf9982f6b0d185253750",
+  "cache": "fresh",
+  "data": {
+    "heroId": 135,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "九幽镇关",
+        "pickRate": 54.91
+      },
+      {
+        "skinName": "苍穹之光",
+        "pickRate": 14.96
+      },
+      {
+        "skinName": "无限倾心",
+        "pickRate": 12.34
+      },
+      {
+        "skinName": "职棒王牌",
+        "pickRate": 7.21
+      },
+      {
+        "skinName": "海滩派对",
+        "pickRate": 5.35
+      },
+      {
+        "skinName": "霸王别姬",
+        "pickRate": 2.18
+      },
+      {
+        "skinName": "苍威无极",
+        "pickRate": 1.09
+      },
+      {
+        "skinName": "科学大爆炸",
+        "pickRate": 0.98
+      },
+      {
+        "skinName": "帝国元帅",
+        "pickRate": 0.66
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.33
+      }
+    ]
+  }
+}

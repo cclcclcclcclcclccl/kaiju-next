@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=170",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 170
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:12:15.950Z",
+  "rawSha256": "62634ce85a42ed829712d3950d35c5401ee0b191fce99d40bb4a632c01d9b18f",
+  "cache": "fresh",
+  "data": {
+    "heroId": 170,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "时之恋人",
+        "pickRate": 57.05
+      },
+      {
+        "skinName": "督灵司正",
+        "pickRate": 27.24
+      },
+      {
+        "skinName": "汉昭烈帝",
+        "pickRate": 6.41
+      },
+      {
+        "skinName": "百相守梦",
+        "pickRate": 5.45
+      },
+      {
+        "skinName": "浪漫序章",
+        "pickRate": 2.24
+      },
+      {
+        "skinName": "纽约教父",
+        "pickRate": 1.28
+      },
+      {
+        "skinName": "万事如意",
+        "pickRate": 0.32
+      }
+    ]
+  }
+}

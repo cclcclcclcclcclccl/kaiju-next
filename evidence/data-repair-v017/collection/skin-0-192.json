@@ -1,0 +1,40 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=192",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 192
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:13:56.963Z",
+  "rawSha256": "2811a9d3dfbf0c28bcbbb1f2e855c8f4ef2cc9bc2f2e6d5236b7378dd63faadb",
+  "cache": "fresh",
+  "data": {
+    "heroId": 192,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "火炮绅士",
+        "pickRate": 39.96
+      },
+      {
+        "skinName": "百相守梦",
+        "pickRate": 22.27
+      },
+      {
+        "skinName": "怒海争锋",
+        "pickRate": 17.69
+      },
+      {
+        "skinName": "芝加哥教父",
+        "pickRate": 12.92
+      },
+      {
+        "skinName": "烈魂",
+        "pickRate": 7.16
+      }
+    ]
+  }
+}

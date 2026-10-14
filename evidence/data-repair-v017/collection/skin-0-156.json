@@ -1,0 +1,56 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=156",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 156
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:11:30.438Z",
+  "rawSha256": "a1b7042efa575e9387f96e385594358bc4ad701013137984271b2ac9263ac16f",
+  "cache": "fresh",
+  "data": {
+    "heroId": 156,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "黄金白羊座",
+        "pickRate": 53.72
+      },
+      {
+        "skinName": "千筹问战",
+        "pickRate": 19.83
+      },
+      {
+        "skinName": "罗小黑战记",
+        "pickRate": 7.44
+      },
+      {
+        "skinName": "一千零一夜",
+        "pickRate": 5.51
+      },
+      {
+        "skinName": "缤纷绘卷",
+        "pickRate": 4.96
+      },
+      {
+        "skinName": "古海寻踪",
+        "pickRate": 4.41
+      },
+      {
+        "skinName": "灵野札记",
+        "pickRate": 2.2
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 1.65
+      },
+      {
+        "skinName": "幽兰居士",
+        "pickRate": 0.28
+      }
+    ]
+  }
+}

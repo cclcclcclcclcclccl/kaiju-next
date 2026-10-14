@@ -1,0 +1,44 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=159",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 159
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:11:40.657Z",
+  "rawSha256": "85b17fac7d3fb71d9812108733bebb6271ebb2fd525daa5b1f1908123dfdd5a4",
+  "cache": "fresh",
+  "data": {
+    "heroId": 159,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "神骥·鸣幻洲",
+        "pickRate": 35.91
+      },
+      {
+        "skinName": "心动手记",
+        "pickRate": 25.17
+      },
+      {
+        "skinName": "金色潮汐",
+        "pickRate": 16.11
+      },
+      {
+        "skinName": "幻珠鲛人",
+        "pickRate": 12.42
+      },
+      {
+        "skinName": "幻海寻迹",
+        "pickRate": 8.72
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 1.68
+      }
+    ]
+  }
+}

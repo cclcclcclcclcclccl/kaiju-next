@@ -1,0 +1,68 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=107",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 107
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:07:14.509Z",
+  "rawSha256": "093540a194fd5330343f00d7a329d7cb794f6204309757dbf436fe0c99eb3c8b",
+  "cache": "fresh",
+  "data": {
+    "heroId": 107,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "飞龙神将",
+        "pickRate": 29.79
+      },
+      {
+        "skinName": "白执事",
+        "pickRate": 19.67
+      },
+      {
+        "skinName": "乘龙·铭钟鼎",
+        "pickRate": 16.05
+      },
+      {
+        "skinName": "淬星耀世",
+        "pickRate": 12.76
+      },
+      {
+        "skinName": "未来纪元",
+        "pickRate": 6.83
+      },
+      {
+        "skinName": "忍·炎影",
+        "pickRate": 5.56
+      },
+      {
+        "skinName": "皇家上将",
+        "pickRate": 3.05
+      },
+      {
+        "skinName": "引擎之心",
+        "pickRate": 2.18
+      },
+      {
+        "skinName": "龙胆",
+        "pickRate": 1.56
+      },
+      {
+        "skinName": "百木心枪",
+        "pickRate": 1.32
+      },
+      {
+        "skinName": "嘻哈天王",
+        "pickRate": 1.03
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.21
+      }
+    ]
+  }
+}

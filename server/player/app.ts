@@ -17,6 +17,7 @@ import { officialQuerySchema } from '../../src/player/pro/official.ts';
 import { createResources } from '../pro/resources.ts';
 import type { createRankRefresh } from '../pro/refresh.ts';
 import type { createTianyuan } from '../pro/tianyuan.ts';
+import type { createKplCases } from '../pro/kpl.ts';
 import { tianyuanQuerySchema } from '../../src/player/pro/tianyuan.ts';
 export class PlayerHttpError extends Error {
   status: number;
@@ -50,6 +51,7 @@ export function createPlayerApp(
     resources?: ReturnType<typeof createResources>;
     rankRefresh?: ReturnType<typeof createRankRefresh>;
     tianyuan?: ReturnType<typeof createTianyuan>;
+    kplCases?: ReturnType<typeof createKplCases>;
   } = {},
 ) {
   const officialRanks = options.officialRanks ?? createOfficialRanks();
@@ -99,6 +101,14 @@ export function createPlayerApp(
       )
         throw new PlayerHttpError(401, '登录已过期，请重新登录');
       const store = user ? rootStore.forUser(user.id) : rootStore;
+      if (method === 'GET' && url.pathname === '/api/kpl/cases') {
+        if (!options.kplCases) return send(503, { error: '官方赛事素材服务未启用' });
+        try {
+          return send(200, await options.kplCases.get());
+        } catch {
+          return send(502, { error: '官方赛事素材暂不可用，请稍后重试；没有填入示例比赛。' });
+        }
+      }
       if (method === 'GET' && url.pathname === '/api/tianyuan') {
         const query = tianyuanQuerySchema.parse(Object.fromEntries(url.searchParams));
         if (!options.tianyuan) return send(503, { error: '天元之弈公开来源未启用' });
@@ -157,7 +167,7 @@ export function createPlayerApp(
       if (method === 'GET' && url.pathname === '/api/status')
         return send(200, {
           product: '开局 NEXT',
-          version: '0.16.0',
+          version: '0.17.0',
           modelConfigured: Boolean(providerConfig()),
           heroCount: heroes.length,
           identity: { mode: user ? 'account' : 'guest', name: user?.name ?? '访客' },

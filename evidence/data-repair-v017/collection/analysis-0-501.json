@@ -1,0 +1,41 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/analysis?heroId=501",
+  "query": {
+    "kind": "analysis",
+    "heroId": 501
+  },
+  "fetchedAt": "2026-10-14T15:14:53.496Z",
+  "rawSha256": "4c66bca9b7563fe61fa76b4208e706905e548ec3f4c7ccb15efa0200fd579685",
+  "cache": "fresh",
+  "data": {
+    "heroId": 501,
+    "counters": [],
+    "counteredBy": [
+      {
+        "heroName": "嫦娥",
+        "totalMatches": 104,
+        "advantageIndex": -9.83
+      }
+    ],
+    "goodSynergies": [],
+    "badSynergies": [
+      {
+        "heroName": "马超",
+        "totalMatches": 90,
+        "synergyIndex": -10.21
+      },
+      {
+        "heroName": "赵云",
+        "totalMatches": 99,
+        "synergyIndex": -9
+      },
+      {
+        "heroName": "敖隐",
+        "totalMatches": 140,
+        "synergyIndex": -8.71
+      }
+    ]
+  }
+}

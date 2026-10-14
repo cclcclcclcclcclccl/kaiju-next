@@ -1,0 +1,56 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=166",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 166
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:11:55.888Z",
+  "rawSha256": "34cf0db3e20b06f801bf744a0b8baffccc534bffb53007a01f3cc92ebece5edd",
+  "cache": "fresh",
+  "data": {
+    "heroId": 166,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "旅行日记",
+        "pickRate": 48.26
+      },
+      {
+        "skinName": "死亡骑士",
+        "pickRate": 25.57
+      },
+      {
+        "skinName": "追逃游戏",
+        "pickRate": 11.5
+      },
+      {
+        "skinName": "荣光之誓",
+        "pickRate": 9.38
+      },
+      {
+        "skinName": "布丁狗之誓",
+        "pickRate": 3.18
+      },
+      {
+        "skinName": "心灵战警",
+        "pickRate": 0.76
+      },
+      {
+        "skinName": "潮玩骑士王",
+        "pickRate": 0.76
+      },
+      {
+        "skinName": "狮心王",
+        "pickRate": 0.45
+      },
+      {
+        "skinName": "鸿运当头",
+        "pickRate": 0.15
+      }
+    ]
+  }
+}

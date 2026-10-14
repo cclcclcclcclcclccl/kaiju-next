@@ -1,0 +1,52 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=150",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 150
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T15:10:58.415Z",
+  "rawSha256": "025883d7535aa4d40793817b03231b3a45d275acb61f095654d5134b08220a7e",
+  "cache": "fresh",
+  "data": {
+    "heroId": 150,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "街头霸王",
+        "pickRate": 86.95
+      },
+      {
+        "skinName": "群星魔术团",
+        "pickRate": 5.2
+      },
+      {
+        "skinName": "白龙吟",
+        "pickRate": 2.37
+      },
+      {
+        "skinName": "弑枪猎影",
+        "pickRate": 2.28
+      },
+      {
+        "skinName": "教廷特使",
+        "pickRate": 2.1
+      },
+      {
+        "skinName": "踏浪归",
+        "pickRate": 0.64
+      },
+      {
+        "skinName": "傲雪梅枪",
+        "pickRate": 0.36
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.09
+      }
+    ]
+  }
+}
