@@ -1,0 +1,36 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=540",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 540
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:06:11.605Z",
+  "rawSha256": "b6966d5188ca503a7971b8828e2af26618d37c0133e396c98d33ba732089962c",
+  "cache": "fresh",
+  "data": {
+    "heroId": 540,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "济世禅心",
+        "pickRate": 69.5
+      },
+      {
+        "skinName": "前尘",
+        "pickRate": 16.31
+      },
+      {
+        "skinName": "唐三藏",
+        "pickRate": 12.06
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 2.13
+      }
+    ]
+  }
+}

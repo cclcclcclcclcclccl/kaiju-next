@@ -1,0 +1,44 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-10-13&heroId=510",
+  "query": {
+    "kind": "combined",
+    "date": "2026-10-13",
+    "heroId": 510
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:04:24.730Z",
+  "rawSha256": "5a0e8e795080294c7b552a1d12baab1a59ef3c8458f696f4ab133c6ed74462e4",
+  "cache": "fresh",
+  "data": {
+    "heroId": 510,
+    "positions": {
+      "0": {
+        "pickRate": 99.41,
+        "winRate": 52.94
+      },
+      "4": {
+        "pickRate": 0.59,
+        "winRate": 54.55
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "晕眩",
+        "pickRate": 75.29,
+        "winRate": 53.56
+      },
+      {
+        "skillName": "终结",
+        "pickRate": 24.12,
+        "winRate": 51.09
+      },
+      {
+        "skillName": "闪现",
+        "pickRate": 0.59,
+        "winRate": 50.37
+      }
+    ]
+  }
+}

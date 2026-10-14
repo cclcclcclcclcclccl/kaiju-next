@@ -23,6 +23,7 @@ test.afterEach(async ({ request }) => {
 });
 test('tier import is real, keeps provenance and supplies per-hero metrics', async ({ page }) => {
   await page.locator('nav').getByRole('button', { name: '分段梯度', exact: true }).click();
+  await page.getByRole('button', { name: '历史快照与官方榜', exact: true }).click();
   await expect(page.getByText('这个分段还没有可靠统计')).toBeVisible();
   await page.getByRole('button', { name: '导入统计快照' }).click();
   await page.getByRole('button', { name: 'JSON 导入', exact: true }).click();
@@ -64,6 +65,7 @@ test('tier import is real, keeps provenance and supplies per-hero metrics', asyn
   await page.keyboard.press('Escape');
   await page.reload();
   await page.locator('nav').getByRole('button', { name: '分段梯度', exact: true }).click();
+  await page.getByRole('button', { name: '历史快照与官方榜', exact: true }).click();
   await page.getByLabel('统计分段', { exact: true }).selectOption('巅峰1800+');
   await expect(page.locator('.pro-table tbody tr')).toHaveCount(8);
 });

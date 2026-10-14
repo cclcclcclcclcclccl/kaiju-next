@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=518",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 518
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:04:50.971Z",
+  "rawSha256": "16c54883cc6ed2764ae0c560a41bb2899e6a618c1c19d62ea8f9718c6796c99c",
+  "cache": "fresh",
+  "data": {
+    "heroId": 518,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "琥珀纪元",
+        "pickRate": 44.56
+      },
+      {
+        "skinName": "无双飞将",
+        "pickRate": 29.26
+      },
+      {
+        "skinName": "神骥·逐星野",
+        "pickRate": 19.15
+      },
+      {
+        "skinName": "神威",
+        "pickRate": 3.75
+      },
+      {
+        "skinName": "幸存者",
+        "pickRate": 2.98
+      },
+      {
+        "skinName": "访茗客",
+        "pickRate": 0.19
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.1
+      }
+    ]
+  }
+}

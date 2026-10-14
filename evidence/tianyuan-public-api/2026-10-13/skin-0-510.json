@@ -1,0 +1,52 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=510",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 510
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:04:21.000Z",
+  "rawSha256": "9a4af61276f5a67c38bc81a577a7ffad6ba66627c82e898249491b78a1ae0d54",
+  "cache": "fresh",
+  "data": {
+    "heroId": 510,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "乘龙·淬吴钩",
+        "pickRate": 36.86
+      },
+      {
+        "skinName": "时之奇旅",
+        "pickRate": 18.29
+      },
+      {
+        "skinName": "末日机甲",
+        "pickRate": 17.43
+      },
+      {
+        "skinName": "海之征途",
+        "pickRate": 13.43
+      },
+      {
+        "skinName": "猫狗日记",
+        "pickRate": 7.71
+      },
+      {
+        "skinName": "百相守梦",
+        "pickRate": 4.57
+      },
+      {
+        "skinName": "挚爱之约",
+        "pickRate": 1.14
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.57
+      }
+    ]
+  }
+}

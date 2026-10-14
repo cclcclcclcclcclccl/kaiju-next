@@ -1,0 +1,44 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=531",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 531
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:05:41.366Z",
+  "rawSha256": "8137bb2e4f03b61a605d5b14fac5ebddda4cdd3fc074cd937b2b6b78913049e5",
+  "cache": "fresh",
+  "data": {
+    "heroId": 531,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "炽阳神光",
+        "pickRate": 81.7
+      },
+      {
+        "skinName": "玫瑰异探",
+        "pickRate": 11.77
+      },
+      {
+        "skinName": "冰刃幻境",
+        "pickRate": 2.94
+      },
+      {
+        "skinName": "匿光追影者",
+        "pickRate": 2.11
+      },
+      {
+        "skinName": "青焰无极",
+        "pickRate": 1.22
+      },
+      {
+        "skinName": "真我赫兹",
+        "pickRate": 0.26
+      }
+    ]
+  }
+}

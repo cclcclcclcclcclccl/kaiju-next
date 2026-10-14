@@ -1,0 +1,44 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=525",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 525
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:05:21.193Z",
+  "rawSha256": "04978f8d5cfd1bb1489ca590add62747a7663ea9636d2280cdde3795263aaf36",
+  "cache": "fresh",
+  "data": {
+    "heroId": 525,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "傩神司",
+        "pickRate": 37.02
+      },
+      {
+        "skinName": "归虚梦演",
+        "pickRate": 28.46
+      },
+      {
+        "skinName": "匿光启智者",
+        "pickRate": 14.79
+      },
+      {
+        "skinName": "乓乓大师",
+        "pickRate": 12.72
+      },
+      {
+        "skinName": "探海日志",
+        "pickRate": 6.75
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.26
+      }
+    ]
+  }
+}

@@ -1,0 +1,2182 @@
+{
+  "algorithm": "环境梯度 v1.0",
+  "date": "2026-10-12",
+  "thresholds": [
+    90,
+    75,
+    55,
+    35
+  ],
+  "interpretation": "Observed pick/ban environment with bounded overall-win modifier; not validated strength or a confidence interval.",
+  "heroCount": 133,
+  "missingWin": [
+    "明世隐"
+  ],
+  "tiers": {
+    "T0": 13,
+    "T1": 18,
+    "T2": 26,
+    "T3": 27,
+    "T4": 49
+  },
+  "sensitiveCount": 29,
+  "rankings": [
+    {
+      "heroId": 577,
+      "name": "少司缘",
+      "score": 98.8852504638219,
+      "tier": "T0",
+      "range": [
+        97.57575757575759,
+        99.1882807668522
+      ],
+      "possibleTiers": [
+        "T0"
+      ],
+      "pickPercentile": 99.24242424242425,
+      "banPercentile": 96.21212121212122,
+      "winModifier": 1.0064625850340148
+    },
+    {
+      "heroId": 519,
+      "name": "敖隐",
+      "score": 98.32329545454547,
+      "tier": "T0",
+      "range": [
+        97.5,
+        98.77784090909091
+      ],
+      "possibleTiers": [
+        "T0"
+      ],
+      "pickPercentile": 100,
+      "banPercentile": 95.45454545454545,
+      "winModifier": 0.3687499999999987
+    },
+    {
+      "heroId": 518,
+      "name": "马超",
+      "score": 95.04660014781967,
+      "tier": "T0",
+      "range": [
+        94.12878787878788,
+        95.42538802660755
+      ],
+      "possibleTiers": [
+        "T0"
+      ],
+      "pickPercentile": 96.21212121212122,
+      "banPercentile": 92.42424242424242,
+      "winModifier": 0.5390243902439037
+    },
+    {
+      "heroId": 194,
+      "name": "苏烈",
+      "score": 93.14487202704335,
+      "tier": "T0",
+      "range": [
+        90.89015151515152,
+        94.31911445128577
+      ],
+      "possibleTiers": [
+        "T0"
+      ],
+      "pickPercentile": 97.34848484848484,
+      "banPercentile": 85.60606060606061,
+      "winModifier": 1.080478087649405
+    },
+    {
+      "heroId": 502,
+      "name": "裴擒虎",
+      "score": 92.74318181818182,
+      "tier": "T0",
+      "range": [
+        92.2159090909091,
+        93.00833333333334
+      ],
+      "possibleTiers": [
+        "T0"
+      ],
+      "pickPercentile": 91.28787878787878,
+      "banPercentile": 93.93939393939394,
+      "winModifier": 0.26212121212120965
+    },
+    {
+      "heroId": 515,
+      "name": "嫦娥",
+      "score": 92.46708916083918,
+      "tier": "T0",
+      "range": [
+        90.26515151515153,
+        92.9973921911422
+      ],
+      "possibleTiers": [
+        "T0"
+      ],
+      "pickPercentile": 93.18181818181819,
+      "banPercentile": 87.87878787878788,
+      "winModifier": 1.6716346153846142
+    },
+    {
+      "heroId": 179,
+      "name": "女娲",
+      "score": 92.44570271682342,
+      "tier": "T0",
+      "range": [
+        91.53409090909092,
+        93.08964211076281
+      ],
+      "possibleTiers": [
+        "T0"
+      ],
+      "pickPercentile": 95.07575757575758,
+      "banPercentile": 88.63636363636364,
+      "winModifier": 0.2676724137931009
+    },
+    {
+      "heroId": 107,
+      "name": "赵云",
+      "score": 92.3090516720995,
+      "tier": "T0",
+      "range": [
+        91.58935470240253,
+        94.82954545454545
+      ],
+      "possibleTiers": [
+        "T0"
+      ],
+      "pickPercentile": 97.34848484848484,
+      "banPercentile": 90.15151515151516,
+      "winModifier": -1.800796812749004
+    },
+    {
+      "heroId": 531,
+      "name": "镜",
+      "score": 92.16880877742948,
+      "tier": "T0",
+      "range": [
+        89.28030303030303,
+        93.0021421107628
+      ],
+      "possibleTiers": [
+        "T0",
+        "T1"
+      ],
+      "pickPercentile": 86.36363636363636,
+      "banPercentile": 94.6969696969697,
+      "winModifier": 2.0551724137931022
+    },
+    {
+      "heroId": 125,
+      "name": "元歌",
+      "score": 91.74180327868854,
+      "tier": "T0",
+      "range": [
+        89.20454545454545,
+        92.12059115747641
+      ],
+      "possibleTiers": [
+        "T1",
+        "T0"
+      ],
+      "pickPercentile": 87.87878787878788,
+      "banPercentile": 91.66666666666667,
+      "winModifier": 2.158469945355191
+    },
+    {
+      "heroId": 191,
+      "name": "大乔",
+      "score": 91.49848484848486,
+      "tier": "T0",
+      "range": [
+        87.76515151515152,
+        92.33181818181819
+      ],
+      "possibleTiers": [
+        "T1",
+        "T0"
+      ],
+      "pickPercentile": 84.84848484848484,
+      "banPercentile": 93.18181818181819,
+      "winModifier": 2.899999999999999
+    },
+    {
+      "heroId": 180,
+      "name": "哪吒",
+      "score": 91.30523831277601,
+      "tier": "T0",
+      "range": [
+        91.15372316126086,
+        91.89393939393939
+      ],
+      "possibleTiers": [
+        "T0"
+      ],
+      "pickPercentile": 92.42424242424242,
+      "banPercentile": 90.9090909090909,
+      "winModifier": -0.4371859296482412
+    },
+    {
+      "heroId": 584,
+      "name": "元流之子(射手)",
+      "score": 90.30607187112764,
+      "tier": "T0",
+      "range": [
+        88.79092035597613,
+        93.18181818181819
+      ],
+      "possibleTiers": [
+        "T0",
+        "T1"
+      ],
+      "pickPercentile": 98.48484848484848,
+      "banPercentile": 83.33333333333333,
+      "winModifier": -1.3605947955390334
+    },
+    {
+      "heroId": 525,
+      "name": "鲁班大师",
+      "score": 89.66326563507415,
+      "tier": "T1",
+      "range": [
+        86.15530303030303,
+        91.44356866537719
+      ],
+      "possibleTiers": [
+        "T1",
+        "T0"
+      ],
+      "pickPercentile": 79.92424242424242,
+      "banPercentile": 97.72727272727273,
+      "winModifier": 1.7276595744680863
+    },
+    {
+      "heroId": 138,
+      "name": "王维",
+      "score": 89.41801346801348,
+      "tier": "T1",
+      "range": [
+        88.96346801346802,
+        92.34848484848484
+      ],
+      "possibleTiers": [
+        "T0",
+        "T1"
+      ],
+      "pickPercentile": 93.93939393939394,
+      "banPercentile": 89.39393939393939,
+      "winModifier": -2.475925925925923
+    },
+    {
+      "heroId": 312,
+      "name": "沈梦溪",
+      "score": 88.86745036572623,
+      "tier": "T1",
+      "range": [
+        87.84472309299898,
+        91.49621212121212
+      ],
+      "possibleTiers": [
+        "T1",
+        "T0"
+      ],
+      "pickPercentile": 95.07575757575758,
+      "banPercentile": 84.84848484848484,
+      "winModifier": -1.6060344827586182
+    },
+    {
+      "heroId": 140,
+      "name": "关羽",
+      "score": 87.25190248348144,
+      "tier": "T1",
+      "range": [
+        83.18181818181819,
+        89.37311460469355
+      ],
+      "possibleTiers": [
+        "T1"
+      ],
+      "pickPercentile": 75.75757575757575,
+      "banPercentile": 96.96969696969697,
+      "winModifier": 1.9488721804511269
+    },
+    {
+      "heroId": 537,
+      "name": "司空震",
+      "score": 86.51789720408505,
+      "tier": "T1",
+      "range": [
+        86.51789720408505,
+        87.12121212121212
+      ],
+      "possibleTiers": [
+        "T1"
+      ],
+      "pickPercentile": 87.12121212121212,
+      "banPercentile": 87.12121212121212,
+      "winModifier": -0.6033149171270742
+    },
+    {
+      "heroId": 585,
+      "name": "元流之子(辅助)",
+      "score": 85.98205128205129,
+      "tier": "T1",
+      "range": [
+        82.76515151515152,
+        88.63356643356644
+      ],
+      "possibleTiers": [
+        "T1"
+      ],
+      "pickPercentile": 73.48484848484848,
+      "banPercentile": 100,
+      "winModifier": 0.5653846153846177
+    },
+    {
+      "heroId": 509,
+      "name": "盾山",
+      "score": 85.78944618599792,
+      "tier": "T1",
+      "range": [
+        79.77272727272728,
+        88.66823406478579
+      ],
+      "possibleTiers": [
+        "T1"
+      ],
+      "pickPercentile": 69.6969696969697,
+      "banPercentile": 98.48484848484848,
+      "winModifier": 3.1379310344827585
+    },
+    {
+      "heroId": 196,
+      "name": "百里守约",
+      "score": 85.58246753246752,
+      "tier": "T1",
+      "range": [
+        84.78701298701299,
+        86.98863636363636
+      ],
+      "possibleTiers": [
+        "T1"
+      ],
+      "pickPercentile": 89.77272727272727,
+      "banPercentile": 81.81818181818181,
+      "winModifier": -0.6107142857142882
+    },
+    {
+      "heroId": 171,
+      "name": "张飞",
+      "score": 84.50555555555557,
+      "tier": "T1",
+      "range": [
+        83.44494949494951,
+        87.57575757575758
+      ],
+      "possibleTiers": [
+        "T1"
+      ],
+      "pickPercentile": 91.28787878787878,
+      "banPercentile": 80.68181818181819,
+      "winModifier": -2.009595959595957
+    },
+    {
+      "heroId": 190,
+      "name": "诸葛亮",
+      "score": 84.49606373008434,
+      "tier": "T1",
+      "range": [
+        81.55303030303031,
+        85.78394251796313
+      ],
+      "possibleTiers": [
+        "T1"
+      ],
+      "pickPercentile": 88.63636363636364,
+      "banPercentile": 75.75757575757575,
+      "winModifier": 1.6551546391752563
+    },
+    {
+      "heroId": 533,
+      "name": "阿古朵",
+      "score": 83.18888511985527,
+      "tier": "T1",
+      "range": [
+        80.20833333333333,
+        84.13585481682496
+      ],
+      "possibleTiers": [
+        "T1"
+      ],
+      "pickPercentile": 76.89393939393939,
+      "banPercentile": 86.36363636363636,
+      "winModifier": 2.033582089552239
+    },
+    {
+      "heroId": 503,
+      "name": "狂铁",
+      "score": 83.00547309833024,
+      "tier": "T1",
+      "range": [
+        81.8312306740878,
+        85.66287878787878
+      ],
+      "possibleTiers": [
+        "T1"
+      ],
+      "pickPercentile": 89.77272727272727,
+      "banPercentile": 78.03030303030303,
+      "winModifier": -1.4831632653061249
+    },
+    {
+      "heroId": 199,
+      "name": "公孙离",
+      "score": 82.67179487179489,
+      "tier": "T1",
+      "range": [
+        82.12121212121212,
+        82.97482517482518
+      ],
+      "possibleTiers": [
+        "T1"
+      ],
+      "pickPercentile": 81.06060606060606,
+      "banPercentile": 84.0909090909091,
+      "winModifier": 0.2475524475524452
+    },
+    {
+      "heroId": 186,
+      "name": "太乙真人",
+      "score": 79.395670995671,
+      "tier": "T1",
+      "range": [
+        77.12121212121212,
+        79.6987012987013
+      ],
+      "possibleTiers": [
+        "T1"
+      ],
+      "pickPercentile": 78.78787878787878,
+      "banPercentile": 75.75757575757575,
+      "winModifier": 1.9714285714285702
+    },
+    {
+      "heroId": 146,
+      "name": "露娜",
+      "score": 79.02903626428218,
+      "tier": "T1",
+      "range": [
+        75.18939393939394,
+        80.16539990064581
+      ],
+      "possibleTiers": [
+        "T1"
+      ],
+      "pickPercentile": 71.21212121212122,
+      "banPercentile": 82.57575757575758,
+      "winModifier": 2.703278688524589
+    },
+    {
+      "heroId": 507,
+      "name": "李信",
+      "score": 78.63858024691359,
+      "tier": "T1",
+      "range": [
+        76.45833333333334,
+        79.88858024691358
+      ],
+      "possibleTiers": [
+        "T1"
+      ],
+      "pickPercentile": 83.33333333333333,
+      "banPercentile": 70.83333333333333,
+      "winModifier": 0.930246913580248
+    },
+    {
+      "heroId": 521,
+      "name": "海月",
+      "score": 77.58590250329381,
+      "tier": "T1",
+      "range": [
+        73.39015151515152,
+        81.56317523056654
+      ],
+      "possibleTiers": [
+        "T1",
+        "T2"
+      ],
+      "pickPercentile": 59.46969696969697,
+      "banPercentile": 99.24242424242425,
+      "winModifier": 0.21847826086956318
+    },
+    {
+      "heroId": 558,
+      "name": "影",
+      "score": 76.27425854287557,
+      "tier": "T1",
+      "range": [
+        75.5545615731786,
+        77.40530303030303
+      ],
+      "possibleTiers": [
+        "T1"
+      ],
+      "pickPercentile": 79.92424242424242,
+      "banPercentile": 72.72727272727273,
+      "winModifier": -0.41134751773049644
+    },
+    {
+      "heroId": 167,
+      "name": "孙悟空",
+      "score": 74.99076704545456,
+      "tier": "T2",
+      "range": [
+        74.30894886363637,
+        76.47727272727275
+      ],
+      "possibleTiers": [
+        "T1",
+        "T2"
+      ],
+      "pickPercentile": 72.72727272727273,
+      "banPercentile": 79.54545454545455,
+      "winModifier": -0.8046875
+    },
+    {
+      "heroId": 548,
+      "name": "戈娅",
+      "score": 74.78418394471026,
+      "tier": "T2",
+      "range": [
+        71.02272727272728,
+        77.4356990962254
+      ],
+      "possibleTiers": [
+        "T2",
+        "T1"
+      ],
+      "pickPercentile": 85.60606060606061,
+      "banPercentile": 59.09090909090909,
+      "winModifier": 1.1099415204678338
+    },
+    {
+      "heroId": 149,
+      "name": "刘邦",
+      "score": 73.53198653198653,
+      "tier": "T2",
+      "range": [
+        72.62289562289563,
+        74.84848484848484
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 78.03030303030303,
+      "banPercentile": 68.93939393939394,
+      "winModifier": -0.4074074074074074
+    },
+    {
+      "heroId": 136,
+      "name": "武则天",
+      "score": 71.87361937128293,
+      "tier": "T2",
+      "range": [
+        69.35606060606061,
+        72.85846785613141
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 65.9090909090909,
+      "banPercentile": 75.75757575757575,
+      "winModifier": 1.5327102803738317
+    },
+    {
+      "heroId": 150,
+      "name": "韩信",
+      "score": 71.18712121212121,
+      "tier": "T2",
+      "range": [
+        69.82954545454547,
+        72.05833333333334
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 74.62121212121212,
+      "banPercentile": 65.9090909090909,
+      "winModifier": 0.48636363636363755
+    },
+    {
+      "heroId": 172,
+      "name": "蚩奼",
+      "score": 70.55401069518717,
+      "tier": "T2",
+      "range": [
+        67.57575757575759,
+        73.2812834224599
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 82.57575757575758,
+      "banPercentile": 55.303030303030305,
+      "winModifier": 0.25098039215686035
+    },
+    {
+      "heroId": 188,
+      "name": "大禹",
+      "score": 69.13700724054709,
+      "tier": "T2",
+      "range": [
+        68.68246178600162,
+        70.68181818181819
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 68.18181818181819,
+      "banPercentile": 72.72727272727273,
+      "winModifier": -1.0902654867256625
+    },
+    {
+      "heroId": 141,
+      "name": "貂蝉",
+      "score": 68.44469696969698,
+      "tier": "T2",
+      "range": [
+        66.15530303030303,
+        69.16439393939395
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 63.63636363636363,
+      "banPercentile": 70.83333333333333,
+      "winModifier": 1.5696969696969707
+    },
+    {
+      "heroId": 195,
+      "name": "百里玄策",
+      "score": 67.02121212121212,
+      "tier": "T2",
+      "range": [
+        66.25,
+        67.0969696969697
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 66.66666666666667,
+      "banPercentile": 65.9090909090909,
+      "winModifier": 0.6954545454545443
+    },
+    {
+      "heroId": 176,
+      "name": "杨玉环",
+      "score": 66.85265716870195,
+      "tier": "T2",
+      "range": [
+        64.69356625961105,
+        69.33712121212122
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 76.89393939393939,
+      "banPercentile": 55.303030303030305,
+      "winModifier": -0.325373134328357
+    },
+    {
+      "heroId": 527,
+      "name": "蒙恬",
+      "score": 66.39235092864125,
+      "tier": "T2",
+      "range": [
+        63.76893939393939,
+        67.18780547409581
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 60.984848484848484,
+      "banPercentile": 68.93939393939394,
+      "winModifier": 1.8279569892473118
+    },
+    {
+      "heroId": 157,
+      "name": "不知火舞",
+      "score": 65.95091480846199,
+      "tier": "T2",
+      "range": [
+        65.41666666666667,
+        66.02667238421955
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 65.15151515151516,
+      "banPercentile": 65.9090909090909,
+      "winModifier": 0.4584905660377369
+    },
+    {
+      "heroId": 536,
+      "name": "夏洛特",
+      "score": 64.22922077922078,
+      "tier": "T2",
+      "range": [
+        62.562554112554125,
+        66.13636363636364
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 71.96969696969697,
+      "banPercentile": 55.303030303030305,
+      "winModifier": -0.2404761904761882
+    },
+    {
+      "heroId": 108,
+      "name": "墨子",
+      "score": 63.92018398268399,
+      "tier": "T2",
+      "range": [
+        63.31412337662338,
+        65.30303030303031
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 67.42424242424242,
+      "banPercentile": 61.36363636363637,
+      "winModifier": -0.7767857142857143
+    },
+    {
+      "heroId": 550,
+      "name": "空空儿",
+      "score": 62.81416490486259,
+      "tier": "T2",
+      "range": [
+        60.69295278365046,
+        66.21212121212122
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 54.54545454545455,
+      "banPercentile": 75.75757575757575,
+      "winModifier": -1.2767441860465096
+    },
+    {
+      "heroId": 106,
+      "name": "小乔",
+      "score": 62.42657699443414,
+      "tier": "T2",
+      "range": [
+        58.44930426716142,
+        67.89772727272727
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 81.81818181818181,
+      "banPercentile": 42.04545454545455,
+      "winModifier": -1.4938775510204059
+    },
+    {
+      "heroId": 139,
+      "name": "老夫子",
+      "score": 59.65010449320794,
+      "tier": "T2",
+      "range": [
+        58.82575757575758,
+        60.33192267502613
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 56.43939393939394,
+      "banPercentile": 63.25757575757576,
+      "winModifier": 0.14252873563218596
+    },
+    {
+      "heroId": 542,
+      "name": "暃",
+      "score": 58.87332733273328,
+      "tier": "T2",
+      "range": [
+        57.96423642364237,
+        61.21212121212122
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 64.39393939393939,
+      "banPercentile": 55.303030303030305,
+      "winModifier": -1.4297029702970288
+    },
+    {
+      "heroId": 563,
+      "name": "海诺",
+      "score": 58.76336163836165,
+      "tier": "T2",
+      "range": [
+        58.42245254745255,
+        59.82954545454546
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 57.95454545454545,
+      "banPercentile": 61.36363636363637,
+      "winModifier": -0.7252747252747253
+    },
+    {
+      "heroId": 193,
+      "name": "铠",
+      "score": 58.44274891774892,
+      "tier": "T2",
+      "range": [
+        55.98062770562771,
+        61.64772727272728
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 48.10606060606061,
+      "banPercentile": 72.72727272727273,
+      "winModifier": -0.7428571428571439
+    },
+    {
+      "heroId": 174,
+      "name": "虞姬",
+      "score": 58.296081504702194,
+      "tier": "T2",
+      "range": [
+        57.614263322884014,
+        60.189393939393945
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 56.43939393939394,
+      "banPercentile": 63.25757575757576,
+      "winModifier": -1.2114942528735655
+    },
+    {
+      "heroId": 177,
+      "name": "苍",
+      "score": 57.802925809822376,
+      "tier": "T2",
+      "range": [
+        54.488636363636374,
+        60.56807732497389
+      ],
+      "possibleTiers": [
+        "T3",
+        "T2"
+      ],
+      "pickPercentile": 69.6969696969697,
+      "banPercentile": 42.04545454545455,
+      "winModifier": 0.549137931034485
+    },
+    {
+      "heroId": 130,
+      "name": "宫本武藏",
+      "score": 57.501719901719895,
+      "tier": "T2",
+      "range": [
+        54.47141687141687,
+        62.12121212121212
+      ],
+      "possibleTiers": [
+        "T2",
+        "T3"
+      ],
+      "pickPercentile": 45.45454545454545,
+      "banPercentile": 75.75757575757575,
+      "winModifier": -1.5891891891891883
+    },
+    {
+      "heroId": 523,
+      "name": "西施",
+      "score": 57.37114164904863,
+      "tier": "T2",
+      "range": [
+        56.13636363636363,
+        57.82568710359409
+      ],
+      "possibleTiers": [
+        "T2"
+      ],
+      "pickPercentile": 54.54545454545455,
+      "banPercentile": 59.09090909090909,
+      "winModifier": 0.7802325581395358
+    },
+    {
+      "heroId": 155,
+      "name": "艾琳",
+      "score": 56.7046499477534,
+      "tier": "T2",
+      "range": [
+        53.93949843260189,
+        60.018939393939405
+      ],
+      "possibleTiers": [
+        "T3",
+        "T2"
+      ],
+      "pickPercentile": 69.6969696969697,
+      "banPercentile": 42.04545454545455,
+      "winModifier": -0.549137931034485
+    },
+    {
+      "heroId": 156,
+      "name": "张良",
+      "score": 55.2086999022483,
+      "tier": "T2",
+      "range": [
+        49.16666666666667,
+        60.05718475073315
+      ],
+      "possibleTiers": [
+        "T2",
+        "T3"
+      ],
+      "pickPercentile": 32.196969696969695,
+      "banPercentile": 80.68181818181819,
+      "winModifier": 1.1935483870967742
+    },
+    {
+      "heroId": 121,
+      "name": "芈月",
+      "score": 54.47071322985957,
+      "tier": "T3",
+      "range": [
+        53.087121212121204,
+        54.81162232076866
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 51.89393939393939,
+      "banPercentile": 55.303030303030305,
+      "winModifier": 1.0426829268292686
+    },
+    {
+      "heroId": 133,
+      "name": "狄仁杰",
+      "score": 54.1061310782241,
+      "tier": "T3",
+      "range": [
+        54.030373502466524,
+        54.96212121212122
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 54.54545454545455,
+      "banPercentile": 55.303030303030305,
+      "winModifier": -0.7802325581395358
+    },
+    {
+      "heroId": 175,
+      "name": "钟馗",
+      "score": 54.09145021645023,
+      "tier": "T3",
+      "range": [
+        52.311147186147195,
+        57.89772727272727
+      ],
+      "possibleTiers": [
+        "T2",
+        "T3"
+      ],
+      "pickPercentile": 48.10606060606061,
+      "banPercentile": 65.9090909090909,
+      "winModifier": -2.025974025974026
+    },
+    {
+      "heroId": 128,
+      "name": "曹操",
+      "score": 53.238636363636374,
+      "tier": "T3",
+      "range": [
+        46.382575757575765,
+        60.094696969696976
+      ],
+      "possibleTiers": [
+        "T3",
+        "T2"
+      ],
+      "pickPercentile": 84.0909090909091,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 0
+    },
+    {
+      "heroId": 127,
+      "name": "甄姬",
+      "score": 52.509659090909096,
+      "tier": "T3",
+      "range": [
+        51.60056818181818,
+        55.00000000000001
+      ],
+      "possibleTiers": [
+        "T2",
+        "T3"
+      ],
+      "pickPercentile": 50,
+      "banPercentile": 59.09090909090909,
+      "winModifier": -1.581249999999998
+    },
+    {
+      "heroId": 135,
+      "name": "项羽",
+      "score": 52.019251796313654,
+      "tier": "T3",
+      "range": [
+        49.93591846298032,
+        55.587121212121204
+      ],
+      "possibleTiers": [
+        "T3",
+        "T2"
+      ],
+      "pickPercentile": 62.878787878787875,
+      "banPercentile": 42.04545454545455,
+      "winModifier": -1.4845360824742269
+    },
+    {
+      "heroId": 178,
+      "name": "杨戬",
+      "score": 51.82982954545455,
+      "tier": "T3",
+      "range": [
+        49.82225378787879,
+        55.09469696969697
+      ],
+      "possibleTiers": [
+        "T3",
+        "T2"
+      ],
+      "pickPercentile": 62.121212121212125,
+      "banPercentile": 42.04545454545455,
+      "winModifier": -1.2572916666666687
+    },
+    {
+      "heroId": 169,
+      "name": "后羿",
+      "score": 51.70161396574441,
+      "tier": "T3",
+      "range": [
+        49.88636363636364,
+        53.44403820816865
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 59.46969696969697,
+      "banPercentile": 42.04545454545455,
+      "winModifier": 0.07282608695652279
+    },
+    {
+      "heroId": 131,
+      "name": "李白",
+      "score": 47.80968218773097,
+      "tier": "T3",
+      "range": [
+        46.477272727272734,
+        48.79453067257944
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 51.89393939393939,
+      "banPercentile": 42.04545454545455,
+      "winModifier": 0.34756097560975613
+    },
+    {
+      "heroId": 545,
+      "name": "莱西奥",
+      "score": 47.46287878787879,
+      "tier": "T3",
+      "range": [
+        41.55378787878788,
+        53.939393939393945
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 74.62121212121212,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.5674242424242447
+    },
+    {
+      "heroId": 517,
+      "name": "大司命",
+      "score": 47.147077922077926,
+      "tier": "T3",
+      "range": [
+        45.208333333333336,
+        48.70010822510823
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 39.77272727272727,
+      "banPercentile": 55.303030303030305,
+      "winModifier": 0.3857142857142866
+    },
+    {
+      "heroId": 511,
+      "name": "猪八戒",
+      "score": 46.28403479236813,
+      "tier": "T3",
+      "range": [
+        45.41282267115601,
+        47.70833333333333
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 50.75757575757576,
+      "banPercentile": 42.04545454545455,
+      "winModifier": -0.5530864197530844
+    },
+    {
+      "heroId": 120,
+      "name": "白起",
+      "score": 45.6413380795911,
+      "tier": "T3",
+      "range": [
+        44.54285323110625,
+        49.18560606060606
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 53.03030303030303,
+      "banPercentile": 42.04545454545455,
+      "winModifier": -2.4457831325301203
+    },
+    {
+      "heroId": 505,
+      "name": "瑶",
+      "score": 44.46641414141414,
+      "tier": "T3",
+      "range": [
+        41.701262626262626,
+        48.920454545454554
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 33.71212121212121,
+      "banPercentile": 61.36363636363637,
+      "winModifier": -1.688888888888887
+    },
+    {
+      "heroId": 549,
+      "name": "心魔六耳",
+      "score": 44.20683102208527,
+      "tier": "T3",
+      "range": [
+        40.72198253723678,
+        50.22727272727273
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 31.060606060606062,
+      "banPercentile": 65.9090909090909,
+      "winModifier": -2.535593220338982
+    },
+    {
+      "heroId": 166,
+      "name": "亚瑟",
+      "score": 41.334604105571856,
+      "tier": "T3",
+      "range": [
+        35.984848484848484,
+        45.880058651026395
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 60.984848484848484,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 0.8043010752688181
+    },
+    {
+      "heroId": 113,
+      "name": "庄周",
+      "score": 40.98787878787879,
+      "tier": "T3",
+      "range": [
+        34.169696969696965,
+        48.10606060606061
+      ],
+      "possibleTiers": [
+        "T3",
+        "T4"
+      ],
+      "pickPercentile": 10.606060606060606,
+      "banPercentile": 78.78787878787878,
+      "winModifier": -0.29999999999999893
+    },
+    {
+      "heroId": 547,
+      "name": "卢雅那",
+      "score": 40.79545454545455,
+      "tier": "T3",
+      "range": [
+        40.56818181818182,
+        41.02272727272728
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 39.77272727272727,
+      "banPercentile": 42.04545454545455,
+      "winModifier": 0
+    },
+    {
+      "heroId": 111,
+      "name": "孙尚香",
+      "score": 40.38671328671329,
+      "tier": "T3",
+      "range": [
+        34.621212121212125,
+        44.62913752913753
+      ],
+      "possibleTiers": [
+        "T4",
+        "T3"
+      ],
+      "pickPercentile": 57.95454545454545,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 1.523076923076924
+    },
+    {
+      "heroId": 544,
+      "name": "赵怀真",
+      "score": 40.08782543747333,
+      "tier": "T3",
+      "range": [
+        40.04994664959453,
+        41.875
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 41.666666666666664,
+      "banPercentile": 42.04545454545455,
+      "winModifier": -1.7492957746478892
+    },
+    {
+      "heroId": 105,
+      "name": "廉颇",
+      "score": 39.64267676767677,
+      "tier": "T3",
+      "range": [
+        39.60479797979798,
+        42.291666666666664
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 42.42424242424242,
+      "banPercentile": 42.04545454545455,
+      "winModifier": -2.611111111111111
+    },
+    {
+      "heroId": 183,
+      "name": "雅典娜",
+      "score": 39.63519813519814,
+      "tier": "T3",
+      "range": [
+        38.10606060606061,
+        40.24125874125875
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 35.984848484848484,
+      "banPercentile": 42.04545454545455,
+      "winModifier": 0.9230769230769231
+    },
+    {
+      "heroId": 168,
+      "name": "牛魔",
+      "score": 38.95827505827506,
+      "tier": "T3",
+      "range": [
+        38.10606060606061,
+        39.56433566433567
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 35.984848484848484,
+      "banPercentile": 42.04545454545455,
+      "winModifier": 0.24615384615384528
+    },
+    {
+      "heroId": 129,
+      "name": "典韦",
+      "score": 37.5836265884653,
+      "tier": "T3",
+      "range": [
+        35.64393939393939,
+        38.568475073313785
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 32.196969696969695,
+      "banPercentile": 42.04545454545455,
+      "winModifier": 0.9548387096774201
+    },
+    {
+      "heroId": 151,
+      "name": "孙权",
+      "score": 36.80743371212122,
+      "tier": "T3",
+      "range": [
+        36.08773674242425,
+        38.80681818181819
+      ],
+      "possibleTiers": [
+        "T3"
+      ],
+      "pickPercentile": 34.84848484848485,
+      "banPercentile": 42.04545454545455,
+      "winModifier": -1.2796875000000008
+    },
+    {
+      "heroId": 137,
+      "name": "司马懿",
+      "score": 35.338875598086126,
+      "tier": "T3",
+      "range": [
+        33.92045454545455,
+        36.588875598086126
+      ],
+      "possibleTiers": [
+        "T3",
+        "T4"
+      ],
+      "pickPercentile": 29.545454545454547,
+      "banPercentile": 42.04545454545455,
+      "winModifier": 0.16842105263157736
+    },
+    {
+      "heroId": 154,
+      "name": "花木兰",
+      "score": 35.0972861526659,
+      "tier": "T3",
+      "range": [
+        30.700757575757578,
+        38.468498273878026
+      ],
+      "possibleTiers": [
+        "T4",
+        "T3"
+      ],
+      "pickPercentile": 49.24242424242424,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 1.0253164556962027
+    },
+    {
+      "heroId": 189,
+      "name": "鬼谷子",
+      "score": 34.48560606060606,
+      "tier": "T4",
+      "range": [
+        31.950757575757574,
+        36.038636363636364
+      ],
+      "possibleTiers": [
+        "T3",
+        "T4"
+      ],
+      "pickPercentile": 26.515151515151516,
+      "banPercentile": 42.04545454545455,
+      "winModifier": 0.9818181818181803
+    },
+    {
+      "heroId": 115,
+      "name": "高渐离",
+      "score": 34.04924242424243,
+      "tier": "T4",
+      "range": [
+        31.950757575757574,
+        35.602272727272734
+      ],
+      "possibleTiers": [
+        "T3",
+        "T4"
+      ],
+      "pickPercentile": 26.515151515151516,
+      "banPercentile": 42.04545454545455,
+      "winModifier": 0.5454545454545454
+    },
+    {
+      "heroId": 126,
+      "name": "夏侯惇",
+      "score": 33.28468899521531,
+      "tier": "T4",
+      "range": [
+        29.50757575757576,
+        36.390749601275914
+      ],
+      "possibleTiers": [
+        "T4",
+        "T3"
+      ],
+      "pickPercentile": 46.59090909090909,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 0.6710526315789473
+    },
+    {
+      "heroId": 170,
+      "name": "刘备",
+      "score": 33.23106060606061,
+      "tier": "T4",
+      "range": [
+        31.6780303030303,
+        35.05681818181819
+      ],
+      "possibleTiers": [
+        "T3",
+        "T4"
+      ],
+      "pickPercentile": 26.515151515151516,
+      "banPercentile": 42.04545454545455,
+      "winModifier": -0.2727272727272727
+    },
+    {
+      "heroId": 540,
+      "name": "金蝉",
+      "score": 32.539393939393946,
+      "tier": "T4",
+      "range": [
+        26.137878787878783,
+        40.132575757575765
+      ],
+      "possibleTiers": [
+        "T3",
+        "T4"
+      ],
+      "pickPercentile": 4.924242424242424,
+      "banPercentile": 68.93939393939394,
+      "winModifier": -1.1916666666666664
+    },
+    {
+      "heroId": 134,
+      "name": "达摩",
+      "score": 32.07679425837321,
+      "tier": "T4",
+      "range": [
+        28.970733652312607,
+        35.71969696969697
+      ],
+      "possibleTiers": [
+        "T4",
+        "T3"
+      ],
+      "pickPercentile": 46.59090909090909,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.5368421052631559
+    },
+    {
+      "heroId": 513,
+      "name": "上官婉儿",
+      "score": 31.737121212121213,
+      "tier": "T4",
+      "range": [
+        28.503787878787875,
+        33.820454545454545
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 21.21212121212121,
+      "banPercentile": 42.04545454545455,
+      "winModifier": 1.1499999999999986
+    },
+    {
+      "heroId": 114,
+      "name": "刘禅",
+      "score": 31.14435391652373,
+      "tier": "T4",
+      "range": [
+        29.364050886220696,
+        34.034090909090914
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 24.242424242424242,
+      "banPercentile": 42.04545454545455,
+      "winModifier": -1.1094339622641516
+    },
+    {
+      "heroId": 581,
+      "name": "元流之子(坦克)",
+      "score": 30.31739332096475,
+      "tier": "T4",
+      "range": [
+        28.011363636363633,
+        32.47648423005566
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 20.454545454545453,
+      "banPercentile": 42.04545454545455,
+      "winModifier": 0.14693877551020268
+    },
+    {
+      "heroId": 538,
+      "name": "云缨",
+      "score": 30.234755085097554,
+      "tier": "T4",
+      "range": [
+        27.393845994188464,
+        33.99621212121212
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 43.93939393939394,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.9205479452054784
+    },
+    {
+      "heroId": 142,
+      "name": "安琪拉",
+      "score": 29.708727687837275,
+      "tier": "T4",
+      "range": [
+        26.867818596928185,
+        33.99621212121212
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 43.93939393939394,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -1.4465753424657553
+    },
+    {
+      "heroId": 112,
+      "name": "鲁班七号",
+      "score": 29.54370882740448,
+      "tier": "T4",
+      "range": [
+        25.58712121212121,
+        31.778557312252964
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 37.878787878787875,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 1.7217391304347844
+    },
+    {
+      "heroId": 197,
+      "name": "弈星",
+      "score": 29.511467413864676,
+      "tier": "T4",
+      "range": [
+        26.670558322955586,
+        33.99621212121212
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 43.93939393939394,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -1.6438356164383563
+    },
+    {
+      "heroId": 529,
+      "name": "盘古",
+      "score": 29.46420454545455,
+      "tier": "T4",
+      "range": [
+        26.78030303030303,
+        31.8126893939394
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 18.560606060606062,
+      "banPercentile": 42.04545454545455,
+      "winModifier": 0.335416666666668
+    },
+    {
+      "heroId": 163,
+      "name": "橘右京",
+      "score": 29.37792207792208,
+      "tier": "T4",
+      "range": [
+        26.43939393939394,
+        31.8021645021645
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 39.77272727272727,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 0.5142857142857125
+    },
+    {
+      "heroId": 123,
+      "name": "吕布",
+      "score": 29.330258467023175,
+      "tier": "T4",
+      "range": [
+        27.39844028520499,
+        33.352272727272734
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 22.727272727272727,
+      "banPercentile": 42.04545454545455,
+      "winModifier": -2.0901960784313736
+    },
+    {
+      "heroId": 117,
+      "name": "钟无艳",
+      "score": 28.863636363636367,
+      "tier": "T4",
+      "range": [
+        26.43939393939394,
+        31.28787878787879
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 39.77272727272727,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 0
+    },
+    {
+      "heroId": 192,
+      "name": "黄忠",
+      "score": 28.22022840343736,
+      "tier": "T4",
+      "range": [
+        25.246212121212125,
+        30.37931931252827
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 37.121212121212125,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 0.8149253731343266
+    },
+    {
+      "heroId": 159,
+      "name": "朵莉亚",
+      "score": 27.787121212121217,
+      "tier": "T4",
+      "range": [
+        25.438636363636366,
+        31.477272727272734
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 18.560606060606062,
+      "banPercentile": 42.04545454545455,
+      "winModifier": -1.3416666666666652
+    },
+    {
+      "heroId": 564,
+      "name": "姬小满",
+      "score": 26.314430014430013,
+      "tier": "T4",
+      "range": [
+        23.71212121212121,
+        28.132611832611833
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 33.71212121212121,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 0.7841269841269823
+    },
+    {
+      "heroId": 510,
+      "name": "孙策",
+      "score": 24.86670653907496,
+      "tier": "T4",
+      "range": [
+        21.837121212121215,
+        26.26822169059011
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 29.545454545454547,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 1.6280701754385958
+    },
+    {
+      "heroId": 187,
+      "name": "东皇太一",
+      "score": 23.852033492822965,
+      "tier": "T4",
+      "range": [
+        20.55657894736842,
+        27.215909090909093
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 9.090909090909092,
+      "banPercentile": 42.04545454545455,
+      "winModifier": -0.06842105263157994
+    },
+    {
+      "heroId": 119,
+      "name": "扁鹊",
+      "score": 22.621092503987242,
+      "tier": "T4",
+      "range": [
+        21.21957735247209,
+        24.640151515151516
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 29.545454545454547,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.6175438596491236
+    },
+    {
+      "heroId": 132,
+      "name": "马可波罗",
+      "score": 22.349945887445887,
+      "tier": "T4",
+      "range": [
+        21.099945887445887,
+        23.65530303030303
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 28.03030303030303,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.05535714285714365
+    },
+    {
+      "heroId": 182,
+      "name": "干将莫邪",
+      "score": 22.308742833742837,
+      "tier": "T4",
+      "range": [
+        18.861773136773138,
+        26.534090909090914
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 7.575757575757576,
+      "banPercentile": 42.04545454545455,
+      "winModifier": -0.7783783783783779
+    },
+    {
+      "heroId": 534,
+      "name": "桑启",
+      "score": 20.20159932659933,
+      "tier": "T4",
+      "range": [
+        19.25462962962963,
+        21.685606060606062
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 25,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.537037037037037
+    },
+    {
+      "heroId": 173,
+      "name": "李元芳",
+      "score": 19.386675579322635,
+      "tier": "T4",
+      "range": [
+        18.666978609625666,
+        20.208333333333336
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 22.727272727272727,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.10196078431372696
+    },
+    {
+      "heroId": 528,
+      "name": "澜",
+      "score": 18.570989304812834,
+      "tier": "T4",
+      "range": [
+        17.851292335115865,
+        20.208333333333336
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 22.727272727272727,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.917647058823528
+    },
+    {
+      "heroId": 522,
+      "name": "曜",
+      "score": 16.7657196969697,
+      "tier": "T4",
+      "range": [
+        16.4626893939394,
+        17.5
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 18.560606060606062,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.43124999999999936
+    },
+    {
+      "heroId": 118,
+      "name": "孙膑",
+      "score": 15.156818181818185,
+      "tier": "T4",
+      "range": [
+        15.037878787878789,
+        15.23257575757576
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 14.772727272727273,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 0.04318181818181879
+    },
+    {
+      "heroId": 162,
+      "name": "娜可露露",
+      "score": 15.013636363636365,
+      "tier": "T4",
+      "range": [
+        14.93787878787879,
+        16.022727272727273
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 16.28787878787879,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.933333333333334
+    },
+    {
+      "heroId": 110,
+      "name": "嬴政",
+      "score": 14.992803030303032,
+      "tier": "T4",
+      "range": [
+        14.68977272727273,
+        17.5
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 18.560606060606062,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -2.204166666666667
+    },
+    {
+      "heroId": 524,
+      "name": "蒙犽",
+      "score": 14.465909090909093,
+      "tier": "T4",
+      "range": [
+        14.390151515151516,
+        15.189393939393941
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 14.772727272727273,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.6477272727272726
+    },
+    {
+      "heroId": 152,
+      "name": "王昭君",
+      "score": 14.213636363636367,
+      "tier": "T4",
+      "range": [
+        14.13787878787879,
+        16.022727272727273
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 16.28787878787879,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -1.7333333333333327
+    },
+    {
+      "heroId": 153,
+      "name": "兰陵王",
+      "score": 14.071000704721635,
+      "tier": "T4",
+      "range": [
+        13.843727977448907,
+        14.507575757575758
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 13.257575757575758,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.20930232558139536
+    },
+    {
+      "heroId": 514,
+      "name": "亚连",
+      "score": 13.776731601731601,
+      "tier": "T4",
+      "range": [
+        13.31439393939394,
+        14.117640692640693
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 12.121212121212121,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 0.12142857142857026
+    },
+    {
+      "heroId": 583,
+      "name": "元流之子(刺客)",
+      "score": 13.568675123326285,
+      "tier": "T4",
+      "range": [
+        13.341402396053557,
+        14.507575757575758
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 13.257575757575758,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.7116279069767455
+    },
+    {
+      "heroId": 198,
+      "name": "梦奇",
+      "score": 13.196969696969699,
+      "tier": "T4",
+      "range": [
+        12.329545454545453,
+        13.689393939393941
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 10.606060606060606,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 0.375
+    },
+    {
+      "heroId": 124,
+      "name": "周瑜",
+      "score": 11.706654381654383,
+      "tier": "T4",
+      "range": [
+        10.359848484848484,
+        12.50210892710893
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 7.575757575757576,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 0.5513513513513522
+    },
+    {
+      "heroId": 109,
+      "name": "妲己",
+      "score": 11.434469696969698,
+      "tier": "T4",
+      "range": [
+        10.942045454545452,
+        13.314393939393941
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 10.606060606060606,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -1.387500000000001
+    },
+    {
+      "heroId": 506,
+      "name": "云中君",
+      "score": 9.758080808080809,
+      "tier": "T4",
+      "range": [
+        8.636363636363637,
+        10.81868686868687
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 4.924242424242424,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 0.06111111111111198
+    },
+    {
+      "heroId": 148,
+      "name": "姜子牙",
+      "score": 9.53368140868141,
+      "tier": "T4",
+      "range": [
+        8.738226863226863,
+        11.950757575757578
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 7.575757575757576,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -1.6216216216216215
+    },
+    {
+      "heroId": 184,
+      "name": "蔡文姬",
+      "score": 8.99419191919192,
+      "tier": "T4",
+      "range": [
+        7.93358585858586,
+        10.757575757575758
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 4.924242424242424,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.702777777777777
+    },
+    {
+      "heroId": 144,
+      "name": "程咬金",
+      "score": 8.963636363636365,
+      "tier": "T4",
+      "range": [
+        7.903030303030304,
+        10.757575757575758
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 4.924242424242424,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.733333333333333
+    },
+    {
+      "heroId": 116,
+      "name": "阿轲",
+      "score": 8.826731601731604,
+      "tier": "T4",
+      "range": [
+        7.40530303030303,
+        10.076731601731604
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 3.0303030303030303,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 0.17142857142857185
+    },
+    {
+      "heroId": 508,
+      "name": "伽罗",
+      "score": 7.812121212121213,
+      "tier": "T4",
+      "range": [
+        6.448484848484849,
+        9.393939393939394
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 1.893939393939394,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.21818181818181784
+    },
+    {
+      "heroId": 582,
+      "name": "元流之子(法师)",
+      "score": 7.084848484848486,
+      "tier": "T4",
+      "range": [
+        5.721212121212122,
+        9.393939393939394
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 1.893939393939394,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.9454545454545452
+    },
+    {
+      "heroId": 501,
+      "name": "明世隐",
+      "score": 6.988636363636364,
+      "tier": "T4",
+      "range": [
+        5.4356060606060606,
+        8.541666666666668
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 0,
+      "banPercentile": 15.530303030303031,
+      "winModifier": 0
+    },
+    {
+      "heroId": 504,
+      "name": "米莱狄",
+      "score": 6.814678030303031,
+      "tier": "T4",
+      "range": [
+        5.337405303030303,
+        8.88257575757576
+      ],
+      "possibleTiers": [
+        "T4"
+      ],
+      "pickPercentile": 0.7575757575757576,
+      "banPercentile": 15.530303030303031,
+      "winModifier": -0.5906250000000005
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=123",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 123
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:57:52.365Z",
+  "rawSha256": "cc54e312e3a6666fda5d292a2ce1a510a5feac05e504de60008a4911b824e3dd",
+  "cache": "fresh",
+  "data": {
+    "heroId": 123,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "千魇归渊",
+        "pickRate": 27.88
+      },
+      {
+        "skinName": "怒海麟威",
+        "pickRate": 21.79
+      },
+      {
+        "skinName": "遇见神鼓",
+        "pickRate": 16.35
+      },
+      {
+        "skinName": "天魔缭乱",
+        "pickRate": 10.58
+      },
+      {
+        "skinName": "圣诞狂欢",
+        "pickRate": 8.33
+      },
+      {
+        "skinName": "末日机甲",
+        "pickRate": 7.37
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 2.56
+      },
+      {
+        "skinName": "曦玄引",
+        "pickRate": 1.6
+      },
+      {
+        "skinName": "御风骁将",
+        "pickRate": 1.28
+      },
+      {
+        "skinName": "野性能量",
+        "pickRate": 0.96
+      },
+      {
+        "skinName": "舞狮寰",
+        "pickRate": 0.64
+      },
+      {
+        "skinName": "逐霄战戟",
+        "pickRate": 0.64
+      }
+    ]
+  }
+}

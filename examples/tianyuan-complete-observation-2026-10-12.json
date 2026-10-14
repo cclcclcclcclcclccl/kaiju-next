@@ -288,7 +288,7 @@
       ],
       "winRate": 51,
       "pickRate": 5.1,
-      "banRate": 0.1,
+      "banRate": 0,
       "evidence": [
         "2026-10-12/daily-page-09.png"
       ],
@@ -1802,6 +1802,18 @@
         "identities/identity-585-confirmed.png"
       ],
       "review": "manual-visual"
+    }
+  ],
+  "corrections": [
+    {
+      "correctedOn": "2026-10-14",
+      "heroId": 126,
+      "field": "banRate",
+      "previous": 0.1,
+      "corrected": 0,
+      "reason": "Manual transcription error confirmed against original screenshot; same-day API value 0.04 rounds to displayed 0.0.",
+      "evidence": "evidence/data-continuity/2026-10-12/daily-page-09.png",
+      "priorCommit": "8930ad3"
     }
   ]
 }

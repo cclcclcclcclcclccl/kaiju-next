@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=163",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 163
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:00:46.755Z",
+  "rawSha256": "8844713658dda2cae83ca68a23ce9037312a9c8b6116f6522d23f00d8fd03781",
+  "cache": "fresh",
+  "data": {
+    "heroId": 163,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "pickRate": 94.44,
+        "winRate": 51.59
+      },
+      {
+        "equipmentId": 1533,
+        "equipmentName": "贪婪之噬",
+        "pickRate": 93.24,
+        "winRate": 52.12
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 78.64,
+        "winRate": 49.34
+      },
+      {
+        "equipmentId": 1534,
+        "equipmentName": "怒龙剑盾",
+        "pickRate": 53.92,
+        "winRate": 58.46
+      },
+      {
+        "equipmentId": 11311,
+        "equipmentName": "纯净苍穹",
+        "pickRate": 49.72,
+        "winRate": 58.49
+      },
+      {
+        "equipmentId": 1131,
+        "equipmentName": "碎星锤",
+        "pickRate": 18.24,
+        "winRate": 62.94
+      },
+      {
+        "equipmentId": 1125,
+        "equipmentName": "破魔刀",
+        "pickRate": 12.4,
+        "winRate": 55.81
+      },
+      {
+        "equipmentId": 1138,
+        "equipmentName": "强者破军",
+        "pickRate": 11.8,
+        "winRate": 62.37
+      },
+      {
+        "equipmentId": 1333,
+        "equipmentName": "不祥征兆",
+        "pickRate": 9.44,
+        "winRate": 58.47
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 8.28,
+        "winRate": 48.31
+      }
+    ]
+  }
+}

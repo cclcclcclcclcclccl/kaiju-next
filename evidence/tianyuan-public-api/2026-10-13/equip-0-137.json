@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=137",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 137
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:59:06.157Z",
+  "rawSha256": "24e1af6a88dd94bbd48283eaa50776ef97c6fecf755113f10cfbb2c6ec534175",
+  "cache": "fresh",
+  "data": {
+    "heroId": 137,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1240,
+        "equipmentName": "噬神之书",
+        "pickRate": 91.8,
+        "winRate": 50.32
+      },
+      {
+        "equipmentId": 1236,
+        "equipmentName": "巫术法杖",
+        "pickRate": 89.58,
+        "winRate": 51.52
+      },
+      {
+        "equipmentId": 1244,
+        "equipmentName": "破茧之衣",
+        "pickRate": 69.02,
+        "winRate": 58.14
+      },
+      {
+        "equipmentId": 1531,
+        "equipmentName": "符文大剑",
+        "pickRate": 62.36,
+        "winRate": 63.33
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 47.24,
+        "winRate": 48.71
+      },
+      {
+        "equipmentId": 1424,
+        "equipmentName": "秘法之靴",
+        "pickRate": 33.47,
+        "winRate": 41.54
+      },
+      {
+        "equipmentId": 1231,
+        "equipmentName": "虚无法杖",
+        "pickRate": 31.84,
+        "winRate": 58.75
+      },
+      {
+        "equipmentId": 1232,
+        "equipmentName": "博学者之怒",
+        "pickRate": 24.73,
+        "winRate": 66.48
+      },
+      {
+        "equipmentId": 1728,
+        "equipmentName": "金色圣剑",
+        "pickRate": 6.07,
+        "winRate": 47.01
+      },
+      {
+        "equipmentId": 1238,
+        "equipmentName": "贤者天书",
+        "pickRate": 6.02,
+        "winRate": 71.43
+      }
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "source": "王者营地官方公开分享榜",
+  "sourceUrl": "https://camp.qq.com/h5/webdist/hero-rank/index.html",
+  "endpoint": "https://kohcamp.qq.com/gametoolbox/hero/getsharepagedetailranklistbyid",
+  "query": {
+    "segment": 4,
+    "position": 5
+  },
+  "sourceUpdatedOn": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:32:13.425Z",
+  "coverage": "partial",
+  "rows": [
+    {
+      "heroId": 107,
+      "name": "赵云",
+      "heat": "T0",
+      "winRate": 54.38,
+      "pickRate": 24.6,
+      "banRate": 10.03
+    },
+    {
+      "heroId": 549,
+      "name": "心魔六耳",
+      "heat": "T0",
+      "winRate": 49.34,
+      "pickRate": 18.4,
+      "banRate": 27.18
+    },
+    {
+      "heroId": 180,
+      "name": "哪吒",
+      "heat": "T1",
+      "winRate": 53.19,
+      "pickRate": 16,
+      "banRate": 28.79
+    },
+    {
+      "heroId": 126,
+      "name": "夏侯惇",
+      "heat": "T1",
+      "winRate": 52.26,
+      "pickRate": 15.9,
+      "banRate": 3.57
+    },
+    {
+      "heroId": 173,
+      "name": "李元芳",
+      "heat": "T2",
+      "winRate": 50.45,
+      "pickRate": 13.5,
+      "banRate": 2.16
+    },
+    {
+      "heroId": 167,
+      "name": "孙悟空",
+      "heat": "T2",
+      "winRate": 47.51,
+      "pickRate": 13.4,
+      "banRate": 2.36
+    },
+    {
+      "heroId": 538,
+      "name": "云缨",
+      "heat": "T2",
+      "winRate": 52.14,
+      "pickRate": 8.7,
+      "banRate": 1.31
+    },
+    {
+      "heroId": 131,
+      "name": "李白",
+      "heat": "T2",
+      "winRate": 51.18,
+      "pickRate": 8.6,
+      "banRate": 0.84
+    },
+    {
+      "heroId": 558,
+      "name": "影",
+      "heat": "T2",
+      "winRate": 52.05,
+      "pickRate": 8.2,
+      "banRate": 1.98
+    },
+    {
+      "heroId": 130,
+      "name": "宫本武藏",
+      "heat": "T2",
+      "winRate": 48.04,
+      "pickRate": 7.7,
+      "banRate": 7.96
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=521",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 521
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:05:01.022Z",
+  "rawSha256": "fd6e7fac9efb9ea3ee4d32684c055d0eafecd43ca54f572c0f89920ee5ff9bce",
+  "cache": "fresh",
+  "data": {
+    "heroId": 521,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "真言先知",
+        "pickRate": 42.32
+      },
+      {
+        "skinName": "海之女神",
+        "pickRate": 15.96
+      },
+      {
+        "skinName": "幻泉雾影",
+        "pickRate": 14.16
+      },
+      {
+        "skinName": "金乌负日",
+        "pickRate": 12.5
+      },
+      {
+        "skinName": "王牌新星",
+        "pickRate": 10.09
+      },
+      {
+        "skinName": "浮梦罗烟",
+        "pickRate": 4.52
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.45
+      }
+    ]
+  }
+}

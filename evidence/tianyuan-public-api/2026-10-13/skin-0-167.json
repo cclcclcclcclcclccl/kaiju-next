@@ -1,0 +1,68 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=167",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 167
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:00:53.831Z",
+  "rawSha256": "66c15dd848e68c496020d86c7b9eebede4d8ec4c11d418d4107c0547c0163031",
+  "cache": "fresh",
+  "data": {
+    "heroId": 167,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "至尊宝",
+        "pickRate": 76.12
+      },
+      {
+        "skinName": "无相",
+        "pickRate": 7.3
+      },
+      {
+        "skinName": "西部大镖客",
+        "pickRate": 3.65
+      },
+      {
+        "skinName": "地狱火",
+        "pickRate": 3.65
+      },
+      {
+        "skinName": "孙行者",
+        "pickRate": 3.09
+      },
+      {
+        "skinName": "全息碎影",
+        "pickRate": 1.97
+      },
+      {
+        "skinName": "大圣娶亲",
+        "pickRate": 1.5
+      },
+      {
+        "skinName": "齐天大圣",
+        "pickRate": 1.22
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.75
+      },
+      {
+        "skinName": "神迹守卫",
+        "pickRate": 0.37
+      },
+      {
+        "skinName": "零号·赤焰",
+        "pickRate": 0.28
+      },
+      {
+        "skinName": "美猴王",
+        "pickRate": 0.09
+      }
+    ]
+  }
+}

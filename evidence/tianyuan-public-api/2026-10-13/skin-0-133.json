@@ -1,0 +1,68 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=133",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 133
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:58:43.136Z",
+  "rawSha256": "2b652b3f65308c20d072752f6161bfad116bf5be60848e7b2b039b243329687b",
+  "cache": "fresh",
+  "data": {
+    "heroId": 133,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "神骥·赴朔漠",
+        "pickRate": 36.39
+      },
+      {
+        "skinName": "魔术师",
+        "pickRate": 19.68
+      },
+      {
+        "skinName": "小李飞刀",
+        "pickRate": 10.65
+      },
+      {
+        "skinName": "夜礼服假面",
+        "pickRate": 8.36
+      },
+      {
+        "skinName": "超时空战士",
+        "pickRate": 7.55
+      },
+      {
+        "skinName": "鹰眼统帅",
+        "pickRate": 6.74
+      },
+      {
+        "skinName": "阴阳师",
+        "pickRate": 3.1
+      },
+      {
+        "skinName": "神器·狴犴令",
+        "pickRate": 2.7
+      },
+      {
+        "skinName": "绮世丹青",
+        "pickRate": 2.29
+      },
+      {
+        "skinName": "万华元夜",
+        "pickRate": 1.35
+      },
+      {
+        "skinName": "锦衣卫",
+        "pickRate": 1.08
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.13
+      }
+    ]
+  }
+}

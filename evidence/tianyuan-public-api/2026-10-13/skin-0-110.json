@@ -1,0 +1,44 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=110",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 110
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:56:51.961Z",
+  "rawSha256": "bad8f074eb04805665d8c802c46b55854badb8c41209d69ac83ec4ec06ff5d9d",
+  "cache": "fresh",
+  "data": {
+    "heroId": 110,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "暗夜贵公子",
+        "pickRate": 48.86
+      },
+      {
+        "skinName": "优雅恋人",
+        "pickRate": 36.07
+      },
+      {
+        "skinName": "玄雷天君",
+        "pickRate": 5.94
+      },
+      {
+        "skinName": "白昼王子",
+        "pickRate": 5.02
+      },
+      {
+        "skinName": "摇滚巨星",
+        "pickRate": 3.65
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.46
+      }
+    ]
+  }
+}

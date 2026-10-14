@@ -1,0 +1,28 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=172",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 172
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:01:19.059Z",
+  "rawSha256": "68759e158c04c51c99822762e48e91716aef990747f48b607f168453a5ef2526",
+  "cache": "fresh",
+  "data": {
+    "heroId": 172,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "极光幻客",
+        "pickRate": 99.34
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.66
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=188",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 188
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:02:29.705Z",
+  "rawSha256": "fe0feff9459aac009dd9639215582b1485c437a47f9d3b4a8aa3ae24aef5d0af",
+  "cache": "fresh",
+  "data": {
+    "heroId": 188,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "翡翠华章",
+        "pickRate": 93.08
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 6.92
+      }
+    ]
+  }
+}

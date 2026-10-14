@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=149",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 149
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:59:51.290Z",
+  "rawSha256": "0a3be985568536d560ae39928414cd703d0b158e31a1742d67adf576b1c39edb",
+  "cache": "fresh",
+  "data": {
+    "heroId": 149,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1721,
+        "equipmentName": "极影·救赎",
+        "pickRate": 78.32,
+        "winRate": 50.35
+      },
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "pickRate": 75.34,
+        "winRate": 53.49
+      },
+      {
+        "equipmentId": 1423,
+        "equipmentName": "冷静之靴",
+        "pickRate": 51.76,
+        "winRate": 47.94
+      },
+      {
+        "equipmentId": 1331,
+        "equipmentName": "红莲斗篷",
+        "pickRate": 49.08,
+        "winRate": 58.26
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 42.31,
+        "winRate": 51.88
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "pickRate": 18.46,
+        "winRate": 59.87
+      },
+      {
+        "equipmentId": 1724,
+        "equipmentName": "近卫·救赎",
+        "pickRate": 10.76,
+        "winRate": 50.89
+      },
+      {
+        "equipmentId": 1244,
+        "equipmentName": "破茧之衣",
+        "pickRate": 10.74,
+        "winRate": 54.59
+      },
+      {
+        "equipmentId": 1333,
+        "equipmentName": "不祥征兆",
+        "pickRate": 6.41,
+        "winRate": 59.83
+      },
+      {
+        "equipmentId": 1737,
+        "equipmentName": "极影·形昭",
+        "pickRate": 3.81,
+        "winRate": 47.12
+      }
+    ]
+  }
+}

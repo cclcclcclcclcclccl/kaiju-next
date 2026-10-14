@@ -1,0 +1,56 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=153",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 153
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:00:08.419Z",
+  "rawSha256": "119bafaf8d319f929f2d5493b86034424aaf4786fff80319d786a2b92dca97e6",
+  "cache": "fresh",
+  "data": {
+    "heroId": 153,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "默契交锋",
+        "pickRate": 48.54
+      },
+      {
+        "skinName": "暗隐猎兽者",
+        "pickRate": 21.36
+      },
+      {
+        "skinName": "雾影缉谜",
+        "pickRate": 10.68
+      },
+      {
+        "skinName": "影龙天霄",
+        "pickRate": 6.8
+      },
+      {
+        "skinName": "隐刃",
+        "pickRate": 5.34
+      },
+      {
+        "skinName": "傩神司",
+        "pickRate": 3.88
+      },
+      {
+        "skinName": "驯魔猎人",
+        "pickRate": 1.94
+      },
+      {
+        "skinName": "金庭之子",
+        "pickRate": 0.97
+      },
+      {
+        "skinName": "幻夜行动",
+        "pickRate": 0.49
+      }
+    ]
+  }
+}

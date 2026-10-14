@@ -1,0 +1,72 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=141",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 141
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:59:23.109Z",
+  "rawSha256": "a2977787e58b5a01c26db47ec4790ad09591582dd5eae8c3e2a1d71a9a427f83",
+  "cache": "fresh",
+  "data": {
+    "heroId": 141,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "仲夏夜之梦",
+        "pickRate": 32.2
+      },
+      {
+        "skinName": "圣诞恋歌",
+        "pickRate": 19.51
+      },
+      {
+        "skinName": "异域舞娘",
+        "pickRate": 9.41
+      },
+      {
+        "skinName": "幻阙歌",
+        "pickRate": 8.59
+      },
+      {
+        "skinName": "馥梦繁花",
+        "pickRate": 5.87
+      },
+      {
+        "skinName": "遇见胡旋",
+        "pickRate": 5.46
+      },
+      {
+        "skinName": "唤灵魅影",
+        "pickRate": 5.05
+      },
+      {
+        "skinName": "猫影幻舞",
+        "pickRate": 5.05
+      },
+      {
+        "skinName": "神骥·聚万邦",
+        "pickRate": 4.5
+      },
+      {
+        "skinName": "曦玄引",
+        "pickRate": 2.46
+      },
+      {
+        "skinName": "逐梦之音",
+        "pickRate": 1.09
+      },
+      {
+        "skinName": "长夏之忆",
+        "pickRate": 0.55
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.27
+      }
+    ]
+  }
+}

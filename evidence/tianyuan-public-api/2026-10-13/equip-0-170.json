@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=170",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 170
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:01:12.093Z",
+  "rawSha256": "8715310525b89b8eae3dbf2cf51ae4f4dc6a107f963f857318b4d99fd0bbdc73",
+  "cache": "fresh",
+  "data": {
+    "heroId": 170,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "pickRate": 98.51,
+        "winRate": 48.35
+      },
+      {
+        "equipmentId": 1533,
+        "equipmentName": "贪婪之噬",
+        "pickRate": 87.44,
+        "winRate": 52.04
+      },
+      {
+        "equipmentId": 1126,
+        "equipmentName": "末世",
+        "pickRate": 86.64,
+        "winRate": 52.7
+      },
+      {
+        "equipmentId": 1161,
+        "equipmentName": "幽影袖箭",
+        "pickRate": 39.54,
+        "winRate": 59.76
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 34.11,
+        "winRate": 48.83
+      },
+      {
+        "equipmentId": 1425,
+        "equipmentName": "急速战靴",
+        "pickRate": 30.34,
+        "winRate": 35.61
+      },
+      {
+        "equipmentId": 1134,
+        "equipmentName": "宗师之力",
+        "pickRate": 25.81,
+        "winRate": 60.41
+      },
+      {
+        "equipmentId": 1426,
+        "equipmentName": "疾步之靴",
+        "pickRate": 19.8,
+        "winRate": 54.84
+      },
+      {
+        "equipmentId": 1136,
+        "equipmentName": "影刃",
+        "pickRate": 15.17,
+        "winRate": 56.49
+      },
+      {
+        "equipmentId": 13310,
+        "equipmentName": "冰痕之握",
+        "pickRate": 9.37,
+        "winRate": 63.07
+      }
+    ]
+  }
+}

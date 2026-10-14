@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=195",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 195
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:03:05.066Z",
+  "rawSha256": "2bf69aa52da1fbe456d7949e7e36a151137a7cf6a71f4e7d4f648493618b6fbb",
+  "cache": "fresh",
+  "data": {
+    "heroId": 195,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "白虎志",
+        "pickRate": 47.31
+      },
+      {
+        "skinName": "威尼斯狂欢",
+        "pickRate": 46.38
+      },
+      {
+        "skinName": "超元猎域",
+        "pickRate": 3.04
+      },
+      {
+        "skinName": "罗小黑战记",
+        "pickRate": 1.75
+      },
+      {
+        "skinName": "原初追逐者",
+        "pickRate": 1.17
+      },
+      {
+        "skinName": "热力回旋",
+        "pickRate": 0.23
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.12
+      }
+    ]
+  }
+}

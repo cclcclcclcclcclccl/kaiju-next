@@ -1,0 +1,64 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=173",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 173
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:01:24.093Z",
+  "rawSha256": "7e19dba3fd3324df9bb76b0dc3ed6733350e9b012b996630f0ff0b7ef3279835",
+  "cache": "fresh",
+  "data": {
+    "heroId": 173,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "飞鸢探春",
+        "pickRate": 53.81
+      },
+      {
+        "skinName": "特种部队",
+        "pickRate": 11.86
+      },
+      {
+        "skinName": "逐浪之夏",
+        "pickRate": 11.02
+      },
+      {
+        "skinName": "星君·娄金",
+        "pickRate": 8.9
+      },
+      {
+        "skinName": "银河之约",
+        "pickRate": 5.93
+      },
+      {
+        "skinName": "蔬乡物语",
+        "pickRate": 2.54
+      },
+      {
+        "skinName": "黑猫爱糖果",
+        "pickRate": 2.54
+      },
+      {
+        "skinName": "匿光侦查者",
+        "pickRate": 1.27
+      },
+      {
+        "skinName": "妄想特派",
+        "pickRate": 1.27
+      },
+      {
+        "skinName": "云中旅人",
+        "pickRate": 0.42
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.42
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=167",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 167
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:00:56.881Z",
+  "rawSha256": "e3727c608a73166c2b88d177655e6d65cb89f1cf931677cc76f66ed62b7f1833",
+  "cache": "fresh",
+  "data": {
+    "heroId": 167,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1133,
+        "equipmentName": "无尽战刃",
+        "pickRate": 99.71,
+        "winRate": 49.05
+      },
+      {
+        "equipmentId": 1136,
+        "equipmentName": "影刃",
+        "pickRate": 95.97,
+        "winRate": 50.35
+      },
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "pickRate": 67.02,
+        "winRate": 57.96
+      },
+      {
+        "equipmentId": 1533,
+        "equipmentName": "贪婪之噬",
+        "pickRate": 62.25,
+        "winRate": 61.21
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 41.68,
+        "winRate": 48.92
+      },
+      {
+        "equipmentId": 1126,
+        "equipmentName": "末世",
+        "pickRate": 30.73,
+        "winRate": 67.52
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 30.7,
+        "winRate": 47.69
+      },
+      {
+        "equipmentId": 1131,
+        "equipmentName": "碎星锤",
+        "pickRate": 12.53,
+        "winRate": 52.75
+      },
+      {
+        "equipmentId": 1425,
+        "equipmentName": "急速战靴",
+        "pickRate": 11.23,
+        "winRate": 27.59
+      },
+      {
+        "equipmentId": 1127,
+        "equipmentName": "名刀·司命",
+        "pickRate": 10.42,
+        "winRate": 63
+      }
+    ]
+  }
+}

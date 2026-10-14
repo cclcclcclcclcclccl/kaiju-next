@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=121",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 121
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:57:50.422Z",
+  "rawSha256": "3764c274566dd8c063115c1acf038dfb03f6f3b9887fb13d94b1e0354d309544",
+  "cache": "fresh",
+  "data": {
+    "heroId": 121,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1728,
+        "equipmentName": "金色圣剑",
+        "pickRate": 99.93,
+        "winRate": 51.77
+      },
+      {
+        "equipmentId": 1240,
+        "equipmentName": "噬神之书",
+        "pickRate": 93.57,
+        "winRate": 53.26
+      },
+      {
+        "equipmentId": 1727,
+        "equipmentName": "日暮之流",
+        "pickRate": 65.77,
+        "winRate": 59.72
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 61.21,
+        "winRate": 53.4
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 25.84,
+        "winRate": 46.19
+      },
+      {
+        "equipmentId": 1159,
+        "equipmentName": "逐风",
+        "pickRate": 19.74,
+        "winRate": 62.79
+      },
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "pickRate": 18.82,
+        "winRate": 64.46
+      },
+      {
+        "equipmentId": 1333,
+        "equipmentName": "不祥征兆",
+        "pickRate": 17.97,
+        "winRate": 55.84
+      },
+      {
+        "equipmentId": 1231,
+        "equipmentName": "虚无法杖",
+        "pickRate": 8.36,
+        "winRate": 50.98
+      },
+      {
+        "equipmentId": 1237,
+        "equipmentName": "时之预言",
+        "pickRate": 7.93,
+        "winRate": 64.05
+      }
+    ]
+  }
+}

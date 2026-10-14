@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=197",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 197
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:03:15.167Z",
+  "rawSha256": "46545d7ff4c522df8b07882dfcab7fd54f28cb1beb1353bcb302a66bc6be240f",
+  "cache": "fresh",
+  "data": {
+    "heroId": 197,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "万物之道",
+        "pickRate": 33.67
+      },
+      {
+        "skinName": "踏雪寻梅",
+        "pickRate": 24.9
+      },
+      {
+        "skinName": "滕王阁序",
+        "pickRate": 22.31
+      },
+      {
+        "skinName": "守夜人",
+        "pickRate": 12.95
+      },
+      {
+        "skinName": "炽弈燎原",
+        "pickRate": 3.98
+      },
+      {
+        "skinName": "混沌棋",
+        "pickRate": 1.99
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.2
+      }
+    ]
+  }
+}

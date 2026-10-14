@@ -1,0 +1,30 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-10-13&heroId=583",
+  "query": {
+    "kind": "combined",
+    "date": "2026-10-13",
+    "heroId": 583
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:07:26.239Z",
+  "rawSha256": "a5f48ca26a961569edfd21af36dfc61bf9197cf085a5931953a7a2f587e7be9f",
+  "cache": "fresh",
+  "data": {
+    "heroId": 583,
+    "positions": {
+      "3": {
+        "pickRate": 100,
+        "winRate": 48.55
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "惩击",
+        "pickRate": 100,
+        "winRate": 48.55
+      }
+    ]
+  }
+}

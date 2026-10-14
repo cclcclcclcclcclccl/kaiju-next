@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-13",
+  "queries": 670,
+  "failed": 0,
+  "kinds": {
+    "stats": {
+      "queries": 4,
+      "entries": 538,
+      "emptyHeroIds": []
+    },
+    "tier": {
+      "queries": 1,
+      "entries": 133,
+      "emptyHeroIds": []
+    },
+    "skin": {
+      "queries": 133,
+      "entries": 909,
+      "emptyHeroIds": []
+    },
+    "duration": {
+      "queries": 133,
+      "entries": 399,
+      "emptyHeroIds": []
+    },
+    "analysis": {
+      "queries": 133,
+      "entries": 15362,
+      "emptyHeroIds": []
+    },
+    "equip": {
+      "queries": 133,
+      "entries": 1330,
+      "emptyHeroIds": []
+    },
+    "combined": {
+      "queries": 133,
+      "entries": 543,
+      "emptyHeroIds": []
+    }
+  }
+}

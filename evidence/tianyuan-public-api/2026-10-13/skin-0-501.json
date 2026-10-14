@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=501",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 501
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:03:35.439Z",
+  "rawSha256": "9bbea7e6db9b4828e03b289670a5667cf651a32f8b705b77d5a67be58885ed26",
+  "cache": "fresh",
+  "data": {
+    "heroId": 501,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "百晓客",
+        "pickRate": 37.14
+      },
+      {
+        "skinName": "吟游魔法",
+        "pickRate": 31.43
+      },
+      {
+        "skinName": "占星师",
+        "pickRate": 11.43
+      },
+      {
+        "skinName": "虹云星官",
+        "pickRate": 8.57
+      },
+      {
+        "skinName": "疑决卦",
+        "pickRate": 5.71
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 2.86
+      },
+      {
+        "skinName": "夜落电台",
+        "pickRate": 2.86
+      }
+    ]
+  }
+}

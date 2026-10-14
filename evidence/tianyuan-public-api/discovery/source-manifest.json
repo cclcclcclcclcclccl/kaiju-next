@@ -1,0 +1,25 @@
+{
+  "checkedOn": "2026-10-14",
+  "site": "https://tianyuanzhiyi.com",
+  "discovery": [
+    "https://github.com/MUNJayLee/Ban-Pick-Assistant/blob/master/scripts/scraper/config.json",
+    "https://github.com/tian1miao/-bp--ocr---/blob/main/update_data.py"
+  ],
+  "identityEvidence": {
+    "siteTitle": "天元之弈数据站",
+    "wechatAccount": "天元之弈助手",
+    "qqGroup": "591636780",
+    "matchesVisibleMiniProgram": true
+  },
+  "publicPage": "https://tianyuanzhiyi.com/heroes",
+  "script": "https://tianyuanzhiyi.com/_next/static/chunks/app/heroes/page-5cc689264108517c.js",
+  "scriptSha256": "c68b840c2e8fe458b1e53a893a9294f84e589e89b40a818051d9fa34beab6c62",
+  "authenticationUsed": "none; Accept application/json only",
+  "claims": {
+    "publisher": "所有数据均来源于公开对局",
+    "independentThirdParty": true,
+    "originalBackendSourceVerified": false,
+    "rawMatchDatasetAvailable": false
+  },
+  "robots": "User-Agent: *\nAllow: /\nDisallow: /stats/\n\nHost: https://tianyuanzhiyi.com\nSitemap: https://tianyuanzhiyi.com/sitemap.xml\n"
+}

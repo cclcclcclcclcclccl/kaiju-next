@@ -1,0 +1,40 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=136",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 136
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:58:57.897Z",
+  "rawSha256": "7b10016fcaaa3576e28730fe455be737d2beed7e0dbd72febf5462b2db25af78",
+  "cache": "fresh",
+  "data": {
+    "heroId": 136,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "海洋之心",
+        "pickRate": 59.58
+      },
+      {
+        "skinName": "倪克斯神谕",
+        "pickRate": 20.73
+      },
+      {
+        "skinName": "神器·明辉仪",
+        "pickRate": 13.12
+      },
+      {
+        "skinName": "东方不败",
+        "pickRate": 4.86
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 1.71
+      }
+    ]
+  }
+}

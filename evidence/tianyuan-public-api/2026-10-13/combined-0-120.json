@@ -1,0 +1,39 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-10-13&heroId=120",
+  "query": {
+    "kind": "combined",
+    "date": "2026-10-13",
+    "heroId": 120
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:57:46.311Z",
+  "rawSha256": "58b3683986ea9ba2a1bad9e255945f45597ec17b6263d84ebe45c233f55d9d88",
+  "cache": "fresh",
+  "data": {
+    "heroId": 120,
+    "positions": {
+      "0": {
+        "pickRate": 99.22,
+        "winRate": 46.57
+      },
+      "2": {
+        "pickRate": 0.78,
+        "winRate": null
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "闪现",
+        "pickRate": 68.6,
+        "winRate": 46.42
+      },
+      {
+        "skillName": "终结",
+        "pickRate": 30.62,
+        "winRate": 46.75
+      }
+    ]
+  }
+}

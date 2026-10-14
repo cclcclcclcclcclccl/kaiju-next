@@ -1,0 +1,32 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=163",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 163
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:00:43.722Z",
+  "rawSha256": "1be66b75beee3aa4d663cb0c220e34ffde759dc8df03183d66ef7042821e2d04",
+  "cache": "fresh",
+  "data": {
+    "heroId": 163,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "修罗",
+        "pickRate": 95.45
+      },
+      {
+        "skinName": "枫霜尽",
+        "pickRate": 2.45
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 2.1
+      }
+    ]
+  }
+}

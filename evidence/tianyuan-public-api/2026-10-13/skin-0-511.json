@@ -1,0 +1,44 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=511",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 511
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:04:25.750Z",
+  "rawSha256": "7d380e49668fee9cc709dd0d927943a52ff0a8b68036e6e41708d215ec3886a8",
+  "cache": "fresh",
+  "data": {
+    "heroId": 511,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "超能救援",
+        "pickRate": 31.19
+      },
+      {
+        "skinName": "猪悟能",
+        "pickRate": 28.54
+      },
+      {
+        "skinName": "年年有余",
+        "pickRate": 18.15
+      },
+      {
+        "skinName": "潮玩探月行",
+        "pickRate": 16.64
+      },
+      {
+        "skinName": "西部大镖客",
+        "pickRate": 5.1
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.38
+      }
+    ]
+  }
+}

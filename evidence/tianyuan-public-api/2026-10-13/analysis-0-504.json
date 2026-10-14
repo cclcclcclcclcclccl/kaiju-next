@@ -1,0 +1,51 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/analysis?heroId=504",
+  "query": {
+    "kind": "analysis",
+    "heroId": 504
+  },
+  "fetchedAt": "2026-10-14T05:03:52.519Z",
+  "rawSha256": "2425e4bf119bdfe5499abed74379f9dc826a4e71c78b8996dff4b0a959d0a48c",
+  "cache": "fresh",
+  "data": {
+    "heroId": 504,
+    "counters": [
+      {
+        "heroName": "女娲",
+        "totalMatches": 204,
+        "advantageIndex": 5.22
+      },
+      {
+        "heroName": "敖隐",
+        "totalMatches": 244,
+        "advantageIndex": 3.8
+      }
+    ],
+    "counteredBy": [
+      {
+        "heroName": "狂铁",
+        "totalMatches": 147,
+        "advantageIndex": -11.98
+      },
+      {
+        "heroName": "苏烈",
+        "totalMatches": 183,
+        "advantageIndex": -10.92
+      },
+      {
+        "heroName": "大乔",
+        "totalMatches": 134,
+        "advantageIndex": -8.13
+      },
+      {
+        "heroName": "影",
+        "totalMatches": 129,
+        "advantageIndex": -7.8
+      }
+    ],
+    "goodSynergies": [],
+    "badSynergies": []
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=151",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 151
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:59:58.340Z",
+  "rawSha256": "e23c0f641683ce7d1438143242711584962f280a37e83f03bae3ea784be60f6a",
+  "cache": "fresh",
+  "data": {
+    "heroId": 151,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "仙扇使者",
+        "pickRate": 77.26
+      },
+      {
+        "skinName": "径山谋武",
+        "pickRate": 22.22
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.52
+      }
+    ]
+  }
+}

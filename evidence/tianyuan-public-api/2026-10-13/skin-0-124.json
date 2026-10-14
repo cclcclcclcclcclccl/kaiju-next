@@ -1,0 +1,52 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=124",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 124
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:57:57.415Z",
+  "rawSha256": "8e09e0508ba751570fa23beee0d4321871cd0ec27db7ab314e384b552664961e",
+  "cache": "fresh",
+  "data": {
+    "heroId": 124,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "音你心动",
+        "pickRate": 40
+      },
+      {
+        "skinName": "百相守梦",
+        "pickRate": 17.93
+      },
+      {
+        "skinName": "海军大将",
+        "pickRate": 11.03
+      },
+      {
+        "skinName": "线条小狗",
+        "pickRate": 8.28
+      },
+      {
+        "skinName": "雪夜绮愿",
+        "pickRate": 7.59
+      },
+      {
+        "skinName": "真爱至上",
+        "pickRate": 7.59
+      },
+      {
+        "skinName": "赤莲之焰",
+        "pickRate": 6.21
+      },
+      {
+        "skinName": "熔金海岸",
+        "pickRate": 1.38
+      }
+    ]
+  }
+}

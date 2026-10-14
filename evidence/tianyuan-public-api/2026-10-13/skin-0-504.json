@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=504",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 504
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:03:50.469Z",
+  "rawSha256": "a492938c50b795be076c5f071e0ebc6c1bf248aa72d8221afba6dd57249f2066",
+  "cache": "fresh",
+  "data": {
+    "heroId": 504,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "完美假期",
+        "pickRate": 39.53
+      },
+      {
+        "skinName": "青瓷雀吟",
+        "pickRate": 30.23
+      },
+      {
+        "skinName": "御霄",
+        "pickRate": 11.63
+      },
+      {
+        "skinName": "精准探案法",
+        "pickRate": 9.3
+      },
+      {
+        "skinName": "契约魔法",
+        "pickRate": 4.65
+      },
+      {
+        "skinName": "怪诞之夜",
+        "pickRate": 2.33
+      },
+      {
+        "skinName": "胡桃异想国",
+        "pickRate": 2.33
+      }
+    ]
+  }
+}

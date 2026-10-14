@@ -1,0 +1,44 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=524",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 524
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:05:16.112Z",
+  "rawSha256": "7771f1fb3cfa5a8a87ce822a1b12175a4b57898557f8d7213c0471ee047f1f6a",
+  "cache": "fresh",
+  "data": {
+    "heroId": 524,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "龙鼓争鸣",
+        "pickRate": 53.14
+      },
+      {
+        "skinName": "归虚梦演",
+        "pickRate": 19.67
+      },
+      {
+        "skinName": "顽岩魄",
+        "pickRate": 11.72
+      },
+      {
+        "skinName": "百解令",
+        "pickRate": 7.53
+      },
+      {
+        "skinName": "狂想玩偶喵",
+        "pickRate": 5.86
+      },
+      {
+        "skinName": "胡桃狂想曲",
+        "pickRate": 2.09
+      }
+    ]
+  }
+}

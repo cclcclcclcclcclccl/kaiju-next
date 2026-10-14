@@ -1,0 +1,36 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=527",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 527
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:05:26.303Z",
+  "rawSha256": "964a51cd1b6d65414f6746a944768e0da3eed8021407902e4dace02c24ba5fb0",
+  "cache": "fresh",
+  "data": {
+    "heroId": 527,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "秩序猎龙将",
+        "pickRate": 98.06
+      },
+      {
+        "skinName": "荣光圣徽",
+        "pickRate": 1.39
+      },
+      {
+        "skinName": "苍云破阵",
+        "pickRate": 0.42
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.14
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=171",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 171
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:01:14.052Z",
+  "rawSha256": "c1ec6e8e8c7bf36e79176e7e0648423792a023bf5c7ef78df50c2d496cc01758",
+  "cache": "fresh",
+  "data": {
+    "heroId": 171,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "乱世虎臣",
+        "pickRate": 30.47
+      },
+      {
+        "skinName": "兔狲·蓬尾",
+        "pickRate": 21.83
+      },
+      {
+        "skinName": "街头猛卫",
+        "pickRate": 19.18
+      },
+      {
+        "skinName": "五福同心",
+        "pickRate": 12.5
+      },
+      {
+        "skinName": "百相守梦",
+        "pickRate": 8.24
+      },
+      {
+        "skinName": "虎魄",
+        "pickRate": 6.8
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.98
+      }
+    ]
+  }
+}

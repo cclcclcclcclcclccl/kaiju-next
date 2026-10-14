@@ -1,0 +1,56 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=178",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 178
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:01:49.324Z",
+  "rawSha256": "77427545c4d5c71baed24c9e759e4c0d6fc34026f029049c2d9dca63e0eff3b0",
+  "cache": "fresh",
+  "data": {
+    "heroId": 178,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "纵目迁山",
+        "pickRate": 28.9
+      },
+      {
+        "skinName": "永曜之星",
+        "pickRate": 26.02
+      },
+      {
+        "skinName": "埃及法老",
+        "pickRate": 20.42
+      },
+      {
+        "skinName": "天秀·启明",
+        "pickRate": 13.92
+      },
+      {
+        "skinName": "神目破阵",
+        "pickRate": 5.14
+      },
+      {
+        "skinName": "次元傲视",
+        "pickRate": 2.12
+      },
+      {
+        "skinName": "潮玩骑兵",
+        "pickRate": 1.21
+      },
+      {
+        "skinName": "破阵·退雄兵",
+        "pickRate": 1.21
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 1.06
+      }
+    ]
+  }
+}

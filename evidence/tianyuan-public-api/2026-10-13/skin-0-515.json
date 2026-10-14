@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=515",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 515
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:04:40.881Z",
+  "rawSha256": "9dba472dcd66a91628e38e78f78e4453f9325403cd7ba8dfd956f3bfda2dfc96",
+  "cache": "fresh",
+  "data": {
+    "heroId": 515,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "器灵·落星盏",
+        "pickRate": 43.31
+      },
+      {
+        "skinName": "露花倒影",
+        "pickRate": 26.73
+      },
+      {
+        "skinName": "如梦令",
+        "pickRate": 19.4
+      },
+      {
+        "skinName": "拒霜思",
+        "pickRate": 4.39
+      },
+      {
+        "skinName": "暖冬·兔眠",
+        "pickRate": 3.56
+      },
+      {
+        "skinName": "漠中幻影",
+        "pickRate": 2.51
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.1
+      }
+    ]
+  }
+}

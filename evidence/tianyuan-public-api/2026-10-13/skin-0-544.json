@@ -1,0 +1,36 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=544",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 544
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:06:21.706Z",
+  "rawSha256": "e6f1c1418a3b180d9a012ae9d3398cf76eb432519d82936062eb83977739f97c",
+  "cache": "fresh",
+  "data": {
+    "heroId": 544,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "器灵·浮梦炉",
+        "pickRate": 37.25
+      },
+      {
+        "skinName": "逢春序",
+        "pickRate": 35.29
+      },
+      {
+        "skinName": "鹤归松栖",
+        "pickRate": 14.6
+      },
+      {
+        "skinName": "太极少年",
+        "pickRate": 12.85
+      }
+    ]
+  }
+}

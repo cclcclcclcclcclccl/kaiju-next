@@ -1,0 +1,36 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=507",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 507
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:04:05.580Z",
+  "rawSha256": "ae1aeb307c0126c0267a71d00cee06b9eeb976fe83eb431b7d688b6c5341e310",
+  "cache": "fresh",
+  "data": {
+    "heroId": 507,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "问心剑",
+        "pickRate": 43.62
+      },
+      {
+        "skinName": "灼热之刃",
+        "pickRate": 42.39
+      },
+      {
+        "skinName": "一念神魔",
+        "pickRate": 9.61
+      },
+      {
+        "skinName": "山海·炽霜斩",
+        "pickRate": 4.37
+      }
+    ]
+  }
+}

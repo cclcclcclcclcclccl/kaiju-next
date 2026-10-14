@@ -1,0 +1,40 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=533",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 533
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:05:46.394Z",
+  "rawSha256": "8ceb9cab5daa1812692e3955c9a2f7651b1762ab241376959181416f531c8ee1",
+  "cache": "fresh",
+  "data": {
+    "heroId": 533,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "熊喵少女",
+        "pickRate": 65.27
+      },
+      {
+        "skinName": "顽趣",
+        "pickRate": 14.63
+      },
+      {
+        "skinName": "江河有灵",
+        "pickRate": 10.24
+      },
+      {
+        "skinName": "布丁狗之约",
+        "pickRate": 9.14
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.73
+      }
+    ]
+  }
+}

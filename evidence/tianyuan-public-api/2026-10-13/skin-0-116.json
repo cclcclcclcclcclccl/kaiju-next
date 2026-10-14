@@ -1,0 +1,40 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=116",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 116
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:57:22.084Z",
+  "rawSha256": "e9d99212a53e3707d4fbcb9007ac2add7a7c1f231cdf8dacbc4be7418e17839c",
+  "cache": "fresh",
+  "data": {
+    "heroId": 116,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "暗夜猫娘",
+        "pickRate": 75.93
+      },
+      {
+        "skinName": "化蝶舞",
+        "pickRate": 8.64
+      },
+      {
+        "skinName": "罗刹妄海",
+        "pickRate": 7.41
+      },
+      {
+        "skinName": "节奏热浪",
+        "pickRate": 7.41
+      },
+      {
+        "skinName": "爱心护理",
+        "pickRate": 0.62
+      }
+    ]
+  }
+}

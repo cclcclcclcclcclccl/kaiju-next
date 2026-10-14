@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=193",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 193
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:02:57.997Z",
+  "rawSha256": "390154f884c4142c6e8f14402c30aa0bce3e5aadffbea62c98d7abc0fb90371b",
+  "cache": "fresh",
+  "data": {
+    "heroId": 193,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1533,
+        "equipmentName": "贪婪之噬",
+        "pickRate": 96.11,
+        "winRate": 50.06
+      },
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "pickRate": 85.23,
+        "winRate": 51.75
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 84.02,
+        "winRate": 47.83
+      },
+      {
+        "equipmentId": 13310,
+        "equipmentName": "冰痕之握",
+        "pickRate": 52.85,
+        "winRate": 54.08
+      },
+      {
+        "equipmentId": 1534,
+        "equipmentName": "怒龙剑盾",
+        "pickRate": 32.59,
+        "winRate": 59.48
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "pickRate": 24.39,
+        "winRate": 58.22
+      },
+      {
+        "equipmentId": 1327,
+        "equipmentName": "反伤刺甲",
+        "pickRate": 22.25,
+        "winRate": 52.57
+      },
+      {
+        "equipmentId": 1134,
+        "equipmentName": "宗师之力",
+        "pickRate": 11.12,
+        "winRate": 61.25
+      },
+      {
+        "equipmentId": 11311,
+        "equipmentName": "纯净苍穹",
+        "pickRate": 9.13,
+        "winRate": 63.04
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 5.7,
+        "winRate": 39.15
+      }
+    ]
+  }
+}

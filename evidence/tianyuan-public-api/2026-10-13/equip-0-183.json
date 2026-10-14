@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=183",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 183
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:02:12.605Z",
+  "rawSha256": "d457e8d3c438b326c4b9523327cfab344afc0f1678516cea379a454c4784c243",
+  "cache": "fresh",
+  "data": {
+    "heroId": 183,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1533,
+        "equipmentName": "贪婪之噬",
+        "pickRate": 97.8,
+        "winRate": 51.37
+      },
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "pickRate": 82.21,
+        "winRate": 52.02
+      },
+      {
+        "equipmentId": 11210,
+        "equipmentName": "制裁之刃",
+        "pickRate": 48.68,
+        "winRate": 57.53
+      },
+      {
+        "equipmentId": 13310,
+        "equipmentName": "冰痕之握",
+        "pickRate": 46.97,
+        "winRate": 56.71
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 44.57,
+        "winRate": 50.11
+      },
+      {
+        "equipmentId": 1126,
+        "equipmentName": "末世",
+        "pickRate": 38.66,
+        "winRate": 54.36
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 31.72,
+        "winRate": 53
+      },
+      {
+        "equipmentId": 1138,
+        "equipmentName": "强者破军",
+        "pickRate": 19.4,
+        "winRate": 68.51
+      },
+      {
+        "equipmentId": 11311,
+        "equipmentName": "纯净苍穹",
+        "pickRate": 17.01,
+        "winRate": 61.21
+      },
+      {
+        "equipmentId": 1425,
+        "equipmentName": "急速战靴",
+        "pickRate": 11.53,
+        "winRate": 38.98
+      }
+    ]
+  }
+}

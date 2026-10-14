@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=132",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 132
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:58:41.340Z",
+  "rawSha256": "3d548b1146942fd0111272b7a1002ba472a701b3045d485f66691696334ae217",
+  "cache": "fresh",
+  "data": {
+    "heroId": 132,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1135,
+        "equipmentName": "闪电匕首",
+        "pickRate": 98.21,
+        "winRate": 48.92
+      },
+      {
+        "equipmentId": 1126,
+        "equipmentName": "末世",
+        "pickRate": 97.07,
+        "winRate": 49.78
+      },
+      {
+        "equipmentId": 1128,
+        "equipmentName": "寒霜袭侵",
+        "pickRate": 47.72,
+        "winRate": 57.89
+      },
+      {
+        "equipmentId": 13310,
+        "equipmentName": "冰痕之握",
+        "pickRate": 35.48,
+        "winRate": 63.51
+      },
+      {
+        "equipmentId": 1425,
+        "equipmentName": "急速战靴",
+        "pickRate": 27.63,
+        "winRate": 42.75
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 26.27,
+        "winRate": 47.63
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 25.3,
+        "winRate": 47.75
+      },
+      {
+        "equipmentId": 1155,
+        "equipmentName": "仁者破晓",
+        "pickRate": 19.66,
+        "winRate": 57.85
+      },
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "pickRate": 16.79,
+        "winRate": 49.03
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "pickRate": 14.52,
+        "winRate": 62.31
+      }
+    ]
+  }
+}

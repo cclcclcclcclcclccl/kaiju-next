@@ -1,0 +1,396 @@
+{
+  "config": {
+    "argv": [
+      "D:\\node.js\\node.exe",
+      "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/player/refinement.spec.ts",
+      "tests/player/statistics.spec.ts",
+      "tests/player/environment.spec.ts",
+      "tests/player/tianyuan.spec.ts"
+    ],
+    "configFile": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\playwright.config.ts",
+    "rootDir": "D:/学习相关/传智杯/AI创新应用挑战赛/tests/player",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/学习相关/传智杯/AI创新应用挑战赛/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/学习相关/传智杯/AI创新应用挑战赛/tests/player",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\tests\\player",
+        "snapshotDir": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\tests\\player",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4319",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "channel": "msedge",
+          "headless": true,
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "artifacts/browser/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": {
+      "command": "node server/index.ts",
+      "url": "http://127.0.0.1:4319/api/status",
+      "env": {
+        "PORT": "4319",
+        "RANK_AUTO_REFRESH": "0",
+        "PLAYER_DATA_DIR": "data/player-e2e",
+        "MODEL_API_KEY": "",
+        "MODEL_NAME": "",
+        "MODEL_BASE_URL": ""
+      },
+      "reuseExistingServer": false,
+      "timeout": 20000
+    }
+  },
+  "suites": [
+    {
+      "title": "environment.spec.ts",
+      "file": "environment.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "complete source roster and environment tiers preserve identity, missing values, detail context and filter-independent scores",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12945,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T05:10:14.654Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2a84b67ca6571daf27b7-07da6c319d51747e23ee",
+          "file": "environment.spec.ts",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "refinement.spec.ts",
+      "file": "refinement.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "a player can enter a sourced table without JSON and keep an unpublished sample count unknown",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5413,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T05:10:28.322Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2cba574eae72c893644c-01838854c4f58198bcc9",
+          "file": "refinement.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "five accepted and sharing accounts produce a persistent visible squad result that loads into BP",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3173,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T05:10:33.752Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2cba574eae72c893644c-8c1ae2ee89ce5623d9d1",
+          "file": "refinement.spec.ts",
+          "line": 56,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "statistics.spec.ts",
+      "file": "statistics.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "mixed source metrics stay visible but cannot masquerade as a segment tier or a BP rate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2446,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T05:10:36.969Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ce6a6ad83d45104d2631-b0aa6b42d76bbb5c35c1",
+          "file": "statistics.spec.ts",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "history shows sourced percentage-point changes, excludes incompatible batches and works on a phone",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5265,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T05:10:39.427Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ce6a6ad83d45104d2631-9475c24421497b74e91c",
+          "file": "statistics.spec.ts",
+          "line": 67,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "tianyuan.spec.ts",
+      "file": "tianyuan.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "public four-segment board preserves forms, source tiers, hero metrics and unknown dates on mobile",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6646,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T05:10:44.743Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8426c0a9c3c1baf251e2-5eac12faabec7c9cfe36",
+          "file": "tianyuan.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "public query failure never shows another date or synthetic values",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1152,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T05:10:51.403Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8426c0a9c3c1baf251e2-52ce7f831646126e26f1",
+          "file": "tianyuan.spec.ts",
+          "line": 82,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-14T05:10:12.543Z",
+    "duration": 41884.808999999994,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

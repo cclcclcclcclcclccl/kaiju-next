@@ -77,6 +77,7 @@ test('complete roster links to atlas, correct rune colors and personal guides on
   page,
 }) => {
   await page.locator('nav').getByRole('button', { name: '分段梯度', exact: true }).click();
+  await page.getByRole('button', { name: '历史快照与官方榜', exact: true }).click();
   await expect(page.locator('.tier-portrait')).toHaveCount(heroes.length);
   await page.getByRole('button', { name: '详细数据表', exact: true }).click();
   await expect(page.locator('.roster-table tbody tr')).toHaveCount(heroes.length);

@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=505",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 505
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:03:58.689Z",
+  "rawSha256": "2f9ff7c586c96ffdd7d810e544e72d48abcc0496999bb31cb1bdc4def5e2e526",
+  "cache": "fresh",
+  "data": {
+    "heroId": 505,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1721,
+        "equipmentName": "极影·救赎",
+        "pickRate": 82.69,
+        "winRate": 46.49
+      },
+      {
+        "equipmentId": 1353,
+        "equipmentName": "旭日初光",
+        "pickRate": 59.29,
+        "winRate": 53.45
+      },
+      {
+        "equipmentId": 1423,
+        "equipmentName": "冷静之靴",
+        "pickRate": 50.88,
+        "winRate": 42.39
+      },
+      {
+        "equipmentId": 1234,
+        "equipmentName": "凝冰之息",
+        "pickRate": 28.76,
+        "winRate": 59.23
+      },
+      {
+        "equipmentId": 12211,
+        "equipmentName": "梦魇之牙",
+        "pickRate": 25.22,
+        "winRate": 56.14
+      },
+      {
+        "equipmentId": 1424,
+        "equipmentName": "秘法之靴",
+        "pickRate": 20.24,
+        "winRate": 55.19
+      },
+      {
+        "equipmentId": 1226,
+        "equipmentName": "圣杯",
+        "pickRate": 14.49,
+        "winRate": 57.63
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 13.27,
+        "winRate": 57.5
+      },
+      {
+        "equipmentId": 1426,
+        "equipmentName": "疾步之靴",
+        "pickRate": 10.34,
+        "winRate": 54.55
+      },
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "pickRate": 9.24,
+        "winRate": 60.48
+      }
+    ]
+  }
+}

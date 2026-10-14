@@ -1,0 +1,36 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=157",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 157
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:00:28.631Z",
+  "rawSha256": "f88cf39709cf4f8d9913a465bbe5a58b4dc1b163e2e921557865e102e9ee15ea",
+  "cache": "fresh",
+  "data": {
+    "heroId": 157,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "花合斗",
+        "pickRate": 53.47
+      },
+      {
+        "skinName": "魅语",
+        "pickRate": 39.83
+      },
+      {
+        "skinName": "绯月行",
+        "pickRate": 5.5
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 1.2
+      }
+    ]
+  }
+}

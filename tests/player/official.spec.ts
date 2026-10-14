@@ -37,6 +37,7 @@ test('official data stays attributed, partial and distinct from personal tiers a
   });
   await page.goto('/');
   await page.locator('nav').getByRole('button', { name: '分段梯度', exact: true }).click();
+  await page.getByRole('button', { name: '历史快照与官方榜', exact: true }).click();
   const panel = page.getByRole('region', { name: '官方公开统计' });
   await expect(panel).toContainText('公开接口本次返回 1 位英雄');
   await expect(panel).toContainText('49.88%');
@@ -106,6 +107,7 @@ test('official request failure is visible and can recover without synthetic subs
   });
   await page.goto('/');
   await page.locator('nav').getByRole('button', { name: '分段梯度', exact: true }).click();
+  await page.getByRole('button', { name: '历史快照与官方榜', exact: true }).click();
   const panel = page.getByRole('region', { name: '官方公开统计' });
   await expect(panel.getByRole('alert')).toContainText('官方请求失败');
   await expect(panel.locator('tbody')).toHaveCount(0);

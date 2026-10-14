@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=156",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 156
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:00:26.621Z",
+  "rawSha256": "d918ff90e7e265946b57a3628f8d5c11726dc0a4d454556b9b9269972ea99327",
+  "cache": "fresh",
+  "data": {
+    "heroId": 156,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1426,
+        "equipmentName": "疾步之靴",
+        "pickRate": 84.47,
+        "winRate": 50.92
+      },
+      {
+        "equipmentId": 1353,
+        "equipmentName": "旭日初光",
+        "pickRate": 41.75,
+        "winRate": 53.19
+      },
+      {
+        "equipmentId": 1723,
+        "equipmentName": "极影·奔狼",
+        "pickRate": 41.36,
+        "winRate": 52.87
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "pickRate": 29.51,
+        "winRate": 60.49
+      },
+      {
+        "equipmentId": 1737,
+        "equipmentName": "极影·形昭",
+        "pickRate": 22.25,
+        "winRate": 44.57
+      },
+      {
+        "equipmentId": 1336,
+        "equipmentName": "极寒风暴",
+        "pickRate": 21.96,
+        "winRate": 53.3
+      },
+      {
+        "equipmentId": 1721,
+        "equipmentName": "极影·救赎",
+        "pickRate": 16.3,
+        "winRate": 56.08
+      },
+      {
+        "equipmentId": 12211,
+        "equipmentName": "梦魇之牙",
+        "pickRate": 15.48,
+        "winRate": 53.75
+      },
+      {
+        "equipmentId": 1226,
+        "equipmentName": "圣杯",
+        "pickRate": 14.03,
+        "winRate": 52.07
+      },
+      {
+        "equipmentId": 1239,
+        "equipmentName": "辉月",
+        "pickRate": 13.45,
+        "winRate": 55.4
+      }
+    ]
+  }
+}

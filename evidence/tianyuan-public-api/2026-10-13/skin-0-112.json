@@ -1,0 +1,72 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=112",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 112
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:57:01.882Z",
+  "rawSha256": "9d9746a9d942bfd95ddcfcfed4c43f4e63875befe1fba30d51fcfd299be52dca",
+  "cache": "fresh",
+  "data": {
+    "heroId": 112,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "电玩小子",
+        "pickRate": 42.93
+      },
+      {
+        "skinName": "江户川柯南",
+        "pickRate": 30.33
+      },
+      {
+        "skinName": "木偶奇遇记",
+        "pickRate": 7.97
+      },
+      {
+        "skinName": "星空梦想",
+        "pickRate": 4.37
+      },
+      {
+        "skinName": "寅虎·瑞焰",
+        "pickRate": 4.11
+      },
+      {
+        "skinName": "时之奇旅",
+        "pickRate": 2.57
+      },
+      {
+        "skinName": "福禄兄弟",
+        "pickRate": 2.31
+      },
+      {
+        "skinName": "蔬乡物语",
+        "pickRate": 1.29
+      },
+      {
+        "skinName": "班班快跑",
+        "pickRate": 1.29
+      },
+      {
+        "skinName": "狮舞东方",
+        "pickRate": 1.03
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.77
+      },
+      {
+        "skinName": "极速特派",
+        "pickRate": 0.77
+      },
+      {
+        "skinName": "乒乒小将",
+        "pickRate": 0.26
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=117",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 117
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:57:27.313Z",
+  "rawSha256": "a808093526c5ba9e2da417695e8992d1586f44ddbb5ac867c41115e5e28c7bf8",
+  "cache": "fresh",
+  "data": {
+    "heroId": 117,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "戍鼓铭心",
+        "pickRate": 34.8
+      },
+      {
+        "skinName": "海滩丽影",
+        "pickRate": 27.53
+      },
+      {
+        "skinName": "超时空战士",
+        "pickRate": 12.81
+      },
+      {
+        "skinName": "生化警戒",
+        "pickRate": 10.33
+      },
+      {
+        "skinName": "春野之旅",
+        "pickRate": 7.65
+      },
+      {
+        "skinName": "聚星闪耀",
+        "pickRate": 4.78
+      },
+      {
+        "skinName": "王者之锤",
+        "pickRate": 1.53
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.57
+      }
+    ]
+  }
+}

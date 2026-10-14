@@ -1,0 +1,60 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=184",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 184
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:02:14.516Z",
+  "rawSha256": "eaf8076d8142840a10308026195ed372993010259c3ab3018457798ef887d082",
+  "cache": "fresh",
+  "data": {
+    "heroId": 184,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "愿照·福禄聚",
+        "pickRate": 49.59
+      },
+      {
+        "skinName": "奇遇梦乡",
+        "pickRate": 10.74
+      },
+      {
+        "skinName": "花朝如约",
+        "pickRate": 8.26
+      },
+      {
+        "skinName": "夏日便利店",
+        "pickRate": 7.44
+      },
+      {
+        "skinName": "蔷薇王座",
+        "pickRate": 5.79
+      },
+      {
+        "skinName": "奇迹圣诞",
+        "pickRate": 5.79
+      },
+      {
+        "skinName": "舞动绿茵",
+        "pickRate": 4.96
+      },
+      {
+        "skinName": "电玩·兔顽号",
+        "pickRate": 4.13
+      },
+      {
+        "skinName": "繁星吟游",
+        "pickRate": 1.65
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 1.65
+      }
+    ]
+  }
+}

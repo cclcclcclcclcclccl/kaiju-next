@@ -34,6 +34,7 @@ test('mixed source metrics stay visible but cannot masquerade as a segment tier 
 }) => {
   await page.goto('/');
   await page.locator('nav').getByRole('button', { name: '分段梯度', exact: true }).click();
+  await page.getByRole('button', { name: '历史快照与官方榜', exact: true }).click();
   await page.getByRole('button', { name: '导入统计快照' }).click();
   await page.getByLabel('批次名称', { exact: true }).fill('混合口径测试（合成）');
   await page.getByLabel('录入数据分段').selectOption('巅峰千强');
@@ -99,7 +100,14 @@ test('history shows sourced percentage-point changes, excludes incompatible batc
   }
   await page.goto('/');
   await page.locator('nav').getByRole('button', { name: '分段梯度', exact: true }).click();
+  await page.getByRole('button', { name: '历史快照与官方榜', exact: true }).click();
   await page.getByLabel('统计分段', { exact: true }).selectOption('巅峰千强');
+  const batch = page.getByLabel('数据批次', { exact: true });
+  const selectedId = await batch
+    .locator('option')
+    .filter({ hasText: '历史对比验收（合成） 11' })
+    .getAttribute('value');
+  await batch.selectOption(selectedId!);
   const history = page.locator('.stat-history');
   await expect(history.locator('.history-deltas')).toContainText('+2.00');
   await expect(history.locator('.history-deltas')).toContainText('个百分点');
@@ -110,7 +118,9 @@ test('history shows sourced percentage-point changes, excludes incompatible batc
   await page.getByLabel('历史趋势指标').selectOption('banRate');
   await expect(history.getByRole('img')).toHaveAttribute('aria-label', /禁用率历史/);
   await page.getByLabel('搜索梯度英雄').fill(mids[0].name + '，' + mids[1].name);
-  const ranking = page.locator('main .pro-table').first().locator('tbody tr');
+  const ranking = page
+    .getByRole('table', { name: '巅峰千强 中路 英雄梯度', exact: true })
+    .locator('tbody tr');
   await expect(ranking).toHaveCount(2);
   await page.getByRole('checkbox', { name: /隐藏出场率低于/ }).check();
   await expect(ranking).toHaveCount(1);

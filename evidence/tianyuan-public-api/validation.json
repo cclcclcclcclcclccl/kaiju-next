@@ -1,0 +1,285 @@
+{
+  "version": "0.12.0",
+  "verifiedAt": "2026-10-14T05:21:34.028Z",
+  "requestedDatasetDate": "2026-10-13",
+  "collection": {
+    "date": "2026-10-13",
+    "queries": 670,
+    "failed": 0,
+    "kinds": {
+      "stats": {
+        "queries": 4,
+        "entries": 538,
+        "emptyHeroIds": []
+      },
+      "tier": {
+        "queries": 1,
+        "entries": 133,
+        "emptyHeroIds": []
+      },
+      "skin": {
+        "queries": 133,
+        "entries": 909,
+        "emptyHeroIds": []
+      },
+      "duration": {
+        "queries": 133,
+        "entries": 399,
+        "emptyHeroIds": []
+      },
+      "analysis": {
+        "queries": 133,
+        "entries": 15362,
+        "emptyHeroIds": []
+      },
+      "equip": {
+        "queries": 133,
+        "entries": 1330,
+        "emptyHeroIds": []
+      },
+      "combined": {
+        "queries": 133,
+        "entries": 543,
+        "emptyHeroIds": []
+      }
+    }
+  },
+  "rawIntegrity": {
+    "verifiedAt": "2026-10-14T05:20:48.481Z",
+    "packets": 670,
+    "hashMismatches": 0,
+    "normalizedMismatches": 0
+  },
+  "officialCrosscheck": {
+    "date": "2026-10-13",
+    "records": 450,
+    "exact": 450,
+    "differences": [],
+    "missing": [],
+    "interpretation": "Matching published fields is corroboration, not proof of upstream backend or sampling methodology."
+  },
+  "tests": {
+    "core": {
+      "total": 59,
+      "passed": 59,
+      "failed": 0,
+      "file": "core-tests.txt"
+    },
+    "browser": {
+      "runs": [
+        {
+          "file": "browser/full-first-pass.json",
+          "stats": {
+            "startTime": "2026-10-14T05:05:34.053Z",
+            "duration": 166133.689,
+            "expected": 32,
+            "skipped": 0,
+            "unexpected": 2,
+            "flaky": 0
+          }
+        },
+        {
+          "file": "browser/targeted-seven-pass.json",
+          "stats": {
+            "startTime": "2026-10-14T05:10:12.543Z",
+            "duration": 41884.808999999994,
+            "expected": 7,
+            "skipped": 0,
+            "unexpected": 0,
+            "flaky": 0
+          }
+        },
+        {
+          "file": "browser/final-three-pass.json",
+          "stats": {
+            "startTime": "2026-10-14T05:19:57.778Z",
+            "duration": 16604.651,
+            "expected": 3,
+            "skipped": 0,
+            "unexpected": 0,
+            "flaky": 0
+          }
+        }
+      ],
+      "distinctScenarios": 34,
+      "latestPassed": 34,
+      "explanation": "Full initial run: 32 passed, 2 failed on outdated test locators/batch selection. Both corrected and passed in focused rerun. Final 3 tests cover last UI text changes. This is combined coverage, not a claim of a single all-green full run."
+    },
+    "build": {
+      "passed": true,
+      "file": "build.txt",
+      "warning": "Existing hero data chunk approximately 1.23 MB exceeds 500 kB guidance."
+    },
+    "format": {
+      "passed": true,
+      "file": "format.txt"
+    }
+  },
+  "live": {
+    "checkedOn": "2026-10-14T05:19:58.486Z",
+    "status": {
+      "product": "开局 NEXT",
+      "version": "0.12.0",
+      "modelConfigured": false,
+      "heroCount": 133
+    },
+    "coverage": "133 / 133\n目录英雄覆盖 · 133 条来源记录（含形态） · 当前筛选 133 条 · 查询 2026-10-13",
+    "heroSource": {
+      "heroId": 521,
+      "winRate": 50.31,
+      "pickRate": 6.51,
+      "banRate": 86.16
+    },
+    "playerDataUnchanged": true,
+    "restartDataUnchanged": true,
+    "before": {
+      "workspace": "4b2ebdd0f3c3167d3a1bd87558e32a7230b9ef504a27d58e80e99663594f7908",
+      "pro": "0863ae099736d9aaf9d0e7dc1cae487db0c506a138aa8feccce9478808551d93"
+    },
+    "after": {
+      "workspace": "4b2ebdd0f3c3167d3a1bd87558e32a7230b9ef504a27d58e80e99663594f7908",
+      "pro": "0863ae099736d9aaf9d0e7dc1cae487db0c506a138aa8feccce9478808551d93"
+    },
+    "pageErrors": [],
+    "mobileOverflow": false,
+    "axeViolations": 0
+  },
+  "historicalEvidence": {
+    "checked": 325,
+    "changed": 21,
+    "changes": [
+      {
+        "file": "evidence/coach-upgrade/adaptive-system-test.png",
+        "regressionHash": "201f19a112400ce75892646cf0a71e4a32cbf559d96c3d0b00eeac3c2e68516c",
+        "restoredHash": "4ac9b6e5e5f56bfdcfc7248a7451a228b1336a96c07284e548448856b689facf"
+      },
+      {
+        "file": "evidence/coach-upgrade/coach-desktop.png",
+        "regressionHash": "f9f6cc82e1b67598ff5912672d06b1e62a8a39bae51a8d894c333a7aeb846a42",
+        "restoredHash": "fb848395233e5010b9e38d5ba0df322ff9097f5e5fc9dbb7470b3ed0bb7c75d9"
+      },
+      {
+        "file": "evidence/coach-upgrade/coach-mobile.png",
+        "regressionHash": "c663ec7e038ec23cc03db5ff2f14ca67d0bf114130bb91f87e41bc45a8b8774f",
+        "restoredHash": "21ad8da634fdef50a8ebb67ee7b608ab226add6462bf7bb62fe5deb26328d534"
+      },
+      {
+        "file": "evidence/coach-upgrade/hero-mobile.png",
+        "regressionHash": "e7a0da58386c1b9c76a81ae96119ecf9f3257cffe98ea2c95433fe7cb81c5bcd",
+        "restoredHash": "5340c68e363f53709647339e73536765da811275e9026c59c888177c8487934c"
+      },
+      {
+        "file": "evidence/coach-upgrade/hero-personal-guide.png",
+        "regressionHash": "fd12a12aba42bbc98d287220bfc455991ff78fc399c68fbab4e46a902caed897",
+        "restoredHash": "ed2df4cb1eb6547ff7f7dbdd61e664676707e7441bae5036cd1c3f5c535bd53f"
+      },
+      {
+        "file": "evidence/coach-upgrade/personal-pool-test.png",
+        "regressionHash": "67baa8d6da72228736e30492de4b899649c2461391050b70fb883f909ae9dd46",
+        "restoredHash": "ac93f07a28de76f893253383ec27482a6d617502899074081771be911ae4138e"
+      },
+      {
+        "file": "evidence/data-continuity/environment-desktop.png",
+        "regressionHash": "901a4c31f0989de084f6c0cbd8b80b223086310c9c90adb516506b2a360d2d73",
+        "restoredHash": "10d40d892eb928e2243abe5a5fa9af08f4f4114c3d04e4f0f59409a755501eb7"
+      },
+      {
+        "file": "evidence/data-continuity/environment-mobile.png",
+        "regressionHash": "f1d315000d5ad08706bb9deb911ab1904930df5263e9aea6a5061c5bcb607ffe",
+        "restoredHash": "38249459ccc173b49e35194198a5544f68acff0fa59898905674d397bda9092b"
+      },
+      {
+        "file": "evidence/data-continuity/update-status-mobile.png",
+        "regressionHash": "97b77b43fb0ec05eae2a02cd4afc208447015315aa3021d1d8d77e4a2e474bbf",
+        "restoredHash": "fd377804b6bb097259a32b244e6c5b7a0f40f015a0969adc01e0a1c8481aa5e4"
+      },
+      {
+        "file": "evidence/data-upgrade/bp-arena.png",
+        "regressionHash": "c15f1c25d44a76e7e699343d79cf11bc65b06f55ef77f5caebb9b9c12eb2c141",
+        "restoredHash": "8ab0dc5fd620b6bfef3f32fb059285001cc12694d0e8a2fe090cf5c6a0cc1f91"
+      },
+      {
+        "file": "evidence/data-upgrade/equipment.png",
+        "regressionHash": "228a7e68529a07f5770e568ad7e631ae6c7ba42f240ae76e6f912ce74473506f",
+        "restoredHash": "287f76c16701e09847989946d1b9901e0af97257d3270a9be180d1db69a67ed0"
+      },
+      {
+        "file": "evidence/data-upgrade/ocr-review.png",
+        "regressionHash": "341e05e296c529479e9bd431f28e4737d798523106fe214a0ca073e5951c7b4f",
+        "restoredHash": "27b7dba626c7ce88876c5dfe22f69ee04239a9aa5a9977aa7d9c847ae28b4a5b"
+      },
+      {
+        "file": "evidence/data-upgrade/official-updates.png",
+        "regressionHash": "cfd6423766d77d0f89a1233ab1b5a5ab410039ce7326a66cc10bf3c4312e4410",
+        "restoredHash": "fe2ea20af269e34aa8cbd472fa98aa2708056bdfa582f7c82711a0e9caa2ea03"
+      },
+      {
+        "file": "evidence/reference-informed/accessibility-history.json",
+        "regressionHash": "0180f0f16e8cfe8b166e5cd205a915edbbf446e28cddffc0fd187fd231d690ab",
+        "restoredHash": "31b2f198c4223e9c05023fb0e98460094d26c3166ab859fb18405b8cf9184b6d"
+      },
+      {
+        "file": "evidence/reference-informed/accessibility-import.json",
+        "regressionHash": "0180f0f16e8cfe8b166e5cd205a915edbbf446e28cddffc0fd187fd231d690ab",
+        "restoredHash": "31b2f198c4223e9c05023fb0e98460094d26c3166ab859fb18405b8cf9184b6d"
+      },
+      {
+        "file": "evidence/reference-informed/accessibility.json",
+        "regressionHash": "cc980def1eb6e3341553230f3a1cfab169a04012ae231009f180916c847d9eda",
+        "restoredHash": "f5acbc16c432d61160561e3546184045a5c1d05fcc010879fc86b7427b698556"
+      },
+      {
+        "file": "evidence/reference-informed/screenshots/draft-mobile.png",
+        "regressionHash": "f3d1170e12e4ca8bb4f9b23aee2ce88d56d0930dd2162cbe82943736af2127f0",
+        "restoredHash": "1ac9de0c6fc97fddd8818e0e8ab8b142ec5193ae0af4afc93c2ed1b622082802"
+      },
+      {
+        "file": "evidence/reference-informed/screenshots/history-synthetic-desktop.png",
+        "regressionHash": "c8f5c094b659246af8df3a1e69fb47c245011353fcfcbfd3b13ad6c41a1514a0",
+        "restoredHash": "d26845032da0b5795568185e8451d55320bef57d889eb0c40cfdd0662c0caaa4"
+      },
+      {
+        "file": "evidence/reference-informed/screenshots/history-synthetic-mobile.png",
+        "regressionHash": "379d6126df9f742130c17f2bcd3d9a83c70865fd9cb6ed2d801d8146b2073a27",
+        "restoredHash": "6ca82067b2cdf96ba8b56990ebd18f56d3962545d32455deeaec9109ece3f9b1"
+      },
+      {
+        "file": "evidence/reference-informed/screenshots/squad-test-accounts.png",
+        "regressionHash": "572cc623eb1eba4dda460a4229737eca8165b35c9c4b2c249974c382f1ab10d2",
+        "restoredHash": "1cb8e36381c10af7720e5a04d9d5bd21affc90efb02518f07b8aec788a4f2d6f"
+      },
+      {
+        "file": "evidence/reference-informed/screenshots/table-import-mobile.png",
+        "regressionHash": "d9dce084ef8980c37be63857732daa7838d744d98af9fb30f2aad3fbcbf9213f",
+        "restoredHash": "3bdfbf2b1735212fce50b961c04c12e17b4b9433a2edf489b851cdbafa7a0b21"
+      }
+    ],
+    "additionalUnicodeFile": {
+      "file": "evidence/data-upgrade/分段梯度-mobile.png",
+      "regressionHash": "6295382cbe27b7dafd3a020cd2a1baf057f2924dce8ee2bac433179886146625",
+      "restoredHash": "e4a07ce23a707f39c3f809ede3413eda16bf084708fc5af81a5574f6711f472d",
+      "method": "Restore exact HEAD bytes of historical screenshot rewritten by browser regression; Unicode filename was omitted by earlier manifest."
+    }
+  },
+  "correctionsFile": "discovery/corrections.json",
+  "boundaries": {
+    "backendAccess": "Anonymous public third-party APIs only; original match collection chain not independently verified.",
+    "refresh": "Four scopes and source tiers at startup, then 60 minutes after each completed cycle; details read on demand with 1-hour cache.",
+    "schedulerFullHourObserved": false,
+    "thirdPartyTiersAreOurAlgorithm": false,
+    "detailsInheritLeaderboardScope": false,
+    "missingValuesInvented": false,
+    "relationEntriesAreIndependentGames": false,
+    "professionalBpValidated": false,
+    "missingScopes": [
+      "巅峰1800+",
+      "巅峰万强"
+    ],
+    "unknown": [
+      "Overall sample sizes",
+      "Exact sampling windows and versions",
+      "Source relation index formula",
+      "Original raw match dataset"
+    ]
+  }
+}

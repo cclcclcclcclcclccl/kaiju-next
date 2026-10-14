@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-10-13&heroId=141",
+  "query": {
+    "kind": "combined",
+    "date": "2026-10-13",
+    "heroId": 141
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:59:27.140Z",
+  "rawSha256": "166ca588836da8aa9b543e127619f7dcc9c3f35007f2d5b467f9e395ee4905ce",
+  "cache": "fresh",
+  "data": {
+    "heroId": 141,
+    "positions": {
+      "0": {
+        "pickRate": 6.33,
+        "winRate": 48.64
+      },
+      "1": {
+        "pickRate": 92.88,
+        "winRate": 52.12
+      },
+      "2": {
+        "pickRate": 0.79,
+        "winRate": 47.83
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "传送",
+        "pickRate": 97.36,
+        "winRate": 52.04
+      },
+      {
+        "skillName": "弱化",
+        "pickRate": 1.58,
+        "winRate": 41.84
+      },
+      {
+        "skillName": "净化",
+        "pickRate": 0.79,
+        "winRate": 48.81
+      }
+    ]
+  }
+}

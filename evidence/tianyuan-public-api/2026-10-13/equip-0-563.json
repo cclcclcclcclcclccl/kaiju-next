@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=563",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 563
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:06:59.968Z",
+  "rawSha256": "c9b4f6479663b84ca26ccb6bcf37b0459d11b9ecc55bec0dab97bf2ef601bdd1",
+  "cache": "fresh",
+  "data": {
+    "heroId": 563,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1226,
+        "equipmentName": "圣杯",
+        "pickRate": 90.25,
+        "winRate": 48.93
+      },
+      {
+        "equipmentId": 1727,
+        "equipmentName": "日暮之流",
+        "pickRate": 77.37,
+        "winRate": 51.62
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 60.42,
+        "winRate": 50.41
+      },
+      {
+        "equipmentId": 1235,
+        "equipmentName": "痛苦面具",
+        "pickRate": 46.29,
+        "winRate": 55.43
+      },
+      {
+        "equipmentId": 1237,
+        "equipmentName": "时之预言",
+        "pickRate": 26.76,
+        "winRate": 56.82
+      },
+      {
+        "equipmentId": 1240,
+        "equipmentName": "噬神之书",
+        "pickRate": 24.81,
+        "winRate": 52.12
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 19.1,
+        "winRate": 53.4
+      },
+      {
+        "equipmentId": 12211,
+        "equipmentName": "梦魇之牙",
+        "pickRate": 11.63,
+        "winRate": 44.73
+      },
+      {
+        "equipmentId": 1232,
+        "equipmentName": "博学者之怒",
+        "pickRate": 10.68,
+        "winRate": 56.44
+      },
+      {
+        "equipmentId": 1423,
+        "equipmentName": "冷静之靴",
+        "pickRate": 10.35,
+        "winRate": 29.23
+      }
+    ]
+  }
+}

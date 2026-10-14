@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=178",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 178
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:01:52.354Z",
+  "rawSha256": "6dd921fbe7e3cab33523644a0d9baef796f1c898254b1984835f71a4051052be",
+  "cache": "fresh",
+  "data": {
+    "heroId": 178,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "pickRate": 87.91,
+        "winRate": 50.76
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 68.32,
+        "winRate": 47.53
+      },
+      {
+        "equipmentId": 1534,
+        "equipmentName": "怒龙剑盾",
+        "pickRate": 63.26,
+        "winRate": 51.98
+      },
+      {
+        "equipmentId": 1533,
+        "equipmentName": "贪婪之噬",
+        "pickRate": 61.75,
+        "winRate": 49.77
+      },
+      {
+        "equipmentId": 11311,
+        "equipmentName": "纯净苍穹",
+        "pickRate": 32.93,
+        "winRate": 49.92
+      },
+      {
+        "equipmentId": 1334,
+        "equipmentName": "不死鸟之眼",
+        "pickRate": 26.57,
+        "winRate": 61.41
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 21.45,
+        "winRate": 47.2
+      },
+      {
+        "equipmentId": 1347,
+        "equipmentName": "永夜守护",
+        "pickRate": 15.49,
+        "winRate": 56.44
+      },
+      {
+        "equipmentId": 1338,
+        "equipmentName": "暴烈之甲",
+        "pickRate": 13.35,
+        "winRate": 57.66
+      },
+      {
+        "equipmentId": 1328,
+        "equipmentName": "血魔之怒",
+        "pickRate": 5.78,
+        "winRate": 61.5
+      }
+    ]
+  }
+}

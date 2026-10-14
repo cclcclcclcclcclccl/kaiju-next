@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=174",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 174
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:01:32.223Z",
+  "rawSha256": "2ddec459e70508b5b0c9058241bc618f50e2a2833ea120fa96dafb8067da01b0",
+  "cache": "fresh",
+  "data": {
+    "heroId": 174,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1126,
+        "equipmentName": "末世",
+        "pickRate": 77.68,
+        "winRate": 49.74
+      },
+      {
+        "equipmentId": 1155,
+        "equipmentName": "仁者破晓",
+        "pickRate": 71.09,
+        "winRate": 54.82
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 61.16,
+        "winRate": 48.15
+      },
+      {
+        "equipmentId": 1133,
+        "equipmentName": "无尽战刃",
+        "pickRate": 50.08,
+        "winRate": 52.41
+      },
+      {
+        "equipmentId": 1136,
+        "equipmentName": "影刃",
+        "pickRate": 47.92,
+        "winRate": 49.95
+      },
+      {
+        "equipmentId": 1425,
+        "equipmentName": "急速战靴",
+        "pickRate": 26.58,
+        "winRate": 43.15
+      },
+      {
+        "equipmentId": 1128,
+        "equipmentName": "寒霜袭侵",
+        "pickRate": 25.58,
+        "winRate": 50.65
+      },
+      {
+        "equipmentId": 1135,
+        "equipmentName": "闪电匕首",
+        "pickRate": 24.35,
+        "winRate": 44.89
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "pickRate": 7.59,
+        "winRate": 58.11
+      },
+      {
+        "equipmentId": 1141,
+        "equipmentName": "逐日之弓",
+        "pickRate": 6.77,
+        "winRate": 59.85
+      }
+    ]
+  }
+}

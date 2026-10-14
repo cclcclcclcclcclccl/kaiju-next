@@ -1,0 +1,44 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=149",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 149
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:59:48.240Z",
+  "rawSha256": "0c569b03f5802bac9d801592c0ed1c597d643bccb883961cd8763ab3efe68d94",
+  "cache": "fresh",
+  "data": {
+    "heroId": 149,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "德古拉伯爵",
+        "pickRate": 86.97
+      },
+      {
+        "skinName": "剑破天穹",
+        "pickRate": 6.39
+      },
+      {
+        "skinName": "圣殿之光",
+        "pickRate": 4.37
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.84
+      },
+      {
+        "skinName": "虎啸剑宗",
+        "pickRate": 0.76
+      },
+      {
+        "skinName": "夺宝奇兵",
+        "pickRate": 0.67
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=130",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 130
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:58:27.648Z",
+  "rawSha256": "cb1ae7d890584d33fedd4bc944682709356f3c26ba4f2a6514f6a71bc37192f7",
+  "cache": "fresh",
+  "data": {
+    "heroId": 130,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "地狱之眼",
+        "pickRate": 85.56
+      },
+      {
+        "skinName": "鬼剑武藏",
+        "pickRate": 5.1
+      },
+      {
+        "skinName": "黑崎一护",
+        "pickRate": 3.82
+      },
+      {
+        "skinName": "未来纪元",
+        "pickRate": 2.34
+      },
+      {
+        "skinName": "惊梅引",
+        "pickRate": 2.34
+      },
+      {
+        "skinName": "万象初新",
+        "pickRate": 0.85
+      }
+    ]
+  }
+}

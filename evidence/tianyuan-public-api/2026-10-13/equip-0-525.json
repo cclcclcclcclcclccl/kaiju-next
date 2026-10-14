@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=525",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 525
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:05:24.213Z",
+  "rawSha256": "bb3467be277af09e7a70325d9fcb9315305f56e82d1e069eb0a05b1bd74c2133",
+  "cache": "fresh",
+  "data": {
+    "heroId": 525,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "pickRate": 83.08,
+        "winRate": 54.98
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 73.78,
+        "winRate": 52.71
+      },
+      {
+        "equipmentId": 1721,
+        "equipmentName": "极影·救赎",
+        "pickRate": 48.03,
+        "winRate": 52.7
+      },
+      {
+        "equipmentId": 1737,
+        "equipmentName": "极影·形昭",
+        "pickRate": 42.63,
+        "winRate": 49.73
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "pickRate": 35.2,
+        "winRate": 62.4
+      },
+      {
+        "equipmentId": 1423,
+        "equipmentName": "冷静之靴",
+        "pickRate": 22.53,
+        "winRate": 49.1
+      },
+      {
+        "equipmentId": 1226,
+        "equipmentName": "圣杯",
+        "pickRate": 18.68,
+        "winRate": 65.71
+      },
+      {
+        "equipmentId": 1353,
+        "equipmentName": "旭日初光",
+        "pickRate": 8.76,
+        "winRate": 66.27
+      },
+      {
+        "equipmentId": 1333,
+        "equipmentName": "不祥征兆",
+        "pickRate": 7.59,
+        "winRate": 62.78
+      },
+      {
+        "equipmentId": 1723,
+        "equipmentName": "极影·奔狼",
+        "pickRate": 3.94,
+        "winRate": 64.03
+      }
+    ]
+  }
+}

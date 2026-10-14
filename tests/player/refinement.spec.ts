@@ -11,6 +11,7 @@ test('a player can enter a sourced table without JSON and keep an unpublished sa
   const initial = await (await request.get('/api/pro')).json();
   await page.goto('/');
   await page.locator('nav').getByRole('button', { name: '分段梯度', exact: true }).click();
+  await page.getByRole('button', { name: '历史快照与官方榜', exact: true }).click();
   await page.getByRole('button', { name: '导入统计快照' }).click();
   await page.getByLabel('批次名称', { exact: true }).fill('表格流程测试（非实际游戏数据）');
   await page.getByLabel('游戏版本', { exact: true }).fill('TEST-TABLE');
@@ -33,8 +34,12 @@ test('a player can enter a sourced table without JSON and keep an unpublished sa
   });
   await page.getByRole('button', { name: '确认保存统计' }).click();
   await expect(page.getByRole('dialog')).toHaveCount(0);
-  await expect(page.locator('.pro-table tbody')).toContainText('王昭君');
-  await expect(page.locator('.pro-table tbody')).toContainText('场次未知');
+  await expect(
+    page.getByRole('table', { name: '大众分段 中路 英雄梯度', exact: true }).locator('tbody'),
+  ).toContainText('王昭君');
+  await expect(
+    page.getByRole('table', { name: '大众分段 中路 英雄梯度', exact: true }).locator('tbody'),
+  ).toContainText('场次未知');
   await expect(page.getByRole('button', { name: '复制小程序来源口令' })).toBeVisible();
   const current = await (await request.get('/api/pro')).json();
   const row = current.snapshots.find((s: any) => s.patch === 'TEST-TABLE');

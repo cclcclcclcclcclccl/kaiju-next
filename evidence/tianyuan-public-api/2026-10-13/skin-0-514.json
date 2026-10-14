@@ -1,0 +1,36 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=514",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 514
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:04:35.821Z",
+  "rawSha256": "58849ff6949582a6f215efac859a063f6ed0cc27d74a69c333351d125ab7134a",
+  "cache": "fresh",
+  "data": {
+    "heroId": 514,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "落雪白狼",
+        "pickRate": 82.39
+      },
+      {
+        "skinName": "破局者",
+        "pickRate": 10.8
+      },
+      {
+        "skinName": "破空之剑",
+        "pickRate": 4.55
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 2.27
+      }
+    ]
+  }
+}

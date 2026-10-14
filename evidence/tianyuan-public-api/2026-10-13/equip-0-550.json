@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=550",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 550
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:06:49.913Z",
+  "rawSha256": "418ae91d13bda0bad60343aac9f9b5a9b71a15b525cba4bcc0e12a1ca26cd21e",
+  "cache": "fresh",
+  "data": {
+    "heroId": 550,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 51.04,
+        "winRate": 47.91
+      },
+      {
+        "equipmentId": 13310,
+        "equipmentName": "冰痕之握",
+        "pickRate": 49.96,
+        "winRate": 53.55
+      },
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "pickRate": 45.64,
+        "winRate": 50.78
+      },
+      {
+        "equipmentId": 1747,
+        "equipmentName": "极影·星泉",
+        "pickRate": 45.44,
+        "winRate": 56.38
+      },
+      {
+        "equipmentId": 1423,
+        "equipmentName": "冷静之靴",
+        "pickRate": 42.2,
+        "winRate": 46.97
+      },
+      {
+        "equipmentId": 1721,
+        "equipmentName": "极影·救赎",
+        "pickRate": 39.56,
+        "winRate": 41.42
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "pickRate": 17.15,
+        "winRate": 57.95
+      },
+      {
+        "equipmentId": 1737,
+        "equipmentName": "极影·形昭",
+        "pickRate": 12.67,
+        "winRate": 35.65
+      },
+      {
+        "equipmentId": 1126,
+        "equipmentName": "末世",
+        "pickRate": 9.15,
+        "winRate": 58.39
+      },
+      {
+        "equipmentId": 1128,
+        "equipmentName": "寒霜袭侵",
+        "pickRate": 6.76,
+        "winRate": 61.76
+      }
+    ]
+  }
+}

@@ -7,6 +7,7 @@ const folder = process.env.PUBLIC_CAPTURE_EVIDENCE_DIR ?? 'evidence/public-captu
 async function openImport(page: any) {
   await page.goto('/');
   await page.locator('nav').getByRole('button', { name: '分段梯度', exact: true }).click();
+  await page.getByRole('button', { name: '历史快照与官方榜', exact: true }).click();
   await page.getByRole('button', { name: '导入统计快照', exact: true }).click();
   await page.getByRole('button', { name: '榜单截图识别', exact: true }).click();
   await page.getByLabel('选择榜单来源').selectOption('tianyuan');
@@ -106,6 +107,7 @@ test('bundled public observations are available with source date and correct her
 }) => {
   await page.goto('/');
   await page.locator('nav').getByRole('button', { name: '分段梯度', exact: true }).click();
+  await page.getByRole('button', { name: '历史快照与官方榜', exact: true }).click();
   await page.getByLabel('统计分段', { exact: true }).selectOption('巅峰千强');
   await page.getByLabel('数据批次', { exact: true }).selectOption('public-tianyuan-2026-10-11');
   await expect(page.locator('.all-hero-ranks')).toContainText('100 / 133');

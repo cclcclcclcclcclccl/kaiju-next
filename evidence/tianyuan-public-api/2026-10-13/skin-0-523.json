@@ -1,0 +1,56 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=523",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 523
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:05:11.133Z",
+  "rawSha256": "fcfe9f2ac196ebb2b82ee42a94b6f1b9bafcd019791cf005c3b62af8c8e3323b",
+  "cache": "fresh",
+  "data": {
+    "heroId": 523,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "归虚梦演",
+        "pickRate": 24.55
+      },
+      {
+        "skinName": "至美·乘鲤谣",
+        "pickRate": 19.53
+      },
+      {
+        "skinName": "织梦人",
+        "pickRate": 18.41
+      },
+      {
+        "skinName": "诗语江南",
+        "pickRate": 12.41
+      },
+      {
+        "skinName": "游龙清影",
+        "pickRate": 10.46
+      },
+      {
+        "skinName": "续相思",
+        "pickRate": 5.02
+      },
+      {
+        "skinName": "玲珑珍味",
+        "pickRate": 4.88
+      },
+      {
+        "skinName": "雪境奇遇",
+        "pickRate": 4.6
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.14
+      }
+    ]
+  }
+}

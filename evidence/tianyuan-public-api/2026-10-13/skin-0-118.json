@@ -1,0 +1,56 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=118",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 118
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:57:32.165Z",
+  "rawSha256": "d9c2f21b015d111ccb6b120ef2d297939070cdabe23c9e3fc13eb2e6bd9c9a5c",
+  "cache": "fresh",
+  "data": {
+    "heroId": 118,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "帕恰狗之风",
+        "pickRate": 54.34
+      },
+      {
+        "skinName": "小动物乐团",
+        "pickRate": 27.17
+      },
+      {
+        "skinName": "茶境仙",
+        "pickRate": 9.25
+      },
+      {
+        "skinName": "天狼运算者",
+        "pickRate": 2.89
+      },
+      {
+        "skinName": "妖精王",
+        "pickRate": 2.31
+      },
+      {
+        "skinName": "寅虎·展翼",
+        "pickRate": 1.73
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 1.16
+      },
+      {
+        "skinName": "天使之翼",
+        "pickRate": 0.58
+      },
+      {
+        "skinName": "归虚梦演",
+        "pickRate": 0.58
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=577",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 577
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:07:07.047Z",
+  "rawSha256": "323817dd170620b2f0932e7fed00223e21f04f8547e0ee364f0b6c818e758e54",
+  "cache": "fresh",
+  "data": {
+    "heroId": 577,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "涂山红红",
+        "pickRate": 60.85
+      },
+      {
+        "skinName": "灵卦秘语",
+        "pickRate": 20.8
+      },
+      {
+        "skinName": "巫礼祀神",
+        "pickRate": 17.31
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 1.05
+      }
+    ]
+  }
+}

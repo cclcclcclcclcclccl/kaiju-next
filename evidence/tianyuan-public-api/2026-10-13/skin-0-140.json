@@ -1,0 +1,52 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=140",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 140
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:59:18.056Z",
+  "rawSha256": "094a9a51ccd0ba22cab72db5bcd4fd92a20cbd6df5e2a6c8514e11654fd886b5",
+  "cache": "fresh",
+  "data": {
+    "heroId": 140,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "赤影疾锋",
+        "pickRate": 32.16
+      },
+      {
+        "skinName": "冰锋战神",
+        "pickRate": 24.41
+      },
+      {
+        "skinName": "龙腾万里",
+        "pickRate": 19.28
+      },
+      {
+        "skinName": "神骥·镇沧海",
+        "pickRate": 18.2
+      },
+      {
+        "skinName": "武圣",
+        "pickRate": 3.24
+      },
+      {
+        "skinName": "天启骑士",
+        "pickRate": 2.16
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.36
+      },
+      {
+        "skinName": "百相守梦",
+        "pickRate": 0.18
+      }
+    ]
+  }
+}

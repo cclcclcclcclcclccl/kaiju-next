@@ -1,0 +1,44 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=105",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 105
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:56:26.572Z",
+  "rawSha256": "73a4cfb8d5aa7f73c1abdcc109b4b42909deeaf7bfbf9e189c9151c4acc9e9fb",
+  "cache": "fresh",
+  "data": {
+    "heroId": 105,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "地狱岩魂",
+        "pickRate": 58.7
+      },
+      {
+        "skinName": "撼地雄心",
+        "pickRate": 22.22
+      },
+      {
+        "skinName": "功夫炙烤",
+        "pickRate": 9.64
+      },
+      {
+        "skinName": "寅虎·御盾",
+        "pickRate": 5.66
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 2.31
+      },
+      {
+        "skinName": "无尽征程",
+        "pickRate": 1.47
+      }
+    ]
+  }
+}

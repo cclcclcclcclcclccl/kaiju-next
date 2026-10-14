@@ -1,0 +1,40 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=542",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 542
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:06:16.635Z",
+  "rawSha256": "a8ac40e2041854ce7c84db658b1b31bbe348ff3282a84f820d5cfb809b302ef3",
+  "cache": "fresh",
+  "data": {
+    "heroId": 542,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "碧珀绯影",
+        "pickRate": 80.23
+      },
+      {
+        "skinName": "朽木白哉",
+        "pickRate": 13.09
+      },
+      {
+        "skinName": "埋骨钱",
+        "pickRate": 5.01
+      },
+      {
+        "skinName": "星界游侠",
+        "pickRate": 1.41
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.26
+      }
+    ]
+  }
+}

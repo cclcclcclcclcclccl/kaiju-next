@@ -21,11 +21,12 @@ test('update status separates dates, stale records and missing scopes; reference
   );
   await page.goto('/');
   await page.locator('nav').getByRole('button', { name: '分段梯度', exact: true }).click();
+  await page.getByRole('button', { name: '历史快照与官方榜', exact: true }).click();
   await page.locator('.data-updates summary').click();
   await expect(page.locator('.data-updates')).toContainText('营地 1/15 路更新可用');
   await expect(page.locator('.data-updates')).toContainText('更新失败，保留旧数据');
   await expect(page.locator('.data-updates')).toContainText('未取得数据');
-  await expect(page.locator('.data-updates')).toContainText('尚未自动同步');
+  await expect(page.locator('.data-updates')).toContainText('此批次不自动改写');
   await page.getByLabel('统计分段', { exact: true }).selectOption('巅峰千强');
   await page.getByLabel('数据批次', { exact: true }).selectOption('public-tianyuan-2026-10-12');
   await expect(page.locator('.rank-coverage')).toContainText('133 / 133');

@@ -1,0 +1,94 @@
+{
+  "source": "王者营地官方公开分享榜",
+  "sourceUrl": "https://camp.qq.com/h5/webdist/hero-rank/index.html",
+  "endpoint": "https://kohcamp.qq.com/gametoolbox/hero/getsharepagedetailranklistbyid",
+  "query": {
+    "segment": 3,
+    "position": 1
+  },
+  "sourceUpdatedOn": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:32:12.176Z",
+  "coverage": "partial",
+  "rows": [
+    {
+      "heroId": 180,
+      "name": "哪吒",
+      "heat": "T0",
+      "winRate": 51.94,
+      "pickRate": 17.6,
+      "banRate": 29.69
+    },
+    {
+      "heroId": 537,
+      "name": "司空震",
+      "heat": "T1",
+      "winRate": 50.09,
+      "pickRate": 16,
+      "banRate": 8.7
+    },
+    {
+      "heroId": 123,
+      "name": "吕布",
+      "heat": "T1",
+      "winRate": 46.7,
+      "pickRate": 15.7,
+      "banRate": 3.92
+    },
+    {
+      "heroId": 507,
+      "name": "李信",
+      "heat": "T2",
+      "winRate": 49.8,
+      "pickRate": 12.8,
+      "banRate": 12.71
+    },
+    {
+      "heroId": 135,
+      "name": "项羽",
+      "heat": "T2",
+      "winRate": 49.03,
+      "pickRate": 12.5,
+      "banRate": 0.73
+    },
+    {
+      "heroId": 558,
+      "name": "影",
+      "heat": "T2",
+      "winRate": 52.73,
+      "pickRate": 11.9,
+      "banRate": 3.25
+    },
+    {
+      "heroId": 518,
+      "name": "马超",
+      "heat": "T2",
+      "winRate": 49.74,
+      "pickRate": 11.1,
+      "banRate": 6.46
+    },
+    {
+      "heroId": 105,
+      "name": "廉颇",
+      "heat": "T2",
+      "winRate": 49.59,
+      "pickRate": 11,
+      "banRate": 3.4
+    },
+    {
+      "heroId": 549,
+      "name": "心魔六耳",
+      "heat": "T2",
+      "winRate": 48.14,
+      "pickRate": 9,
+      "banRate": 13.97
+    },
+    {
+      "heroId": 140,
+      "name": "关羽",
+      "heat": "T2",
+      "winRate": 50.79,
+      "pickRate": 8,
+      "banRate": 20.54
+    }
+  ]
+}

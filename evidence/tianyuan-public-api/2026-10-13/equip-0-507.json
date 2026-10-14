@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=507",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 507
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:04:08.658Z",
+  "rawSha256": "d450ca63c6234c3dc34234ba1b4b943207dd01fe541ec21dd5bc8d4a178ae3f2",
+  "cache": "fresh",
+  "data": {
+    "heroId": 507,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "pickRate": 96.59,
+        "winRate": 51.4
+      },
+      {
+        "equipmentId": 1138,
+        "equipmentName": "强者破军",
+        "pickRate": 88.28,
+        "winRate": 52.42
+      },
+      {
+        "equipmentId": 1131,
+        "equipmentName": "碎星锤",
+        "pickRate": 65.88,
+        "winRate": 55.14
+      },
+      {
+        "equipmentId": 1423,
+        "equipmentName": "冷静之靴",
+        "pickRate": 54.85,
+        "winRate": 51.52
+      },
+      {
+        "equipmentId": 11210,
+        "equipmentName": "制裁之刃",
+        "pickRate": 34.7,
+        "winRate": 57
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "pickRate": 32.33,
+        "winRate": 47.35
+      },
+      {
+        "equipmentId": 1128,
+        "equipmentName": "寒霜袭侵",
+        "pickRate": 24.46,
+        "winRate": 56.3
+      },
+      {
+        "equipmentId": 11311,
+        "equipmentName": "纯净苍穹",
+        "pickRate": 20.77,
+        "winRate": 57.74
+      },
+      {
+        "equipmentId": 1126,
+        "equipmentName": "末世",
+        "pickRate": 7.42,
+        "winRate": 50.32
+      },
+      {
+        "equipmentId": 1127,
+        "equipmentName": "名刀·司命",
+        "pickRate": 5.56,
+        "winRate": 53.39
+      }
+    ]
+  }
+}

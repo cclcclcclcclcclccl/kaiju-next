@@ -1,0 +1,36 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=548",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 548
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:06:36.805Z",
+  "rawSha256": "5e5052a2a54d22443291a4a853aa13b69050579c2b74fb3cb40a05aeb932f38d",
+  "cache": "fresh",
+  "data": {
+    "heroId": 548,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "危途狂花",
+        "pickRate": 87.08
+      },
+      {
+        "skinName": "驭风魔法",
+        "pickRate": 7.11
+      },
+      {
+        "skinName": "玫蓝誓约",
+        "pickRate": 5.68
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.13
+      }
+    ]
+  }
+}

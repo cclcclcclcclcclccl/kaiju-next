@@ -1,0 +1,48 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=564",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 564
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:07:01.979Z",
+  "rawSha256": "21053890650ba70085787e123dd7c04d3662a5b7c434a16f6935a30eced64e69",
+  "cache": "fresh",
+  "data": {
+    "heroId": 564,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "零食大作战",
+        "pickRate": 66.76
+      },
+      {
+        "skinName": "灵喵仙官",
+        "pickRate": 13.62
+      },
+      {
+        "skinName": "飞车小橘子",
+        "pickRate": 6.27
+      },
+      {
+        "skinName": "妄想食味",
+        "pickRate": 5.72
+      },
+      {
+        "skinName": "战舞者",
+        "pickRate": 4.09
+      },
+      {
+        "skinName": "小满鸭",
+        "pickRate": 3
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.54
+      }
+    ]
+  }
+}

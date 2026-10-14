@@ -1,0 +1,60 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-13&heroId=128",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-13",
+    "heroId": 128
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T04:58:17.655Z",
+  "rawSha256": "376663cba3bddb3d74202cb4380756639a5e924e35fd9c474a385f559b3f3bda",
+  "cache": "fresh",
+  "data": {
+    "heroId": 128,
+    "queryDate": "2026-10-13",
+    "skinDistribution": [
+      {
+        "skinName": "万灵伏威",
+        "pickRate": 37.96
+      },
+      {
+        "skinName": "幽灵船长",
+        "pickRate": 24.08
+      },
+      {
+        "skinName": "夜都魔契",
+        "pickRate": 22.83
+      },
+      {
+        "skinName": "天狼征服者",
+        "pickRate": 7.43
+      },
+      {
+        "skinName": "死神来了",
+        "pickRate": 2.98
+      },
+      {
+        "skinName": "决胜大满贯",
+        "pickRate": 1.73
+      },
+      {
+        "skinName": "烛龙",
+        "pickRate": 1.18
+      },
+      {
+        "skinName": "超能战警",
+        "pickRate": 1.11
+      },
+      {
+        "skinName": "逐霄之志",
+        "pickRate": 0.56
+      },
+      {
+        "skinName": "原皮",
+        "pickRate": 0.14
+      }
+    ]
+  }
+}

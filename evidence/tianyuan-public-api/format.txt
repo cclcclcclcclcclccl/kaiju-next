@@ -1,0 +1,6 @@
+
+> kaiju-player-companion@0.12.0 format:check
+> prettier --check "src/player/**/*.{ts,tsx,css}" "server/{player,pro}/**/*.ts" "tests/player/**/*.ts" "scripts/player/*.mjs" "*.{ts,json}"
+
+Checking formatting...
+All matched files use Prettier code style!

@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-13&heroId=191",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-13",
+    "heroId": 191
+  },
+  "requestedDate": "2026-10-13",
+  "fetchedAt": "2026-10-14T05:02:47.878Z",
+  "rawSha256": "e4c532f258f014f6a001a739d3a0cdf7089feb4befb5b78a03626b034108784d",
+  "cache": "fresh",
+  "data": {
+    "heroId": 191,
+    "queryEndDate": "2026-10-13T16:59:59.999Z",
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1423,
+        "equipmentName": "冷静之靴",
+        "pickRate": 66.64,
+        "winRate": 53.82
+      },
+      {
+        "equipmentId": 12211,
+        "equipmentName": "梦魇之牙",
+        "pickRate": 56.79,
+        "winRate": 56.56
+      },
+      {
+        "equipmentId": 1235,
+        "equipmentName": "痛苦面具",
+        "pickRate": 39.19,
+        "winRate": 59.49
+      },
+      {
+        "equipmentId": 1737,
+        "equipmentName": "极影·形昭",
+        "pickRate": 33.33,
+        "winRate": 49.4
+      },
+      {
+        "equipmentId": 1727,
+        "equipmentName": "日暮之流",
+        "pickRate": 31.89,
+        "winRate": 61.02
+      },
+      {
+        "equipmentId": 1234,
+        "equipmentName": "凝冰之息",
+        "pickRate": 29.32,
+        "winRate": 57.87
+      },
+      {
+        "equipmentId": 1244,
+        "equipmentName": "破茧之衣",
+        "pickRate": 23.57,
+        "winRate": 55.48
+      },
+      {
+        "equipmentId": 1232,
+        "equipmentName": "博学者之怒",
+        "pickRate": 22.5,
+        "winRate": 59.23
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "pickRate": 20.08,
+        "winRate": 52.47
+      },
+      {
+        "equipmentId": 1231,
+        "equipmentName": "虚无法杖",
+        "pickRate": 15.97,
+        "winRate": 60.49
+      }
+    ]
+  }
+}
