@@ -21,3 +21,10 @@ evidence/raw-private/
 artifacts/browser/
 
 .reproduction/
+
+/tmp/
+/submission/video/*.webm
+/submission/video/smoke.*
+/submission/*.zip
+/submission/*.bundle
+/submission/archive-verification.json

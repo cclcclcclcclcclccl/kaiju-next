@@ -1,0 +1,40 @@
+{
+  "sourceSession": "01a12a03-87fd-71e1-9c2c-0907b4631346",
+  "sourceSha256": "5c17c92fb40c460bafae4608b479e9d2a3779ad01575deebc02ea1ba919a21a1",
+  "exportedAt": "2026-10-18T14:11:16.959Z",
+  "scope": "Original user/assistant visible text only. Tool output, internal compaction summaries and environment blocks excluded; exclusions recorded. No rewritten dialogue.",
+  "chains": [
+    {
+      "id": "01-persistence",
+      "title": "英雄池保存与身份隔离",
+      "messages": 9,
+      "fromLine": 6028,
+      "toLine": 6354,
+      "excluded": [
+        {
+          "line": 6072,
+          "reason": "internal summary or reasoning"
+        }
+      ],
+      "sha256": "0e0698c1d94749657cad3493aa98cc0955ea4aa0cacbd4fd7a8ca6b1d757a765"
+    },
+    {
+      "id": "02-ranking",
+      "title": "梯度异常与数据入口纠正",
+      "messages": 9,
+      "fromLine": 6944,
+      "toLine": 7435,
+      "excluded": [],
+      "sha256": "c496554c1bb6b4979deb5e6f2c2eac17250e3a2abd91cb0698d68f92f85450ec"
+    },
+    {
+      "id": "03-skins",
+      "title": "皮肤使用率与装备图标",
+      "messages": 6,
+      "fromLine": 7453,
+      "toLine": 7658,
+      "excluded": [],
+      "sha256": "44324a80805ea96b3b60f97ced4a7ddc49ce4a63f11c55305e8cdd67bf68b72c"
+    }
+  ]
+}
