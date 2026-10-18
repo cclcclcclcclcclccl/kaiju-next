@@ -4,7 +4,8 @@ import { api } from '../../api.ts';
 import { heroes, heroById } from '../catalog.ts';
 import type { Hero } from '../model.ts';
 import type { ResourceResult, UpdateArticle } from './resources.ts';
-import SkinObservation from './SkinObservation.tsx';
+import SkinStats from './SkinStats.tsx';
+import { EquipmentIdentity } from './SourceMedia.tsx';
 import EquipmentStats from './EquipmentStats.tsx';
 let cached: ResourceResult | undefined, pending: Promise<ResourceResult> | undefined;
 function requestResources() {
@@ -117,9 +118,9 @@ export function HeroResources({ hero }: { hero: Hero }) {
       </section>
       <section id="hero-skins">
         <h3>皮肤图录 · {skins.length} 款已接入</h3>
-        <SkinObservation heroId={hero.id} />
+        <SkinStats key={hero.id} heroId={hero.id} />
         <p className="data-caption">
-          官方目录与文案。目录不保证覆盖全部历史皮肤；来源皮肤使用率见上方观察面板，独立玩家评价尚待核验。
+          上方按英雄展示来源使用率；下方为官方目录与介绍，两者覆盖范围可能不同。独立玩家评价尚待核验。
         </p>
         <div className="skin-grid compact">
           {skins.map((s) => (
@@ -131,9 +132,6 @@ export function HeroResources({ hero }: { hero: Hero }) {
                   {s.quality || '官方未标注品质'} · {s.releasedOn || '上架日期未知'}
                 </small>
                 <p>{s.description || '暂无官方介绍'}</p>
-                <span className="data-caption">
-                  使用率 — · 图录未关联统计，请查看上方使用率面板
-                </span>
               </div>
             </article>
           ))}
@@ -185,6 +183,7 @@ export default function ResourceCenter({ onOpen }: { onOpen: (hero: Hero) => voi
           ['equipment', '装备库', Shield],
           ['equipment-stats', '装备出场率 / 胜率', Shield],
           ['skins', '皮肤图录', Sparkles],
+          ['skin-stats', '皮肤使用率', Sparkles],
           ['updates', '版本动态', Radio],
         ].map(([key, label, Icon]) => {
           const I = Icon as typeof Shield;
@@ -206,6 +205,7 @@ export default function ResourceCenter({ onOpen }: { onOpen: (hero: Hero) => voi
         })}
       </div>
       {tab === 'equipment-stats' && <EquipmentStats onOpen={onOpen} />}
+      {tab === 'skin-stats' && <SkinStats />}
       {error && (
         <p role="alert" className="pro-notice">
           {error}
@@ -218,8 +218,8 @@ export default function ResourceCenter({ onOpen }: { onOpen: (hero: Hero) => voi
       {data && (
         <>
           <p className="data-caption">
-            最近成功获取：{new Date(data.fetchedAt).toLocaleString('zh-CN')} · 服务运行期间每 15
-            分钟检查（缓存期内沿用本次数据）。获取时间不等于游戏更新日期。
+            官方图录最近成功获取：{new Date(data.fetchedAt).toLocaleString('zh-CN')} ·
+            服务运行期间每 15 分钟检查（缓存期内沿用本次数据）。获取时间不等于游戏更新日期。
           </p>
           {tab === 'equipment' && (
             <>
@@ -258,7 +258,7 @@ export default function ResourceCenter({ onOpen }: { onOpen: (hero: Hero) => voi
                     {chosen.map((e) => (
                       <article key={e.id}>
                         <h3>
-                          {e.name} · {e.price} 金
+                          <EquipmentIdentity id={e.id} name={e.name} /> · {e.price} 金
                         </h3>
                         <p className="resource-description">{e.description}</p>
                         <button
@@ -280,15 +280,7 @@ export default function ResourceCenter({ onOpen }: { onOpen: (hero: Hero) => voi
                       <strong>{e.price} 金</strong>
                     </div>
                     <h2 className="equipment-name">
-                      <img
-                        loading="lazy"
-                        src={`https://game.gtimg.cn/images/yxzj/img201606/itemimg/${e.id}.jpg`}
-                        alt=""
-                        onError={(event) => {
-                          event.currentTarget.style.display = 'none';
-                        }}
-                      />
-                      {e.name}
+                      <EquipmentIdentity id={e.id} name={e.name} />
                     </h2>
                     <p className="resource-description">{e.description}</p>
                     <div className="equipment-actions">
@@ -351,8 +343,15 @@ export default function ResourceCenter({ onOpen }: { onOpen: (hero: Hero) => voi
                 </span>
               </div>
               <p className="pro-notice">
-                这里是官方目录已公开的皮肤，不保证等于游戏全量。文案为官方介绍；按英雄的来源使用率可进入图鉴的皮肤面板查看，时间趋势和独立评价仍待核验。
+                选择英雄即可在本页查看皮肤使用率。下方是官方目录与介绍；官方目录与统计来源的皮肤覆盖范围可能不同。
               </p>
+              {hero !== '全部' ? (
+                <SkinStats key={hero} heroId={Number(hero)} />
+              ) : (
+                <button className="btn secondary" onClick={() => setTab('skin-stats')}>
+                  查看按英雄统计的皮肤使用率 →
+                </button>
+              )}
               <div className="skin-grid">
                 {skins.slice(0, limit).map((s) => (
                   <article className="skin-card surface" key={s.id}>
@@ -374,7 +373,16 @@ export default function ResourceCenter({ onOpen }: { onOpen: (hero: Hero) => voi
                         {s.heroName} · 查看图鉴 ↗
                       </button>
                       <p>{s.description || '暂无官方介绍'}</p>
-                      <p className="data-caption">使用率 — · 图录未关联统计，请进入英雄图鉴查看</p>
+                      <button
+                        className="text-btn"
+                        onClick={() => {
+                          setHero(String(s.heroId));
+                          setQuery('');
+                          setLimit(48);
+                        }}
+                      >
+                        查看{s.heroName}皮肤使用率
+                      </button>
                     </div>
                   </article>
                 ))}

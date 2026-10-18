@@ -76,7 +76,7 @@ export function createPlayerApp(
     res.setHeader('Referrer-Policy', 'no-referrer');
     res.setHeader(
       'Content-Security-Policy',
-      "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://game.gtimg.cn https://game-1255653016.file.myqcloud.com; media-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'none'",
+      "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://game.gtimg.cn https://game-1255653016.file.myqcloud.com https://img.pvp.mcxssg.net; media-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'none'",
     );
     try {
       const host = req.headers.host ?? '';

@@ -59,6 +59,20 @@ export function createTianyuan(options: {
         const p = JSON.parse(await readFile(file, 'utf8')) as TianyuanPacket;
         if (p.url !== tianyuanUrl(q)) throw Error('缓存来源不匹配');
         p.data = parseTianyuan(p.data, q);
+        // Older parsed caches omitted image fields. Recover from the original
+        // response with a verified hash, retaining the original dates and provenance.
+        if (['skin', 'equip'].includes(q.kind) && /^[a-f0-9]{64}$/.test(p.rawSha256)) {
+          try {
+            const raw = await readFile(
+              join(options.directory, 'raw', p.rawSha256 + '.json'),
+              'utf8',
+            );
+            if (createHash('sha256').update(raw).digest('hex') === p.rawSha256)
+              p.data = parseTianyuan(JSON.parse(raw), q);
+          } catch {
+            /* A missing raw file does not invalidate existing statistics. */
+          }
+        }
         saved = p;
         memory.set(key, p);
       } catch {

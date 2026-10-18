@@ -33,6 +33,22 @@ export const tianyuanQuerySchema = z
 export type TianyuanQuery = z.infer<typeof tianyuanQuerySchema>;
 const rate = z.number().min(0).max(100),
   optionalRate = rate.nullable().optional();
+// Only image hosts observed in the public source are accepted. Invalid optional
+// images must not hide otherwise valid statistics.
+const sourceImage = z
+  .string()
+  .url()
+  .refine((value) => {
+    const url = new URL(value);
+    return (
+      url.protocol === 'https:' &&
+      !url.username &&
+      !url.password &&
+      ['img.pvp.mcxssg.net', 'game.gtimg.cn'].includes(url.hostname)
+    );
+  })
+  .optional()
+  .catch(undefined);
 export const tianyuanStatsSchema = z
   .array(
     z.object({
@@ -81,7 +97,9 @@ export const tianyuanTierSchema = z.object({
 export const tianyuanSkinSchema = z.object({
   heroId: z.number(),
   queryDate: date,
-  skinDistribution: z.array(z.object({ skinName: z.string(), pickRate: rate.nullable() })).max(100),
+  skinDistribution: z
+    .array(z.object({ skinName: z.string(), skinIcon: sourceImage, pickRate: rate.nullable() }))
+    .max(100),
 });
 export const tianyuanDurationSchema = z.object({
   heroId: z.number(),
@@ -118,6 +136,7 @@ export const tianyuanEquipSchema = z.object({
       z.object({
         equipmentId: z.number(),
         equipmentName: z.string(),
+        equipmentIcon: sourceImage,
         pickRate: rate.nullable(),
         winRate: rate.nullable(),
       }),

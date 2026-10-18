@@ -1720,6 +1720,74 @@
   gap: 12px;
   align-items: center;
 }
+.source-item-identity {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.source-item-image,
+.source-image-missing {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.source-image-missing {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  border: 1px solid var(--line);
+}
+.skin-statistics {
+  padding: 20px;
+  margin: 16px 0;
+}
+.skin-usage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 12px;
+}
+.skin-usage-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+}
+.skin-usage-card > div {
+  flex: 1;
+  min-width: 0;
+}
+.skin-usage-card .source-item-image,
+.skin-usage-card .source-image-missing {
+  width: 64px;
+  height: 64px;
+  flex-basis: 64px;
+}
+.skin-usage-rate {
+  display: block;
+  margin-top: 6px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.skin-usage-rate small {
+  font-weight: 400;
+}
+.skin-usage-track {
+  height: 4px;
+  margin-top: 8px;
+  background: var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.skin-usage-track span {
+  display: block;
+  height: 100%;
+  background: var(--gold);
+}
 .equipment-name img {
   width: 48px;
   height: 48px;

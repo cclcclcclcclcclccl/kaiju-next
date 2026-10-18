@@ -1,0 +1,72 @@
+[WebServer] (node:35916) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:16244) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\player\skin-equipment.spec.ts:49:1 › skin rates are directly accessible, sorted and cleared across unavailable dates or heroes (3.6s)
+  ok 2 tests\player\skin-equipment.spec.ts:82:1 › hero skin section shows source distribution and keeps top-level rates while tabs change (1.9s)
+  ok 3 tests\player\skin-equipment.spec.ts:106:1 › equipment statistics show source icons, retain rates when images fail and skin catalog links to rates (1.5s)
+  x  4 tests\player\tianyuan.spec.ts:8:1 › public four-segment board preserves forms, source tiers, hero metrics and unknown dates on mobile (3.2s)
+(node:40044) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 5 tests\player\tianyuan.spec.ts:103:1 › public query failure never shows another date or synthetic values (1.6s)
+
+
+  1) tests\player\tianyuan.spec.ts:8:1 › public four-segment board preserves forms, source tiers, hero metrics and unknown dates on mobile 
+
+    Error: 来源返回日期不匹配
+
+       at ..\..\src\player\pro\tianyuan.ts:179
+
+      177 |     };
+      178 |     if (q.heroId && value.heroId !== q.heroId) throw Error('来源英雄身份不匹配');
+    > 179 |     if (value.queryDate && value.queryDate !== q.date) throw Error('来源返回日期不匹配');
+          |                                                              ^
+      180 |     if (
+      181 |       value.tiers &&
+      182 |       (value.tiers.some((r) => r.date !== q.date) ||
+        at parseTianyuan (D:\学习相关\传智杯\AI创新应用挑战赛\src\player\pro\tianyuan.ts:179:62)
+        at D:\学习相关\传智杯\AI创新应用挑战赛\tests\player\tianyuan.spec.ts:40:15
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('.tianyuan-hero')
+    Expected substring: "真言先知"
+    Received string:    "分段表现 · 海月 · 天元公开统计英雄统计分段大众分段巅峰1350+顶端排位巅峰千强英雄统计日期英雄梯度日期T0天元综合梯度98.17天元来源分数中路来源定位50.31%胜率6.51%出场率86.16%禁用率综合梯度日期 2026-10-13，由天元发布，不随三率分段变化；原站算法测试中。三率查询日 2026-10-13。数据来源、时间与原始凭据天元之弈数据站 · 原始公开接口 ↗ · 独立第三方，非腾讯官方后台。查询日期：2026-10-13；来源更新时间：该接口未返回；实际获取：2026/10/14 13:00:00（北京时间）。来源声明来自公开对局；尚未独立审计原始对局抽样与清洗。SHA-256：049ec390544b2c61da7834a5f8ab28393769ab723a573a07cc1e37da5869590a导出当前数据与来源巅峰千强 · 数据来源、时间与原始凭据天元之弈数据站 · 原始公开接口 ↗ · 独立第三方，非腾讯官方后台。查询日期：2026-10-13；来源更新时间：该接口未返回；实际获取：2026/10/14 13:00:00（北京时间）。来源声明来自公开对局；尚未独立审计原始对局抽样与清洗。SHA-256：4b160dc305b86281cbe081efc145c1904ebd0c40911ee674407095b32c380fe8导出当前数据与来源日期选择 2026-10-13 · 巅峰千强。皮肤、装备、分路与关系接口为独立统计口径，不继承榜单分段；无日期的接口不冒充该日数据。形态榜记录保留，其他页签按基础英雄查询。总体表现分路与召唤师技能皮肤使用率对局时长胜率实际出装统计克制与组合正在读取来源数据……"
+
+    Call log:
+      - Expect "toContainText" locator('.tianyuan-hero') with timeout 5000ms
+      - waiting for locator('.tianyuan-hero')
+        5 × locator resolved to <section id="hero-stats" class="tianyuan-hero">…</section>
+          - unexpected value "分段表现 · 海月 · 天元公开统计英雄统计分段大众分段巅峰1350+顶端排位巅峰千强英雄统计日期英雄梯度日期T0天元综合梯度98.17天元来源分数中路来源定位50.31%胜率6.51%出场率86.16%禁用率综合梯度日期 2026-10-13，由天元发布，不随三率分段变化；原站算法测试中。三率查询日 2026-10-13。数据来源、时间与原始凭据天元之弈数据站 · 原始公开接口 ↗ · 独立第三方，非腾讯官方后台。查询日期：2026-10-13；来源更新时间：该接口未返回；实际获取：2026/10/14 13:00:00（北京时间）。来源声明来自公开对局；尚未独立审计原始对局抽样与清洗。SHA-256：049ec390544b2c61da7834a5f8ab28393769ab723a573a07cc1e37da5869590a导出当前数据与来源巅峰千强 · 数据来源、时间与原始凭据天元之弈数据站 · 原始公开接口 ↗ · 独立第三方，非腾讯官方后台。查询日期：2026-10-13；来源更新时间：该接口未返回；实际获取：2026/10/14 13:00:00（北京时间）。来源声明来自公开对局；尚未独立审计原始对局抽样与清洗。SHA-256：4b160dc305b86281cbe081efc145c1904ebd0c40911ee674407095b32c380fe8导出当前数据与来源日期选择 2026-10-13 · 巅峰千强。皮肤、装备、分路与关系接口为独立统计口径，不继承榜单分段；无日期的接口不冒充该日数据。形态榜记录保留，其他页签按基础英雄查询。总体表现分路与召唤师技能皮肤使用率对局时长胜率实际出装统计克制与组合正在读取来源数据……"
+      - Test ended.
+
+
+      74 |   await expect(detail).toContainText('天元公开统计');
+      75 |   await detail.getByRole('button', { name: '皮肤使用率', exact: true }).click();
+    > 76 |   await expect(detail).toContainText('真言先知');
+         |                        ^
+      77 |   await expect(detail).toContainText('42.32%');
+      78 |   await detail.getByRole('button', { name: '对局时长胜率', exact: true }).click();
+      79 |   await expect(detail).toContainText('0-12分钟');
+        at D:\学习相关\传智杯\AI创新应用挑战赛\tests\player\tianyuan.spec.ts:76:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\tianyuan-public-four-segme-834b2-and-unknown-dates-on-mobile\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\tianyuan-public-four-segme-834b2-and-unknown-dates-on-mobile\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\tianyuan-public-four-segme-834b2-and-unknown-dates-on-mobile\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\tianyuan-public-four-segme-834b2-and-unknown-dates-on-mobile\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests\player\tianyuan.spec.ts:8:1 › public four-segment board preserves forms, source tiers, hero metrics and unknown dates on mobile 
+  4 passed (18.9s)

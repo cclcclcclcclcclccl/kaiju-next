@@ -1,0 +1,332 @@
+{
+  "checkedAt": "2026-10-15T04:49:07.159Z",
+  "skinImages": [
+    {
+      "src": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/0e08c3b48bd9253d23d278c09ecf9ba0.jpg",
+      "loaded": true,
+      "width": 600
+    },
+    {
+      "src": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/86c17e0d9e84a00cdfc63f2660d95d6c.jpg",
+      "loaded": true,
+      "width": 600
+    },
+    {
+      "src": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/d988a3229031ad789a89bfb61bfd8fa6.jpg",
+      "loaded": true,
+      "width": 600
+    }
+  ],
+  "equipImages": [
+    {
+      "src": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png",
+      "loaded": true,
+      "width": 80
+    },
+    {
+      "src": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png",
+      "loaded": true,
+      "width": 80
+    },
+    {
+      "src": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png",
+      "loaded": true,
+      "width": 80
+    }
+  ],
+  "errors": [],
+  "playerTablesPreserved": [
+    "accounts",
+    "friendships",
+    "matches",
+    "plans",
+    "pool_history",
+    "sessions",
+    "settings"
+  ],
+  "integrity": {
+    "integrity_check": "ok"
+  },
+  "packets": [
+    {
+      "source": "天元之弈数据站",
+      "sourceClass": "third-party-public",
+      "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-14&heroId=544",
+      "query": {
+        "kind": "skin",
+        "date": "2026-10-14",
+        "heroId": 544
+      },
+      "requestedDate": "2026-10-14",
+      "fetchedAt": "2026-10-15T04:45:59.852Z",
+      "rawSha256": "65a1f0d4c6de9b65e04a94750f9ce18c89f375631e99bb1622ef18f80c6d9773",
+      "cache": "cached",
+      "data": {
+        "heroId": 544,
+        "queryDate": "2026-10-14",
+        "skinDistribution": [
+          {
+            "skinName": "逢春序",
+            "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/8d4ec11c0f284d8dc216e4de45fe5ada.jpg",
+            "pickRate": 34.35
+          },
+          {
+            "skinName": "器灵·浮梦炉",
+            "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a22dadc977e3816a0ae7c250d5929ea8.jpg",
+            "pickRate": 32.13
+          },
+          {
+            "skinName": "太极少年",
+            "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/b3c4ee769c393c9f06a04d5583f462bd.jpg",
+            "pickRate": 19.47
+          },
+          {
+            "skinName": "鹤归松栖",
+            "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/55b5a9b4f3cf05f653ffeda981268e0a.jpg",
+            "pickRate": 13.49
+          },
+          {
+            "skinName": "原皮",
+            "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/f1051fcec68cf0946b5315f6cda3dfa8.png",
+            "pickRate": 0.56
+          }
+        ]
+      }
+    },
+    {
+      "source": "天元之弈数据站",
+      "sourceClass": "third-party-public",
+      "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-14&heroId=521",
+      "query": {
+        "kind": "skin",
+        "date": "2026-10-14",
+        "heroId": 521
+      },
+      "requestedDate": "2026-10-14",
+      "fetchedAt": "2026-10-15T04:46:00.460Z",
+      "rawSha256": "b4923c61b3731b441694bc4de68d137d9a4b78a85305d532756c785adb5b0ca9",
+      "cache": "cached",
+      "data": {
+        "heroId": 521,
+        "queryDate": "2026-10-14",
+        "skinDistribution": [
+          {
+            "skinName": "真言先知",
+            "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/0e08c3b48bd9253d23d278c09ecf9ba0.jpg",
+            "pickRate": 39.78
+          },
+          {
+            "skinName": "海之女神",
+            "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/86c17e0d9e84a00cdfc63f2660d95d6c.jpg",
+            "pickRate": 17.53
+          },
+          {
+            "skinName": "幻泉雾影",
+            "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/d988a3229031ad789a89bfb61bfd8fa6.jpg",
+            "pickRate": 14.61
+          },
+          {
+            "skinName": "金乌负日",
+            "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/c03b98bcc4a9f9da5f5de6df303c74d1.jpg",
+            "pickRate": 13.03
+          },
+          {
+            "skinName": "王牌新星",
+            "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a4127dcaffb58ebf16b97c9ea4ab1e0f.jpg",
+            "pickRate": 9.33
+          },
+          {
+            "skinName": "浮梦罗烟",
+            "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/5a7036253fdd9eedce31a998c2c3458d.jpg",
+            "pickRate": 5.06
+          },
+          {
+            "skinName": "原皮",
+            "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/6b9fe870275a03952b9ce9d126dec834.png",
+            "pickRate": 0.67
+          }
+        ]
+      }
+    },
+    {
+      "source": "天元之弈数据站",
+      "sourceClass": "third-party-public",
+      "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-14&heroId=544",
+      "query": {
+        "kind": "equip",
+        "date": "2026-10-14",
+        "heroId": 544
+      },
+      "requestedDate": "2026-10-14",
+      "fetchedAt": "2026-10-15T04:46:01.490Z",
+      "rawSha256": "24230eb94ef425d2517d5b1528bcca95c0554d0f6c528486075365bed227adfb",
+      "cache": "cached",
+      "data": {
+        "heroId": 544,
+        "queryEndDate": "2026-10-14T16:59:59.999Z",
+        "equipmentWinRates": [
+          {
+            "equipmentId": 1341,
+            "equipmentName": "冰霜冲击",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png",
+            "pickRate": 79.49,
+            "winRate": 50.35
+          },
+          {
+            "equipmentId": 1724,
+            "equipmentName": "近卫·救赎",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1751.png",
+            "pickRate": 72.84,
+            "winRate": 45.92
+          },
+          {
+            "equipmentId": 1421,
+            "equipmentName": "影忍之足",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png",
+            "pickRate": 49.84,
+            "winRate": 47.74
+          },
+          {
+            "equipmentId": 1335,
+            "equipmentName": "魔女斗篷",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png",
+            "pickRate": 35.23,
+            "winRate": 56.74
+          },
+          {
+            "equipmentId": 1422,
+            "equipmentName": "抵抗之靴",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+            "pickRate": 33.85,
+            "winRate": 45.85
+          },
+          {
+            "equipmentId": 1426,
+            "equipmentName": "疾步之靴",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1426.png",
+            "pickRate": 12.79,
+            "winRate": 47.68
+          },
+          {
+            "equipmentId": 1534,
+            "equipmentName": "怒龙剑盾",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1534.png",
+            "pickRate": 12.51,
+            "winRate": 59.49
+          },
+          {
+            "equipmentId": 1333,
+            "equipmentName": "不祥征兆",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1333.png",
+            "pickRate": 11.52,
+            "winRate": 56.7
+          },
+          {
+            "equipmentId": 1137,
+            "equipmentName": "暗影战斧",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png",
+            "pickRate": 10.17,
+            "winRate": 49.42
+          },
+          {
+            "equipmentId": 1754,
+            "equipmentName": "近卫·形昭",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1754.png",
+            "pickRate": 9.38,
+            "winRate": 44.3
+          }
+        ]
+      }
+    },
+    {
+      "source": "天元之弈数据站",
+      "sourceClass": "third-party-public",
+      "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-14&heroId=521",
+      "query": {
+        "kind": "equip",
+        "date": "2026-10-14",
+        "heroId": 521
+      },
+      "requestedDate": "2026-10-14",
+      "fetchedAt": "2026-10-15T04:46:02.529Z",
+      "rawSha256": "ad5b597866269201becfaae72fd5343e53794b12b75b8461a1a920a331fcb54c",
+      "cache": "cached",
+      "data": {
+        "heroId": 521,
+        "queryEndDate": "2026-10-14T16:59:59.999Z",
+        "equipmentWinRates": [
+          {
+            "equipmentId": 1727,
+            "equipmentName": "日暮之流",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png",
+            "pickRate": 92.17,
+            "winRate": 52.94
+          },
+          {
+            "equipmentId": 12211,
+            "equipmentName": "梦魇之牙",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png",
+            "pickRate": 77.75,
+            "winRate": 50.7
+          },
+          {
+            "equipmentId": 1240,
+            "equipmentName": "噬神之书",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png",
+            "pickRate": 60.84,
+            "winRate": 61.76
+          },
+          {
+            "equipmentId": 1423,
+            "equipmentName": "冷静之靴",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1423.png",
+            "pickRate": 46.55,
+            "winRate": 40.47
+          },
+          {
+            "equipmentId": 1422,
+            "equipmentName": "抵抗之靴",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+            "pickRate": 37.29,
+            "winRate": 59.46
+          },
+          {
+            "equipmentId": 1232,
+            "equipmentName": "博学者之怒",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png",
+            "pickRate": 23.37,
+            "winRate": 61.69
+          },
+          {
+            "equipmentId": 1235,
+            "equipmentName": "痛苦面具",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1235.png",
+            "pickRate": 10.98,
+            "winRate": 57.82
+          },
+          {
+            "equipmentId": 1231,
+            "equipmentName": "虚无法杖",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png",
+            "pickRate": 9.24,
+            "winRate": 60.56
+          },
+          {
+            "equipmentId": 1424,
+            "equipmentName": "秘法之靴",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1424.png",
+            "pickRate": 8.53,
+            "winRate": 59.15
+          },
+          {
+            "equipmentId": 1227,
+            "equipmentName": "炽热支配",
+            "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1227.png",
+            "pickRate": 5.05,
+            "winRate": 61.34
+          }
+        ]
+      }
+    }
+  ]
+}

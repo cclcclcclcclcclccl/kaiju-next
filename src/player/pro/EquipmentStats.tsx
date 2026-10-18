@@ -4,6 +4,7 @@ import { heroes, heroById } from '../catalog.ts';
 import type { Hero } from '../model.ts';
 import { sourceDate, tianyuanEquipSchema } from './tianyuan.ts';
 import { useSource, Provenance } from './TianyuanLive.tsx';
+import { EquipmentIdentity } from './SourceMedia.tsx';
 
 export default function EquipmentStats({ onOpen }: { onOpen: (hero: Hero) => void }) {
   const [heroId, setHeroId] = useState(544);
@@ -125,7 +126,13 @@ export default function EquipmentStats({ onOpen }: { onOpen: (hero: Hero) => voi
               <tbody>
                 {rows.map((r) => (
                   <tr key={r.equipmentId}>
-                    <td>{r.equipmentName}</td>
+                    <td>
+                      <EquipmentIdentity
+                        id={r.equipmentId}
+                        name={r.equipmentName}
+                        icon={r.equipmentIcon}
+                      />
+                    </td>
                     <td>{percent(r.pickRate)}</td>
                     <td>{percent(r.winRate)}</td>
                   </tr>

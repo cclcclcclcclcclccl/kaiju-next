@@ -8,6 +8,7 @@ import type { TianyuanQuery } from '../../src/player/pro/tianyuan.ts';
 test('public four-segment board preserves forms, source tiers, hero metrics and unknown dates on mobile', async ({
   page,
 }) => {
+  await page.clock.setFixedTime(new Date('2026-10-14T12:00:00Z'));
   await page.route('**/api/tianyuan?*', async (route) => {
     const p = new URL(route.request().url()).searchParams;
     const q = {
@@ -16,6 +17,10 @@ test('public four-segment board preserves forms, source tiers, hero metrics and 
       mode: p.has('mode') ? Number(p.get('mode')) : undefined,
       heroId: p.has('heroId') ? Number(p.get('heroId')) : undefined,
     } as TianyuanQuery;
+    if (q.heroId && q.heroId !== 521) {
+      await route.fulfill({ status: 502, json: { error: '该测试仅有海月的详细统计夹具' } });
+      return;
+    }
     if (q.kind === 'tier' && q.date !== '2026-10-13') {
       await route.fulfill({ status: 502, json: { error: '该测试夹具仅包含2026-10-13' } });
       return;

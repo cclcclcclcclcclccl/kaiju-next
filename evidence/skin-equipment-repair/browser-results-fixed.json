@@ -1,0 +1,355 @@
+{
+  "config": {
+    "argv": [
+      "D:\\node.js\\node.exe",
+      "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/player/skin-equipment.spec.ts",
+      "tests/player/tianyuan.spec.ts",
+      "--reporter=list,json"
+    ],
+    "configFile": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\playwright.config.ts",
+    "rootDir": "D:/学习相关/传智杯/AI创新应用挑战赛/tests/player",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/学习相关/传智杯/AI创新应用挑战赛/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/学习相关/传智杯/AI创新应用挑战赛/tests/player",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\tests\\player",
+        "snapshotDir": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\tests\\player",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4319",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "channel": "msedge",
+          "headless": true,
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": {
+      "command": "node server/index.ts",
+      "url": "http://127.0.0.1:4319/api/status",
+      "env": {
+        "PORT": "4319",
+        "RANK_AUTO_REFRESH": "0",
+        "PLAYER_DATA_DIR": "data/player-e2e",
+        "MODEL_API_KEY": "",
+        "MODEL_NAME": "",
+        "MODEL_BASE_URL": ""
+      },
+      "reuseExistingServer": false,
+      "timeout": 20000
+    }
+  },
+  "suites": [
+    {
+      "title": "skin-equipment.spec.ts",
+      "file": "skin-equipment.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "skin rates are directly accessible, sorted and cleared across unavailable dates or heroes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3639,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:44:36.714Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9022b1d7748d67f26a94-b4f0d99dac4390177fc1",
+          "file": "skin-equipment.spec.ts",
+          "line": 49,
+          "column": 1
+        },
+        {
+          "title": "hero skin section shows source distribution and keeps top-level rates while tabs change",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1942,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:44:40.863Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9022b1d7748d67f26a94-c247764d28469b720b4b",
+          "file": "skin-equipment.spec.ts",
+          "line": 82,
+          "column": 1
+        },
+        {
+          "title": "equipment statistics show source icons, retain rates when images fail and skin catalog links to rates",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1530,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:44:42.821Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9022b1d7748d67f26a94-ec909574ee11474ef10c",
+          "file": "skin-equipment.spec.ts",
+          "line": 106,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "tianyuan.spec.ts",
+      "file": "tianyuan.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "public four-segment board preserves forms, source tiers, hero metrics and unknown dates on mobile",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3207,
+                  "error": {
+                    "message": "Error: 来源返回日期不匹配",
+                    "stack": "Error: 来源返回日期不匹配\n    at parseTianyuan (D:\\学习相关\\传智杯\\AI创新应用挑战赛\\src\\player\\pro\\tianyuan.ts:179:62)\n    at D:\\学习相关\\传智杯\\AI创新应用挑战赛\\tests\\player\\tianyuan.spec.ts:40:15",
+                    "location": {
+                      "file": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\src\\player\\pro\\tianyuan.ts",
+                      "column": 62,
+                      "line": 179
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\..\\src\\player\\pro\\tianyuan.ts:179\n\n  177 |     };\n  178 |     if (q.heroId && value.heroId !== q.heroId) throw Error('来源英雄身份不匹配');\n> 179 |     if (value.queryDate && value.queryDate !== q.date) throw Error('来源返回日期不匹配');\n      |                                                              ^\n  180 |     if (\n  181 |       value.tiers &&\n  182 |       (value.tiers.some((r) => r.date !== q.date) ||"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\src\\player\\pro\\tianyuan.ts",
+                        "column": 62,
+                        "line": 179
+                      },
+                      "message": "Error: 来源返回日期不匹配\n\n   at ..\\..\\src\\player\\pro\\tianyuan.ts:179\n\n  177 |     };\n  178 |     if (q.heroId && value.heroId !== q.heroId) throw Error('来源英雄身份不匹配');\n> 179 |     if (value.queryDate && value.queryDate !== q.date) throw Error('来源返回日期不匹配');\n      |                                                              ^\n  180 |     if (\n  181 |       value.tiers &&\n  182 |       (value.tiers.some((r) => r.date !== q.date) ||\n    at parseTianyuan (D:\\学习相关\\传智杯\\AI创新应用挑战赛\\src\\player\\pro\\tianyuan.ts:179:62)\n    at D:\\学习相关\\传智杯\\AI创新应用挑战赛\\tests\\player\\tianyuan.spec.ts:40:15"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\tests\\player\\tianyuan.spec.ts",
+                        "column": 24,
+                        "line": 76
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.tianyuan-hero')\nExpected substring: \u001b[32m\"真言先知\"\u001b[39m\nReceived string:    \u001b[31m\"分段表现 · 海月 · 天元公开统计英雄统计分段大众分段巅峰1350+顶端排位巅峰千强英雄统计日期英雄梯度日期T0天元综合梯度98.17天元来源分数中路来源定位50.31%胜率6.51%出场率86.16%禁用率综合梯度日期 2026-10-13，由天元发布，不随三率分段变化；原站算法测试中。三率查询日 2026-10-13。数据来源、时间与原始凭据天元之弈数据站 · 原始公开接口 ↗ · 独立第三方，非腾讯官方后台。查询日期：2026-10-13；来源更新时间：该接口未返回；实际获取：2026/10/14 13:00:00（北京时间）。来源声明来自公开对局；尚未独立审计原始对局抽样与清洗。SHA-256：049ec390544b2c61da7834a5f8ab28393769ab723a573a07cc1e37da5869590a导出当前数据与来源巅峰千强 · 数据来源、时间与原始凭据天元之弈数据站 · 原始公开接口 ↗ · 独立第三方，非腾讯官方后台。查询日期：2026-10-13；来源更新时间：该接口未返回；实际获取：2026/10/14 13:00:00（北京时间）。来源声明来自公开对局；尚未独立审计原始对局抽样与清洗。SHA-256：4b160dc305b86281cbe081efc145c1904ebd0c40911ee674407095b32c380fe8导出当前数据与来源日期选择 2026-10-13 · 巅峰千强。皮肤、装备、分路与关系接口为独立统计口径，不继承榜单分段；无日期的接口不冒充该日数据。形态榜记录保留，其他页签按基础英雄查询。总体表现分路与召唤师技能皮肤使用率对局时长胜率实际出装统计克制与组合正在读取来源数据……\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.tianyuan-hero') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.tianyuan-hero')\u001b[22m\n\u001b[2m    5 × locator resolved to <section id=\"hero-stats\" class=\"tianyuan-hero\">…</section>\u001b[22m\n\u001b[2m      - unexpected value \"分段表现 · 海月 · 天元公开统计英雄统计分段大众分段巅峰1350+顶端排位巅峰千强英雄统计日期英雄梯度日期T0天元综合梯度98.17天元来源分数中路来源定位50.31%胜率6.51%出场率86.16%禁用率综合梯度日期 2026-10-13，由天元发布，不随三率分段变化；原站算法测试中。三率查询日 2026-10-13。数据来源、时间与原始凭据天元之弈数据站 · 原始公开接口 ↗ · 独立第三方，非腾讯官方后台。查询日期：2026-10-13；来源更新时间：该接口未返回；实际获取：2026/10/14 13:00:00（北京时间）。来源声明来自公开对局；尚未独立审计原始对局抽样与清洗。SHA-256：049ec390544b2c61da7834a5f8ab28393769ab723a573a07cc1e37da5869590a导出当前数据与来源巅峰千强 · 数据来源、时间与原始凭据天元之弈数据站 · 原始公开接口 ↗ · 独立第三方，非腾讯官方后台。查询日期：2026-10-13；来源更新时间：该接口未返回；实际获取：2026/10/14 13:00:00（北京时间）。来源声明来自公开对局；尚未独立审计原始对局抽样与清洗。SHA-256：4b160dc305b86281cbe081efc145c1904ebd0c40911ee674407095b32c380fe8导出当前数据与来源日期选择 2026-10-13 · 巅峰千强。皮肤、装备、分路与关系接口为独立统计口径，不继承榜单分段；无日期的接口不冒充该日数据。形态榜记录保留，其他页签按基础英雄查询。总体表现分路与召唤师技能皮肤使用率对局时长胜率实际出装统计克制与组合正在读取来源数据……\"\u001b[22m\n\u001b[2m  - Test ended.\u001b[22m\n\n\n  74 |   await expect(detail).toContainText('天元公开统计');\n  75 |   await detail.getByRole('button', { name: '皮肤使用率', exact: true }).click();\n> 76 |   await expect(detail).toContainText('真言先知');\n     |                        ^\n  77 |   await expect(detail).toContainText('42.32%');\n  78 |   await detail.getByRole('button', { name: '对局时长胜率', exact: true }).click();\n  79 |   await expect(detail).toContainText('0-12分钟');\n    at D:\\学习相关\\传智杯\\AI创新应用挑战赛\\tests\\player\\tianyuan.spec.ts:76:24"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:44:44.391Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\test-results\\tianyuan-public-four-segme-834b2-and-unknown-dates-on-mobile\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\test-results\\tianyuan-public-four-segme-834b2-and-unknown-dates-on-mobile\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\test-results\\tianyuan-public-four-segme-834b2-and-unknown-dates-on-mobile\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\src\\player\\pro\\tianyuan.ts",
+                    "column": 62,
+                    "line": 179
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8426c0a9c3c1baf251e2-5eac12faabec7c9cfe36",
+          "file": "tianyuan.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "public query failure never shows another date or synthetic values",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1588,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:44:49.773Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8426c0a9c3c1baf251e2-52ce7f831646126e26f1",
+          "file": "tianyuan.spec.ts",
+          "line": 103,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-15T04:44:34.396Z",
+    "duration": 18871.672,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

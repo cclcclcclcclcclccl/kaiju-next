@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { mkdtemp, readFile, readdir, rm } from 'node:fs/promises';
+import { mkdtemp, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
@@ -11,6 +11,8 @@ import {
   tianyuanStatsSchema,
   tianyuanQuerySchema,
   sourceDate,
+  tianyuanSkinSchema,
+  tianyuanEquipSchema,
 } from '../../src/player/pro/tianyuan.ts';
 import { createTianyuan, scheduleTianyuan } from '../pro/tianyuan.ts';
 const fixture = (name: string) =>
@@ -22,6 +24,69 @@ const options = (directory: string) => ({
   heroIds: heroes.map((h) => h.id),
   delayMs: 0,
   now: () => Date.parse('2026-10-14T05:00:00Z'),
+});
+
+test('real source image addresses survive parsing; unsafe optional images do not erase rates', () => {
+  const skin = fixture('skin-521');
+  assert.equal(
+    tianyuanSkinSchema.parse(skin).skinDistribution[0].skinIcon,
+    skin.skinDistribution[0].skinIcon,
+  );
+  const equip = fixture('equip-521');
+  assert.equal(
+    tianyuanEquipSchema.parse(equip).equipmentWinRates[0].equipmentIcon,
+    equip.equipmentWinRates[0].equipmentIcon,
+  );
+  for (const url of [
+    'javascript:alert(1)',
+    'https://evil.test/image.png',
+    'https://user:pass@img.pvp.mcxssg.net/x.png',
+  ]) {
+    const parsed = tianyuanSkinSchema.parse({
+      ...skin,
+      skinDistribution: [{ ...skin.skinDistribution[0], skinIcon: url }],
+    });
+    assert.equal(parsed.skinDistribution[0].skinIcon, undefined);
+    assert.equal(parsed.skinDistribution[0].pickRate, skin.skinDistribution[0].pickRate);
+  }
+});
+
+test('old caches recover omitted icons from hash-verified raw responses without changing dates', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'kaiju-ty-icons-'));
+  try {
+    const query = { kind: 'skin' as const, date, heroId: 521 };
+    const source = createTianyuan({
+      ...options(dir),
+      fetcher: (async () => new Response(JSON.stringify(fixture('skin-521')))) as typeof fetch,
+    });
+    const saved = await source.get(query);
+    const old = structuredClone(saved);
+    for (const row of (old.data as { skinDistribution: { skinIcon?: string }[] }).skinDistribution)
+      delete row.skinIcon;
+    await writeFile(join(dir, 'cache', 'skin-2026-10-13-0-521.json'), JSON.stringify(old));
+    const restart = () =>
+      createTianyuan({
+        ...options(dir),
+        fetcher: (async () => {
+          throw Error('must use existing cache');
+        }) as typeof fetch,
+      });
+    const recovered = await restart().get(query);
+    assert.equal(
+      tianyuanSkinSchema.parse(recovered.data).skinDistribution[0].skinIcon,
+      fixture('skin-521').skinDistribution[0].skinIcon,
+    );
+    assert.equal(recovered.fetchedAt, saved.fetchedAt);
+    assert.equal(recovered.rawSha256, saved.rawSha256);
+    await writeFile(
+      join(dir, 'raw', saved.rawSha256 + '.json'),
+      JSON.stringify({ ...fixture('skin-521'), skinDistribution: [] }),
+    );
+    const unchanged = await restart().get(query);
+    assert.deepEqual(unchanged.data, old.data);
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
 });
 
 test('actual four-segment responses cover 133 base heroes and preserve Li Xin forms and missing values', () => {

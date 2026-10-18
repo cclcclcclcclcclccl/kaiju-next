@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { readFileSync, mkdirSync } from 'node:fs';
 import { emptyProfile } from '../../src/player/pro/model.ts';
-const folder = 'evidence/data-upgrade';
+const folder = process.env.PLAYER_TEST_EVIDENCE_DIR ?? 'evidence/data-upgrade';
 test('actual local screenshot OCR needs confirmation, persists records and feeds the pool', async ({
   page,
   request,
@@ -14,7 +14,9 @@ test('actual local screenshot OCR needs confirmation, persists records and feeds
   await page.goto('/');
   await page.locator('nav').getByRole('button', { name: '玩家档案', exact: true }).click();
   await expect(page.locator('.manual-profile')).not.toHaveAttribute('open');
-  await page.getByLabel('上传英雄数据截图').setInputFiles(folder + '/ocr-synthetic-fixture.png');
+  await page
+    .getByLabel('上传英雄数据截图')
+    .setInputFiles('evidence/data-upgrade/ocr-synthetic-fixture.png');
   await page.getByRole('button', { name: '识别这张截图', exact: true }).click();
   await expect(page.getByLabel('识别值累计场次', { exact: true })).toHaveValue('230', {
     timeout: 50000,
@@ -55,8 +57,8 @@ test('official resource cache supports equipment comparison, skin hero links and
   await page.getByRole('button', { name: '皮肤图录', exact: true }).click();
   await page.getByLabel('搜索皮肤').fill('烈焰狂欢');
   await expect(page.locator('.skin-card')).toHaveCount(1);
-  await expect(page.locator('.skin-card')).toContainText('使用率 —');
-  await page.locator('.skin-card').getByRole('button').click();
+  await expect(page.locator('.skin-card')).toContainText('查看卢雅那皮肤使用率');
+  await page.locator('.skin-card').getByRole('button', { name: '卢雅那 · 查看图鉴 ↗' }).click();
   await page.getByRole('dialog').getByRole('button', { name: '皮肤', exact: true }).click();
   await expect(page.locator('#hero-skins')).toContainText('烈焰狂欢');
   await page.keyboard.press('Escape');

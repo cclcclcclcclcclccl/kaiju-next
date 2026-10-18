@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import type { ReactNode } from 'react';
+import { EquipmentIdentity, SkinDistribution } from './SourceMedia.tsx';
 import type { z } from 'zod';
 import { api, download } from '../../api.ts';
 import { heroById } from '../catalog.ts';
@@ -104,20 +106,23 @@ export function TianyuanHero({
   const [kind, setKind] = useState<
     'stats' | 'skin' | 'duration' | 'analysis' | 'equip' | 'combined'
   >('stats');
-  const data = useSource<unknown>({
-    kind,
-    ...(['duration', 'analysis'].includes(kind) ? {} : { date }),
-    ...(kind === 'stats' ? { mode } : { heroId: hero.id }),
-  });
+  const stats = useSource<TianyuanStat[]>({ kind: 'stats', date, mode });
+  const extra = useSource<unknown>(
+    kind === 'stats'
+      ? undefined
+      : {
+          kind,
+          ...(['duration', 'analysis'].includes(kind) ? {} : { date }),
+          heroId: hero.id,
+        },
+  );
+  const data = kind === 'stats' ? stats : extra;
   const packet = data.packet;
   const tiers = useSource<z.infer<typeof tianyuanTierSchema>>({ kind: 'tier', date: tierDate });
   const tier = sourceBoard(tiers.packet?.data.tiers ?? [], []).find(
     (r) => r.tier.heroId === hero.id,
   );
-  const row =
-    kind === 'stats'
-      ? (packet?.data as TianyuanStat[] | undefined)?.find((r) => r.heroId === recordId)
-      : undefined;
+  const row = stats.packet?.data.find((r) => r.heroId === recordId);
   return (
     <section className="tianyuan-hero" id="hero-stats">
       <h3>分段表现 · {hero.name} · 天元公开统计</h3>
@@ -200,6 +205,15 @@ export function TianyuanHero({
         </p>
       )}
       {tiers.packet && <Provenance packet={tiers.packet} />}
+      {kind !== 'stats' && stats.error && (
+        <p role="alert">
+          英雄三率暂不可用：{stats.error}
+          <button className="text-btn" onClick={stats.reload}>
+            重试三率
+          </button>
+        </p>
+      )}
+      {kind !== 'stats' && stats.packet && <Provenance packet={stats.packet} />}
       <p className="data-caption">
         日期选择 {date} · {Object.entries(TIANYUAN_MODES).find(([, n]) => n === mode)?.[0]}
         。皮肤、装备、分路与关系接口为独立统计口径，不继承榜单分段；无日期的接口不冒充该日数据。形态榜记录保留，其他页签按基础英雄查询。
@@ -215,7 +229,12 @@ export function TianyuanHero({
             ['analysis', '克制与组合'],
           ] as const
         ).map(([k, label]) => (
-          <button key={k} className={kind === k ? 'active' : ''} onClick={() => setKind(k)}>
+          <button
+            key={k}
+            aria-pressed={kind === k}
+            className={kind === k ? 'active' : ''}
+            onClick={() => setKind(k)}
+          >
             {label}
           </button>
         ))}
@@ -257,12 +276,9 @@ export function TianyuanHero({
               <p>此来源批次未包含该英雄，保持未知。</p>
             ))}
           {kind === 'skin' && (
-            <SimpleTable
-              headers={['皮肤', '来源使用率']}
-              rows={tianyuanSkinSchema
-                .parse(packet.data)
-                .skinDistribution.map((s) => [s.skinName, percentage(s.pickRate)])}
-              caption={`英雄皮肤分布 · 来源查询日 ${date} · 分母和场次数未公布`}
+            <SkinDistribution
+              rows={tianyuanSkinSchema.parse(packet.data).skinDistribution}
+              date={date}
             />
           )}
           {kind === 'duration' && (
@@ -294,7 +310,11 @@ export function TianyuanHero({
                 rows={tianyuanEquipSchema
                   .parse(packet.data)
                   .equipmentWinRates.map((s) => [
-                    s.equipmentName,
+                    <EquipmentIdentity
+                      id={s.equipmentId}
+                      name={s.equipmentName}
+                      icon={s.equipmentIcon}
+                    />,
                     percentage(s.pickRate),
                     percentage(s.winRate),
                   ])}
@@ -375,7 +395,7 @@ function SimpleTable({
   caption,
 }: {
   headers: string[];
-  rows: string[][];
+  rows: ReactNode[][];
   caption: string;
 }) {
   return (

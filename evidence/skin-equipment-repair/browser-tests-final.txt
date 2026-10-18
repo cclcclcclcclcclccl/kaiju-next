@@ -1,0 +1,15 @@
+[WebServer] (node:9276) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:21736) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\player\data-upgrade.spec.ts:42:1 › official resource cache supports equipment comparison, skin hero links and separated update environments (2.4s)
+  ok 2 tests\player\skin-equipment.spec.ts:49:1 › skin rates are directly accessible, sorted and cleared across unavailable dates or heroes (3.2s)
+  ok 3 tests\player\skin-equipment.spec.ts:82:1 › hero skin section shows source distribution and keeps top-level rates while tabs change (2.0s)
+  ok 4 tests\player\skin-equipment.spec.ts:106:1 › equipment statistics show source icons, retain rates when images fail and skin catalog links to rates (1.5s)
+  ok 5 tests\player\tianyuan.spec.ts:8:1 › public four-segment board preserves forms, source tiers, hero metrics and unknown dates on mobile (8.8s)
+  ok 6 tests\player\tianyuan.spec.ts:104:1 › public query failure never shows another date or synthetic values (1.2s)
+
+  6 passed (23.6s)
