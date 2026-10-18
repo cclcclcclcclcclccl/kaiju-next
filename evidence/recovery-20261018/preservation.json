@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-18T14:22:35.604Z",
+  "preservedPlayerTables": [
+    "accounts",
+    "friendships",
+    "matches",
+    "plans",
+    "pool_history",
+    "sessions",
+    "settings"
+  ],
+  "integrity": {
+    "integrity_check": "ok"
+  },
+  "preservedHistoricalEvidence": 3299,
+  "regressionOutputsArchivedAndRestored": [
+    "evidence/coach-upgrade/adaptive-system-test.png",
+    "evidence/coach-upgrade/coach-desktop.png",
+    "evidence/coach-upgrade/coach-mobile.png",
+    "evidence/coach-upgrade/hero-mobile.png",
+    "evidence/coach-upgrade/hero-personal-guide.png",
+    "evidence/coach-upgrade/personal-pool-test.png",
+    "evidence/data-continuity/environment-desktop.png",
+    "evidence/data-continuity/environment-mobile.png",
+    "evidence/data-continuity/update-status-mobile.png",
+    "evidence/final-audit-v016/backup-preview-mobile.png",
+    "evidence/profile-recovery-v015/pool-backup-validation.png",
+    "evidence/profile-recovery-v015/profile-conflict.png",
+    "evidence/public-capture/batch-review.png",
+    "evidence/public-capture/conflict-mobile.png",
+    "evidence/public-capture/source-board.png",
+    "evidence/reference-informed/accessibility-core.json",
+    "evidence/reference-informed/accessibility-history.json",
+    "evidence/reference-informed/accessibility-import.json",
+    "evidence/reference-informed/accessibility.json",
+    "evidence/reference-informed/screenshots/draft-mobile.png",
+    "evidence/reference-informed/screenshots/history-synthetic-desktop.png",
+    "evidence/reference-informed/screenshots/history-synthetic-mobile.png",
+    "evidence/reference-informed/screenshots/squad-test-accounts.png",
+    "evidence/reference-informed/screenshots/table-import-mobile.png",
+    "evidence/reliability-v014/equipment-rates-desktop.png",
+    "evidence/reliability-v014/equipment-rates-mobile.png",
+    "evidence/reliability-v014/recovered-pool-mobile.png",
+    "evidence/strength-v2/review-handoff-test-mobile.png"
+  ]
+}

@@ -44,6 +44,9 @@ server.listen(port, '127.0.0.1', () => {
 });
 server.on('error', (error) => {
   console.error(error.message);
+  stopRefresh?.();
+  stopTianyuan?.();
+  clearInterval(refreshTimer);
   store.close();
   process.exitCode = 1;
 });

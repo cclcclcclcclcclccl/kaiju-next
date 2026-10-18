@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-10-18T14:24:46.260Z",
+  "port": 4322,
+  "isolatedDirectory": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\.reproduction\\audit-1792332740566",
+  "initialStart": true,
+  "duplicateStartReused": true,
+  "unexpectedExitRecovered": true,
+  "isolatedPoolPreserved": true,
+  "firstPid": 21676,
+  "recoveredPid": 13124,
+  "supervisorPid": 28288
+}

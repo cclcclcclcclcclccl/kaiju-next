@@ -8,6 +8,7 @@ import Social from './pro/Social.tsx';
 import Systems from './pro/Systems.tsx';
 import Replay from './pro/Replay.tsx';
 import ResourceCenter from './pro/ResourceCenter.tsx';
+import ConnectionStatus from './ConnectionStatus.tsx';
 import { BarChart3, Users, Video, Network, Gauge } from 'lucide-react';
 import { useEffect, useMemo, useState, useRef } from 'react';
 import {
@@ -388,6 +389,7 @@ export default function App() {
             </div>
           </header>
           <main>
+            <ConnectionStatus />
             {!ready ? (
               <div className="loading-state">
                 <Aperture size={30} />

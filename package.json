@@ -7,6 +7,7 @@
     "node": ">=24.16.0 <25"
   },
   "scripts": {
+    "open": "node scripts/player/launch.mjs",
     "dev": "node scripts/dev.mjs",
     "start": "node --env-file-if-exists=.env server/index.ts",
     "build": "tsc --noEmit && vite build",
