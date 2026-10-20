@@ -1,0 +1,164 @@
+verify	Run npm test	﻿2026-10-20T16:13:57.4369626Z ##[group]Run npm test
+verify	Run npm test	2026-10-20T16:13:57.4369952Z ^[[36;1mnpm test^[[0m
+verify	Run npm test	2026-10-20T16:13:57.4434679Z shell: /usr/bin/bash -e {0}
+verify	Run npm test	2026-10-20T16:13:57.4434958Z ##[endgroup]
+verify	Run npm test	2026-10-20T16:13:57.5480172Z 
+verify	Run npm test	2026-10-20T16:13:57.5480956Z > kaiju-player-companion@0.25.1 test
+verify	Run npm test	2026-10-20T16:13:57.5481694Z > node --test server/player/*.test.ts
+verify	Run npm test	2026-10-20T16:13:57.5482041Z 
+verify	Run npm test	2026-10-20T16:13:57.7598448Z ✔ only explicitly trusted loopback proxy headers identify individual public visitors (12.355182ms)
+verify	Run npm test	2026-10-20T16:13:57.7656510Z ✔ login quotas separate visitors, cap one account across addresses and expire without extending lockout (3.962483ms)
+verify	Run npm test	2026-10-20T16:13:58.0596046Z ✔ online database backup preserves committed account pools, verifies integrity and refuses overwrite (126.756896ms)
+verify	Run npm test	2026-10-20T16:13:58.4766554Z ✔ rich profile accepts rate-only records without fabricating wins and rejects contradictory data (36.576343ms)
+verify	Run npm test	2026-10-20T16:13:58.4826297Z ✔ readiness uses performance, preserves unknown values, ages out and ignores energy as an ability bonus (4.355296ms)
+verify	Run npm test	2026-10-20T16:13:58.4835708Z ✔ changing player habits changes hero recommendations and the displayed score order (2.870488ms)
+verify	Run npm test	2026-10-20T16:13:58.4946054Z ✔ turn planning preserves blue and red paired picks, overrides one turn and respects remaining slots (1.069433ms)
+verify	Run npm test	2026-10-20T16:13:58.4976115Z ✔ anticipating the opponent changes a greedy pick and matches an independently enumerated two-ply game (7.037984ms)
+verify	Run npm test	2026-10-20T16:13:58.4985893Z ✔ coach respects personal pools, unique assignments and picks, and returns a completed layer under budget (367.394526ms)
+verify	Run npm test	2026-10-20T16:13:58.5015801Z ✔ opponent preference changes tendency weights without creating an ability record; bans are legal (3.230239ms)
+verify	Run npm test	2026-10-20T16:13:58.5039128Z ✔ adaptive systems use distinct actual players including profile-only heroes and vanish when coverage is revoked (3.872265ms)
+verify	Run npm test	2026-10-20T16:13:58.5052998Z ✔ official roster build and rune references contain resolved readable names and never invented counts (2.117756ms)
+verify	Run npm test	2026-10-20T16:13:58.5363246Z ✔ OCR separates lifetime/season/peak scopes and refuses coefficient ambiguity (4.326812ms)
+verify	Run npm test	2026-10-20T16:13:58.5388722Z ✔ OCR geometrical ambiguity and conflicting values require confirmation (1.345257ms)
+verify	Run npm test	2026-10-20T16:13:58.5446238Z ✔ confirmed screenshot updates selected fields, preserves other data and rejects fabricated totals (40.157537ms)
+verify	Run npm test	2026-10-20T16:13:58.5495969Z ✔ untrusted screenshot and official script responses are parsed without execution (5.637875ms)
+verify	Run npm test	2026-10-20T16:13:58.5553553Z ✔ candidate beam retains all five open roles at width six (19.280777ms)
+verify	Run npm test	2026-10-20T16:13:58.5585860Z ✔ official catalog cache survives failure and restart without changing source date (79.812315ms)
+verify	Run npm test	2026-10-20T16:13:58.5616329Z ✔ complete observation covers every catalog hero once, retains missing win and traceable identity evidence (9.454987ms)
+verify	Run npm test	2026-10-20T16:13:58.5636050Z ✔ equal observations tie, input order cannot break ties, and rank calculation leaves input untouched (1.1595ms)
+verify	Run npm test	2026-10-20T16:13:58.5638233Z ✔ increased observed pick or ban priority cannot lower a neutral-win hero and win influence stays bounded (1.441096ms)
+verify	Run npm test	2026-10-20T16:13:58.5640451Z ✔ parameter sensitivity includes nominal scores and exposes real cross-tier boundaries without confidence claims (5.309153ms)
+verify	Run npm test	2026-10-20T16:13:58.9527248Z ✔ all catalog heroes now have sourced skill text and valid official relation targets (8.824633ms)
+verify	Run npm test	2026-10-20T16:13:58.9562377Z ✔ statistics reject incompatible rates, duplicates, ungrounded opinions and impossible dates (10.091603ms)
+verify	Run npm test	2026-10-20T16:13:58.9573384Z ✔ tier ranking shrinks small samples, withholds unproven tiers and keeps weights normalized (2.056782ms)
+verify	Run npm test	2026-10-20T16:13:58.9626273Z ✔ stat freshness follows observation dates, and incomplete optional signals do not bias comparisons (35.392568ms)
+verify	Run npm test	2026-10-20T16:13:58.9655955Z ✔ power alone cannot invent mastery; real recent samples influence it and age out (5.962099ms)
+verify	Run npm test	2026-10-20T16:13:58.9682148Z ✔ every hero can be recommended as a legal single pool candidate; personal versus meta modes change tradeoffs (23.444306ms)
+verify	Run npm test	2026-10-20T16:13:58.9726529Z ✔ review advice cites declared conditions and does not invent certainty for unknown events (0.474694ms)
+verify	Run npm test	2026-10-20T16:13:59.2438785Z ✔ accounts, acceptance, sharing and deletion enforce isolation through real HTTP (326.874062ms)
+verify	Run npm test	2026-10-20T16:13:59.2936758Z ✔ vision adapter sends selected images, binds findings to real event IDs and rejects invented references (51.014678ms)
+verify	Run npm test	2026-10-20T16:13:59.3645310Z ✔ personal restore protects other owners, checks stale preview and preserves a complete checkpoint (23.772686ms)
+verify	Run npm test	2026-10-20T16:13:59.3665611Z ✔ failed full restore rolls back records and checkpoint together (16.031772ms)
+verify	Run npm test	2026-10-20T16:13:59.3695788Z ✔ review conflicts keep original frames and deleted reviews cannot be resurrected by stale saves (3.629954ms)
+verify	Run npm test	2026-10-20T16:13:59.3704837Z ✔ backup HTTP rejects missing confirmation and invalid heroes; static gzip honors q=0 and invalidates changed files (162.522202ms)
+verify	Run npm test	2026-10-20T16:13:59.3966762Z ✔ source status is read-only and distinguishes missing, cached, expired and failed refresh (32.149014ms)
+verify	Run npm test	2026-10-20T16:14:05.4210945Z ✔ oversized full backups are rejected before preview and existing oversized data cannot lose its checkpoint (6029.747178ms)
+verify	Run npm test	2026-10-20T16:14:05.4585084Z ✔ flex inference keeps both Zhuge lanes open and resolves them from subsequent teammates (3.262359ms)
+verify	Run npm test	2026-10-20T16:14:05.4586919Z ✔ manual occupied-lane change swaps and pins both heroes, without silently discarding picks (11.831966ms)
+verify	Run npm test	2026-10-20T16:14:05.4588497Z ✔ incompatible preferred roles remain selectable, but unsupported assignment is disclosed (14.437111ms)
+verify	Run npm test	2026-10-20T16:14:05.4590099Z ✔ actual staged sequence allows cross-lane replies and resolves only its own side (5.739114ms)
+verify	Run npm test	2026-10-20T16:14:05.4591824Z ✔ saved role locks survive replay and undo removes only removed hero locks; old role metadata can flex (5.886829ms)
+verify	Run npm test	2026-10-20T16:14:05.4593482Z ✔ coach can choose a new mid mage with Zhuge already provisionally mid, and respects explicit locks (20.848678ms)
+verify	Run npm test	2026-10-20T16:14:05.4594757Z ✔ all catalog heroes keep a legal unique lane across supported five-hero samples (77.369043ms)
+verify	Run npm test	2026-10-20T16:14:05.4595849Z ✔ official replay index uses anonymous read requests, preserves exact sources and retains dated cache on failure (127.969599ms)
+verify	Run npm test	2026-10-20T16:14:05.4597031Z ✔ official fractions keep their source date and partial coverage without inventing samples or BP rates (14.920927ms)
+verify	Run npm test	2026-10-20T16:14:05.4598553Z ✔ concurrent public requests share one anonymous fetch and distinct segments keep separate caches (70.842498ms)
+verify	Run npm test	2026-10-20T16:14:05.4599705Z ✔ expired cache survives network or schema failures, including process restart, without changing its timestamp (55.014077ms)
+verify	Run npm test	2026-10-20T16:14:05.4600859Z ✔ a failed first request never fabricates a public leaderboard; older upstream dates do not replace good data (2.046156ms)
+verify	Run npm test	2026-10-20T16:14:05.4601864Z ✔ deciding reset is only the last possible game, import preserves old global rules (18.799987ms)
+verify	Run npm test	2026-10-20T16:14:05.4602937Z ✔ history edit preserves later games, rejects invalid earlier outcomes and branches without mutating original (24.601675ms)
+verify	Run npm test	2026-10-20T16:14:05.4603945Z ✔ history edit rebases hero restrictions and refuses a newly conflicting later pick (6.51384ms)
+verify	Run npm test	2026-10-20T16:14:05.4605322Z ✔ player distribution uses returned records, deduplicates per-player heroes and excludes missing power from averages (5.41042ms)
+verify	Run npm test	2026-10-20T16:14:05.4606448Z ✔ skin comparison sorts dates, keeps missing values null and does not mutate captured source (16.504221ms)
+verify	Run npm test	2026-10-20T16:14:05.4607844Z ✔ synthetic OCR coordinate test suggests two sides but refuses duplicates and low confidence (1.666259ms)
+verify	Run npm test	2026-10-20T16:14:05.4609515Z ✔ server BP storage isolates account spaces and rejects stale writes (3.002428ms)
+verify	Run npm test	2026-10-20T16:14:05.4611275Z ✔ profile compare-and-save rejects stale manual or screenshot writes and isolates owners (9.031074ms)
+verify	Run npm test	2026-10-20T16:14:05.4613741Z ✔ independent hero edits survive stale clients and reopen; same-hero conflicts are atomic and audited (26.155501ms)
+verify	Run npm test	2026-10-20T16:14:05.4615997Z ✔ pool API isolates accounts and history, merges guest records once, and rejects conflicting or invalid edits (262.336941ms)
+verify	Run npm test	2026-10-20T16:14:05.4617901Z ✔ complete backup includes server series, restores it and invalidates stale series writers (21.60672ms)
+verify	Run npm test	2026-10-20T16:14:05.4619800Z ✔ old backup omitting series preserves it; explicit empty series restores empty; malformed BP rejected (3.880371ms)
+verify	Run npm test	2026-10-20T16:14:05.4621749Z ✔ task search matches player intents, ignores whitespace and case, and returns only internal destinations (0.400313ms)
+verify	Run npm test	2026-10-20T16:14:05.4623479Z ✔ published catalog has unique heroes, source links and known tactical note names (2.588874ms)
+verify	Run npm test	2026-10-20T16:14:05.4625468Z ✔ recommendations respect official lane, all ten slots, bans and actual personal pool (5.416078ms)
+verify	Run npm test	2026-10-20T16:14:05.4627174Z ✔ new enemy mobility adds a conditional protection reason; unknown teammates are explicit (0.651717ms)
+verify	Run npm test	2026-10-20T16:14:05.4628860Z ✔ duplicate picks, fake dates and nonsensical statistics cannot be saved (9.295411ms)
+verify	Run npm test	2026-10-20T16:14:05.4630610Z ✔ personal pool and match edits persist across database reopen; a changed target resets completion (15.280252ms)
+verify	Run npm test	2026-10-20T16:14:05.4632605Z ✔ API validates input, persists an actual plan, prevents cross-origin writes and reports unconfigured AI (120.212512ms)
+verify	Run npm test	2026-10-20T16:14:05.4634712Z ✔ configured coach uses draft context, validates provider output and recovers after failure (87.957056ms)
+verify	Run npm test	2026-10-20T16:14:05.4636540Z ✔ published tier scores preserve actual Jing, Garo, Xiahou and Lianpo rankings across stats cohorts (20.216221ms)
+verify	Run npm test	2026-10-20T16:14:05.4638378Z ✔ source role selection respects secondary roles and explicit source thresholds without our v2 cutoffs (6.85346ms)
+verify	Run npm test	2026-10-20T16:14:05.4640436Z ✔ real public screenshot yields exact displayed percentages, excludes truncated hero and distinguishes update date (5.882512ms)
+verify	Run npm test	2026-10-20T16:14:05.4642384Z ✔ public table geometry scales with resolution and ambiguous headers or cells are rejected (6.145198ms)
+verify	Run npm test	2026-10-20T16:14:05.4644534Z ✔ batch merger deduplicates identical files and rows, retains conflicts and does not hide date differences (1.804431ms)
+verify	Run npm test	2026-10-20T16:14:05.4646594Z ✔ public reference remains selectable without writing data or replacing an existing same-segment batch (0.32391ms)
+verify	Run npm test	2026-10-20T16:14:05.4647954Z ✔ public sharing isolates accounts, requires login for writes and never exposes local file handoff (3292.684603ms)
+verify	Run npm test	2026-10-20T16:14:05.4648923Z ✔ table import accepts copied percentages, preserves unknown samples and rejects invented values (7.366339ms)
+verify	Run npm test	2026-10-20T16:14:05.4649831Z ✔ source provenance accepts the actual WeChat share token while rejecting executable links (7.893729ms)
+verify	Run npm test	2026-10-20T16:14:05.4650637Z ✔ system coverage assigns each player once and resolves competing hero pools (1.747075ms)
+verify	Run npm test	2026-10-20T16:14:05.4651570Z ✔ five-player suggestions cover all roles without repeating people or heroes and cannot invent missing pools (11.247005ms)
+verify	Run npm test	2026-10-20T16:14:05.4652683Z ✔ refresh checks all fifteen scopes sequentially, deduplicates overlapping runs and archives unchanged content only once (40.350915ms)
+verify	Run npm test	2026-10-20T16:14:05.4653757Z ✔ failed and stale scopes stay distinguishable and cannot create fresh history or replace original source dates (6.833352ms)
+verify	Run npm test	2026-10-20T16:14:05.4655115Z ✔ stopping scheduler during initial refresh cannot schedule a later run (0.428323ms)
+verify	Run npm test	2026-10-20T16:14:05.4656023Z ✔ local Codex handoff preserves image bytes and binds returned findings to input, account and time (56.83067ms)
+verify	Run npm test	2026-10-20T16:14:05.4656980Z ✔ captured source fixtures retain source values including global rates above 100 and unknown timings (96.357148ms)
+verify	Run npm test	2026-10-20T16:14:05.4658038Z ✔ source query allowlist rejects injected hosts, extra keys, incomplete matches, bad dates and duplicate recommendations (4.188014ms)
+verify	Run npm test	2026-10-20T16:14:05.4659293Z ✔ source fetch deduplicates, persists raw hash, survives restart and reports same-query stale cache on outage (51.772048ms)
+verify	Run npm test	2026-10-20T16:14:05.4660250Z ✔ power formula reproduces observed reference inputs and rejects silently truncated user input (0.510776ms)
+verify	Run npm test	2026-10-20T16:14:05.4661154Z ✔ global BP binds previous picks to the real team across side swaps and rejects corrupt imports (8.416874ms)
+verify	Run npm test	2026-10-20T16:14:05.4662124Z ✔ publication-day default respects Beijing midnight and 09:00 instead of asking for unpublished yesterday (0.210359ms)
+verify	Run npm test	2026-10-20T16:14:05.4663098Z ✔ mixed, cumulative or legacy unknown scopes cannot acquire a tier, interval or BP strength weight (3.804384ms)
+verify	Run npm test	2026-10-20T16:14:05.4663960Z ✔ unknown pick and ban denominators preserve raw values without inventing a BP rate (13.590303ms)
+verify	Run npm test	2026-10-20T16:14:05.4664948Z ✔ history does not cross versions, sources, populations, durations or unknown scopes (0.540801ms)
+verify	Run npm test	2026-10-20T16:14:05.4666394Z ✔ history respects hero-role identity, selected same-day batch, real dates and the latest thirty observations (9.149781ms)
+verify	Run npm test	2026-10-20T16:14:05.4667412Z ✔ own strength covers 133 base heroes and is invariant to input order and publisher tier fields (160.349101ms)
+verify	Run npm test	2026-10-20T16:14:05.4668347Z ✔ identical observations share ranks and do not manufacture a top tier; low-use outlier is attenuated (4.494933ms)
+verify	Run npm test	2026-10-20T16:14:05.4669265Z ✔ at equal usage and bans stronger observed win rate ranks higher; missing win rate stays unrated (5.098943ms)
+verify	Run npm test	2026-10-20T16:14:05.4670267Z ✔ top-thousand strength never treats mixed-population wins as own-segment wins and fails closed without proxy (841.455448ms)
+verify	Run npm test	2026-10-20T16:14:05.4671172Z ✔ local replay inventory distinguishes frames, unobserved gaps and unknown inputs (0.622813ms)
+verify	Run npm test	2026-10-20T16:14:05.4672063Z ✔ teaching defaults put reviewed sources first and keep hero-specific evidence ahead of generic text (15.3224ms)
+verify	Run npm test	2026-10-20T16:14:05.4673008Z ✖ published teaching sources bind to saved public evidence; no invented lesson from titles or previews (16.275763ms)
+verify	Run npm test	2026-10-20T16:14:05.4673931Z ✖ all 74 discovered heroes have exactly one specific grounded card and verified identity (4.159622ms)
+verify	Run npm test	2026-10-20T16:14:05.4675811Z ✔ conflicting official tips are carried into review packets and not promoted as current facts (5.520682ms)
+verify	Run npm test	2026-10-20T16:14:05.4676787Z ✔ hero-titled videos do not leak to unrelated heroes as general jungle teaching (1.125604ms)
+verify	Run npm test	2026-10-20T16:14:05.4677860Z ✔ personal training guides prefer audited hero content over conflicting historical tips (0.830327ms)
+verify	Run npm test	2026-10-20T16:14:05.4678823Z ✔ hero-specific retrieval never transfers one hero mechanics to another; selected lane gates macro lessons (25.31394ms)
+verify	Run npm test	2026-10-20T16:14:05.4679775Z ✔ all catalog heroes have encoded discovery links; discovery is not claimed as reviewed coverage (4.33729ms)
+verify	Run npm test	2026-10-20T16:14:05.4680649Z ✔ real source image addresses survive parsing; unsafe optional images do not erase rates (19.564043ms)
+verify	Run npm test	2026-10-20T16:14:05.4681518Z ✔ old caches recover omitted icons from hash-verified raw responses without changing dates (45.156193ms)
+verify	Run npm test	2026-10-20T16:14:05.4682419Z ✔ actual four-segment responses cover 133 base heroes and preserve Li Xin forms and missing values (46.676227ms)
+verify	Run npm test	2026-10-20T16:14:05.4683256Z ✔ public reads are anonymous, serialized, coalesced and archive exact raw bytes (62.7863ms)
+verify	Run npm test	2026-10-20T16:14:05.4684249Z ✔ expired failure keeps exact dated cache through restart, cooldown does not postpone recovery, and dates never substitute (54.475023ms)
+verify	Run npm test	2026-10-20T16:14:05.4685752Z ✔ hero responses reject wrong dates and identity; undated statistics do not acquire selected-page dates (7.945732ms)
+verify	Run npm test	2026-10-20T16:14:05.4686764Z ✔ stopping public scheduler during first read prevents more scopes and later scheduling (1.114283ms)
+verify	Run npm test	2026-10-20T16:14:05.4687661Z ✔ real equipment fixture retains slot statistics and complete builds without invented win rates (13.656646ms)
+verify	Run npm test	2026-10-20T16:14:05.4688581Z ✔ staged BP completes ten bans and ten unique picks, replays, rejects duplicate and corrupt sessions (3.325808ms)
+verify	Run npm test	2026-10-20T16:14:05.4690601Z ✔ coach follows consecutive and second-phase bans in the supplied real turn schedule (27.673759ms)
+verify	Run npm test	2026-10-20T16:14:05.4691395Z ℹ tests 117
+verify	Run npm test	2026-10-20T16:14:05.4691619Z ℹ suites 0
+verify	Run npm test	2026-10-20T16:14:05.4691832Z ℹ pass 115
+verify	Run npm test	2026-10-20T16:14:05.4692037Z ℹ fail 2
+verify	Run npm test	2026-10-20T16:14:05.4692251Z ℹ cancelled 0
+verify	Run npm test	2026-10-20T16:14:05.4692479Z ℹ skipped 0
+verify	Run npm test	2026-10-20T16:14:05.4692696Z ℹ todo 0
+verify	Run npm test	2026-10-20T16:14:05.4692930Z ℹ duration_ms 7875.887054
+verify	Run npm test	2026-10-20T16:14:05.4693082Z 
+verify	Run npm test	2026-10-20T16:14:05.4693200Z ✖ failing tests:
+verify	Run npm test	2026-10-20T16:14:05.4693329Z 
+verify	Run npm test	2026-10-20T16:14:05.4693518Z test at server/player/teaching.test.ts:35:1
+verify	Run npm test	2026-10-20T16:14:05.4694527Z ✖ published teaching sources bind to saved public evidence; no invented lesson from titles or previews (16.275763ms)
+verify	Run npm test	2026-10-20T16:14:05.4695373Z   Error: ENOENT: no such file or directory, open 'evidence/teaching-v023/research/bili-0.json'
+verify	Run npm test	2026-10-20T16:14:05.4695939Z       at async open (node:internal/fs/promises:640:25)
+verify	Run npm test	2026-10-20T16:14:05.4696346Z       at async readFile (node:internal/fs/promises:1287:14)
+verify	Run npm test	2026-10-20T16:14:05.4697062Z       at async TestContext.<anonymous> (file:///home/runner/work/kaiju-next/kaiju-next/server/player/teaching.test.ts:39:17)
+verify	Run npm test	2026-10-20T16:14:05.4697743Z       at async Test.run (node:internal/test_runner/test:1313:7)
+verify	Run npm test	2026-10-20T16:14:05.4698263Z       at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+verify	Run npm test	2026-10-20T16:14:05.4698688Z     errno: -2,
+verify	Run npm test	2026-10-20T16:14:05.4698896Z     code: 'ENOENT',
+verify	Run npm test	2026-10-20T16:14:05.4699108Z     syscall: 'open',
+verify	Run npm test	2026-10-20T16:14:05.4699407Z     path: 'evidence/teaching-v023/research/bili-0.json'
+verify	Run npm test	2026-10-20T16:14:05.4699712Z   }
+verify	Run npm test	2026-10-20T16:14:05.4699811Z 
+verify	Run npm test	2026-10-20T16:14:05.4699993Z test at server/player/teaching.test.ts:59:1
+verify	Run npm test	2026-10-20T16:14:05.4700682Z ✖ all 74 discovered heroes have exactly one specific grounded card and verified identity (4.159622ms)
+verify	Run npm test	2026-10-20T16:14:05.4701378Z   Error: ENOENT: no such file or directory, open 'evidence/teaching-v024/inventory.json'
+verify	Run npm test	2026-10-20T16:14:05.4701881Z       at async open (node:internal/fs/promises:640:25)
+verify	Run npm test	2026-10-20T16:14:05.4702278Z       at async readFile (node:internal/fs/promises:1287:14)
+verify	Run npm test	2026-10-20T16:14:05.4702980Z       at async TestContext.<anonymous> (file:///home/runner/work/kaiju-next/kaiju-next/server/player/teaching.test.ts:60:32)
+verify	Run npm test	2026-10-20T16:14:05.4703652Z       at async Test.run (node:internal/test_runner/test:1313:7)
+verify	Run npm test	2026-10-20T16:14:05.4704744Z       at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+verify	Run npm test	2026-10-20T16:14:05.4705198Z     errno: -2,
+verify	Run npm test	2026-10-20T16:14:05.4705413Z     code: 'ENOENT',
+verify	Run npm test	2026-10-20T16:14:05.4705622Z     syscall: 'open',
+verify	Run npm test	2026-10-20T16:14:05.4705914Z     path: 'evidence/teaching-v024/inventory.json'
+verify	Run npm test	2026-10-20T16:14:05.4706209Z   }
+verify	Run npm test	2026-10-20T16:14:05.4730392Z ##[error]Process completed with exit code 1.

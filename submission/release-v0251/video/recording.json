@@ -1,0 +1,77 @@
+{
+  "recordedAt": "2026-10-20T16:07:18.333Z",
+  "width": 1920,
+  "height": 1080,
+  "elapsedSeconds": 418.962,
+  "scenes": [
+    {
+      "title": "开局 NEXT｜传智杯 AI创新应用挑战赛",
+      "subtitle": "蔡晨霖 · 西安交通大学人工智能2501｜v0.25.1 公网体验实录，资料保留日期与出处。",
+      "startSeconds": 1.707,
+      "durationSeconds": 25
+    },
+    {
+      "title": "01 英雄图鉴：从普通入口看到数据",
+      "subtitle": "133 位目录英雄；技能、定位、来源梯度和三率共同呈现。缺失数据不编造。",
+      "startSeconds": 27.133,
+      "durationSeconds": 30
+    },
+    {
+      "title": "02 英雄详情：统计口径可核查",
+      "subtitle": "综合梯度来自天元；分段三率独立查询。来源梯度不冒称自研，也不伪装成分段梯度。",
+      "startSeconds": 57.607,
+      "durationSeconds": 30
+    },
+    {
+      "title": "03 全英雄梯度与真实指标排序",
+      "subtitle": "数据来源：天元之弈公开接口，属于第三方统计；与腾讯官方公开部分榜分开。",
+      "startSeconds": 88.57,
+      "durationSeconds": 35
+    },
+    {
+      "title": "04 装备统计：图标、出场率、胜率",
+      "subtitle": "按英雄查询；展示来源截止时刻。装备相关胜率不等于购买该装备产生的因果收益。",
+      "startSeconds": 124.754,
+      "durationSeconds": 30
+    },
+    {
+      "title": "05 皮肤使用率：真实分布与来源图片",
+      "subtitle": "按英雄与日期读取。原皮保留；来源未公布样本量、分段和皮肤胜率，这些字段不推算。",
+      "startSeconds": 155.692,
+      "durationSeconds": 30
+    },
+    {
+      "title": "06 逐手 BP：摇摆英雄随后续选择调整分路",
+      "subtitle": "人工操作双方禁选；诸葛亮可以中野摇摆，后续选择确定分工。系统评分不是实际胜率。",
+      "startSeconds": 187.73,
+      "durationSeconds": 40
+    },
+    {
+      "title": "07 真实 AI 协作：保存问题",
+      "subtitle": "原始历史记录回看：用户发现赵怀真不见了 → AI定位访客身份与保存冲突 → 修复与验证。",
+      "startSeconds": 227.956,
+      "durationSeconds": 45
+    },
+    {
+      "title": "08 真实 AI 协作：纠正错误梯度",
+      "subtitle": "原始历史记录回看：用户否定不合理T档 → 停用未校准默认算法 → 接入来源梯度与普通图鉴入口。",
+      "startSeconds": 274.993,
+      "durationSeconds": 45
+    },
+    {
+      "title": "09 真实 AI 协作：图标与使用率",
+      "subtitle": "原始历史记录回看：用户指出入口缺失 → 找到被丢弃的图片字段 → 修复、回归测试和真实页面核对。",
+      "startSeconds": 322,
+      "durationSeconds": 45
+    },
+    {
+      "title": "提交说明与能力边界",
+      "subtitle": "真实历史协作回看共 2 分 15 秒；公网为临时体验通道，支持独立账号。未宣称模型训练或 KPL 级效果。",
+      "startSeconds": 370.363,
+      "durationSeconds": 20
+    }
+  ],
+  "collaborationSeconds": 135,
+  "collaborationMode": "Authentic historical dialogue playback, not a new live AI session",
+  "output": "D:\\学习相关\\传智杯\\AI创新应用挑战赛\\submission\\release-v0251\\video\\开局NEXT-演示与真实协作记录.mp4"
+}

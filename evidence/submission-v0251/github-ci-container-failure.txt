@@ -1,0 +1,130 @@
+verify	Run docker build -t kaiju-review .	﻿2026-10-20T16:17:09.8788315Z ##[group]Run docker build -t kaiju-review .
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:09.8788540Z ^[[36;1mdocker build -t kaiju-review .^[[0m
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:09.8830250Z shell: /usr/bin/bash -e {0}
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:09.8830396Z ##[endgroup]
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.3875489Z #0 building with "default" instance using docker driver
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.3875719Z 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.3875832Z #1 [internal] load build definition from Dockerfile
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.3876123Z #1 transferring dockerfile: 1.00kB done
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.3876269Z #1 DONE 0.0s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.3876335Z 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.3876460Z #2 [auth] library/node:pull token for registry-1.docker.io
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.5380161Z #2 DONE 0.0s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.5380321Z 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.5380561Z #3 [internal] load metadata for docker.io/library/node:24.16.0-bookworm-slim
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.8606787Z #3 DONE 0.6s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9752064Z 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9752633Z #4 [internal] load .dockerignore
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9752959Z #4 transferring context: 248B done
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9753169Z #4 DONE 0.0s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9753236Z 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9753317Z #5 [internal] load build context
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9753491Z #5 transferring context: 23.22MB 0.1s done
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9753639Z #5 DONE 0.1s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9753708Z 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9754023Z #6 [build 1/9] FROM docker.io/library/node:24.16.0-bookworm-slim@sha256:2c87ef9bd3c6a3bd4b472b4bec2ce9d16354b0c574f736c476489d09f560a203
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9754564Z #6 resolve docker.io/library/node:24.16.0-bookworm-slim@sha256:2c87ef9bd3c6a3bd4b472b4bec2ce9d16354b0c574f736c476489d09f560a203 done
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9755011Z #6 sha256:11ee7a52d8bb061de25e57356acc8c2019ce9d5e04b0e4a1e42a750c682849b3 0B / 50.09MB 0.1s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9755403Z #6 sha256:6ffbd68daabf04b8cd244120546fd8ce2dc53088120e9810aa9d27646741e8c0 0B / 1.71MB 0.1s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9755785Z #6 sha256:2c87ef9bd3c6a3bd4b472b4bec2ce9d16354b0c574f736c476489d09f560a203 5.20kB / 5.20kB done
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9756172Z #6 sha256:ca520832af80fa37a57c14077ed0fcdd83b5aefccc356059fdc3a9a05b78ae1f 1.93kB / 1.93kB done
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9756553Z #6 sha256:d9e872c3ee59358dc71c3c99957c2d8ccd3f21419fee87b742faddcf00a6ecee 6.83kB / 6.83kB done
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9757180Z #6 sha256:b9136609bef0128191aa157637b98dd7b98e52154ca60c18258d65957a01c6d0 0B / 28.24MB 0.1s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:10.9757768Z #6 sha256:056cd437495d7fa167e67ad161e02a6b066b4da19b306de2de3a9c7f47825252 3.31kB / 3.31kB 0.0s done
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:11.0769007Z #6 sha256:11ee7a52d8bb061de25e57356acc8c2019ce9d5e04b0e4a1e42a750c682849b3 25.17MB / 50.09MB 0.2s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:11.3783241Z #6 sha256:11ee7a52d8bb061de25e57356acc8c2019ce9d5e04b0e4a1e42a750c682849b3 50.09MB / 50.09MB 0.5s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:11.3787132Z #6 sha256:6ffbd68daabf04b8cd244120546fd8ce2dc53088120e9810aa9d27646741e8c0 1.71MB / 1.71MB 0.2s done
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:11.3789129Z #6 sha256:b9136609bef0128191aa157637b98dd7b98e52154ca60c18258d65957a01c6d0 28.24MB / 28.24MB 0.5s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:11.3790775Z #6 sha256:eaa9c9173c9ef8b20c039dc5bd3443296e12edea2c29f4fd1e54b632308b6ea2 447B / 447B 0.5s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:11.5548290Z #6 extracting sha256:b9136609bef0128191aa157637b98dd7b98e52154ca60c18258d65957a01c6d0
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:11.6562782Z #6 sha256:11ee7a52d8bb061de25e57356acc8c2019ce9d5e04b0e4a1e42a750c682849b3 50.09MB / 50.09MB 0.7s done
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:11.6563417Z #6 sha256:b9136609bef0128191aa157637b98dd7b98e52154ca60c18258d65957a01c6d0 28.24MB / 28.24MB 0.7s done
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:11.6563975Z #6 sha256:eaa9c9173c9ef8b20c039dc5bd3443296e12edea2c29f4fd1e54b632308b6ea2 447B / 447B 0.5s done
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:12.3204783Z #6 extracting sha256:b9136609bef0128191aa157637b98dd7b98e52154ca60c18258d65957a01c6d0 0.6s done
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:12.3205341Z #6 extracting sha256:056cd437495d7fa167e67ad161e02a6b066b4da19b306de2de3a9c7f47825252 done
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:13.9710535Z #6 extracting sha256:11ee7a52d8bb061de25e57356acc8c2019ce9d5e04b0e4a1e42a750c682849b3
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:14.9136394Z #6 extracting sha256:11ee7a52d8bb061de25e57356acc8c2019ce9d5e04b0e4a1e42a750c682849b3 0.8s done
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:15.6549267Z #6 extracting sha256:6ffbd68daabf04b8cd244120546fd8ce2dc53088120e9810aa9d27646741e8c0
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:15.9029484Z #6 extracting sha256:6ffbd68daabf04b8cd244120546fd8ce2dc53088120e9810aa9d27646741e8c0 0.0s done
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:15.9030258Z #6 extracting sha256:eaa9c9173c9ef8b20c039dc5bd3443296e12edea2c29f4fd1e54b632308b6ea2 done
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:15.9036368Z #6 DONE 4.9s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:15.9036469Z 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:15.9036556Z #7 [build 2/9] WORKDIR /app
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:15.9036703Z #7 DONE 0.0s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:15.9036771Z 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:15.9036900Z #8 [build 3/9] COPY package.json package-lock.json ./
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:15.9037115Z #8 DONE 0.0s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:15.9037183Z 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:15.9037477Z #9 [runtime 4/8] RUN npm ci --omit=dev --no-audit --no-fund && mkdir -p /var/lib/kaiju && chown node:node /var/lib/kaiju
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:17.9950473Z #9 2.242 npm notice
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:17.9950999Z #9 2.242 npm notice New major version of npm available! 11.13.0 -> 12.2.0
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:17.9951538Z #9 2.242 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:17.9951980Z #9 2.242 npm notice To update run: npm install -g npm@12.2.0
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:17.9952271Z #9 2.242 npm notice
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:18.2156591Z #9 2.249 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:18.2157153Z #9 2.249 added 5 packages in 2s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:18.2157552Z #9 DONE 2.3s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:18.2157798Z 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:18.2158094Z #10 [build 4/9] RUN npm ci --no-audit --no-fund
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:18.6066750Z #10 2.853 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:18.6067421Z #10 2.853 added 79 packages in 3s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:18.7577079Z #10 2.855 npm notice
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:18.7577418Z #10 2.855 npm notice New major version of npm available! 11.13.0 -> 12.2.0
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:18.7577762Z #10 2.855 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:18.7578050Z #10 2.855 npm notice To update run: npm install -g npm@12.2.0
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:18.7578237Z #10 2.855 npm notice
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.0829951Z #10 DONE 4.3s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.2883546Z 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.2884123Z #11 [build 5/9] COPY tsconfig.json vite.config.ts index.html ./
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.2884356Z #11 DONE 0.0s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.2884429Z 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.2884514Z #12 [build 6/9] COPY src ./src
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.2884660Z #12 DONE 0.0s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.2884726Z 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.2884805Z #13 [build 7/9] COPY server ./server
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.2884956Z #13 DONE 0.0s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.2885019Z 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.2885097Z #14 [build 8/9] COPY public ./public
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.3455194Z #14 DONE 0.2s
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.4966276Z 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.4967178Z #15 [build 9/9] RUN npm run build
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.5023385Z #15 0.156 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.5023876Z #15 0.156 > kaiju-player-companion@0.25.1 build
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.5024186Z #15 0.156 > tsc --noEmit && vite build
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:20.5024333Z #15 0.156 
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.3571932Z ##[error]#15 5.007 server/player/environment.test.ts(29,36): error TS7006: Parameter 'r' implicitly has an 'any' type.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4697098Z ##[error]#15 5.007 server/player/environment.test.ts(29,58): error TS7006: Parameter 'a' implicitly has an 'any' type.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4698446Z ##[error]#15 5.007 server/player/environment.test.ts(29,61): error TS7006: Parameter 'b' implicitly has an 'any' type.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4699207Z ##[error]#15 5.007 server/player/environment.test.ts(33,39): error TS7006: Parameter 'r' implicitly has an 'any' type.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4700298Z ##[error]#15 5.007 server/player/environment.test.ts(33,70): error TS7006: Parameter 'r' implicitly has an 'any' type.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4701451Z ##[error]#15 5.007 server/player/environment.test.ts(36,48): error TS7006: Parameter 'r' implicitly has an 'any' type.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4702691Z ##[error]#15 5.007 server/player/environment.test.ts(42,16): error TS7006: Parameter 'r' implicitly has an 'any' type.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4703884Z ##[error]#15 5.007 server/player/environment.test.ts(43,26): error TS7006: Parameter 'e' implicitly has an 'any' type.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4705243Z ##[error]#15 5.007 server/player/environment.test.ts(45,52): error TS7006: Parameter 'r' implicitly has an 'any' type.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4706593Z ##[error]#15 5.007 src/player/pro/environment.ts(1,22): error TS2307: Cannot find module '../../../examples/tianyuan-complete-observation-2026-10-12.json' or its corresponding type declarations.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4707759Z ##[error]#15 5.007 src/player/pro/publicReferences.ts(1,22): error TS2307: Cannot find module '../../../examples/tianyuan-expanded-2026-10-11.json' or its corresponding type declarations.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4708902Z ##[error]#15 5.007 src/player/pro/publicReferences.ts(2,20): error TS2307: Cannot find module '../../../examples/tianyuan-expanded-2026-10-12.json' or its corresponding type declarations.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4709819Z #15 ERROR: process "/bin/sh -c npm run build" did not complete successfully: exit code: 2
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4710118Z ------
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4710281Z  > [build 9/9] RUN npm run build:
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4710735Z ##[error]5.007 server/player/environment.test.ts(29,61): error TS7006: Parameter 'b' implicitly has an 'any' type.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4711476Z ##[error]5.007 server/player/environment.test.ts(33,39): error TS7006: Parameter 'r' implicitly has an 'any' type.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4712228Z ##[error]5.007 server/player/environment.test.ts(33,70): error TS7006: Parameter 'r' implicitly has an 'any' type.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4712974Z ##[error]5.007 server/player/environment.test.ts(36,48): error TS7006: Parameter 'r' implicitly has an 'any' type.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4713694Z ##[error]5.007 server/player/environment.test.ts(42,16): error TS7006: Parameter 'r' implicitly has an 'any' type.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4714416Z ##[error]5.007 server/player/environment.test.ts(43,26): error TS7006: Parameter 'e' implicitly has an 'any' type.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4715200Z ##[error]5.007 server/player/environment.test.ts(45,52): error TS7006: Parameter 'r' implicitly has an 'any' type.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4716379Z ##[error]5.007 src/player/pro/environment.ts(1,22): error TS2307: Cannot find module '../../../examples/tianyuan-complete-observation-2026-10-12.json' or its corresponding type declarations.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4717574Z ##[error]5.007 src/player/pro/publicReferences.ts(1,22): error TS2307: Cannot find module '../../../examples/tianyuan-expanded-2026-10-11.json' or its corresponding type declarations.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4718712Z ##[error]5.007 src/player/pro/publicReferences.ts(2,20): error TS2307: Cannot find module '../../../examples/tianyuan-expanded-2026-10-12.json' or its corresponding type declarations.
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4719450Z ------
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4719570Z Dockerfile:9
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4720219Z --------------------
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4720376Z    7 |     COPY server ./server
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4720537Z    8 |     COPY public ./public
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4720685Z    9 | >>> RUN npm run build
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4720823Z   10 |     
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4720978Z   11 |     FROM node:24.16.0-bookworm-slim AS runtime
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4721158Z --------------------
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4721480Z ERROR: failed to build: failed to solve: process "/bin/sh -c npm run build" did not complete successfully: exit code: 2
+verify	Run docker build -t kaiju-review .	2026-10-20T16:17:25.4765499Z ##[error]Process completed with exit code 1.

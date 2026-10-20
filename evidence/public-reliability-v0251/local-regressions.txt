@@ -1,0 +1,13 @@
+[WebServer] (node:48072) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:60052) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\player\connection.spec.ts:2:1 › service interruption is explicit and recovery keeps the current page and typed input (1.5s)
+  ok 2 tests\player\reliability.spec.ts:13:1 › guest pool is discoverable from a new account, merges without deleting guest and survives reload (3.5s)
+  ok 3 tests\player\reliability.spec.ts:64:1 › two browser pages preserve independent hero additions and reject stale same-hero changes (3.6s)
+  ok 4 tests\player\reliability.spec.ts:97:1 › equipment rates have a direct entry, real fixture values, sorting and no stale data on query failure (4.3s)
+
+  4 passed (17.2s)

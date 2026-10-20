@@ -1,0 +1,18 @@
+{
+  at: '2026-10-20T15:46:11.691Z',
+  origin: 'https://downtown-relates-indexes-trustees.trycloudflare.com',
+  version: '0.25.1',
+  checks: [
+    'public HTTPS page and API',
+    'anonymous read and write rejection',
+    'browser registration',
+    'pool save and reload',
+    'two independent accounts',
+    'friend acceptance and opt-in sharing revocation',
+    'local handoff rejection',
+    'mobile no overflow',
+    'owner data unchanged'
+  ],
+  errors: [],
+  limitation: 'Verified from this machine over the public HTTPS route, not a classmate mobile carrier. Temporary tunnel requires the host computer and processes online.'
+}

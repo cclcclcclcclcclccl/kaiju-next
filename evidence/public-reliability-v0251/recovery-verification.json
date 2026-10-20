@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-20T15:46:05.918Z",
+  "origin": "https://downtown-relates-indexes-trustees.trycloudflare.com",
+  "checks": [
+    "public URL clipboard",
+    "remote outage guidance",
+    "form input survives reconnect",
+    "HTML gateway error explained",
+    "POST not automatically retried",
+    "initial outage recovers",
+    "mobile no overflow"
+  ],
+  "errors": [],
+  "method": "Actual public page; outage and HTML gateway failures injected only in the verification browser."
+}
