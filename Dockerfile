@@ -6,6 +6,7 @@ COPY tsconfig.json vite.config.ts index.html ./
 COPY src ./src
 COPY server ./server
 COPY public ./public
+COPY examples ./examples
 RUN npm run build
 
 FROM node:24.16.0-bookworm-slim AS runtime
@@ -16,6 +17,7 @@ RUN npm ci --omit=dev --no-audit --no-fund && mkdir -p /var/lib/kaiju && chown n
 COPY --from=build /app/dist ./dist
 COPY src ./src
 COPY server ./server
+COPY examples ./examples
 COPY scripts/player/backup-public.mjs ./scripts/player/backup-public.mjs
 USER node
 VOLUME /var/lib/kaiju

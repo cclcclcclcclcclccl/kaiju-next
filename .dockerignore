@@ -11,6 +11,8 @@
 !server/**
 !public/
 !public/**
+!examples/
+!examples/**
 !scripts/
 !scripts/player/
 !scripts/player/backup-public.mjs
