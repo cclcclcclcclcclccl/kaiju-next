@@ -1,3 +1,4 @@
+import QuickSearch from './QuickSearch.tsx';
 import { ProContext } from './pro/context.tsx';
 import { effectivePool } from './pro/analytics.ts';
 import { emptyPro } from './pro/model.ts';
@@ -8,7 +9,9 @@ import Social from './pro/Social.tsx';
 import Systems from './pro/Systems.tsx';
 import Replay from './pro/Replay.tsx';
 import ResourceCenter from './pro/ResourceCenter.tsx';
+import DataHub from './pro/DataHub.tsx';
 import ConnectionStatus from './ConnectionStatus.tsx';
+import ShareLink from './ShareLink.tsx';
 import { BarChart3, Users, Video, Network, Gauge } from 'lucide-react';
 import { useEffect, useMemo, useState, useRef } from 'react';
 import {
@@ -19,7 +22,6 @@ import {
   NotebookPen,
   Heart,
   ArrowUpRight,
-  Search,
   FolderOpen,
   X,
   Check,
@@ -40,6 +42,7 @@ import { Modal, Portrait } from './ui.tsx';
 type Workspace = { pool: Pool; draft: Draft; matches: Match[]; plans: SavedPlan[] };
 export default function App() {
   const [pro, setPro] = useState<ProData>(emptyPro);
+  const [publicSharing, setPublicSharing] = useState(false);
   const [profileHero, setProfileHero] = useState<number>();
   const [backupOpen, setBackupOpen] = useState(false),
     [expired, setExpired] = useState(false),
@@ -70,13 +73,24 @@ export default function App() {
     [source, setSource] = useState(false),
     [archive, setArchive] = useState(false);
   const [toast, setToast] = useState<{ text: string; error?: boolean } | null>(null);
-  const [globalSearch, setGlobalSearch] = useState(''),
-    [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileScreen, setMobileScreen] = useState(
+    () => window.matchMedia('(max-width: 760px)').matches,
+  );
+  useEffect(() => {
+    const media = window.matchMedia('(max-width: 760px)');
+    const change = () => setMobileScreen(media.matches);
+    media.addEventListener('change', change);
+    return () => media.removeEventListener('change', change);
+  }, []);
+  const [dataTool, setDataTool] = useState<string>();
   const load = async () => {
     try {
       const [workspace, status, proData] = await Promise.all([
         api<Workspace>('/workspace'),
-        api<{ modelConfigured: boolean; identity?: { name: string } }>('/status'),
+        api<{ modelConfigured: boolean; publicSharing?: boolean; identity?: { name: string } }>(
+          '/status',
+        ),
         api<ProData>('/pro'),
       ]);
       setPool(workspace.pool);
@@ -84,6 +98,7 @@ export default function App() {
       setMatches(workspace.matches);
       setPlans(workspace.plans);
       setConfigured(status.modelConfigured);
+      setPublicSharing(Boolean(status.publicSharing));
       setIdentity(status.identity?.name ?? '访客');
       setExpired(false);
       let restored = workspace.draft;
@@ -107,7 +122,7 @@ export default function App() {
       setToast({
         text: invalid
           ? '登录已过期，个人资料仍在。请退出失效登录后重新登录原账号。'
-          : '无法连接本地服务。请启动项目后点击重试。',
+          : '无法连接服务。请检查网络；若使用分享网址，请确认分享电脑仍在线，再点击重试。',
         error: true,
       });
     }
@@ -130,7 +145,7 @@ export default function App() {
   }, [toast]);
   const currentDraft = useMemo(() => ({ ...draft, pool }), [draft, pool]);
   const registeredPool = useMemo(() => effectivePool(pool, pro.profile), [pool, pro.profile]);
-  const go = (p: Page) => {
+  const go = (p: Page, tool?: string) => {
     if (
       p !== page &&
       !window.dispatchEvent(new Event('kaiju-before-navigate', { cancelable: true }))
@@ -138,7 +153,7 @@ export default function App() {
       return;
     setPage(p);
     setMobileMenu(false);
-    setGlobalSearch('');
+    setDataTool(tool);
     window.scrollTo({ top: 0, behavior: 'instant' });
   };
   const mutate = async <T,>(fn: () => Promise<T>, message?: string): Promise<T> => {
@@ -168,7 +183,7 @@ export default function App() {
     poolSaving.current = true;
     void mutate(
       async () => setPool(await api<Pool>('/pool-edit', { changes })),
-      '英雄池已写入本机数据库',
+      publicSharing ? '英雄池已保存到当前账号' : '英雄池已写入本机数据库',
     )
       .catch(async () => {
         try {
@@ -186,9 +201,12 @@ export default function App() {
     go('profile');
   };
   const saveDraft = () => {
-    void mutate(async () => {
-      await api('/draft', currentDraft);
-    }, '阵容已保存到本机').catch(() => {});
+    void mutate(
+      async () => {
+        await api('/draft', currentDraft);
+      },
+      publicSharing ? '阵容已保存到当前账号' : '阵容已保存到本机',
+    ).catch(() => {});
   };
   const savePlan = async (heroId: number, name: string) => {
     await mutate(async () => {
@@ -243,6 +261,7 @@ export default function App() {
     { id: 'heroes' as Page, label: '英雄图鉴', icon: BookOpen },
     { id: 'tier' as Page, label: '分段梯度', icon: BarChart3 },
     { id: 'resources' as Page, label: '装备与版本', icon: BookOpen },
+    { id: 'datahub' as Page, label: '数据与工具', icon: BarChart3 },
     { id: 'draft' as Page, label: '阵容备战', icon: Swords },
     { id: 'journal' as Page, label: '对局手记', icon: NotebookPen },
     { id: 'pool' as Page, label: '我的英雄池', icon: Heart },
@@ -251,15 +270,13 @@ export default function App() {
     { id: 'replay' as Page, label: '录像复盘', icon: Video },
     { id: 'social' as Page, label: '好友与组队', icon: Users },
   ];
-  const searchResults = globalSearch.trim()
-    ? heroes
-        .filter((h) => h.name.includes(globalSearch.trim()) || h.slug.includes(globalSearch.trim()))
-        .slice(0, 6)
-    : [];
   return (
-    <ProContext.Provider value={{ data: pro, refresh: refreshPro, configured }}>
+    <ProContext.Provider value={{ data: pro, refresh: refreshPro, configured, publicSharing }}>
       <div className="app">
-        <aside className={'sidebar ' + (mobileMenu ? 'mobile-open' : '')}>
+        <aside
+          className={'sidebar ' + (mobileMenu ? 'mobile-open' : '')}
+          inert={mobileScreen && !mobileMenu}
+        >
           <button className="brand" onClick={() => go('home')} aria-label="开局首页">
             <span className="brand-symbol">
               <Aperture size={29} />
@@ -305,8 +322,8 @@ export default function App() {
             </button>
             <span>
               <i />
-              {ready ? '本地工作台已连接' : '正在连接本地服务'}
-              <small>v0.17</small>
+              {ready ? (publicSharing ? '分享服务已连接' : '本地工作台已连接') : '正在连接服务'}
+              <small>v0.25</small>
             </span>
           </div>
         </aside>
@@ -326,42 +343,7 @@ export default function App() {
               <strong>{nav.find((n) => n.id === page)?.label}</strong>
             </div>
             <div className="topbar-actions">
-              <div className="global-search">
-                <label>
-                  <Search size={15} />
-                  <input
-                    aria-label="全局搜索英雄"
-                    placeholder="找一个英雄…"
-                    value={globalSearch}
-                    onChange={(e) => setGlobalSearch(e.target.value)}
-                  />
-                  <span>搜索</span>
-                </label>
-                {globalSearch && (
-                  <div className="search-popover">
-                    {searchResults.length ? (
-                      searchResults.map((h) => (
-                        <button
-                          key={h.id}
-                          onClick={() => {
-                            openHero(h);
-                            setGlobalSearch('');
-                          }}
-                        >
-                          <Portrait hero={h} />
-                          <span>
-                            {h.name}
-                            <small>{h.roles.join(' / ')}</small>
-                          </span>
-                          <ArrowUpRight size={15} />
-                        </button>
-                      ))
-                    ) : (
-                      <p>没有匹配英雄</p>
-                    )}
-                  </div>
-                )}
-              </div>
+              <QuickSearch onHero={openHero} onTask={(t) => go(t.page, t.tool)} />
               <button
                 aria-label="备战档案"
                 className="archive-button"
@@ -389,14 +371,34 @@ export default function App() {
             </div>
           </header>
           <main>
-            <ConnectionStatus />
+            <ConnectionStatus
+              publicSharing={publicSharing}
+              onReconnect={() => {
+                if (!ready && !expired) void load();
+              }}
+            />
+            {publicSharing && ready && (
+              <div className="pro-notice" role="status">
+                分享体验版 · 可以直接查资料和练习
+                BP。保存英雄池、档案与复盘需要登录，账号数据彼此独立。
+                <button className="text-btn" onClick={() => go('social')}>
+                  注册 / 登录与好友
+                </button>
+                <ShareLink />
+                {location.hostname.endsWith('.trycloudflare.com') && (
+                  <p className="muted">
+                    临时分享地址，需要分享者的电脑保持在线；地址变更后请重新获取链接。
+                  </p>
+                )}
+              </div>
+            )}
             {!ready ? (
               <div className="loading-state">
                 <Aperture size={30} />
                 <h1>{expired ? '登录已过期' : '准备你的备战台'}</h1>
                 <p>
                   {expired
-                    ? '账号资料仍保存在本机。退出失效登录后，可到好友与组队重新登录原账号。'
+                    ? '账号资料仍保存在服务端。退出失效登录后，可到好友与组队重新登录原账号。'
                     : '英雄资料与个人记录正在就位。'}
                 </p>
                 {expired ? (
@@ -420,6 +422,14 @@ export default function App() {
               <>
                 {page === 'tier' && <Leaderboard onOpen={openHero} />}
                 {page === 'resources' && <ResourceCenter onOpen={openHero} />}
+                {page === 'datahub' && (
+                  <DataHub
+                    key={dataTool ?? 'default'}
+                    initialTab={dataTool}
+                    onOpen={openHero}
+                    draft={currentDraft}
+                  />
+                )}
                 {page === 'profile' && <ProfilePage focusHeroId={profileHero} />}
                 {page === 'social' && <Social />}
                 {page === 'replay' && <Replay />}
@@ -441,6 +451,7 @@ export default function App() {
                     go={go}
                     onDemo={demo}
                     onOpen={openHero}
+                    onTool={(tool) => go('datahub', tool)}
                     onLoadPlan={openPlan}
                   />
                 )}
@@ -558,7 +569,10 @@ export default function App() {
             <div className="source-block">
               <h3>你的数据，由你记录</h3>
               <p>
-                英雄池、备战卡和对局手记保存在本机。开局账号之间的数据独立保存。没有接入王者游戏账号，教学阵容不计入个人统计。
+                {publicSharing
+                  ? '英雄池、备战卡和对局手记保存在分享服务的账号中。'
+                  : '英雄池、备战卡和对局手记保存在本机。'}
+                开局账号之间的数据独立保存。没有接入王者游戏账号，教学阵容不计入个人统计。
               </p>
             </div>
             <div className="source-block">

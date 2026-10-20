@@ -2,6 +2,12 @@ import { cpSync, mkdirSync, writeFileSync, readFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { spawn } from 'node:child_process';
 import assert from 'node:assert/strict';
+import { createServer } from 'node:net';
+const probe = createServer();
+await new Promise(resolve => probe.listen(0, '127.0.0.1', resolve));
+const port = probe.address().port;
+await new Promise(resolve => probe.close(resolve));
+const base = 'http://127.0.0.1:' + port;
 const root = resolve('.reproduction', 'audit-' + Date.now());
 const output = resolve(process.argv[2] ?? 'evidence/final-audit-v016');
 const expectedVersion = JSON.parse(readFileSync('package.json', 'utf8')).version;
@@ -50,7 +56,11 @@ try {
     windowsHide: true,
     env: {
       ...process.env,
-      PORT: '4320',
+      PORT: String(port),
+      HOST: '127.0.0.1',
+      KAIJU_PUBLIC_ORIGIN: '',
+      RENDER_EXTERNAL_URL: '',
+      KAIJU_TRUSTED_PROXY: 'none',
       RANK_AUTO_REFRESH: '0',
       PLAYER_DATA_DIR: join(root, 'data'),
       MODEL_API_KEY: '',
@@ -63,7 +73,7 @@ try {
   let status;
   for (let i = 0; i < 50; i++) {
     try {
-      const r = await fetch('http://127.0.0.1:4320/api/status');
+      const r = await fetch(base + '/api/status');
       if (r.ok) {
         status = await r.json();
         break;
@@ -73,7 +83,7 @@ try {
   }
   assert.equal(status?.version, expectedVersion);
   assert.equal(status.heroCount, 133);
-  const workspace = await (await fetch('http://127.0.0.1:4320/api/workspace')).json();
+  const workspace = await (await fetch(base + '/api/workspace')).json();
   assert.deepEqual(workspace.pool, []);
   assert.deepEqual(workspace.matches, []);
   const result = {

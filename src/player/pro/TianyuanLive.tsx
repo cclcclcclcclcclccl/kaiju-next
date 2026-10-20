@@ -1,6 +1,15 @@
+import RelationExplorer from './RelationExplorer.tsx';
 import { useEffect, useState } from 'react';
 import type { ReactNode } from 'react';
-import { EquipmentIdentity, SkinDistribution } from './SourceMedia.tsx';
+import {
+  EquipmentIdentity,
+  SkinDistribution,
+  NamedIcon,
+  HeroIdentity,
+  RateBar,
+  RateLegend,
+} from './SourceMedia.tsx';
+import EquipmentBreakdown from './EquipmentBreakdown.tsx';
 import type { z } from 'zod';
 import { api, download } from '../../api.ts';
 import { heroById } from '../catalog.ts';
@@ -10,7 +19,6 @@ import {
   TIANYUAN_MODES,
   tianyuanSkinSchema,
   tianyuanDurationSchema,
-  tianyuanAnalysisSchema,
   tianyuanEquipSchema,
   tianyuanCombinedSchema,
   tianyuanTierSchema,
@@ -181,17 +189,22 @@ export function TianyuanHero({
       {row && (
         <div className="metric-strip" aria-label="英雄分段三率">
           {[
-            ['胜率', percentage(row.winRate)],
-            ['出场率', percentage(row.pickRate)],
-            ['禁用率', percentage(row.banRate)],
+            ['胜率', row.winRate],
+            ['出场率', row.pickRate],
+            ['禁用率', row.banRate],
           ].map(([label, value]) => (
             <div key={label}>
-              <strong>{value}</strong>
+              <RateBar
+                value={value as number | null}
+                win={label === '胜率'}
+                label={String(label)}
+              />
               <span>{label}</span>
             </div>
           ))}
         </div>
       )}
+      {row && <RateLegend />}
       <p className="data-caption">
         综合梯度日期 {tierDate}
         ，由天元发布，不随三率分段变化；原站算法测试中。三率查询日 {date}。
@@ -292,7 +305,7 @@ export function TianyuanHero({
                   .parse(packet.data)
                   .winRateByDuration.map((s) => [
                     s.durationRange,
-                    percentage(s.winRate),
+                    <RateBar value={s.winRate} win />,
                     percentage(s.intervalRate),
                   ])}
                 caption="对局时长分组胜率 · 第三方统计"
@@ -316,10 +329,11 @@ export function TianyuanHero({
                       icon={s.equipmentIcon}
                     />,
                     percentage(s.pickRate),
-                    percentage(s.winRate),
+                    <RateBar value={s.winRate} win />,
                   ])}
                 caption="来源装备胜率统计"
               />
+              <EquipmentBreakdown data={tianyuanEquipSchema.parse(packet.data)} />
             </>
           )}
           {kind === 'combined' && (
@@ -338,7 +352,7 @@ export function TianyuanHero({
                       } as Record<string, string>
                     )[k] ?? k,
                     percentage(s.pickRate),
-                    percentage(s.winRate),
+                    <RateBar value={s.winRate} win />,
                   ],
                 )}
                 caption="该英雄内部位置分布 · 非全英雄出场率"
@@ -348,42 +362,15 @@ export function TianyuanHero({
                 rows={tianyuanCombinedSchema
                   .parse(packet.data)
                   .summonerSkills.map((s) => [
-                    s.skillName,
+                    <NamedIcon name={s.skillName} icon={s.skillIcon} />,
                     percentage(s.pickRate),
-                    percentage(s.winRate),
+                    <RateBar value={s.winRate} win />,
                   ])}
                 caption="来源召唤师技能统计 · 样本量未公布"
               />
             </>
           )}
-          {kind === 'analysis' && (
-            <>
-              <p className="pro-notice">
-                来源优势/协同指数与场次数。指数公式、调整因素及统计窗口尚未明确，不把指数当成胜率提升，不直接写入BP评分。
-              </p>
-              {(
-                [
-                  ['counters', '来源有利对位'],
-                  ['counteredBy', '来源不利对位'],
-                  ['goodSynergies', '来源正向组合'],
-                  ['badSynergies', '来源负向组合'],
-                ] as const
-              ).map(([key, label]) => (
-                <SimpleTable
-                  key={key}
-                  headers={['英雄', '样本场次', '来源指数']}
-                  rows={tianyuanAnalysisSchema
-                    .parse(packet.data)
-                    [key].map((r) => [
-                      r.heroName,
-                      String(r.totalMatches),
-                      String(r.advantageIndex ?? r.synergyIndex ?? '未公布'),
-                    ])}
-                  caption={label}
-                />
-              ))}
-            </>
-          )}
+          {kind === 'analysis' && <RelationExplorer data={packet.data} />}
         </>
       )}
     </section>

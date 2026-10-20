@@ -1,0 +1,17 @@
+[Unit]
+Description=Consistent SQLite backup for Kaiju NEXT
+After=kaiju.service
+
+[Service]
+Type=oneshot
+User=kaiju
+Group=kaiju
+WorkingDirectory=/opt/kaiju
+EnvironmentFile=/etc/kaiju.env
+ExecStart=/usr/bin/node scripts/player/backup-public.mjs
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/kaiju

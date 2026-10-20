@@ -1,0 +1,28 @@
+[Unit]
+Description=Kaiju NEXT public player companion
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=kaiju
+Group=kaiju
+WorkingDirectory=/opt/kaiju
+EnvironmentFile=/etc/kaiju.env
+ExecStart=/usr/bin/node server/index.ts
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+StateDirectory=kaiju
+StateDirectoryMode=0700
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/kaiju
+
+[Install]
+WantedBy=multi-user.target

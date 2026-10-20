@@ -1,0 +1,8 @@
+# Replace this hostname with your own DNS name pointing to the server.
+play.example.com {
+    encode zstd gzip
+    reverse_proxy 127.0.0.1:4320 {
+        # App trusts only this single address, supplied by the loopback proxy.
+        header_up X-Forwarded-For {remote_host}
+    }
+}

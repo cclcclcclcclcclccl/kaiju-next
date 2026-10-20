@@ -1,0 +1,106 @@
+.command-search input {
+  width: 210px;
+}
+.command-search kbd {
+  white-space: nowrap;
+  font-size: 10px;
+  border: 1px solid #526176;
+  border-radius: 4px;
+  padding: 3px 5px;
+}
+.command-search .search-popover {
+  width: 360px;
+  max-height: 65vh;
+  overflow-y: auto;
+}
+.search-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 9px;
+  color: #b8c8db;
+  font-size: 12px;
+}
+.search-popover button:focus-visible {
+  outline: 2px solid #e8c584;
+  background: #ffffff10;
+}
+.source-context {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 14px 0;
+  font-size: 12px;
+  color: #ccd8e7;
+}
+.source-context span {
+  padding: 5px 9px;
+  border: 1px solid #445369;
+  border-radius: 6px;
+  background: #111d2c;
+}
+.source-context time {
+  font-size: 11px;
+}
+.compare-selected {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  gap: 12px;
+  margin: 18px 0;
+}
+.compare-selected > div {
+  padding: 14px;
+  border: 1px solid #445369;
+  border-radius: 10px;
+  display: grid;
+  gap: 8px;
+  background: #111d2c;
+}
+.compare-selected small {
+  color: #c5b589;
+}
+.compare-table {
+  min-width: 540px;
+  width: 100%;
+}
+.compare-table th,
+.compare-table td {
+  min-width: 120px;
+}
+.compare-table th:first-child {
+  position: sticky;
+  left: 0;
+  background: #121d2b;
+  z-index: 1;
+}
+.hero-compare > .plus-source > .btn {
+  margin-top: 16px;
+}
+@media (max-width: 1100px) {
+  .command-search input {
+    width: 150px;
+  }
+  .command-search kbd {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .command-search input {
+    width: 95px;
+  }
+  .command-search .search-popover {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    top: 65px;
+    width: auto;
+    max-height: 70vh;
+  }
+  .compare-selected {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .compare-selected > div {
+    padding: 9px;
+  }
+}

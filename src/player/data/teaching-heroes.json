@@ -1,0 +1,4502 @@
+{
+  "scope": "上轮九组检索页面标题明确涉及的英雄，含对位对手；排除其他游戏、歧义词和节奏大师误匹配。不是视频内容覆盖声明。",
+  "heroes": [
+    {
+      "heroId": 170,
+      "name": "刘备",
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-170",
+      "conflict": "旧建议未充分区分大招免控与护盾时长；本卡依照技能正文区分，护盾存在不代表仍免控。",
+      "excerpts": [
+        {
+          "label": "强化霰弹 · 技能正文",
+          "text": "刘备霰弹枪有四颗弹丸，中间的两颗弹丸会对敌人造成(50%物理攻击)物理伤害，外侧的两颗弹丸会对敌人造成(30%物理攻击)物理伤害。每颗弹丸命中敌方英雄，会增加1层战斗本能，每层增加5~10点物理穿透，持续6秒，最多叠加12层。 弹丸可穿透非英雄单位，每次射击只有中间的2颗弹丸能够暴击并触发装备效果。建筑不受额外弹丸影响。"
+        },
+        {
+          "label": "双相射击 · 技能正文",
+          "text": "刘备获得40%移速加成(持续1.5秒)并强化下次普攻 近距离：下次普攻为两连射，每颗弹丸造成60/72/84/96/108/120（+25%物理攻击）物理伤害 远距离：发射一颗爆裂弹(期间自身退后)，对首个目标额外造成290/348/406/464/522/580(+95%额外Ad)物理伤害并对其身后扇形区域内目标造成50%伤害"
+        },
+        {
+          "label": "身先士卒 · 技能正文",
+          "text": "刘备向前冲撞造成280/336/392/448/504/560(+80%额外物理攻击)物理伤害和击退(3/4秒) 首发弹丸命中减少5%冷却，后续每颗弹丸命中减少1%冷却"
+        },
+        {
+          "label": "以德服人 · 技能正文",
+          "text": "刘备解除自身控制并获得免控(持续3秒)和1000/1500/2000(+15%额外生命)点护盾(持续6秒)，同时进入精准射击状态：普攻和二连射最外侧额外附带两颗弹丸((散布更集中)，每颗额外造成50/75/100(+16%额外物理攻击)物理伤害 对敌方单位的伤害40%转化为护盾值，上限为初始值的100%"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1eZ421U78i/",
+          "title": "【国服铠】奥特曼zz《铠VS刘备》“保姆级铠打刘备教学”发育 反野 节奏 思路 技巧 心得 铠打野解说教学！！！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1qh4y1p7YX/",
+          "title": "【国一刘备vs百分百胜率打法】发育 反野 推塔 技巧 思路 教学 打野超级干货教学！！！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV12N411t7x5/",
+          "title": "【国服刘备】奥特曼zz《百分之99胜率打法》“保姆级刘备打野教学”发育 反野 兵线运营 思路 技巧 解说教学！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1fj411U7tr/",
+          "title": "【国服刘备】奥特曼zz《英雄克制？》“通过运营打法 随便拿捏”保姆级打铠教学〖发育/反野/思路/技巧/心得〗超级干货教学！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1mA41117wR/",
+          "title": "【国一刘备VS会打经济有多可怕】成千上万局游戏经验 教会你如何 十分钟一万经济 发育 打经济 思路 技巧 教学 超级干货！！！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1wS421d7Wq/",
+          "title": "100亿场刘备【教你本赛季 刘备最正确 经济思路打法教学】"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1X24y197iv/",
+          "title": "【国一刘备VS国服司马懿】成千上万局的游戏经验 教你成为最会打逆风局的打野 逆风局打野解说教学！！！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1VL4y1G7qi/",
+          "title": "王者荣耀: 超逆风局 国服刘备 顶级打法思路教学 完整版！！！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1kX4y1S7DT/",
+          "title": "【国服刘备VS会打经济有多可怕】2.0 成千上万局打野经验 教你如何 十分钟一万经济 发育 打经济 思路 技巧 教学 解说 超级干货！！！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1ki4y1q7wW/",
+          "title": "【国服刘备】奥特曼zz《前期逆风 怎么打》“保姆级刘备打野教学”发育 反野 意识 逆风 思路 技巧 心得 解说打野教学！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1h14y1i7M5/",
+          "title": "【刘备VS铠】奥特曼zz《逆风局打野教学》“成千上万局打野经验 教会你如何打逆风局”打经济 反野 逆风局 思路 技巧 心得 保姆级打野教学！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1a54y1A74e/",
+          "title": "【国一刘备VS控野有多强大】成千上万局游戏经验 教会你如何 控野 反野 逆风打野 思路 技巧 解说 教学 超级干货！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1v14y1B71q/",
+          "title": "【国服刘备】奥特曼zz《8分钟9200经济》“全网最强 保姆级 果盘打法教学” 成千上万局打野经验 教会你  发育 打经济 反野 思路 技巧  刘备打野教学！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1KY411Y7Wc/",
+          "title": "【国一刘备VS逆风局】成千上万局游戏经验 教你如何学会 兵线运营 逆风打野 思路 技巧 解说 教学 超级干货！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV19X4y1e737/",
+          "title": "【国服刘备】奥特曼zz《打铠教学》“不搭理他”打自己的经济节奏 〖保姆级打野教学〗英雄克制/打铠教学/发育/反野/思路/技巧/心得/超级干货解说教学！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1YFGFziE5c/",
+          "title": "2000亿场刘备教你【如何打出控4野区】新赛季刘备 最正确打野思路教学！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1Dj411k7r6/",
+          "title": "【国服刘备】奥特曼zz《新赛季百分百胜率打法》“保姆级打野教学”刘备打野教学/新赛季 发育 反野 技巧 思路解说教学！"
+        }
+      ]
+    },
+    {
+      "heroId": 193,
+      "name": "铠",
+      "roles": [
+        "打野",
+        "对抗路"
+      ],
+      "sourceId": "official-193",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "铠的1技能需要预判对手走位释放，加速效果能够很好的黏住敌人。2技能的突进是很好的切入后排的手段，也可以配合队友进行线上支援抓人。大招能增强各项属性，所以尽量早点在进入战斗前开启大招进行战斗"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1.可以走位躲过铠的1技能;2.注意铠的突进，脆皮要与其保持距离以防被开团"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时，根据出装的不同，铠可以进行开团或者战中切入敌方后排战斗，将敌方后排输入英雄切死或阻碍其输出"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1eZ421U78i/",
+          "title": "【国服铠】奥特曼zz《铠VS刘备》“保姆级铠打刘备教学”发育 反野 节奏 思路 技巧 心得 铠打野解说教学！！！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1fj411U7tr/",
+          "title": "【国服刘备】奥特曼zz《英雄克制？》“通过运营打法 随便拿捏”保姆级打铠教学〖发育/反野/思路/技巧/心得〗超级干货教学！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1h14y1i7M5/",
+          "title": "【刘备VS铠】奥特曼zz《逆风局打野教学》“成千上万局打野经验 教会你如何打逆风局”打经济 反野 逆风局 思路 技巧 心得 保姆级打野教学！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV19X4y1e737/",
+          "title": "【国服刘备】奥特曼zz《打铠教学》“不搭理他”打自己的经济节奏 〖保姆级打野教学〗英雄克制/打铠教学/发育/反野/思路/技巧/心得/超级干货解说教学！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1jS4y1k71D/",
+          "title": "虽然对抗路早已不适合铠，但我是李奶奶！！！"
+        }
+      ]
+    },
+    {
+      "heroId": 511,
+      "name": "猪八戒",
+      "roles": [
+        "对抗路",
+        "打野"
+      ],
+      "sourceId": "official-511",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "猪八戒的机动性在坦克中属上乘，利用好他的开团能力；猪八戒的位移和控制能力与地形关联较大，注意利用地形；猪八戒不怕挨打，但挨打后要注意反击，使被动技能产生作用"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "使用一击脱离的方式攻击猪八戒，避免被他反击回血；注意不要与猪八戒和墙体站在同一直线上，防止被强行开团秒掉"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "作为主动性非常强的坦克英雄，猪八戒需要第一个进入敌方阵型打出控制和造成混乱，在有一定最大生命值支持的情况下，利用被动不断反打回复生命值，可以坚持很久"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1GDAHzzEV9/",
+          "title": "猪八戒全局思路教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1To4C6MEt8/",
+          "title": "较高质量的边路关羽单杀教程，包含很多线上难打的英雄，比如影，猪八戒，赵怀真"
+        }
+      ]
+    },
+    {
+      "heroId": 130,
+      "name": "宫本武藏",
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-130",
+      "conflict": "技能正文是恢复效果延后，不等同于永久禁止回血；不沿用绝对禁疗说法。",
+      "excerpts": [
+        {
+          "label": "二天一流 · 技能正文",
+          "text": "宫本武藏释放技能后会蓄1重势，每次普攻消耗1重势，获得不同的强化效果，强化普攻不受攻速影响，命中后减少【空明斩】和【神速】1秒冷却时间。 一重势：若目标生命在50%以上，宫本武藏双刀挥斩，额外造成120~240(+40%额外物理攻击)物理伤害。若目标生命低于50%，宫本武藏向前正斩，额外造成45~90(+15%额外物理攻击)物理伤害，并附带目标6%已损生命的物理伤害。 二重势：宫本武藏挥刀突进至目标身前，造成15~30(+5%额外物理攻击)物理伤害和25~50%减速，持续1秒。"
+        },
+        {
+          "label": "空明斩 · 技能正文",
+          "text": "宫本武藏斩出一道剑气击落路径上的敌方飞行物，同时对路径上的敌人造成350/420/490/560/630/700(+115%额外物理攻击)物理伤害和25/30/35/40/45/50%减速，持续1秒。 释放【空明斩】时宫本武藏处于霸体状态。"
+        },
+        {
+          "label": "神速 · 技能正文",
+          "text": "宫本武藏向前冲刺，对路径上的敌人造成210/252/294/336/378/420(+70%额外物理攻击)物理伤害，若命中敌人将获得300/360/420/480/540/600(+5%额外生命值)护盾并减少50%冷却时间。"
+        },
+        {
+          "label": "一决生死 · 技能正文",
+          "text": "宫本武藏选择并锁定一名敌方英雄，向目标所在区域突进，对范围内的目标造成400/600/800(+130%额外物理攻击)物理伤害和1秒击飞，随后目标被宫本指明为一决生死的对象，持续5秒，期间对象所有恢复效果都会延迟到一决生死后生效。 宫本武藏在突进期间处于霸体状态，并减少50%所受伤害。"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1MS411P72q/",
+          "title": "超标教s36最强打野私人超雄波刚流宫本！0基础全局思路解说！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1apYL6EEWX/",
+          "title": "为什么你玩打野总是没队友跟？原来是要按照时间节点提前布局。宫本武藏对位诸葛亮：中轴反野时机把控全拆解。"
+        }
+      ]
+    },
+    {
+      "heroId": 128,
+      "name": "曹操",
+      "roles": [
+        "对抗路",
+        "打野"
+      ],
+      "sourceId": "official-128",
+      "conflict": "旧提示仍以旧版大招吸血为主；本卡按技能正文整理强化剑气与位移条件。",
+      "excerpts": [
+        {
+          "label": "争霸 · 技能正文",
+          "text": "曹操使用技能后获得35%攻速和1次强化普攻(最多5次)，强化普攻可远程连续挥斩并在命中时提供90~180(+1.4%额外生命)回复（非英雄单位减半）"
+        },
+        {
+          "label": "霸道之刃 · 技能正文",
+          "text": "曹操向前突袭对路径上的敌人造成300/360/420/480/540/600(+90%额外物理攻击)物理伤害(最多3次)，第三次突袭造成击飞(0.5秒) 每少使用一次【霸道之刃】将减少35%冷却时间"
+        },
+        {
+          "label": "纵横天下 · 技能正文",
+          "text": "曹操挥出强大剑气，对路径上的敌人造成320/384/448/512/576/640(+100%额外物理攻击)物理伤害并减少其25/30/35/40/45/50%移速，持续1.5秒。 每命中一名敌方英雄回复200/240/280/320/360/400(+3%额外生命)点生命，非英雄单位减半。 被动：普攻命中敌人时减少5%/6%/7%/8%/9%/10%【纵横天下】的冷却。"
+        },
+        {
+          "label": "浴血枭雄 · 技能正文",
+          "text": "曹操以鲜血意志解除控制并造成230/345/460(+75%额外物理攻击)物理伤害，同时获得450/675/900(+7%额外生命值)最大生命(附近每个敌方英雄提升20%)和10/15/20%韧性(持续8秒) 持续期间【争霸】的 强化普攻和【纵横天下】均能额外挥出一道剑气(50%伤害)并持续获得强化普攻次数"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV199KdzLE3G/",
+          "title": "曹操出装打法思路教学，1分19秒出野区"
+        }
+      ]
+    },
+    {
+      "heroId": 137,
+      "name": "司马懿",
+      "roles": [
+        "打野",
+        "中路"
+      ],
+      "sourceId": "official-137",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1.尽量参与战斗，司马懿通过击败或助攻增加的能量上限值，可以让司马懿提前达到最高限制 2、大招有一定的延迟，需要预判敌方走位计算提前量"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1.前期司马懿十分缺乏能量，逼迫他走出沉默区域避免其回复能量能够持续作战;2.司马懿二技能的被动会将已经承受的部分法术伤害转化为治疗效果，并不能直接造成伤害减免"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "长距离的突袭能力，让司马懿天生就能够轻松抵达敌方后排，但是刺客的身板不足以让其先手开团，所以，最好还是一边等待机会威吓对方后排输出，一边等待友方坦克战士开启团战"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1X24y197iv/",
+          "title": "【国一刘备VS国服司马懿】成千上万局的游戏经验 教你成为最会打逆风局的打野 逆风局打野解说教学！！！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1np4y1Z7EK/",
+          "title": "打野司马懿0死亡率分均1000经济节奏打法全局思路"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1NX4y1t7nc/",
+          "title": "国服司马懿1分06出野区分均1000经济0死亡率全局打野思路教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1ch4y1j7D7/",
+          "title": "打野司马懿1分05出野区0死亡率分均1000经济节奏打法全局思路"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1gS8n6sEoC/",
+          "title": "司马懿全局复盘：玩打野不敢吃钱？还不会规划刷野路线的点进来！"
+        }
+      ]
+    },
+    {
+      "heroId": 153,
+      "name": "兰陵王",
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-153",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "兰陵王擅长靠技能打爆发伤害，一套爆发后尽量远离敌人躲避反击.在草丛中启动隐身，避免敌人通过小地图察觉到兰陵王而逃跑"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、让己方肉盾英雄对核心输出进行贴身保护，挡住匕首攻击，并在现身时控制他；2、兰陵王对孤立的敌人造成更多伤害，不要单独面对他；3、被兰陵王匕首击中后尽量逃离他，避免被追加伤害"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "利用隐身接近敌方后排，寻找他失去队友保护的时机发起进攻，先确保2技能命中目标，然后接1技能晕住并打出伤害，视情况利用3技能第二段位移进行继续突进或选择撤退.团战中，秒掉敌方核心输出便是兰陵王对团队的最大贡献"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1EYKS6xECZ/",
+          "title": "逆风局兰陵王打野的顶级思路：专切后排拖时间，偷家定胜负！#王者荣耀 #打野 #兰陵王 #王者荣耀打野教学"
+        }
+      ]
+    },
+    {
+      "heroId": 502,
+      "name": "裴擒虎",
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-502",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1.裴擒虎在人形时，输出为法术伤害，在虎形时，输出为物理伤害，注意敌方出装即可进行针对；2.裴擒虎在地形复杂的地区比较容易打出超额的爆发伤害"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1.注意其清野速度会比想象的更快，袭击线上和入侵野区的节奏会有很大的不同；2.面对裴擒虎时，注意和地形保持距离以避免其打出超额爆发"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "裴擒虎的人形的消耗与虎形的突袭可以应付大部分团战变化，但是，在前期敌方野区肆掠，压榨敌方经济才是其核心"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV11HNozAEgJ/",
+          "title": "学的是技术 领悟则是道 两把思路反野和不反野的玩法 T0老虎玄策 优先级大于一切"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1tWhHzNELC/",
+          "title": "十亿场诸葛告诉你，千万别顶着老虎拿诸葛！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1XZ4y137fH/",
+          "title": "帮万战老虎学生复盘60星单排，超强意识路人看了直喊6！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV17TEsz8EGw/",
+          "title": "1600分金标老虎就是这么强，零死亡完美节奏爆杀镜！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1iA411q7tP/",
+          "title": "深度复盘：韩涵老虎的高端巅峰赛无情乱杀局"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1emajzTEnc/",
+          "title": "低星局被勾BUFF怪队友？其实是你不会玩！适合中低分段老虎玩家突破提升游戏理解以及节奏控野思路！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1pvhZzYEzf/",
+          "title": "1900分老虎 你是一个弱势打野！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1rWPfeKEFM/",
+          "title": "粉丝复盘星耀局老虎打野：让我们看看他的老虎打的怎么样都有哪些问题！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1vwaqzbE19/",
+          "title": "老虎教学：一直卡在中低分段可能是你抓机会的能力太弱了"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1zZa4zgEuW/",
+          "title": "历史1W4老虎的开局思路居然是这样的？操作还可以但思路真的很拉胯！"
+        }
+      ]
+    },
+    {
+      "heroId": 195,
+      "name": "百里玄策",
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-195",
+      "conflict": "旧提示与瞬镰闪等技能正文不完全一致；不使用钩空后完全无法进场的绝对结论。",
+      "excerpts": [
+        {
+          "label": "狂热序章 · 技能正文",
+          "text": "玄策使用带链镰刃攻击敌人，镰刃对远处的敌人额外造成(25%物理攻击)物理伤害同时减少目标15%移速，自身增加15%移速，持续0.75~1.5秒。"
+        },
+        {
+          "label": "神乎钩镰 · 技能正文",
+          "text": "玄策向指定方向突进并强化下一次普攻，额外造成目标4%最大生命值的物理伤害(每10点额外物理攻击提升0.05%)。若突进时钩镰标记了目标，则突进结束后将目标朝自身位移拖动一段距离。 【神乎钩镰】每次升级会提升【狂热序章】15/18/21/24/27/30%的加速与减速效果。"
+        },
+        {
+          "label": "梦魇钩锁 · 技能正文",
+          "text": "玄策舞动钩镰，蓄力增加30%移速并逐渐增加钩镰射程。蓄力后将钩镰甩出，对路径上的敌人造成300/360/420/480/540/600(+140%额外物理攻击)物理伤害和短暂定身，钩镰到达最远处后收回，对首个目标标记为狩猎目标，玄策对其增加10/12/14/16/18/20%伤害并减少15/18/21/24/27/30%该目标对自己的伤害。期间可再次释放该技能，消耗狩猎标记将目标甩向身后并造成300/360/420/480/540/600(+140%额外物理攻击)物理伤害，对野怪伤害额外提升50%。  取消蓄力减少【梦魇钩锁】50%的冷却。狩猎目标死亡或者用【瞬镰闪】套上钩镰时，将立即返还【梦魇钩锁】40/48/56/64/72/80%的冷却。"
+        },
+        {
+          "label": "瞬镰闪 · 技能正文",
+          "text": "玄策突进到【梦魇钩锁】命中的目标身后，对路径上的敌人造成360/540/720(+200%额外物理攻击)物理伤害，远距离时则顺着钩镰向前移动一段距离。 没有【梦魇钩锁】命中的目标时，玄策突进至目标身前，将【梦魇钩锁】套在目标身上，对目标造成90/135/180(+50%额外物理攻击)物理伤害。 玄策在位移期间减少50%所受到的伤害。 被动：玄策击杀或者助攻获得持续5秒的30%移速(随时间衰减)和25%攻速加成，该效果最大叠加3层。 每6/5.5/5秒可准备1次【瞬镰闪】，最多可储备3次【瞬镰闪】。"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV11HNozAEgJ/",
+          "title": "学的是技术 领悟则是道 两把思路反野和不反野的玩法 T0老虎玄策 优先级大于一切"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1J2KqzMEDq/",
+          "title": "小李无视野被玄策逮捕，南瓜赛后复盘发现玄策\"诠释何为意识\""
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1bK4y1t72n/",
+          "title": "荣耀局玄策单排开局就丢蓝？百星打野带你复盘节奏点提升意识"
+        }
+      ]
+    },
+    {
+      "heroId": 150,
+      "name": "韩信",
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-150",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "韩信1、2技能加起来有三段位移，可以用来突进非常远的距离，利用1技能挑飞不断输出，等敌人走远接2技能追上，在1技能击飞时，也可以接上大招，保证大招的输出"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、韩信很怕被控制，进场后用控制型英雄将其控制击杀；2、韩信没有技能的时候比较脆弱，趁这时候攻击他；3、韩信非常灵活，千万不要试图追杀韩信，以免被其队友赶到支援而被反杀"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "韩信机动性超强，伤害十足，团战中韩信要避免被先手控制集火秒掉，需要谨慎走位，找一个合适的时机入场，突入敌方后排，将后排击杀，如果技能用完，不要深追，先战术撤退，韩信的CD很短，需要等待下一波技能CD继续突进将其击杀"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1kcizYVEaU/",
+          "title": "超标教s37私人超标T0打野！枪尖流韩信0基础全局思路解说！"
+        }
+      ]
+    },
+    {
+      "heroId": 564,
+      "name": "姬小满",
+      "roles": [
+        "对抗路"
+      ],
+      "sourceId": "official-564",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "打团时可以用1+1和2+2的打出伤害控制，再安全退场"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "不要被小满的单段高伤害技能吓退，小满的持续作战能力较为一般，可以适当反击"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "先手时使用1+1和2+2连招，后手则多使用1+2或2+1连招，尽可能在敌方交过关键控制技能后再进场"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1GZ421W7hb/",
+          "title": "打野姬八流全肉坦克姬小满全局思路解说"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1g14y1S7kV/",
+          "title": "姬小满是吧？看我弱化苍穹流赵怀真如何应对！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1AmFAeBEqZ/",
+          "title": "两亿把对抗路告诉你 司空震是打不过姬小满的！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1M4421f7Jy/",
+          "title": "两亿把姬小满告诉你 战舞者的手感到底有多丝滑！"
+        }
+      ]
+    },
+    {
+      "heroId": 129,
+      "name": "典韦",
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-129",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "典韦的1技能可以进行开团，配合大招的真实伤害和2技能的减速能很好的黏住敌人将其击杀"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、输出英雄在团战中要注意自己的走位，尽量远距离输出典韦；2、坦克英雄在低血量时，典韦有大招时不要与其对抗"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时，典韦应该尽量依靠自身的抗击打能力，冲入敌方后排，开启大招攻击后排英雄.如果执着于击杀前排，则达不到最好的效果"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1Vu4y1c753/",
+          "title": "【原始人典韦】奥特曼zz《百分之99胜率打法》“保姆级典韦打野教学”发育 反野 兵线运营 思路 技巧 解说教学！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1zSkcY2E8u/",
+          "title": "典韦打诸葛亮的全局打法教学来啦！"
+        }
+      ]
+    },
+    {
+      "heroId": 531,
+      "name": "镜",
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-531",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "镜释放大招时，可以通过遥感控制镜出现的方向，让敌人无法预判走位"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "镜的爆发力十分出众，当他释放大招时，要么自己快速逃离大招范围，要么将她推出大招范围"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "在团战中镜最好的角色还是在外围伺机收割敌人，镜对于后排的威胁也远高于前排英雄，所以尽量找准机会突袭后排脆皮英雄"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1oF411T7QE/",
+          "title": "1900分巅峰千强对位50强镜无敌思路教学，瓶颈期只是你害怕的一个借口！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV17TEsz8EGw/",
+          "title": "1600分金标老虎就是这么强，零死亡完美节奏爆杀镜！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1uj421f7Z5/",
+          "title": "五千局一万七国服镜打一千八巅峰赛连跪？到底是操作队友还是决策意识问题？一起复盘分析一下到底是什么原因？"
+        }
+      ]
+    },
+    {
+      "heroId": 175,
+      "name": "钟馗",
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-175",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "钟馗需要多用2技能勾到敌方，制造以多打少的局面.积极游走，寻找机会躲在草丛或在团战时后手勾人能提升命中率"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、躲在小兵或坦克身后，以防被钟馗勾中；2、如果不幸被勾中，第一时间利用位移逃脱；3、当心低生命值的钟馗，他很可能作为人肉炸弹冲过来"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "开战前尝试用勾子命中敌人，成功的话可以配合队友将其秒杀，形成以多打少的局面，在技能CD时，不要吝啬生命，义无反顾的冲到敌人密集处利用被动输出可观伤害"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1P84y1t7vZ/",
+          "title": "电竞冥场面：钟馗的钩子都能打歪！新英雄赵怀真有多离谱！"
+        }
+      ]
+    },
+    {
+      "heroId": 544,
+      "name": "赵怀真",
+      "roles": [
+        "打野",
+        "对抗路",
+        "游走"
+      ],
+      "sourceId": "official-544",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1. 以“攻防循环”的基础方式进行战斗，先打出普攻4招，然后以二技能的防御状态安全等待精力回复。 2. 2-1技能连招可以形成有威胁的开团能力。 3. 大招吸收飞行物的效果能为队友提供有效保护。"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1. 赵怀真在精力耗尽后没有有效的输出手段，可以抓住此时追击 2. 在赵怀真刚使用过二技能后再对其使用硬控，避免触发反击"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "使用2-1连招开到敌方后排，然后普攻输出，最后用大招吸收一定伤害后对该后排英雄追加伤害。"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1P84y1t7vZ/",
+          "title": "电竞冥场面：钟馗的钩子都能打歪！新英雄赵怀真有多离谱！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1qe411A7nf/",
+          "title": "赵怀真：2拳伤害1万7？暴击才是我的归宿！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV11G4y157hB/",
+          "title": "赵怀真教学！对抗路打法！秒C连招！颠覆性大招！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1UN41127K7/",
+          "title": "《逆版本而行赵怀真》幽灵步教学…"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1Du411T7kh/",
+          "title": "野区萧炎又一个新斗技？三千雷动双大招卡法教学它来了 别小看了我们赵怀真玩家的创造力"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1bYbf6dEyk/",
+          "title": "夏侯惇大招改动——终成赵怀真《萧炎》2.0"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1n84y1Z7fz/",
+          "title": "赵怀真控拳术、大一闪、滑步八极崩、控A技、三千雷动，赵怀真必学的四大仙术技巧"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1Jx4y1R7i1/",
+          "title": "手法简单无法反制伤害爆炸，我们娘炮要有自己的赵怀真！！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1TR4y117GV/",
+          "title": "法球赵怀真：1秒24次伤害？我要无敌了！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1XW4y1u7nm/",
+          "title": "纯肉赵怀真，猴子三棍下去沉默了"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1N3411S7pz/",
+          "title": "边路惩戒赵怀真如何对线吕布？坦克荣耀来了！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV12sKVeREat/",
+          "title": "第一期：爆改吕布+赵怀真+赵云+阿古朵"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1Pd4y1s7Vs/",
+          "title": "王者峡谷 赵怀真连招难度排行榜"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1Au4y1S7hN/",
+          "title": "赵怀真小技巧"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV14K411R73c/",
+          "title": "几百场国服赵怀真的实战心得打法来了！正式服必会技巧总结！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV19K411Y72K/",
+          "title": "赵怀真三千雷动是一种传承！新赛季最实用的两种三千雷动卡法！有朝一日再度重现萧家荣光"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1q14y1Q7iC/",
+          "title": "这手法赵怀真都自愧不如"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1fnXzYjETt/",
+          "title": "s39新赛季赵怀真存在的所有斗技教学 来啦"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1g14y1S7kV/",
+          "title": "姬小满是吧？看我弱化苍穹流赵怀真如何应对！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1FP411J7TC/",
+          "title": "赵怀真bug？？无限平A流？？"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV15DTzzTEUe/",
+          "title": "论赵怀真的上限（正经教学！！！）"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1xz4y1c7UP/",
+          "title": "形昭之鉴辅助流赵怀真教学！辅助萧炎重回巅峰 甚至还多了一种不需要回城的三千雷动新斗技！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1aodLYLE4Z/",
+          "title": "赵怀真2.2评分0失误教学打法"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1eW4y1g7jP/",
+          "title": "顶级辅助赵怀真：1个能当4个用？时代又变了！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1HP4y1Q7wZ/",
+          "title": "打破所有质疑，完美诠释赵怀真。"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1PR4y1d77v/",
+          "title": "云缨被围，赵怀真霸气护妻"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV17R4y1y7QS/",
+          "title": "赵怀真超简单教学，看完不会法庭见。"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1dG4y1u7AC/",
+          "title": "世界第一赵怀真已上线，看我眼神行事！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1us4y1U7Vb/",
+          "title": "反向削弱成加强？见识下真正的版本怪物！【31%吸红刀刺客流】赵怀真"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1DD4y117vV/",
+          "title": "新英雄赵怀真刚上线一天，就引起百万玩家不满，射手法师全都废了"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1wf7S6ZEiC/",
+          "title": "国一赵怀真上巅峰前五全局教学：开团辅必学视野技巧！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1nsbG61EeV/",
+          "title": "超标新T0英雄打野赵怀真，全峡谷唯一一位57秒摸红？1分05出野区教学！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1VN4y1z7xa/",
+          "title": "11种三千雷动斗技！赵怀真目前三千雷动所有卡法教学讲解 难道他真的是个天才？"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1Genu6eEt7/",
+          "title": "赵怀真玩家区了一辈子，都认为是自己手法问题#王者荣耀#赵怀真"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1nRnT63Ece/",
+          "title": "赵怀真出装推荐，煅烧平A流"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1uEJi6vEc4/",
+          "title": "赵怀真"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1j2J46sExN/",
+          "title": "程咬金对线赵怀真"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1xAJ264E4t/",
+          "title": "赵怀真这东西还是太超标了。"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1PvJ66gETL/",
+          "title": "投云缨赵怀真送金标"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV18Npj6WEzP/",
+          "title": "赵怀真滑步教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1nGHs6oE7j/",
+          "title": "马可怎么对线赵怀真？"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1fcHj6AEBd/",
+          "title": "发点陈年老货    赵怀真剪辑"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV18WHr6WEBg/",
+          "title": "狂铁对线赵怀真+王维 盘古 苏烈 龙人 全程教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1L5aX6xEgR/",
+          "title": "iqoo16测评王者荣耀【首发当天】巅峰赛万战局实测IQOO16体验，教学英雄：赵怀真"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1aoat6DEpE/",
+          "title": "赵怀真无限1A教学（我也不知道咋卡的）"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1v9hd6aEEV/",
+          "title": "赵怀真教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1sRhC6VETm/",
+          "title": "马可对线赵怀真"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1YMaA6jEkQ/",
+          "title": "雾行千山赵怀真，疑似新版天阶斗技，一个大招放两次气"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1kkhW6SESu/",
+          "title": "辅助赵怀真"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1UJeB6kEKN/",
+          "title": "赵怀真雾行千山教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1oQYf67EDb/",
+          "title": "新T0英雄赵怀真的操作教学。"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV16eY86TE7T/",
+          "title": "【4分钟精讲赵怀真教学】如何速成国服怀真上大分"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1yJYx6wEGm/",
+          "title": "【4分钟精讲赵怀真教学】国服怀真必修的顶级思路"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1kCb36CEyg/",
+          "title": "我们赵怀真玩家到死都觉得是自己出装的问题(╥_╥)"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV16sbG61E1i/",
+          "title": "国服程咬金对线赵怀真"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1nsbG61EeV/",
+          "title": "超标新T0英雄打野赵怀真，全峡谷唯一一位57秒摸红？1分05出野区教学！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV16rbT6bELy/",
+          "title": "赵怀真16.0 群友分享巅峰1900炸鱼思路"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1aSbN6LEk3/",
+          "title": "【孤尤】《赵怀真：差点四杀》"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV14VbW6XEzM/",
+          "title": "二级赵怀真单杀大国孙策教程来了"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV17CbE6oEcx/",
+          "title": "赵怀真不是区"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1Ezty6aEBj/",
+          "title": "赵怀真飞升"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1kGto6BEQ3/",
+          "title": "挑战赵怀真只做一件输出装"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1g3t96kEBM/",
+          "title": "国服程咬金对线赵怀真"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1sCtn6rE9d/",
+          "title": "对抗路有个残血赵怀真谁去收割一下"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1To4C6MEt8/",
+          "title": "较高质量的边路关羽单杀教程，包含很多线上难打的英雄，比如影，猪八戒，赵怀真"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1sMtw6XEBF/",
+          "title": "CS流赵怀真出装铭文&赵怀珍玩法共创回应"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1Tghw6AENN/",
+          "title": "赵怀真出装与铭文思路"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1YHhA6CEcM/",
+          "title": "《该死的赵怀真，你中了甚么？！》"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1h7hg68Efc/",
+          "title": "边路赵怀真巅峰赛和排位赛教学"
+        }
+      ]
+    },
+    {
+      "heroId": 126,
+      "name": "夏侯惇",
+      "roles": [
+        "对抗路",
+        "游走",
+        "打野"
+      ],
+      "sourceId": "official-126",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "对线时通过1技能可以快速清线，2技能在作战时开启能增加输出和吸收伤害，大招可以进行gank留人，并且可以利用野怪和建筑进行位移"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1.尽量通过走位来躲开夏侯惇的控制技能；2.机动性较强的英雄可以对他进行风筝；3.自身残血情况下不要和残血的夏侯惇对拼，注意他的回血被动效果"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战中，夏侯惇总是现身在混战中心，利用大招开团，最好能留住敌方的关键英雄，利用1技能第二段进行AOE控制留人，在输出的同时更多的是保护队友更好的进行输出"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1bYbf6dEyk/",
+          "title": "夏侯惇大招改动——终成赵怀真《萧炎》2.0"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1rS4y1R7VD/",
+          "title": "夏侯惇：对抗路拿马可是不是玩不起！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV11V411h7af/",
+          "title": "史诗级线霸夏侯惇无敌！全新打法！T0强度爆表！"
+        }
+      ]
+    },
+    {
+      "heroId": 123,
+      "name": "吕布",
+      "roles": [
+        "对抗路"
+      ],
+      "sourceId": "official-123",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "使用2技能减速对手，施放1技能进行输出.大招主要用来开团使用，大招需要预判敌人走位施放，尽量大到敌方更多的人"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、当吕布在附魔状态时，一定要躲开他的1技能，不要被他斩中；2、当吕布处于画戟附魔状态时，利用2次方天画斩CD间隙攻击他"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时，吕布需要注意大招开团的准确性，尽量大到更多的敌人，利用它恐怖的被动能力来承受伤害，恢复生命，即使出肉装也能造成高额的输出"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1N3411S7pz/",
+          "title": "边路惩戒赵怀真如何对线吕布？坦克荣耀来了！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV12sKVeREat/",
+          "title": "第一期：爆改吕布+赵怀真+赵云+阿古朵"
+        }
+      ]
+    },
+    {
+      "heroId": 107,
+      "name": "赵云",
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-107",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "使用1技能突进，结合2技能进行输出，前期多进行线上gank帮助队友拿到优势，中期是强势期，出装上走一个半肉半输出路线，有了一定装备积累后利用被动能在战斗中有很高的输出能力"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、脆皮英雄注意与其保持安全距离，使其无法近身输出；2、赵云后期1v1作战能力很强，普通刺客不要强行单挑"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时，赵云需要找准一波时机1技能切入敌方后排击杀脆皮输出英雄，或直接用大招开团打到更多的敌人后，再利用1技能进行一个持续的追击"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV12sKVeREat/",
+          "title": "第一期：爆改吕布+赵怀真+赵云+阿古朵"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1J3He6JE4C/",
+          "title": "纯攻暴力赵云对位“压制”诸葛亮打野教学，一秒3杀！"
+        }
+      ]
+    },
+    {
+      "heroId": 533,
+      "name": "阿古朵",
+      "roles": [
+        "打野",
+        "发育路"
+      ],
+      "sourceId": "official-533",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "使用二技能-翻滚吧！球球快速支援，到达战场后将三技能施放到敌人后排，依靠球球和召唤的野怪对后排形成威胁，并将一技能施放到他们持续作战的位置提供增益和控制敌人。施放三技能后阿古朵本身十分脆弱，注意走位安全并在危险时使用该状态下的二技能躲避敌人，在安全的情况下可用阿古朵普攻敌人，会为召唤物们指明攻击目标并提供移速加成"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "释放三技能后阿古朵本身十分脆弱，可以选择时机集火击杀，避免阿古朵治疗队友释放团队增益"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "使用2技能快速支援，到达战场后将三技能释放到敌人后排，依靠球球和召唤的野怪对后排形成威胁，并将一技能施放到他们持续作战的位置提供增益和控制敌人，在安全的情况下，可用阿古朵普攻敌人，会为召唤物们指明攻击目标并提供移速加成，施放三技能后阿古朵本身十分脆弱，注意走位安全，并在危险时使用该状态下的二技能躲避敌人。"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV12sKVeREat/",
+          "title": "第一期：爆改吕布+赵怀真+赵云+阿古朵"
+        }
+      ]
+    },
+    {
+      "heroId": 538,
+      "name": "云缨",
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-538",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "建议关掉自动普通攻击以使用云缨，三层枪意技分别对应近/中/远的攻击距离，注意灵活选择与运用，推荐连招：2A1A3A3A,21A33A21A,231A231A。"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "注意云缨的枪意技类型，同时尽可能躲避大招，打出爆发伤害也对云缨克制明显"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "利用2技能切入，再使用3技能提供远距离先手控制，1技能作为控制补充，真意作为斩杀手段，坚意和锐意可以作为近距离作战和消耗手段"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1PR4y1d77v/",
+          "title": "云缨被围，赵怀真霸气护妻"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1PvJ66gETL/",
+          "title": "投云缨赵怀真送金标"
+        }
+      ]
+    },
+    {
+      "heroId": 190,
+      "name": "诸葛亮",
+      "roles": [
+        "中路",
+        "打野"
+      ],
+      "sourceId": "official-190",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "把握1技能的释放距离，打出更高的伤害并增加更多的印记.利用2技能躲避敌方技能，寻找输出位置.尽可能利用大招直接击杀低血量敌人刷新被动效果.时刻留意自身的印记层数，把握触发的时机然后攻击敌人."
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、诸葛亮可以在短时间内进行多段位移，所以需要预判释放技能；2、诸葛亮释放大招攻击残血友军时，可以站在连线上帮队友抵挡；3、留意诸葛亮的被动层数，当诸葛亮携带法球时尽量远离他"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时，诸葛亮需要躲在后排进行技能输出，积累被动，利用被动技能对敌人造成持续的输出伤害；时刻警惕对手突进英雄的位置，避免走位不慎被其秒掉"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1Cv41187iX/",
+          "title": "诸葛亮硬是解释了一个小时才保住双亲"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1ewNRzMEYJ/",
+          "title": "传送诸葛亮对线米莱狄全程教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1LqMTzSEje/",
+          "title": "传送诸葛亮对线妲己全程教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1twh3zzErG/",
+          "title": "两亿把对抗路告诉你 诸葛亮的山海奇都到底有多丝滑！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1KZ4y1F7jF/",
+          "title": "这不是T0中单诸葛亮？身上有被动了不起啊！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1rNQSY5Emh/",
+          "title": "传送诸葛亮对线奕星全程教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV11W4y1Q7Up/",
+          "title": "我真的是服了呀！“核弹流”诸葛亮，秒伤破万，两个技能瞬秒脆皮，这才是版本答案啊！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1T9VKzmEig/",
+          "title": "S39超标教私人超标打野吞金流诸葛亮！巅峰三千强局逆风一打5全局教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV13S4y1179V/",
+          "title": "诸葛亮：秒回1万血，时代变了！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1sW411a7an/",
+          "title": "【王者荣耀北笙】国服第一诸葛亮，职业级“意识教学”，良心出品，上分必备（好好看好好学哦）"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1T5411f7FN/",
+          "title": "“核弹流”诸葛亮：一秒万血，瞬秒4人"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1rh4y1X78s/",
+          "title": "星尊诸葛亮平A一下13000！是BUG还是机制？"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1ka411K7eD/",
+          "title": "当小明走上了诸葛亮的道路"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV12TGXzrEeN/",
+          "title": "“倒灌流”诸葛亮：1.2w血！最新科研！脆皮集体破防！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1bxhxzJEM4/",
+          "title": "学会三天上荣耀！顶级诸葛亮炸鱼思路教学！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV14KhpziEnC/",
+          "title": "诸葛亮中路教学，中单竟然可以不坐牢?"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1vP4y1w7pK/",
+          "title": "直播遭遇一生之敌！这个诸葛亮得有多少个国服啊？！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV17Zt3znEjM/",
+          "title": "邪修流诸葛亮：版本T0对抗！全图可飞！最新逆天科研！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1z59nYaE6F/",
+          "title": "传送诸葛亮对线小乔全程教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1XG411V7ui/",
+          "title": "诸葛亮3分钟详细教学，认真看完就能学会，史上最高能诸葛亮教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1pA411e725/",
+          "title": "国服诸葛亮教学 技能解析篇 绝对有你不知道的细节 看完英雄理解直接领先800个版本"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV14a411V7nz/",
+          "title": "诸葛亮大招老被挡怎么办？把他们通通解决掉他们就挡不了啦～"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1xy4y1g7FR/",
+          "title": "T0打野诸葛亮！“后撤五连弹”技巧，终极教学！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1yF411G7Y7/",
+          "title": "峡谷最无脑的打野，诸葛亮！“240公式”刷钱思路！看完人人都能当野王！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV14itCzREY9/",
+          "title": "学会五天上荣耀！顶级中路诸葛亮思路教学！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1vQXbYLEJy/",
+          "title": "传送诸葛亮对线海月全程教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1s78Xz2EYi/",
+          "title": "传送诸葛亮对线小乔全程教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1roDfYiEJF/",
+          "title": "传送诸葛亮对线妲己全程教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1Z4411j7jt/",
+          "title": "王者荣耀：诸葛亮纯干货技巧，全英雄斩杀线详解。"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1AY4y1e7px/",
+          "title": "诸葛亮：人算不如天算！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1X64y1B7Sw/",
+          "title": "暗信VS诸葛亮，19开吧！诸葛亮，面对疾风吧！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1yv411w7g4/",
+          "title": "诸葛亮：策划呢！超级兵疯了！？"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1zSkcY2E8u/",
+          "title": "典韦打诸葛亮的全局打法教学来啦！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1hW41197QA/",
+          "title": "皮皮笙改作业：钻石段位节奏很好的诸葛亮，为何却始终不能carry队友？"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1os411g7a7/",
+          "title": "皮皮笙改作业：王者15星的诸葛亮，逆风翻盘还有什么可以改进的地方呢？"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1bWpm6rEnf/",
+          "title": "1521-1537弈星全局思路，对线单杀诸葛亮"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV16HHQ6vEnm/",
+          "title": "赢了就能和妹妹开视频！诸葛亮VS张飞实战教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1mEpF6zEyJ/",
+          "title": "手把手教你闹闹三分诸葛亮阵容搭配运营教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV14EHx6kE1D/",
+          "title": "极诸葛亮vs界徐盛＆戏志才(顶级思路)"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1J3He6JE4C/",
+          "title": "纯攻暴力赵云对位“压制”诸葛亮打野教学，一秒3杀！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1mdHY68EbH/",
+          "title": "诸葛亮对线干将教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV13Bam6vEc7/",
+          "title": "诸葛亮教学。"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1Jqhb6bEzF/",
+          "title": "【诸葛亮】44星 6-2-2（败）灵儿直播录屏（2026.8.20）S44赛季"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1SshH6WEW3/",
+          "title": "天上天下唯雨辰独尊!雨辰国服诸葛亮全局打野巅峰赛"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1dShJ6bEjY/",
+          "title": "巅峰赛最后一舞，孙悟空对位诸葛亮，拿下本局mvp，打野全局思路教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1q8er6YEb6/",
+          "title": "发育和打团拉满的打野!雨辰国服诸葛亮全局打野巅峰赛"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1vdYi6jECN/",
+          "title": "王者荣耀：诸葛亮大招不K头竟然是最好开节奏的方法？打野教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1ECY16jEfM/",
+          "title": "【正面对决】『黄黑诸葛亮』季度赛紧急补课——向天再借500秒！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1apYL6EEWX/",
+          "title": "为什么你玩打野总是没队友跟？原来是要按照时间节点提前布局。宫本武藏对位诸葛亮：中轴反野时机把控全拆解。"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1wvYn61EL9/",
+          "title": "谋诸葛亮の简单教学"
+        }
+      ]
+    },
+    {
+      "heroId": 504,
+      "name": "米莱狄",
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-504",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1.注意把控1技能飞行器分裂的位置，尽量让2个小飞行器同时命中敌人，可造成高额伤害和减速效果；2.只有配合机械仆从和空中支援的伤害，才能使大招浩劫磁场的伤害最大化"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1.机械仆从只能存活8秒，将战场拉扯至远处，让米莱狄准备机械仆从时，将其击败；2.通过使用具有突进能力的坦克去承受米莱狄大招及期间的伤害，逼迫大招和机械仆从无法优先锁定我方输出，可以有效降低其团战威慑力"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "米莱狄通过兵线可以远远不断的制造机械仆从，让队友们和米莱狄抱团推进，可以免除很多麻烦"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1ewNRzMEYJ/",
+          "title": "传送诸葛亮对线米莱狄全程教学"
+        }
+      ]
+    },
+    {
+      "heroId": 109,
+      "name": "妲己",
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-109",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "对战中可利用1技能进行消耗，在2技能命中条件下，使用1、3技能能保证技能命中率和足够的输出伤害"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、刺客英雄需要等妲己控制技能交出后进行近身击杀；2、注意走位躲避妲己的消耗技能；3、后期脆皮英雄在妲己满技能时不要近身，容易被秒杀"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时，尽量在侧翼进行1技能的输出和消耗，若遇到对方刺客切入，再使用2技能将其控制，保证自己的存活能力"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1LqMTzSEje/",
+          "title": "传送诸葛亮对线妲己全程教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1roDfYiEJF/",
+          "title": "传送诸葛亮对线妲己全程教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1jrURY5EyE/",
+          "title": "《21657战力妲己教学》：再次证明，妲己辅助登临巅峰第二，暴打貂蝉全局意识教学"
+        }
+      ]
+    },
+    {
+      "heroId": 501,
+      "name": "明世隐",
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-501",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1.卡好冷却使用强化普攻，消耗敌人并治疗己方； 2. 大招对敌人有不俗伤害，可寻找低血量敌人进行斩杀； 3. 可在适当实际为肉盾队友切换到防御属性； 4. 链子可以减速敌人，在适当的时候可用在敌人身上。"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "明世隐往往会和队友站的很近，用范围技能可对其造成较大威胁"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "在保证和队友链子不断的前提下，卡好冷却频繁用一技能命中敌人。队友面临威胁时预判开启大招为其回血，或者找准残血敌人大招将其击杀"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1ka411K7eD/",
+          "title": "当小明走上了诸葛亮的道路"
+        }
+      ]
+    },
+    {
+      "heroId": 106,
+      "name": "小乔",
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-106",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "使用21技能连招能够提高小乔技能命中率，前期线上稳定发育，保证不死，有了一定装备后跟队友一起进行抱团"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、一定要注意走位，不要走直线；2、团战时尽量用刺客英雄切入击杀小乔；3、注意留控制技能，找机会控制小乔将其秒掉"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时，小乔作为脆皮法师，一定要注意走位，站在后排进行输出，时刻注意对手刺客英雄的位置并保持安全距离，找好机会利用2技能击飞更多敌人，再配合1技能和大招打出足够多的伤害"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1z59nYaE6F/",
+          "title": "传送诸葛亮对线小乔全程教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1s78Xz2EYi/",
+          "title": "传送诸葛亮对线小乔全程教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1fG411X7bT/",
+          "title": "又又复盘女朋友的小乔"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1Ba411f7Lf/",
+          "title": "小乔该怎么玩 怎么抓人 怎么保证生存？巅峰2000复盘讲解 逆风百分百参团4打5！！"
+        }
+      ]
+    },
+    {
+      "heroId": 521,
+      "name": "海月",
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-521",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1. 海月的月盘恢复时间受冷却影响。当月盘未消耗完毕且即将恢复满时，可以等待月盘恢复满再释放技能，可以短时间打出三次1、2技能。2. 幻境内再次使用3技能可以使海月位移到离目标7米的距离，合理利用，拉开与目标的距离。"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1. 海月的月盘消耗完毕后一二技能都会进入CD，在此期间的海月处于弱势期，可针对性发起进攻。2. 净化等带有驱散效果的技能可以在海月大招连线期间解除连线。"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时先通过1技能进行远程消耗，再根据局势选择对方残血目标、核心人员或者对己方威胁较大的人员拖入幻境。"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1vQXbYLEJy/",
+          "title": "传送诸葛亮对线海月全程教学"
+        }
+      ]
+    },
+    {
+      "heroId": 507,
+      "name": "李信",
+      "roles": [
+        "对抗路"
+      ],
+      "sourceId": "official-507",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "统御形态1.李信虽然是战士定位，但是在统御形态下，保持一定的输出距离会让李信更好发挥2.李信被敌方突进至身前也无需太过惊慌，大招的贴身爆发会超乎你的想像狂暴形态1.使用无畏冲锋至少持续一定时间才会获得强化，提前使用以触发状态获得加成才能变得更加强大2.狂暴形态拥有更快更强硬的支援突袭能力，但伤害爆发能力较差，逆风战斗需要更多的走位拉扯"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "统御形态1.统御形态下李信对于一个方向上的压制十分强劲，但对于其他方向就力所不及了，突然的袭击，让其无法蓄力，也会让李信疲于应对2.使用迅烈之华时，李信并未蓄力免控，所以李信输出伤害时，也是他较为脆弱的状态，迅速逼迫能他放弃继续挥舞大剑狂暴形态1.对手在狂暴形态下拥有出色的近战能力，但突进时比较明显，可以稍微控制距离避免近身作战2.穷寇莫追，如果没能一波击败李信，千万不要深追，你会发现不但无法留下他，还会在他回复完毕后面临尴尬的局面"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "选择了狂暴形态时，可以游弋在敌人周围伺机开团或收割战场，进可为团队充当第二坦克，退也可担负追杀的责任，实乃团战多面手；当使用统御形态时，可以坐正全军中央，从正面挥舞剑气制造范围伤害击溃敌人防线是最佳的选择"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1X64y1B7Sw/",
+          "title": "暗信VS诸葛亮，19开吧！诸葛亮，面对疾风吧！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1my4y1t7k9/",
+          "title": "暗信VS司空震，19开吧！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV11ocjzGEA3/",
+          "title": "终极硬筋流暗信，牢玩家最后的救赎"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1wg411o79C/",
+          "title": "国服李信3分钟详细教学，认真看完就能学会，史上最高能李信教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1gQME6fETn/",
+          "title": "谁说少了主力射手这局就必输？刘禅携手暗信上演峡谷4V5离谱的偷家翻盘！#王者荣耀 #辅助 #刘禅推塔 #王者荣耀辅助教学"
+        }
+      ]
+    },
+    {
+      "heroId": 528,
+      "name": "澜",
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-528",
+      "conflict": "旧提示里的无限二技能不能无条件成立；正文包含标记上限、消耗和冷却条件。",
+      "excerpts": [
+        {
+          "label": "狩猎 · 技能正文",
+          "text": "当敌人的生命值低于30%，会被澜视作“猎物”。澜的技能和普攻对“猎物”额外造成7.5%~15%真实伤害。"
+        },
+        {
+          "label": "破浪 · 技能正文",
+          "text": "澜用魔道力量覆盖全身进入“下潜”状态并增加40/48/56/64/72/80点移速，持续3秒，到时间后会跳出水面并返还50%的冷却。下潜状态下使用【破浪】澜会冲出水面完成破浪一击，造成300/360/420/480/540/600(+120%额外物理攻击)物理伤害，并对目标附带25/30/35/40/45/50%减速效果，持续1.5秒。 被动：在河道区域没有持续时间的限制。如果1500范围内有“英雄猎物出现”，加速效果会额外提升225/270/315/360/405/450点。"
+        },
+        {
+          "label": "断空 · 技能正文",
+          "text": "攻击附近的敌人割开他们的伤口连续2次造成190/228/266/304/342/380(+60%额外物理攻击)物理伤害，施法时澜可获得一个印记，每命中一名敌人额外获得一个印记，同一敌人不可重复获取，最多获得3层印记，命中敌人回复95/114/133/152/171/190(+1.2%额外生命值)生命(非英雄单位减半)，使用普攻会追击敌人并清除自身一层印记，造成50/60/70/80/90/100(+75%物理攻击)物理伤害，同时回复95/114/133/152/171/190(+1.2%额外生命值)生命，每触发一次追击减少【断空】10%~20%冷却。 下潜状态下释放【断空】会附带一个指定方向的位移，并减少【破浪】25/30/35/40/45/50%的冷却。"
+        },
+        {
+          "label": "处决 · 技能正文",
+          "text": "澜将匕首扔出并对路径上敌人造成90%减速效果，持续0.5秒，短暂延迟后将向匕首位置突袭，并打断目标施法将路径上的敌人拖到终点进行处决，造成520/780/1040(+180%额外物理攻击)物理伤害。 下潜状态下释放【处决】不会投掷匕首，直接触发后续效果，并减少【破浪】50%的冷却。"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1xjDhYcEof/",
+          "title": "澜打野全局复盘解析-打野优先级判断意识教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1XozdYSEA8/",
+          "title": "如果我告诉你对抗路澜的出装与铭文，你学还是不学"
+        }
+      ]
+    },
+    {
+      "heroId": 180,
+      "name": "哪吒",
+      "roles": [
+        "对抗路",
+        "打野"
+      ],
+      "sourceId": "official-180",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "对线时哪咤可以用1技能快速清理兵线，2技能配合队友进行突进和控制，大招可以进行带线牵制并快速支援"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1.脆皮英雄尽量与其保持距离；2.不要将主要控制技能交在哪咤身上"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战中，哪咤总是冲进混沌中心的那一个，在前排尽量吸收伤害，和敌方控制技能，为队友创造更好的输出环境"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1Sa411h73B/",
+          "title": "《16岁国一哪吒》，保姆级复盘教学，各种别人付费才教你的意识大局观，学会五分小国标随便拿，学到八分大国标也不是梦"
+        }
+      ]
+    },
+    {
+      "heroId": 125,
+      "name": "元歌",
+      "roles": [
+        "对抗路"
+      ],
+      "sourceId": "official-125",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1.注意傀儡和本体之间的位置关系，元歌与傀儡拥有很多交互技能，能够快速的移动交换位置；2.操控傀儡时请注意本体的血量，本体被击杀也会导致傀儡立即销毁"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1.傀儡不能继承贤者的庇护的被动效果，击杀傀儡能让元歌陷入昏迷；2.寻找元歌本体，迫使他放弃控制傀儡"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "利用傀儡干扰敌方阵型，寻找机会欺骗关键技能或者暴起刺杀敌人后排"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1YhWYeNEqh/",
+          "title": "一次复盘，金标元歌直冲小国，对抗路转线技巧详解，为什么你的对抗就转不明白？"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1X7XhYjEzU/",
+          "title": "复盘大国元歌，国服不是极限！对抗路转线+推进节奏详解，为什么你的对抗节奏就慢？"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1dWDVYaEin/",
+          "title": "一次复盘，小国元歌直冲千强，对抗路支援技巧详解，为什么你的对抗节奏就慢？"
+        }
+      ]
+    },
+    {
+      "heroId": 505,
+      "name": "瑶",
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-505",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "被动处于就绪状态时，可以主动上前吸引注意力，并且主动的在3种状态快速转换，充当团队的润滑剂"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "利用加速等软控制限制瑶，在瑶无法化身为灵鹿时，还是十分容易击杀的"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "利用控制技能主动骚扰对方，面对集火时，主动释放大招躲避伤害"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1EV4y1x7dP/",
+          "title": "【复盘细讲】玩瑶的脑子怎么想的？1800分瑶辅助全局教学，细致讲解（思维+意识+思路+细节） ｜抹昔"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1vrjV66E5n/",
+          "title": "一条视频看清瑶妹玩家，直接把射手气哭了，真不知道软辅出法装是谁教的（我们只想要个对局环境）"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1X4411K7NX/",
+          "title": "王者荣耀：瑶没用？B站首发国服瑶意识教学，打脸队友，carry全场，真香警告"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1T7411v7Gv/",
+          "title": "【给妹妹们的辅助教学第一期·瑶】王者荣耀瑶实战教学！教你全局打法与意识！希望能帮到想玩好辅助的妹妹们"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1A4411G7XC/",
+          "title": "王者荣耀：国服瑶操作意识教学，遇到这样的队友，直接带飞就好了"
+        }
+      ]
+    },
+    {
+      "heroId": 142,
+      "name": "安琪拉",
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-142",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "在技能2命中敌方英雄造成眩晕后马上放出技能1和大招，这是安琪拉输出最大化的连招，不要在贴近对方英雄时使用大招，否则对方很容易离开大招范围.在团战前如果对方英雄在大招范围内，可提早放大招尽可能的消耗敌方."
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "面对安琪拉需要以S路线绕路进攻，在逃跑时也不要直线逃跑，安琪拉的技能都需要弹道预判，绕着跑很大可能回避安琪拉的技能.近战类英雄贴身进攻时尽可能不停的变换位置."
+        },
+        {
+          "label": "官方团战建议",
+          "text": "作为一个脆皮法师，团战安琪拉需要在队友的保护下输出，注意走位，避免被先手秒掉，尽量丢准技能，命中更多的敌人，才能使伤害最大化"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1MH4y1J7uN/",
+          "title": "小李排到意识如同透视的安琪拉复盘另有真相！"
+        }
+      ]
+    },
+    {
+      "heroId": 518,
+      "name": "马超",
+      "roles": [
+        "对抗路",
+        "打野"
+      ],
+      "sourceId": "official-518",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "小心避开减速效果，马超的攻击能力相当一部分是移动速度带来的"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "利用减速效果，可以大幅降低马超的威胁能力"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "先行游走在外围投掷标枪，待避过控制减速技能后，开启大招利用强化攻击反复的冲击敌阵"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1d9J76ZETH/",
+          "title": "本期素材的贡献者有着总场次两千一百把 负胜率49% 以及接近1.1w的战力#马超 #锐评 #对抗路 #复盘 #王者荣耀 260613061904"
+        }
+      ]
+    },
+    {
+      "heroId": 199,
+      "name": "公孙离",
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-199",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1.阿离手持纸伞时，技能可连续释放两次，在短时间内让敌人叠满4次印记，打出爆发伤害；2.阿离不同的技能对纸伞的位置影响是不同的，释放技能时尽量考虑纸伞将来的轨迹"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1.纸伞的轨迹大概可以判断阿离的想法，提前预判即可防范于未然；2.阿离再是灵活也无法避免其脆弱怕控的本质，选取英雄时需要考虑对其的限制能力"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "阿离是更加偏向收割型的射手，较近的输出距离使得阿离不能直接和对方进行对抗，玩家需要利用阿离的灵活性进行拉扯，直接威胁敌方中后排输出是比较适合阿离的作战方式"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV13K4y1b7Vj/",
+          "title": "荣耀局单排公孙离输出机器，百星第一视角解说带你复盘提升意识"
+        }
+      ]
+    },
+    {
+      "heroId": 176,
+      "name": "杨玉环",
+      "roles": [
+        "中路",
+        "游走",
+        "打野"
+      ],
+      "sourceId": "official-176",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "虽然，杨玉环的治疗能力相当突出，但当杨玉环开始参与进攻时，也会展示其极强的消耗作战能力；攻守两端都可发挥不错实力的杨玉环，需要玩家精确的判断力和果敢的执行能力，让其主宰战场"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "杨玉环厉害之处在于其极强的持续作战能力，面对杨玉环时，需要当机立断的开启战斗，切记不可犹豫不决"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "杨玉环作为辅助，战斗开始时，应当处于队伍后排位置，通过治疗队友取得一定的团队血量优势；确立优势后可以稍微前移，通过进攻消耗对方血量，兵不血刃的取得推进权力或者开启一个己方血量优势的团战"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1nT4y1e7aN/",
+          "title": "二万二国服玉环帮粉丝复盘，看完瞬间提高意识操作！"
+        }
+      ]
+    },
+    {
+      "heroId": 312,
+      "name": "沈梦溪",
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-312",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1.注意控制和对手间的距离，沈梦溪的技能射程都非常远，尽量保证自己在足够安全的位置输出2.记得在地图上看不到对手时多用技能去探草，如果命中了躲在草中的敌人火光会把他们照亮暴露在视野之下3.在使用2技能时要注意角色头顶的倒计时条，千万不要被自己的炸弹炸到人堆里去了"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1.在团战时刺客一定要记得去后排找到沈梦溪，不要让他躲在后方轻松地输出。2.如果在视野里看不到沈梦溪一定要小心随时都会从天而降的炸弹。"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "沈梦溪在蓄力后拥有较远的施法距离，可以在团战前就开始消耗，直接将炸弹向后排投掷，降低对方输出血线"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1UaGg65E9Z/",
+          "title": "狼队大胜WB，紫幻四局7/2/25，沈梦溪防抓意识拉满！"
+        }
+      ]
+    },
+    {
+      "heroId": 537,
+      "name": "司空震",
+      "roles": [
+        "对抗路",
+        "打野"
+      ],
+      "sourceId": "official-537",
+      "conflict": "旧提示把强化普攻与护盾关联；当前页面正文把强化普攻描述为回复，一技能提供护盾。",
+      "excerpts": [
+        {
+          "label": "天雷引 · 技能正文",
+          "text": "司空震的普通攻击近距离会触发近战攻击，攻击间隔降低7.5%~15%。 普攻获得1点天雷之力，上限6点。达到上限时引动天雷，获得一次额外释放基础技能的机会。 释放基础技能后，获得强化普攻，对大范围内敌人额外造成84~170(+45%法术攻击)法术伤害，并回复75~150(1.2%额外生命值)点生命。 强化普攻基础攻击力系数部分可暴击，远程强化普攻锁定目标以外单位受到75%伤害，不触发法球效果。"
+        },
+        {
+          "label": "奔雷疾 · 技能正文",
+          "text": "司空震化身奔雷向前疾行，对路径上敌人造成200/240/280/320/360/400(+45%法术攻击)法术伤害并获得340/408/476/544/612/680(+5%额外生命值)点护盾，持续2.5秒。"
+        },
+        {
+          "label": "狂雷击 · 技能正文",
+          "text": "司空震向前释放出一道狂雷之力，达到最大射程，或触碰到单位短暂延迟后爆炸，造成击退和200/240/280/320/360/400(+45%法术攻击)法术伤害。 离司空震距离越近的单位被击退得越远。"
+        },
+        {
+          "label": "雷霆万钧 · 技能正文",
+          "text": "司空震升入空中，化身为雷霆之王。 变身过程持续1.5秒，期间获得霸体，增加30%移动速度，无视地形阻挡，并让五个雷鼓依次随机轰击附近敌人（优先英雄）。每次雷击造成100/150/200(+22%法术攻击)法术伤害，并使司空震获得1点天雷之力和160/240/320(+2.5%额外生命值)点护盾，持续2秒。落地时对附近敌人造成200/300/400(+45%法术伤害)法术伤害。 变身持续8秒，期间普攻改为获得2点天雷之力，远程普攻会产生雷电链，在多个敌人间弹射，造成50%物理伤害。强化普攻的范围增加。"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1my4y1t7k9/",
+          "title": "暗信VS司空震，19开吧！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1AmFAeBEqZ/",
+          "title": "两亿把对抗路告诉你 司空震是打不过姬小满的！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1VE4m1d7jS/",
+          "title": "两万分司空震告诉你戈娅是打不过司空震的！"
+        }
+      ]
+    },
+    {
+      "heroId": 132,
+      "name": "马可波罗",
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-132",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1.当累积到一定攻击次数后，马可波罗会在接下来5秒内造成额外的真实伤害，使用技能打出爆发会造成更高的伤害；2.熟练的在敌人技能间歇期贴近敌人输出，能够拥有额外的伤害和移动速度加成"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1.马可波罗连续攻击到一定次数后，需要主动拉开其距离以免让马可波罗打出真实伤害进行爆发；2.马可波罗大招虽然有一段位移，但是释放时不能操作移动，预留技能将其控住或者散开可以规避其爆发伤害"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "马可波罗需要在适当的时间靠近敌人进行输出才能打出大量伤害，所以需要准确的判断局势：例如敌人爆发技能是否进入冷却，控制技能是否已经使用，位移技能是否还在等等"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV13F411G7zn/",
+          "title": "我让你马可走对抗路！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1rS4y1R7VD/",
+          "title": "夏侯惇：对抗路拿马可是不是玩不起！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV153411F7pB/",
+          "title": "闪电特效流马可：虽然我是发育路垫底的存在，但也是对抗路永远的噩梦！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1aU4y1v71y/",
+          "title": "马可：1发普攻10次伤害？这是什么鬼套路！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1aE42137c9/",
+          "title": "83星单排马可教学！逆风局最后的希望双电五杀翻盘！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1o1421t7tL/",
+          "title": "2100分马可教学！辅助前期不跟1v2应该如何运营！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1nGHs6oE7j/",
+          "title": "马可怎么对线赵怀真？"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1sRhC6VETm/",
+          "title": "马可对线赵怀真"
+        }
+      ]
+    },
+    {
+      "heroId": 549,
+      "name": "心魔六耳",
+      "roles": [
+        "打野",
+        "对抗路"
+      ],
+      "sourceId": "official-549",
+      "conflict": "同页对蓄势、不可选中与打断的描述易混淆；按正文区分阶段，不能将整个大招视作无敌。",
+      "excerpts": [
+        {
+          "label": "心魔凶焰 · 技能正文",
+          "text": "心魔六耳普攻(每次命中2点)和基础技能会获得能量(上限60点)，可提升普攻和技能范围(最多25%)使用技能后强化下次普攻为四连击，前三击造成物理伤害(3次视为一次普攻行为)，最后一击造成物理伤害并突进一段距离 使用回城后再次点击可骑乘筋斗云快速返回泉水，过程可被打断 心魔六耳天生拥有20%暴击率和初始150%暴击效果"
+        },
+        {
+          "label": "前尘断灭 · 技能正文",
+          "text": "心魔六耳向指定方向劈击，造成物理伤害(视为普攻行为)，附带晕眩(0.5秒)和陷地(1秒减速)并获得15点能量，每命中一个目标获得回复(非英雄单位减半)"
+        },
+        {
+          "label": "冲霄撼岳 · 技能正文",
+          "text": "心魔六耳蓄力浮空(最多获得30点能量)，释放后位移至指定目标处劈击，造成170/204/238/272/306/340(+150%AD)物理伤害(视为普攻行为)，附带晕眩(0.5秒)和陷地(1秒减速)并获得15点能量 取消蓄力返还20%冷却"
+        },
+        {
+          "label": "十方俱焚 · 技能正文",
+          "text": "心魔六耳化出身外化身，自身进入无法选中状态连续对随机敌人进行四连击，每次造成物理伤害；随后向移动指令方向蓄势冲刺，造成物理伤害(视为普攻行为)，并消耗能量强化最后一击的效果： 消耗30能量：伤害提升25%并造成击退(无控制效果) 消耗60能量：伤害提升50%并造成击退和击飞(持续0.5秒) 蓄势阶段可被控制效果或其他技能打断，返还30%冷却"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1N4j46tEK9/",
+          "title": "两亿把对抗路告诉你 心魔六耳到底有多逆天？！"
+        }
+      ]
+    },
+    {
+      "heroId": 503,
+      "name": "狂铁",
+      "roles": [
+        "对抗路"
+      ],
+      "sourceId": "official-503",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1.越到后期，狂铁强化大招的电弧范围越大、获取移速的能力越强，中后期团战时可以轻易获取到多名敌人的移动速度，尽量在这时使用强化大招。 2.小兵也会提供一定的充能/回复，利用兵线对拼会更加轻松的压制对方"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1.狂铁回复能力较强，可选择针对出装以克制狂铁； 2.当狂铁拥有高额能量时，技能将会得到强化，需要暂时避其锋芒"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "利用小兵并且尽量单次攻击命中多名敌人，提高积攒能量的效率。狂铁的每个技能的倾向不同，可根据战况来选择要强化的技能"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV18KyfBbEms/",
+          "title": "终极硬筋流狂铁，放弃一切输出，因为怕痛就全出肉装"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1Tcbkz9ELE/",
+          "title": "万盾硬筋流狂铁，一大六千盾，对抗路唯一禁用打法"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1vBTg6kEpd/",
+          "title": "终极硬筋流狂铁12.0，何为对抗路的尽头"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1QkNT6sEGi/",
+          "title": "终极硬筋流狂铁13.0，对抗路的尽头就你和我"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV18WHr6WEBg/",
+          "title": "狂铁对线赵怀真+王维 盘古 苏烈 龙人 全程教学"
+        }
+      ]
+    },
+    {
+      "heroId": 563,
+      "name": "海诺",
+      "roles": [
+        "中路",
+        "对抗路"
+      ],
+      "sourceId": "official-563",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "尽量找角度使远程1技能给更多目标叠加印记，打出最大化输出"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "尽量分散站位"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "当敌方来切时可以切换为近战提升生存，并给目标叠加印记，然后大招回溯后使用远程1技能最大化输出"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV12k4y1u7N3/",
+          "title": "新英雄海诺教学！史上最强三体人！复活防御塔！"
+        }
+      ]
+    },
+    {
+      "heroId": 140,
+      "name": "关羽",
+      "roles": [
+        "对抗路"
+      ],
+      "sourceId": "official-140",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "尽量在每一次战斗前通过移动进入冲锋状态，注意此时需要用摇杆控制技能的方向；1技能主要用于输出，2技能可在敌方控制技能交出后使用，解除控制，3技能可以使用来保护队友或者是突进开团"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、关羽在冲锋状态时，脆皮英雄尽量和他保持安全距离；2、团战时，不要将主要输出技能丢在关羽身上；3、关羽拥有2技能和大招时，不要将主要控制技能交在他身上"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战前，关羽需要通过移动进入冲锋状态，这样会更方便他突进先手开团，通过1技能在人群中输出，一旦被控制需要使用大招或者2技能解除，大招是AOE技能，尽量用大招打中更多的敌人才能发挥最大价值"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1KrNweHEzH/",
+          "title": "惩戒关羽对抗路 苏打锋关羽无解套路"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1To4C6MEt8/",
+          "title": "较高质量的边路关羽单杀教程，包含很多线上难打的英雄，比如影，猪八戒，赵怀真"
+        }
+      ]
+    },
+    {
+      "heroId": 108,
+      "name": "墨子",
+      "roles": [
+        "中路",
+        "游走"
+      ],
+      "sourceId": "official-108",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "利用1技能进行追击和逃跑，2技能可进行远程控制和消耗，13技能连招能迅速突进敌人并将其控制"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、注意走位躲避墨子2技能的远程控制；2、不要太靠近友方英雄，避免被墨子大招控制多个友军"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时，墨子可找准机会1技能突进配合大招控制敌方足够多的人，为队友创造输出环境，也可以进行远程控制消耗对手，利用控制技能可保护我方输出不被敌方刺客击杀"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1Yo4y1C7zz/",
+          "title": "孙策对线墨子，墨子成功感受对抗路的险恶"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1gwNherEtg/",
+          "title": "意识弥补手法，实战讲解辅助墨子的底层打法思路，今天一期教会你！"
+        }
+      ]
+    },
+    {
+      "heroId": 510,
+      "name": "孙策",
+      "roles": [
+        "对抗路",
+        "打野"
+      ],
+      "sourceId": "official-510",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1.以被动技能冷却为节奏进行攻击，充分利用回复机制消耗对手建立优势；2.大招尽量在开阔地带使用，避免触礁"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1.孙策一技能有一定延迟，注意躲避喷发的波涛；2.孙策上船冲锋无法翻跃地形，注意利用地形躲避"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "在边路带线吸引对方英雄来战，再利用大招迅速的支援其他位置队友，发起团战，制造多打少的局面，即可取得胜利"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1Yo4y1C7zz/",
+          "title": "孙策对线墨子，墨子成功感受对抗路的险恶"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV14VbW6XEzM/",
+          "title": "二级赵怀真单杀大国孙策教程来了"
+        }
+      ]
+    },
+    {
+      "heroId": 139,
+      "name": "老夫子",
+      "roles": [
+        "对抗路"
+      ],
+      "sourceId": "official-139",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "老夫子是王者荣耀中的单挑王，1V1能力非常强.所以可以在中后期进行单带牵制敌方，老夫子的技能在释放时需要注意是非指向性的，所以需要预判敌人的走位施放才能更精准"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "可以通过灵活的走位躲过老夫子的控制技能；脆皮英雄应该在对战士注意保持与老夫子一定距离输出"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时，老夫字根据自身出装有不同的玩法，偏肉的老夫子可以在混沌中心进行伤害承受和输出，偏输出装的老夫子需要观察敌人后排位置，找准时机切入"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV14mPYzPEZr/",
+          "title": "两亿把对抗路告诉你 蚩奼是打不过老夫子的！"
+        }
+      ]
+    },
+    {
+      "heroId": 172,
+      "name": "蚩奼",
+      "roles": [
+        "对抗路",
+        "打野"
+      ],
+      "sourceId": "official-172",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "利用一二技能的多种形态打出输出叠加自身战意并消耗敌方血量，开启大招后利用高额的移速和攻速加成，畅爽普攻的同时完成收割"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "在蚩奼进入超杀形态前将其集火击杀，或在蚩奼进入超杀形态时远离她"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战前多使用技能进行消耗，在适当的时机利用大招加成和超杀形态完成收割"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV14mPYzPEZr/",
+          "title": "两亿把对抗路告诉你 蚩奼是打不过老夫子的！"
+        }
+      ]
+    },
+    {
+      "heroId": 187,
+      "name": "东皇太一",
+      "roles": [
+        "游走",
+        "对抗路"
+      ],
+      "sourceId": "official-187",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "东皇太一的1技能只有在释放时命中敌方单位才会返还CD；2技能释放延迟很高，尽可能在队友控制的配合下使用；大招是非常强力的控制，可以多和队友配合进行游走"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "东皇太一前期很难远距离补刀并且略显弱势，利用这一点在前期压制他的发育；东皇太一大招控制住友方时不要攻击他，因为这时他受到的任何伤害都会反馈给控制住的友方英雄"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时，可以充当坦克在顶在前排，也可以处于队形中部利用2技能POKE，大招保护后排防止被刺客秒杀"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1argf61EAo/",
+          "title": "东皇教官：6分钟领先一万经济的逆天打法"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1ezAbzFErD/",
+          "title": "东皇教官：对面五个手长英雄克制我，展示传送流东皇顶级意识手法！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1uF4m1c7mA/",
+          "title": "东皇教官：没有任何操作，学会这期的意识就可以碾压1800分段"
+        }
+      ]
+    },
+    {
+      "heroId": 114,
+      "name": "刘禅",
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-114",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "使用1技能留住敌人后，接2技能控住，为队友留住敌人将其击杀"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、没有技能的刘禅毫无作用，团战尽量不要把技能丢在刘禅身上；2、刘禅的逃生能力很强，不要交出所有技能追杀刘禅，否则对方队友赶到容易被反杀"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时，刘禅需要利用1技能进行开团承受一波伤害，控制敌方主要的输出英雄，开启大招在人群中对更多敌人造成伤害.由于刘禅两个控制技能，所以也可以对我方输出英雄进行保护，敌方刺客进场，击飞并控制他，配合队友将其击杀"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1dv4y1G7zM/",
+          "title": "目前最好上分的对抗路玩法：冰暴终结刘禅！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1gQME6fETn/",
+          "title": "谁说少了主力射手这局就必输？刘禅携手暗信上演峡谷4V5离谱的偷家翻盘！#王者荣耀 #辅助 #刘禅推塔 #王者荣耀辅助教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1QGNw66Esz/",
+          "title": "射手收下人头便是高光，辅助拿到人头就被指责抢头，这道理真的合理？#王者荣耀 #辅助 #刘禅推塔 #王者荣耀辅助教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1qaQxYBEE9/",
+          "title": "玩刘禅不推塔 那玩什么刘禅"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1XF411t7Be/",
+          "title": "一个国服刘禅能有多细节？2200分顶端局，刘禅顶尖意识教学局，全局思路解析带字幕。"
+        }
+      ]
+    },
+    {
+      "heroId": 110,
+      "name": "嬴政",
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-110",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "对线时可以用普攻和1技能快速清线，1技能对敌方使用时需要预判敌人的位置施放，最好在我方友军将敌方控制时释放，大招可以进行远程输出，是一个比较安全的输出技能"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、刺客英雄需要抓住嬴政走位失误时近身击杀；2、注意走位躲避嬴政的1技能；3、嬴政的大招是一条直线方向，可以通过走位躲避伤害"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时先在远处利用大招进行输出，保证一个安全的输出环境，1技能的施放最好在敌方被控制或预判好对方走位后施放，以打出更多的伤害"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1zS4y1s71d/",
+          "title": "专精装王子战法流嬴政，一个只会疯狂欧拉的射手"
+        }
+      ]
+    },
+    {
+      "heroId": 509,
+      "name": "盾山",
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-509",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1.不要轻易释放大招，否则会被来自其他方向的突袭击溃2.盾山可以将全部敌人阻挡在外，亦可将敌人阵型隔开，营造局部多打少的局势"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1.多方面的拉扯骚扰会使得盾山顾此失彼，耐心试探即可破除其强大的团队防御能力2.选择拥有较远距离的位移技能的英雄，可以直接越过盾山突袭后排"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "为团队架住敌方火力最强的方向，抗住成吨的输出，为团队开疆拓土"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1azWszKERP/",
+          "title": "豌豆射手流盾山（该玩法适用无限乱斗，请勿排位）"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1Np4y1e7xy/",
+          "title": "秋山“意识教学”，竟然全英雄通用？（辅助盾山篇）"
+        }
+      ]
+    },
+    {
+      "heroId": 111,
+      "name": "孙尚香",
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-111",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "使用时需要注意1技能的使用时机，在对方刺客未交技能时，需要留着1技能进行输出，待对方切入后选择位移拉开距离；孙尚香是一个靠攻速打伤害的英雄，所以攻速装会有很高的性价比"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、刺客英雄需要抓住孙尚香走位失误时或交出位移技能后近身击杀；2、孙尚香很灵活，所以需要找准机会利用控制技能控制后将其击杀"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时孙尚香可以先放出大招，以使敌方尽快致残更快进入收割节奏.但孙尚香很脆，敌方刺客切入后，一定要留着1技能与其拉开距离输出，不然就会很快被击杀"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1dS4y1D7Q7/",
+          "title": "学会孙尚香这期拉扯，让你轻松秀翻所有射手！"
+        }
+      ]
+    },
+    {
+      "heroId": 508,
+      "name": "伽罗",
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-508",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1.保持安全距离进行攻击，利用射程优势正面压制消耗对方2.伽罗可以主动关闭法阵，利用关闭时的移速加成效果来帮助队友追击或者撤退"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1.伽罗的射程优势，需要突进能力较强的刺客进行针对2.越早推掉伽罗身后的防御塔，让其后方空虚越能限制伽罗的发挥"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "虽然伽罗射程较远，但是自身缺乏脱离能力，所以伽罗应该从前排坦克开始依次攻击，维持距离，避免自身陷入危险的情况"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV13g411G79e/",
+          "title": "教伽罗我是认真的"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1NbR7BfEEG/",
+          "title": "玩伽罗能练射手基本功"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1Af4y1e7A4/",
+          "title": "T0伽罗有多恐怖？看4分钟让你超神!"
+        }
+      ]
+    },
+    {
+      "heroId": 545,
+      "name": "莱西奥",
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-545",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "滞空期间可以边移动边攻击，可用于拉扯。大招带有斩杀伤害，记得对低血量目标使用，不要在敌人满血时释放。"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "硬控和压制技能可以将空中的莱西奥立刻击落"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "主打收割和追击，不要在团战刚开启时就上。"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1UP4y1Y7LR/",
+          "title": "彻底颠覆王者机制！史上最恶心射手莱西奥登场！！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1KM41117vu/",
+          "title": "新赛季必会射手！版本T0莱西奥！7秒滞空的真正射刺"
+        }
+      ]
+    },
+    {
+      "heroId": 197,
+      "name": "弈星",
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-197",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "尽量将敌人限制在2技能内部进行作战，离开棋阵范围后，可以适当远离战场，等待技能冷却，或使用1技能命中加快2技能冷却回复；"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "弈星的大招具有生成时间，在生成前离开预警范围；远离弈星的棋阵，可以规避大量伤害和控制效果"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "使用22拉回敌人再释放大招，让敌人无法逃离，之后使用1A1A1A进行爆发输出，打出印记伤害"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV16J8tzMETW/",
+          "title": "法术射手弈星！雷电法王重新登场！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1bWpm6rEnf/",
+          "title": "1521-1537弈星全局思路，对线单杀诸葛亮"
+        }
+      ]
+    },
+    {
+      "heroId": 548,
+      "name": "戈娅",
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-548",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1. 1技能接两下普攻和强普，然后接2技能后撤，可以快速消耗敌人。 2. 对线时可以先普攻小兵积攒强普，再利用长距离强化普攻消耗敌人。 3. 团战时使用3技能支援队友，后手进场利用普攻持续收割敌人，1技能和2技能用来突进或者逃生。"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "戈娅被贴脸后较难逃生，使用爆发和控制技能可以有效威胁戈娅。"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时使用3技能支援队友，后手进场利用普攻持续收割敌人，1技能和2技能用来突进或者逃生。"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1VE4m1d7jS/",
+          "title": "两万分司空震告诉你戈娅是打不过司空震的！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1Cg411X7mp/",
+          "title": "戈娅教学！乱杀奥义！告别刮痧王！"
+        }
+      ]
+    },
+    {
+      "heroId": 524,
+      "name": "蒙犽",
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-524",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1. 大招在队友的帮助下能够获得更多发的导弹进行压制 2. 1技能可以暂时中断释放来恢复移动速度进行调整站位"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1. 小心蒙犽的超远程支援能力 2. 注意蒙犽的能量条，避免与兴奋状态的蒙犽对拼"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "维持自身的兴奋状态，与队友协同前进；可以利用超远范围支援能力，为单带的队友提供掩护"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1DF411K7Qn/",
+          "title": "祖宗流蒙犽：万血射手，再战百世轮回！"
+        }
+      ]
+    },
+    {
+      "heroId": 133,
+      "name": "狄仁杰",
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-133",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "狄仁杰1技能清线能力很强，可以快速清理兵线；狄仁杰需要谨慎走位，因为没有位移技能，2技能可以在被控制后使用"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "狄仁杰没有位移技能，刺客可以轻易将其击杀；坦克英雄在被狄仁杰大招击中后，减少护甲魔抗，注意躲避伤害"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时，狄仁杰需要站在后排进行输出，有队友保护效果更佳。利用大招命中敌方前排，配合队友可将其迅速击杀；需要时刻注意走位，以免被敌方刺客切入被击杀"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1YWtYeCEdy/",
+          "title": "2200分狄仁杰教学！在对面阵容很肉的情况下！那就选择暴击流狄仁杰！"
+        }
+      ]
+    },
+    {
+      "heroId": 196,
+      "name": "百里守约",
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-196",
+      "conflict": "旧提示仍有普攻不暴击的说法，与本次技能正文不一致；本卡不采纳该旧装备逻辑。",
+      "excerpts": [
+        {
+          "label": "瞄准 · 技能正文",
+          "text": "百里守约无攻击行为1.5秒后，会快速获得伏击效果，最多叠加5层，拥有伏击效果时提升百里守约20%物理穿透并造成额外70~140(+15%额外物理攻击)物理伤害；每次普攻命中敌方英雄消耗1层伏击，技能命中敌方英雄消耗5层伏击效果。 【瞄准】：每增加1%的暴击率，会提升4点狂风之息和2点逃脱的伤害。"
+        },
+        {
+          "label": "静谧之眼 · 技能正文",
+          "text": "百里守约布置(最多3个)视野探测装置(600/680/760/840/920/1000范围，持续300秒)，靠近墙体或处于装置区域无攻击行为(1.5秒)会获得40/48/56/64/72/80移速和15/18/21/24/27/30%攻速(攻速效果在攻击或脱离范围后仍持续3秒)，非战斗状态下靠近墙体或处于装置区域会额外获得伪装效果 视野装置每35/34/33/32/31/30秒可准备1个(最多3个) 装置被敌方英雄占领后失效，多个敌方英雄占领时将加速失效"
+        },
+        {
+          "label": "狂风之息 · 技能正文",
+          "text": "朝指定方向狙击，对命中目标造成750/900/1050/1200/1350/1500(+240%额外物理攻击)物理伤害并附带目标8%最大生命的物理伤害，同时减少其90%移速，持续0.5秒。 瞄准需要2秒时间，瞄准未完成时子弹有可能产生偏移，技能子弹最多储存3颗，每次普攻命中减少2.5%充能时间。 【狂风之息】：当攻速达到40/80/120/160%时，瞄准所需时间降低0.25/0.5/0.75/1秒，并降低收枪时间。"
+        },
+        {
+          "label": "逃脱 · 技能正文",
+          "text": "向后跳跃并向指定方向射击，造成700/1050/1400(+160%物理攻击)物理伤害并减少其15/22.5/30%移速，持续2秒，落地增加45/67.5/90移速，持续2秒，与狂风之息共用子弹数量，释放消耗1颗。 普攻或技能攻击会立即失去加速效果。 被动：提升30普攻射程。"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1yi4y1q7Va/",
+          "title": "百里守约又玩错了 开局拿打野一血 遥遥领先-苏打锋"
+        }
+      ]
+    },
+    {
+      "heroId": 525,
+      "name": "鲁班大师",
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-525",
+      "conflict": "旧提示沿用机械飞索拉敌人的描述；本次正文的机械飞索是墙体位移，收纳敌人是强力收纳。",
+      "excerpts": [
+        {
+          "label": "稷下科技 · 技能正文",
+          "text": "鲁班大师施放技能时获得280/560(+5.5%额外生命值)护盾(持续5秒，最多3层) 鲁班大师获得强化普攻(6.5/5秒冷却)，额外造成200/400(+33%法术攻击)法术伤害，短暂延迟后再次造成300/600(+50%法术攻击)范围法术伤害"
+        },
+        {
+          "label": "助推跳跃 · 技能正文",
+          "text": "鲁班大师借助机械臂喷气动力向前跳跃，并在落地时展开力场击飞周围敌人0.5秒并造成450/540/630/720/810/900(+70%法术攻击)法术伤害。"
+        },
+        {
+          "label": "助手驰援 · 技能正文",
+          "text": "鲁班大师获得75/90/105/120/135/150加速(1秒内衰减)和一名队友创造链接(持续4秒)，为其提供35/42/49/56/63/70(+7%额外生命)护盾(每0.5秒1层，上限8层)，队友确认交互后会立即位移到鲁班大师的位置 与【机械飞索】共享冷却时间"
+        },
+        {
+          "label": "机械飞索 · 技能正文",
+          "text": "鲁班大师将自身牵引至墙体(由近到远进入50%~100%冷却) 与【助手驰援】共享冷却时间"
+        },
+        {
+          "label": "强力收纳 · 技能正文",
+          "text": "鲁班大师向前方扇形区域发射机械臂连接区域内的敌人(最多6个，优先英雄)，每条机械臂造成130/195/260(+22%法术攻击)法术伤害(多次命中衰减至25%)，距离过远时连接会提前断开造成等量伤害并将目标向自身方向牵引一小段距离连接 1.25秒后鲁班大师将连接的敌人牵引至身边并造成晕眩(持续1秒)，每条机械臂造成300/450/600(+50%法术攻击)法术伤害(多次命中衰减至25%)"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1nQHPzSETx/",
+          "title": "职业选手都在用的高地换鞋有用吗？辅助开局都应该做哪些事情？大师出装真的有问题吗？"
+        }
+      ]
+    },
+    {
+      "heroId": 189,
+      "name": "鬼谷子",
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-189",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1、鬼谷子的隐身特性，是我方在对战中视野争夺的关键，要好好的利用起来；2、鬼谷子的大招配合队友可以很好的进行突袭进攻或紧急撤退"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、需要注意鬼谷子的动向，时刻警惕自己是否已暴露在敌方视野中；2、后期需要注意敌方英雄动向，当地图上视野不足时，小心敌方群体突袭"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "鬼谷子让我方有良好的开团先手优势，利用大招进行群体伪装，对敌人进行先手突袭会取得团战胜利的先机"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1Xw411o7Sm/",
+          "title": "开局五宝石鬼谷子移速有多恐怖 鬼谷子撞车养猪流"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1nP4y1x7GY/",
+          "title": "五宝石鬼谷子移速有多恐怖，玩辅助又不想把命运交给队友那就玩鬼谷子吧"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1WX4y1w7r1/",
+          "title": "鬼谷子眼里只有敌方c位没有己方的 国服鬼谷卡视野教学"
+        }
+      ]
+    },
+    {
+      "heroId": 182,
+      "name": "干将莫邪",
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-182",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1. 干将莫邪需要调整自身位置从而影响飞剑弹道位置；2. 干将莫邪的2,3技能每次加点都会一起提升技能等级"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1.干将莫邪飞剑的施法距离和弹道固定，最好迅速贴近干将莫邪进行作战；2.干将莫邪的飞剑弹道虽然覆盖面积大，但是中间的空白处却是不能造成伤害的"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "干将莫邪因纯粹而强大，作为纯输出法师，坐镇团队后方进行疯狂输出才是正确的选择；当然，干将莫邪的技能命中率需要大量的连续才能发挥出其法术炮台的实力，特别是调整自身位置从而影响交汇点的选择及其重要"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1db4y1e7x3/",
+          "title": "【仙泽干将】平均80星近50输出！辅助永远的神！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1h44y1L7k6/",
+          "title": "【仙泽干将】辅助永远的神"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1mdHY68EbH/",
+          "title": "诸葛亮对线干将教学"
+        }
+      ]
+    },
+    {
+      "heroId": 534,
+      "name": "桑启",
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-534",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "1、灵活运用被动，可以有效的为自己和队友回复状态。 2、尽量在高层数的情况使用1技能，这样收益更高。 3、野区中的草丛较多，在野区中2技能有较高的使用空间。逃生时灵活运用2技能，会让对手无法追上。 4、3技能往人多的地方释放，会有更好的效果。"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "爆发型英雄可以克制，强控型英雄可以克制"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "站在后排为队友进行回复，或者在适当时机用2技能位移接近 敌人，使用1技能进行控制"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1q3uY6jEPo/",
+          "title": "国服桑启的魅力"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1oA7A6UECG/",
+          "title": "练习意识的最佳辅助，桑启全局打法思路教学"
+        }
+      ]
+    },
+    {
+      "heroId": 191,
+      "name": "大乔",
+      "roles": [
+        "游走",
+        "中路"
+      ],
+      "sourceId": "official-191",
+      "conflict": "旧建议的技能编号、持续沉默描述与本次正文不一致；本卡按技能名称与传送条件整理。",
+      "excerpts": [
+        {
+          "label": "川流不息 · 技能正文",
+          "text": "大乔自身增加30~60点移速。 【鲤跃之潮】和【绝断之桥】的鲤鱼跃过另一个技能的海潮时，可激发海潮爆炸造成140~280(+25%法术攻击)法术伤害和30~60%减速效果，持续1秒。 每250法术攻击将使【鲤跃之潮】和【绝断之桥】的技能范围提升50，最多提升200。"
+        },
+        {
+          "label": "鲤跃之潮 · 技能正文",
+          "text": "大乔召唤鲤鱼向指定方向跳跃，对沿途目标造成300/400/500/600(+55%法术攻击)法术伤害并将其击飞0.5秒。鲤鱼会形成海潮，每0.5秒对敌人造成75/100/125/150(+12%法术攻击)法术伤害，持续2.5秒。大乔释放技能时增加30/40/50/60%移速，持续2.5秒。"
+        },
+        {
+          "label": "宿命之海 · 技能正文",
+          "text": "大乔召唤一个附带视野的法阵，持续4秒。法阵结束后可将一名友方英雄传送回出生点，被传送的英雄清除所有负面效果，然后其可通过水晶处的传送门返回。 若没有传回英雄，则留下标记供一名队友触碰后往返回城。 再次释放可取消标记，若没有传回英雄，则返还50%冷却时间。大乔会优先被法阵传送，且触碰标记回城无需引导。"
+        },
+        {
+          "label": "绝断之桥 · 技能正文",
+          "text": "大乔召唤鲤鱼从左向右跳跃，对沿途目标造成300/400/500/600(+55%法术攻击)法术伤害并将其击飞0.5秒。 鲤鱼会形成海潮，每0.5秒对敌人造成75/100/125/150(+12%法术攻击)法术伤害，持续2.5秒。"
+        },
+        {
+          "label": "漩涡之门 · 技能正文",
+          "text": "大乔在指定位置召唤法阵，对范围内敌人造成500/750/1000(+90%法术攻击)法术伤害，法阵存在的8秒内，队友可点击漩涡之门传送至法阵位置(至多5人)，法阵内大乔和友方英雄获得350/525/700(+50%法术攻击)护盾。自身额外获得7%额外生命值护盾。"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1Tb411x7bk/",
+          "title": "王者荣耀：逐帧分析！国服第一大乔全方面细节教学"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1Gb411W7KL/",
+          "title": "【呱呱出品】国服大乔手把手教你全部操作意识细节，看完即无敌"
+        }
+      ]
+    },
+    {
+      "heroId": 577,
+      "name": "少司缘",
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-577",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "协助队友压制单个敌人时，使用1-2-2-1的连招，消耗对方的同时保持队友身上增益"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "少司缘可以利用手长的技能优势，频繁使用二技能一段对敌方的前排进行消耗"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "少司缘可以站在队伍的后方确保大招路径能覆盖更多队友，高额的团队回复和加速效果是保证团战胜利的关键，同时大招的伤害和减速效果也能让敌方想要突进的刺客望而却步"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1m2TkziEJr/",
+          "title": "16分钟偷1800经济！少司缘辅助天花板全局教学丨顶级游走+意识流偷钱密码"
+        }
+      ]
+    },
+    {
+      "heroId": 171,
+      "name": "张飞",
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-171",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "张飞自身两种状态是不同的位置，在不变身的时候是一个坦克英雄，抗抗伤害救救队友什么的，但是在张飞变身后自身就有输出了，而且会更肉更抗揍，对于双重技能打法的张飞来说，把握开大招的机会很重要，在碰到人的时候可以先不进行变身，等到对方的位移技能用过后再使用大招进行必中的眩晕，然后就容易打了，如果你控制到的人很多，队友蜂拥上来会将对方瞬间团灭."
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、张飞在能量未满的情况下战斗力较弱，这个时候攻击他；2、团战尽量不要把技能丢在张飞身上"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战中，张飞也可以大招先手进行控制开团，然后2技能跳进去进行控制，同时1技能不断碾压对手后排造成伤害，配合一些近战突进进行集火后排脆皮然后击杀.当然大招需要积攒怒气，所以平时可以通过普通攻击或者技能打小兵来加速怒气回复，保证团战时候有大招可放."
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1iZ4y1x71g/",
+          "title": "国服张飞辅助意识教学，看完真能单排上荣耀"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1bb411G7Be/",
+          "title": "b站最强辅助百星国服张飞教学！英雄梯度意识详解，学完上荣耀！"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1LE411E7hh/",
+          "title": "9分钟轻松学会张飞，铭文出装技巧意识教学轻松上省"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV16HHQ6vEnm/",
+          "title": "赢了就能和妹妹开视频！诸葛亮VS张飞实战教学"
+        }
+      ]
+    },
+    {
+      "heroId": 141,
+      "name": "貂蝉",
+      "roles": [
+        "中路",
+        "对抗路"
+      ],
+      "sourceId": "official-141",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "在对线中，保证安全的情况下貂蝉在2技能打到敌人的情况下，可以2技能突进接1技能进行消耗，由于2技能命中后的减CD，会使得貂蝉在突进后根据情况灵活选择继续突进或撤退，千万不要吝啬大招，团战中的减CD是非常重要的"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、刺客英雄需等待貂蝉位移技能交了后突进；2、可以利用一些带硬控的英雄，等貂蝉突进后将其控制击杀；3、尽量不要站得太靠近，以免被貂蝉AOE打到更多敌人"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时，貂蝉在等到对方英雄一些控制技能交出后，可以2技能进行突进接大招和1技能，这样貂蝉的CD很快可以频繁的使用1、2技能进行输出，可以带金身技能，防止被集火秒杀"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1jrURY5EyE/",
+          "title": "《21657战力妲己教学》：再次证明，妲己辅助登临巅峰第二，暴打貂蝉全局意识教学"
+        }
+      ]
+    },
+    {
+      "heroId": 184,
+      "name": "蔡文姬",
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-184",
+      "conflict": "旧团战提示仍写大招清空敌方双抗；本次正文是治疗最低血量友军并提高防御，不采纳旧说法。",
+      "excerpts": [
+        {
+          "label": "长歌行 · 技能正文",
+          "text": "蔡文姬受到伤害时增加持续衰减的35~70%移速，持续2秒，同时每秒回复250~530(+50%法术攻击)生命，持续2秒。 该效果每10秒只能触发1次。"
+        },
+        {
+          "label": "思无邪 · 技能正文",
+          "text": "蔡文姬演奏乐曲，增加40%移速，同时为己方英雄每0.5秒回复60/72/84/96/108/120(+20%法术攻击)点生命，持续3秒，对非英雄单位造成50%效果。"
+        },
+        {
+          "label": "胡笳乐 · 技能正文",
+          "text": "蔡文姬发出音波在敌人间弹射，每次弹射造成270/324/378/432/486/540(+48%法术攻击)法术伤害和0.75秒晕眩。 每束音波最多弹射6次，同一目标最多受到2次弹射效果，第二次弹射命中时将只造成25%的初始伤害和晕眩时间。"
+        },
+        {
+          "label": "忘忧曲 · 技能正文",
+          "text": "蔡文姬释放琴音每0.5秒为范围内血量最低的友方英雄回复90/135/180(+45%法术攻击)点生命，持续5秒，同时为其增加200/300/400(+30%法术攻击)点物理和法术防御。"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1E21bYPE47/",
+          "title": "意识好的蔡文姬有多恐怖"
+        }
+      ]
+    },
+    {
+      "heroId": 168,
+      "name": "牛魔",
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-168",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "利用2技能和1技能的衔接打出小爆发伤害，牛魔3技能大招是一个很好的开团与打反手的AOE控制技能"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、牛魔的控制技能都是非指向性的，灵活走位来躲开这些技能；2、团战尽量不要把所有技能丢在强力肉坦牛魔的身上；3、当牛魔有大招的时候，千万不要追击他，反手大招的命中率相当高"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战牛魔尽量和血量较少的英雄站在一起保护其输出和撤退，找准机会，尽量利用大招打到更多的敌人才能获得团战胜利"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1T4411t7i3/",
+          "title": "【节奏大师】第8期：辅助的视野布置和节奏铺垫-牛魔-辅助意识流教学篇"
+        }
+      ]
+    },
+    {
+      "heroId": 144,
+      "name": "程咬金",
+      "roles": [
+        "对抗路"
+      ],
+      "sourceId": "official-144",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "程咬金前期需要在线上发育，有了一定装备后再参加团战，主要职责是对后排进行骚扰和输出，在低血量时开启大招战略撤退，血量恢复后再进入战场配合队友进行战斗"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "1、团战尽量不要把技能丢在程咬金身上；2、程咬金没有硬控技能，所以可以对他进行风筝输出"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时，程咬金一定是那个冲到人群里承受技能和伤害的人，冲到敌方后排，对后排进行干扰，为刺客切入创造条件，在血量较低时，可以选择暂时撤退，等待血量充足后在进入战斗，掩护队友进行输出"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1j2J46sExN/",
+          "title": "程咬金对线赵怀真"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV16sbG61E1i/",
+          "title": "国服程咬金对线赵怀真"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1g3t96kEBM/",
+          "title": "国服程咬金对线赵怀真"
+        }
+      ]
+    },
+    {
+      "heroId": 138,
+      "name": "王维",
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-138",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "在被敌方刺客切入时，可以躲进1技能形成的空山当中快速回复被动，闪避大量伤害；同时多用一二技能打出山水碰撞的效果，最大化控制和伤害"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "与王维一技能生成的空山保持距离，以免被二技能命中卷入其中；王维开大时，可以集火其本体，快速击杀"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "先用一二技能打出山水碰撞消耗敌方状态，随后使用大招化雾而行追击敌方的同时度过技能真空期，然后使用第二段落地打出第二套爆发伤害；距离团战较远时，可以利用大招的高机动性及时支援"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV18WHr6WEBg/",
+          "title": "狂铁对线赵怀真+王维 盘古 苏烈 龙人 全程教学"
+        }
+      ]
+    },
+    {
+      "heroId": 194,
+      "name": "苏烈",
+      "roles": [
+        "游走",
+        "对抗路"
+      ],
+      "sourceId": "official-194",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "把握大招蓄力的时机和攻击范围，尽可能在敌人密集的区域进行释放。释放2技能的时候，需要预判释放的路径，避免自己触碰地形边缘而停止移动。"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "看到苏烈释放大招的时候，快速用控制技能打断他。当苏烈触发被动重生的时候，将会处于非常虚弱的状态，可以快速集火他。"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "苏烈可以在团战开始以前，在隐蔽的位置提前释放大招开始蓄力，然后冲进人群给予敌人致命一击。苏烈的一击完美大招，绝对可以扭转战斗的局势。"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV18WHr6WEBg/",
+          "title": "狂铁对线赵怀真+王维 盘古 苏烈 龙人 全程教学"
+        }
+      ]
+    },
+    {
+      "heroId": 529,
+      "name": "盘古",
+      "roles": [
+        "打野",
+        "对抗路"
+      ],
+      "sourceId": "official-529",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "2、3技能都可以提供2秒的缴械效果，可以错开一点释放的时间，避免浪费了缴械的时间"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "尽量避免和他站撸对抗，多拉扯"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "可以绕后切C，也可以站在己方C位身边通过缴械技能反制对方前来切C的刺客，尤其是澜、宫本、司空震这样高度依赖普攻的英雄"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV18WHr6WEBg/",
+          "title": "狂铁对线赵怀真+王维 盘古 苏烈 龙人 全程教学"
+        }
+      ]
+    },
+    {
+      "heroId": 558,
+      "name": "影",
+      "roles": [
+        "对抗路",
+        "打野"
+      ],
+      "sourceId": "official-558",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "探草时利用二技能的弹射飞刃效果可观察草丛中是否有敌人存在"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "使用二技能时尽量同时命中敌人与小兵，压低敌方状态并快速清线"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "血量较少时再主动开启大招近身缠斗，可使其对团战益最大化"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1To4C6MEt8/",
+          "title": "较高质量的边路关羽单杀教程，包含很多线上难打的英雄，比如影，猪八戒，赵怀真"
+        }
+      ]
+    },
+    {
+      "heroId": 167,
+      "name": "孙悟空",
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-167",
+      "conflict": "",
+      "excerpts": [
+        {
+          "label": "官方使用建议",
+          "text": "孙悟空需要找机会接近敌方后排将其输出英雄秒掉，孙悟空需要在适当的时机开启1技能抵挡敌方技能，孙悟空配合有控制技能的英雄能更好的输出"
+        },
+        {
+          "label": "官方对抗建议",
+          "text": "孙悟空开启1技能时不要用技能打他，脆皮英雄需要时刻注意孙悟空的走位，注意控制和他的距离"
+        },
+        {
+          "label": "官方团战建议",
+          "text": "团战时，孙悟空需要借助视野和地形优势，找机会切入敌方后排，将其主要输出人物秒杀"
+        }
+      ],
+      "mentions": [
+        {
+          "url": "https://www.bilibili.com/video/BV1dShJ6bEjY/",
+          "title": "巅峰赛最后一舞，孙悟空对位诸葛亮，拿下本局mvp，打野全局思路教学"
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "hero-170",
+      "title": "刘备：贴身输出前，区分免控与护盾窗口",
+      "heroIds": [
+        170
+      ],
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-170",
+      "anchor": "技能正文（与旧提示交叉核对）",
+      "takeaway": "技能正文区分近身射击与远距离爆裂射击；大招的免控和护盾持续时间不同。",
+      "checks": [
+        "目标是否在近身射击距离，贴近后还有退出路径？",
+        "大招免控是否仍在，还是只剩护盾？"
+      ],
+      "counterexample": "不能把护盾存在等同于全程免控，也不能只看残血就硬追。",
+      "drill": "对照一次近身和一次远射，记录距离变化及免控结束后的处理。"
+    },
+    {
+      "id": "hero-193",
+      "title": "铠：先开魔铠，再确认接近条件",
+      "heroIds": [
+        193
+      ],
+      "roles": [
+        "打野",
+        "对抗路"
+      ],
+      "sourceId": "official-193",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调魔铠生效的延迟与二技能接近目标的时机。",
+      "checks": [
+        "魔铠是否已生效，还是尚在起手？",
+        "用二技能接近后，一技能减速是否能帮助跟进？"
+      ],
+      "counterexample": "对方仍有位移而自己没有退路时，开大不等于必能击杀。",
+      "drill": "暂停在开大前，画出接近路线与对手可见的撤离方向。"
+    },
+    {
+      "id": "hero-511",
+      "title": "猪八戒：让地形帮助控制，而不是堵住队友",
+      "heroIds": [
+        511
+      ],
+      "roles": [
+        "对抗路",
+        "打野"
+      ],
+      "sourceId": "official-511",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示把倒打一耙的地形碰撞与圈养时刻的阻隔作为团战条件。",
+      "checks": [
+        "二技能方向能否撞到有效地形？",
+        "大招墙体会隔开敌人，还是挡住己方追击与撤退？"
+      ],
+      "counterexample": "脱离队友单向追击，不能仅凭回血能力认为能一直抗住。",
+      "drill": "复看一次墙边交战，分别画出不开墙和开墙后的两条退路。"
+    },
+    {
+      "id": "hero-130",
+      "title": "宫本武藏：决斗前，核对目标与后续接应",
+      "heroIds": [
+        130
+      ],
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-130",
+      "anchor": "技能正文（与旧提示交叉核对）",
+      "takeaway": "技能正文描述决斗期间恢复效果延后；切入仍需看目标位置与队友距离。",
+      "checks": [
+        "锁定的是关键目标还是能拖住自己的前排？",
+        "落地后队友能否跟进，目标有哪些已知逃生手段？"
+      ],
+      "counterexample": "不能把延后恢复解释为永久禁止回血，也不因锁到后排就认定胜势。",
+      "drill": "截取起跳与落地画面，比较目标位置和己方跟进距离。"
+    },
+    {
+      "id": "hero-128",
+      "title": "曹操：把强化普攻穿插在位移之间",
+      "heroIds": [
+        128
+      ],
+      "roles": [
+        "对抗路",
+        "打野"
+      ],
+      "sourceId": "official-128",
+      "anchor": "技能正文（与旧提示交叉核对）",
+      "takeaway": "技能正文说明施法获得可储存的强化剑气普攻，未用完的一技能段数影响冷却返还。",
+      "checks": [
+        "强化普攻是否被衔接使用，还是连续施法浪费输出窗口？",
+        "剩余一技能用于贴近、撤退，还是停止释放等待冷却？"
+      ],
+      "counterexample": "不能把旧版大招吸血描述当作当前全部生存机制。",
+      "drill": "回看一轮连招，逐次标注施法、剑气普攻和保留的位移。"
+    },
+    {
+      "id": "hero-137",
+      "title": "司马懿：进场之前，检查能量与本体安全",
+      "heroIds": [
+        137
+      ],
+      "roles": [
+        "打野",
+        "中路"
+      ],
+      "sourceId": "official-137",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调能量限制、灵体移动以及大招起手时间。",
+      "checks": [
+        "当前能量是否足够完成计划中的技能与普攻？",
+        "灵体移动时本体位置、大招落点是否会被控制覆盖？"
+      ],
+      "counterexample": "缺少能量或落点可被提前集火时，不能机械后手切入。",
+      "drill": "挑一次失败切入，分别检查能量耗尽点与落点暴露时间。"
+    },
+    {
+      "id": "hero-153",
+      "title": "兰陵王：隐身接近后，先看标记与孤立程度",
+      "heroIds": [
+        153
+      ],
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-153",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方使用建议围绕隐蔽接近、二技能标记及技能后的撤离。",
+      "checks": [
+        "标记是否命中，目标旁边有哪些可见保护者？",
+        "结束输出后能否退出敌方控制范围？"
+      ],
+      "counterexample": "隐身不代表敌人毫无防备；看不到支援不能认定目标孤立。",
+      "drill": "在露出攻击意图前暂停，列出可见保护者和撤退方向。"
+    },
+    {
+      "id": "hero-502",
+      "title": "裴擒虎：入侵要同时管理形态、能量与线权",
+      "heroIds": [
+        502
+      ],
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-502",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示区分双形态的攻击方式、能量管理与虎形态地形位移。",
+      "checks": [
+        "当前形态与能量能否支持接近、输出再撤出？",
+        "可用墙体在哪里，附近队友是否有先到条件？"
+      ],
+      "counterexample": "不能把早期作战倾向当成无条件反野指令。",
+      "drill": "选一段入侵，画出虎形态借墙路线，并标出必须停止追击的位置。"
+    },
+    {
+      "id": "hero-195",
+      "title": "百里玄策：根据钩链与标记状态决定追击方式",
+      "heroIds": [
+        195
+      ],
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-195",
+      "anchor": "技能正文（与旧提示交叉核对）",
+      "takeaway": "技能正文区分远端普攻、钩链目标与瞬镰闪的不同使用条件。",
+      "checks": [
+        "目标现在是否被钩链或标记，距离是否支持下一步控制？",
+        "瞬镰闪的可用次数和撤离方向能否确认？"
+      ],
+      "counterexample": "不能把旧版无钩链就完全不能进场的经验照搬。",
+      "drill": "分别观察有钩链和无钩链的一次接近，记录实际可用技能。"
+    },
+    {
+      "id": "hero-150",
+      "title": "韩信：多段位移中，留下一条回程",
+      "heroIds": [
+        150
+      ],
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-150",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调多段位移的突进与逃生用途。",
+      "checks": [
+        "接近目标后还剩哪一段可用位移？",
+        "对手的可见控制会覆盖预定落点吗？"
+      ],
+      "counterexample": "所有位移用来赶路后，不能按满技能状态继续深追。",
+      "drill": "画出一次追击的每个落点，标记最后仍能安全回头的时刻。"
+    },
+    {
+      "id": "hero-564",
+      "title": "姬小满：按攻守目的安排组合技",
+      "heroIds": [
+        564
+      ],
+      "roles": [
+        "对抗路"
+      ],
+      "sourceId": "official-564",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方说明区分一技能的进攻控制用途与二技能的生存用途，组合取决于使用次序。",
+      "checks": [
+        "当前储备够完成哪组技能，目的是控制、输出还是脱离？",
+        "下一次释放会把自己带到哪里，是否还有防守手段？"
+      ],
+      "counterexample": "不能只背固定连招而忽略技能储备与敌方控制。",
+      "drill": "复看一轮交手，给每次组合写一个用途，再设计一个撤离替代方案。"
+    },
+    {
+      "id": "hero-129",
+      "title": "典韦：先解决接近，再考虑持续输出",
+      "heroIds": [
+        129
+      ],
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-129",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示指出典韦需要抓住接近和持续攻击的机会，也容易被拉扯。",
+      "checks": [
+        "用什么手段接近远程目标，是否会先被消耗？",
+        "接近后能持续攻击，还是对手仍能拉开？"
+      ],
+      "counterexample": "不能把近身伤害能力等同于面对任何阵容都能直接冲锋。",
+      "drill": "对照一次追上与一次被风筝，比较双方位移和队友控制时机。"
+    },
+    {
+      "id": "hero-531",
+      "title": "镜：换位之前，先看场域与两端位置",
+      "heroIds": [
+        531
+      ],
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-531",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方说明将大招场域和位置交换作为关键操作条件。",
+      "checks": [
+        "当前本体与镜像分别在哪，换位后会落入哪些可见威胁？",
+        "队友能否覆盖侧面进场后的输出窗口？"
+      ],
+      "counterexample": "无法辨认场域与技能状态时，不给确定的连换操作结论。",
+      "drill": "暂停在一次换位前，标出换位前后两点和敌方控制覆盖区。"
+    },
+    {
+      "id": "hero-175",
+      "title": "钟馗：钩中谁，比只看钩没钩中更重要",
+      "heroIds": [
+        175
+      ],
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-175",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调钩取创造集火机会，实际收益需要队友跟进。",
+      "checks": [
+        "预定钩取目标是否会反而威胁己方后排？",
+        "钩回后队友的距离、状态与控制是否允许接应？"
+      ],
+      "counterexample": "把危险前排拉到残血队友旁边，不因命中就算好钩。",
+      "drill": "各选一次钩后得利与失利，比较目标类型和队友站位。"
+    },
+    {
+      "id": "hero-126",
+      "title": "夏侯惇：确认豪气斩命中英雄，再接后续控制",
+      "heroIds": [
+        126
+      ],
+      "roles": [
+        "对抗路",
+        "游走",
+        "打野"
+      ],
+      "sourceId": "official-126",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "技能提示区分一技能命中英雄后的第二段控制，以及护盾与大招的用途。",
+      "checks": [
+        "一技能是否真正命中英雄并获得后续施放条件？",
+        "大招锚点用于进场还是撤离，队友能否跟上？"
+      ],
+      "counterexample": "只命中兵线时，不能假定后续击飞已经可用。",
+      "drill": "慢放一次一技能起手，确认命中对象，再检查后续控制安排。"
+    },
+    {
+      "id": "hero-123",
+      "title": "吕布：附魔状态和大招落点分开检查",
+      "heroIds": [
+        123
+      ],
+      "roles": [
+        "对抗路"
+      ],
+      "sourceId": "official-123",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调一技能命中英雄的附魔条件，以及大招落地前的预警。",
+      "checks": [
+        "当前是否已附魔，有没有把命中小兵误认为命中英雄？",
+        "大招落地后能封住路径，还是目标已有明显逃离空间？"
+      ],
+      "counterexample": "不能因圈住多人就认定必定命中，也不能忽略撤退用途。",
+      "drill": "比较起跳和落地两帧，标出目标实际移出圈的位置。"
+    },
+    {
+      "id": "hero-107",
+      "title": "赵云：把大招落点和队友跟进一起判断",
+      "heroIds": [
+        107
+      ],
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-107",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示指出大招落地存在时间差，需要预判和队友配合。",
+      "checks": [
+        "目标正在朝哪个方向移动，控制能否帮助落点命中？",
+        "落地后自己和队友是否有足够状态继续交战？"
+      ],
+      "counterexample": "低血量生存能力不代表可以无视集火与控制。",
+      "drill": "复看一次空大与一次命中，记录预判方向和队友控制时点。"
+    },
+    {
+      "id": "hero-533",
+      "title": "阿古朵：放出球球后，重新安排本体站位",
+      "heroIds": [
+        533
+      ],
+      "roles": [
+        "打野",
+        "发育路"
+      ],
+      "sourceId": "official-533",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调召唤区域和放出球球后本体更易受到威胁。",
+      "checks": [
+        "一技能区域能覆盖接下来实际发生交战的位置吗？",
+        "球球离开后，本体附近有哪些可见突进威胁？"
+      ],
+      "counterexample": "不能因球球在前排就让本体停在敌方切入路径上。",
+      "drill": "在放球前后各暂停一次，为本体选择一处有接应的站位。"
+    },
+    {
+      "id": "hero-538",
+      "title": "云缨：枪意层数要匹配当前距离与目的",
+      "heroIds": [
+        538
+      ],
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-538",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方说明不同枪意层数对应不同强化攻击方式，二技能蓄力影响接近节奏。",
+      "checks": [
+        "当前枪意层数能从画面确认吗，适合近战还是拉开输出？",
+        "二技能接近后是否还有安全释放强化攻击的距离？"
+      ],
+      "counterexample": "不能把任意层数都按同一套固定连招处理。",
+      "drill": "逐次记录一轮连招的枪意变化，比较实际释放距离。"
+    },
+    {
+      "id": "hero-504",
+      "title": "米莱狄：机器人能否跟上，决定爆发条件",
+      "heroIds": [
+        504
+      ],
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-504",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调机器人数量、目标与大招之间的配合。",
+      "checks": [
+        "目标附近是否已有可参与攻击的机器人？",
+        "对方清理机器人后，原定推进或集火计划是否还成立？"
+      ],
+      "counterexample": "脱离机器人与兵线条件时，不能套用完整爆发的判断。",
+      "drill": "暂停在释放大招前，圈出可参与攻击的机器人及敌方清理手段。"
+    },
+    {
+      "id": "hero-109",
+      "title": "妲己：二技能交给进攻，还是留给自保",
+      "heroIds": [
+        109
+      ],
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-109",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调控制配合爆发，同时需要防范突进。",
+      "checks": [
+        "关键突进者已露头吗，二技能是否需要保留？",
+        "控制目标后能完成跟进，还是会暴露自己？"
+      ],
+      "counterexample": "敌方刺客位置未知时，不能默认全部技能打前排是安全的。",
+      "drill": "选一次游走，分别写出主动控人和留控自保的触发条件。"
+    },
+    {
+      "id": "hero-501",
+      "title": "明世隐：连线距离与治疗起手都要算进去",
+      "heroIds": [
+        501
+      ],
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-501",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示围绕链条效果、距离保持及大招释放时机。",
+      "checks": [
+        "当前连线对象和效果是否符合这波的保护或进攻目的？",
+        "队友会不会在大招生效前倒下或脱离连线范围？"
+      ],
+      "counterexample": "不能把开始施法等同于治疗已经到账，也不把连线当作必杀条件。",
+      "drill": "回看一次救人失败，比较开始施法、断链和队友倒下的先后。"
+    },
+    {
+      "id": "hero-106",
+      "title": "小乔：先用控制创造命中，再保持后排距离",
+      "heroIds": [
+        106
+      ],
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-106",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调二技能控制衔接一技能输出，以及团战站位。",
+      "checks": [
+        "二技能命中已确认，还是只凭预判连续交技能？",
+        "输出位置是否处于敌方突进的可见路径上？"
+      ],
+      "counterexample": "命中控制也不意味着可以向前追到失去保护的位置。",
+      "drill": "记录一次二技能命中后的移动方向，比较前追和侧移的风险。"
+    },
+    {
+      "id": "hero-521",
+      "title": "海月：选谁进入幻境，也要看场外四人",
+      "heroIds": [
+        521
+      ],
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-521",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示区分月盘资源与大招目标选择，幻境外的局面仍会变化。",
+      "checks": [
+        "当前月盘资源是否支持进入后的计划？",
+        "带走此人后，场外己方四人是在获利还是失去关键保护？"
+      ],
+      "counterexample": "不能只按自己单挑能否获胜决定目标。",
+      "drill": "在开大前写下场内对局和场外四人各自会面对的威胁。"
+    },
+    {
+      "id": "hero-507",
+      "title": "李信：先确认形态，再选择带线或接团",
+      "heroIds": [
+        507
+      ],
+      "roles": [
+        "对抗路"
+      ],
+      "sourceId": "official-507",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方说明不同形态具有不同技能和作战用途。",
+      "checks": [
+        "当前形态与转化时间是否适合眼前任务？",
+        "是边线牵制还是正面输出，队友能否承受转化期间的空窗？"
+      ],
+      "counterexample": "不能混用不同形态的连招、距离与进场逻辑。",
+      "drill": "对一段转线标注形态变化，检查变化前后任务是否一致。"
+    },
+    {
+      "id": "hero-528",
+      "title": "澜：强化追击取决于标记与冷却",
+      "heroIds": [
+        528
+      ],
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-528",
+      "anchor": "技能正文（与旧提示交叉核对）",
+      "takeaway": "技能正文明确断空的标记上限及追击消耗、冷却变化。",
+      "checks": [
+        "当前实际标记够几次追击，目标仍在范围内吗？",
+        "敌方控制会否打断追击节奏，撤出方向在哪里？"
+      ],
+      "counterexample": "不把旧攻略里的无限二技能当作无条件循环。",
+      "drill": "逐次计数一轮追击的标记获得与消耗，找出循环中断原因。"
+    },
+    {
+      "id": "hero-180",
+      "title": "哪吒：支援到场之前，先判断落地局面",
+      "heroIds": [
+        180
+      ],
+      "roles": [
+        "对抗路",
+        "打野"
+      ],
+      "sourceId": "official-180",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示把带线牵制与远距离支援结合起来。",
+      "checks": [
+        "落点处队友能接应，还是自己将先落入多人包围？",
+        "放弃当前边线支援的收益和损失分别是什么？"
+      ],
+      "counterexample": "能飞到目标不等于应该独自飞入未知区域。",
+      "drill": "从起飞到落地连续检查一次队友位置变化，记录中途局面改变。"
+    },
+    {
+      "id": "hero-125",
+      "title": "元歌：傀儡推进时，别丢失本体位置",
+      "heroIds": [
+        125
+      ],
+      "roles": [
+        "对抗路"
+      ],
+      "sourceId": "official-125",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方说明傀儡操作需要同时注意本体安全及收回时机。",
+      "checks": [
+        "本体是否暴露在敌方可见突进路径上？",
+        "傀儡继续前压后，收回或切换是否还能保证安全？"
+      ],
+      "counterexample": "傀儡打到目标并不抵消本体被抓的风险。",
+      "drill": "在一次傀儡进攻中同时标记本体和傀儡位置，找到回收窗口。"
+    },
+    {
+      "id": "hero-505",
+      "title": "瑶：主动离身之前，先找落地处",
+      "heroIds": [
+        505
+      ],
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-505",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示区分被动状态、附身保护和主动离身的时机。",
+      "checks": [
+        "当前被动是否可用，附身护盾还能支撑多久？",
+        "主动离身的落点是否有掩护，能否再接近队友？"
+      ],
+      "counterexample": "不能把主动离身与护盾被打破后的状态当作同一种循环。",
+      "drill": "对照一次主动下身与一次被打落，记录落点和后续保护空窗。"
+    },
+    {
+      "id": "hero-142",
+      "title": "安琪拉：确认控制后，再决定是否持续引导",
+      "heroIds": [
+        142
+      ],
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-142",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调二技能命中衔接大招，以及必要时取消引导。",
+      "checks": [
+        "二技能是否命中，射线角度能否覆盖目标移动路线？",
+        "继续引导是否会让自己暴露于侧面突进？"
+      ],
+      "counterexample": "大招开出后不必为了打满而忽略更紧迫的撤退。",
+      "drill": "在大招开始和中段各暂停，写下继续或取消的理由。"
+    },
+    {
+      "id": "hero-518",
+      "title": "马超：枪的位置和减速威胁决定进退",
+      "heroIds": [
+        518
+      ],
+      "roles": [
+        "对抗路",
+        "打野"
+      ],
+      "sourceId": "official-518",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示围绕冷晖枪回收、突进路径与移速限制。",
+      "checks": [
+        "下一支枪在哪里，回收路线是否穿过敌方控制区？",
+        "已知减速会不会破坏计划中的接近或撤离？"
+      ],
+      "counterexample": "不能只看枪还在，就认定每次都能顺利戳到并回来。",
+      "drill": "画出一次拾枪路线，比较绕行与直线穿过控制区的代价。"
+    },
+    {
+      "id": "hero-199",
+      "title": "公孙离：记住伞的位置，再决定回去还是前进",
+      "heroIds": [
+        199
+      ],
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-199",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调纸伞落点与位移返回时机。",
+      "checks": [
+        "纸伞当前在哪，返回点是否已被敌人覆盖？",
+        "眼前位置和下一次落点，哪一个更有队友保护？"
+      ],
+      "counterexample": "有返回技能不等于返回点一定安全。",
+      "drill": "对一次换位保留前后画面，检查伞点从安全变危险的时刻。"
+    },
+    {
+      "id": "hero-176",
+      "title": "杨玉环：外圈控制与回复窗口要分开安排",
+      "heroIds": [
+        176
+      ],
+      "roles": [
+        "中路",
+        "游走",
+        "打野"
+      ],
+      "sourceId": "official-176",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调外圈控制范围与大招的保护、回复用途。",
+      "checks": [
+        "目标会进入控制外圈，还是正在贴近内侧？",
+        "大招用于自己脱险还是覆盖关键队友，时机是否赶得上？"
+      ],
+      "counterexample": "不能只为追求控制命中而离开队伍保护范围。",
+      "drill": "标出一次控制外圈和队友站位，比较进攻与救援两个选择。"
+    },
+    {
+      "id": "hero-312",
+      "title": "沈梦溪：远程消耗先看弹药，探草只认正向信息",
+      "heroIds": [
+        312
+      ],
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-312",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示包括炸弹资源、投掷位置和二技能的方向调整。",
+      "checks": [
+        "当前弹药与站位是否允许持续消耗？",
+        "探测命中提供了什么可见信息，是否误把没有反馈当作无人？"
+      ],
+      "counterexample": "没看见敌人不证明草丛安全；不能为了探测直接走入未知区域。",
+      "drill": "复看一次探草，把确实获得的信息与仍然未知的位置分栏记录。"
+    },
+    {
+      "id": "hero-537",
+      "title": "司空震：能量、护盾与强化普攻各看各的",
+      "heroIds": [
+        537
+      ],
+      "roles": [
+        "对抗路",
+        "打野"
+      ],
+      "sourceId": "official-537",
+      "anchor": "技能正文（与旧提示交叉核对）",
+      "takeaway": "技能正文区分六点能量后的额外施法、一技能护盾与强化普攻回复。",
+      "checks": [
+        "能量是否足够产生下一次技能机会？",
+        "护盾和回复分别来自哪次技能或普攻，是否已消耗？"
+      ],
+      "counterexample": "不能把旧版强化普攻给护盾的说法直接套用。",
+      "drill": "逐帧记录一次交战中的能量变化、护盾出现和强化普攻。"
+    },
+    {
+      "id": "hero-132",
+      "title": "马可波罗：层数与敌方控制，决定大招能否进场",
+      "heroIds": [
+        132
+      ],
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-132",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调被动叠加与大招进场时机。",
+      "checks": [
+        "目标当前叠加状态是否清楚，还是只凭血量判断？",
+        "敌方可见控制已交掉吗，位移是否需要保留撤退？"
+      ],
+      "counterexample": "大招能碰到多人不等于不会立刻被打断。",
+      "drill": "比较一次成功与一次被打断的大招，列出进场前已知控制。"
+    },
+    {
+      "id": "hero-549",
+      "title": "心魔六耳：分清蓄势冲刺与不可选中阶段",
+      "heroIds": [
+        549
+      ],
+      "roles": [
+        "打野",
+        "对抗路"
+      ],
+      "sourceId": "official-549",
+      "anchor": "技能正文（与旧提示交叉核对）",
+      "takeaway": "技能正文把可被打断的冲刺蓄势和后续不可选中攻击阶段区分开。",
+      "checks": [
+        "现在处在哪个阶段，敌方控制是否能覆盖蓄势？",
+        "后续落点与队友距离能否支持继续输出？"
+      ],
+      "counterexample": "不能把整个大招过程都解释为无敌或不可选中。",
+      "drill": "慢放一次大招，标出阶段切换和受到控制的实际时刻。"
+    },
+    {
+      "id": "hero-503",
+      "title": "狂铁：把能量留给这波真正需要的强化技能",
+      "heroIds": [
+        503
+      ],
+      "roles": [
+        "对抗路"
+      ],
+      "sourceId": "official-503",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示围绕能量管理、强化效果和借助单位回复。",
+      "checks": [
+        "当前能量足够强化哪一项，最需要回复、控制还是护盾？",
+        "附近单位与敌方限制回复手段是否影响换血计划？"
+      ],
+      "counterexample": "不能把理想回复量当成在任何集火下都能实现。",
+      "drill": "回看一轮换血，比较把能量用在不同技能上的时机。"
+    },
+    {
+      "id": "hero-563",
+      "title": "海诺：标记、位移落点与回溯位置一起看",
+      "heroIds": [
+        563
+      ],
+      "roles": [
+        "中路",
+        "对抗路"
+      ],
+      "sourceId": "official-563",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方说明标记影响攻击，二技能落点附近目标影响形态，大招与回溯位置有关。",
+      "checks": [
+        "标记目标的排列能否支持预期攻击？",
+        "二技能落点与大招返回点是否落在安全区域？"
+      ],
+      "counterexample": "不能只看能回溯，就忽略回溯点已被敌人占据。",
+      "drill": "在一次回溯前标出返回点，比较起手和返回时的敌方位置。"
+    },
+    {
+      "id": "hero-140",
+      "title": "关羽：冲锋方向应服务队友的输出",
+      "heroIds": [
+        140
+      ],
+      "roles": [
+        "对抗路"
+      ],
+      "sourceId": "official-140",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调保持冲锋状态、解控时机和推人方向。",
+      "checks": [
+        "冲锋是否被减速打断，解控手段是否仍可用？",
+        "推走目标后，队友更容易输出还是失去攻击距离？"
+      ],
+      "counterexample": "把目标推离队友范围，不因命中多人就一定有收益。",
+      "drill": "对一次推人画出推前推后位置，核对己方输出距离。"
+    },
+    {
+      "id": "hero-108",
+      "title": "墨子：远程控制与贴身大招，是两种风险",
+      "heroIds": [
+        108
+      ],
+      "roles": [
+        "中路",
+        "游走"
+      ],
+      "sourceId": "official-108",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示区分远程消耗控制与大招持续控制时的站位要求。",
+      "checks": [
+        "这波更需要远程限制，还是保护身边被切的队友？",
+        "开大位置会不会被敌方可见控制打断？"
+      ],
+      "counterexample": "不能认为进人群开大就必然完成控制链。",
+      "drill": "在开大前列出可见打断手段，再比较远程控制的替代位置。"
+    },
+    {
+      "id": "hero-510",
+      "title": "孙策：开船要同时规划碰撞点和下船后动作",
+      "heroIds": [
+        510
+      ],
+      "roles": [
+        "对抗路",
+        "打野"
+      ],
+      "sourceId": "official-510",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调船的碰撞路径、团战衔接与二技能穿插普攻。",
+      "checks": [
+        "行船路线有哪些墙体和目标，会在哪里结束？",
+        "下船后队友能接应吗，技能间是否留有普攻机会？"
+      ],
+      "counterexample": "只计算撞到人而不看下船位置，容易变成独自进场。",
+      "drill": "从开船画面画出预期终点，与实际碰撞和下船位置对照。"
+    },
+    {
+      "id": "hero-139",
+      "title": "老夫子：被动与减伤窗口，要在接触前准备",
+      "heroIds": [
+        139
+      ],
+      "roles": [
+        "对抗路"
+      ],
+      "sourceId": "official-139",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示涉及被动积累、二技能承伤和大招限制目标。",
+      "checks": [
+        "进场前被动积累到什么状态，减伤能否覆盖主要伤害？",
+        "捆住目标后队友能否利用限制时间？"
+      ],
+      "counterexample": "限制到前排不一定比保留技能牵制后排更有价值。",
+      "drill": "回看一次单挑，标出减伤开启与敌方主要伤害到达时间。"
+    },
+    {
+      "id": "hero-172",
+      "title": "蚩奼：先确认战意强化，再选择穿墙或追击",
+      "heroIds": [
+        172
+      ],
+      "roles": [
+        "对抗路",
+        "打野"
+      ],
+      "sourceId": "official-172",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方技能提示区分强化状态下一技能地形位移与二技能追击用途。",
+      "checks": [
+        "战意和强化状态能否从画面确认？",
+        "强化一技能的墙体路线，或强化二技能目标条件是否成立？"
+      ],
+      "counterexample": "未进入强化状态时，不按强化技能的距离与效果制定计划。",
+      "drill": "各截取一次强化前后画面，写下实际多出的可用选择。"
+    },
+    {
+      "id": "hero-187",
+      "title": "东皇太一：压制目标之前，核对血量与集火方向",
+      "heroIds": [
+        187
+      ],
+      "roles": [
+        "游走",
+        "对抗路"
+      ],
+      "sourceId": "official-187",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示涉及黑暗能量体回复与压制期间的伤害传递。",
+      "checks": [
+        "自己当前血量与能量体状态是否支持贴近？",
+        "压制后双方谁会被集火，队友能否安全完成输出？"
+      ],
+      "counterexample": "不能只看压住了关键目标，而忽略自己先倒下的条件。",
+      "drill": "在一次压制前暂停，标出双方可见伤害来源与血量。"
+    },
+    {
+      "id": "hero-114",
+      "title": "刘禅：控制链用于开团，还是留给保护",
+      "heroIds": [
+        114
+      ],
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-114",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示围绕连续控制和推进时的技能安排。",
+      "checks": [
+        "当前更需要先手抓人还是阻止敌人接近后排？",
+        "推进时兵线、队友位置与敌方支援是否支持继续压塔？"
+      ],
+      "counterexample": "能干扰防御塔不代表可以脱离兵线与队友一直推进。",
+      "drill": "比较一次开团和一次保护，把控制技能交出的顺序列出来。"
+    },
+    {
+      "id": "hero-110",
+      "title": "嬴政：输出角度比追着目标直走更重要",
+      "heroIds": [
+        110
+      ],
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-110",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调远距离输出与大招方向调整。",
+      "checks": [
+        "当前射线角度能持续覆盖目标路线吗？",
+        "侧面是否有可见突进威胁，站位能否得到保护？"
+      ],
+      "counterexample": "不能为了持续命中而走到敌方刺客容易接近的位置。",
+      "drill": "在大招前标出两处输出点，比较命中角度与撤退距离。"
+    },
+    {
+      "id": "hero-509",
+      "title": "盾山：正面防守时，也要留意侧面缺口",
+      "heroIds": [
+        509
+      ],
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-509",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调防御方向和绕后威胁；盾山难以同时照顾多面火力。",
+      "checks": [
+        "最需要防守的火力来自哪一侧？",
+        "敌人绕后或位移越过防线后，队友是否还有保护？"
+      ],
+      "counterexample": "正面挡住火力不代表全队都已安全。",
+      "drill": "复看一次正面架盾，逐个标出敌方可见侧翼和己方后排位置。"
+    },
+    {
+      "id": "hero-111",
+      "title": "孙尚香：翻滚用于输出之前，先找刺客",
+      "heroIds": [
+        111
+      ],
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-111",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方使用建议强调位移时机，面对突进时需要保留拉开距离的手段。",
+      "checks": [
+        "敌方关键突进者在哪里，是否已经交出接近技能？",
+        "翻滚后的落点有掩护吗，是否失去下一次自保机会？"
+      ],
+      "counterexample": "不能因为强化攻击可用就一律向前翻滚。",
+      "drill": "各选一次前滚与侧滚，比较落点到敌方突进路径的距离。"
+    },
+    {
+      "id": "hero-508",
+      "title": "伽罗：射程优势需要安全站位来兑现",
+      "heroIds": [
+        508
+      ],
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-508",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示围绕长弓射程、资源消耗与保护距离。",
+      "checks": [
+        "开启长弓后的资源是否支持这波持续输出？",
+        "最近可安全攻击的目标是谁，撤退路径是否畅通？"
+      ],
+      "counterexample": "不能为了攻击后排而走过己方前排的保护线。",
+      "drill": "暂停在一次追击前，标出保持射程输出和前压追击的差别。"
+    },
+    {
+      "id": "hero-545",
+      "title": "莱西奥：腾空不等于不会被控制",
+      "heroIds": [
+        545
+      ],
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-545",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示涉及滞空输出与残血目标的追击时机。",
+      "checks": [
+        "敌方哪些已知控制能影响当前输出位置？",
+        "追击残血后能否落回安全位置，队友是否跟得上？"
+      ],
+      "counterexample": "不能把腾空当作无敌，也不能只因有收割机会就深入。",
+      "drill": "比较腾空前后敌方控制与落点，记录输出被迫停止的原因。"
+    },
+    {
+      "id": "hero-197",
+      "title": "弈星：棋阵成形需要时间与边界条件",
+      "heroIds": [
+        197
+      ],
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-197",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调棋子布局、大招范围与生效时机。",
+      "checks": [
+        "棋阵成形前目标能否离开，已有控制能否衔接？",
+        "队友是否能够利用阵内空间继续输出？"
+      ],
+      "counterexample": "把目标画进范围不等于一定限制成功。",
+      "drill": "记录大招开始与成形时的目标位置，找出离开边界的路径。"
+    },
+    {
+      "id": "hero-548",
+      "title": "戈娅：强化射击、退路与大招跟进一起安排",
+      "heroIds": [
+        548
+      ],
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-548",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示围绕强化普攻、二技能拉开以及大招帮助团队。",
+      "checks": [
+        "强化攻击是否已准备好，二技能落点是否安全？",
+        "大招限制目标后队友能接上，还是自己需要先撤？"
+      ],
+      "counterexample": "不能只看减速范围而忽略自身输出位置。",
+      "drill": "回看一次边打边退，标出强化攻击和二技能使用时点。"
+    },
+    {
+      "id": "hero-524",
+      "title": "蒙犽：热度和移动速度都影响持续压制",
+      "heroIds": [
+        524
+      ],
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-524",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调兴奋状态、扫射时的移动限制与大招配合。",
+      "checks": [
+        "当前热度能否维持计划中的输出？",
+        "需要继续扫射，还是取消后恢复移动以避开威胁？"
+      ],
+      "counterexample": "不能为保持火力持续停留在敌方控制覆盖范围内。",
+      "drill": "对一次扫射记录停止输出的时点，比较早停与晚停的撤离空间。"
+    },
+    {
+      "id": "hero-133",
+      "title": "狄仁杰：二技能留给真正需要解除的威胁",
+      "heroIds": [
+        133
+      ],
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-133",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调解控时机与站位，英雄缺少常规位移。",
+      "checks": [
+        "关键控制已落到自己身上，还是可以走位避开？",
+        "交出二技能后，下一次敌方接近靠什么处理？"
+      ],
+      "counterexample": "解掉一次控制不代表可以继续站在所有火力中。",
+      "drill": "回看一次被连续控制，记录二技能交出前后的安全位置。"
+    },
+    {
+      "id": "hero-196",
+      "title": "百里守约：狙击前，先检查视野与共享弹药",
+      "heroIds": [
+        196
+      ],
+      "roles": [
+        "发育路"
+      ],
+      "sourceId": "official-196",
+      "anchor": "技能正文（与旧提示交叉核对）",
+      "takeaway": "技能正文区分视野布置、狙击与逃脱，并描述后两者的弹药关联。",
+      "checks": [
+        "狙击准备期间附近视野是否足够，侧面能否被接近？",
+        "弹药用于射击后，是否还支持计划中的逃脱？"
+      ],
+      "counterexample": "不能照搬旧版普攻不暴击的装备逻辑，也不能只比单发伤害。",
+      "drill": "比较一次狙击前后弹药与退路，记录为狙击放弃的普通输出机会。"
+    },
+    {
+      "id": "hero-525",
+      "title": "鲁班大师：队友拉回与敌方收纳，别混为一个技能",
+      "heroIds": [
+        525
+      ],
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-525",
+      "anchor": "技能正文（与旧提示交叉核对）",
+      "takeaway": "技能正文区分助手驰援、墙体机械飞索与强力收纳。",
+      "checks": [
+        "队友是否实际确认交互，是否能到达安全位置？",
+        "准备使用的是墙体位移还是敌方收纳，相关技能是否可用？"
+      ],
+      "counterexample": "不能把机械飞索按旧版拉敌人大招描述，也不假定队友必点链子。",
+      "drill": "慢放一次救援，记录发出连接、队友确认和最终落点。"
+    },
+    {
+      "id": "hero-189",
+      "title": "鬼谷子：延迟拉回要等队友一起到场",
+      "heroIds": [
+        189
+      ],
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-189",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调接近时机、范围控制与团队伪装配合。",
+      "checks": [
+        "控制生效前目标会不会走出范围？",
+        "队友何时能接近并输出，是否需要放慢进场？"
+      ],
+      "counterexample": "团队伪装不等于无敌，独自拉到人也不保证集火。",
+      "drill": "对一次拉回标出自己与队友的到场时间差。"
+    },
+    {
+      "id": "hero-182",
+      "title": "干将莫邪：交叉点决定命中，自保技能别随意交",
+      "heroIds": [
+        182
+      ],
+      "roles": [
+        "中路"
+      ],
+      "sourceId": "official-182",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调飞剑交汇位置与近身防御。",
+      "checks": [
+        "目标在飞剑交叉点附近，还是仅在视觉中心？",
+        "敌方突进未露头时，近身推开手段是否仍保留？"
+      ],
+      "counterexample": "不能把准星指向目标等同于所有飞剑都会命中。",
+      "drill": "选一次空剑，画出实际交叉点与目标移动路线。"
+    },
+    {
+      "id": "hero-534",
+      "title": "桑启：草丛路线要能接回需要治疗的队友",
+      "heroIds": [
+        534
+      ],
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-534",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示围绕草丛移动、萤火与治疗控制的安排。",
+      "checks": [
+        "可用草丛是否支持来回移动，而不是只支持单程进入？",
+        "积累的萤火与一技能，当前应服务治疗还是控制？"
+      ],
+      "counterexample": "不能只为进草而离开急需回复的队友。",
+      "drill": "画出一次草丛转移路线，标记每个落点与队友的距离。"
+    },
+    {
+      "id": "hero-191",
+      "title": "大乔：传送的价值取决于到达后的安全",
+      "heroIds": [
+        191
+      ],
+      "roles": [
+        "游走",
+        "中路"
+      ],
+      "sourceId": "official-191",
+      "anchor": "技能正文（与旧提示交叉核对）",
+      "takeaway": "技能正文区分宿命之海的回城与返回机制、漩涡之门的召集效果。",
+      "checks": [
+        "回城与返回位置是否可辨认，队友回来后会面对什么？",
+        "召集位置有安全空间，还是敌人已经能包围？"
+      ],
+      "counterexample": "不能沿用旧技能编号或持续沉默的描述，也不把人到齐当作好团。",
+      "drill": "对照传送前与到达后两帧，检查落点及敌方控制覆盖。"
+    },
+    {
+      "id": "hero-577",
+      "title": "少司缘：返回锚点与连线目标决定支援路线",
+      "heroIds": [
+        577
+      ],
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-577",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调一技能返回位置、连线安排与大招覆盖队友。",
+      "checks": [
+        "返回锚点是否仍安全，连线对象是否符合支援目的？",
+        "大招方向能覆盖关键队友，目标标记是否已建立？"
+      ],
+      "counterexample": "不能只追求碰到更多目标而丢失自己的返回路径。",
+      "drill": "在一次连线前标出锚点、队友和大招方向，再核对实际落点。"
+    },
+    {
+      "id": "hero-171",
+      "title": "张飞：怒气决定能否开团，护盾决定如何保护",
+      "heroIds": [
+        171
+      ],
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-171",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调怒气积累、大招方向及二技能保护。",
+      "checks": [
+        "怒气是否足以开大，敌方位移是否已被迫交出？",
+        "二技能应接近开团还是回到被切队友身边？"
+      ],
+      "counterexample": "没有大招条件时，不能按完整开团状态给出冲锋建议。",
+      "drill": "暂停在一波团战前，记录怒气与队友位置，写出进攻和保护两案。"
+    },
+    {
+      "id": "hero-141",
+      "title": "貂蝉：二技能命中与控制空窗决定持续作战",
+      "heroIds": [
+        141
+      ],
+      "roles": [
+        "中路",
+        "对抗路"
+      ],
+      "sourceId": "official-141",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调二技能命中后的冷却收益和进场时机。",
+      "checks": [
+        "二技能是否命中以获得预期循环，落点是否躲开威胁？",
+        "敌方关键控制已确认交出，还是状态未知？"
+      ],
+      "counterexample": "不能用理想技能循环推断每次进场都能持续输出。",
+      "drill": "对一次循环中断逐次记录二技能命中与受控时刻。"
+    },
+    {
+      "id": "hero-184",
+      "title": "蔡文姬：治疗覆盖谁，先看范围与最低血量者",
+      "heroIds": [
+        184
+      ],
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-184",
+      "anchor": "技能正文（与旧提示交叉核对）",
+      "takeaway": "技能正文说明忘忧曲治疗范围内血量最低的友军并提供防御，胡笳乐负责弹射控制。",
+      "checks": [
+        "大招范围内最低血量队友是谁，是当前想保护的人吗？",
+        "弹射控制与走位能否帮助关键队友留在治疗范围？"
+      ],
+      "counterexample": "不使用旧攻略中清空敌方双抗的说法，也不假定所有人获得同等治疗。",
+      "drill": "暂停在大招前，按可见血量找出优先治疗目标并核对后续变化。"
+    },
+    {
+      "id": "hero-168",
+      "title": "牛魔：控制有起手，保护有距离",
+      "heroIds": [
+        168
+      ],
+      "roles": [
+        "游走"
+      ],
+      "sourceId": "official-168",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调技能起手预判与靠近队友提供保护的作用。",
+      "checks": [
+        "控制起手期间目标是否能离开，队友能否接上？",
+        "自己离关键队友是否过远，是否应保留控制反打？"
+      ],
+      "counterexample": "大招范围内出现多人不代表全部都会被控制。",
+      "drill": "对一次空大记录目标移动与起手时间，另选一个保护站位。"
+    },
+    {
+      "id": "hero-144",
+      "title": "程咬金：回复窗口要赶在爆发到来之前",
+      "heroIds": [
+        144
+      ],
+      "roles": [
+        "对抗路"
+      ],
+      "sourceId": "official-144",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示围绕血量控制与大招回复时机，实际承伤仍取决于敌方伤害。",
+      "checks": [
+        "已知爆发能否在回复发挥前击倒自己？",
+        "敌方限制回复手段是否可见，撤退路线是否存在？"
+      ],
+      "counterexample": "不能把低血量收益解释为总要等到极低血量才开大。",
+      "drill": "复看一次极限开大，标出回复开始前已经到来的伤害。"
+    },
+    {
+      "id": "hero-138",
+      "title": "王维：飞行之前，把本体留在有保护的位置",
+      "heroIds": [
+        138
+      ],
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-138",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示明确大招飞行时本体并非无敌，并提及空山与山水技能的配合。",
+      "checks": [
+        "本体位置是否会被可见敌人接近或控制？",
+        "飞行结束后能否回到安全节奏，技能是否需要留作自保？"
+      ],
+      "counterexample": "不能把飞行画面中的安全错当成本体也安全。",
+      "drill": "同时标注飞行路线与本体位置，检查一次本体受击的原因。"
+    },
+    {
+      "id": "hero-194",
+      "title": "苏烈：蓄力与复活都需要队友创造空间",
+      "heroIds": [
+        194
+      ],
+      "roles": [
+        "游走",
+        "对抗路"
+      ],
+      "sourceId": "official-194",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调大招蓄力可能被打断、二技能地形控制及被动时的队友支援。",
+      "checks": [
+        "蓄力期间有哪些已知打断手段，墙体能否帮助控制？",
+        "触发被动后队友能否接近协助，还是已被分割？"
+      ],
+      "counterexample": "不能把有被动当作孤身进场必能生还的保证。",
+      "drill": "对照一次蓄力成功与失败，记录控制来源与队友支援距离。"
+    },
+    {
+      "id": "hero-529",
+      "title": "盘古：缴械对象和释放次序决定保护价值",
+      "heroIds": [
+        529
+      ],
+      "roles": [
+        "打野",
+        "对抗路"
+      ],
+      "sourceId": "official-529",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调缴械对普通攻击的限制与控制衔接。",
+      "checks": [
+        "眼前关键伤害是否依赖普通攻击，缴械能解决哪项威胁？",
+        "控制应连续叠交，还是错开覆盖队友撤离窗口？"
+      ],
+      "counterexample": "不能把缴械当作对所有技能伤害都有效。",
+      "drill": "回看一次保护后排，把缴械期间被阻止的攻击与仍生效的技能分开。"
+    },
+    {
+      "id": "hero-558",
+      "title": "影：探测信息与低血量开大都要留边界",
+      "heroIds": [
+        558
+      ],
+      "roles": [
+        "对抗路",
+        "打野"
+      ],
+      "sourceId": "official-558",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示提及二技能反馈探测与大招的生存运用。",
+      "checks": [
+        "技能反馈实际确认了什么目标，哪些草丛仍未知？",
+        "当前血量与已知爆发是否允许等待，还是需要提前交大？"
+      ],
+      "counterexample": "不把无反馈当作无人，也不把低血量开大当作固定最优时机。",
+      "drill": "挑一次探草或极限开大，记录已知信息和无法确认的风险。"
+    },
+    {
+      "id": "hero-167",
+      "title": "孙悟空：挡技能与跳跃路线，比固定连招更关键",
+      "heroIds": [
+        167
+      ],
+      "roles": [
+        "打野"
+      ],
+      "sourceId": "official-167",
+      "anchor": "官方使用建议、对抗建议、团战与技能提示",
+      "takeaway": "官方提示强调一技能时机、二技能跳跃以及技能衔接强化普攻。",
+      "checks": [
+        "一技能准备挡的威胁是否已出现，还是过早消耗？",
+        "跳跃借助的目标与落点是否支持打完后撤离？"
+      ],
+      "counterexample": "不能认为只要技能接普攻就能越过所有控制。",
+      "drill": "慢放一次突进，标出挡技能时刻、跳跃落点和每次强化普攻。"
+    }
+  ]
+}

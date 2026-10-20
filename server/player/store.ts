@@ -2,6 +2,7 @@ import { DatabaseSync } from 'node:sqlite';
 import { randomUUID, randomBytes, scryptSync, timingSafeEqual, createHash } from 'node:crypto';
 import { emptyDraft } from '../../src/player/model.ts';
 import type { Draft, Pool, MatchInput, Match, SavedPlan } from '../../src/player/model.ts';
+import type { Series } from '../../src/player/pro/seriesBp.ts';
 import { emptyProfile, profileSchema } from '../../src/player/pro/model.ts';
 import { isDeepStrictEqual } from 'node:util';
 import type { PersonalState } from '../../src/player/pro/backup.ts';
@@ -83,10 +84,28 @@ export function createPlayerStore(path: string) {
       snapshots: get('snapshots', []) as StatSnapshot[],
       reviews: get('reviews', []) as Review[],
       runs: get('runs', []) as JungleRun[],
+      bpSeries: (get('bp-series', { series: null }) as { series: Series | null }).series,
     });
     const stateRevision = () =>
       createHash('sha256').update(JSON.stringify(personalState())).digest('hex');
     return {
+      bpSeries: () =>
+        get('bp-series', { revision: 0, series: null }) as {
+          revision: number;
+          series: Series | null;
+        },
+      saveBpSeries: (series: Series, expected: number) =>
+        transaction(() => {
+          const old = get('bp-series', { revision: 0, series: null }) as {
+            revision: number;
+            series: Series | null;
+          };
+          if (old.revision !== expected) return { conflict: true, ...old };
+          if (old.series) set('bp-series-before', old);
+          const next = { revision: old.revision + 1, series };
+          set('bp-series', next);
+          return { conflict: false, ...next };
+        }),
       personalState,
       stateRevision,
       restoreCheckpoint: () => get('restore-checkpoint', null) as PersonalState | null,
@@ -94,6 +113,15 @@ export function createPlayerStore(path: string) {
         transaction(() => {
           if (stateRevision() !== expected) return { conflict: true };
           set('restore-checkpoint', personalState());
+          // Older backups omit this field: preserve the newer series rather than erase it.
+          if (incoming.bpSeries !== undefined) {
+            const current = get('bp-series', { revision: 0, series: null }) as {
+              revision: number;
+              series: Series | null;
+            };
+            if (current.series) set('bp-series-before', current);
+            set('bp-series', { revision: current.revision + 1, series: incoming.bpSeries });
+          }
           writePool(incoming.pool, '恢复完整个人备份');
           const { memberId: _member, ...draft } = incoming.draft;
           set('draft', draft);

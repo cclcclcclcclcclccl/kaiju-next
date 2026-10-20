@@ -88,7 +88,16 @@ test('five-player suggestions cover all roles without repeating people or heroes
     for (const a of p.assignments)
       assert.ok(party.find((m) => m.id === a.memberId)!.pool.some((x) => x.heroId === a.heroId));
   }
-  assert.throws(() => buildSquad(party.slice(0, 4), heroes), /五位/);
+  for (const size of [1, 2, 3, 4]) {
+    const partial = buildSquad(party.slice(0, size), heroes);
+    assert.ok(partial.length > 0);
+    for (const plan of partial) {
+      assert.equal(plan.assignments.length, size);
+      assert.equal(Object.keys(plan.draft.allies).length, size);
+      assert.equal(new Set(plan.assignments.map((a) => a.memberId)).size, size);
+    }
+  }
+  assert.throws(() => buildSquad([party[0], party[0]], heroes), /不同成员/);
   party[4].pool = [];
   assert.deepEqual(buildSquad(party, heroes), []);
 });

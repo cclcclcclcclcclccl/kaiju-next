@@ -1,0 +1,33 @@
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {chromium} from 'playwright';
+const dir='evidence/product-comparison-v022/live';await fs.mkdir(dir,{recursive:true});
+const get=async key=>{const r=await fetch('http://127.0.0.1:4318/api/'+key);assert.equal(r.status,200);return r.json();};
+const baseline=JSON.parse(await fs.readFile('evidence/product-comparison-v022/before.json','utf8'));
+assert.deepEqual({workspace:await get('workspace'),pro:await get('pro')},baseline);
+assert.equal((await get('status')).version,'0.22.0');
+const b=await chromium.launch({channel:'msedge'}),errors=[],sources=[],pending=[];
+try{
+ const p=await b.newPage({viewport:{width:1440,height:1000}});p.setDefaultTimeout(45000);
+ p.on('pageerror',e=>errors.push(e.message));p.on('response',r=>{if(r.url().includes('/api/source-plus?'))pending.push((async()=>{const d=await r.json();sources.push({request:r.url(),status:r.status(),url:d.url,query:d.query,cache:d.cache,fetchedAt:d.fetchedAt,hash:d.rawSha256,error:d.error});})());});
+ await p.goto('http://127.0.0.1:4318/');await p.locator('.quick-grid').getByRole('button',{name:/英雄横向对比/}).waitFor();
+ await p.screenshot({path:dir+'/home.png',animations:'disabled'});
+ await p.locator('.quick-grid').getByRole('button',{name:/英雄横向对比/}).click();
+ await p.getByRole('table',{name:'英雄横向对比表'}).waitFor();
+ const table=await p.getByRole('table',{name:'英雄横向对比表'}).innerText();assert.match(table,/赵怀真/);assert.match(table,/诸葛亮/);
+ await p.locator('.hero-compare').screenshot({path:dir+'/comparison.png',animations:'disabled'});
+ const search=p.getByRole('textbox',{name:'全局搜索英雄或功能'});await p.keyboard.press('Control+k');await search.fill('皮肤');await search.press('Enter');
+ await p.getByLabel('搜索皮肤库',{exact:true}).waitFor();
+ await p.setViewportSize({width:390,height:844});await search.fill('BP');await p.locator('.sidebar[inert]').waitFor({state:'attached'});
+ await p.screenshot({path:dir+'/mobile-search.png',animations:'disabled'});
+ assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+ await search.press('Escape');await p.getByRole('button',{name:'展开导航'}).click();
+ assert.equal(await p.locator('.sidebar').getAttribute('inert'),null);
+ await p.getByRole('navigation',{name:'主导航'}).getByRole('button',{name:'备战首页',exact:true}).click();
+ await p.locator('.sidebar[inert]').waitFor({state:'attached'});
+ const backup=await get('backup');assert.ok(Object.hasOwn(backup.data,'bpSeries'));
+ const after={workspace:await get('workspace'),pro:await get('pro')};assert.deepEqual(after,baseline);assert.deepEqual(errors,[]);await Promise.all(pending);
+ await fs.writeFile(dir+'/verification.json',JSON.stringify({at:new Date().toISOString(),version:'0.22.0',errors,sources,table,personalDataUnchanged:true,pool:after.workspace.pool,hash:createHash('sha256').update(JSON.stringify(after)).digest('hex'),backupHasServerSeries:true},null,2));
+ console.log(JSON.stringify({version:'0.22.0',errors,sourceQueries:sources.length,personalDataUnchanged:true,pool:after.workspace.pool,backupHasServerSeries:true}));
+}finally{await b.close();}

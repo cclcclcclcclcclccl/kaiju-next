@@ -7,6 +7,8 @@ import { noteFor } from '../tactics.ts';
 import type { Trait } from '../tactics.ts';
 import { styleFit } from './playstyle.ts';
 import { SYSTEMS } from './systems.ts';
+import { inferRoles } from './flexRoles.ts';
+import type { RoleLocks } from './flexRoles.ts';
 
 export type Side = 'allies' | 'enemies';
 export type CoachSettings = {
@@ -24,6 +26,9 @@ export type CoachInput = {
   members: Partial<Record<Role, SquadMember>>;
   opponentPool: number[];
   snapshot?: StatSnapshot;
+  sequence?: { team: Side; kind: 'pick' | 'ban' }[];
+  flexibleRoles?: { locks: RoleLocks };
+  unavailableHeroes?: Partial<Record<Side, number[]>>;
 };
 export type CoachMove = { team: Side; kind: 'pick' | 'ban'; heroId: number; role: Role };
 export type CoachCandidate = {
@@ -126,6 +131,7 @@ export function searchCoach(
   if (used.some((id) => id !== undefined && !byId.has(id)))
     throw new Error('阵容包含目录中不存在的英雄');
   const assigned = Object.values(input.members).filter(Boolean);
+  if (input.flexibleRoles && assigned.length) throw Error('自动摇摆推演暂不与固定选手分路约束混用');
   if (new Set(assigned.map((m) => m!.id)).size !== assigned.length)
     throw new Error('一位选手只能承担一个位置');
   const knownOpponents = new Set(input.opponentPool.filter((id) => byId.has(id)));
@@ -221,7 +227,18 @@ export function searchCoach(
       throw new Error(
         `${input.members[role]!.name}在${role}没有可用的已登记英雄。请补充档案、调整选手分工，或取消仅用已登记英雄池。`,
       );
-  const turns = coachTurns(draft, cfg),
+  if (
+    input.sequence &&
+    (!input.sequence.length ||
+      input.sequence.length > 20 ||
+      input.sequence.some(
+        (t) => !['allies', 'enemies'].includes(t.team) || !['pick', 'ban'].includes(t.kind),
+      ) ||
+      input.sequence[0].kind !== cfg.action ||
+      (cfg.nextSide !== 'auto' && input.sequence[0].team !== cfg.nextSide))
+  )
+    throw new Error('回合序列与当前行动不一致');
+  const turns = input.sequence?.map((t) => t.team) ?? coachTurns(draft, cfg),
     rootSide = turns[0];
   const stateKey = (state: Draft) =>
     ROLES.map((r) => state.allies[r] ?? 0).join(',') +
@@ -230,6 +247,21 @@ export function searchCoach(
     '/' +
     [...state.banned].sort((a, b) => a - b).join(',');
   type RankedMove = { move: CoachMove; state: Draft; value: number; prior: number };
+  const flexCache = new Map<string, ReturnType<typeof inferRoles> | null>();
+  const flexAssignment = (ids: number[], locks: RoleLocks) => {
+    const key = [...ids].sort((a, b) => a - b).join(',') + '|' + JSON.stringify(locks);
+    if (flexCache.has(key)) return flexCache.get(key)!;
+    let result: ReturnType<typeof inferRoles> | null = null;
+    try {
+      result = inferRoles(
+        [...ids].sort((a, b) => a - b),
+        heroes,
+        locks,
+      );
+    } catch {}
+    if (flexCache.size < 8000) flexCache.set(key, result);
+    return result;
+  };
   const moves = (state: Draft, side: Side, width = cfg.width): RankedMove[] => {
     const taken = new Set([
       ...Object.values(state.allies),
@@ -237,16 +269,28 @@ export function searchCoach(
       ...state.banned,
     ]);
     const list: RankedMove[] = [];
+    const existing = Object.values(state[side]).filter((id): id is number => id !== undefined);
+    if (existing.length >= 5) return list;
+    const locks = input.flexibleRoles?.locks ?? {};
+    const baseline = input.flexibleRoles
+      ? (flexAssignment(existing, locks)?.unsupported.length ?? 0)
+      : 0;
     for (const role of ROLES) {
-      if (state[side][role]) continue;
+      if (!input.flexibleRoles && state[side][role]) continue;
       const member = side === 'allies' ? input.members[role] : undefined;
       for (const hero of heroes) {
+        if (input.unavailableHeroes?.[side]?.includes(hero.id)) continue;
         if (taken.has(hero.id) || !hero.roles.includes(role)) continue;
         if (member && cfg.respectPools && !memberPools.get(role)!.some((p) => p.heroId === hero.id))
           continue;
         const move: CoachMove = { team: side, kind: 'pick', heroId: hero.id, role };
-        const next = applyCoachMove(state, move),
-          value = evaluate(next);
+        let next: Draft;
+        if (input.flexibleRoles) {
+          const assignment = flexAssignment([...existing, hero.id], { ...locks, [hero.id]: role });
+          if (!assignment || assignment.unsupported.length > baseline) continue;
+          next = { ...state, [side]: assignment.lineup };
+        } else next = applyCoachMove(state, move);
+        const value = evaluate(next);
         list.push({
           move,
           state: next,
@@ -272,16 +316,21 @@ export function searchCoach(
       if (covered.length < width && !covered.includes(candidate)) covered.push(candidate);
     return covered.sort((a, b) => b.prior - a.prior || a.move.heroId - b.move.heroId);
   };
-  const banMoves = (): RankedMove[] => {
-    const targets = moves(draft, opposite(rootSide), Math.min(20, cfg.width * 3));
+  const banMoves = (position: Draft, side: Side): RankedMove[] => {
+    const targets = moves(position, opposite(side), Math.min(20, cfg.width * 3));
     const ids = [...new Set(targets.map((t) => t.move.heroId))];
     return ids.slice(0, cfg.width).map((heroId) => {
-      const move: CoachMove = { team: rootSide, kind: 'ban', heroId, role: draft.role };
-      const state = applyCoachMove(draft, move);
-      return { move, state, value: evaluate(state), prior: 0 };
+      const move: CoachMove = { team: side, kind: 'ban', heroId, role: draft.role };
+      const state = applyCoachMove(position, move);
+      return {
+        move,
+        state,
+        value: evaluate(state),
+        prior: targets.find((t) => t.move.heroId === heroId)?.prior ?? 0,
+      };
     });
   };
-  const roots = cfg.action === 'ban' ? banMoves() : moves(draft, rootSide);
+  const roots = cfg.action === 'ban' ? banMoves(draft, rootSide) : moves(draft, rootSide);
   rootGeneration = false;
   if (!roots.length)
     throw new Error(
@@ -307,7 +356,7 @@ export function searchCoach(
     const initialAlpha = alpha,
       initialBeta = beta;
     const side = turns[index],
-      next = moves(state, side);
+      next = input.sequence?.[index].kind === 'ban' ? banMoves(state, side) : moves(state, side);
     if (!next.length) return { value: evaluate(state) + (side === 'allies' ? -20 : 20), line: [] };
     let best: Evaluation = { value: side === 'allies' ? -Infinity : Infinity, line: [] };
     let weighted = 0,
@@ -371,6 +420,17 @@ export function searchCoach(
           ? '比较禁用后双方剩余选人空间'
           : `填补${root.move.team === 'allies' ? '我方' : '对方'}${root.move.role}，比较后续应对`,
       ];
+      if (input.flexibleRoles && root.move.kind === 'pick') {
+        const changes = ROLES.flatMap((previous) => {
+          const id = draft[root.move.team][previous];
+          if (id === undefined) return [];
+          const next = ROLES.find((r) => root.state[root.move.team][r] === id);
+          return next && next !== previous
+            ? [`${byId.get(id)!.name}由${previous}暂排到${next}`]
+            : [];
+        });
+        if (changes.length) reasons.push(`摇摆调整：${changes.join('；')}；仅手动指定的位置会锁定`);
+      }
       if (member)
         reasons.push(
           `${member.name}的准备度 ${mastery(hero.id, member.pool, member.profile, now).score}；按个人记录与打法计算`,
@@ -401,6 +461,10 @@ export function searchCoach(
     .sort(
       (a, b) =>
         (rootSide === 'allies' ? b.value - a.value : a.value - b.value) ||
+        (roots.find((r) => r.move.heroId === b.move.heroId && r.move.role === b.move.role)?.prior ??
+          0) -
+          (roots.find((r) => r.move.heroId === a.move.heroId && r.move.role === a.move.role)
+            ?.prior ?? 0) ||
         a.move.heroId - b.move.heroId,
     );
   return {
@@ -418,13 +482,20 @@ export function searchCoach(
     assumptions: [
       options.candidatePolicy === 'greedy'
         ? '候选按即时分截断（对照基线）'
-        : '候选优先保留各空缺分路的最佳应对，再补充高分英雄；候选宽度小于空位数时无法覆盖全部分路',
+        : input.flexibleRoles
+          ? '候选优先保留各可行分路的应对（含现有英雄换位后的空间），再补充高分英雄；有限候选宽度可能遗漏方案'
+          : '候选优先保留各空缺分路的最佳应对，再补充高分英雄；候选宽度小于空位数时无法覆盖全部分路',
       `在每步最多 ${cfg.width} 个候选中做${cfg.strategy === 'robust' ? '极大极小对抗搜索' : '对手偏好加权搜索'}，不是遍历全部合法棋树`,
-      `已完成 ${completedDepth} 手推演；${cfg.action === 'ban' ? '本次先比较一手禁用，再模拟选人；不模拟剩余全部禁用轮次' : '每一手是一位英雄，蓝方选人次序为 1–2–2–2–2–1'}`,
+      `已完成 ${completedDepth} 手推演；${input.sequence ? '使用操作台提供的逐手选禁序列，包含后续禁用阶段' : cfg.action === 'ban' ? '本次先比较一手禁用，再模拟选人；不模拟剩余全部禁用轮次' : '每一手是一位英雄，蓝方选人次序为 1–2–2–2–2–1'}`,
       knownOpponents.size
         ? '对手英雄池是用户提供的线索；倾向权重未经真实对局校准'
         : '未提供对手英雄池，预测只参考阵容和公开机制',
       '方案值是我方相对对方的启发式评价，不是胜率；没有证明全局最优',
+      ...(input.flexibleRoles
+        ? [
+            '选人按英雄进行；每个候选重新分配该方未锁定英雄的分路，不受对方上一手分路限制。目录分路不是实战概率，未锁定的归属仍可摇摆。',
+          ]
+        : []),
       cfg.strategy === 'tendency'
         ? '倾向模型的方案值是候选应对的加权均值，展开的线路展示其中最不利的应对'
         : '展开的线路展示有限候选范围内的最强对抗回应',

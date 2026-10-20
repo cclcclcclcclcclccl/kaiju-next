@@ -1,0 +1,16 @@
+**
+!Dockerfile
+!package.json
+!package-lock.json
+!tsconfig.json
+!vite.config.ts
+!index.html
+!src/
+!src/**
+!server/
+!server/**
+!public/
+!public/**
+!scripts/
+!scripts/player/
+!scripts/player/backup-public.mjs

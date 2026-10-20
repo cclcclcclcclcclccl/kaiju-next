@@ -83,7 +83,7 @@ export default function Squad({ pool, onLoad }: { pool: Pool; onLoad: (draft: Dr
       setError(
         result.length
           ? ''
-          : '暂未找到覆盖五个位置的方案。请检查成员的熟练英雄与分路，或允许练习中的英雄参与。',
+          : '暂未找到每位成员各司其职的方案。请检查英雄池是否重叠、分路是否冲突，或允许练习中的英雄参与。',
       );
     } catch (e) {
       setError((e as Error).message);
@@ -202,16 +202,13 @@ export default function Squad({ pool, onLoad }: { pool: Pool; onLoad: (draft: Dr
           ))}
       </div>
       <div className="pro-actions">
-        <button
-          className="btn primary"
-          disabled={members.length !== 5}
-          onClick={() => void solve()}
-        >
-          生成五人起始阵容
+        <button className="btn primary" disabled={!members.length} onClick={() => void solve()}>
+          生成 {members.length || '所选'} 人协作阵容
         </button>
         <span className="muted">已选择 {members.length}/5 位成员</span>
       </div>
       <p className="data-caption">
+        单人准备、双排、三排、四人约练和五人组队均可使用；只分配已选成员，其余位置留给后续队友。四人方案用于约练或自定义，不代表排位支持四排。
         在已登记英雄池中比较分工与阵容配合，给出最多三份起始方案，再带入 BP
         应对敌方。当前结果未使用真实分段胜率，不代表实战胜率或全局最优解。
       </p>
@@ -249,7 +246,7 @@ export default function Squad({ pool, onLoad }: { pool: Pool; onLoad: (draft: Dr
                 className="btn primary"
                 onClick={() => onLoad({ ...p.draft, pool, onlyPool: false, role: '中路' })}
               >
-                带入五人阵容 <ArrowRight size={15} />
+                带入 {p.assignments.length} 人阵容 <ArrowRight size={15} />
               </button>
               <button
                 className="btn secondary"

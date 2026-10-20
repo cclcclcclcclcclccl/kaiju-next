@@ -6,6 +6,7 @@ import { heroById } from '../catalog.ts';
 import { mastery } from './analytics.ts';
 import type { Profile } from './model.ts';
 import type { Pool } from '../model.ts';
+import { usePro } from './context.tsx';
 type User = { id: string; name: string; username: string; code: string };
 export type Friend = {
   id: string;
@@ -18,6 +19,7 @@ export type Friend = {
 };
 export type SocialData = { user: User | null; friends: Friend[] };
 export default function Social() {
+  const { publicSharing } = usePro();
   const [state, setState] = useState<SocialData>({ user: null, friends: [] }),
     [register, setRegister] = useState(true),
     [username, setUsername] = useState(''),
@@ -79,14 +81,18 @@ export default function Social() {
         )}
       </div>
       <div className="pro-notice">
-        这是开局 NEXT
-        的账号体系，与王者账号独立。当前服务只在本机运行；可以在同一服务的不同浏览器登录验证好友流程，跨设备好友需要部署同一实例后使用。
+        这是开局 NEXT 的账号体系，与王者账号独立。
+        {publicSharing
+          ? '同学可通过同一个分享网址注册、登录和添加好友；每个账号独立保存自己的资料。'
+          : '当前为本机服务。对外分享请使用单独生成的公网网址；127.0.0.1 只能在这台电脑上访问。'}
       </div>
       {!state.user ? (
         <section className="surface auth-card">
           <h2>{register ? '创建开局账号' : '登录开局账号'}</h2>
           <p className="muted">
-            每个账号的英雄池、档案和复盘独立保存。原来的本机访客数据仍保留在访客工作台。
+            {publicSharing
+              ? '每个账号的英雄池、档案和复盘独立保存。在其他设备使用同一分享网址登录，即可读取已保存资料。'
+              : '每个账号的英雄池、档案和复盘独立保存。原来的本机访客数据仍保留在访客工作台。'}
           </p>
           <form
             onSubmit={(e) => {

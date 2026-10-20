@@ -3,6 +3,7 @@ import { scopeIssue } from './pro/statistics.ts';
 import { usePro } from './pro/context.tsx';
 import { SEGMENTS } from './pro/model.ts';
 import BpRounds from './pro/BpRounds.tsx';
+import SeriesBp from './pro/SeriesBp.tsx';
 import CoachLab from './pro/CoachLab.tsx';
 import type { SocialData } from './pro/Social.tsx';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -194,6 +195,10 @@ export default function DraftPage({
         </button>
       </div>
       <BpRounds draft={draft} onChange={onChange} />
+      <details className="source-proof">
+        <summary>系列赛全局 BP · BO3 / BO5 / BO7 / BO9</summary>
+        <SeriesBp draft={draft} onChange={onChange} />
+      </details>
       <CoachLab draft={draft} onChange={onChange} onOpen={onOpen} />
       <div className="pro-toolbar">
         <label>

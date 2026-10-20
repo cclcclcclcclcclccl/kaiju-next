@@ -27,8 +27,8 @@ test('local Codex handoff preserves image bytes and binds returned findings to i
       events = [event(10), event(30)];
     const packet = await source.prepare(
       'alice',
-      { title: '文件接口测试', heroId: heroes[0].id, videoName: 'synthetic.mp4', events },
-      heroes[0],
+      { title: '文件接口测试', heroId: 184, videoName: 'synthetic.mp4', events },
+      heroes.find(h => h.id === 184)!,
     );
     assert.equal(packet.frames, 2);
     const timeline = JSON.parse(await readFile(join(packet.directory, 'DECISIONS.json'), 'utf8'));
@@ -40,6 +40,14 @@ test('local Codex handoff preserves image bytes and binds returned findings to i
       [events[0].id],
     );
     assert(!JSON.stringify(firstDecision).includes(events[1].id));
+    const teaching = JSON.parse(await readFile(join(packet.directory, 'TEACHING.json'), 'utf8'));
+    assert.deepEqual(firstDecision.teaching, teaching);
+    assert.equal(teaching.cards.length, 1);
+    assert.match(teaching.cards[0].sourceConflict, /清空敌方双抗/);
+    assert.ok(teaching.cards[0].evidenceExcerpts.length);
+    const input = JSON.parse(await readFile(join(packet.directory, 'input.json'), 'utf8'));
+    assert.deepEqual(input.material.teaching, teaching);
+    assert.ok(teaching.cards.every((c: {source: {url: string}}) => c.source.url.startsWith('https://')));
     assert.match(
       await readFile(join(packet.directory, 'COACHING_PROTOCOL.md'), 'utf8'),
       /观战全图视野不等于选手视野/,

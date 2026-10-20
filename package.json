@@ -1,6 +1,6 @@
 {
   "name": "kaiju-player-companion",
-  "version": "0.17.0",
+  "version": "0.25.1",
   "private": true,
   "type": "module",
   "engines": {
@@ -8,6 +8,8 @@
   },
   "scripts": {
     "open": "node scripts/player/launch.mjs",
+    "share": "node scripts/player/share.mjs",
+    "backup:public": "node scripts/player/backup-public.mjs",
     "dev": "node scripts/dev.mjs",
     "start": "node --env-file-if-exists=.env server/index.ts",
     "build": "tsc --noEmit && vite build",
@@ -21,7 +23,8 @@
     "ranks:refresh": "node scripts/player/refresh-ranks.mjs",
     "tiers:evaluate": "node scripts/player/evaluate-environment.mjs",
     "tianyuan:collect": "node scripts/player/collect-tianyuan.mjs",
-    "strength:evaluate": "node scripts/player/evaluate-strength.mjs"
+    "strength:evaluate": "node scripts/player/evaluate-strength.mjs",
+    "media:refresh": "node scripts/player/refresh-hero-media.mjs && node scripts/player/cache-catalog-media.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",

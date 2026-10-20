@@ -1,6 +1,84 @@
 import { useState } from 'react';
 import type { z } from 'zod';
 import type { tianyuanSkinSchema } from './tianyuan.ts';
+import { heroByName } from '../catalog.ts';
+import { mediaUrl } from '../media.ts';
+import skillMedia from '../data/hero-media.json' with { type: 'json' };
+
+export function NamedIcon({ name, icon }: { name: string; icon?: string }) {
+  return (
+    <span className="source-item-identity">
+      <SourceImage key={icon ?? name} src={icon} name={name} />
+      <span>{name}</span>
+    </span>
+  );
+}
+export function HeroIdentity({ name }: { name: string }) {
+  return <NamedIcon name={name} icon={heroByName(name)?.portrait} />;
+}
+export function SkillIdentity({ heroId, name }: { heroId: number; name: string }) {
+  const media: Record<string, Record<string, string>> = skillMedia;
+  return <NamedIcon name={name} icon={media[heroId]?.[name]} />;
+}
+export function RuneIdentity({ id, name }: { id: number; name: string }) {
+  return (
+    <NamedIcon name={name} icon={`https://game.gtimg.cn/images/yxzj/img201606/mingwen/${id}.png`} />
+  );
+}
+export function RateBar({
+  value,
+  win = false,
+  label = '胜率',
+}: {
+  value?: number | null;
+  win?: boolean;
+  label?: string;
+}) {
+  if (value == null || !Number.isFinite(value)) return <span className="muted">未公布</span>;
+  const tone = !win
+    ? 'neutral'
+    : value < 48
+      ? 'low'
+      : value < 50
+        ? 'below'
+        : value < 52
+          ? 'above'
+          : 'high';
+  const text = win
+    ? (
+        { low: '低于48%', below: '48%–50%', above: '50%–52%', high: '至少52%' } as Record<
+          string,
+          string
+        >
+      )[tone]
+    : label;
+  return (
+    <span className={'rate-display rate-' + tone} title={`${label} ${value.toFixed(2)}% · ${text}`}>
+      <strong>{value.toFixed(2)}%</strong>
+      <span
+        className="rate-track"
+        role="meter"
+        aria-label={label}
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-valuenow={value}
+      >
+        <span style={{ width: Math.min(100, Math.max(0, value)) + '%' }} />
+      </span>
+    </span>
+  );
+}
+export function RateLegend() {
+  return (
+    <p className="data-caption rate-legend">
+      <span className="rate-low">● &lt;48%</span>
+      <span className="rate-below">● 48%–50%</span>
+      <span className="rate-above">● 50%–52%</span>
+      <span className="rate-high">● ≥52%</span>
+      颜色仅辅助阅读胜率，不代表梯度或因果强度；横条统一使用 0–100% 刻度。
+    </p>
+  );
+}
 
 export function SourceImage({
   src,
@@ -12,7 +90,12 @@ export function SourceImage({
   fallback?: string;
 }) {
   const [failed, setFailed] = useState<string[]>([]);
-  const current = [src, fallback].find((url) => url && !failed.includes(url));
+  const current = [
+    src ? mediaUrl(src) : undefined,
+    src,
+    fallback ? mediaUrl(fallback) : undefined,
+    fallback,
+  ].find((url) => url && !failed.includes(url));
   return current ? (
     <img
       className="source-item-image"

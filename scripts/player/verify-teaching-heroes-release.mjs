@@ -1,0 +1,36 @@
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {chromium} from 'playwright';
+const dir='evidence/teaching-v024/live';
+await fs.mkdir(dir,{recursive:true});
+const get=async p=>{const r=await fetch('http://127.0.0.1:4318/api/'+p);assert.equal(r.status,200);return r.json();};
+const before=JSON.parse(await fs.readFile('evidence/teaching-v024/before.json','utf8'));
+assert.equal((await get('status')).version,'0.24.0');
+assert.deepEqual({workspace:await get('workspace'),pro:await get('pro')},before);
+const browser=await chromium.launch({channel:'msedge'});
+const errors=[];
+try {
+ const page=await browser.newPage({viewport:{width:1440,height:1000}});
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('http://127.0.0.1:4318/');
+ const search=page.getByRole('textbox',{name:'全局搜索英雄或功能'});
+ await search.fill('教学');await search.press('Enter');
+ const panel=page.getByRole('region',{name:'教学资料与决策练习'});
+ await panel.locator('.teaching-coverage > summary').click();
+ assert.equal(await panel.locator('.teaching-hero-grid button').count(),74);
+ await panel.screenshot({path:dir+'/all-heroes.png',animations:'disabled'});
+ await panel.getByLabel('学习英雄',{exact:true}).selectOption('184');
+ await panel.locator('.teaching-coverage > summary').click();
+ await panel.locator('.teaching-lessons > details > summary').first().click();
+ assert.match(await panel.innerText(),/不采纳旧说法/);
+ await panel.screenshot({path:dir+'/hero-conflict.png',animations:'disabled'});
+ await page.setViewportSize({width:390,height:844});
+ await page.locator('.sidebar[inert]').waitFor({state:'attached'});
+ assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+ await page.screenshot({path:dir+'/mobile.png',animations:'disabled'});
+ const after={workspace:await get('workspace'),pro:await get('pro')};
+ assert.deepEqual(after,before);assert.deepEqual(errors,[]);
+ const result={at:new Date().toISOString(),version:'0.24.0',coveredHeroes:74,personalDataUnchanged:true,pool:after.workspace.pool,hash:createHash('sha256').update(JSON.stringify(after)).digest('hex'),errors};
+ await fs.writeFile(dir+'/verification.json',JSON.stringify(result,null,2));console.log(result);
+}finally {await browser.close();}

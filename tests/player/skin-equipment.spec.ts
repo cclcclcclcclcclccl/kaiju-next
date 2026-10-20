@@ -93,9 +93,9 @@ test('hero skin section shows source distribution and keeps top-level rates whil
   await expect(detail.locator('.skin-usage-card')).toHaveCount(7);
   await expect(page.getByLabel('英雄分段三率')).toHaveText(rates);
   await detail.getByRole('button', { name: '实际出装统计', exact: true }).click();
-  await expect(detail.getByRole('img', { name: '日暮之流图标' })).toHaveAttribute(
+  await expect(detail.getByRole('img', { name: '日暮之流图标' }).first()).toHaveAttribute(
     'src',
-    'https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png',
+    /\/media\/catalog\/[a-f0-9]+\.png$/,
   );
   await expect(page.getByLabel('英雄分段三率')).toHaveText(rates);
   await page.getByRole('dialog').getByRole('button', { name: '皮肤', exact: true }).click();
@@ -108,6 +108,7 @@ test('equipment statistics show source icons, retain rates when images fail and 
 }) => {
   await page.route('https://img.pvp.mcxssg.net/**', (route) => route.abort());
   await page.route('https://game.gtimg.cn/**', (route) => route.abort());
+  await page.route('**/media/catalog/**', (route) => route.abort());
   await page.goto('/');
   await page.locator('nav').getByRole('button', { name: '装备与版本', exact: true }).click();
   await page.getByRole('button', { name: '装备出场率 / 胜率', exact: true }).click();

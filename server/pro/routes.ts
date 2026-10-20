@@ -1,4 +1,6 @@
 import { REVIEW_PROTOCOL } from '../../src/player/pro/reviewProtocol.ts';
+import { lessonPacket } from '../../src/player/pro/teaching.ts';
+import { parseSeries } from '../../src/player/pro/seriesBp.ts';
 import { z } from 'zod';
 import type { IncomingMessage, ServerResponse } from 'node:http';
 import {
@@ -26,7 +28,6 @@ const credentials = z
     name: z.string().trim().min(1).max(24).optional(),
   })
   .strict();
-const authAttempts = new Map<string, { count: number; until: number }>();
 let modelBusy = false;
 type Store = ReturnType<PlayerStore['forUser']>;
 export async function proRoutes(ctx: {
@@ -41,9 +42,42 @@ export async function proRoutes(ctx: {
   heroes: Hero[];
   body: (req: IncomingMessage, limit?: number) => Promise<any>;
   send: (status: number, value: unknown) => void;
+  authLimiter: (address: string, username: string) => number;
+  clientAddress: string;
 }) {
   const { path, method, req, root, store, user, token, heroes, body, send } = ctx;
   const known = new Set(heroes.map((h) => h.id));
+  if (path === '/api/pro/bp-series' && method === 'GET') {
+    send(200, { ...store.bpSeries(), owner: user?.id ?? 'local', name: user?.name ?? '本机访客' });
+    return true;
+  }
+  if (path === '/api/pro/bp-series' && method === 'POST') {
+    const input = z
+      .object({ owner: z.string(), expected: z.number().int().nonnegative(), series: z.unknown() })
+      .strict()
+      .parse(await body(req, 1024 * 1024));
+    if (input.owner !== (user?.id ?? 'local')) {
+      send(409, { error: '账号空间已变化，请重新读取服务器记录。' });
+      return true;
+    }
+    let series;
+    try {
+      series = parseSeries(input.series);
+    } catch (e) {
+      send(400, { error: '系列赛校验失败：' + (e as Error).message });
+      return true;
+    }
+    const saved = store.saveBpSeries(series, input.expected);
+    if (saved.conflict) {
+      send(409, {
+        error:
+          '服务器记录已被另一窗口更新。请先导出本机系列赛，再重新读取服务器记录，不会覆盖新版本。',
+      });
+      return true;
+    }
+    send(200, { ...saved, owner: user?.id ?? 'local', name: user?.name ?? '本机访客' });
+    return true;
+  }
   const check = (ids: number[]) => {
     if (ids.some((id) => !known.has(id)))
       throw new z.ZodError([
@@ -154,18 +188,13 @@ export async function proRoutes(ctx: {
     return true;
   }
   if (path === '/api/auth/register' || path === '/api/auth/login') {
-    const data = credentials.parse(await body(req)),
-      key = req.socket.remoteAddress ?? 'local',
-      now = Date.now();
-    const attempt = authAttempts.get(key);
-    if (attempt && attempt.until > now && attempt.count >= 20) {
-      send(429, { error: '登录尝试过于频繁，请一分钟后重试' });
+    const data = credentials.parse(await body(req));
+    const retryAfter = ctx.authLimiter(ctx.clientAddress, data.username);
+    if (retryAfter) {
+      ctx.res.setHeader('Retry-After', String(retryAfter));
+      send(429, { error: `登录尝试过于频繁，请 ${retryAfter} 秒后重试`, retryAfter });
       return true;
     }
-    authAttempts.set(key, {
-      count: attempt && attempt.until > now ? attempt.count + 1 : 1,
-      until: attempt && attempt.until > now ? attempt.until : now + 60000,
-    });
     try {
       send(
         200,
@@ -391,6 +420,7 @@ export async function proRoutes(ctx: {
           type: 'text',
           text: JSON.stringify({
             hero: heroes.find((h) => h.id === d.heroId),
+            teaching: lessonPacket(heroes.find((h) => h.id === d.heroId)!),
             events: events.map(({ frame, ...e }) => e),
           }),
         },

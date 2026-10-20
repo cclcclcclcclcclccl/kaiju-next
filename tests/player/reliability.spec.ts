@@ -85,7 +85,7 @@ test('two browser pages preserve independent hero additions and reject stale sam
   await page.getByLabel('赵怀真熟练度').selectOption('comfortable');
   await expect(page.getByRole('status')).toContainText('英雄池已写入本机数据库');
   await other.getByLabel('赵怀真熟练度').selectOption('learning');
-  await expect(other.getByRole('alert')).toContainText('另一个页面修改');
+  await expect(other.locator('.toast[role=alert]')).toContainText('另一个页面修改');
   await expect(other.getByLabel('赵怀真熟练度')).toHaveValue('comfortable');
   await other.reload();
   await openPool(other);
@@ -128,21 +128,21 @@ test('equipment rates have a direct entry, real fixture values, sorting and no s
   await page.getByRole('button', { name: '查看装备出场率与胜率 →', exact: true }).click();
   await page.getByLabel('装备统计查询日').fill('2026-10-13');
   await page.getByLabel('统计英雄', { exact: true }).selectOption('521');
-  await expect(page.locator('.equipment-statistics tbody tr')).toHaveCount(10);
+  await expect(page.locator('.equipment-statistics .roster-table tbody tr')).toHaveCount(10);
   const actual = equipment.equipmentWinRates.find(
     (r: { equipmentName: string }) => r.equipmentName === '日暮之流',
   );
   await expect(
-    page.locator('.equipment-statistics tr').filter({ hasText: '日暮之流' }),
+    page.locator('.equipment-statistics .roster-table tr').filter({ hasText: '日暮之流' }),
   ).toContainText(actual.pickRate.toFixed(2) + '%');
   await expect(
-    page.locator('.equipment-statistics tr').filter({ hasText: '日暮之流' }),
+    page.locator('.equipment-statistics .roster-table tr').filter({ hasText: '日暮之流' }),
   ).toContainText(actual.winRate.toFixed(2) + '%');
   await page.getByLabel('装备统计排序').selectOption('winRate');
   const ordered = [...equipment.equipmentWinRates].sort(
     (a, b) => (b.winRate ?? -1) - (a.winRate ?? -1),
   );
-  await expect(page.locator('.equipment-statistics tbody tr').first()).toContainText(
+  await expect(page.locator('.equipment-statistics .roster-table tbody tr').first()).toContainText(
     ordered[0].equipmentName,
   );
   await page.screenshot({ path: folder + '/equipment-rates-desktop.png', fullPage: true });
@@ -157,5 +157,5 @@ test('equipment rates have a direct entry, real fixture values, sorting and no s
   await expect(page.locator('.equipment-statistics [role=alert]')).toContainText(
     '此英雄来源读取失败',
   );
-  await expect(page.locator('.equipment-statistics tbody tr')).toHaveCount(0);
+  await expect(page.locator('.equipment-statistics .roster-table tbody tr')).toHaveCount(0);
 });

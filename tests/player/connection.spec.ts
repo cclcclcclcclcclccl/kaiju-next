@@ -7,10 +7,11 @@ test('service interruption is explicit and recovery keeps the current page and t
   await page.getByLabel('搜索英雄', { exact: true }).fill('赵怀真');
   await page.route('**/api/status', (route) => route.abort());
   await page.evaluate(() => window.dispatchEvent(new Event('focus')));
-  await expect(page.getByLabel('本地服务连接提示')).toContainText('start-kaiju.cmd');
+  await expect(page.getByLabel('服务连接提示')).toContainText('start-kaiju.cmd');
   await expect(page.getByLabel('搜索英雄', { exact: true })).toHaveValue('赵怀真');
   await page.unroute('**/api/status');
   await page.getByRole('button', { name: '检查服务连接', exact: true }).click();
-  await expect(page.getByLabel('本地服务连接提示')).toHaveCount(0);
+  await expect(page.getByLabel('服务连接提示')).toHaveCount(0);
+  await expect(page.getByLabel('连接恢复提示')).toContainText('未保存的输入仍留在当前页面');
   await expect(page.getByLabel('搜索英雄', { exact: true })).toHaveValue('赵怀真');
 });

@@ -1,0 +1,124 @@
+.teaching-library {
+  margin: 20px 0;
+  min-width: 0;
+}
+.teaching-library h3,
+.teaching-meta,
+.teaching-discovery,
+.teaching-library .text-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.teaching-library .teaching-sources {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 14px 0;
+}
+.teaching-sources article,
+.teaching-lessons details {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  min-width: 0;
+}
+.teaching-library a {
+  color: var(--teal);
+  overflow-wrap: anywhere;
+}
+.teaching-library h4 {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+.teaching-library p {
+  line-height: 1.7;
+}
+.teaching-meta {
+  font-size: 12px;
+}
+.teaching-discovery {
+  padding: 12px 0;
+  gap: 14px;
+}
+.teaching-discovery a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.teaching-lessons {
+  display: grid;
+  gap: 10px;
+  margin: 12px 0 18px;
+}
+.teaching-library summary {
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.teaching-library li {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+.teaching-library.compact {
+  padding: 16px;
+}
+.teaching-coverage,
+.teaching-candidates,
+.teaching-conflict {
+  margin: 14px 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.teaching-conflict {
+  border-left: 3px solid var(--teal);
+}
+.teaching-hero-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+.teaching-hero-grid button {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  text-align: left;
+  padding: 8px;
+  min-width: 0;
+}
+.teaching-hero-grid button[aria-pressed='true'] {
+  border-color: var(--teal);
+}
+.teaching-hero-grid .portrait {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+.teaching-hero-grid small {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+}
+.teaching-coverage input {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+}
+.teaching-excerpts p {
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 680px) {
+  .teaching-library .teaching-sources {
+    grid-template-columns: 1fr;
+  }
+  .teaching-library select {
+    max-width: 100%;
+  }
+  .teaching-library .section-title {
+    flex-wrap: wrap;
+  }
+}

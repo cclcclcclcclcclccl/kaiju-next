@@ -6,6 +6,8 @@ import { Portrait } from '../ui.tsx';
 import { usePro } from './context.tsx';
 import { personalizedHeroes, personalizedGuide } from './personalization.ts';
 import { download } from '../../api.ts';
+import TeachingLibrary from './TeachingLibrary.tsx';
+import { lessonPacket } from './teaching.ts';
 
 export default function PersonalRecommendations({
   pool,
@@ -151,6 +153,16 @@ export function PersonalGuide({
               '技能练习：' + guide.skillTip,
               ...guide.priorities.map((x) => '- ' + x.name + '：' + x.action),
               '官方资料：' + hero.source,
+              ...lessonPacket(hero, role).cards.map((card) =>
+                [
+                  '## 教学检查：' + card.title,
+                  ...card.checks.map((q) => '- ' + q),
+                  '不适用的情况：' + card.counterexample,
+                  '练习：' + card.drill,
+                  '依据：' + card.source.title + ' ' + card.source.url,
+                  '适用范围：' + card.source.versionNote,
+                ].join('\n'),
+              ),
               '分路计划与训练任务由项目依据所填偏好整理；不是官方攻略原文，也不是胜率承诺。',
             ].join('\n\n'),
             'text/markdown',
@@ -159,6 +171,7 @@ export function PersonalGuide({
       >
         导出我的训练卡
       </button>
+      <TeachingLibrary hero={hero} role={role} compact />
     </section>
   );
 }

@@ -4,8 +4,8 @@ import { backupSchema } from './backup.ts';
 import type { PersonalBackup } from './backup.ts';
 type Preview = {
   revision: string;
-  current: Record<string, number>;
-  incoming: Record<string, number>;
+  current: Record<string, number | string>;
+  incoming: Record<string, number | string>;
   scope: string;
 };
 export default function BackupCenter({ onRestored }: { onRestored: () => void }) {
@@ -63,7 +63,7 @@ export default function BackupCenter({ onRestored }: { onRestored: () => void })
   return (
     <section className="backup-center">
       <p>
-        完整备份包含当前空间的英雄池、详细档案、已保存阵容、备战卡、对局手记、统计批次、刷野训练及复盘关键帧。不会包含账号密码、好友关系、原始视频或当前
+        完整备份包含当前空间的英雄池、详细档案、已保存阵容、备战卡、对局手记、统计批次、刷野训练、复盘关键帧和已保存到服务器的系列赛。不会包含账号密码、好友关系、原始视频或当前
         Codex 对话。
       </p>
       <div className="detail-actions">
@@ -75,7 +75,8 @@ export default function BackupCenter({ onRestored }: { onRestored: () => void })
         </button>
       </div>
       <p className="data-caption">
-        只备份已保存内容。未保存的档案草稿可在玩家档案单独导出。文件含个人记录与截图，请保存到自己的设备。
+        只备份服务器已保存内容。浏览器中的 BP
+        演练和未上传系列赛仍需单独导出，档案草稿可在玩家档案导出。旧版备份未含系列赛字段时，恢复会保留服务器现有系列赛。文件含个人记录与截图，请保存到自己的设备。
       </p>
       <label className="field">
         选择完整个人备份

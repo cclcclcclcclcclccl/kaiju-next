@@ -61,7 +61,7 @@ export function createTianyuan(options: {
         p.data = parseTianyuan(p.data, q);
         // Older parsed caches omitted image fields. Recover from the original
         // response with a verified hash, retaining the original dates and provenance.
-        if (['skin', 'equip'].includes(q.kind) && /^[a-f0-9]{64}$/.test(p.rawSha256)) {
+        if (['skin', 'equip', 'combined'].includes(q.kind) && /^[a-f0-9]{64}$/.test(p.rawSha256)) {
           try {
             const raw = await readFile(
               join(options.directory, 'raw', p.rawSha256 + '.json'),

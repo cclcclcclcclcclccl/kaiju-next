@@ -11,6 +11,7 @@ import StatHistory from './StatHistory.tsx';
 import { usePro } from './context.tsx';
 import { OfficialHeroStats } from './OfficialStats.tsx';
 import { withPublicReference } from './publicReferences.ts';
+import { teachingCoverage } from './teaching.ts';
 export default function HeroInsights({
   hero,
   context,
@@ -21,6 +22,7 @@ export default function HeroInsights({
   part?: 'all' | 'stats' | 'details';
 }) {
   const { data } = usePro();
+  const sourceConflict = teachingCoverage.find((h) => h.heroId === hero.id)?.conflict;
   const [segment, setSegment] = useState<string>(context?.segment ?? SEGMENTS[0]);
   const [role, setRole] = useState(context?.role ?? hero.roles[0]);
   const snapshot =
@@ -142,20 +144,31 @@ export default function HeroInsights({
       {part !== 'stats' && hero.guide && (
         <section className="pro-prose" id="hero-guide">
           <h3>英雄攻略 · 官方资料摘录</h3>
-          {[
-            ['使用思路', hero.guide.play],
-            ['团战任务', hero.guide.teamfight],
-            ['应对这个英雄', hero.guide.against],
-            ['技能加点', hero.guide.leveling],
-            ['装备思路', hero.guide.buildNotes.join('\n')],
-          ]
-            .filter(([, v]) => v)
-            .map(([k, v]) => (
-              <div key={k}>
-                <h4>{k}</h4>
-                <p>{v}</p>
-              </div>
-            ))}
+          {sourceConflict && (
+            <p className="practice-tip">
+              <strong>旧稿冲突：</strong>
+              {sourceConflict} 本节仅保留来源摘录，不作为当前操作建议；核对后的练习见“我的打法”。
+            </p>
+          )}
+          <details open={!sourceConflict}>
+            <summary>
+              {sourceConflict ? '查看存在冲突的官方旧稿摘录' : '查看官方使用与对抗建议'}
+            </summary>
+            {[
+              ['使用思路', hero.guide.play],
+              ['团战任务', hero.guide.teamfight],
+              ['应对这个英雄', hero.guide.against],
+              ['技能加点', hero.guide.leveling],
+              ['装备思路', hero.guide.buildNotes.join('\n')],
+            ]
+              .filter(([, v]) => v)
+              .map(([k, v]) => (
+                <div key={k}>
+                  <h4>{k}</h4>
+                  <p>{v}</p>
+                </div>
+              ))}
+          </details>
         </section>
       )}
     </div>

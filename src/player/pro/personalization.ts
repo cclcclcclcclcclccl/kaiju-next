@@ -3,6 +3,7 @@ import type { Profile } from './model.ts';
 import { mastery, effectivePool } from './analytics.ts';
 import { noteFor } from '../tactics.ts';
 import { styleFit } from './playstyle.ts';
+import { lessonsFor } from './teaching.ts';
 
 const lanePlans: Record<Role, string[]> = {
   对抗路: [
@@ -43,10 +44,11 @@ export function personalizedGuide(hero: Hero, profile: Profile, role: Role) {
   const note = noteFor(hero),
     fit = styleFit(hero, note.traits, profile);
   const samples = profile.heroes.find((h) => h.heroId === hero.id);
+  const reviewed = lessonsFor(hero.id, hero.roles, role).find((l) => l.heroIds.includes(hero.id));
   return {
     fit,
     stages: lanePlans[role],
-    skillTip: hero.skills.find((s) => s.tip)?.tip ?? note.drill,
+    skillTip: reviewed?.drill ?? hero.skills.find((s) => s.tip)?.tip ?? note.drill,
     priorities: (profile.habits?.focus.length ? profile.habits.focus : ['地图意识', '站位生存'])
       .slice(0, 3)
       .map((f) => ({ name: f, action: focusDrills[f] })),
@@ -54,7 +56,7 @@ export function personalizedGuide(hero: Hero, profile: Profile, role: Role) {
       profile.habits?.weeklyGames === 0
         ? 0
         : Math.min(5, Math.max(1, Math.floor((profile.habits?.weeklyGames ?? 10) / 3))),
-    roleTask: hero.guide?.teamfight || note.tip,
+    roleTask: reviewed?.takeaway ?? (hero.guide?.teamfight || note.tip),
     opening: note.tip,
     nextGoal:
       samples?.recentRating !== undefined && samples.recentRating < 7

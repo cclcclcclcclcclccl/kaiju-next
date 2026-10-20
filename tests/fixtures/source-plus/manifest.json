@@ -1,0 +1,214 @@
+{
+  "topban": {
+    "url": "https://tianyuanzhiyi.com/api/global/topban?date=2026-10-18&camp=blue&metric=ban",
+    "observedAt": "2026-10-19T15:30:10.763Z",
+    "query": {
+      "date": "2026-10-18",
+      "camp": "blue",
+      "metric": "ban"
+    }
+  },
+  "peaks": {
+    "url": "https://tianyuanzhiyi.com/api/global/masterscore?date=2026-10-18&areaType=1",
+    "observedAt": "2026-10-19T15:30:10.763Z",
+    "query": {
+      "date": "2026-10-18",
+      "areaType": "1"
+    }
+  },
+  "overview": {
+    "url": "https://tianyuanzhiyi.com/api/global/winrate?date=2026-10-18",
+    "observedAt": "2026-10-19T15:30:10.763Z",
+    "query": {
+      "date": "2026-10-18"
+    }
+  },
+  "power": {
+    "url": "https://tianyuanzhiyi.com/api/global/toppower?date=2026-10-18&areaId=7&rankNo=10&showAll=true",
+    "observedAt": "2026-10-19T15:30:10.763Z",
+    "query": {
+      "date": "2026-10-18",
+      "areaId": "7",
+      "rankNo": "10",
+      "showAll": "true"
+    }
+  },
+  "players": {
+    "url": "https://tianyuanzhiyi.com/api/global/masterscore/player?date=2026-10-18&areaId=7&rankNo=100",
+    "observedAt": "2026-10-19T15:30:10.830Z",
+    "query": {
+      "date": "2026-10-18",
+      "areaId": "7",
+      "rankNo": "100"
+    }
+  },
+  "skills": {
+    "url": "https://tianyuanzhiyi.com/api/skill/global?date=2026-10-18",
+    "observedAt": "2026-10-19T15:30:10.930Z",
+    "query": {
+      "date": "2026-10-18"
+    }
+  },
+  "skins": {
+    "url": "https://tianyuanzhiyi.com/api/skins",
+    "observedAt": "2026-10-19T15:32:22.031Z",
+    "query": {}
+  },
+  "movements": {
+    "url": "https://tianyuanzhiyi.com/api/equipment/movements?date=2026-10-18",
+    "observedAt": "2026-10-19T15:30:38.488Z",
+    "query": {
+      "date": "2026-10-18"
+    }
+  },
+  "equipment": {
+    "url": "https://tianyuanzhiyi.com/api/equipment/global?date=2026-10-18",
+    "observedAt": "2026-10-19T15:30:38.822Z",
+    "query": {
+      "date": "2026-10-18"
+    }
+  },
+  "equipmentTrends": {
+    "url": "https://tianyuanzhiyi.com/api/equipment/list-trends",
+    "observedAt": "2026-10-19T15:30:38.933Z",
+    "query": {}
+  },
+  "adjustments": {
+    "url": "https://tianyuanzhiyi.com/api/hero/adjustments?heroId=190",
+    "observedAt": "2026-10-19T15:30:46.668Z",
+    "query": {
+      "heroId": "190"
+    }
+  },
+  "highlights": {
+    "url": "https://tianyuanzhiyi.com/api/hero/highlights?heroId=190",
+    "observedAt": "2026-10-19T15:30:46.668Z",
+    "query": {
+      "heroId": "190"
+    }
+  },
+  "heroBp": {
+    "url": "https://tianyuanzhiyi.com/api/hero/bp?date=2026-10-18&heroId=190",
+    "observedAt": "2026-10-19T15:30:46.668Z",
+    "query": {
+      "date": "2026-10-18",
+      "heroId": "190"
+    }
+  },
+  "behavior": {
+    "url": "https://tianyuanzhiyi.com/api/hero/behavior?heroId=190",
+    "observedAt": "2026-10-19T15:30:46.668Z",
+    "query": {
+      "heroId": "190"
+    }
+  },
+  "trends": {
+    "url": "https://tianyuanzhiyi.com/api/herostats/trends?heroId=190&gameMode=5&days=30",
+    "observedAt": "2026-10-19T15:30:46.669Z",
+    "query": {
+      "heroId": "190",
+      "gameMode": "5",
+      "days": "30"
+    }
+  },
+  "heroPower": {
+    "url": "https://tianyuanzhiyi.com/api/hero/power?heroId=190&areaId=7",
+    "observedAt": "2026-10-19T15:30:46.668Z",
+    "query": {
+      "heroId": "190",
+      "areaId": "7"
+    }
+  },
+  "jungle": {
+    "url": "https://tianyuanzhiyi.com/api/jungle-route?heroRoutes=1&heroId=190",
+    "observedAt": "2026-10-19T15:30:46.670Z",
+    "query": {
+      "heroRoutes": "1",
+      "heroId": "190"
+    }
+  },
+  "matches": {
+    "url": "https://tianyuanzhiyi.com/api/match/find?camp1Heroes=%7B%221%22%3A190%7D&camp2Heroes=%7B%221%22%3A521%7D",
+    "observedAt": "2026-10-19T15:32:21.440Z",
+    "query": {
+      "camp1Heroes": "{\"1\":190}",
+      "camp2Heroes": "{\"1\":521}"
+    }
+  },
+  "recommend": {
+    "url": "https://tianyuanzhiyi.com/api/hero/analysis/recommend?heroIds=%5B190%2C111%5D",
+    "observedAt": "2026-10-19T15:32:21.781Z",
+    "query": {
+      "heroIds": "[190,111]"
+    }
+  },
+  "votes": {
+    "url": "https://tianyuanzhiyi.com/api/skin-votes/trend?hours=6",
+    "observedAt": "2026-10-19T15:32:22.580Z",
+    "query": {
+      "hours": "6"
+    }
+  },
+  "codes": {
+    "url": "https://tianyuanzhiyi.com/api/xiaomagao/realtime",
+    "observedAt": "2026-10-19T15:32:22.701Z",
+    "query": {}
+  },
+  "skinTrends": {
+    "url": "https://tianyuanzhiyi.com/api/herostats/skin/trends?heroId=190&days=30",
+    "observedAt": "2026-10-19T15:32:22.845Z",
+    "query": {
+      "heroId": "190",
+      "days": "30"
+    }
+  },
+  "match": {
+    "url": "https://tianyuanzhiyi.com/api/match/detail?gameId=cmve3kegk022xo8s6u6mgvdfa",
+    "observedAt": "2026-10-19T15:34:53.091Z",
+    "query": {
+      "gameId": "cmve3kegk022xo8s6u6mgvdfa"
+    }
+  },
+  "equipmentHistory": {
+    "url": "https://tianyuanzhiyi.com/api/equipment/trends?id=1422&days=30",
+    "observedAt": "2026-10-19T15:40:10.450Z",
+    "query": {
+      "id": "1422",
+      "days": "30"
+    }
+  },
+  "equipmentUsage": {
+    "url": "https://tianyuanzhiyi.com/api/equipment/usage?equipmentId=1422&date=2026-10-18&days=5",
+    "observedAt": "2026-10-19T15:40:10.604Z",
+    "query": {
+      "equipmentId": "1422",
+      "date": "2026-10-18",
+      "days": "5"
+    }
+  },
+  "allStats": {
+    "url": "https://tianyuanzhiyi.com/api/herostats?date=2026-10-18&gameMode=5",
+    "query": {
+      "date": "2026-10-18",
+      "gameMode": "5"
+    }
+  },
+  "heroEquip": {
+    "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-18&heroId=190",
+    "observedAt": "2026-10-19T16:00:51.556Z",
+    "query": {
+      "date": "2026-10-18",
+      "heroId": "190"
+    }
+  },
+  "peakTrends": {
+    "url": "https://tianyuanzhiyi.com/api/global/masterscore/trends?days=30&areaType=1&branchType=7&rankNo=1",
+    "observedAt": "2026-10-19T16:11:22.179Z",
+    "query": {
+      "days": "30",
+      "areaType": "1",
+      "branchType": "7",
+      "rankNo": "1"
+    }
+  }
+}

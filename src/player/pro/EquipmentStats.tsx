@@ -4,7 +4,8 @@ import { heroes, heroById } from '../catalog.ts';
 import type { Hero } from '../model.ts';
 import { sourceDate, tianyuanEquipSchema } from './tianyuan.ts';
 import { useSource, Provenance } from './TianyuanLive.tsx';
-import { EquipmentIdentity } from './SourceMedia.tsx';
+import { EquipmentIdentity, RateBar } from './SourceMedia.tsx';
+import EquipmentBreakdown from './EquipmentBreakdown.tsx';
 
 export default function EquipmentStats({ onOpen }: { onOpen: (hero: Hero) => void }) {
   const [heroId, setHeroId] = useState(544);
@@ -134,7 +135,9 @@ export default function EquipmentStats({ onOpen }: { onOpen: (hero: Hero) => voi
                       />
                     </td>
                     <td>{percent(r.pickRate)}</td>
-                    <td>{percent(r.winRate)}</td>
+                    <td>
+                      <RateBar value={r.winRate} win />
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -147,6 +150,7 @@ export default function EquipmentStats({ onOpen }: { onOpen: (hero: Hero) => voi
                 : '来源没有返回这次查询的装备统计，保持空白。'}
             </p>
           )}
+          <EquipmentBreakdown key={heroId + date} data={packet.data} />
           <Provenance packet={packet} />
         </>
       )}

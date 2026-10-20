@@ -28,3 +28,12 @@ artifacts/browser/
 /submission/*.zip
 /submission/*.bundle
 /submission/archive-verification.json
+
+# Downloaded, checksum-verified public tunnel binary and transfer fragments.
+/tools/public-access/*.exe
+/tools/public-access/part-*.bin
+/tools/public-access/part-*.bin.headers
+/submission/release-*/video/*.webm
+/submission/release-*/video/smoke.*
+/submission/release-*/*.zip
+/submission/release-*/*.bundle

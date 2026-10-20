@@ -16,6 +16,7 @@ export type Page =
   | 'home'
   | 'heroes'
   | 'resources'
+  | 'datahub'
   | 'draft'
   | 'journal'
   | 'pool'
@@ -32,6 +33,7 @@ export default function Dashboard({
   onDemo,
   onOpen,
   onLoadPlan,
+  onTool,
 }: {
   pool: Pool;
   matches: Match[];
@@ -40,6 +42,7 @@ export default function Dashboard({
   onDemo: () => void;
   onOpen: (h: Hero) => void;
   onLoadPlan: (p: SavedPlan) => void;
+  onTool: (tool: string) => void;
 }) {
   const focus = matches.find((m) => !m.done);
   const featured = ['李白', '公孙离', '不知火舞', '孙尚香'].map(heroByName).filter(Boolean);
@@ -122,28 +125,50 @@ export default function Dashboard({
       <div className="quick-grid">
         {[
           {
-            icon: BookOpen,
+            icon: Target,
             n: '01',
+            title: '英雄横向对比',
+            desc: '同分段比较，结合自己的英雄池',
+            page: 'datahub' as Page,
+            tool: 'compare',
+          },
+          {
+            icon: Compass,
+            n: '02',
+            title: '查看分段梯度',
+            desc: '先确认日期和分段，再看英雄强度',
+            page: 'tier' as Page,
+          },
+          {
+            icon: Plus,
+            n: '03',
+            title: '完善我的英雄池',
+            desc: '导入截图、记录熟练度和打法',
+            page: 'pool' as Page,
+          },
+          {
+            icon: BookOpen,
+            n: '04',
             title: '英雄图鉴',
             desc: heroes.length + ' 位英雄 · 定位与技能',
             page: 'heroes' as Page,
           },
           {
             icon: Swords,
-            n: '02',
+            n: '05',
             title: '阵容备战',
             desc: '看阵容缺口，也看你的熟练度',
             page: 'draft' as Page,
           },
           {
             icon: Compass,
-            n: '03',
+            n: '06',
             title: '对局手记',
             desc: '把一次复盘，变成下一次进步',
             page: 'journal' as Page,
           },
         ].map((c) => (
-          <button key={c.page} onClick={() => go(c.page)}>
+          <button key={c.title} onClick={() => (c.tool ? onTool(c.tool) : go(c.page))}>
             <span className="quick-icon">
               <c.icon size={23} />
             </span>

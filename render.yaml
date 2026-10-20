@@ -1,0 +1,23 @@
+# Deployment preview only. A persistent disk requires a paid Render service.
+# Review the platform's current price before confirming; no service is purchased by this file.
+services:
+  - type: web
+    name: kaiju-next
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/status
+    disk:
+      name: kaiju-data
+      mountPath: /var/lib/kaiju
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: PLAYER_DATA_DIR
+        value: /var/lib/kaiju
+      - key: KAIJU_TRUSTED_PROXY
+        value: none
+      - key: RANK_AUTO_REFRESH
+        value: '1'

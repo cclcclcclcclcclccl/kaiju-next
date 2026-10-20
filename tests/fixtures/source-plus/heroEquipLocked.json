@@ -1,0 +1,239 @@
+{
+  "heroId": 190,
+  "chainedTopItemsBySlot": [
+    {
+      "slot": 1,
+      "baseWinRate": 51.97,
+      "topItems": [
+        {
+          "equipId": 1240,
+          "equipName": "噬神之书",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png",
+          "pickRate": 79.44,
+          "winRate": 52.83,
+          "deltaWinRate": 0.86
+        },
+        {
+          "equipId": 1531,
+          "equipName": "符文大剑",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1531.png",
+          "pickRate": 14.06,
+          "winRate": 50,
+          "deltaWinRate": -1.97
+        },
+        {
+          "equipId": 1424,
+          "equipName": "秘法之靴",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1424.png",
+          "pickRate": 4.02,
+          "winRate": null,
+          "deltaWinRate": null
+        },
+        {
+          "equipId": 12211,
+          "equipName": "梦魇之牙",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png",
+          "pickRate": 1.37,
+          "winRate": null,
+          "deltaWinRate": null
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "baseWinRate": 52.83,
+      "topItems": [
+        {
+          "equipId": 1424,
+          "equipName": "秘法之靴",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1424.png",
+          "pickRate": 84.73,
+          "winRate": 51.15,
+          "deltaWinRate": -1.68
+        },
+        {
+          "equipId": 1422,
+          "equipName": "抵抗之靴",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+          "pickRate": 4.45,
+          "winRate": null,
+          "deltaWinRate": null
+        },
+        {
+          "equipId": 1239,
+          "equipName": "辉月",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1239.png",
+          "pickRate": 2.73,
+          "winRate": null,
+          "deltaWinRate": null
+        },
+        {
+          "equipId": 1227,
+          "equipName": "炽热支配",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1227.png",
+          "pickRate": 2.22,
+          "winRate": null,
+          "deltaWinRate": null
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "baseWinRate": 53.7,
+      "topItems": [
+        {
+          "equipId": 1227,
+          "equipName": "炽热支配",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1227.png",
+          "pickRate": 80.12,
+          "winRate": 54.24,
+          "deltaWinRate": 0.54
+        },
+        {
+          "equipId": 12211,
+          "equipName": "梦魇之牙",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png",
+          "pickRate": 9.17,
+          "winRate": 47.3,
+          "deltaWinRate": -6.4
+        },
+        {
+          "equipId": 1239,
+          "equipName": "辉月",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1239.png",
+          "pickRate": 4.74,
+          "winRate": null,
+          "deltaWinRate": null
+        },
+        {
+          "equipId": 1232,
+          "equipName": "博学者之怒",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png",
+          "pickRate": 2.27,
+          "winRate": null,
+          "deltaWinRate": null
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "baseWinRate": 57.55,
+      "topItems": [
+        {
+          "equipId": 1232,
+          "equipName": "博学者之怒",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png",
+          "pickRate": 72.23,
+          "winRate": 58.26,
+          "deltaWinRate": 0.71
+        },
+        {
+          "equipId": 1231,
+          "equipName": "虚无法杖",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png",
+          "pickRate": 6.79,
+          "winRate": 46.45,
+          "deltaWinRate": -11.1
+        },
+        {
+          "equipId": 1227,
+          "equipName": "炽热支配",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1227.png",
+          "pickRate": 6.44,
+          "winRate": 58.62,
+          "deltaWinRate": 1.07
+        },
+        {
+          "equipId": 12211,
+          "equipName": "梦魇之牙",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png",
+          "pickRate": 5.96,
+          "winRate": 52.86,
+          "deltaWinRate": -4.69
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "baseWinRate": 66.03,
+      "topItems": [
+        {
+          "equipId": 1231,
+          "equipName": "虚无法杖",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png",
+          "pickRate": 40.74,
+          "winRate": 60.78,
+          "deltaWinRate": -5.25
+        },
+        {
+          "equipId": 1238,
+          "equipName": "贤者天书",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1238.png",
+          "pickRate": 33.14,
+          "winRate": 70.99,
+          "deltaWinRate": 4.96
+        },
+        {
+          "equipId": 1232,
+          "equipName": "博学者之怒",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png",
+          "pickRate": 20.47,
+          "winRate": 65.14,
+          "deltaWinRate": -0.89
+        },
+        {
+          "equipId": 1239,
+          "equipName": "辉月",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1239.png",
+          "pickRate": 2.34,
+          "winRate": null,
+          "deltaWinRate": null
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "baseWinRate": 69.78,
+      "topItems": [
+        {
+          "equipId": 1231,
+          "equipName": "虚无法杖",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png",
+          "pickRate": 35.71,
+          "winRate": 69.82,
+          "deltaWinRate": 0.04
+        },
+        {
+          "equipId": 1238,
+          "equipName": "贤者天书",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1238.png",
+          "pickRate": 35.27,
+          "winRate": 68.88,
+          "deltaWinRate": -0.9
+        },
+        {
+          "equipId": 1239,
+          "equipName": "辉月",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1239.png",
+          "pickRate": 11.61,
+          "winRate": 70.76,
+          "deltaWinRate": 0.98
+        },
+        {
+          "equipId": 1227,
+          "equipName": "炽热支配",
+          "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1227.png",
+          "pickRate": 4.91,
+          "winRate": null,
+          "deltaWinRate": null
+        }
+      ]
+    }
+  ],
+  "selectedCombinationStats": {
+    "winRate": 52.83,
+    "matchCount": 59524,
+    "winCount": 31449
+  },
+  "serverCached": "引用麻烦注明出处233"
+}

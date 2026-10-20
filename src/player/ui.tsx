@@ -2,13 +2,14 @@ import { useEffect, useRef } from 'react';
 import type { ReactNode } from 'react';
 import { X, ArrowUpRight, Sword } from 'lucide-react';
 import type { Hero } from './model.ts';
+import { mediaUrl } from './media.ts';
 export function Portrait({ hero, className = '' }: { hero: Hero | undefined; className?: string }) {
   return (
     <span className={'portrait ' + className}>
       <span>{hero?.name.slice(0, 1) ?? '+'}</span>
       {hero && (
         <img
-          src={hero.portrait}
+          src={mediaUrl(hero.portrait)}
           key={hero.id}
           alt=""
           loading="lazy"

@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { readFileSync, mkdirSync } from 'node:fs';
 import { emptyProfile } from '../../src/player/pro/model.ts';
-const folder = 'evidence/final-audit-v016';
+const folder = process.env.KAIJU_EVIDENCE_DIR ?? 'evidence/final-audit-v016';
 test('expired login has an explicit recovery path and never deletes stored guest heroes', async ({
   page,
   request,

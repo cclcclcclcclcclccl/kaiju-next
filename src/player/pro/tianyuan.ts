@@ -6,8 +6,13 @@ export const TIANYUAN_MODES: Record<string, number> = {
   顶端排位: 4,
   巅峰千强: 5,
 };
-export const sourceDate = (now = Date.now()) =>
-  new Date(now + 8 * 3600000 - 86400000).toISOString().slice(0, 10);
+// Source page states 09:00 Beijing publication of the preceding day. Before
+// publication use the prior completed day; this is a default, never silent fallback.
+export const sourceDate = (now = Date.now()) => {
+  const beijing = now + 8 * 3600000;
+  const lag = new Date(beijing).getUTCHours() < 9 ? 2 : 1;
+  return new Date(beijing - lag * 86400000).toISOString().slice(0, 10);
+};
 const date = z
   .string()
   .regex(/^\d{4}-\d{2}-\d{2}$/)
@@ -131,6 +136,48 @@ export const tianyuanAnalysisSchema = z.object({
 export const tianyuanEquipSchema = z.object({
   heroId: z.number(),
   queryEndDate: z.string().datetime(),
+  topItemsBySlot: z
+    .array(
+      z.object({
+        slot: z.number().int().min(1).max(6),
+        baseWinRate: optionalRate,
+        topItems: z
+          .array(
+            z.object({
+              equipId: z.number().int().positive(),
+              equipName: z.string(),
+              equipIcon: sourceImage,
+              pickRate: rate.nullable(),
+              winRate: rate.nullable(),
+              deltaWinRate: z.number().finite().nullable().optional(),
+            }),
+          )
+          .max(100),
+      }),
+    )
+    .max(6)
+    .optional(),
+  topFullBuilds: z
+    .array(
+      z.object({
+        build: z
+          .array(
+            z.object({
+              equipId: z.number().int().positive(),
+              equipName: z.string(),
+              equipIcon: sourceImage,
+            }),
+          )
+          .max(6),
+        frequency: rate.nullable(),
+        summonerSkill: z
+          .object({ skillId: z.number().optional(), skillName: z.string(), skillIcon: sourceImage })
+          .nullable()
+          .optional(),
+      }),
+    )
+    .max(100)
+    .optional(),
   equipmentWinRates: z
     .array(
       z.object({
@@ -150,7 +197,12 @@ export const tianyuanCombinedSchema = z.object({
     z.object({ pickRate: rate.nullable(), winRate: rate.nullable() }),
   ),
   summonerSkills: z.array(
-    z.object({ skillName: z.string(), pickRate: rate.nullable(), winRate: rate.nullable() }),
+    z.object({
+      skillName: z.string(),
+      skillIcon: sourceImage,
+      pickRate: rate.nullable(),
+      winRate: rate.nullable(),
+    }),
   ),
 });
 export function parseTianyuan(raw: unknown, q: TianyuanQuery) {

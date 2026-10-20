@@ -19,6 +19,10 @@ import type { createRankRefresh } from '../pro/refresh.ts';
 import type { createTianyuan } from '../pro/tianyuan.ts';
 import type { createKplCases } from '../pro/kpl.ts';
 import { tianyuanQuerySchema } from '../../src/player/pro/tianyuan.ts';
+import { plusQuerySchema } from '../../src/player/pro/sourcePlus.ts';
+import type { createSourcePlus } from '../pro/sourcePlus.ts';
+import { clientAddress, createAuthLimiter } from './access.ts';
+import type { TrustedProxy } from './access.ts';
 export class PlayerHttpError extends Error {
   status: number;
   constructor(status: number, message: string) {
@@ -52,8 +56,14 @@ export function createPlayerApp(
     rankRefresh?: ReturnType<typeof createRankRefresh>;
     tianyuan?: ReturnType<typeof createTianyuan>;
     kplCases?: ReturnType<typeof createKplCases>;
+    sourcePlus?: ReturnType<typeof createSourcePlus>;
+    publicOrigin?: string;
+    trustedProxy?: TrustedProxy;
   } = {},
 ) {
+  const publicUrl = options.publicOrigin ? new URL(options.publicOrigin) : undefined;
+  if (publicUrl && (publicUrl.protocol !== 'https:' || publicUrl.origin !== options.publicOrigin))
+    throw Error('分享地址必须是完整的 HTTPS 来源地址，不能包含路径');
   const officialRanks = options.officialRanks ?? createOfficialRanks();
   const resources = options.resources;
   const ids = new Set(heroes.map((h) => h.id));
@@ -62,6 +72,7 @@ export function createPlayerApp(
       throw new PlayerHttpError(400, '英雄不在官方资料目录中');
   };
   let coachBusy = false;
+  const authLimiter = createAuthLimiter();
   const gzipAsync = promisify(gzip);
   const compressed = new Map<string, { mtime: number; size: number; body: Promise<Buffer> }>();
   return createServer(async (req, res) => {
@@ -80,13 +91,15 @@ export function createPlayerApp(
     );
     try {
       const host = req.headers.host ?? '';
-      if (!/^(127\.0\.0\.1|localhost|\[::1\])(?::\d+)?$/.test(host))
+      if (!/^(127\.0\.0\.1|localhost|\[::1\])(?::\d+)?$/.test(host) && host !== publicUrl?.host)
         throw new PlayerHttpError(403, '当前仅允许本机访问');
       if (
         req.headers.origin &&
-        !['http://' + host, 'http://127.0.0.1:4317', 'http://localhost:4317'].includes(
-          req.headers.origin,
-        )
+        !(
+          publicUrl
+            ? [publicUrl.origin]
+            : ['http://' + host, 'http://127.0.0.1:4317', 'http://localhost:4317']
+        ).includes(req.headers.origin)
       )
         throw new PlayerHttpError(403, '请求来源不匹配');
       const url = new URL(req.url ?? '/', 'http://' + host),
@@ -101,6 +114,33 @@ export function createPlayerApp(
       )
         throw new PlayerHttpError(401, '登录已过期，请重新登录');
       const store = user ? rootStore.forUser(user.id) : rootStore;
+      if (publicUrl) {
+        if (method === 'POST' && req.headers.origin !== publicUrl.origin)
+          throw new PlayerHttpError(403, '请从分享站点页面提交操作');
+        if (url.pathname.startsWith('/api/pro/review-handoff'))
+          throw new PlayerHttpError(
+            403,
+            '公网版不提供服务器本机文件复盘，请使用录像标注与证据导出',
+          );
+        if (
+          method === 'POST' &&
+          !user &&
+          !['/api/auth/login', '/api/auth/register'].includes(url.pathname)
+        )
+          throw new PlayerHttpError(
+            403,
+            '请先在“好友与组队”注册或登录，个人资料会保存到你的独立账号',
+          );
+      }
+      if (method === 'GET' && url.pathname === '/api/source-plus') {
+        const query = plusQuerySchema.parse(Object.fromEntries(url.searchParams));
+        if (!options.sourcePlus) return send(503, { error: '扩展公开数据服务未启用' });
+        try {
+          return send(200, await options.sourcePlus.get(query));
+        } catch (e) {
+          return send(502, { error: (e as Error).message });
+        }
+      }
       if (method === 'GET' && url.pathname === '/api/kpl/cases') {
         if (!options.kplCases) return send(503, { error: '官方赛事素材服务未启用' });
         try {
@@ -154,6 +194,8 @@ export function createPlayerApp(
           heroes,
           body,
           send,
+          authLimiter,
+          clientAddress: clientAddress(req, options.trustedProxy ?? 'none'),
         })
       )
         return;
@@ -167,8 +209,10 @@ export function createPlayerApp(
       if (method === 'GET' && url.pathname === '/api/status')
         return send(200, {
           product: '开局 NEXT',
-          version: '0.17.0',
+          version: '0.25.1',
           modelConfigured: Boolean(providerConfig()),
+          publicSharing: Boolean(publicUrl),
+          publicUrl: publicUrl?.origin,
           heroCount: heroes.length,
           identity: { mode: user ? 'account' : 'guest', name: user?.name ?? '访客' },
         });
@@ -392,6 +436,9 @@ export function createPlayerApp(
         '.css': 'text/css; charset=utf-8',
         '.svg': 'image/svg+xml',
         '.png': 'image/png',
+        '.jpg': 'image/jpeg',
+        '.jpeg': 'image/jpeg',
+        '.webp': 'image/webp',
         '.json': 'application/json',
       };
       const canGzip =

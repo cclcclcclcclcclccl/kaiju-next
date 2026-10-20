@@ -111,7 +111,8 @@ test('actual four-segment responses cover 133 base heroes and preserve Li Xin fo
   assert.throws(() => parseTianyuan([...before, before[0]], q), /重复/);
   assert.throws(() => parseTianyuan([{ ...before[0], winRate: 101 }], q));
   assert.throws(() => tianyuanQuerySchema.parse({ kind: 'stats', date: '2026-02-30', mode: 5 }));
-  assert.equal(sourceDate(Date.parse('2026-10-13T18:00:00Z')), '2026-10-13');
+  // Beijing 02:00 precedes the source 09:00 daily publication.
+  assert.equal(sourceDate(Date.parse('2026-10-13T18:00:00Z')), '2026-10-12');
 });
 
 test('public reads are anonymous, serialized, coalesced and archive exact raw bytes', async () => {

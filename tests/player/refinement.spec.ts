@@ -98,9 +98,18 @@ test('five accepted and sharing accounts produce a persistent visible squad resu
   }, accounts[0]);
   await page.goto('/');
   await page.locator('nav').getByRole('button', { name: '体系练习', exact: true }).click();
+  for (const size of [2, 3]) {
+    await page.getByRole('checkbox', { name: new RegExp('测试队友' + (size - 1)) }).check();
+    await page.getByRole('button', { name: `生成 ${size} 人协作阵容`, exact: true }).click();
+    await expect(
+      page.getByRole('button', { name: `带入 ${size} 人阵容`, exact: true }).first(),
+    ).toBeVisible();
+    for (const plan of await page.locator('.squad-assignments').all())
+      await expect(plan.locator('.hero-row')).toHaveCount(size);
+  }
   for (let i = 1; i < 5; i++)
     await page.getByRole('checkbox', { name: new RegExp('测试队友' + i) }).check();
-  await page.getByRole('button', { name: '生成五人起始阵容' }).click();
+  await page.getByRole('button', { name: '生成 5 人协作阵容' }).click();
   await expect(page.locator('.squad-plans article')).toHaveCount(1);
   for (const n of names) await expect(page.locator('.squad-assignments')).toContainText(n);
   const audit = await new AxeBuilder({ page })
@@ -115,7 +124,7 @@ test('five accepted and sharing accounts produce a persistent visible squad resu
   });
   await page.setViewportSize({ width: 390, height: 844 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-  await page.getByRole('button', { name: '带入五人阵容', exact: true }).click();
+  await page.getByRole('button', { name: '带入 5 人阵容', exact: true }).click();
   await expect(page.getByRole('button', { name: '选择我方打野' })).toContainText('李白');
   await expect(page.getByRole('button', { name: '选择我方游走' })).toContainText('张飞');
   writeFileSync(

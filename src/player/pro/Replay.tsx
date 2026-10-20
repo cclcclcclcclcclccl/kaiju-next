@@ -10,6 +10,7 @@ import { reviewEvidence } from './reviewEvidence.ts';
 import type { ReviewHandoff, CodexReview } from './codexReview.ts';
 import { REVIEW_DIMENSIONS } from './reviewProtocol.ts';
 import KplCases from './KplCases.tsx';
+import TeachingLibrary from './TeachingLibrary.tsx';
 const fmt = (s: number) => Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0');
 type ModelResult = {
   findings: { eventId: string; observation: string; advice: string; uncertainty: string }[];
@@ -17,7 +18,7 @@ type ModelResult = {
   scope: string;
 };
 export default function Replay() {
-  const { data, refresh, configured } = usePro();
+  const { data, refresh, configured, publicSharing } = usePro();
   const video = useRef<HTMLVideoElement>(null);
   const [savedId, setSavedId] = useState<string>();
   const [savedRevision, setSavedRevision] = useState<string | null>(null);
@@ -249,9 +250,11 @@ export default function Replay() {
         </button>
       </div>
       <section className="surface replay-readiness" aria-label="复盘模型与证据状态">
-        <h2>交给当前 Codex 对话复盘</h2>
+        <h2>{publicSharing ? '准备你的录像复盘证据' : '交给当前 Codex 对话复盘'}</h2>
         <p>
-          在这里准备真实画面，在当前聊天中让我逐帧分析，然后读取结果。不需要为这条流程另外配置模型密钥，也不会从网页自动发送聊天消息。
+          {publicSharing
+            ? '可在浏览器选择录像、截取关键帧并记录观察，登录后保存到个人账号，也可以导出复盘证据。分享版不开放站长电脑上的 Codex 文件操作。'
+            : '在这里准备真实画面，在当前聊天中让我逐帧分析，然后读取结果。不需要为这条流程另外配置模型密钥，也不会从网页自动发送聊天消息。'}
         </p>
         <p className="data-caption">
           {configured ? '另已配置可选视觉接口，实战能力待验证。' : '网页自动视觉接口尚未连接。'}
@@ -279,7 +282,7 @@ export default function Replay() {
         <div className="pro-actions">
           <button
             className="btn primary"
-            disabled={busy || !evidence.frames}
+            disabled={publicSharing || busy || !evidence.frames}
             onClick={prepareCodex}
           >
             准备当前对话复盘包
@@ -335,6 +338,7 @@ export default function Replay() {
         </details>
       </section>
       <KplCases />
+      <TeachingLibrary key={heroId} hero={heroById(heroId)} compact />
       <div className="pro-actions">
         <button
           className="btn secondary"

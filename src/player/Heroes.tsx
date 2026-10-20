@@ -1,4 +1,5 @@
 import HeroInsights from './pro/HeroInsights.tsx';
+import HeroSourceDetails from './pro/HeroSourceDetails.tsx';
 import { HeroResources } from './pro/ResourceCenter.tsx';
 import Jungle from './pro/Jungle.tsx';
 import { useMemo, useState } from 'react';
@@ -18,6 +19,8 @@ import { sourceDate, TIANYUAN_MODES } from './pro/tianyuan.ts';
 import type { TianyuanStat } from './pro/tianyuan.ts';
 import { sourceBoard, sourceTierDate } from './pro/publicBoard.ts';
 import type { SourceTier } from './pro/publicBoard.ts';
+import { SkillIdentity, RuneIdentity, EquipmentIdentity, RateBar } from './pro/SourceMedia.tsx';
+import { teachingCoverage } from './pro/teaching.ts';
 
 export function HeroDetail({
   hero,
@@ -41,6 +44,7 @@ export function HeroDetail({
   const entry = pool.find((p) => p.heroId === hero.id),
     note = notes[hero.name];
   const [tab, setTab] = useState(0);
+  const sourceConflict = teachingCoverage.find((h) => h.heroId === hero.id)?.conflict;
   return (
     <Modal title={hero.name + ' · ' + hero.title} onClose={onClose} wide>
       <div
@@ -113,14 +117,16 @@ export function HeroDetail({
           ['#hero-guide', '英雄攻略'],
           ['#hero-builds', '出装铭文'],
           ['#hero-personal-guide', '我的打法'],
+          ['.hero-source-details', '深入数据'],
           ...(hero.roles.includes('打野') ? [['.jungle-section', '刷野路线']] : []),
         ].map(([selector, label]) => (
           <button
             key={selector}
-            onClick={() =>
-              document
-                .querySelector(selector)
-                ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            onClick={(e) =>
+              e.currentTarget
+                .closest('[role=dialog]')
+                ?.querySelector(selector)
+                ?.scrollIntoView({ behavior: 'instant', block: 'start' })
             }
           >
             {label}
@@ -145,6 +151,12 @@ export function HeroDetail({
         </section>
       )}
       <section className="skill-section">
+        {sourceConflict && (
+          <p className="practice-tip">
+            <strong>资料冲突提醒：</strong>
+            {sourceConflict} 下方为官方快照；请结合“我的打法”中的核对卡与游戏内技能查看。
+          </p>
+        )}
         <div className="section-title">
           <h3>
             <BookOpen size={17} /> 技能资料
@@ -162,7 +174,7 @@ export function HeroDetail({
                   onClick={() => setTab(i)}
                 >
                   <span>{i === 0 ? '被动' : '技能 ' + i}</span>
-                  {s.name}
+                  <SkillIdentity heroId={hero.id} name={s.name} />
                 </button>
               ))}
             </div>
@@ -171,7 +183,7 @@ export function HeroDetail({
               <span>冷却：{hero.skills[tab]?.cooldown || '官方未列出'}</span>
               <span>消耗：{hero.skills[tab]?.cost || '官方未列出'}</span>
             </div>
-            {hero.skills[tab]?.tip && (
+            {!sourceConflict && hero.skills[tab]?.tip && (
               <p className="practice-tip">
                 <strong>官方技能提示：</strong>
                 {hero.skills[tab].tip}
@@ -203,7 +215,7 @@ export function HeroDetail({
               <ol>
                 {build.items.map((item, index) => (
                   <li key={index}>
-                    <strong>{item.name}</strong>
+                    <EquipmentIdentity id={item.id} name={item.name} />
                     <details>
                       <summary>属性与说明 · {item.price} 金</summary>
                       <p>{item.description}</p>
@@ -224,7 +236,7 @@ export function HeroDetail({
         <div className="rune-grid">
           {hero.runes?.map((r) => (
             <article key={r.id}>
-              <strong>{r.name}</strong>
+              <RuneIdentity id={r.id} name={r.name} />
               <span>{r.color === 'red' ? '红色' : r.color === 'blue' ? '蓝色' : '绿色'}铭文</span>
               <p>{r.description}</p>
             </article>
@@ -242,6 +254,7 @@ export function HeroDetail({
       />
       {hero.roles.includes('打野') && <Jungle hero={hero} />}
       <HeroResources hero={hero} />
+      <HeroSourceDetails key={hero.id} heroId={hero.id} />
     </Modal>
   );
 }
@@ -438,10 +451,7 @@ export default function Heroes({
                 <div className="atlas-public-metrics" aria-label={h.name + '来源表现'}>
                   <strong>天元 {sourceById.get(h.id)?.label ?? '未评级'}</strong>
                   <span>
-                    胜{' '}
-                    {statsById.get(h.id)?.winRate == null
-                      ? '未公布'
-                      : statsById.get(h.id)!.winRate!.toFixed(2) + '%'}
+                    胜 <RateBar value={statsById.get(h.id)?.winRate} win />
                   </span>
                   <span>
                     出{' '}

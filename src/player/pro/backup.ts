@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import { poolSchema, draftSchema, matchSchema } from '../model.ts';
 import { profileSchema, snapshotSchema, reviewSchema, jungleSchema } from './model.ts';
+import { seriesSchema, parseSeries } from './seriesBp.ts';
 const meta = { id: z.string().uuid(), createdAt: z.string().datetime() };
 const unique = <T extends { id: string }>(items: T[]) =>
   new Set(items.map((i) => i.id)).size === items.length;
@@ -35,6 +36,16 @@ export const personalStateSchema = z
       .refine(unique, '重复统计批次 ID'),
     reviews: z.array(reviewSchema.safeExtend(meta)).max(1000).refine(unique, '重复复盘 ID'),
     runs: z.array(jungleSchema.safeExtend(meta)).max(10000).refine(unique, '重复训练 ID'),
+    bpSeries: seriesSchema
+      .superRefine((s, ctx) => {
+        try {
+          parseSeries(s);
+        } catch (e) {
+          ctx.addIssue({ code: 'custom', message: (e as Error).message });
+        }
+      })
+      .nullable()
+      .optional(),
   })
   .strict();
 export type PersonalState = z.infer<typeof personalStateSchema>;
@@ -55,6 +66,8 @@ export const backupCounts = (d: PersonalState) => ({
   复盘: d.reviews.length,
   复盘截图: d.reviews.reduce((sum, r) => sum + r.events.filter((e) => e.frame).length, 0),
   刷野训练: d.runs.length,
+  服务器系列赛局数:
+    d.bpSeries === undefined ? '旧备份未包含，保留现有' : (d.bpSeries?.games.length ?? 0),
 });
 export function backupHeroIds(d: PersonalState) {
   const draftIds = (v: z.infer<typeof draftSchema>) =>
@@ -73,5 +86,10 @@ export function backupHeroIds(d: PersonalState) {
     ...d.snapshots.flatMap((s) => s.rows.map((r) => r.heroId)),
     ...d.reviews.map((r) => r.heroId),
     ...d.runs.map((r) => r.heroId),
+    ...(d.bpSeries?.games.flatMap((g) => [
+      ...g.session.moves.map((m) => m.heroId),
+      ...(g.session.unavailable?.allies ?? []),
+      ...(g.session.unavailable?.enemies ?? []),
+    ]) ?? []),
   ];
 }

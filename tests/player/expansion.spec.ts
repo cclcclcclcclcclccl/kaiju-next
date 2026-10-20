@@ -106,11 +106,13 @@ test('a system loads its core picks and round BP can ban, advance and undo', asy
   await page.getByRole('button', { name: '带入阵容备战' }).click();
   await expect(page.getByRole('button', { name: '选择我方游走' })).toContainText('孙膑');
   await page.getByLabel('选人侧重', { exact: true }).selectOption('comfort');
+  await page.getByLabel('BP规则', { exact: true }).selectOption('classic');
   await page.getByRole('button', { name: '开始新演练' }).click();
   await page.getByLabel('本轮英雄', { exact: true }).selectOption(String(id('李白')));
   await page.getByRole('button', { name: '确认本轮' }).click();
   await expect(page.locator('.bp-rounds')).toContainText('第 2 / 16 步');
-  await expect(page.getByRole('button', { name: '取消禁用李白' })).toBeVisible();
+  await expect(page.locator('.bp-bans')).toContainText(['李白', '']);
+  await expect(page.getByRole('button', { name: '选择我方游走' })).toContainText('孙膑');
   await page.getByRole('button', { name: '撤回一步', exact: true }).click();
   await expect(page.locator('.bp-rounds')).toContainText('第 1 / 16 步');
   await expect(page.getByRole('button', { name: '取消禁用李白' })).toHaveCount(0);

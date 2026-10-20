@@ -71,8 +71,12 @@ export function buildSquad(
   includeLearning = false,
 ): SquadPlan[] {
   members = members.map((m) => ({ ...m, pool: effectivePool(m.pool, m.profile) }));
-  if (members.length !== 5 || new Set(members.map((m) => m.id)).size !== 5)
-    throw new Error('需要五位不同成员的英雄池，才能生成完整五人方案');
+  if (
+    members.length < 1 ||
+    members.length > 5 ||
+    new Set(members.map((m) => m.id)).size !== members.length
+  )
+    throw new Error('请选择一至五位不同成员；未加入的队友位置保留为空');
   const eligible = (m: SquadMember) =>
     m.pool.filter((p) => includeLearning || p.level !== 'learning');
   const scarcity = (role: Role) =>
@@ -94,6 +98,10 @@ export function buildSquad(
   ];
   for (const role of roles) {
     const next: State[] = [];
+    const remaining = roles.length - roles.indexOf(role) - 1;
+    // Partial parties may leave a role open; never invent a teammate or mastery.
+    for (const state of beam)
+      if (state.assignments.length + remaining >= members.length) next.push(state);
     for (const state of beam)
       for (const member of members) {
         if (state.assignments.some((a) => a.memberId === member.id)) continue;
@@ -117,10 +125,13 @@ export function buildSquad(
           });
         }
       }
-    beam = next.sort((a, b) => b.score - a.score).slice(0, 32);
+    beam = next
+      .sort((a, b) => b.assignments.length - a.assignments.length || b.score - a.score)
+      .slice(0, 64);
     if (!beam.length) return [];
   }
   const plans = beam
+    .filter((state) => state.assignments.length === members.length)
     .map((state) => {
       let total = 0;
       for (const a of state.assignments) {
@@ -134,7 +145,7 @@ export function buildSquad(
       const weakest = Math.min(...state.assignments.map((a) => a.readiness));
       return {
         ...state,
-        score: Math.round(total / 5),
+        score: Math.round(total / members.length),
         weakest,
         assignments: [...state.assignments].sort(
           (a, b) => ROLES.indexOf(a.role) - ROLES.indexOf(b.role),
