@@ -1,0 +1,55 @@
+.page-loading {
+  padding: 32px;
+  display: grid;
+  gap: 16px;
+}
+.rank-identity {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+.rank-identity .portrait {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+.rank-source-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding: 12px 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+.rank-source-summary strong {
+  color: var(--teal);
+}
+.rank-filter-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin: 12px 0;
+}
+.rank-filter-actions label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.brand strong {
+  white-space: nowrap;
+}
+.brand-caption {
+  letter-spacing: 0;
+  line-height: 1.7;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

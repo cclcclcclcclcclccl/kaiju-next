@@ -93,7 +93,7 @@ export default function Leaderboard({
     );
   const template = () =>
     download(
-      '开局-统计导入模板.json',
+      '自在弈境-统计导入模板.json',
       JSON.stringify(
         {
           title: '请填写数据标题',
@@ -270,7 +270,7 @@ export default function Leaderboard({
           <h2 className="snapshot-heading">
             {snapshot?.id === publicReference.id && !demo
               ? '原始快照子集 · 按来源分路标签筛选'
-              : '我的统计快照 · 开局梯度'}
+              : '我的统计快照 · 弈境梯度'}
           </h2>
           {demo && (
             <div className="pro-notice">
@@ -310,7 +310,7 @@ export default function Leaderboard({
                   className="text-btn"
                   onClick={() => {
                     const { id, importedAt, ...input } = shown;
-                    download('开局-统计快照.json', JSON.stringify(input, null, 2));
+                    download('自在弈境-统计快照.json', JSON.stringify(input, null, 2));
                   }}
                 >
                   导出这批数据

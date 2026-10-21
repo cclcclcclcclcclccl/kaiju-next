@@ -145,7 +145,7 @@ export function PersonalGuide({
         className="btn secondary"
         onClick={() =>
           download(
-            '开局-' + hero.name + '-个人训练卡.md',
+            '自在弈境-' + hero.name + '-个人训练卡.md',
             [
               '# ' + hero.name + ' · ' + data.profile.name + '的训练卡',
               '分路：' + role,

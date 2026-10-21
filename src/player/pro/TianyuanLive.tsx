@@ -88,7 +88,7 @@ export function Provenance({ packet }: { packet: TianyuanPacket }) {
       {packet.warning && <p role="status">{packet.warning}</p>}
       <button
         className="text-btn"
-        onClick={() => download('开局-天元公开数据.json', JSON.stringify(packet, null, 2))}
+        onClick={() => download('自在弈境-天元公开数据.json', JSON.stringify(packet, null, 2))}
       >
         导出当前数据与来源
       </button>

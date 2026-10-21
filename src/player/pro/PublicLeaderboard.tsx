@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { RateBar, RateLegend } from './SourceMedia.tsx';
 import type { z } from 'zod';
 import { heroById, heroes } from '../catalog.ts';
 import type { Hero } from '../model.ts';
@@ -20,14 +21,65 @@ export default function PublicLeaderboard({
 }: {
   onOpen: (hero: Hero, context?: { segment: string; role: string; snapshotId?: string }) => void;
 }) {
-  const [segment, setSegment] = useState('巅峰千强');
-  const [date, setDate] = useState(sourceDate());
-  const [tierDate, setTierDate] = useState(sourceTierDate());
-  const [role, setRole] = useState('全部');
-  const [query, setQuery] = useState('');
-  const [basis, setBasis] = useState<'tier' | 'stats'>('tier');
-  const [sort, setSort] = useState('tier');
-  const [table, setTable] = useState(false);
+  const [saved] = useState(() => {
+    try {
+      const value = JSON.parse(sessionStorage.getItem('kaiju-rank-filters-v1') ?? '{}');
+      return value && typeof value === 'object' ? value : {};
+    } catch {
+      return {};
+    }
+  });
+  const [segment, setSegment] = useState(
+    typeof saved.segment === 'string' && Object.hasOwn(TIANYUAN_MODES, saved.segment)
+      ? saved.segment
+      : '巅峰千强',
+  );
+  const [date, setDate] = useState(
+    typeof saved.date === 'string' && validDate(saved.date) && saved.date <= sourceDate()
+      ? saved.date
+      : sourceDate(),
+  );
+  const [tierDate, setTierDate] = useState(
+    typeof saved.tierDate === 'string' &&
+      validDate(saved.tierDate) &&
+      saved.tierDate <= sourceTierDate()
+      ? saved.tierDate
+      : sourceTierDate(),
+  );
+  const [role, setRole] = useState(
+    ['全部', ...ROLES].includes(saved.role) ? String(saved.role) : '全部',
+  );
+  const [query, setQuery] = useState(
+    typeof saved.query === 'string' ? saved.query.slice(0, 80) : '',
+  );
+  const [basis, setBasis] = useState<'tier' | 'stats'>(saved.basis === 'stats' ? 'stats' : 'tier');
+  const [sort, setSort] = useState(
+    ['tier', 'pick', 'win', 'ban', 'name'].includes(saved.sort) ? String(saved.sort) : 'tier',
+  );
+  const [table, setTable] = useState(saved.table === true);
+  const [minPick, setMinPick] = useState<number>(
+    [0, 1, 3, 5].includes(saved.minPick) ? saved.minPick : 0,
+  );
+  useEffect(() => {
+    try {
+      sessionStorage.setItem(
+        'kaiju-rank-filters-v1',
+        JSON.stringify({ segment, date, tierDate, role, query, basis, sort, table, minPick }),
+      );
+    } catch {
+      /* Filters remain usable without storage. */
+    }
+  }, [segment, date, tierDate, role, query, basis, sort, table, minPick]);
+  const reset = () => {
+    setSegment('巅峰千强');
+    setDate(sourceDate());
+    setTierDate(sourceTierDate());
+    setRole('全部');
+    setQuery('');
+    setBasis('tier');
+    setSort('tier');
+    setMinPick(0);
+  };
   const stats = useSource<TianyuanStat[]>(
     validDate(date) ? { kind: 'stats', date, mode: TIANYUAN_MODES[segment] } : undefined,
   );
@@ -60,7 +112,16 @@ export default function PublicLeaderboard({
             source: byId.get(r.heroId),
           }))
   )
-    .filter((r) => r.name.includes(query.trim()))
+    .filter((r) => {
+      const q = query.trim().toLowerCase();
+      return (
+        (r.name.toLowerCase().includes(q) ||
+          !!heroById(r.stat?.baseHeroId ?? r.id)
+            ?.slug.toLowerCase()
+            .includes(q)) &&
+        (minPick === 0 || (r.stat?.pickRate != null && r.stat.pickRate >= minPick))
+      );
+    })
     .sort((a, b) =>
       sort === 'tier'
         ? Number(a.source?.secondary) - Number(b.source?.secondary) ||
@@ -110,7 +171,7 @@ export default function PublicLeaderboard({
       </div>
       <p className="pro-notice">
         T
-        档与分数采用天元之弈综合梯度，按原站公开分数分档、排序，不再使用开局实验评分替代。原站标注“算法测试中”。综合梯度没有分段参数；下方分段只切换三率，不能把它称为该分段独立梯度。
+        档与分数采用天元之弈综合梯度，按原站公开分数分档、排序，不再使用弈境实验评分替代。原站标注“算法测试中”。综合梯度没有分段参数；下方分段只切换三率，不能把它称为该分段独立梯度。
       </p>
       <div className="pro-toolbar">
         <label>
@@ -149,7 +210,11 @@ export default function PublicLeaderboard({
         </label>
         <label>
           联网英雄搜索
-          <input value={query} placeholder="英雄名称" onChange={(e) => setQuery(e.target.value)} />
+          <input
+            value={query}
+            placeholder="英雄名称或拼音"
+            onChange={(e) => setQuery(e.target.value)}
+          />
         </label>
         <label>
           联网排序
@@ -162,6 +227,41 @@ export default function PublicLeaderboard({
           </select>
         </label>
       </div>
+      <div className="rank-filter-actions">
+        <label>
+          最低出场率
+          <select
+            aria-label="最低出场率"
+            value={minPick}
+            onChange={(e) => setMinPick(Number(e.target.value))}
+          >
+            <option value={0}>不限（保留缺失数据）</option>
+            <option value={1}>1%</option>
+            <option value={3}>3%</option>
+            <option value={5}>5%</option>
+          </select>
+        </label>
+        <button className="btn secondary" onClick={reset}>
+          重置榜单筛选
+        </button>
+      </div>
+      <div className="rank-source-summary" aria-label="榜单数据口径">
+        <strong>来源梯度与分段三率分开解释</strong>
+        <span>三率样本量：来源未公布</span>
+        <span>
+          梯度：
+          {tiers.packet?.cache === 'stale' ? '旧缓存' : tiers.packet ? '已有来源记录' : '等待来源'}
+        </span>
+        <span>
+          三率：
+          {stats.packet?.cache === 'stale' ? '旧缓存' : stats.packet ? '已有来源记录' : '等待来源'}
+        </span>
+      </div>
+      {minPick > 0 && (
+        <p className="data-caption">
+          已排除低于{minPick}%及未公布出场率的记录；出场率筛选不等同于样本量或可信度筛选。
+        </p>
+      )}
       <p className="data-caption">
         梯度日期 {tierDate} · 三率查询日 {date} · {segment}
         。梯度与三率分别注明日期，匿名三率通常只能查询前一日。分路是来源定位标签；未发布的独立分段梯度不补造。
@@ -220,6 +320,7 @@ export default function PublicLeaderboard({
       )}
       {tiers.packet && <Provenance packet={tiers.packet} />}
       {stats.packet && <Provenance packet={stats.packet} />}
+      {table && <RateLegend />}
       {table ? (
         <div className="roster-scroll">
           <table className="roster-table">
@@ -246,14 +347,17 @@ export default function PublicLeaderboard({
               {rows.map((r) => (
                 <tr key={r.id}>
                   <td>
-                    <button className="text-btn" onClick={() => open(r)}>
+                    <button className="text-btn rank-identity" onClick={() => open(r)}>
+                      <Portrait hero={heroById(r.stat?.baseHeroId ?? r.id)} />
                       {r.name}
                     </button>
                   </td>
                   <td>{r.source?.label ?? '未评级'}</td>
                   <td>{r.source?.tier.finalNormalizedTierScore.toFixed(2) ?? '未公布'}</td>
                   <td>{r.roles}</td>
-                  <td>{percent(r.stat?.winRate)}</td>
+                  <td>
+                    <RateBar value={r.stat?.winRate} win />
+                  </td>
                   <td>{percent(r.stat?.pickRate)}</td>
                   <td>{percent(r.stat?.banRate)}</td>
                   <td>{r.stat?.qAreaTop10Power ?? '未公布'}</td>
@@ -314,7 +418,7 @@ export default function PublicLeaderboard({
       )}
       <SourceHealth />
       <details className="environment-method">
-        <summary>为什么不再默认使用开局强度 v2</summary>
+        <summary>为什么不再默认使用弈境强度 v2</summary>
         <p>
           旧算法以总体胜率为主，未完成玩家水平、操作难度、熟练度和实际比赛效果校准，且千强模式混入顶端排位胜率。固定阈值产生的
           T

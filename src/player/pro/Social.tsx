@@ -76,19 +76,19 @@ export default function Social() {
         {state.user && (
           <button className="btn secondary" disabled={busy} onClick={logout}>
             <LogOut size={16} />
-            退出开局账号
+            退出自在弈境账号
           </button>
         )}
       </div>
       <div className="pro-notice">
-        这是开局 NEXT 的账号体系，与王者账号独立。
+        这是自在弈境 的账号体系，与王者账号独立。
         {publicSharing
           ? '同学可通过同一个分享网址注册、登录和添加好友；每个账号独立保存自己的资料。'
           : '当前为本机服务。对外分享请使用单独生成的公网网址；127.0.0.1 只能在这台电脑上访问。'}
       </div>
       {!state.user ? (
         <section className="surface auth-card">
-          <h2>{register ? '创建开局账号' : '登录开局账号'}</h2>
+          <h2>{register ? '创建自在弈境账号' : '登录自在弈境账号'}</h2>
           <p className="muted">
             {publicSharing
               ? '每个账号的英雄池、档案和复盘独立保存。在其他设备使用同一分享网址登录，即可读取已保存资料。'
@@ -118,7 +118,7 @@ export default function Social() {
               </label>
             )}
             <label>
-              开局账号密码
+              自在弈境账号密码
               <input
                 type="password"
                 autoComplete={register ? 'new-password' : 'current-password'}

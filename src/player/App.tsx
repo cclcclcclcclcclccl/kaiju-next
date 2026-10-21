@@ -3,17 +3,19 @@ import { ProContext } from './pro/context.tsx';
 import { effectivePool } from './pro/analytics.ts';
 import { emptyPro } from './pro/model.ts';
 import type { ProData } from './pro/model.ts';
-import Leaderboard from './pro/Leaderboard.tsx';
-import ProfilePage from './pro/Profile.tsx';
-import Social from './pro/Social.tsx';
-import Systems from './pro/Systems.tsx';
-import Replay from './pro/Replay.tsx';
-import ResourceCenter from './pro/ResourceCenter.tsx';
-import DataHub from './pro/DataHub.tsx';
+const Leaderboard = lazy(() => import('./pro/Leaderboard.tsx'));
+const ProfilePage = lazy(() => import('./pro/Profile.tsx'));
+const Social = lazy(() => import('./pro/Social.tsx'));
+const Systems = lazy(() => import('./pro/Systems.tsx'));
+const Replay = lazy(() => import('./pro/Replay.tsx'));
+const ResourceCenter = lazy(() => import('./pro/ResourceCenter.tsx'));
+const DataHub = lazy(() => import('./pro/DataHub.tsx'));
 import ConnectionStatus from './ConnectionStatus.tsx';
 import ShareLink from './ShareLink.tsx';
 import { BarChart3, Users, Video, Network, Gauge } from 'lucide-react';
-import { useEffect, useMemo, useState, useRef } from 'react';
+import { useEffect, useMemo, useState, useRef, lazy, Suspense } from 'react';
+import { readRoute, routeHash } from './route.ts';
+import ScreenBoundary from './ScreenBoundary.tsx';
 import {
   Aperture,
   LayoutDashboard,
@@ -29,18 +31,19 @@ import {
   Menu,
 } from 'lucide-react';
 import { api, ApiError } from '../api.ts';
-import BackupCenter from './pro/BackupCenter.tsx';
+const BackupCenter = lazy(() => import('./pro/BackupCenter.tsx'));
 import { heroes, dataMeta, heroById, heroByName } from './catalog.ts';
 import { emptyDraft, draftSchema } from './model.ts';
 import type { Draft, Hero, Pool, Match, MatchInput, SavedPlan } from './model.ts';
 import Dashboard from './Dashboard.tsx';
 import type { Page } from './Dashboard.tsx';
 import Heroes, { HeroDetail } from './Heroes.tsx';
-import DraftPage from './Draft.tsx';
-import Journal from './Journal.tsx';
+const DraftPage = lazy(() => import('./Draft.tsx'));
+const Journal = lazy(() => import('./Journal.tsx'));
 import { Modal, Portrait } from './ui.tsx';
 type Workspace = { pool: Pool; draft: Draft; matches: Match[]; plans: SavedPlan[] };
 export default function App() {
+  const initialRoute = useRef(readRoute(location.hash));
   const [pro, setPro] = useState<ProData>(emptyPro);
   const [publicSharing, setPublicSharing] = useState(false);
   const [profileHero, setProfileHero] = useState<number>();
@@ -51,7 +54,7 @@ export default function App() {
   const draftKey =
     'kaiju-draft-v1' +
     (localStorage.getItem('kaiju-user') ? ':' + localStorage.getItem('kaiju-user') : '');
-  const [page, setPage] = useState<Page>('home'),
+  const [page, setPage] = useState<Page>(initialRoute.current.page),
     [pool, setPool] = useState<Pool>([]),
     [draft, setDraft] = useState<Draft>(emptyDraft),
     [matches, setMatches] = useState<Match[]>([]),
@@ -69,7 +72,7 @@ export default function App() {
   const [ready, setReady] = useState(false),
     [busy, setBusy] = useState(false),
     [configured, setConfigured] = useState(false),
-    [hero, setHero] = useState<Hero | null>(null),
+    [hero, setHeroState] = useState<Hero | null>(heroById(initialRoute.current.heroId) ?? null),
     [source, setSource] = useState(false),
     [archive, setArchive] = useState(false);
   const [toast, setToast] = useState<{ text: string; error?: boolean } | null>(null);
@@ -83,7 +86,37 @@ export default function App() {
     media.addEventListener('change', change);
     return () => media.removeEventListener('change', change);
   }, []);
-  const [dataTool, setDataTool] = useState<string>();
+  const [dataTool, setDataTool] = useState<string | undefined>(initialRoute.current.tool);
+  const activeRoute = useRef(initialRoute.current);
+  const writeRoute = (next: ReturnType<typeof readRoute>) => {
+    const hash = routeHash(next);
+    if (location.hash !== hash) history.pushState(null, '', hash);
+    activeRoute.current = next;
+  };
+  const setHero = (value: Hero | null) => {
+    setHeroState(value);
+    writeRoute({ ...activeRoute.current, heroId: value?.id });
+  };
+  useEffect(() => {
+    const sync = () => {
+      const next = readRoute(location.hash);
+      if (
+        next.page !== activeRoute.current.page &&
+        !window.dispatchEvent(new Event('kaiju-before-navigate', { cancelable: true }))
+      ) {
+        history.pushState(null, '', routeHash(activeRoute.current));
+        return;
+      }
+      activeRoute.current = next;
+      setPage(next.page);
+      setDataTool(next.tool);
+      setHeroState(heroById(next.heroId) ?? null);
+      setHeroStats(undefined);
+      setMobileMenu(false);
+    };
+    window.addEventListener('popstate', sync);
+    return () => window.removeEventListener('popstate', sync);
+  }, []);
   const load = async () => {
     try {
       const [workspace, status, proData] = await Promise.all([
@@ -151,6 +184,8 @@ export default function App() {
       !window.dispatchEvent(new Event('kaiju-before-navigate', { cancelable: true }))
     )
       return;
+    writeRoute({ page: p, tool });
+    setHeroState(null);
     setPage(p);
     setMobileMenu(false);
     setDataTool(tool);
@@ -277,15 +312,15 @@ export default function App() {
           className={'sidebar ' + (mobileMenu ? 'mobile-open' : '')}
           inert={mobileScreen && !mobileMenu}
         >
-          <button className="brand" onClick={() => go('home')} aria-label="开局首页">
+          <button className="brand" onClick={() => go('home')} aria-label="自在弈境首页">
             <span className="brand-symbol">
               <Aperture size={29} />
             </span>
             <strong>
-              开局 <span>NEXT</span>
+              自在弈境 <span>数据站 · ZIZAI</span>
             </strong>
           </button>
-          <p className="brand-caption">你的王者备战台</p>
+          <p className="brand-caption">懂你的英雄池，从容应对每一局</p>
           <div className="nav-label">
             我的工作台 <span>PLAYBOOK</span>
           </div>
@@ -323,7 +358,7 @@ export default function App() {
             <span>
               <i />
               {ready ? (publicSharing ? '分享服务已连接' : '本地工作台已连接') : '正在连接服务'}
-              <small>v0.25</small>
+              <small>v0.26</small>
             </span>
           </div>
         </aside>
@@ -419,72 +454,84 @@ export default function App() {
                 )}
               </div>
             ) : (
-              <>
-                {page === 'tier' && <Leaderboard onOpen={openHero} />}
-                {page === 'resources' && <ResourceCenter onOpen={openHero} />}
-                {page === 'datahub' && (
-                  <DataHub
-                    key={dataTool ?? 'default'}
-                    initialTab={dataTool}
-                    onOpen={openHero}
-                    draft={currentDraft}
-                  />
-                )}
-                {page === 'profile' && <ProfilePage focusHeroId={profileHero} />}
-                {page === 'social' && <Social />}
-                {page === 'replay' && <Replay />}
-                {page === 'systems' && (
-                  <Systems
-                    pool={registeredPool}
-                    onLoad={(d) => {
-                      setDraft(d);
-                      go('draft');
-                      setToast({ text: '体系核心英雄已带入，补齐剩余位置继续备战。' });
-                    }}
-                  />
-                )}
-                {page === 'home' && (
-                  <Dashboard
-                    pool={registeredPool}
-                    matches={matches}
-                    plans={plans}
-                    go={go}
-                    onDemo={demo}
-                    onOpen={openHero}
-                    onTool={(tool) => go('datahub', tool)}
-                    onLoadPlan={openPlan}
-                  />
-                )}
-                {(page === 'heroes' || page === 'pool') && (
-                  <Heroes
-                    key={page}
-                    pool={pool}
-                    onPool={updatePool}
-                    onOpen={openHero}
-                    busy={busy}
-                    onlyPool={page === 'pool'}
-                    onSavedPool={setPool}
-                    onEditRecord={editRecord}
-                  />
-                )}
-                {page === 'draft' && (
-                  <DraftPage
-                    active={activeCandidate}
-                    setActive={setActiveCandidate}
-                    draft={currentDraft}
-                    onChange={setDraft}
-                    onSave={saveDraft}
-                    onSavePlan={savePlan}
-                    onDemo={demo}
-                    onOpen={openHero}
-                    busy={busy}
-                    configured={configured}
-                  />
-                )}
-                {page === 'journal' && (
-                  <Journal matches={matches} onAdd={addMatch} onCheck={checkMatch} busy={busy} />
-                )}
-              </>
+              <ScreenBoundary key={page + ':' + (dataTool ?? '')}>
+                <Suspense
+                  fallback={
+                    <div className="page-loading" role="status">
+                      正在载入页面…
+                    </div>
+                  }
+                >
+                  {page === 'tier' && <Leaderboard onOpen={openHero} />}
+                  {page === 'resources' && <ResourceCenter onOpen={openHero} />}
+                  {page === 'datahub' && (
+                    <DataHub
+                      key={dataTool ?? 'default'}
+                      initialTab={dataTool}
+                      onTab={(tool) => {
+                        setDataTool(tool);
+                        writeRoute({ page: 'datahub', tool });
+                      }}
+                      onOpen={openHero}
+                      draft={currentDraft}
+                    />
+                  )}
+                  {page === 'profile' && <ProfilePage focusHeroId={profileHero} />}
+                  {page === 'social' && <Social />}
+                  {page === 'replay' && <Replay />}
+                  {page === 'systems' && (
+                    <Systems
+                      pool={registeredPool}
+                      onLoad={(d) => {
+                        setDraft(d);
+                        go('draft');
+                        setToast({ text: '体系核心英雄已带入，补齐剩余位置继续备战。' });
+                      }}
+                    />
+                  )}
+                  {page === 'home' && (
+                    <Dashboard
+                      pool={registeredPool}
+                      matches={matches}
+                      plans={plans}
+                      go={go}
+                      onDemo={demo}
+                      onOpen={openHero}
+                      onTool={(tool) => go('datahub', tool)}
+                      onLoadPlan={openPlan}
+                    />
+                  )}
+                  {(page === 'heroes' || page === 'pool') && (
+                    <Heroes
+                      key={page}
+                      pool={pool}
+                      onPool={updatePool}
+                      onOpen={openHero}
+                      busy={busy}
+                      onlyPool={page === 'pool'}
+                      onSavedPool={setPool}
+                      onEditRecord={editRecord}
+                    />
+                  )}
+                  {page === 'draft' && (
+                    <DraftPage
+                      active={activeCandidate}
+                      setActive={setActiveCandidate}
+                      draft={currentDraft}
+                      onChange={setDraft}
+                      onSave={saveDraft}
+                      onSavePlan={savePlan}
+                      onDemo={demo}
+                      onOpen={openHero}
+                      busy={busy}
+                      configured={configured}
+                    />
+                  )}
+                  {page === 'journal' && (
+                    <Journal matches={matches} onAdd={addMatch} onCheck={checkMatch} busy={busy} />
+                  )}
+                </Suspense>
+              </ScreenBoundary>
             )}
           </main>
         </div>
@@ -514,15 +561,17 @@ export default function App() {
         )}
         {backupOpen && (
           <Modal title="个人资料备份与恢复" wide onClose={() => setBackupOpen(false)}>
-            <BackupCenter
-              onRestored={() => {
-                localStorage.removeItem(draftKey);
-                sessionStorage.removeItem(
-                  'kaiju-profile-draft:' + (localStorage.getItem('kaiju-user') ?? 'guest'),
-                );
-                location.reload();
-              }}
-            />
+            <Suspense fallback={<p role="status">正在载入备份工具…</p>}>
+              <BackupCenter
+                onRestored={() => {
+                  localStorage.removeItem(draftKey);
+                  sessionStorage.removeItem(
+                    'kaiju-profile-draft:' + (localStorage.getItem('kaiju-user') ?? 'guest'),
+                  );
+                  location.reload();
+                }}
+              />
+            </Suspense>
           </Modal>
         )}
         {archive && (
@@ -549,6 +598,10 @@ export default function App() {
         {source && (
           <Modal title="这份备战台，依据什么？" onClose={() => setSource(false)} wide>
             <div className="source-block">
+              <h3>自在之心，弈有依据</h3>
+              <p>
+                “自在”取自赵怀真的称号“自在之心”；“弈境”代表由你掌握的阵容与对局选择。本站服务所有英雄玩家，不隶属于游戏官方。
+              </p>
               <h3>真实英雄资料</h3>
               <p>
                 {dataMeta.count} 位英雄来自腾讯王者荣耀官方公开目录，{dataMeta.skillCount}{' '}
@@ -572,7 +625,7 @@ export default function App() {
                 {publicSharing
                   ? '英雄池、备战卡和对局手记保存在分享服务的账号中。'
                   : '英雄池、备战卡和对局手记保存在本机。'}
-                开局账号之间的数据独立保存。没有接入王者游戏账号，教学阵容不计入个人统计。
+                自在弈境账号之间的数据独立保存。没有接入王者游戏账号，教学阵容不计入个人统计。
               </p>
             </div>
             <div className="source-block">
@@ -586,7 +639,7 @@ export default function App() {
               </p>
             </div>
             <p className="data-caption">
-              开局 NEXT
+              自在弈境
               为独立参赛作品，与腾讯、王者营地及天元之弈助手无隶属关系。英雄名称与图像版权归其权利人所有。首次体验：英雄图鉴
               → 加入英雄池 → 载入教学阵容 → 比较候选 → 保存备战卡 → 对局手记。
             </p>

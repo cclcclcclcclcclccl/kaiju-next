@@ -214,7 +214,7 @@ export async function proRoutes(ctx: {
   }
   if (path.startsWith('/api/social/')) {
     if (!user) {
-      send(401, { error: '先创建或登录开局账号，再添加好友' });
+      send(401, { error: '先创建或登录自在弈境账号，再添加好友' });
       return true;
     }
     try {

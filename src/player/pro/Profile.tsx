@@ -143,7 +143,7 @@ export default function ProfilePage({ focusHeroId }: { focusHeroId?: number }) {
         <button
           className="btn secondary"
           disabled={busy}
-          onClick={() => download('开局-当前档案草稿.json', JSON.stringify(profile, null, 2))}
+          onClick={() => download('自在弈境-当前档案草稿.json', JSON.stringify(profile, null, 2))}
         >
           导出当前档案草稿
         </button>
@@ -285,7 +285,7 @@ export default function ProfilePage({ focusHeroId }: { focusHeroId?: number }) {
           </button>
           <button
             className="btn secondary"
-            onClick={() => download('开局-我的英雄记录.json', JSON.stringify(profile, null, 2))}
+            onClick={() => download('自在弈境-我的英雄记录.json', JSON.stringify(profile, null, 2))}
           >
             <Download size={16} />
             导出档案

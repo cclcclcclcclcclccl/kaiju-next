@@ -62,6 +62,7 @@ test('hero comparison uses one source scope, exports evidence, does not synthesi
     .getByRole('button', { name: /英雄横向对比/ })
     .click();
   const panel = page.locator('.hero-compare');
+  await expect(panel).toBeVisible();
   while (await panel.getByRole('button', { name: /移除对比/ }).count())
     await panel
       .getByRole('button', { name: /移除对比/ })
@@ -167,6 +168,6 @@ test('complete backup download and restore round-trip the server BP with explici
     .getByRole('checkbox', { name: '我已核对目标空间与数量，确认替换当前已保存内容' })
     .check();
   await page.getByRole('button', { name: '确认恢复完整备份', exact: true }).click();
-  await expect(page.getByRole('heading', { name: '下一局，从这里开始。' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '心有准备，选择自在。' })).toBeVisible();
   expect((await (await request.get('/api/pro/bp-series')).json()).series).toEqual(series);
 });

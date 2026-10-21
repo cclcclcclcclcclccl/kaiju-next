@@ -62,7 +62,7 @@ const nav = async (name) => page.locator('nav').getByRole('button', { name, exac
 try {
   await page.goto('http://127.0.0.1:4318/');
   await scene(
-    '开局 NEXT｜传智杯 AI创新应用挑战赛',
+    '自在弈境｜传智杯 AI创新应用挑战赛',
     '蔡晨霖 · 西安交通大学人工智能2501｜本机实录，所有来源统计保留日期与出处。',
     25,
     async () => {},

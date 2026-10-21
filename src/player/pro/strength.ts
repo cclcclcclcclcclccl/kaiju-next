@@ -2,7 +2,7 @@ import { ROLES } from '../model.ts';
 import { tianyuanStatsSchema } from './tianyuan.ts';
 import type { TianyuanStat } from './tianyuan.ts';
 
-export const STRENGTH_VERSION = '开局强度 v2.0';
+export const STRENGTH_VERSION = '弈境强度 v2.0';
 export const STRENGTH_TIERS = ['T0', 'T0.5', 'T1', 'T2', 'T3', 'T4'] as const;
 export type StrengthTier = (typeof STRENGTH_TIERS)[number] | '待评估';
 export const strengthTier = (score: number): StrengthTier =>

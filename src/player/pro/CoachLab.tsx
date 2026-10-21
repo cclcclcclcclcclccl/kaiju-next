@@ -441,7 +441,7 @@ export default function CoachLab({
             className="text-btn"
             onClick={() =>
               download(
-                '开局-教练推演.json',
+                '自在弈境-教练推演.json',
                 JSON.stringify(
                   {
                     generatedAt: new Date().toISOString(),

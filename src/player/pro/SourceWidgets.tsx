@@ -132,7 +132,10 @@ export function SourceStamp({ packet }: { packet: PlusPacket }) {
       <button
         className="text-btn"
         onClick={() =>
-          download('开局-公开来源-' + packet.query.kind + '.json', JSON.stringify(packet, null, 2))
+          download(
+            '自在弈境-公开来源-' + packet.query.kind + '.json',
+            JSON.stringify(packet, null, 2),
+          )
         }
       >
         导出数据与出处

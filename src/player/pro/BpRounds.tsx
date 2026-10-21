@@ -614,7 +614,7 @@ export default function BpRounds({
               className="text-btn"
               onClick={() =>
                 download(
-                  '开局-BP逐手记录.json',
+                  '自在弈境-BP逐手记录.json',
                   JSON.stringify(
                     { ...session, mode, assessment: finished ? assessDraft(position) : undefined },
                     null,

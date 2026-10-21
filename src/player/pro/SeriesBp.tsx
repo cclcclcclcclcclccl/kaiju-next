@@ -115,7 +115,7 @@ export default function SeriesBp({
         {series && (
           <button
             className="text-btn"
-            onClick={() => download('开局-系列赛BP.json', JSON.stringify(series, null, 2))}
+            onClick={() => download('自在弈境-系列赛BP.json', JSON.stringify(series, null, 2))}
           >
             导出系列赛
           </button>

@@ -29,7 +29,10 @@ export default function ConnectionStatus({
         });
         const data = await response.json();
         if (active) {
-          const failed = !response.ok || data.product !== '开局 NEXT';
+          const failed =
+            !response.ok ||
+            (data.productId !== 'kaiju-player-companion' &&
+              !['自在弈境', '开局 NEXT'].includes(data.product));
           setOffline(failed);
           if (!failed && wasOffline.current) {
             setRecovered(true);

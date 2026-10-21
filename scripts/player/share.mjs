@@ -108,7 +108,7 @@ try {
     fs.writeFileSync(path.join(data, 'config.json'), JSON.stringify(config));
   }
   const local = await status('http://127.0.0.1:4320');
-  if (local && (local.product !== '开局 NEXT' || !local.publicSharing))
+  if (local && (!['自在弈境', '开局 NEXT'].includes(local.product) || !local.publicSharing))
     throw new Error('Port 4320 is not the isolated public instance.');
   if (!local || process.argv.includes('--restart-server')) restartServer();
 
@@ -192,7 +192,7 @@ try {
   if (
     !published.publicSharing ||
     published.publicUrl !== origin ||
-    published.product !== '开局 NEXT'
+    !['自在弈境', '开局 NEXT'].includes(published.product)
   )
     throw new Error('Public HTTPS verification failed.');
   fs.writeFileSync(path.join(data, 'PUBLIC_URL.txt'), origin + '\n');

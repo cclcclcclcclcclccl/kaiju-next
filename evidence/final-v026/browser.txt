@@ -1,0 +1,99 @@
+[WebServer] (node:26992) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:32804) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 tests\player\final-v026.spec.ts:16:1 › rebrand and direct hero navigation survive reload and browser back without changing saved pool (7.0s)
+(node:31796) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  2 tests\player\final-v026.spec.ts:32:1 › source ranking supports pinyin, rate bars, filter persistence, reset and mobile layout (1.4s)
+(node:56208) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 3 tests\player\final-v026.spec.ts:48:1 › tool link restores selected tool and lazy failure is recoverable through navigation (2.3s)
+
+
+  1) tests\player\final-v026.spec.ts:16:1 › rebrand and direct hero navigation survive reload and browser back without changing saved pool 
+
+    Error: 来源返回日期不匹配
+
+       at ..\..\src\player\pro\tianyuan.ts:231
+
+      229 |     };
+      230 |     if (q.heroId && value.heroId !== q.heroId) throw Error('来源英雄身份不匹配');
+    > 231 |     if (value.queryDate && value.queryDate !== q.date) throw Error('来源返回日期不匹配');
+          |                                                              ^
+      232 |     if (
+      233 |       value.tiers &&
+      234 |       (value.tiers.some((r) => r.date !== q.date) ||
+        at parseTianyuan (D:\学习相关\传智杯\AI创新应用挑战赛\src\player\pro\tianyuan.ts:231:62)
+        at D:\学习相关\传智杯\AI创新应用挑战赛\tests\player\final-v026.spec.ts:13:245
+
+    Error Context: test-results\final-v026-rebrand-and-dir-2d89b-without-changing-saved-pool\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\final-v026-rebrand-and-dir-2d89b-without-changing-saved-pool\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\final-v026-rebrand-and-dir-2d89b-without-changing-saved-pool\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) tests\player\final-v026.spec.ts:32:1 › source ranking supports pinyin, rate bars, filter persistence, reset and mobile layout 
+
+    Error: 来源返回日期不匹配
+
+       at ..\..\src\player\pro\tianyuan.ts:231
+
+      229 |     };
+      230 |     if (q.heroId && value.heroId !== q.heroId) throw Error('来源英雄身份不匹配');
+    > 231 |     if (value.queryDate && value.queryDate !== q.date) throw Error('来源返回日期不匹配');
+          |                                                              ^
+      232 |     if (
+      233 |       value.tiers &&
+      234 |       (value.tiers.some((r) => r.date !== q.date) ||
+        at parseTianyuan (D:\学习相关\传智杯\AI创新应用挑战赛\src\player\pro\tianyuan.ts:231:62)
+        at D:\学习相关\传智杯\AI创新应用挑战赛\tests\player\final-v026.spec.ts:13:245
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  locator('.tianyuan-live .tier-portrait')
+    Expected: 1
+    Received: 0
+
+    Call log:
+      - Expect "toHaveCount" locator('.tianyuan-live .tier-portrait') with timeout 5000ms
+      - waiting for locator('.tianyuan-live .tier-portrait')
+        3 × locator resolved to 0 elements
+          - unexpected value "0"
+      - Test ended.
+
+
+      33 |  await page.goto('/#/tier');
+      34 |  const search=page.getByLabel('联网英雄搜索');await search.fill('zhaohuaizhen');
+    > 35 |  const cards=page.locator('.tianyuan-live .tier-portrait');await expect(cards).toHaveCount(1);await expect(cards).toContainText('赵怀真');
+         |                                                                                ^
+      36 |  await page.getByRole('button',{name:'查看完整数据表',exact:true}).click();
+      37 |  await expect(page.locator('.roster-table .portrait img')).toHaveCount(1);
+      38 |  await expect(page.getByRole('meter',{name:'胜率',exact:true})).toHaveCount(1);
+        at D:\学习相关\传智杯\AI创新应用挑战赛\tests\player\final-v026.spec.ts:35:80
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\final-v026-source-ranking--e454d-nce-reset-and-mobile-layout\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\final-v026-source-ranking--e454d-nce-reset-and-mobile-layout\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\final-v026-source-ranking--e454d-nce-reset-and-mobile-layout\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\final-v026-source-ranking--e454d-nce-reset-and-mobile-layout\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    tests\player\final-v026.spec.ts:16:1 › rebrand and direct hero navigation survive reload and browser back without changing saved pool 
+    tests\player\final-v026.spec.ts:32:1 › source ranking supports pinyin, rate bars, filter persistence, reset and mobile layout 
+  1 passed (19.5s)

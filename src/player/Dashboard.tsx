@@ -46,13 +46,13 @@ export default function Dashboard({
 }) {
   const focus = matches.find((m) => !m.done);
   const featured = ['李白', '公孙离', '不知火舞', '孙尚香'].map(heroByName).filter(Boolean);
-  const main = heroByName('李白');
+  const main = heroByName('赵怀真');
   return (
     <>
       <div className="home-heading">
         <div>
           <p className="eyebrow">GOOD GAME STARTS BEFORE THE GAME</p>
-          <h1>下一局，从这里开始。</h1>
+          <h1>心有准备，选择自在。</h1>
         </div>
         <span className="today">
           <i />
@@ -93,7 +93,7 @@ export default function Dashboard({
               </button>
             </div>
           </div>
-          <span className="banner-credit">李白 · 青莲剑仙 / 官方英雄立绘</span>
+          <span className="banner-credit">赵怀真 · 自在之心 / 官方英雄立绘</span>
         </section>
         <section className="focus-card">
           <div className="section-title">
@@ -291,7 +291,7 @@ export default function Dashboard({
         </div>
       </section>
       <footer className="page-footer">
-        <span>开局 NEXT · 把下一局，打得更明白。</span>
+        <span>自在弈境 · 查英雄数据，做阵容决策。</span>
         <span>
           非官方玩家工具 · 官方资料快照 {new Date(dataMeta.fetchedAt).toLocaleDateString('zh-CN')}
         </span>

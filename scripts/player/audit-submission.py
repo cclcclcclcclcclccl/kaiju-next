@@ -1,5 +1,5 @@
 """Scan the actual Git history before publishing. Reports paths, never matched secrets."""
-import subprocess, re, json
+import subprocess, re, json, sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
 GIT=['git','-c','safe.directory='+ROOT.as_posix()]
@@ -23,7 +23,7 @@ for sha,name in objects.items():
             if re.search(pattern,data):findings.append({'path':name,'blob':sha,'pattern':i})
 process.stdin.close();process.wait()
 report={'historyObjects':len(objects),'largeFiles':large,'forbiddenPaths':sorted(set(forbidden)),'credentialPatternFindings':findings,'scope':'Tracked reachable Git history, heuristic credential patterns; no secret values printed.'}
-out=ROOT/'evidence/submission-v0251';out.mkdir(parents=True,exist_ok=True)
+out=ROOT/(sys.argv[1] if len(sys.argv)>1 else 'evidence/final-v026');out.mkdir(parents=True,exist_ok=True)
 (out/'history-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf8')
 print(json.dumps(report,ensure_ascii=False))
 if forbidden or findings or large:raise SystemExit(1)

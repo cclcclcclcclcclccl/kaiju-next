@@ -392,7 +392,7 @@ export default function Replay() {
           disabled={!events.some((e) => e.frame) || assessment === '未核对' || !correction.trim()}
           onClick={() =>
             download(
-              '开局-待人工审核的复盘样本.json',
+              '自在弈境-待人工审核的复盘样本.json',
               JSON.stringify(
                 {
                   schema: 'kaiju-review-evaluation-v1',
@@ -703,7 +703,7 @@ export default function Replay() {
           disabled={!events.length}
           onClick={() =>
             download(
-              '开局-证据复盘.json',
+              '自在弈境-证据复盘.json',
               JSON.stringify(
                 {
                   title,

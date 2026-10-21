@@ -23,7 +23,7 @@ export default function BackupCenter({ onRestored }: { onRestored: () => void })
     try {
       const value = await api<PersonalBackup>(checkpoint ? '/backup/checkpoint' : '/backup');
       download(
-        checkpoint ? '开局-恢复前备份.json' : '开局-完整个人备份.json',
+        checkpoint ? '自在弈境-恢复前备份.json' : '自在弈境-完整个人备份.json',
         JSON.stringify(value),
       );
       setMessage('备份已生成，请妥善保存下载文件。');

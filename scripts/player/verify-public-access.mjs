@@ -1,72 +1,119 @@
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
-import {randomUUID} from 'node:crypto';
-import {chromium} from 'playwright';
-import {expect} from '@playwright/test';
-const dir=process.env.PUBLIC_VERIFY_DIR ?? 'evidence/public-access-v025';
-await fs.mkdir(dir,{recursive:true});
-const {origin}=JSON.parse(await fs.readFile('data/public-site/config.json','utf8'));
-const browser=await chromium.launch({channel:'msedge'});
-const errors=[],responses=[];
-const before=JSON.parse(await fs.readFile('evidence/public-access-v025/private-before.json','utf8'));
-const privateGet=async p=>(await fetch('http://127.0.0.1:4318/api/'+p)).json();
+import { randomUUID } from 'node:crypto';
+import { chromium } from 'playwright';
+import { expect } from '@playwright/test';
+const dir = process.env.PUBLIC_VERIFY_DIR ?? 'evidence/public-access-v025';
+await fs.mkdir(dir, { recursive: true });
+const { origin } = JSON.parse(await fs.readFile('data/public-site/config.json', 'utf8'));
+const browser = await chromium.launch({ channel: 'msedge' });
+const errors = [],
+  responses = [];
+const before = JSON.parse(
+  await fs.readFile('evidence/public-access-v025/private-before.json', 'utf8'),
+);
+const privateGet = async (p) => (await fetch('http://127.0.0.1:4318/api/' + p)).json();
 try {
- const a=await browser.newContext({viewport:{width:1440,height:1000}});
- const b=await browser.newContext({viewport:{width:390,height:844}});
- const page=await a.newPage(),phone=await b.newPage();
- for(const p of [page,phone]){p.on('pageerror',e=>errors.push(e.message));p.setDefaultTimeout(45000);}
- await page.goto(origin,{waitUntil:'domcontentloaded',timeout:60000});
- await expect(page.getByRole('button',{name:'注册 / 登录与好友'})).toBeVisible();
- const api=async(p,path,body)=>p.evaluate(async({path,body})=>{
-  const r=await fetch('/api/'+path,{method:body===undefined?'GET':'POST',headers:{'Content-Type':'application/json',...(localStorage.getItem('kaiju-token')?{Authorization:'Bearer '+localStorage.getItem('kaiju-token')}:{})},...(body===undefined?{}:{body:JSON.stringify(body)})});
-  return {status:r.status,data:await r.json()};
- },{path,body});
- assert.equal((await api(page,'status')).data.publicSharing,true);
- assert.deepEqual((await api(page,'workspace')).data.pool,[]);
- assert.equal((await api(page,'pool',[])).status,403);
- await page.screenshot({path:dir+'/public-desktop.png',animations:'disabled'});
- async function register(p,label){
-  await p.getByRole('button',{name:'注册 / 登录与好友'}).click();
-  await p.getByLabel('用户名',{exact:true}).fill('qa_'+randomUUID().replaceAll('-','').slice(0,16));
-  await p.getByLabel('玩家昵称',{exact:true}).fill('公网验收'+label);
-  await p.getByLabel('开局账号密码',{exact:true}).fill(randomUUID()+randomUUID());
-  await p.getByRole('button',{name:'创建并登录',exact:true}).click();
-  await expect(p.getByRole('button',{name:'当前身份：公网验收'+label})).toBeVisible();
- }
- await register(page,'A');
- const search=page.getByRole('textbox',{name:'全局搜索英雄或功能'});
- await search.fill('赵怀真');await search.press('Enter');
- const dialog=page.getByRole('dialog');
- await expect(dialog).toBeVisible();
- await dialog.getByRole('button',{name:'加入我的英雄池',exact:true}).click();
- await expect(dialog.getByRole('button',{name:'已加入英雄池 · 移除'})).toBeVisible();
- const pool=(await api(page,'workspace')).data.pool;
- assert.ok(pool.some(h=>h.heroId===544));
- await page.reload();
- await expect(page.getByRole('button',{name:'当前身份：公网验收A'})).toBeVisible();
- assert.deepEqual((await api(page,'workspace')).data.pool,pool);
- assert.equal((await api(page,'pro/review-handoff',{})).status,403);
- await phone.goto(origin,{waitUntil:'domcontentloaded',timeout:60000});
- await expect(phone.getByRole('button',{name:'注册 / 登录与好友'})).toBeVisible();
- await register(phone,'B');
- assert.deepEqual((await api(phone,'workspace')).data.pool,[]);
- const profile=(await api(page,'pro')).data.profile;
- assert.equal((await api(page,'pro/profile',{...profile,sharePool:false})).status,200);
- const friendCode=(await api(phone,'social')).data.user.code;
- assert.equal((await api(page,'social/request',{code:friendCode})).status,200);
- const pending=(await api(phone,'social')).data.friends.find(f=>f.incoming);
- assert.ok(pending);
- assert.equal((await api(phone,'social/respond',{id:pending.id,accept:true})).status,200);
- assert.equal((await api(phone,'social')).data.friends[0].shared,false);
- assert.deepEqual((await api(phone,'social')).data.friends[0].pool,[]);
- assert.equal((await api(page,'pro/profile',{...profile,sharePool:true})).status,200);
- assert.ok((await api(phone,'social')).data.friends[0].pool.some(h=>h.heroId===544));
- assert.equal((await api(page,'pro/profile',{...profile,sharePool:false})).status,200);
- assert.deepEqual((await api(phone,'social')).data.friends[0].pool,[]);
- assert.ok(await phone.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
- await phone.screenshot({path:dir+'/public-mobile.png',animations:'disabled'});
- assert.deepEqual({workspace:await privateGet('workspace'),pro:await privateGet('pro')},before);
- assert.deepEqual(errors,[]);
- const result={at:new Date().toISOString(),origin,version:(await api(page,'status')).data.version,checks:['public HTTPS page and API','anonymous read and write rejection','browser registration','pool save and reload','two independent accounts','friend acceptance and opt-in sharing revocation','local handoff rejection','mobile no overflow','owner data unchanged'],errors,limitation:'Verified from this machine over the public HTTPS route, not a classmate mobile carrier. Temporary tunnel requires the host computer and processes online.'};
- await fs.writeFile(dir+'/verification.json',JSON.stringify(result,null,2));console.log(result);
-}finally{await browser.close();}
+  const a = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
+  const b = await browser.newContext({ viewport: { width: 390, height: 844 } });
+  const page = await a.newPage(),
+    phone = await b.newPage();
+  for (const p of [page, phone]) {
+    p.on('pageerror', (e) => errors.push(e.message));
+    p.setDefaultTimeout(45000);
+  }
+  await page.goto(origin, { waitUntil: 'domcontentloaded', timeout: 60000 });
+  await expect(page.getByRole('button', { name: '注册 / 登录与好友' })).toBeVisible();
+  const api = async (p, path, body) =>
+    p.evaluate(
+      async ({ path, body }) => {
+        const r = await fetch('/api/' + path, {
+          method: body === undefined ? 'GET' : 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            ...(localStorage.getItem('kaiju-token')
+              ? { Authorization: 'Bearer ' + localStorage.getItem('kaiju-token') }
+              : {}),
+          },
+          ...(body === undefined ? {} : { body: JSON.stringify(body) }),
+        });
+        return { status: r.status, data: await r.json() };
+      },
+      { path, body },
+    );
+  assert.equal((await api(page, 'status')).data.publicSharing, true);
+  assert.deepEqual((await api(page, 'workspace')).data.pool, []);
+  assert.equal((await api(page, 'pool', [])).status, 403);
+  await page.screenshot({ path: dir + '/public-desktop.png', animations: 'disabled' });
+  async function register(p, label) {
+    await p.getByRole('button', { name: '注册 / 登录与好友' }).click();
+    await p
+      .getByLabel('用户名', { exact: true })
+      .fill('qa_' + randomUUID().replaceAll('-', '').slice(0, 16));
+    await p.getByLabel('玩家昵称', { exact: true }).fill('公网验收' + label);
+    await p.getByLabel('自在弈境账号密码', { exact: true }).fill(randomUUID() + randomUUID());
+    await p.getByRole('button', { name: '创建并登录', exact: true }).click();
+    await expect(p.getByRole('button', { name: '当前身份：公网验收' + label })).toBeVisible();
+  }
+  await register(page, 'A');
+  const search = page.getByRole('textbox', { name: '全局搜索英雄或功能' });
+  await search.fill('赵怀真');
+  await search.press('Enter');
+  const dialog = page.getByRole('dialog');
+  await expect(dialog).toBeVisible();
+  await dialog.getByRole('button', { name: '加入我的英雄池', exact: true }).click();
+  await expect(dialog.getByRole('button', { name: '已加入英雄池 · 移除' })).toBeVisible();
+  const pool = (await api(page, 'workspace')).data.pool;
+  assert.ok(pool.some((h) => h.heroId === 544));
+  await page.reload();
+  await expect(page.getByRole('button', { name: '当前身份：公网验收A' })).toBeVisible();
+  assert.deepEqual((await api(page, 'workspace')).data.pool, pool);
+  assert.equal((await api(page, 'pro/review-handoff', {})).status, 403);
+  await phone.goto(origin, { waitUntil: 'domcontentloaded', timeout: 60000 });
+  await expect(phone.getByRole('button', { name: '注册 / 登录与好友' })).toBeVisible();
+  await register(phone, 'B');
+  assert.deepEqual((await api(phone, 'workspace')).data.pool, []);
+  const profile = (await api(page, 'pro')).data.profile;
+  assert.equal((await api(page, 'pro/profile', { ...profile, sharePool: false })).status, 200);
+  const friendCode = (await api(phone, 'social')).data.user.code;
+  assert.equal((await api(page, 'social/request', { code: friendCode })).status, 200);
+  const pending = (await api(phone, 'social')).data.friends.find((f) => f.incoming);
+  assert.ok(pending);
+  assert.equal((await api(phone, 'social/respond', { id: pending.id, accept: true })).status, 200);
+  assert.equal((await api(phone, 'social')).data.friends[0].shared, false);
+  assert.deepEqual((await api(phone, 'social')).data.friends[0].pool, []);
+  assert.equal((await api(page, 'pro/profile', { ...profile, sharePool: true })).status, 200);
+  assert.ok((await api(phone, 'social')).data.friends[0].pool.some((h) => h.heroId === 544));
+  assert.equal((await api(page, 'pro/profile', { ...profile, sharePool: false })).status, 200);
+  assert.deepEqual((await api(phone, 'social')).data.friends[0].pool, []);
+  assert.ok(await phone.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+  await phone.screenshot({ path: dir + '/public-mobile.png', animations: 'disabled' });
+  assert.deepEqual(
+    { workspace: await privateGet('workspace'), pro: await privateGet('pro') },
+    before,
+  );
+  assert.deepEqual(errors, []);
+  const result = {
+    at: new Date().toISOString(),
+    origin,
+    version: (await api(page, 'status')).data.version,
+    checks: [
+      'public HTTPS page and API',
+      'anonymous read and write rejection',
+      'browser registration',
+      'pool save and reload',
+      'two independent accounts',
+      'friend acceptance and opt-in sharing revocation',
+      'local handoff rejection',
+      'mobile no overflow',
+      'owner data unchanged',
+    ],
+    errors,
+    limitation:
+      'Verified from this machine over the public HTTPS route, not a classmate mobile carrier. Temporary tunnel requires the host computer and processes online.',
+  };
+  await fs.writeFile(dir + '/verification.json', JSON.stringify(result, null, 2));
+  console.log(result);
+} finally {
+  await browser.close();
+}

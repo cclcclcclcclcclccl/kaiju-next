@@ -181,7 +181,7 @@ test('AI feedback displays valid output and discards a response for an outdated 
   await page.route('**/api/status', (route) =>
     route.fulfill({
       json: {
-        product: '开局 NEXT',
+        product: '自在弈境',
         version: '0.3.0',
         heroCount: heroes.length,
         modelConfigured: true,

@@ -30,7 +30,10 @@ async function status() {
     const response = await fetch(url + '/api/status', { signal: AbortSignal.timeout(1500) });
     if (!response.ok) return 'occupied';
     const result = await response.json();
-    return result.product === '开局 NEXT' ? result : 'occupied';
+    return result.productId === 'kaiju-player-companion' ||
+      ['自在弈境', '开局 NEXT'].includes(result.product)
+      ? result
+      : 'occupied';
   } catch {
     return undefined;
   }

@@ -175,7 +175,7 @@ export default function HeroCompare({ pool, onOpen }: { pool: Pool; onOpen: (h: 
                   className="btn secondary"
                   onClick={() =>
                     download(
-                      '开局-英雄对比与出处.json',
+                      '自在弈境-英雄对比与出处.json',
                       JSON.stringify(
                         { names, heroIds: ids, metrics: compareMetrics, rows, source: packet },
                         null,

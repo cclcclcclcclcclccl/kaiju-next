@@ -4,7 +4,7 @@ import { Copy } from 'lucide-react';
 export default function ShareLink() {
   const [message, setMessage] = useState('');
   const [fallback, setFallback] = useState(false);
-  const address = location.origin;
+  const address = location.origin + location.pathname + location.hash;
   return (
     <span className="share-link">
       <button

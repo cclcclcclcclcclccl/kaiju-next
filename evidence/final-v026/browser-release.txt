@@ -1,0 +1,12 @@
+[WebServer] (node:61872) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:49296) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\player\final-v026.spec.ts:40:1 › rebrand and direct hero navigation survive reload and browser back without changing saved pool (3.3s)
+  ok 2 tests\player\final-v026.spec.ts:67:1 › source ranking supports pinyin, rate bars, filter persistence, reset and mobile layout (6.7s)
+  ok 3 tests\player\final-v026.spec.ts:103:1 › tool link restores selected tool and navigation remains usable on source failure (2.2s)
+
+  3 passed (16.5s)

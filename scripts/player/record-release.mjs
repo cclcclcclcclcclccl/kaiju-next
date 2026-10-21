@@ -3,8 +3,8 @@ import { mkdirSync, writeFileSync, readdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { spawn } from 'node:child_process';
-const folder = resolve('submission/release-v0251/video');
-const base = JSON.parse(readFileSync('data/public-site/config.json', 'utf8')).origin;
+const folder = resolve('submission/release-v026/video');
+const base = process.env.KAIJU_VIDEO_BASE || 'http://127.0.0.1:4322';
 mkdirSync(folder, { recursive: true });
 const browser = await chromium.launch({
   channel: process.platform === 'win32' ? 'msedge' : undefined,
@@ -63,8 +63,8 @@ const nav = async (name) => page.locator('nav').getByRole('button', { name, exac
 try {
   await page.goto(base);
   await scene(
-    '开局 NEXT｜传智杯 AI创新应用挑战赛',
-    '蔡晨霖 · 西安交通大学人工智能2501｜v0.25.1 公网体验实录，资料保留日期与出处。',
+    '自在弈境｜传智杯 AI创新应用挑战赛',
+    '蔡晨霖 · 西安交通大学人工智能2501｜v0.26.0 本地实机演示，资料保留日期与出处。',
     25,
     async () => {},
   );
@@ -94,6 +94,8 @@ try {
       await page.keyboard.press('Escape');
       await nav('分段梯度');
       await page.locator('.tier-portrait').first().waitFor({ timeout: 60000 });
+      await page.getByLabel('联网英雄搜索').fill('');
+      await page.locator('.tier-board').scrollIntoViewIfNeeded();
     },
   );
   await scene(
@@ -136,17 +138,17 @@ try {
     [
       '01-persistence',
       '07 真实 AI 协作：保存问题',
-      '原始历史记录回看：用户发现赵怀真不见了 → AI定位访客身份与保存冲突 → 修复与验证。',
+      '原始历史记录回看（当时产品旧名保留）：用户发现赵怀真不见了 → AI定位访客身份与保存冲突 → 修复与验证。',
     ],
     [
       '02-ranking',
       '08 真实 AI 协作：纠正错误梯度',
-      '原始历史记录回看：用户否定不合理T档 → 停用未校准默认算法 → 接入来源梯度与普通图鉴入口。',
+      '原始历史记录回看（当时产品旧名保留）：用户否定不合理T档 → 停用未校准默认算法 → 接入来源梯度与普通图鉴入口。',
     ],
     [
       '03-skins',
       '09 真实 AI 协作：图标与使用率',
-      '原始历史记录回看：用户指出入口缺失 → 找到被丢弃的图片字段 → 修复、回归测试和真实页面核对。',
+      '原始历史记录回看（当时产品旧名保留）：用户指出入口缺失 → 找到被丢弃的图片字段 → 修复、回归测试和真实页面核对。',
     ],
   ])
     await scene(title, subtitle, 45, () =>
@@ -154,7 +156,7 @@ try {
     );
   await scene(
     '提交说明与能力边界',
-    '真实历史协作回看共 2 分 15 秒；公网为临时体验通道，支持独立账号。未宣称模型训练或 KPL 级效果。',
+    '真实历史协作回看共 2 分 15 秒，旧名保留原文；软件支持本地复现，未宣称模型训练或 KPL 级效果。',
     20,
     () => page.goto(base),
   );
@@ -162,7 +164,7 @@ try {
   const input = await video.path(),
     output = resolve(
       folder,
-      process.env.KAIJU_VIDEO_SMOKE === '1' ? 'smoke.mp4' : '开局NEXT-演示与真实协作记录.mp4',
+      process.env.KAIJU_VIDEO_SMOKE === '1' ? 'smoke.mp4' : '自在弈境-演示与真实协作记录.mp4',
     );
   await new Promise((accept, reject) => {
     const child = spawn(

@@ -116,7 +116,7 @@ export default function AllHeroRanks({
         <span className="outline-tag">完整目录 {heroes.length} 位</span>
       </div>
       <p className="data-caption">
-        点击英雄打开同一份英雄图鉴。没有统计的英雄仍在总表里；官方热度与开局强度分开列出，缺失数据不排成弱势。
+        点击英雄打开同一份英雄图鉴。没有统计的英雄仍在总表里；官方热度与弈境强度分开列出，缺失数据不排成弱势。
       </p>
       <div className="rank-display-controls">
         <div className="resource-tabs" role="group" aria-label="梯度显示方式">
@@ -146,7 +146,7 @@ export default function AllHeroRanks({
             <option value="heat">王者营地官方热度（部分覆盖）</option>
             <option value="source">来源原始统计（无需样本量即可查看）</option>
             <option value="environment">环境梯度 v1（参考）</option>
-            <option value="strength">开局综合梯度（合格统计快照）</option>
+            <option value="strength">弈境综合梯度（合格统计快照）</option>
           </select>
         </label>
       </div>
@@ -319,7 +319,7 @@ export default function AllHeroRanks({
                   <tr>
                     <th>英雄 / 图鉴</th>
                     <th>统计分路</th>
-                    <th>开局梯度</th>
+                    <th>弈境梯度</th>
                     <th>官方热度</th>
                     <th>胜率</th>
                     <th>登场率</th>

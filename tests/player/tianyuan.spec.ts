@@ -63,7 +63,7 @@ test('public four-segment board preserves forms, source tiers, hero metrics and 
   await panel.getByRole('button', { name: '查看赵云公开详情', exact: true }).click();
   await expect(page.getByLabel('英雄来源梯度')).toContainText('天元综合梯度');
   await expect(page.getByLabel('英雄分段三率')).toContainText('胜率');
-  await expect(page.getByLabel('开局强度评分解释')).toHaveCount(0);
+  await expect(page.getByLabel('弈境强度评分解释')).toHaveCount(0);
   await page.keyboard.press('Escape');
   await page.getByLabel('联网英雄搜索').fill('');
   await page.getByRole('button', { name: '天元来源梯度', exact: true }).click();

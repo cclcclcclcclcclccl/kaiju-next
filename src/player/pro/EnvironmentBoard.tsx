@@ -108,7 +108,7 @@ export default function EnvironmentBoard({
         className="text-btn"
         onClick={() =>
           download(
-            '开局-133位英雄总体观察-2026-10-12.json',
+            '自在弈境-133位英雄总体观察-2026-10-12.json',
             JSON.stringify(aggregateObservation, null, 2),
           )
         }

@@ -1,0 +1,130 @@
+[WebServer] (node:37536) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 14 tests using 1 worker
+
+(node:56720) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\player\finalcopy-connection.spec.ts:2:1 › service interruption is explicit and recovery keeps the current page and typed input (1.7s)
+  ok  2 tests\player\finalcopy-flex-bp.spec.ts:5:1 › ordinary BP flow retains flex picks, accepts cross-lane reply, reassigns and persists manual swaps (5.4s)
+  ok  3 tests\player\finalcopy-product-refinements.spec.ts:32:1 › search finds tools and heroes with keyboard and works on mobile (2.1s)
+  x   4 tests\player\finalcopy-product-refinements.spec.ts:55:1 › hero comparison uses one source scope, exports evidence, does not synthesize BP and clears old results on failure (30.4s)
+(node:53708) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  5 tests\player\finalcopy-product-refinements.spec.ts:107:1 › full stats distinguishes pick and ban instead of adding incompatible rates (1.4s)
+  x   6 tests\player\finalcopy-product-refinements.spec.ts:119:1 › complete backup download and restore round-trip the server BP with explicit counts (7.6s)
+(node:46360) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  7 tests\player\finalcopy-profile-recovery.spec.ts:5:1 › stale profile edits preserve both server record and local draft until explicit reload (3.9s)
+  ok  8 tests\player\finalcopy-profile-recovery.spec.ts:35:1 › exported pool restores after preview, preserves existing mastery, and rejects malformed backups (2.3s)
+  ok  9 tests\player\finalcopy-public-board-repair.spec.ts:41:1 › atlas entry shows Lianpo published tier and selected segment metrics without manual import (3.7s)
+  ok 10 tests\player\finalcopy-public-board-repair.spec.ts:71:1 › default source board matches every published label and score; metric sorting actually changes order (2.8s)
+  ok 11 tests\player\finalcopy-public-board-repair.spec.ts:117:1 › published tiers remain available when the separate statistics source fails (2.2s)
+  ok 12 tests\player\finalcopy-visual-bp.spec.ts:42:1 › humans complete staged BP, refresh, undo final move, and apply only explicitly (9.5s)
+  ok 13 tests\player\finalcopy-visual-bp.spec.ts:91:1 › real AI worker advances its side and undo pauses auto play; both side choices work (11.0s)
+  ok 14 tests\player\finalcopy-visual-bp.spec.ts:139:1 › real fixture displays skill, rune, summoner and counter icons, slot stats and six-item builds (5.6s)
+
+
+  1) tests\player\finalcopy-product-refinements.spec.ts:55:1 › hero comparison uses one source scope, exports evidence, does not synthesize BP and clears old results on failure 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.selectOption: Test timeout of 30000ms exceeded.
+    Browser logs:
+
+    <launching> C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\Users\34711\AppData\Local\Temp\playwright_chromiumdev_profile-t2PxO5 --remote-debugging-pipe --no-startup-window
+    <launched> pid=34220
+    [pid=34220][err] [34220:49524:1021/193349.825:ERROR:chrome\browser\importer\edge_china_browsers\edge_qqbrowser_importer_utils_win.cc:165] QQBrowser user data path not found.
+    [pid=34220][err] [34220:49524:1021/193351.520:ERROR:chrome\browser\importer\edge_china_browsers\edge_qqbrowser_importer_utils_win.cc:165] QQBrowser user data path not found.
+    [pid=34220][err] [34220:49524:1021/193356.996:ERROR:chrome\browser\importer\edge_china_browsers\edge_qqbrowser_importer_utils_win.cc:165] QQBrowser user data path not found.
+    [pid=34220][err] [34220:49524:1021/193359.157:ERROR:chrome\browser\importer\edge_china_browsers\edge_qqbrowser_importer_utils_win.cc:165] QQBrowser user data path not found.
+    [pid=34220] <gracefully close start>
+    Call log:
+      - waiting for locator('.hero-compare').getByRole('combobox', { name: '加入对比' })
+        - locator resolved to <select>…</select>
+      - attempting select option action
+        2 × waiting for element to be visible and enabled
+          - did not find some options
+        - retrying select option action
+        - waiting 20ms
+        2 × waiting for element to be visible and enabled
+          - did not find some options
+        - retrying select option action
+          - waiting 100ms
+        57 × waiting for element to be visible and enabled
+           - did not find some options
+         - retrying select option action
+           - waiting 500ms
+        - waiting for element to be visible and enabled
+
+
+      68 |       .first()
+      69 |       .click();
+    > 70 |   await panel.getByRole('combobox', { name: '加入对比' }).selectOption('190');
+         |                                                       ^
+      71 |   await panel.getByRole('combobox', { name: '加入对比' }).selectOption('544');
+      72 |   const table = panel.getByRole('table', { name: '英雄横向对比表' });
+      73 |   await expect(table).toContainText('诸葛亮');
+        at D:\学习相关\传智杯\AI创新应用挑战赛\tests\player\finalcopy-product-refinements.spec.ts:70:55
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\finalcopy-product-refineme-1dcf0-ears-old-results-on-failure\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\finalcopy-product-refineme-1dcf0-ears-old-results-on-failure\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\finalcopy-product-refineme-1dcf0-ears-old-results-on-failure\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\finalcopy-product-refineme-1dcf0-ears-old-results-on-failure\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) tests\player\finalcopy-product-refinements.spec.ts:119:1 › complete backup download and restore round-trip the server BP with explicit counts 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: '下一局，从这里开始。' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: '下一局，从这里开始。' }) with timeout 5000ms
+      - waiting for getByRole('heading', { name: '下一局，从这里开始。' })
+        - waiting for navigation to finish...
+        - navigated to "http://127.0.0.1:4319/"
+
+
+      168 |     .check();
+      169 |   await page.getByRole('button', { name: '确认恢复完整备份', exact: true }).click();
+    > 170 |   await expect(page.getByRole('heading', { name: '下一局，从这里开始。' })).toBeVisible();
+          |                                                                   ^
+      171 |   expect((await (await request.get('/api/pro/bp-series')).json()).series).toEqual(series);
+      172 | });
+      173 |
+        at D:\学习相关\传智杯\AI创新应用挑战赛\tests\player\finalcopy-product-refinements.spec.ts:170:67
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\finalcopy-product-refineme-ae87f-ver-BP-with-explicit-counts\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\finalcopy-product-refineme-ae87f-ver-BP-with-explicit-counts\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\finalcopy-product-refineme-ae87f-ver-BP-with-explicit-counts\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\finalcopy-product-refineme-ae87f-ver-BP-with-explicit-counts\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\finalcopy-product-refineme-ae87f-ver-BP-with-explicit-counts\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    tests\player\finalcopy-product-refinements.spec.ts:55:1 › hero comparison uses one source scope, exports evidence, does not synthesize BP and clears old results on failure 
+    tests\player\finalcopy-product-refinements.spec.ts:119:1 › complete backup download and restore round-trip the server BP with explicit counts 
+  12 passed (1.7m)

@@ -103,7 +103,7 @@ export default function Arena() {
           <button
             className="btn secondary"
             onClick={() =>
-              download('开局-BP模拟-' + seed + '.json', JSON.stringify(result, null, 2))
+              download('自在弈境-BP模拟-' + seed + '.json', JSON.stringify(result, null, 2))
             }
           >
             导出模拟记录

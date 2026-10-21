@@ -334,7 +334,7 @@ export default function PublicMatchExplorer({
                 className="btn secondary"
                 onClick={() =>
                   download(
-                    '开局-真实对局-' + match + '.json',
+                    '自在弈境-真实对局-' + match + '.json',
                     JSON.stringify({ queryId: match, ...p }, null, 2),
                   )
                 }

@@ -261,7 +261,7 @@ export default function TableCapture({
               disabled={busy}
               onClick={() =>
                 download(
-                  '开局-榜单识别核对记录.json',
+                  '自在弈境-榜单识别核对记录.json',
                   JSON.stringify(
                     {
                       capturedAt: new Date().toISOString(),

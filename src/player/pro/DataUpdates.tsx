@@ -49,7 +49,7 @@ export default function DataUpdates({ onUpdated }: { onUpdated: (revision: strin
       </p>
       <p>
         天元之弈：数据日 {aggregateObservation.dataDate}，{aggregateObservation.rows.length}{' '}
-        位英雄来自人工核对的历史页面批次，此批次不自动改写。新版“开局强度与全榜”直接读取公开接口，服务运行时每轮完成后60分钟检查四分段。检查时间不等于来源数据日。
+        位英雄来自人工核对的历史页面批次，此批次不自动改写。新版“弈境强度与全榜”直接读取公开接口，服务运行时每轮完成后60分钟检查四分段。检查时间不等于来源数据日。
       </p>
       {status?.persistenceError && <p role="alert">{status.persistenceError}</p>}
       <div className="table-scroll" tabIndex={0} role="region" aria-label="可横向滚动的更新状态表">

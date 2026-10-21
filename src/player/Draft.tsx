@@ -126,9 +126,9 @@ export default function DraftPage({
     if (!current) return;
     const h = current.hero;
     download(
-      '开局-' + h.name + '-备战卡.md',
+      '自在弈境-' + h.name + '-备战卡.md',
       [
-        '# 开局 NEXT · ' + h.name + '备战卡',
+        '# 自在弈境 · ' + h.name + '备战卡',
         '',
         '分路：' + draft.role,
         '我方：' +

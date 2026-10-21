@@ -109,7 +109,7 @@ export default function OfficialStats({
       </div>
       <p className="data-caption">
         {segment === '大众分段' ? '所有段位（官方原名）' : segment} · {role}。 官方 T
-        级表示使用热度；开局的强度梯度在下方单独计算。
+        级表示使用热度；弈境的强度梯度在下方单独计算。
         {segment === '顶端排位' && '官方说明：每日全网平均段位最高的前 10 万场对局。'}
       </p>
       {!supported && (
@@ -194,7 +194,7 @@ export default function OfficialStats({
               导出官方数据与来源
             </button>
             <span className="data-caption">
-              当前记录不直接生成开局梯度、BP 总率或进入 BP 版本评分。
+              当前记录不直接生成弈境梯度、BP 总率或进入 BP 版本评分。
             </span>
           </div>
         </>
@@ -238,7 +238,7 @@ export function OfficialHeroStats({
             核对官方分享榜 ↗
           </a>
           <p className="data-caption">
-            官方热度与开局强度梯度含义不同；未公布的样本与口径保持未知。
+            官方热度与弈境强度梯度含义不同；未公布的样本与口径保持未知。
           </p>
         </>
       )}

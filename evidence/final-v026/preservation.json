@@ -1,0 +1,104 @@
+{
+  "checkedAt": "2026-10-21T11:45:32.559Z",
+  "databases": [
+    {
+      "database": "data/kaiju.sqlite",
+      "tables": [
+        {
+          "table": "settings",
+          "rows": 2,
+          "unchanged": true
+        },
+        {
+          "table": "matches",
+          "rows": 0,
+          "unchanged": true
+        },
+        {
+          "table": "plans",
+          "rows": 0,
+          "unchanged": true
+        },
+        {
+          "table": "accounts",
+          "rows": 1,
+          "unchanged": true
+        },
+        {
+          "table": "sessions",
+          "rows": 1,
+          "unchanged": true
+        },
+        {
+          "table": "friendships",
+          "rows": 0,
+          "unchanged": true
+        },
+        {
+          "table": "pool_history",
+          "rows": 0,
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "database": "data/public-site/kaiju.sqlite",
+      "tables": [
+        {
+          "table": "settings",
+          "rows": 4,
+          "unchanged": true
+        },
+        {
+          "table": "matches",
+          "rows": 0,
+          "unchanged": true
+        },
+        {
+          "table": "plans",
+          "rows": 0,
+          "unchanged": true
+        },
+        {
+          "table": "accounts",
+          "rows": 6,
+          "unchanged": true
+        },
+        {
+          "table": "sessions",
+          "rows": 6,
+          "unchanged": true
+        },
+        {
+          "table": "friendships",
+          "rows": 1,
+          "unchanged": true
+        },
+        {
+          "table": "pool_history",
+          "rows": 3,
+          "unchanged": true
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "url": "http://127.0.0.1:4318",
+      "status": 200,
+      "product": "自在弈境",
+      "version": "0.26.0",
+      "heroCount": 133,
+      "publicSharing": false
+    },
+    {
+      "url": "https://downtown-relates-indexes-trustees.trycloudflare.com",
+      "status": 200,
+      "product": "自在弈境",
+      "version": "0.26.0",
+      "heroCount": 133,
+      "publicSharing": true
+    }
+  ],
+  "workspaceAndProUnchanged": true
+}

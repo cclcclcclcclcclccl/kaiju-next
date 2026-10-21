@@ -304,8 +304,8 @@ small {
   background: #d7b6780a;
 }
 .brand strong {
-  font-size: 26px;
-  letter-spacing: 2px;
+  font-size: 22px;
+  letter-spacing: 1px;
   font-weight: 650;
 }
 .brand strong > span {

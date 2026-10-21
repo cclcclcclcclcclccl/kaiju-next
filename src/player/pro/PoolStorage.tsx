@@ -140,7 +140,7 @@ export default function PoolStorage({
           onClick={() =>
             status &&
             download(
-              '开局-英雄池备份.json',
+              '自在弈境-英雄池备份.json',
               JSON.stringify(
                 {
                   format: 'kaiju-pool-backup-v1',

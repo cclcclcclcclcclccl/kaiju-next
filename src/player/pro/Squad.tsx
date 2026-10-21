@@ -252,9 +252,9 @@ export default function Squad({ pool, onLoad }: { pool: Pool; onLoad: (draft: Dr
                 className="btn secondary"
                 onClick={() =>
                   download(
-                    '开局-队伍分工.md',
+                    '自在弈境-队伍分工.md',
                     [
-                      '# 开局 NEXT · 队伍分工',
+                      '# 自在弈境 · 队伍分工',
                       '',
                       ...p.assignments.map(
                         (a) =>

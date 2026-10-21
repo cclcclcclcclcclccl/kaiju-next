@@ -136,7 +136,7 @@ export function HeroDetail({
       <HeroInsights hero={hero} context={statsContext} part="stats" />
       {note && (
         <section className="tactical-note">
-          <p className="eyebrow">开局战术笔记 · 定性建议</p>
+          <p className="eyebrow">弈境战术笔记 · 定性建议</p>
           <div className="chips">
             {note.traits.map((t) => (
               <span key={t}>{traitNames[t]}</span>

@@ -13,7 +13,7 @@
 3. 将 `kaiju.env.example` 复制为 `/etc/kaiju.env`（root 所有，权限 600），修改 `KAIJU_PUBLIC_ORIGIN` 为真实 HTTPS 来源地址，不带末尾 `/`。本服务只监听回环地址，Caddy 在同一台主机转发。`KAIJU_TRUSTED_PROXY=caddy` 与本配置的 `X-Forwarded-For` 覆盖规则配套使用，不要在未经核对的远端代理拓扑中照搬。
 4. 将 `kaiju.service`、`kaiju-backup.service`、`kaiju-backup.timer` 放入 `/etc/systemd/system/`。运行 `systemctl daemon-reload`、`systemctl enable --now kaiju`。systemd 创建 `/var/lib/kaiju`，存放独立数据库、缓存和备份。
 5. 将 Caddyfile 的 `play.example.com` 替换为相同域名，配置 DNS 后，运行 `caddy validate --config /etc/caddy/Caddyfile`，验证成功再重载 Caddy。它申请并续期 HTTPS 证书。
-6. 验证本机 `http://127.0.0.1:4320/api/status` 与外部 `https://你的域名/api/status`；产品应为“开局 NEXT”，`publicSharing` 为 true，`publicUrl` 与域名完全一致。确认注册、登录、保存和刷新通过后，再启用 `systemctl enable --now kaiju-backup.timer`。
+6. 验证本机 `http://127.0.0.1:4320/api/status` 与外部 `https://你的域名/api/status`；产品应为“自在弈境”，`publicSharing` 为 true，`publicUrl` 与域名完全一致。确认注册、登录、保存和刷新通过后，再启用 `systemctl enable --now kaiju-backup.timer`。
 
 站点内容包括 `public/` 中已有的公开素材和构建产物。不要通过反向代理暴露 `/var/lib/kaiju` 或项目源码目录。新部署未配置 OCR 时截图识别会显示未安装；未配置模型时不提供大模型分析。可另行安装 OCR，但应在目标 Linux 环境实际验证，不能认为 Windows 上能运行就等同于服务器也可用。
 

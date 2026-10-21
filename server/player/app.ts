@@ -208,8 +208,9 @@ export function createPlayerApp(
         );
       if (method === 'GET' && url.pathname === '/api/status')
         return send(200, {
-          product: '开局 NEXT',
-          version: '0.25.1',
+          product: '自在弈境',
+          productId: 'kaiju-player-companion',
+          version: '0.26.0',
           modelConfigured: Boolean(providerConfig()),
           publicSharing: Boolean(publicUrl),
           publicUrl: publicUrl?.origin,

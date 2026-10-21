@@ -184,7 +184,7 @@ test('two browser accounts become friends only after acceptance and can use shar
       await p.locator('nav').getByRole('button', { name: '好友与组队' }).click();
       await p.getByLabel('用户名', { exact: true }).fill('test_' + stamp + '_' + name);
       await p.getByLabel('玩家昵称', { exact: true }).fill('测试玩家' + name);
-      await p.getByLabel('开局账号密码', { exact: true }).fill('test-password-123');
+      await p.getByLabel('自在弈境账号密码', { exact: true }).fill('test-password-123');
       await p.getByRole('button', { name: '创建并登录' }).click();
       await expect(p.getByRole('heading', { name: '下一局，从这里开始。' })).toBeVisible();
     }

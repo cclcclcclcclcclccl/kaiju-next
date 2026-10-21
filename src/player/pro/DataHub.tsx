@@ -879,10 +879,12 @@ export default function DataHub({
   onOpen,
   draft,
   initialTab,
+  onTab,
 }: {
   onOpen: Open;
   draft: Draft;
   initialTab?: string;
+  onTab?: (tab: string) => void;
 }) {
   const [tab, setTab] = useState(initialTab ?? 'global');
   return (
@@ -910,7 +912,14 @@ export default function DataHub({
           ['activities', '活动动态'],
           ['power', '战力试算'],
         ].map(([v, n]) => (
-          <button key={v} className={tab === v ? 'active' : ''} onClick={() => setTab(v)}>
+          <button
+            key={v}
+            className={tab === v ? 'active' : ''}
+            onClick={() => {
+              setTab(v);
+              onTab?.(v);
+            }}
+          >
             {n}
           </button>
         ))}

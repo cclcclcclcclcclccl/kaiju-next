@@ -1,0 +1,13 @@
+[WebServer] (node:58868) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:46028) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\player\finalcopy-product-refinements.spec.ts:32:1 › search finds tools and heroes with keyboard and works on mobile (2.5s)
+  ok 2 tests\player\finalcopy-product-refinements.spec.ts:55:1 › hero comparison uses one source scope, exports evidence, does not synthesize BP and clears old results on failure (3.7s)
+  ok 3 tests\player\finalcopy-product-refinements.spec.ts:108:1 › full stats distinguishes pick and ban instead of adding incompatible rates (1.4s)
+  ok 4 tests\player\finalcopy-product-refinements.spec.ts:120:1 › complete backup download and restore round-trip the server BP with explicit counts (2.0s)
+
+  4 passed (13.7s)

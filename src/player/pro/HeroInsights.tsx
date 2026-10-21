@@ -65,7 +65,7 @@ export default function HeroInsights({
               <AggregateHeroStats heroId={hero.id} />
             ) : (
               <>
-                <h4>统计快照 · 开局梯度</h4>
+                <h4>统计快照 · 弈境梯度</h4>
                 <div className="metric-strip">
                   {[
                     ['梯度', stat?.tier ?? '待接入'],

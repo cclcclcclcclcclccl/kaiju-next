@@ -23,7 +23,7 @@ try {
   await page.getByRole('button', { name: '注册 / 登录与好友' }).click();
   await page.getByLabel('用户名', { exact: true }).fill('network_draft');
   await page.getByLabel('玩家昵称', { exact: true }).fill('断线输入验收');
-  await page.getByLabel('开局账号密码', { exact: true }).fill('test-only-not-submitted');
+  await page.getByLabel('自在弈境账号密码', { exact: true }).fill('test-only-not-submitted');
   // Fault injection affects this browser only; the real public service remains running.
   await page.route('**/api/status', (route) =>
     route.fulfill({ status: 503, contentType: 'text/html', body: '<html>Temporary outage</html>' }),

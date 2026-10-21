@@ -43,7 +43,7 @@ try {
   await page
     .getByRole('button', { name: '查看' + first.row.heroName + '公开详情', exact: true })
     .click();
-  const explanation = page.getByLabel('开局强度评分解释');
+  const explanation = page.getByLabel('弈境强度评分解释');
   await explanation.getByText(first.score.toFixed(2) + ' 分', { exact: false }).waitFor();
   await explanation.scrollIntoViewIfNeeded();
   await page.getByRole('dialog').screenshot({ path: dir + '/live-strength-explained.png' });

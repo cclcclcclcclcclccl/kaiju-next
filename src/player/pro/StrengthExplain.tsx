@@ -3,7 +3,7 @@ import { STRENGTH_VERSION } from './strength.ts';
 const signed = (n: number) => (n >= 0 ? '+' : '') + n.toFixed(2);
 export function StrengthExplanation({ item, role }: { item: StrengthRow; role: string }) {
   return (
-    <section className="strength-explanation" aria-label="开局强度评分解释">
+    <section className="strength-explanation" aria-label="弈境强度评分解释">
       <h4>
         {STRENGTH_VERSION} · {item.tier}{' '}
         {item.score === null ? '' : '· ' + item.score.toFixed(2) + ' 分'}

@@ -93,7 +93,7 @@ export function Modal({
       >
         <header>
           <div>
-            <p className="eyebrow">NEXT / YOUR PLAYBOOK</p>
+            <p className="eyebrow">自在弈境 / YOUR PLAYBOOK</p>
             <h2>{title}</h2>
           </div>
           <button className="icon-btn" onClick={onClose} aria-label="关闭窗口">

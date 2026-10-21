@@ -57,7 +57,7 @@ test('atlas entry shows Lianpo published tier and selected segment metrics witho
   await expect(page.getByLabel('英雄分段三率')).toContainText(source.winRate.toFixed(2) + '%');
   await expect(page.getByLabel('英雄统计分段', { exact: true })).toHaveValue('1');
   await expect(page.getByRole('dialog')).not.toContainText('待接入');
-  await expect(page.getByLabel('开局强度评分解释')).toHaveCount(0);
+  await expect(page.getByLabel('弈境强度评分解释')).toHaveCount(0);
   await page.setViewportSize({ width: 390, height: 844 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   expect(

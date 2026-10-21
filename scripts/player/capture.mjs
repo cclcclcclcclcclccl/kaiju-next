@@ -76,7 +76,7 @@ try {
   );
   await page.screenshot({ path: path + '/draft-mobile.png', fullPage: true });
   await page.getByRole('button', { name: '展开导航' }).click();
-  await page.getByRole('button', { name: '开局首页', exact: true }).click();
+  await page.getByRole('button', { name: '自在弈境首页', exact: true }).click();
   await page.getByRole('heading', { name: '下一局，从这里开始。' }).waitFor();
   await settleImages();
   await page.screenshot({ path: path + '/home-mobile.png', fullPage: true });

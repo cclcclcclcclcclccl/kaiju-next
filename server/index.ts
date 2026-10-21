@@ -14,7 +14,8 @@ const dataDir = resolve(process.env.PLAYER_DATA_DIR ?? 'data');
 const publicOrigin = process.env.KAIJU_PUBLIC_ORIGIN || process.env.RENDER_EXTERNAL_URL;
 const host = process.env.HOST ?? '127.0.0.1';
 if (!['127.0.0.1', '0.0.0.0'].includes(host)) throw Error('HOST must be 127.0.0.1 or 0.0.0.0');
-if (host === '0.0.0.0' && !publicOrigin) throw Error('外部监听必须配置 HTTPS 公网来源和独立数据目录');
+if (host === '0.0.0.0' && !publicOrigin)
+  throw Error('外部监听必须配置 HTTPS 公网来源和独立数据目录');
 if (publicOrigin && dataDir === resolve('data'))
   throw Error('公网服务必须使用独立 PLAYER_DATA_DIR，禁止公开本机个人数据库');
 mkdirSync(dataDir, { recursive: true });
@@ -47,7 +48,7 @@ const port = Number(process.env.PORT ?? 4318);
 let stopRefresh: (() => void) | undefined;
 let stopTianyuan: (() => void) | undefined;
 server.listen(port, host, () => {
-  console.log('开局 NEXT 已启动：http://' + host + ':' + port);
+  console.log('自在弈境 已启动：http://' + host + ':' + port);
   if (process.env.RANK_AUTO_REFRESH !== '0') {
     stopRefresh = scheduleRankRefresh(rankRefresh);
     stopTianyuan = scheduleTianyuan(tianyuan);

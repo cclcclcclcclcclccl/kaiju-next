@@ -389,7 +389,7 @@ export default function Journal({
             <button
               className="btn secondary"
               disabled={busy}
-              onClick={() => download('开局-手记草稿.json', JSON.stringify(entry, null, 2))}
+              onClick={() => download('自在弈境-手记草稿.json', JSON.stringify(entry, null, 2))}
             >
               导出当前手记草稿
             </button>

@@ -25,7 +25,7 @@ export default function SeriesEditor({
       const next = reviseSeriesGame(series, index, game, branch);
       // Retain the entire original, including downstream results, before replacing it.
       localStorage.setItem('kaiju.bp.series.before-edit.v1', JSON.stringify(series));
-      if (branch) download('开局-修改前完整系列赛.json', JSON.stringify(series, null, 2));
+      if (branch) download('自在弈境-修改前完整系列赛.json', JSON.stringify(series, null, 2));
       onApply(next);
     } catch (e) {
       setError((e as Error).message);

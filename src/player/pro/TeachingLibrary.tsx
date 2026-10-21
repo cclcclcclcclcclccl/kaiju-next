@@ -193,7 +193,7 @@ export default function TeachingLibrary({
                 className="text-btn"
                 onClick={() =>
                   download(
-                    '开局-' + (current?.name ?? '通用') + '-教学检查卡.json',
+                    '自在弈境-' + (current?.name ?? '通用') + '-教学检查卡.json',
                     JSON.stringify(packet, null, 2),
                     'application/json',
                   )
