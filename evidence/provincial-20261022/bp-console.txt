@@ -1,0 +1,26 @@
+S01 complete
+S02 complete
+S03 complete
+S04 complete
+S05 complete
+S06 complete
+S07 complete
+S08 complete
+S09 complete
+S10 complete
+S11 complete
+S12 complete
+S13 complete
+S14 complete
+S15 complete
+S16 complete
+S17 complete
+S18 complete
+S19 complete
+S20 complete
+S21 complete
+S22 complete
+S23 complete
+S24 complete
+S25 complete
+{"summary":[{"policy":"source-only","feasibleCases":24,"recommendations":24,"legalRecommendations":24,"assignedMemberRecommendations":8,"outsideRegisteredPool":6,"remainingFeasible":24,"medianMs":0.09,"p95Ms":0.27,"requestedDepthCompleted":0,"bounded":0,"exhaustedPool":[{"scenario":"S25","recommended":true,"error":null}]},{"policy":"pool-source","feasibleCases":24,"recommendations":24,"legalRecommendations":24,"assignedMemberRecommendations":8,"outsideRegisteredPool":0,"remainingFeasible":24,"medianMs":0.06,"p95Ms":0.3,"requestedDepthCompleted":0,"bounded":0,"exhaustedPool":[{"scenario":"S25","recommended":true,"error":null}]},{"policy":"pool-coach-1","feasibleCases":24,"recommendations":24,"legalRecommendations":24,"assignedMemberRecommendations":16,"outsideRegisteredPool":0,"remainingFeasible":24,"medianMs":0.87,"p95Ms":1.45,"requestedDepthCompleted":24,"bounded":0,"exhaustedPool":[{"scenario":"S25","recommended":false,"error":"构造中路选手在中路没有可用的已登记英雄。请补充档案、调整选手分工，或取消仅用已登记英雄池。"}]},{"policy":"pool-coach-3","feasibleCases":24,"recommendations":24,"legalRecommendations":24,"assignedMemberRecommendations":16,"outsideRegisteredPool":0,"remainingFeasible":24,"medianMs":24.32,"p95Ms":43.71,"requestedDepthCompleted":24,"bounded":0,"exhaustedPool":[{"scenario":"S25","recommended":false,"error":"构造中路选手在中路没有可用的已登记英雄。请补充档案、调整选手分工，或取消仅用已登记英雄池。"}]}],"depthChangedRecommendationCount":4}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-22T11:34:58.838Z",
+  "source": {
+    "file": "tests/fixtures/tianyuan/tier-20261014.json",
+    "queryDate": "2026-10-14",
+    "sha256": "ef7ed20d47a9ec47b1a82f727ecea0bd8e27d3d58f96df6aaee169cb18b36a23",
+    "class": "historical-third-party-public-fixture",
+    "aggregation": "maximum published score per catalog hero for this global-priority baseline; not an official per-lane score"
+  },
+  "scenarios": "24 fixed-seed constructed states plus one exhausted-pool boundary; not real players, matches or expert labels",
+  "policies": [
+    "source-only",
+    "pool-source",
+    "pool-coach-1",
+    "pool-coach-3"
+  ],
+  "comparison": "source-only vs pool-source changes pool constraint only; pool-coach-1 vs pool-coach-3 changes requested depth only; cross-family comparisons do not isolate search depth",
+  "options": {
+    "maxMs": 1500,
+    "maxNodes": 1000,
+    "candidatePolicy": "coverage",
+    "now": 1791936000000
+  },
+  "settings": {
+    "depth": 3,
+    "width": 4,
+    "strategy": "robust",
+    "firstPick": "allies",
+    "nextSide": "allies",
+    "action": "pick",
+    "respectPools": true
+  },
+  "training": false,
+  "outcomePrediction": false,
+  "notes": [
+    "No synthetic win rates, match counts or account powers are generated.",
+    "No training or hyperparameter tuning. No held-out or professional-performance claim.",
+    "Wall-clock limits and hardware can change completed depth; per-decision timing is descriptive.",
+    "This suite covers next-pick decisions, not a complete staged ban/pick tournament.",
+    "Automatic flex search and assigned member pools are separate in current production code."
+  ]
+}

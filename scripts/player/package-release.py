@@ -1,10 +1,10 @@
 """Package the committed release, with exact Git history separately and no local account data."""
 from pathlib import Path
-import subprocess, json, hashlib, zipfile
+import subprocess, json, hashlib, zipfile, sys
 ROOT=Path(__file__).resolve().parents[2]
 GIT=['git','-c','safe.directory='+ROOT.as_posix()]
 def git(*args):return subprocess.check_output(GIT+list(args),cwd=ROOT)
-OUT=ROOT/'submission/release-v026';OUT.mkdir(parents=True,exist_ok=True)
+OUT=ROOT/(sys.argv[1] if len(sys.argv)>1 else 'submission/release-v026');OUT.mkdir(parents=True,exist_ok=True)
 head=git('rev-parse','HEAD').decode().strip()
 files=[p.decode('utf8') for p in git('ls-tree','-r','--name-only','-z','HEAD').split(b'\0') if p]
 selected=[]

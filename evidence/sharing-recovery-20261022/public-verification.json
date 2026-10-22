@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-22T09:40:33.693Z",
+  "url": "https://employment-listen-land-noted.trycloudflare.com",
+  "http": 200,
+  "pageTitle": "自在弈境数据站 · 懂你的英雄池",
+  "heroScreenLoaded": true,
+  "pageErrors": [],
+  "status": {
+    "product": "自在弈境",
+    "productId": "kaiju-player-companion",
+    "version": "0.26.0",
+    "modelConfigured": false,
+    "publicSharing": true,
+    "publicUrl": "https://employment-listen-land-noted.trycloudflare.com",
+    "heroCount": 133,
+    "identity": {
+      "mode": "guest",
+      "name": "访客"
+    }
+  }
+}

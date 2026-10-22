@@ -8,11 +8,22 @@
 
 站点全称为**自在弈境数据站**，灵感来自赵怀真“自在之心”：用可核查的信息和充分准备，获得从容选择。旧名“开局 NEXT”保留在原始对话与历史版本；仓库地址和存储标识不变以兼容既有账号。
 
+## 省赛证据与准备（2026-10-22）
+
+本轮应用仍为v0.26.0，新增工程评测和材料，不声称新增训练模型。
+
+- [准备台（离线HTML）](submission/provincial-kit-20261022/开始查看.html)：答辩稿、演示操作、17问、真人试用与本人剩余步骤。
+- [BP工程对照报告](submission/provincial-kit-20261022/05-BP对照评测报告.md)：24构造局面+1耗尽边界，四策略100次调用；原始协议和逐条输出见evidence/provincial-20261022。
+- [匿名试用记录器](submission/provincial-kit-20261022/试用记录器.html)：本地保存和导出，当前没有真实试用结果。
+- 当前完整包与新版文档见[省赛材料发布](https://github.com/cclcclcclcclcclccl/kaiju-next/releases/tag/v0.26.0-provincial-20261022)。
+
+`node scripts/player/evaluate-provincial.mjs`可重跑BP比较。来源优先和来源加池只切换池过滤；教练1层与3层只切换深度。约束生效与推荐变化不等于战术更好或提高实战胜率。固定成员分路池约束与自动摇摆搜索目前分模式、不能联合使用。
+
 ## 先体验
 
-当前临时体验入口：https://downtown-relates-indexes-trustees.trycloudflare.com
+2026-10-22核验的临时体验入口：https://employment-listen-land-noted.trycloudflare.com
 
-此入口依赖开发电脑在线，可能更换，不能作为永久可用性承诺。注册自在弈境账号后，英雄池和档案按账号独立保存；这不是王者游戏账号。没有官方账号同步。评委也可按下面步骤独立运行，无需模型密钥。
+此入口依赖开发电脑在线，可能更换，不能作为永久可用性承诺。最新地址以`data/public-site/PUBLIC_URL.txt`为准；当前开发电脑已安装登录后恢复分享快捷方式，其他机器不会随源码自动安装。[恢复与撤销说明](docs/40-sharing-recovery-20261022.md)。注册自在弈境账号后，英雄池和档案按账号独立保存；这不是王者游戏账号。没有官方账号同步。评委也可按下面步骤独立运行，无需模型密钥。
 
 ## 10 分钟复现
 

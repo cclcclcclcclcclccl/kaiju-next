@@ -3,7 +3,7 @@ import { resolve, join } from 'node:path';
 import { spawn } from 'node:child_process';
 import { createServer } from 'node:net';
 import assert from 'node:assert/strict';
-const out = resolve('submission/release-v026');
+const out = resolve(process.argv[2] ?? 'submission/release-v026');
 const extraction = JSON.parse(readFileSync(join(out, 'extracted-verification.json'), 'utf8'));
 const root = extraction.directory,
   logs = [],

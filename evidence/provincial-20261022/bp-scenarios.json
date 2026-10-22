@@ -1,0 +1,1751 @@
+[
+  {
+    "id": "S01",
+    "seed": 2200,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {},
+      "enemies": {},
+      "banned": [
+        199,
+        141,
+        517,
+        121,
+        187,
+        504
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 178,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 1,
+    "knownMembers": 1
+  },
+  {
+    "id": "S02",
+    "seed": 2201,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {},
+      "enemies": {},
+      "banned": [
+        126,
+        167,
+        513,
+        527,
+        130,
+        312
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 563,
+            "level": "main"
+          },
+          {
+            "heroId": 178,
+            "level": "main"
+          },
+          {
+            "heroId": 123,
+            "level": "main"
+          }
+        ]
+      },
+      "打野": {
+        "id": "synthetic-打野",
+        "name": "构造选手-打野",
+        "pool": [
+          {
+            "heroId": 198,
+            "level": "main"
+          },
+          {
+            "heroId": 518,
+            "level": "main"
+          },
+          {
+            "heroId": 131,
+            "level": "main"
+          }
+        ]
+      },
+      "中路": {
+        "id": "synthetic-中路",
+        "name": "构造选手-中路",
+        "pool": [
+          {
+            "heroId": 197,
+            "level": "main"
+          },
+          {
+            "heroId": 108,
+            "level": "main"
+          },
+          {
+            "heroId": 582,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 3,
+    "knownMembers": 3
+  },
+  {
+    "id": "S03",
+    "seed": 2202,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {},
+      "enemies": {},
+      "banned": [
+        506,
+        137,
+        518,
+        118,
+        581,
+        504
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 510,
+            "level": "main"
+          }
+        ]
+      },
+      "打野": {
+        "id": "synthetic-打野",
+        "name": "构造选手-打野",
+        "pool": [
+          {
+            "heroId": 195,
+            "level": "main"
+          }
+        ]
+      },
+      "中路": {
+        "id": "synthetic-中路",
+        "name": "构造选手-中路",
+        "pool": [
+          {
+            "heroId": 110,
+            "level": "main"
+          }
+        ]
+      },
+      "发育路": {
+        "id": "synthetic-发育路",
+        "name": "构造选手-发育路",
+        "pool": [
+          {
+            "heroId": 155,
+            "level": "main"
+          }
+        ]
+      },
+      "游走": {
+        "id": "synthetic-游走",
+        "name": "构造选手-游走",
+        "pool": [
+          {
+            "heroId": 152,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 1,
+    "knownMembers": 5
+  },
+  {
+    "id": "S04",
+    "seed": 2203,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {
+        "对抗路": 178,
+        "打野": 581
+      },
+      "enemies": {
+        "对抗路": 123,
+        "打野": 528
+      },
+      "banned": [
+        514,
+        117,
+        116,
+        148,
+        121,
+        140
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 178,
+            "level": "main"
+          },
+          {
+            "heroId": 144,
+            "level": "main"
+          },
+          {
+            "heroId": 172,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 3,
+    "knownMembers": 1
+  },
+  {
+    "id": "S05",
+    "seed": 2204,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {
+        "对抗路": 507,
+        "打野": 167
+      },
+      "enemies": {
+        "对抗路": 564,
+        "打野": 138
+      },
+      "banned": [
+        115,
+        187,
+        524,
+        195,
+        114,
+        582
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 507,
+            "level": "main"
+          }
+        ]
+      },
+      "打野": {
+        "id": "synthetic-打野",
+        "name": "构造选手-打野",
+        "pool": [
+          {
+            "heroId": 167,
+            "level": "main"
+          }
+        ]
+      },
+      "中路": {
+        "id": "synthetic-中路",
+        "name": "构造选手-中路",
+        "pool": [
+          {
+            "heroId": 521,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 1,
+    "knownMembers": 3
+  },
+  {
+    "id": "S06",
+    "seed": 2205,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {
+        "对抗路": 126,
+        "打野": 510
+      },
+      "enemies": {
+        "对抗路": 564,
+        "打野": 531
+      },
+      "banned": [
+        542,
+        133,
+        183,
+        141,
+        197,
+        547
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 126,
+            "level": "main"
+          },
+          {
+            "heroId": 139,
+            "level": "main"
+          },
+          {
+            "heroId": 180,
+            "level": "main"
+          }
+        ]
+      },
+      "打野": {
+        "id": "synthetic-打野",
+        "name": "构造选手-打野",
+        "pool": [
+          {
+            "heroId": 510,
+            "level": "main"
+          },
+          {
+            "heroId": 163,
+            "level": "main"
+          },
+          {
+            "heroId": 537,
+            "level": "main"
+          }
+        ]
+      },
+      "中路": {
+        "id": "synthetic-中路",
+        "name": "构造选手-中路",
+        "pool": [
+          {
+            "heroId": 148,
+            "level": "main"
+          },
+          {
+            "heroId": 190,
+            "level": "main"
+          },
+          {
+            "heroId": 137,
+            "level": "main"
+          }
+        ]
+      },
+      "发育路": {
+        "id": "synthetic-发育路",
+        "name": "构造选手-发育路",
+        "pool": [
+          {
+            "heroId": 112,
+            "level": "main"
+          },
+          {
+            "heroId": 192,
+            "level": "main"
+          },
+          {
+            "heroId": 132,
+            "level": "main"
+          }
+        ]
+      },
+      "游走": {
+        "id": "synthetic-游走",
+        "name": "构造选手-游走",
+        "pool": [
+          {
+            "heroId": 149,
+            "level": "main"
+          },
+          {
+            "heroId": 509,
+            "level": "main"
+          },
+          {
+            "heroId": 194,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 3,
+    "knownMembers": 5
+  },
+  {
+    "id": "S07",
+    "seed": 2206,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {
+        "对抗路": 563,
+        "打野": 121,
+        "中路": 582,
+        "发育路": 111
+      },
+      "enemies": {
+        "对抗路": 149,
+        "打野": 167,
+        "中路": 521,
+        "发育路": 508
+      },
+      "banned": [
+        584,
+        148,
+        117,
+        155,
+        547,
+        142
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 563,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 1,
+    "knownMembers": 1
+  },
+  {
+    "id": "S08",
+    "seed": 2207,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {
+        "对抗路": 514,
+        "打野": 177,
+        "中路": 191,
+        "发育路": 151
+      },
+      "enemies": {
+        "对抗路": 549,
+        "打野": 172,
+        "中路": 179,
+        "发育路": 548
+      },
+      "banned": [
+        140,
+        538,
+        136,
+        529,
+        515,
+        174
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 514,
+            "level": "main"
+          },
+          {
+            "heroId": 507,
+            "level": "main"
+          },
+          {
+            "heroId": 563,
+            "level": "main"
+          }
+        ]
+      },
+      "打野": {
+        "id": "synthetic-打野",
+        "name": "构造选手-打野",
+        "pool": [
+          {
+            "heroId": 177,
+            "level": "main"
+          },
+          {
+            "heroId": 531,
+            "level": "main"
+          },
+          {
+            "heroId": 129,
+            "level": "main"
+          }
+        ]
+      },
+      "中路": {
+        "id": "synthetic-中路",
+        "name": "构造选手-中路",
+        "pool": [
+          {
+            "heroId": 191,
+            "level": "main"
+          },
+          {
+            "heroId": 109,
+            "level": "main"
+          },
+          {
+            "heroId": 110,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 3,
+    "knownMembers": 3
+  },
+  {
+    "id": "S09",
+    "seed": 2208,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {
+        "对抗路": 515,
+        "打野": 529,
+        "中路": 197,
+        "发育路": 155
+      },
+      "enemies": {
+        "对抗路": 514,
+        "打野": 166,
+        "中路": 190,
+        "发育路": 199
+      },
+      "banned": [
+        152,
+        194,
+        582,
+        175,
+        581,
+        139
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 515,
+            "level": "main"
+          }
+        ]
+      },
+      "打野": {
+        "id": "synthetic-打野",
+        "name": "构造选手-打野",
+        "pool": [
+          {
+            "heroId": 529,
+            "level": "main"
+          }
+        ]
+      },
+      "中路": {
+        "id": "synthetic-中路",
+        "name": "构造选手-中路",
+        "pool": [
+          {
+            "heroId": 197,
+            "level": "main"
+          }
+        ]
+      },
+      "发育路": {
+        "id": "synthetic-发育路",
+        "name": "构造选手-发育路",
+        "pool": [
+          {
+            "heroId": 155,
+            "level": "main"
+          }
+        ]
+      },
+      "游走": {
+        "id": "synthetic-游走",
+        "name": "构造选手-游走",
+        "pool": [
+          {
+            "heroId": 585,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 1,
+    "knownMembers": 5
+  },
+  {
+    "id": "S10",
+    "seed": 2209,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {},
+      "enemies": {},
+      "banned": [
+        123,
+        544,
+        190,
+        513,
+        134,
+        136
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 522,
+            "level": "main"
+          },
+          {
+            "heroId": 187,
+            "level": "main"
+          },
+          {
+            "heroId": 564,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 3,
+    "knownMembers": 1
+  },
+  {
+    "id": "S11",
+    "seed": 2210,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {},
+      "enemies": {},
+      "banned": [
+        529,
+        120,
+        521,
+        183,
+        167,
+        177
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 537,
+            "level": "main"
+          }
+        ]
+      },
+      "打野": {
+        "id": "synthetic-打野",
+        "name": "构造选手-打野",
+        "pool": [
+          {
+            "heroId": 138,
+            "level": "main"
+          }
+        ]
+      },
+      "中路": {
+        "id": "synthetic-中路",
+        "name": "构造选手-中路",
+        "pool": [
+          {
+            "heroId": 157,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 1,
+    "knownMembers": 3
+  },
+  {
+    "id": "S12",
+    "seed": 2211,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {},
+      "enemies": {},
+      "banned": [
+        529,
+        173,
+        118,
+        131,
+        196,
+        312
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 193,
+            "level": "main"
+          },
+          {
+            "heroId": 558,
+            "level": "main"
+          },
+          {
+            "heroId": 563,
+            "level": "main"
+          }
+        ]
+      },
+      "打野": {
+        "id": "synthetic-打野",
+        "name": "构造选手-打野",
+        "pool": [
+          {
+            "heroId": 172,
+            "level": "main"
+          },
+          {
+            "heroId": 542,
+            "level": "main"
+          },
+          {
+            "heroId": 190,
+            "level": "main"
+          }
+        ]
+      },
+      "中路": {
+        "id": "synthetic-中路",
+        "name": "构造选手-中路",
+        "pool": [
+          {
+            "heroId": 157,
+            "level": "main"
+          },
+          {
+            "heroId": 504,
+            "level": "main"
+          },
+          {
+            "heroId": 179,
+            "level": "main"
+          }
+        ]
+      },
+      "发育路": {
+        "id": "synthetic-发育路",
+        "name": "构造选手-发育路",
+        "pool": [
+          {
+            "heroId": 151,
+            "level": "main"
+          },
+          {
+            "heroId": 155,
+            "level": "main"
+          },
+          {
+            "heroId": 524,
+            "level": "main"
+          }
+        ]
+      },
+      "游走": {
+        "id": "synthetic-游走",
+        "name": "构造选手-游走",
+        "pool": [
+          {
+            "heroId": 135,
+            "level": "main"
+          },
+          {
+            "heroId": 168,
+            "level": "main"
+          },
+          {
+            "heroId": 547,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 3,
+    "knownMembers": 5
+  },
+  {
+    "id": "S13",
+    "seed": 2212,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {
+        "对抗路": 518,
+        "打野": 537
+      },
+      "enemies": {
+        "对抗路": 510,
+        "打野": 583
+      },
+      "banned": [
+        531,
+        582,
+        515,
+        159,
+        170,
+        545
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 518,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 1,
+    "knownMembers": 1
+  },
+  {
+    "id": "S14",
+    "seed": 2213,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {
+        "对抗路": 564,
+        "打野": 116
+      },
+      "enemies": {
+        "对抗路": 149,
+        "打野": 173
+      },
+      "banned": [
+        537,
+        198,
+        120,
+        152,
+        179,
+        163
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 564,
+            "level": "main"
+          },
+          {
+            "heroId": 558,
+            "level": "main"
+          },
+          {
+            "heroId": 544,
+            "level": "main"
+          }
+        ]
+      },
+      "打野": {
+        "id": "synthetic-打野",
+        "name": "构造选手-打野",
+        "pool": [
+          {
+            "heroId": 116,
+            "level": "main"
+          },
+          {
+            "heroId": 511,
+            "level": "main"
+          },
+          {
+            "heroId": 529,
+            "level": "main"
+          }
+        ]
+      },
+      "中路": {
+        "id": "synthetic-中路",
+        "name": "构造选手-中路",
+        "pool": [
+          {
+            "heroId": 109,
+            "level": "main"
+          },
+          {
+            "heroId": 182,
+            "level": "main"
+          },
+          {
+            "heroId": 124,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 3,
+    "knownMembers": 3
+  },
+  {
+    "id": "S15",
+    "seed": 2214,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {
+        "对抗路": 178,
+        "打野": 176
+      },
+      "enemies": {
+        "对抗路": 518,
+        "打野": 167
+      },
+      "banned": [
+        514,
+        548,
+        534,
+        523,
+        169,
+        508
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 178,
+            "level": "main"
+          }
+        ]
+      },
+      "打野": {
+        "id": "synthetic-打野",
+        "name": "构造选手-打野",
+        "pool": [
+          {
+            "heroId": 176,
+            "level": "main"
+          }
+        ]
+      },
+      "中路": {
+        "id": "synthetic-中路",
+        "name": "构造选手-中路",
+        "pool": [
+          {
+            "heroId": 110,
+            "level": "main"
+          }
+        ]
+      },
+      "发育路": {
+        "id": "synthetic-发育路",
+        "name": "构造选手-发育路",
+        "pool": [
+          {
+            "heroId": 155,
+            "level": "main"
+          }
+        ]
+      },
+      "游走": {
+        "id": "synthetic-游走",
+        "name": "构造选手-游走",
+        "pool": [
+          {
+            "heroId": 168,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 1,
+    "knownMembers": 5
+  },
+  {
+    "id": "S16",
+    "seed": 2215,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {
+        "对抗路": 537,
+        "打野": 549,
+        "中路": 513,
+        "发育路": 169
+      },
+      "enemies": {
+        "对抗路": 517,
+        "打野": 190,
+        "中路": 119,
+        "发育路": 545
+      },
+      "banned": [
+        142,
+        523,
+        174,
+        191,
+        170,
+        156
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 537,
+            "level": "main"
+          },
+          {
+            "heroId": 144,
+            "level": "main"
+          },
+          {
+            "heroId": 135,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 3,
+    "knownMembers": 1
+  },
+  {
+    "id": "S17",
+    "seed": 2216,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {
+        "对抗路": 558,
+        "打野": 121,
+        "中路": 176,
+        "发育路": 548
+      },
+      "enemies": {
+        "对抗路": 180,
+        "打野": 131,
+        "中路": 127,
+        "发育路": 174
+      },
+      "banned": [
+        177,
+        151,
+        524,
+        514,
+        506,
+        141
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 558,
+            "level": "main"
+          }
+        ]
+      },
+      "打野": {
+        "id": "synthetic-打野",
+        "name": "构造选手-打野",
+        "pool": [
+          {
+            "heroId": 121,
+            "level": "main"
+          }
+        ]
+      },
+      "中路": {
+        "id": "synthetic-中路",
+        "name": "构造选手-中路",
+        "pool": [
+          {
+            "heroId": 176,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 1,
+    "knownMembers": 3
+  },
+  {
+    "id": "S18",
+    "seed": 2217,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {
+        "对抗路": 558,
+        "打野": 172,
+        "中路": 108,
+        "发育路": 132
+      },
+      "enemies": {
+        "对抗路": 549,
+        "打野": 544,
+        "中路": 106,
+        "发育路": 169
+      },
+      "banned": [
+        151,
+        156,
+        545,
+        159,
+        537,
+        140
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 558,
+            "level": "main"
+          },
+          {
+            "heroId": 187,
+            "level": "main"
+          },
+          {
+            "heroId": 193,
+            "level": "main"
+          }
+        ]
+      },
+      "打野": {
+        "id": "synthetic-打野",
+        "name": "构造选手-打野",
+        "pool": [
+          {
+            "heroId": 172,
+            "level": "main"
+          },
+          {
+            "heroId": 170,
+            "level": "main"
+          },
+          {
+            "heroId": 138,
+            "level": "main"
+          }
+        ]
+      },
+      "中路": {
+        "id": "synthetic-中路",
+        "name": "构造选手-中路",
+        "pool": [
+          {
+            "heroId": 108,
+            "level": "main"
+          },
+          {
+            "heroId": 523,
+            "level": "main"
+          },
+          {
+            "heroId": 504,
+            "level": "main"
+          }
+        ]
+      },
+      "发育路": {
+        "id": "synthetic-发育路",
+        "name": "构造选手-发育路",
+        "pool": [
+          {
+            "heroId": 132,
+            "level": "main"
+          },
+          {
+            "heroId": 524,
+            "level": "main"
+          },
+          {
+            "heroId": 111,
+            "level": "main"
+          }
+        ]
+      },
+      "游走": {
+        "id": "synthetic-游走",
+        "name": "构造选手-游走",
+        "pool": [
+          {
+            "heroId": 175,
+            "level": "main"
+          },
+          {
+            "heroId": 577,
+            "level": "main"
+          },
+          {
+            "heroId": 540,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 3,
+    "knownMembers": 5
+  },
+  {
+    "id": "S19",
+    "seed": 2218,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {},
+      "enemies": {},
+      "banned": [
+        119,
+        171,
+        504,
+        501,
+        159,
+        564
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 166,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 1,
+    "knownMembers": 1
+  },
+  {
+    "id": "S20",
+    "seed": 2219,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {},
+      "enemies": {},
+      "banned": [
+        196,
+        192,
+        583,
+        550,
+        515,
+        137
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 126,
+            "level": "main"
+          },
+          {
+            "heroId": 581,
+            "level": "main"
+          },
+          {
+            "heroId": 105,
+            "level": "main"
+          }
+        ]
+      },
+      "打野": {
+        "id": "synthetic-打野",
+        "name": "构造选手-打野",
+        "pool": [
+          {
+            "heroId": 537,
+            "level": "main"
+          },
+          {
+            "heroId": 502,
+            "level": "main"
+          },
+          {
+            "heroId": 177,
+            "level": "main"
+          }
+        ]
+      },
+      "中路": {
+        "id": "synthetic-中路",
+        "name": "构造选手-中路",
+        "pool": [
+          {
+            "heroId": 504,
+            "level": "main"
+          },
+          {
+            "heroId": 176,
+            "level": "main"
+          },
+          {
+            "heroId": 157,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 3,
+    "knownMembers": 3
+  },
+  {
+    "id": "S21",
+    "seed": 2220,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {},
+      "enemies": {},
+      "banned": [
+        128,
+        156,
+        114,
+        152,
+        106,
+        174
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 522,
+            "level": "main"
+          }
+        ]
+      },
+      "打野": {
+        "id": "synthetic-打野",
+        "name": "构造选手-打野",
+        "pool": [
+          {
+            "heroId": 198,
+            "level": "main"
+          }
+        ]
+      },
+      "中路": {
+        "id": "synthetic-中路",
+        "name": "构造选手-中路",
+        "pool": [
+          {
+            "heroId": 142,
+            "level": "main"
+          }
+        ]
+      },
+      "发育路": {
+        "id": "synthetic-发育路",
+        "name": "构造选手-发育路",
+        "pool": [
+          {
+            "heroId": 177,
+            "level": "main"
+          }
+        ]
+      },
+      "游走": {
+        "id": "synthetic-游走",
+        "name": "构造选手-游走",
+        "pool": [
+          {
+            "heroId": 148,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 1,
+    "knownMembers": 5
+  },
+  {
+    "id": "S22",
+    "seed": 2221,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {
+        "对抗路": 544,
+        "打野": 518
+      },
+      "enemies": {
+        "对抗路": 549,
+        "打野": 107
+      },
+      "banned": [
+        511,
+        106,
+        509,
+        173,
+        150,
+        525
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 544,
+            "level": "main"
+          },
+          {
+            "heroId": 514,
+            "level": "main"
+          },
+          {
+            "heroId": 527,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 3,
+    "knownMembers": 1
+  },
+  {
+    "id": "S23",
+    "seed": 2222,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {
+        "对抗路": 564,
+        "打野": 162
+      },
+      "enemies": {
+        "对抗路": 134,
+        "打野": 178
+      },
+      "banned": [
+        527,
+        159,
+        157,
+        502,
+        108,
+        504
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 564,
+            "level": "main"
+          }
+        ]
+      },
+      "打野": {
+        "id": "synthetic-打野",
+        "name": "构造选手-打野",
+        "pool": [
+          {
+            "heroId": 162,
+            "level": "main"
+          }
+        ]
+      },
+      "中路": {
+        "id": "synthetic-中路",
+        "name": "构造选手-中路",
+        "pool": [
+          {
+            "heroId": 156,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 1,
+    "knownMembers": 3
+  },
+  {
+    "id": "S24",
+    "seed": 2223,
+    "type": "constructed-fixed-role",
+    "draft": {
+      "role": "中路",
+      "allies": {
+        "对抗路": 105,
+        "打野": 558
+      },
+      "enemies": {
+        "对抗路": 123,
+        "打野": 583
+      },
+      "banned": [
+        190,
+        141,
+        142,
+        515,
+        187,
+        509
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "对抗路": {
+        "id": "synthetic-对抗路",
+        "name": "构造选手-对抗路",
+        "pool": [
+          {
+            "heroId": 105,
+            "level": "main"
+          },
+          {
+            "heroId": 527,
+            "level": "main"
+          },
+          {
+            "heroId": 511,
+            "level": "main"
+          }
+        ]
+      },
+      "打野": {
+        "id": "synthetic-打野",
+        "name": "构造选手-打野",
+        "pool": [
+          {
+            "heroId": 558,
+            "level": "main"
+          },
+          {
+            "heroId": 117,
+            "level": "main"
+          },
+          {
+            "heroId": 137,
+            "level": "main"
+          }
+        ]
+      },
+      "中路": {
+        "id": "synthetic-中路",
+        "name": "构造选手-中路",
+        "pool": [
+          {
+            "heroId": 109,
+            "level": "main"
+          },
+          {
+            "heroId": 127,
+            "level": "main"
+          },
+          {
+            "heroId": 540,
+            "level": "main"
+          }
+        ]
+      },
+      "发育路": {
+        "id": "synthetic-发育路",
+        "name": "构造选手-发育路",
+        "pool": [
+          {
+            "heroId": 519,
+            "level": "main"
+          },
+          {
+            "heroId": 169,
+            "level": "main"
+          },
+          {
+            "heroId": 174,
+            "level": "main"
+          }
+        ]
+      },
+      "游走": {
+        "id": "synthetic-游走",
+        "name": "构造选手-游走",
+        "pool": [
+          {
+            "heroId": 188,
+            "level": "main"
+          },
+          {
+            "heroId": 585,
+            "level": "main"
+          },
+          {
+            "heroId": 126,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": [],
+    "poolSize": 3,
+    "knownMembers": 5
+  },
+  {
+    "id": "S25",
+    "type": "exhausted-pool",
+    "draft": {
+      "role": "中路",
+      "allies": {},
+      "enemies": {},
+      "banned": [
+        106
+      ],
+      "onlyPool": false,
+      "pool": []
+    },
+    "members": {
+      "中路": {
+        "id": "synthetic-mid",
+        "name": "构造中路选手",
+        "pool": [
+          {
+            "heroId": 106,
+            "level": "main"
+          }
+        ]
+      }
+    },
+    "opponentPool": []
+  }
+]
