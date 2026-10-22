@@ -1,3 +1,4 @@
+import { reviewMode } from '../reviewMode.ts';
 import { useEffect, useState } from 'react';
 import { api } from '../../api.ts';
 import { parseSeries } from './seriesBp.ts';
@@ -29,20 +30,26 @@ export default function SeriesSave({
   }, []);
   return (
     <details className="source-proof series-server-save">
-      <summary>服务器存档 · 同账号读取</summary>
+      <summary>{reviewMode ? '浏览器完整存档 · 纳入个人备份' : '服务器存档 · 同账号读取'}</summary>
       <p>
-        浏览器仍自动保存。这里手动保存到当前自在弈境服务器，登录自己的自在弈境账号后按账号隔离；访客使用本机公共空间。其他设备须连接同一服务器，不与天元或游戏账号互通。
-        保存到服务器后会纳入“完整个人备份”；未上传的浏览器系列赛请单独导出。
+        {reviewMode ? (
+          '这里将当前系列赛保存在此浏览器，纳入完整个人备份；不会上传或自动跨设备同步。'
+        ) : (
+          <>
+            浏览器仍自动保存。这里手动保存到当前自在弈境服务器，登录自己的自在弈境账号后按账号隔离；访客使用本机公共空间。其他设备须连接同一服务器，不与天元或游戏账号互通。
+            保存到服务器后会纳入“完整个人备份”；未上传的浏览器系列赛请单独导出。
+          </>
+        )}
       </p>
       {saved && (
         <p>
-          {saved.name} · 服务器版本 {saved.revision} ·{' '}
+          {saved.name} · 存档版本 {saved.revision} ·{' '}
           {saved.series ? `BO${saved.series.bestOf} / ${saved.series.games.length} 局` : '尚无存档'}
         </p>
       )}
       <div className="pro-actions">
         <button className="text-btn" disabled={busy} onClick={read}>
-          重新读取服务器记录
+          {reviewMode ? '重新读取浏览器存档' : '重新读取服务器记录'}
         </button>
         <button
           className="btn secondary"
@@ -65,7 +72,7 @@ export default function SeriesSave({
             }
           }}
         >
-          保存当前系列赛到服务器
+          {reviewMode ? '保存当前系列赛到浏览器' : '保存当前系列赛到服务器'}
         </button>
         <button
           className="btn secondary"
@@ -82,7 +89,7 @@ export default function SeriesSave({
             }
           }}
         >
-          备份本机并载入服务器系列赛
+          {reviewMode ? '备份当前草稿并载入存档' : '备份本机并载入服务器系列赛'}
         </button>
       </div>
       {error && <p role="alert">{error}</p>}

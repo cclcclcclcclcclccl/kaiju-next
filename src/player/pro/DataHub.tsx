@@ -1,3 +1,4 @@
+import { defaultSourceDate } from './tianyuan.ts';
 import PlayerHeroDistribution from './PlayerHeroDistribution.tsx';
 import PeakTrends from './PeakTrends.tsx';
 import { useState, useEffect } from 'react';
@@ -45,7 +46,7 @@ const heroColumn = (open: Open): Column => ({
 });
 function GlobalData({ onOpen }: { onOpen: Open }) {
   const [tab, setTab] = useState<PlusKind>('overview'),
-    [date, setDate] = useState(sourceDate),
+    [date, setDate] = useState(defaultSourceDate),
     [area, setArea] = useState(7),
     [rank, setRank] = useState(10),
     [camp, setCamp] = useState<'blue' | 'red'>('blue'),
@@ -326,7 +327,7 @@ function GlobalData({ onOpen }: { onOpen: Open }) {
   );
 }
 function EquipmentData({ onOpen }: { onOpen: Open }) {
-  const [date, setDate] = useState(sourceDate),
+  const [date, setDate] = useState(defaultSourceDate),
     [days, setDays] = useState(1),
     [type, setType] = useState('all'),
     [selected, setSelected] = useState<SourceRow>(),

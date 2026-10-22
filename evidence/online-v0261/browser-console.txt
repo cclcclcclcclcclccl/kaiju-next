@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-10-22T13:22:18.846Z",
+  "backend": "none; static files only",
+  "checks": [
+    "pool persists across reload; stale and invalid edits rejected atomically",
+    "two simultaneous tabs serialize updates with one conflict",
+    "separate visitors start with empty personal data",
+    "profile conflict detection; personal backup preview/restore/checkpoint",
+    "manual review saves and reloads; stale revision rejected",
+    "four-scope archive, Zhao Huaizhen skin/equipment/build/duration/analysis; absent date refused",
+    "unsupported account/model calls rejected explicitly",
+    "human blue ban followed by real AI red worker computation, advanced to step 3",
+    "catalog images load from repository subpath",
+    "390px mobile page has no horizontal overflow"
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "heading": "心有准备，选择自在。"
+    },
+    {
+      "id": "heroes",
+      "heading": "找到你的下一位本命。"
+    },
+    {
+      "id": "tier",
+      "heading": "强度，要放回你的分段看。"
+    },
+    {
+      "id": "draft",
+      "heading": "这一局，选谁更有思路？"
+    },
+    {
+      "id": "pool",
+      "heading": "把会玩的，变成底气。"
+    },
+    {
+      "id": "profile",
+      "heading": "几张截图，认识你的英雄池。"
+    },
+    {
+      "id": "resources",
+      "heading": "看装备，也看版本。"
+    },
+    {
+      "id": "systems",
+      "heading": "练一套配合，知道每个人为什么在场。"
+    },
+    {
+      "id": "replay",
+      "heading": "回到那一刻，再判断该怎么打。"
+    },
+    {
+      "id": "social",
+      "heading": "好友与组队"
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "passed": true
+}

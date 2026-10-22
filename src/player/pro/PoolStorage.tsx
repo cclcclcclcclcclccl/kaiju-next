@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { reviewMode } from '../reviewMode.ts';
 import { api, download } from '../../api.ts';
 import { heroById } from '../catalog.ts';
 import type { Pool } from '../model.ts';
@@ -88,7 +89,9 @@ export default function PoolStorage({
             : error
               ? '操作未完成，请查看提示'
               : status
-                ? '已连接本机数据库'
+                ? reviewMode
+                  ? '已连接当前浏览器存储'
+                  : '已连接本机数据库'
                 : '正在确认…'}
         </span>
       </div>
@@ -96,12 +99,20 @@ export default function PoolStorage({
         <>
           <p>
             <strong>
-              当前身份：{status.mode === 'guest' ? '本机访客' : `独立账号 · ${status.name}`}
+              当前身份：
+              {reviewMode
+                ? '当前浏览器访客'
+                : status.mode === 'guest'
+                  ? '本机访客'
+                  : `独立账号 · ${status.name}`}
             </strong>{' '}
             · 已保存 {status.pool.length} 位自选英雄
           </p>
           <p className="data-caption">
-            记录保存在运行本站的这台电脑，刷新页面仍保留。访客与独立账号各自保存；这不是王者账号同步或云备份。截图与详细战绩保存在「玩家档案」，也会计入英雄池。
+            {reviewMode
+              ? '记录保存在你的当前浏览器，刷新仍保留，不会上传或跨设备自动同步。清除网站数据会删除记录，请导出备份。'
+              : '记录保存在运行本站的这台电脑，刷新页面仍保留。访客与独立账号各自保存；这不是王者账号同步或云备份。'}
+            截图与详细战绩保存在「玩家档案」，也会计入英雄池。
           </p>
           <p className="data-caption">
             {status.savedAt

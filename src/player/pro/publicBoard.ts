@@ -1,3 +1,4 @@
+import { reviewConfig } from '../reviewMode.ts';
 import type { z } from 'zod';
 import type { TianyuanStat, tianyuanTierSchema } from './tianyuan.ts';
 
@@ -14,6 +15,7 @@ export const sourceTierDate = (now = Date.now()) => {
     .toISOString()
     .slice(0, 10);
 };
+export const defaultTierDate = () => reviewConfig?.tierDate ?? sourceTierDate();
 export function sourceRoles(role: string) {
   return role.split('/').map((value) => ({
     name: value.replace('(次分路)', '').trim(),

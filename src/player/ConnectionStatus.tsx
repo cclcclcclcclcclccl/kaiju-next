@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { reviewMode } from './reviewMode.ts';
 
 export default function ConnectionStatus({
   publicSharing = false,
@@ -16,6 +17,7 @@ export default function ConnectionStatus({
   const [checking, setChecking] = useState(false);
   const [revision, setRevision] = useState(0);
   useEffect(() => {
+    if (reviewMode) return;
     let active = true,
       pending = false;
     const check = async () => {

@@ -1,3 +1,4 @@
+import { reviewMode } from '../reviewMode.ts';
 import { useEffect, useState } from 'react';
 import { api } from '../../api.ts';
 import { aggregateObservation } from './environment.ts';
@@ -29,6 +30,15 @@ export default function DataUpdates({ onUpdated }: { onUpdated: (revision: strin
       clearInterval(timer);
     };
   }, [onUpdated]);
+  if (reviewMode)
+    return (
+      <details className="surface data-updates">
+        <summary>在线版数据更新方式</summary>
+        <p>
+          本入口使用发布时校验过的公开快照，保留实际来源日期。发布新版本时更新资料，不在浏览器后台自动抓取。未收录的日期和查询条件会明确提示，不能推断为零。
+        </p>
+      </details>
+    );
   const ok = status?.results.filter((r) => r.state === 'fresh' || r.state === 'cached').length ?? 0;
   return (
     <details className="surface data-updates">

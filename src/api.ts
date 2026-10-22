@@ -1,3 +1,4 @@
+import { reviewMode } from './player/reviewMode.ts';
 export class ApiError extends Error {
   status: number;
   constructor(status: number, message: string) {
@@ -6,6 +7,14 @@ export class ApiError extends Error {
   }
 }
 export async function api<T>(path: string, body?: unknown): Promise<T> {
+  if (reviewMode) {
+    try {
+      return await (await import('./player/browserApi.ts')).browserApi<T>(path, body);
+    } catch (error) {
+      const e = error as Error & { status?: number };
+      throw new ApiError(e.status ?? 400, e.message);
+    }
+  }
   let response: Response;
   try {
     response = await fetch('/api' + path, {

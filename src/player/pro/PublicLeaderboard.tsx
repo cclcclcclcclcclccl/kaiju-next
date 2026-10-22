@@ -1,3 +1,5 @@
+import { defaultTierDate } from './publicBoard.ts';
+import { defaultSourceDate } from './tianyuan.ts';
 import { useEffect, useState } from 'react';
 import { RateBar, RateLegend } from './SourceMedia.tsx';
 import type { z } from 'zod';
@@ -37,14 +39,14 @@ export default function PublicLeaderboard({
   const [date, setDate] = useState(
     typeof saved.date === 'string' && validDate(saved.date) && saved.date <= sourceDate()
       ? saved.date
-      : sourceDate(),
+      : defaultSourceDate(),
   );
   const [tierDate, setTierDate] = useState(
     typeof saved.tierDate === 'string' &&
       validDate(saved.tierDate) &&
       saved.tierDate <= sourceTierDate()
       ? saved.tierDate
-      : sourceTierDate(),
+      : defaultTierDate(),
   );
   const [role, setRole] = useState(
     ['全部', ...ROLES].includes(saved.role) ? String(saved.role) : '全部',
@@ -72,8 +74,8 @@ export default function PublicLeaderboard({
   }, [segment, date, tierDate, role, query, basis, sort, table, minPick]);
   const reset = () => {
     setSegment('巅峰千强');
-    setDate(sourceDate());
-    setTierDate(sourceTierDate());
+    setDate(defaultSourceDate());
+    setTierDate(defaultTierDate());
     setRole('全部');
     setQuery('');
     setBasis('tier');

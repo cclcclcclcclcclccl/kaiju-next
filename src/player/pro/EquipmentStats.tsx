@@ -1,3 +1,4 @@
+import { defaultSourceDate } from './tianyuan.ts';
 import { useState } from 'react';
 import type { z } from 'zod';
 import { heroes, heroById } from '../catalog.ts';
@@ -9,7 +10,7 @@ import EquipmentBreakdown from './EquipmentBreakdown.tsx';
 
 export default function EquipmentStats({ onOpen }: { onOpen: (hero: Hero) => void }) {
   const [heroId, setHeroId] = useState(544);
-  const [date, setDate] = useState(sourceDate());
+  const [date, setDate] = useState(defaultSourceDate());
   const [sort, setSort] = useState<'pickRate' | 'winRate'>('pickRate');
   const [search, setSearch] = useState('');
   const validDate =

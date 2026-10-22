@@ -7,6 +7,7 @@ import { mastery } from './analytics.ts';
 import type { Profile } from './model.ts';
 import type { Pool } from '../model.ts';
 import { usePro } from './context.tsx';
+import { reviewMode } from '../reviewMode.ts';
 type User = { id: string; name: string; username: string; code: string };
 export type Friend = {
   id: string;
@@ -65,6 +66,16 @@ export default function Social() {
       await api(path, body);
       await refresh();
     });
+  if (reviewMode)
+    return (
+      <section className="surface">
+        <h1>好友与组队</h1>
+        <p>
+          固定在线版无需注册，个人资料仅保存在当前浏览器。好友联机与跨设备账号同步需要后端服务，尚未在此免费入口部署。
+        </p>
+        <p>你仍可以在“体系练习”和“阵容备战”中手动配置多名成员的英雄池，体验配队与 BP 推演。</p>
+      </section>
+    );
   return (
     <>
       <div className="page-heading">

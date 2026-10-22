@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { reviewMode, reviewConfig } from '../reviewMode.ts';
 import { api } from '../../api.ts';
 import { TIANYUAN_MODES } from './tianyuan.ts';
 type Row = {
@@ -34,6 +35,15 @@ export default function SourceHealth() {
       clearInterval(timer);
     };
   }, []);
+  if (reviewMode)
+    return (
+      <details className="surface data-updates">
+        <summary>四分段历史快照 · 默认 {reviewConfig?.statsDate}</summary>
+        <p>
+          本入口提供已校验的四分段公开数据，非实时更新。可以更改日期查询其他已收录批次；未收录的数据不会用其他日期替代。
+        </p>
+      </details>
+    );
   const labels: Record<string, string> = {
     fresh: '已获取',
     cached: '一小时内获取的缓存',

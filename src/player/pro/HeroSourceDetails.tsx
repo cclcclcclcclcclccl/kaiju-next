@@ -1,3 +1,4 @@
+import { defaultSourceDate } from './tianyuan.ts';
 import SkinComparison from './SkinComparison.tsx';
 import ConditionalBuilds from './ConditionalBuilds.tsx';
 import { useState } from 'react';
@@ -36,7 +37,7 @@ export default function HeroSourceDetails({
     [days, setDays] = useState(30),
     [mode, setMode] = useState(5),
     [area, setArea] = useState(7),
-    [date, setDate] = useState(sourceDate),
+    [date, setDate] = useState(defaultSourceDate),
     [metric, setMetric] = useState('winRate');
   const query: PlusQuery = {
     kind: tab,

@@ -1,3 +1,4 @@
+import { defaultSourceDate } from './tianyuan.ts';
 import { useState } from 'react';
 import { heroes, heroById } from '../catalog.ts';
 import type { Hero, Pool } from '../model.ts';
@@ -23,7 +24,7 @@ export function comparableRows(rows: SourceRow[], ids: number[]) {
   return ids.map((id) => rows.find((r) => r.heroId === id) ?? null);
 }
 export default function HeroCompare({ pool, onOpen }: { pool: Pool; onOpen: (h: Hero) => void }) {
-  const [date, setDate] = useState(sourceDate),
+  const [date, setDate] = useState(defaultSourceDate),
     [mode, setMode] = useState(5),
     [search, setSearch] = useState('');
   const [ids, setIds] = useState<number[]>(() => pool.slice(0, 4).map((r) => r.heroId));

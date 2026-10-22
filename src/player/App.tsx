@@ -12,6 +12,8 @@ const ResourceCenter = lazy(() => import('./pro/ResourceCenter.tsx'));
 const DataHub = lazy(() => import('./pro/DataHub.tsx'));
 import ConnectionStatus from './ConnectionStatus.tsx';
 import ShareLink from './ShareLink.tsx';
+import OnlineNotice from './OnlineNotice.tsx';
+import { reviewMode } from './reviewMode.ts';
 import { BarChart3, Users, Video, Network, Gauge } from 'lucide-react';
 import { useEffect, useMemo, useState, useRef, lazy, Suspense } from 'react';
 import { readRoute, routeHash } from './route.ts';
@@ -218,7 +220,11 @@ export default function App() {
     poolSaving.current = true;
     void mutate(
       async () => setPool(await api<Pool>('/pool-edit', { changes })),
-      publicSharing ? '英雄池已保存到当前账号' : '英雄池已写入本机数据库',
+      reviewMode
+        ? '英雄池已保存到当前浏览器'
+        : publicSharing
+          ? '英雄池已保存到当前账号'
+          : '英雄池已写入本机数据库',
     )
       .catch(async () => {
         try {
@@ -357,8 +363,14 @@ export default function App() {
             </button>
             <span>
               <i />
-              {ready ? (publicSharing ? '分享服务已连接' : '本地工作台已连接') : '正在连接服务'}
-              <small>v0.26</small>
+              {ready
+                ? reviewMode
+                  ? '固定在线版 · 浏览器存储'
+                  : publicSharing
+                    ? '分享服务已连接'
+                    : '本地工作台已连接'
+                : '正在连接服务'}
+              <small>v0.26.1</small>
             </span>
           </div>
         </aside>
@@ -406,6 +418,7 @@ export default function App() {
             </div>
           </header>
           <main>
+            <OnlineNotice />
             <ConnectionStatus
               publicSharing={publicSharing}
               onReconnect={() => {

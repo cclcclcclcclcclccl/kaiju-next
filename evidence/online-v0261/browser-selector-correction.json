@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-22T13:16:16.754Z",
+  "backend": "none; static files only",
+  "checks": [
+    "pool persists across reload; stale and invalid edits rejected atomically",
+    "two simultaneous tabs serialize updates with one conflict",
+    "separate visitors start with empty personal data",
+    "profile conflict detection; personal backup preview/restore/checkpoint",
+    "manual review saves and reloads; stale revision rejected",
+    "four-scope archive, Zhao Huaizhen skin/equipment/build/duration/analysis; absent date refused",
+    "unsupported account/model calls rejected explicitly"
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "heading": "心有准备，选择自在。"
+    },
+    {
+      "id": "heroes",
+      "heading": "找到你的下一位本命。"
+    },
+    {
+      "id": "tier",
+      "heading": "强度，要放回你的分段看。"
+    },
+    {
+      "id": "draft",
+      "heading": "这一局，选谁更有思路？"
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "passed": false,
+  "failure": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.bp-turn').filter({ hasText: '第 3 / 20 步' }) to be visible\u001b[22m\n\n    at D:\\学习相关\\传智杯\\AI创新应用挑战赛\\scripts\\player\\verify-online.mjs:94:72"
+}

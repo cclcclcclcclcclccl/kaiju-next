@@ -1,3 +1,4 @@
+import { defaultSourceDate } from './tianyuan.ts';
 import { useState } from 'react';
 import type { z } from 'zod';
 import { heroes, heroById } from '../catalog.ts';
@@ -8,7 +9,7 @@ import { SkinDistribution } from './SourceMedia.tsx';
 export default function SkinStats({ heroId: fixedHeroId }: { heroId?: number }) {
   const [selectedHero, setSelectedHero] = useState(544);
   const heroId = fixedHeroId ?? selectedHero;
-  const [date, setDate] = useState(sourceDate());
+  const [date, setDate] = useState(defaultSourceDate());
   const valid =
     /^\d{4}-\d{2}-\d{2}$/.test(date) &&
     Number.isFinite(Date.parse(date)) &&

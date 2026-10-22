@@ -1,3 +1,6 @@
+import { reviewMode } from '../reviewMode.ts';
+import { defaultTierDate } from './publicBoard.ts';
+import { defaultSourceDate } from './tianyuan.ts';
 import RelationExplorer from './RelationExplorer.tsx';
 import { useEffect, useState } from 'react';
 import type { ReactNode } from 'react';
@@ -62,7 +65,11 @@ export function Provenance({ packet }: { packet: TianyuanPacket }) {
   return (
     <details className="source-proof">
       <summary>
-        {packet.cache === 'stale' ? '更新失败 · 正在显示旧缓存 · ' : ''}
+        {reviewMode
+          ? '发布快照 · '
+          : packet.cache === 'stale'
+            ? '更新失败 · 正在显示旧缓存 · '
+            : ''}
         {packet.query.kind === 'stats'
           ? Object.entries(TIANYUAN_MODES).find(([, mode]) => mode === packet.query.mode)?.[0] +
             ' · '
@@ -105,8 +112,8 @@ export function TianyuanHero({
   const parts = context?.snapshotId?.startsWith('tianyuan:')
     ? context.snapshotId.split(':')
     : undefined;
-  const [date, setDate] = useState(parts?.[1] ?? sourceDate());
-  const [tierDate, setTierDate] = useState(parts?.[4] ?? (parts ? parts[1] : sourceTierDate()));
+  const [date, setDate] = useState(parts?.[1] ?? defaultSourceDate());
+  const [tierDate, setTierDate] = useState(parts?.[4] ?? (parts ? parts[1] : defaultTierDate()));
   const [mode, setMode] = useState(
     Number(parts?.[2] ?? TIANYUAN_MODES[context?.segment ?? '巅峰千强'] ?? 5),
   );

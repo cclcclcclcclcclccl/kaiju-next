@@ -1,3 +1,4 @@
+import { defaultSourceDate } from './tianyuan.ts';
 import { useState } from 'react';
 import type { Hero } from '../model.ts';
 import { ROLES } from '../model.ts';
@@ -6,7 +7,7 @@ import { SourceBlock, SourceTable, Identity, rateColumn } from './SourceWidgets.
 import type { Column } from './SourceWidgets.tsx';
 import { sourceDate } from './tianyuan.ts';
 export default function FullStats({ onOpen }: { onOpen: (h: Hero) => void }) {
-  const [date, setDate] = useState(sourceDate),
+  const [date, setDate] = useState(defaultSourceDate),
     [mode, setMode] = useState(5),
     [role, setRole] = useState('全部'),
     [group, setGroup] = useState('base'),

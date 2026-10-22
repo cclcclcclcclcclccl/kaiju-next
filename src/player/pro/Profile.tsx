@@ -1,3 +1,4 @@
+import { reviewMode } from '../reviewMode.ts';
 import { useEffect, useState, useMemo, useRef } from 'react';
 import { Save, Download, Upload, Plus, Trash2 } from 'lucide-react';
 import { heroes, heroById } from '../catalog.ts';
@@ -22,7 +23,7 @@ export default function ProfilePage({ focusHeroId }: { focusHeroId?: number }) {
   }, [draftKey]);
   const [base, setBase] = useState<Profile>(recovered?.base ?? data.profile);
   const [draftNotice, setDraftNotice] = useState(
-    recovered ? '已恢复本标签页未保存草稿。保存时仍会核对服务器版本。' : '',
+    recovered ? '已恢复本标签页未保存草稿。保存时仍会核对当前存储版本。' : '',
   );
   const previousData = useRef(data.profile);
   const [profile, setProfile] = useState<Profile>(recovered?.draft ?? data.profile),
@@ -98,7 +99,11 @@ export default function ProfilePage({ focusHeroId }: { focusHeroId?: number }) {
       const d = profileSchema.parse(profile);
       await api('/pro/profile-save', { expected: base, profile: d });
       await refresh();
-      setSuccess('档案已保存，BP 会使用这些记录评估你的个人发挥。');
+      setSuccess(
+        reviewMode
+          ? '档案已保存到当前浏览器，BP 会使用这些记录评估你的个人发挥。'
+          : '档案已保存，BP 会使用这些记录评估你的个人发挥。',
+      );
     } catch (e) {
       setError(
         'issues' in (e as object)

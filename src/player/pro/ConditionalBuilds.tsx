@@ -1,3 +1,4 @@
+import { defaultSourceDate } from './tianyuan.ts';
 import { useState } from 'react';
 import { SourceBlock, SourceTable, Identity, rateColumn, valueText } from './SourceWidgets.tsx';
 import { sourceDate } from './tianyuan.ts';
@@ -5,7 +6,7 @@ import type { PlusQuery, SourceRow } from './sourcePlus.ts';
 import EquipmentBreakdown from './EquipmentBreakdown.tsx';
 import { tianyuanEquipSchema } from './tianyuan.ts';
 export default function ConditionalBuilds({ heroId }: { heroId: number }) {
-  const [date, setDate] = useState(sourceDate),
+  const [date, setDate] = useState(defaultSourceDate),
     [position, setPosition] = useState(''),
     [locks, setLocks] = useState<Record<string, number>>({});
   const query: PlusQuery = {

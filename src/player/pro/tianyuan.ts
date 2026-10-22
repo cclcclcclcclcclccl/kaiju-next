@@ -1,3 +1,4 @@
+import { reviewConfig } from '../reviewMode.ts';
 import { z } from 'zod';
 export const TIANYUAN_ORIGIN = 'https://tianyuanzhiyi.com';
 export const TIANYUAN_MODES: Record<string, number> = {
@@ -13,6 +14,7 @@ export const sourceDate = (now = Date.now()) => {
   const lag = new Date(beijing).getUTCHours() < 9 ? 2 : 1;
   return new Date(beijing - lag * 86400000).toISOString().slice(0, 10);
 };
+export const defaultSourceDate = () => reviewConfig?.statsDate ?? sourceDate();
 const date = z
   .string()
   .regex(/^\d{4}-\d{2}-\d{2}$/)

@@ -1,3 +1,5 @@
+import { defaultTierDate } from './pro/publicBoard.ts';
+import { defaultSourceDate } from './pro/tianyuan.ts';
 import HeroInsights from './pro/HeroInsights.tsx';
 import HeroSourceDetails from './pro/HeroSourceDetails.tsx';
 import { HeroResources } from './pro/ResourceCenter.tsx';
@@ -278,8 +280,8 @@ export default function Heroes({
   const { data } = usePro();
   const [storageBusy, setStorageBusy] = useState(false);
   const [statSegment, setStatSegment] = useState('巅峰千强');
-  const [statDate, setStatDate] = useState(sourceDate());
-  const tierDate = sourceTierDate();
+  const [statDate, setStatDate] = useState(defaultSourceDate());
+  const tierDate = defaultTierDate();
   const publicStats = useSource<TianyuanStat[]>({
     kind: 'stats',
     date: statDate,

@@ -1,3 +1,4 @@
+import { reviewMode } from '../reviewMode.ts';
 import { useEffect, useRef, useState } from 'react';
 import { Camera, Save, Download, Sparkles, Play, Trash2 } from 'lucide-react';
 import { heroes, heroById } from '../catalog.ts';
@@ -138,7 +139,7 @@ export default function Replay() {
       setSavedRevision(saved.revision);
       setSavedContent(content);
       await refresh();
-      setMessage('复盘与关键帧已保存到当前账号');
+      setMessage(reviewMode ? '复盘与关键帧已保存到当前浏览器' : '复盘与关键帧已保存到当前账号');
     } catch (e) {
       setMessage((e as Error).message);
     } finally {
@@ -250,11 +251,13 @@ export default function Replay() {
         </button>
       </div>
       <section className="surface replay-readiness" aria-label="复盘模型与证据状态">
-        <h2>{publicSharing ? '准备你的录像复盘证据' : '交给当前 Codex 对话复盘'}</h2>
+        <h2>{reviewMode || publicSharing ? '准备你的录像复盘证据' : '交给当前 Codex 对话复盘'}</h2>
         <p>
-          {publicSharing
-            ? '可在浏览器选择录像、截取关键帧并记录观察，登录后保存到个人账号，也可以导出复盘证据。分享版不开放站长电脑上的 Codex 文件操作。'
-            : '在这里准备真实画面，在当前聊天中让我逐帧分析，然后读取结果。不需要为这条流程另外配置模型密钥，也不会从网页自动发送聊天消息。'}
+          {reviewMode
+            ? '可选择本地录像、截取画面、填写观察、保存与导出复盘证据。此在线入口未部署自动视觉模型，不能在网页调用作者的 Codex。'
+            : publicSharing
+              ? '可在浏览器选择录像、截取关键帧并记录观察，登录后保存到个人账号，也可以导出复盘证据。分享版不开放站长电脑上的 Codex 文件操作。'
+              : '在这里准备真实画面，在当前聊天中让我逐帧分析，然后读取结果。不需要为这条流程另外配置模型密钥，也不会从网页自动发送聊天消息。'}
         </p>
         <p className="data-caption">
           {configured ? '另已配置可选视觉接口，实战能力待验证。' : '网页自动视觉接口尚未连接。'}
@@ -282,7 +285,7 @@ export default function Replay() {
         <div className="pro-actions">
           <button
             className="btn primary"
-            disabled={publicSharing || busy || !evidence.frames}
+            disabled={reviewMode || publicSharing || busy || !evidence.frames}
             onClick={prepareCodex}
           >
             准备当前对话复盘包

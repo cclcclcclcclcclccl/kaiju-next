@@ -37,3 +37,5 @@ artifacts/browser/
 /submission/release-*/video/smoke.*
 /submission/release-*/*.zip
 /submission/release-*/*.bundle
+
+/dist-review/
