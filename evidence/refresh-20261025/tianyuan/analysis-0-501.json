@@ -1,0 +1,66 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/analysis?heroId=501",
+  "query": {
+    "kind": "analysis",
+    "heroId": 501
+  },
+  "fetchedAt": "2026-10-25T13:14:34.180Z",
+  "rawSha256": "e27af07f47fe71378a7499295abc2fd6ef204f339605104f9185353f120eff97",
+  "cache": "fresh",
+  "data": {
+    "heroId": 501,
+    "counters": [],
+    "counteredBy": [
+      {
+        "heroName": "元歌",
+        "totalMatches": 96,
+        "advantageIndex": -14.63
+      },
+      {
+        "heroName": "蚩奼",
+        "totalMatches": 88,
+        "advantageIndex": -13.94
+      },
+      {
+        "heroName": "百里守约",
+        "totalMatches": 120,
+        "advantageIndex": -8.11
+      },
+      {
+        "heroName": "女娲",
+        "totalMatches": 126,
+        "advantageIndex": -7.77
+      }
+    ],
+    "goodSynergies": [],
+    "badSynergies": [
+      {
+        "heroName": "马超",
+        "totalMatches": 112,
+        "synergyIndex": -10.13
+      },
+      {
+        "heroName": "赵云",
+        "totalMatches": 142,
+        "synergyIndex": -9.04
+      },
+      {
+        "heroName": "女娲",
+        "totalMatches": 133,
+        "synergyIndex": -7.17
+      },
+      {
+        "heroName": "敖隐",
+        "totalMatches": 213,
+        "synergyIndex": -6.52
+      },
+      {
+        "heroName": "元流之子(射手)",
+        "totalMatches": 168,
+        "synergyIndex": -6.23
+      }
+    ]
+  }
+}

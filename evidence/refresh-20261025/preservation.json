@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-10-25T13:21:18.794Z",
+  "databases": [
+    {
+      "name": "local",
+      "unchanged": true,
+      "before": {
+        "sha256": "e7d58b9775ee1d4fd9b84d2fc0796dfb9020569a07f449ffbea85a5426a5de7f",
+        "tables": 7,
+        "rows": 4
+      },
+      "after": {
+        "sha256": "e7d58b9775ee1d4fd9b84d2fc0796dfb9020569a07f449ffbea85a5426a5de7f",
+        "tables": 7,
+        "rows": 4
+      }
+    },
+    {
+      "name": "public",
+      "unchanged": true,
+      "before": {
+        "sha256": "f79108d86c9d1ecc6530f9cc9af9dbdd9c9a1c936e1af523b4857e2ee99cde2d",
+        "tables": 7,
+        "rows": 20
+      },
+      "after": {
+        "sha256": "f79108d86c9d1ecc6530f9cc9af9dbdd9c9a1c936e1af523b4857e2ee99cde2d",
+        "tables": 7,
+        "rows": 20
+      }
+    }
+  ],
+  "services": [
+    {
+      "port": 4318,
+      "status": 200,
+      "version": "0.26.2",
+      "heroCount": 133,
+      "publicSharing": false
+    },
+    {
+      "port": 4320,
+      "status": 200,
+      "version": "0.26.2",
+      "heroCount": 133,
+      "publicSharing": true
+    }
+  ]
+}

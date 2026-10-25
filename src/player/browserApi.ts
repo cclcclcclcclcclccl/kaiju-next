@@ -134,7 +134,7 @@ export async function browserApi<T>(path: string, body?: unknown): Promise<T> {
     return {
       product: '自在弈境',
       productId: 'kaiju-player-companion',
-      version: '0.26.1-online',
+      version: '0.26.2-online',
       modelConfigured: false,
       publicSharing: false,
       heroCount: heroes.length,

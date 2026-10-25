@@ -1,0 +1,50 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-24&heroId=118",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-24",
+    "heroId": 118
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:08:19.035Z",
+  "rawSha256": "72ba61108acb8db7d21656a7f3326da6ab85abbb8ab9856682142662043f977f",
+  "cache": "fresh",
+  "data": {
+    "heroId": 118,
+    "queryDate": "2026-10-24",
+    "skinDistribution": [
+      {
+        "skinName": "小动物乐团",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/17fdd7def7928f75d77e35101a98c505.jpg",
+        "pickRate": 35.29
+      },
+      {
+        "skinName": "寅虎·展翼",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/abfca40bfa0c166df2e7b6000b0378b8.jpg",
+        "pickRate": 34.56
+      },
+      {
+        "skinName": "帕恰狗之风",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/2aab5cd3c8a5ed6290a24046fb2629d1.jpg",
+        "pickRate": 12.5
+      },
+      {
+        "skinName": "天狼运算者",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/ca7ebd31028a408fd98be4bd9df3ca61.jpg",
+        "pickRate": 12.5
+      },
+      {
+        "skinName": "茶境仙",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/dbb85f91fbc58aeb6da61b937a010358.jpg",
+        "pickRate": 3.68
+      },
+      {
+        "skinName": "归虚梦演",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/917c44de84067f4305b0c8b381c12b52.jpg",
+        "pickRate": 1.47
+      }
+    ]
+  }
+}

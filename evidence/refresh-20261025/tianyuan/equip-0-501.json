@@ -1,0 +1,282 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-24&heroId=501",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-24",
+    "heroId": 501
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:14:35.221Z",
+  "rawSha256": "993a6d309f0b16e2d51b411cd4ebed13c939597be8c605602106068d17eeb13f",
+  "cache": "fresh",
+  "data": {
+    "heroId": 501,
+    "queryEndDate": "2026-10-24T16:59:59.999Z",
+    "topItemsBySlot": [
+      {
+        "slot": 1,
+        "baseWinRate": 42.48,
+        "topItems": [
+          {
+            "equipId": 1724,
+            "equipName": "近卫·救赎",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1751.png",
+            "pickRate": 94.44,
+            "winRate": 43.22,
+            "deltaWinRate": 0.74
+          },
+          {
+            "equipId": 1753,
+            "equipName": "近卫·奔狼",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1753.png",
+            "pickRate": 5.56,
+            "winRate": 67.57,
+            "deltaWinRate": 25.09
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "baseWinRate": 43.06,
+        "topItems": [
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+            "pickRate": 83.33,
+            "winRate": 43.14,
+            "deltaWinRate": 0.08
+          },
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png",
+            "pickRate": 11.11,
+            "winRate": 44.79,
+            "deltaWinRate": 1.73
+          },
+          {
+            "equipId": 1426,
+            "equipName": "疾步之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1426.png",
+            "pickRate": 5.56,
+            "winRate": 43.24,
+            "deltaWinRate": 0.18
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "baseWinRate": 46.48,
+        "topItems": [
+          {
+            "equipId": 1237,
+            "equipName": "时之预言",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1237.png",
+            "pickRate": 81.25,
+            "winRate": 48.11,
+            "deltaWinRate": 1.63
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png",
+            "pickRate": 12.5,
+            "winRate": 47.39,
+            "deltaWinRate": 0.91
+          },
+          {
+            "equipId": 1239,
+            "equipName": "辉月",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1239.png",
+            "pickRate": 6.25,
+            "winRate": 50,
+            "deltaWinRate": 3.52
+          }
+        ]
+      },
+      {
+        "slot": 4,
+        "baseWinRate": 57.75,
+        "topItems": [
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png",
+            "pickRate": 90,
+            "winRate": 60.62,
+            "deltaWinRate": 2.87
+          },
+          {
+            "equipId": 1237,
+            "equipName": "时之预言",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1237.png",
+            "pickRate": 10,
+            "winRate": 61.67,
+            "deltaWinRate": 3.92
+          }
+        ]
+      },
+      {
+        "slot": 5,
+        "baseWinRate": 58.45,
+        "topItems": [
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png",
+            "pickRate": 33.33,
+            "winRate": 55,
+            "deltaWinRate": -3.45
+          },
+          {
+            "equipId": 1238,
+            "equipName": "贤者天书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1238.png",
+            "pickRate": 33.33,
+            "winRate": 61.54,
+            "deltaWinRate": 3.09
+          },
+          {
+            "equipId": 1336,
+            "equipName": "极寒风暴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1336.png",
+            "pickRate": 33.33,
+            "winRate": null,
+            "deltaWinRate": null
+          }
+        ]
+      },
+      {
+        "slot": 6,
+        "baseWinRate": 67.65,
+        "topItems": [
+          {
+            "equipId": 1227,
+            "equipName": "炽热支配",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1227.png",
+            "pickRate": 100,
+            "winRate": 100,
+            "deltaWinRate": 32.35
+          }
+        ]
+      }
+    ],
+    "topFullBuilds": [
+      {
+        "build": [
+          {
+            "equipId": 1724,
+            "equipName": "近卫·救赎",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1751.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1237,
+            "equipName": "时之预言",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1237.png"
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png"
+          },
+          {
+            "equipId": 1238,
+            "equipName": "贤者天书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1238.png"
+          },
+          {
+            "equipId": 1227,
+            "equipName": "炽热支配",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1227.png"
+          }
+        ],
+        "frequency": 5.56,
+        "summonerSkill": {
+          "skillId": 80102,
+          "skillName": "治疗术",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/2bfe8f88808b1566dd979c0b14b766ed.png"
+        }
+      }
+    ],
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1724,
+        "equipmentName": "近卫·救赎",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1751.png",
+        "pickRate": 88.14,
+        "winRate": 40.38
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+        "pickRate": 56.78,
+        "winRate": 40.3
+      },
+      {
+        "equipmentId": 1237,
+        "equipmentName": "时之预言",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1237.png",
+        "pickRate": 55.08,
+        "winRate": 50.77
+      },
+      {
+        "equipmentId": 1232,
+        "equipmentName": "博学者之怒",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png",
+        "pickRate": 48.31,
+        "winRate": 42.11
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png",
+        "pickRate": 34.75,
+        "winRate": 39.02
+      },
+      {
+        "equipmentId": 1238,
+        "equipmentName": "贤者天书",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1238.png",
+        "pickRate": 12.71,
+        "winRate": 40
+      },
+      {
+        "equipmentId": 1426,
+        "equipmentName": "疾步之靴",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1426.png",
+        "pickRate": 5.93,
+        "winRate": 57.14
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png",
+        "pickRate": 5.08,
+        "winRate": 16.67
+      },
+      {
+        "equipmentId": 1753,
+        "equipmentName": "近卫·奔狼",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1753.png",
+        "pickRate": 4.24,
+        "winRate": 40
+      },
+      {
+        "equipmentId": 1333,
+        "equipmentName": "不祥征兆",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1333.png",
+        "pickRate": 4.24,
+        "winRate": 20
+      }
+    ]
+  }
+}

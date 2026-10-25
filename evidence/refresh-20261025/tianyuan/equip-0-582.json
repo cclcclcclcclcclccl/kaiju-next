@@ -1,0 +1,322 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-24&heroId=582",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-24",
+    "heroId": 582
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:18:17.074Z",
+  "rawSha256": "61dc06bdaa3f644b9f3016b6a3a34e49fa471d53af10e4765b129b84ddc5692a",
+  "cache": "fresh",
+  "data": {
+    "heroId": 582,
+    "queryEndDate": "2026-10-24T16:59:59.999Z",
+    "topItemsBySlot": [
+      {
+        "slot": 1,
+        "baseWinRate": 46.42,
+        "topItems": [
+          {
+            "equipId": 1426,
+            "equipName": "疾步之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1426.png",
+            "pickRate": 30,
+            "winRate": 46.45,
+            "deltaWinRate": 0.03
+          },
+          {
+            "equipId": 1233,
+            "equipName": "回响之杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1233.png",
+            "pickRate": 20,
+            "winRate": 47.68,
+            "deltaWinRate": 1.26
+          },
+          {
+            "equipId": 1424,
+            "equipName": "秘法之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1424.png",
+            "pickRate": 20,
+            "winRate": 44.23,
+            "deltaWinRate": -2.19
+          },
+          {
+            "equipId": 12211,
+            "equipName": "梦魇之牙",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png",
+            "pickRate": 20,
+            "winRate": 45.19,
+            "deltaWinRate": -1.23
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "baseWinRate": 46.41,
+        "topItems": [
+          {
+            "equipId": 1233,
+            "equipName": "回响之杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1233.png",
+            "pickRate": 40,
+            "winRate": 45.8,
+            "deltaWinRate": -0.61
+          },
+          {
+            "equipId": 1424,
+            "equipName": "秘法之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1424.png",
+            "pickRate": 20,
+            "winRate": 49.4,
+            "deltaWinRate": 2.99
+          },
+          {
+            "equipId": 1426,
+            "equipName": "疾步之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1426.png",
+            "pickRate": 20,
+            "winRate": 45.37,
+            "deltaWinRate": -1.04
+          },
+          {
+            "equipId": 12211,
+            "equipName": "梦魇之牙",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png",
+            "pickRate": 20,
+            "winRate": 45.85,
+            "deltaWinRate": -0.56
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "baseWinRate": 48.26,
+        "topItems": [
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png",
+            "pickRate": 30,
+            "winRate": 47.28,
+            "deltaWinRate": -0.98
+          },
+          {
+            "equipId": 1238,
+            "equipName": "贤者天书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1238.png",
+            "pickRate": 30,
+            "winRate": 49.16,
+            "deltaWinRate": 0.9
+          },
+          {
+            "equipId": 1227,
+            "equipName": "炽热支配",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1227.png",
+            "pickRate": 10,
+            "winRate": 50.27,
+            "deltaWinRate": 2.01
+          },
+          {
+            "equipId": 1239,
+            "equipName": "辉月",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1239.png",
+            "pickRate": 10,
+            "winRate": 50.46,
+            "deltaWinRate": 2.2
+          }
+        ]
+      },
+      {
+        "slot": 4,
+        "baseWinRate": 56.82,
+        "topItems": [
+          {
+            "equipId": 1238,
+            "equipName": "贤者天书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1238.png",
+            "pickRate": 33.33,
+            "winRate": 57.26,
+            "deltaWinRate": 0.44
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png",
+            "pickRate": 22.22,
+            "winRate": 55.67,
+            "deltaWinRate": -1.15
+          },
+          {
+            "equipId": 1233,
+            "equipName": "回响之杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1233.png",
+            "pickRate": 11.11,
+            "winRate": 75.86,
+            "deltaWinRate": 19.04
+          },
+          {
+            "equipId": 1234,
+            "equipName": "凝冰之息",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1234.png",
+            "pickRate": 11.11,
+            "winRate": 45.65,
+            "deltaWinRate": -11.17
+          }
+        ]
+      },
+      {
+        "slot": 5,
+        "baseWinRate": 62.69,
+        "topItems": [
+          {
+            "equipId": 1231,
+            "equipName": "虚无法杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png",
+            "pickRate": 66.67,
+            "winRate": 58.66,
+            "deltaWinRate": -4.03
+          },
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png",
+            "pickRate": 33.33,
+            "winRate": 65.12,
+            "deltaWinRate": 2.43
+          }
+        ]
+      },
+      {
+        "slot": 6,
+        "baseWinRate": 64.89,
+        "topItems": [
+          {
+            "equipId": 1240,
+            "equipName": "噬神之书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png",
+            "pickRate": 100,
+            "winRate": 75,
+            "deltaWinRate": 10.11
+          }
+        ]
+      }
+    ],
+    "topFullBuilds": [
+      {
+        "build": [
+          {
+            "equipId": 1233,
+            "equipName": "回响之杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1233.png"
+          },
+          {
+            "equipId": 1426,
+            "equipName": "疾步之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1426.png"
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png"
+          },
+          {
+            "equipId": 1238,
+            "equipName": "贤者天书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1238.png"
+          },
+          {
+            "equipId": 1231,
+            "equipName": "虚无法杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png"
+          },
+          {
+            "equipId": 1240,
+            "equipName": "噬神之书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png"
+          }
+        ],
+        "frequency": 10,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      }
+    ],
+    "equipmentWinRates": [
+      {
+        "equipmentId": 12211,
+        "equipmentName": "梦魇之牙",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png",
+        "pickRate": 67.98,
+        "winRate": 47.83
+      },
+      {
+        "equipmentId": 1233,
+        "equipmentName": "回响之杖",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1233.png",
+        "pickRate": 60.1,
+        "winRate": 44.26
+      },
+      {
+        "equipmentId": 1426,
+        "equipmentName": "疾步之靴",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1426.png",
+        "pickRate": 51.72,
+        "winRate": 39.05
+      },
+      {
+        "equipmentId": 1232,
+        "equipmentName": "博学者之怒",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png",
+        "pickRate": 47.29,
+        "winRate": 52.08
+      },
+      {
+        "equipmentId": 1424,
+        "equipmentName": "秘法之靴",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1424.png",
+        "pickRate": 41.87,
+        "winRate": 51.76
+      },
+      {
+        "equipmentId": 1238,
+        "equipmentName": "贤者天书",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1238.png",
+        "pickRate": 41.87,
+        "winRate": 49.41
+      },
+      {
+        "equipmentId": 1727,
+        "equipmentName": "日暮之流",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png",
+        "pickRate": 20.69,
+        "winRate": 66.67
+      },
+      {
+        "equipmentId": 1239,
+        "equipmentName": "辉月",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1239.png",
+        "pickRate": 20.69,
+        "winRate": 54.76
+      },
+      {
+        "equipmentId": 1227,
+        "equipmentName": "炽热支配",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1227.png",
+        "pickRate": 15.76,
+        "winRate": 62.5
+      },
+      {
+        "equipmentId": 1231,
+        "equipmentName": "虚无法杖",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png",
+        "pickRate": 14.78,
+        "winRate": 63.33
+      }
+    ]
+  }
+}

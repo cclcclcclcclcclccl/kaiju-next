@@ -1,0 +1,50 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-24&heroId=197",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-24",
+    "heroId": 197
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:14:11.950Z",
+  "rawSha256": "e5928eec15df9143af638c587d842db06294aafca8852a7807dc56efebbcc6fd",
+  "cache": "fresh",
+  "data": {
+    "heroId": 197,
+    "queryDate": "2026-10-24",
+    "skinDistribution": [
+      {
+        "skinName": "滕王阁序",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/03ffb45c488a5dfc305e396b2f4e22a9.jpg",
+        "pickRate": 41.32
+      },
+      {
+        "skinName": "万物之道",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/05e0d3d1ee7f4730e63a09a039c0e8ec.jpg",
+        "pickRate": 31.22
+      },
+      {
+        "skinName": "踏雪寻梅",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a9dbadfb271574219b86a02d595c5fcd.jpg",
+        "pickRate": 14.13
+      },
+      {
+        "skinName": "守夜人",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/46840b4a21689b9f6e9bfccdf1bb1c7d.jpg",
+        "pickRate": 8.34
+      },
+      {
+        "skinName": "炽弈燎原",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/61c3ed7b0fe6a6f594e4db6091c09013.jpg",
+        "pickRate": 2.96
+      },
+      {
+        "skinName": "混沌棋",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/8abbb5a3845456d5af49ef3634637c45.jpg",
+        "pickRate": 2.02
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-24&heroId=522",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-24",
+    "heroId": 522
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:16:02.925Z",
+  "rawSha256": "e85f33c0eb207e34734b533bd0acf30592f840d5561b3f72f0f32f9dc6027526",
+  "cache": "fresh",
+  "data": {
+    "heroId": 522,
+    "queryDate": "2026-10-24",
+    "skinDistribution": [
+      {
+        "skinName": "李逍遥",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a8fba308efccb1c353d344f22fb216ae.jpg",
+        "pickRate": 54.72
+      },
+      {
+        "skinName": "器灵·螭龙剑",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/1336ec47cb3bc17821320888477ca896.jpg",
+        "pickRate": 23.11
+      },
+      {
+        "skinName": "山海·苍雷引",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/c9d902c8fd6cd349bdaf320dcf4fca5a.jpg",
+        "pickRate": 14.15
+      },
+      {
+        "skinName": "云鹰飞将",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/8e9338d33ab7e698e5ec01c3bcbf8b4b.jpg",
+        "pickRate": 8.02
+      }
+    ]
+  }
+}

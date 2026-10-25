@@ -1,0 +1,55 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-24&heroId=123",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-24",
+    "heroId": 123
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:08:39.164Z",
+  "rawSha256": "a2ae922fe5554a75675cffb4d5888f8fc023836f32612a560ec47832f6f390e2",
+  "cache": "fresh",
+  "data": {
+    "heroId": 123,
+    "queryDate": "2026-10-24",
+    "skinDistribution": [
+      {
+        "skinName": "天魔缭乱",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/de0a2f3017d39f340aaef7e8f4997fb3.jpg",
+        "pickRate": 28.24
+      },
+      {
+        "skinName": "怒海麟威",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/42bc9224a61e0d49893b33b1a053c88d.jpg",
+        "pickRate": 21.93
+      },
+      {
+        "skinName": "千魇归渊",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/cca820194ab11d92791cc749e0637302.jpg",
+        "pickRate": 17.94
+      },
+      {
+        "skinName": "曦玄引",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/3789d707981f4ce088261b2cbbbc57bc.jpg",
+        "pickRate": 15.61
+      },
+      {
+        "skinName": "遇见神鼓",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/fc0f2492020eb4a30c33b9e96e10d52f.jpg",
+        "pickRate": 9.3
+      },
+      {
+        "skinName": "御风骁将",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/112db50469ce5ba75bfab5dd3ed6b98b.jpg",
+        "pickRate": 4.98
+      },
+      {
+        "skinName": "圣诞狂欢",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/eb5ae83f75dc89edcdc43a86db414ffb.jpg",
+        "pickRate": 1.99
+      }
+    ]
+  }
+}

@@ -1,0 +1,882 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-24&heroId=521",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-24",
+    "heroId": 521
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:16:01.105Z",
+  "rawSha256": "5610fee201a5a1ce3bdc2c9c7fd80de63aac6927ae987238f8bbf4d03d1ba69e",
+  "cache": "fresh",
+  "data": {
+    "heroId": 521,
+    "queryEndDate": "2026-10-24T16:59:59.999Z",
+    "topItemsBySlot": [
+      {
+        "slot": 1,
+        "baseWinRate": 50.44,
+        "topItems": [
+          {
+            "equipId": 12211,
+            "equipName": "梦魇之牙",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png",
+            "pickRate": 63.78,
+            "winRate": 50.35,
+            "deltaWinRate": -0.09
+          },
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png",
+            "pickRate": 23.85,
+            "winRate": 51.52,
+            "deltaWinRate": 1.08
+          },
+          {
+            "equipId": 1423,
+            "equipName": "冷静之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1423.png",
+            "pickRate": 4.95,
+            "winRate": null,
+            "deltaWinRate": null
+          },
+          {
+            "equipId": 1233,
+            "equipName": "回响之杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1233.png",
+            "pickRate": 2.83,
+            "winRate": null,
+            "deltaWinRate": null
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "baseWinRate": 50.49,
+        "topItems": [
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png",
+            "pickRate": 33.92,
+            "winRate": 51.56,
+            "deltaWinRate": 1.07
+          },
+          {
+            "equipId": 1423,
+            "equipName": "冷静之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1423.png",
+            "pickRate": 21.55,
+            "winRate": 38.87,
+            "deltaWinRate": -11.62
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+            "pickRate": 19.79,
+            "winRate": 59.86,
+            "deltaWinRate": 9.37
+          },
+          {
+            "equipId": 12211,
+            "equipName": "梦魇之牙",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png",
+            "pickRate": 7.95,
+            "winRate": 50.35,
+            "deltaWinRate": -0.14
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "baseWinRate": 52.5,
+        "topItems": [
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png",
+            "pickRate": 34.72,
+            "winRate": 52.88,
+            "deltaWinRate": 0.38
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+            "pickRate": 22.45,
+            "winRate": 59.82,
+            "deltaWinRate": 7.32
+          },
+          {
+            "equipId": 1423,
+            "equipName": "冷静之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1423.png",
+            "pickRate": 18.68,
+            "winRate": 41.67,
+            "deltaWinRate": -10.83
+          },
+          {
+            "equipId": 1240,
+            "equipName": "噬神之书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png",
+            "pickRate": 6.6,
+            "winRate": 52.91,
+            "deltaWinRate": 0.41
+          }
+        ]
+      },
+      {
+        "slot": 4,
+        "baseWinRate": 61.75,
+        "topItems": [
+          {
+            "equipId": 1240,
+            "equipName": "噬神之书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png",
+            "pickRate": 79.38,
+            "winRate": 62.63,
+            "deltaWinRate": 0.88
+          },
+          {
+            "equipId": 1235,
+            "equipName": "痛苦面具",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1235.png",
+            "pickRate": 4.24,
+            "winRate": null,
+            "deltaWinRate": null
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png",
+            "pickRate": 3.95,
+            "winRate": null,
+            "deltaWinRate": null
+          },
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png",
+            "pickRate": 3.67,
+            "winRate": null,
+            "deltaWinRate": null
+          }
+        ]
+      },
+      {
+        "slot": 5,
+        "baseWinRate": 64.91,
+        "topItems": [
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png",
+            "pickRate": 59.69,
+            "winRate": 65.8,
+            "deltaWinRate": 0.89
+          },
+          {
+            "equipId": 1231,
+            "equipName": "虚无法杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png",
+            "pickRate": 17.83,
+            "winRate": 59.94,
+            "deltaWinRate": -4.97
+          },
+          {
+            "equipId": 1227,
+            "equipName": "炽热支配",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1227.png",
+            "pickRate": 6.2,
+            "winRate": 70.51,
+            "deltaWinRate": 5.6
+          },
+          {
+            "equipId": 1240,
+            "equipName": "噬神之书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png",
+            "pickRate": 4.65,
+            "winRate": null,
+            "deltaWinRate": null
+          }
+        ]
+      },
+      {
+        "slot": 6,
+        "baseWinRate": 63.3,
+        "topItems": [
+          {
+            "equipId": 1231,
+            "equipName": "虚无法杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png",
+            "pickRate": 50,
+            "winRate": 62.28,
+            "deltaWinRate": -1.02
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png",
+            "pickRate": 28.57,
+            "winRate": 60.92,
+            "deltaWinRate": -2.38
+          },
+          {
+            "equipId": 1238,
+            "equipName": "贤者天书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1238.png",
+            "pickRate": 11.9,
+            "winRate": 69.06,
+            "deltaWinRate": 5.76
+          },
+          {
+            "equipId": 1239,
+            "equipName": "辉月",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1239.png",
+            "pickRate": 4.76,
+            "winRate": null,
+            "deltaWinRate": null
+          }
+        ]
+      }
+    ],
+    "topFullBuilds": [
+      {
+        "build": [
+          {
+            "equipId": 12211,
+            "equipName": "梦魇之牙",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png"
+          },
+          {
+            "equipId": 1240,
+            "equipName": "噬神之书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png"
+          },
+          {
+            "equipId": 1231,
+            "equipName": "虚无法杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png"
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png"
+          }
+        ],
+        "frequency": 2.65,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 12211,
+            "equipName": "梦魇之牙",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png"
+          },
+          {
+            "equipId": 1240,
+            "equipName": "噬神之书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png"
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png"
+          },
+          {
+            "equipId": 1238,
+            "equipName": "贤者天书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1238.png"
+          }
+        ],
+        "frequency": 0.35,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 12211,
+            "equipName": "梦魇之牙",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png"
+          },
+          {
+            "equipId": 1240,
+            "equipName": "噬神之书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png"
+          },
+          {
+            "equipId": 1227,
+            "equipName": "炽热支配",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1227.png"
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png"
+          }
+        ],
+        "frequency": 0.35,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 12211,
+            "equipName": "梦魇之牙",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png"
+          },
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png"
+          },
+          {
+            "equipId": 1227,
+            "equipName": "炽热支配",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1227.png"
+          },
+          {
+            "equipId": 1240,
+            "equipName": "噬神之书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png"
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png"
+          },
+          {
+            "equipId": 1231,
+            "equipName": "虚无法杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png"
+          }
+        ],
+        "frequency": 0.18,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 12211,
+            "equipName": "梦魇之牙",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png"
+          },
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1235,
+            "equipName": "痛苦面具",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1235.png"
+          },
+          {
+            "equipId": 1227,
+            "equipName": "炽热支配",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1227.png"
+          },
+          {
+            "equipId": 1231,
+            "equipName": "虚无法杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png"
+          }
+        ],
+        "frequency": 0.18,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png"
+          },
+          {
+            "equipId": 1235,
+            "equipName": "痛苦面具",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1235.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1240,
+            "equipName": "噬神之书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png"
+          },
+          {
+            "equipId": 12211,
+            "equipName": "梦魇之牙",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png"
+          },
+          {
+            "equipId": 1227,
+            "equipName": "炽热支配",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1227.png"
+          }
+        ],
+        "frequency": 0.18,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1235,
+            "equipName": "痛苦面具",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1235.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png"
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png"
+          },
+          {
+            "equipId": 1231,
+            "equipName": "虚无法杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png"
+          },
+          {
+            "equipId": 1238,
+            "equipName": "贤者天书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1238.png"
+          }
+        ],
+        "frequency": 0.18,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png"
+          },
+          {
+            "equipId": 1239,
+            "equipName": "辉月",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1239.png"
+          },
+          {
+            "equipId": 1235,
+            "equipName": "痛苦面具",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1235.png"
+          },
+          {
+            "equipId": 1240,
+            "equipName": "噬神之书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png"
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png"
+          },
+          {
+            "equipId": 1231,
+            "equipName": "虚无法杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png"
+          }
+        ],
+        "frequency": 0.18,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 12211,
+            "equipName": "梦魇之牙",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png"
+          },
+          {
+            "equipId": 1235,
+            "equipName": "痛苦面具",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1235.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1231,
+            "equipName": "虚无法杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png"
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png"
+          },
+          {
+            "equipId": 1239,
+            "equipName": "辉月",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1239.png"
+          }
+        ],
+        "frequency": 0.18,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1235,
+            "equipName": "痛苦面具",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1235.png"
+          },
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1240,
+            "equipName": "噬神之书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png"
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png"
+          },
+          {
+            "equipId": 1231,
+            "equipName": "虚无法杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png"
+          }
+        ],
+        "frequency": 0.18,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png"
+          },
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png"
+          },
+          {
+            "equipId": 1240,
+            "equipName": "噬神之书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png"
+          },
+          {
+            "equipId": 1238,
+            "equipName": "贤者天书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1238.png"
+          },
+          {
+            "equipId": 1231,
+            "equipName": "虚无法杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png"
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png"
+          }
+        ],
+        "frequency": 0.18,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 12211,
+            "equipName": "梦魇之牙",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png"
+          },
+          {
+            "equipId": 1238,
+            "equipName": "贤者天书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1238.png"
+          },
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png"
+          },
+          {
+            "equipId": 1240,
+            "equipName": "噬神之书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png"
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png"
+          },
+          {
+            "equipId": 1231,
+            "equipName": "虚无法杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png"
+          }
+        ],
+        "frequency": 0.18,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 12211,
+            "equipName": "梦魇之牙",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png"
+          },
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png"
+          },
+          {
+            "equipId": 1423,
+            "equipName": "冷静之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1423.png"
+          },
+          {
+            "equipId": 1240,
+            "equipName": "噬神之书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png"
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png"
+          },
+          {
+            "equipId": 1231,
+            "equipName": "虚无法杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png"
+          }
+        ],
+        "frequency": 0.18,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 12211,
+            "equipName": "梦魇之牙",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png"
+          },
+          {
+            "equipId": 1727,
+            "equipName": "日暮之流",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png"
+          },
+          {
+            "equipId": 1424,
+            "equipName": "秘法之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1424.png"
+          },
+          {
+            "equipId": 1240,
+            "equipName": "噬神之书",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png"
+          },
+          {
+            "equipId": 1232,
+            "equipName": "博学者之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png"
+          },
+          {
+            "equipId": 1231,
+            "equipName": "虚无法杖",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png"
+          }
+        ],
+        "frequency": 0.18,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      }
+    ],
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1727,
+        "equipmentName": "日暮之流",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1727.png",
+        "pickRate": 92.43,
+        "winRate": 52.56
+      },
+      {
+        "equipmentId": 12211,
+        "equipmentName": "梦魇之牙",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/12211.png",
+        "pickRate": 77.79,
+        "winRate": 51.42
+      },
+      {
+        "equipmentId": 1240,
+        "equipmentName": "噬神之书",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1240.png",
+        "pickRate": 60.89,
+        "winRate": 61.3
+      },
+      {
+        "equipmentId": 1423,
+        "equipmentName": "冷静之靴",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1423.png",
+        "pickRate": 45.54,
+        "winRate": 38.89
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+        "pickRate": 40.46,
+        "winRate": 60.47
+      },
+      {
+        "equipmentId": 1232,
+        "equipmentName": "博学者之怒",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1232.png",
+        "pickRate": 20.57,
+        "winRate": 62.98
+      },
+      {
+        "equipmentId": 1235,
+        "equipmentName": "痛苦面具",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1235.png",
+        "pickRate": 12.12,
+        "winRate": 56.32
+      },
+      {
+        "equipmentId": 1231,
+        "equipmentName": "虚无法杖",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1231.png",
+        "pickRate": 9.08,
+        "winRate": 60.36
+      },
+      {
+        "equipmentId": 1424,
+        "equipmentName": "秘法之靴",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1424.png",
+        "pickRate": 6.62,
+        "winRate": 65.26
+      },
+      {
+        "equipmentId": 1227,
+        "equipmentName": "炽热支配",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1227.png",
+        "pickRate": 4.87,
+        "winRate": 68.1
+      }
+    ]
+  }
+}

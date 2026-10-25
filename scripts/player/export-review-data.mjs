@@ -11,7 +11,7 @@ const hash = (text) => createHash('sha256').update(text).digest('hex');
 const manifest = {
   format: 'zizai-public-review-v1',
   builtAt: new Date().toISOString(),
-  defaultDate: '2026-10-13',
+  defaultDate: '',
   entries: {},
   excluded: [],
 };
@@ -85,6 +85,36 @@ await save('/resources', {
 });
 const cases = JSON.parse(await readFile('data/kpl/cases.json', 'utf8'));
 await save('/kpl/cases', { ...cases, warning });
+// Advance only to a date with all four scopes, tier, and every catalog hero's
+// dated skin/equipment/build packets. Never label a partial batch complete.
+const heroIds = JSON.parse(await readFile('src/player/data/heroes.json', 'utf8')).heroes.map(
+  (h) => h.id,
+);
+const dates = [
+  ...new Set(
+    Object.keys(manifest.entries)
+      .map((k) => /^\/tianyuan\/stats-(\d{4}-\d{2}-\d{2})-/.exec(k)?.[1])
+      .filter(Boolean),
+  ),
+]
+  .sort()
+  .reverse();
+manifest.availableDates = dates;
+manifest.heroCount = heroIds.length;
+manifest.completeDates = dates.filter((date) =>
+  [
+    ...[1, 3, 4, 5].map((mode) => `/tianyuan/stats-${date}-${mode}-0`),
+    `/tianyuan/tier-${date}-0-0`,
+    ...heroIds.flatMap((id) =>
+      ['skin', 'equip', 'combined'].map((kind) => `/tianyuan/${kind}-${date}-0-${id}`),
+    ),
+    ...heroIds.flatMap((id) =>
+      ['analysis', 'duration'].map((kind) => `/tianyuan/${kind}-undated-0-${id}`),
+    ),
+  ].every((key) => manifest.entries[key]),
+);
+manifest.defaultDate = manifest.completeDates[0];
+if (!manifest.defaultDate) throw Error('No verified complete public batch; refusing publication');
 for (const mode of [1, 3, 4, 5]) {
   if (!manifest.entries['/tianyuan/stats-' + manifest.defaultDate + '-' + mode + '-0'])
     throw Error('Missing default ranking');

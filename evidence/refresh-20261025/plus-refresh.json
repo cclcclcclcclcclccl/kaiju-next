@@ -1,0 +1,277 @@
+[
+  {
+    "query": {
+      "kind": "jungle",
+      "heroId": 190
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:38.163Z",
+    "rawSha256": "a157d834904a4f9ba11502830b7b7e2c425daf39ed3d37e72332c09ce31231cd"
+  },
+  {
+    "query": {
+      "kind": "power",
+      "date": "2026-10-24",
+      "areaId": 7,
+      "rankNo": 10
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:38.715Z",
+    "rawSha256": "9050cf55454dd2cc886977299886e21d20d3ddb97c54baa6720b9a5de8b64f80"
+  },
+  {
+    "query": {
+      "kind": "recommend",
+      "heroIds": "[190,111]"
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:41.765Z",
+    "rawSha256": "89313e9209cfbb383bdc0aa8e69ffc43f24e1df53ad88bfdd9ce038936b2f73e"
+  },
+  {
+    "query": {
+      "kind": "equipmentUsage",
+      "date": "2026-10-24",
+      "equipmentId": 1422,
+      "days": 5
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:42.385Z",
+    "rawSha256": "52437a8379b8a89c05e0f9b43e92c21e8e1c1661b0c502a07b9b9061d09ce6ce"
+  },
+  {
+    "query": {
+      "kind": "heroBp",
+      "date": "2026-10-24",
+      "heroId": 190
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:42.897Z",
+    "rawSha256": "c25c6db94161b599e2277683dd822e59c6ba57e09936430f3e67a753c6be044e"
+  },
+  {
+    "query": {
+      "kind": "peakTrends",
+      "areaType": 1,
+      "rankNo": 1,
+      "days": 30,
+      "branchType": 7
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:43.865Z",
+    "rawSha256": "d0c0891f9d75da3c150e18f4b0764d013a30c6c11a48627094a7505bc3a3a6db"
+  },
+  {
+    "query": {
+      "kind": "allStats",
+      "date": "2026-10-24",
+      "gameMode": 8
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:46.903Z",
+    "rawSha256": "5a988eb5ac4ad19fef11eff62f8ec02c19083333bf3a39dc0f43f038e31fb0ba"
+  },
+  {
+    "query": {
+      "kind": "behavior",
+      "heroId": 190
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:46.989Z",
+    "rawSha256": "0f5adfef173ab1cd5bad62bd6e39b04d89d94cdf75426a15c323164e7819a057"
+  },
+  {
+    "query": {
+      "kind": "highlights",
+      "heroId": 190
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:48.006Z",
+    "rawSha256": "21829bcd6050b625e5d257f8b6cd8cac5585027e423d9baeccc41f772f6afbc7"
+  },
+  {
+    "query": {
+      "kind": "allStats",
+      "date": "2026-10-24",
+      "gameMode": 5
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:49.060Z",
+    "rawSha256": "b4e7d9bd3a78d9a3036af3308b74f1c2846eda42ea4404667a9a3d874d23587f"
+  },
+  {
+    "query": {
+      "kind": "equipmentTrends"
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:50.029Z",
+    "rawSha256": "c8d44b01b8591b65d16a95510c1a55ed0f139a552c1f585699c15dd43b053bc1"
+  },
+  {
+    "query": {
+      "kind": "topban",
+      "date": "2026-10-24",
+      "camp": "blue",
+      "metric": "ban"
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:51.025Z",
+    "rawSha256": "cba7b32152d426e06516715bc27e4298987bf30c02ffd044b5df0a29905d3645"
+  },
+  {
+    "query": {
+      "kind": "movements",
+      "date": "2026-10-24"
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:52.037Z",
+    "rawSha256": "a4e7cb82c2d2436a5f309886b2c4680e6349935325d79a457f8f17ac1a3594cb"
+  },
+  {
+    "query": {
+      "kind": "heroEquip",
+      "date": "2026-10-24",
+      "heroId": 190
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:53.095Z",
+    "rawSha256": "179d70a52991777848133f1f8860c36a667cb93b45c642e8f3f8f79eb6beba7e"
+  },
+  {
+    "query": {
+      "kind": "equipment",
+      "date": "2026-10-24"
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:54.067Z",
+    "rawSha256": "94209fcca347eccdacf39ec9547f44da5c4be3cf531f00b279bc832061f46b26"
+  },
+  {
+    "query": {
+      "kind": "allStats",
+      "date": "2026-10-24",
+      "gameMode": 6
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:55.101Z",
+    "rawSha256": "0b39e0ff2efdfd0377af1755b4324bc427ede6553d2b97c05fb8115c97edf258"
+  },
+  {
+    "query": {
+      "kind": "trends",
+      "heroId": 190,
+      "gameMode": 5,
+      "days": 30
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:56.041Z",
+    "rawSha256": "978fd612affadaf2e475220d2dd63464f0370dc27a9a6d9fdeb4ab8eb5ae5767"
+  },
+  {
+    "query": {
+      "kind": "equipmentHistory",
+      "id": 1422,
+      "days": 30
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:57.055Z",
+    "rawSha256": "12bccc850187602a8bf20adeebddfd5f9b245c94b30586b5f3ee0d5baec9ec47"
+  },
+  {
+    "query": {
+      "kind": "skills",
+      "date": "2026-10-24"
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:58.072Z",
+    "rawSha256": "b968d170a90078fbb464ad0a459816764ce93f2a0f59215341cc786f0d77d0fc"
+  },
+  {
+    "query": {
+      "kind": "peaks",
+      "date": "2026-10-24",
+      "areaType": 1
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:08:59.095Z",
+    "rawSha256": "a397c76eee31c26fdfc91174507e8e0ff9e2f919e887ae53ef4f2c89b8bff1e1"
+  },
+  {
+    "query": {
+      "kind": "overview",
+      "date": "2026-10-24"
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:09:00.097Z",
+    "rawSha256": "982077ddbd60fd172d4733d8e7e9fb325709199172f7603213e4b2d2f84ca61b"
+  },
+  {
+    "query": {
+      "kind": "allStats",
+      "date": "2026-10-24",
+      "gameMode": 7
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:09:02.580Z",
+    "rawSha256": "fbd7c5e811450d3a3adb0f940ff0f5789156eaf8ebb759ea62967eccc77f3435"
+  },
+  {
+    "query": {
+      "kind": "adjustments",
+      "heroId": 190
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:09:02.705Z",
+    "rawSha256": "35e2b713e3507e56894bed896634687b88aa59adcd31b1cd5380747b981debcf"
+  },
+  {
+    "query": {
+      "kind": "heroEquip",
+      "date": "2026-10-24",
+      "chain": 1,
+      "chainOnly": 1,
+      "s1": 1240,
+      "heroId": 190
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:09:05.047Z",
+    "rawSha256": "846b468a85fa7e3b6a929a0a07671978ec46258b64e8ef897003b32c7ba703ae"
+  },
+  {
+    "query": {
+      "kind": "skins"
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:09:05.215Z",
+    "rawSha256": "3eaface183a37e1a2dd3f8ee248f86bb78daa886a9efe441d35835b1e3b2a771"
+  },
+  {
+    "query": {
+      "kind": "skinTrends",
+      "heroId": 190,
+      "days": 30
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:09:06.218Z",
+    "rawSha256": "953b5cee2b959477aaec86e5e6c1706b795ebd33b8ec4df18525300a486e4b26"
+  },
+  {
+    "query": {
+      "kind": "votes",
+      "hours": 6
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:09:07.953Z",
+    "rawSha256": "dd71a04d5367e0bdd80d6fbc0aa9883467246527a11ea82cc77b09d1faf1e31b"
+  },
+  {
+    "query": {
+      "kind": "heroPower",
+      "heroId": 190,
+      "areaId": 7
+    },
+    "cache": "fresh",
+    "fetchedAt": "2026-10-25T13:09:08.156Z",
+    "rawSha256": "87701804d8b17530cd6f5f39c2f2ed05908c9d6b26f61b5b7f2ee3c49db03b40"
+  }
+]

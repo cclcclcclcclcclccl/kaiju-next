@@ -1,0 +1,50 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-24&heroId=195",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-24",
+    "heroId": 195
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:14:01.860Z",
+  "rawSha256": "ecfb4dfcd735c3c463774246eac0b8e3d44496d0dad3e997392aa2e26556e666",
+  "cache": "fresh",
+  "data": {
+    "heroId": 195,
+    "queryDate": "2026-10-24",
+    "skinDistribution": [
+      {
+        "skinName": "白虎志",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/80e8f2c9f09918320e6e725ec52146dd.jpg",
+        "pickRate": 70.74
+      },
+      {
+        "skinName": "威尼斯狂欢",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/bc1e9e5c4939afc57ad162c5bb088e11.jpg",
+        "pickRate": 28.19
+      },
+      {
+        "skinName": "原初追逐者",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/e60d0f310e2e8a5d9893f4b11d6de5fb.jpg",
+        "pickRate": 0.53
+      },
+      {
+        "skinName": "超元猎域",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/f84cb37d59ea6ecb4f23586942745728.jpg",
+        "pickRate": 0.23
+      },
+      {
+        "skinName": "热力回旋",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/234a91571752db5d040e1c2e9d9db2a6.jpg",
+        "pickRate": 0.15
+      },
+      {
+        "skinName": "罗小黑战记",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/54d74fb0198b710e63c4eb441703da60.jpg",
+        "pickRate": 0.15
+      }
+    ]
+  }
+}

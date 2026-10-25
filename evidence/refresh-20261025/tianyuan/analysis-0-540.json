@@ -1,0 +1,423 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/analysis?heroId=540",
+  "query": {
+    "kind": "analysis",
+    "heroId": 540
+  },
+  "fetchedAt": "2026-10-25T13:17:10.398Z",
+  "rawSha256": "dfeda52b717aec7f440db23b27112bcbf3caf771c746fac345ca53f3f534cf64",
+  "cache": "fresh",
+  "data": {
+    "heroId": 540,
+    "counters": [
+      {
+        "heroName": "钟馗",
+        "totalMatches": 296,
+        "advantageIndex": 7.05
+      },
+      {
+        "heroName": "弈星",
+        "totalMatches": 232,
+        "advantageIndex": 6.51
+      },
+      {
+        "heroName": "李白",
+        "totalMatches": 174,
+        "advantageIndex": 6.38
+      },
+      {
+        "heroName": "牛魔",
+        "totalMatches": 251,
+        "advantageIndex": 5.19
+      },
+      {
+        "heroName": "韩信",
+        "totalMatches": 534,
+        "advantageIndex": 3.59
+      },
+      {
+        "heroName": "项羽",
+        "totalMatches": 350,
+        "advantageIndex": 3.52
+      },
+      {
+        "heroName": "王维",
+        "totalMatches": 747,
+        "advantageIndex": 1.24
+      }
+    ],
+    "counteredBy": [
+      {
+        "heroName": "李元芳",
+        "totalMatches": 109,
+        "advantageIndex": -8.93
+      },
+      {
+        "heroName": "大乔",
+        "totalMatches": 583,
+        "advantageIndex": -7.56
+      },
+      {
+        "heroName": "高渐离",
+        "totalMatches": 238,
+        "advantageIndex": -7.19
+      },
+      {
+        "heroName": "元流之子(辅助)",
+        "totalMatches": 328,
+        "advantageIndex": -7.04
+      },
+      {
+        "heroName": "铠",
+        "totalMatches": 233,
+        "advantageIndex": -6.66
+      },
+      {
+        "heroName": "武则天",
+        "totalMatches": 280,
+        "advantageIndex": -6.46
+      },
+      {
+        "heroName": "上官婉儿",
+        "totalMatches": 268,
+        "advantageIndex": -6.28
+      },
+      {
+        "heroName": "孙尚香",
+        "totalMatches": 272,
+        "advantageIndex": -6.18
+      },
+      {
+        "heroName": "蒙恬",
+        "totalMatches": 250,
+        "advantageIndex": -6.18
+      },
+      {
+        "heroName": "黄忠",
+        "totalMatches": 238,
+        "advantageIndex": -6.01
+      },
+      {
+        "heroName": "裴擒虎",
+        "totalMatches": 534,
+        "advantageIndex": -5.78
+      },
+      {
+        "heroName": "诸葛亮",
+        "totalMatches": 850,
+        "advantageIndex": -5.64
+      },
+      {
+        "heroName": "猪八戒",
+        "totalMatches": 184,
+        "advantageIndex": -5.57
+      },
+      {
+        "heroName": "张飞",
+        "totalMatches": 756,
+        "advantageIndex": -5.49
+      },
+      {
+        "heroName": "夏侯惇",
+        "totalMatches": 227,
+        "advantageIndex": -5.32
+      },
+      {
+        "heroName": "阿古朵",
+        "totalMatches": 326,
+        "advantageIndex": -4.5
+      },
+      {
+        "heroName": "女娲",
+        "totalMatches": 783,
+        "advantageIndex": -4.37
+      },
+      {
+        "heroName": "夏洛特",
+        "totalMatches": 345,
+        "advantageIndex": -4.15
+      },
+      {
+        "heroName": "哪吒",
+        "totalMatches": 924,
+        "advantageIndex": -3.81
+      },
+      {
+        "heroName": "少司缘",
+        "totalMatches": 1239,
+        "advantageIndex": -3.77
+      },
+      {
+        "heroName": "敖隐",
+        "totalMatches": 997,
+        "advantageIndex": -3.71
+      },
+      {
+        "heroName": "杨戬",
+        "totalMatches": 233,
+        "advantageIndex": -3.63
+      },
+      {
+        "heroName": "虞姬",
+        "totalMatches": 385,
+        "advantageIndex": -3.59
+      },
+      {
+        "heroName": "嫦娥",
+        "totalMatches": 823,
+        "advantageIndex": -3.57
+      },
+      {
+        "heroName": "狂铁",
+        "totalMatches": 602,
+        "advantageIndex": -3.52
+      },
+      {
+        "heroName": "影",
+        "totalMatches": 556,
+        "advantageIndex": -3.46
+      },
+      {
+        "heroName": "元歌",
+        "totalMatches": 576,
+        "advantageIndex": -2.67
+      },
+      {
+        "heroName": "苏烈",
+        "totalMatches": 839,
+        "advantageIndex": -2.29
+      },
+      {
+        "heroName": "杨玉环",
+        "totalMatches": 494,
+        "advantageIndex": -2.22
+      },
+      {
+        "heroName": "李信",
+        "totalMatches": 626,
+        "advantageIndex": -2.21
+      },
+      {
+        "heroName": "沈梦溪",
+        "totalMatches": 843,
+        "advantageIndex": -1.83
+      },
+      {
+        "heroName": "百里守约",
+        "totalMatches": 775,
+        "advantageIndex": -1.8
+      },
+      {
+        "heroName": "关羽",
+        "totalMatches": 861,
+        "advantageIndex": -1.65
+      },
+      {
+        "heroName": "鲁班大师",
+        "totalMatches": 763,
+        "advantageIndex": -1.64
+      },
+      {
+        "heroName": "镜",
+        "totalMatches": 1536,
+        "advantageIndex": -1.27
+      },
+      {
+        "heroName": "马超",
+        "totalMatches": 993,
+        "advantageIndex": -1.11
+      }
+    ],
+    "goodSynergies": [
+      {
+        "heroName": "虞姬",
+        "totalMatches": 355,
+        "synergyIndex": 3.99
+      },
+      {
+        "heroName": "后羿",
+        "totalMatches": 299,
+        "synergyIndex": 3.3
+      },
+      {
+        "heroName": "花木兰",
+        "totalMatches": 303,
+        "synergyIndex": 3.07
+      },
+      {
+        "heroName": "太乙真人",
+        "totalMatches": 360,
+        "synergyIndex": 2.86
+      },
+      {
+        "heroName": "少司缘",
+        "totalMatches": 1045,
+        "synergyIndex": 1.15
+      }
+    ],
+    "badSynergies": [
+      {
+        "heroName": "钟无艳",
+        "totalMatches": 182,
+        "synergyIndex": -11.99
+      },
+      {
+        "heroName": "心魔六耳",
+        "totalMatches": 205,
+        "synergyIndex": -10.51
+      },
+      {
+        "heroName": "吕布",
+        "totalMatches": 152,
+        "synergyIndex": -10.41
+      },
+      {
+        "heroName": "黄忠",
+        "totalMatches": 233,
+        "synergyIndex": -8.68
+      },
+      {
+        "heroName": "大乔",
+        "totalMatches": 325,
+        "synergyIndex": -7.65
+      },
+      {
+        "heroName": "刘备",
+        "totalMatches": 144,
+        "synergyIndex": -7.54
+      },
+      {
+        "heroName": "老夫子",
+        "totalMatches": 281,
+        "synergyIndex": -7.37
+      },
+      {
+        "heroName": "桑启",
+        "totalMatches": 139,
+        "synergyIndex": -7.03
+      },
+      {
+        "heroName": "孙权",
+        "totalMatches": 182,
+        "synergyIndex": -6.77
+      },
+      {
+        "heroName": "夏洛特",
+        "totalMatches": 360,
+        "synergyIndex": -6.47
+      },
+      {
+        "heroName": "暃",
+        "totalMatches": 319,
+        "synergyIndex": -6.34
+      },
+      {
+        "heroName": "诸葛亮",
+        "totalMatches": 175,
+        "synergyIndex": -6.12
+      },
+      {
+        "heroName": "李白",
+        "totalMatches": 211,
+        "synergyIndex": -5.95
+      },
+      {
+        "heroName": "廉颇",
+        "totalMatches": 234,
+        "synergyIndex": -5.7
+      },
+      {
+        "heroName": "钟馗",
+        "totalMatches": 193,
+        "synergyIndex": -5.2
+      },
+      {
+        "heroName": "牛魔",
+        "totalMatches": 222,
+        "synergyIndex": -5.19
+      },
+      {
+        "heroName": "百里守约",
+        "totalMatches": 783,
+        "synergyIndex": -4.48
+      },
+      {
+        "heroName": "杨戬",
+        "totalMatches": 283,
+        "synergyIndex": -3.98
+      },
+      {
+        "heroName": "孙悟空",
+        "totalMatches": 484,
+        "synergyIndex": -3.95
+      },
+      {
+        "heroName": "马超",
+        "totalMatches": 960,
+        "synergyIndex": -3.86
+      },
+      {
+        "heroName": "影",
+        "totalMatches": 587,
+        "synergyIndex": -3.58
+      },
+      {
+        "heroName": "元流之子(射手)",
+        "totalMatches": 1008,
+        "synergyIndex": -3.38
+      },
+      {
+        "heroName": "苍",
+        "totalMatches": 443,
+        "synergyIndex": -3.09
+      },
+      {
+        "heroName": "阿古朵",
+        "totalMatches": 526,
+        "synergyIndex": -3.09
+      },
+      {
+        "heroName": "赵云",
+        "totalMatches": 818,
+        "synergyIndex": -2.9
+      },
+      {
+        "heroName": "张飞",
+        "totalMatches": 788,
+        "synergyIndex": -2.88
+      },
+      {
+        "heroName": "韩信",
+        "totalMatches": 447,
+        "synergyIndex": -2.6
+      },
+      {
+        "heroName": "莱西奥",
+        "totalMatches": 526,
+        "synergyIndex": -2.3
+      },
+      {
+        "heroName": "苏烈",
+        "totalMatches": 870,
+        "synergyIndex": -2.24
+      },
+      {
+        "heroName": "戈娅",
+        "totalMatches": 593,
+        "synergyIndex": -2.19
+      },
+      {
+        "heroName": "李信",
+        "totalMatches": 643,
+        "synergyIndex": -2.02
+      },
+      {
+        "heroName": "蚩奼",
+        "totalMatches": 596,
+        "synergyIndex": -1.77
+      }
+    ]
+  }
+}

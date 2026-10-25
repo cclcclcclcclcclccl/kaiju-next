@@ -1,0 +1,45 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-24&heroId=545",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-24",
+    "heroId": 545
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:17:23.449Z",
+  "rawSha256": "28980a64ea3e6b79cfb46a9968c58cc0649c9f37876f406fd54c2ca0a4cc5b6b",
+  "cache": "fresh",
+  "data": {
+    "heroId": 545,
+    "queryDate": "2026-10-24",
+    "skinDistribution": [
+      {
+        "skinName": "末日机甲",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/e0452667be3c4a4f0b0f8056d5eb4f58.jpg",
+        "pickRate": 47.35
+      },
+      {
+        "skinName": "西部游侠",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/c812746e9689ff70b353e9db4b3d82c6.jpg",
+        "pickRate": 29.32
+      },
+      {
+        "skinName": "光弋星穹",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/21ac181db798bacd83c971da4f50fe6c.jpg",
+        "pickRate": 16.24
+      },
+      {
+        "skinName": "踏浪烽翎",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/612761a7dff229dbb40d458ac22b6f41.jpg",
+        "pickRate": 7.03
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/4014aa3796668575b18818a08b1cd60f.png",
+        "pickRate": 0.06
+      }
+    ]
+  }
+}

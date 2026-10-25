@@ -1,0 +1,370 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-24&heroId=113",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-24",
+    "heroId": 113
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:07:56.852Z",
+  "rawSha256": "a675e6eaab039ae7da32d55cd27c5b96d1fdde721fb6be79e96580324c1bfa80",
+  "cache": "fresh",
+  "data": {
+    "heroId": 113,
+    "queryEndDate": "2026-10-24T16:59:59.999Z",
+    "topItemsBySlot": [
+      {
+        "slot": 1,
+        "baseWinRate": 49.8,
+        "topItems": [
+          {
+            "equipId": 1724,
+            "equipName": "近卫·救赎",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1751.png",
+            "pickRate": 57.78,
+            "winRate": 49.04,
+            "deltaWinRate": -0.76
+          },
+          {
+            "equipId": 1721,
+            "equipName": "极影·救赎",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1746.png",
+            "pickRate": 22.22,
+            "winRate": 48.58,
+            "deltaWinRate": -1.22
+          },
+          {
+            "equipId": 1725,
+            "equipName": "近卫·星泉",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1752.png",
+            "pickRate": 6.67,
+            "winRate": 74.06,
+            "deltaWinRate": 24.26
+          },
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png",
+            "pickRate": 4.44,
+            "winRate": null,
+            "deltaWinRate": null
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "baseWinRate": 50.11,
+        "topItems": [
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png",
+            "pickRate": 69.77,
+            "winRate": 49.88,
+            "deltaWinRate": -0.23
+          },
+          {
+            "equipId": 1423,
+            "equipName": "冷静之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1423.png",
+            "pickRate": 30.23,
+            "winRate": 50.46,
+            "deltaWinRate": 0.35
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "baseWinRate": 52.82,
+        "topItems": [
+          {
+            "equipId": 1353,
+            "equipName": "旭日初光",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1353.png",
+            "pickRate": 38.1,
+            "winRate": 55.07,
+            "deltaWinRate": 2.25
+          },
+          {
+            "equipId": 1341,
+            "equipName": "冰霜冲击",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png",
+            "pickRate": 26.19,
+            "winRate": 50.45,
+            "deltaWinRate": -2.37
+          },
+          {
+            "equipId": 1336,
+            "equipName": "极寒风暴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1336.png",
+            "pickRate": 11.9,
+            "winRate": 48.26,
+            "deltaWinRate": -4.56
+          },
+          {
+            "equipId": 1333,
+            "equipName": "不祥征兆",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1333.png",
+            "pickRate": 9.52,
+            "winRate": 53.5,
+            "deltaWinRate": 0.68
+          }
+        ]
+      },
+      {
+        "slot": 4,
+        "baseWinRate": 61.71,
+        "topItems": [
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png",
+            "pickRate": 28.57,
+            "winRate": 60.85,
+            "deltaWinRate": -0.86
+          },
+          {
+            "equipId": 1341,
+            "equipName": "冰霜冲击",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png",
+            "pickRate": 23.81,
+            "winRate": 61.74,
+            "deltaWinRate": 0.03
+          },
+          {
+            "equipId": 1353,
+            "equipName": "旭日初光",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1353.png",
+            "pickRate": 23.81,
+            "winRate": 63.45,
+            "deltaWinRate": 1.74
+          },
+          {
+            "equipId": 1333,
+            "equipName": "不祥征兆",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1333.png",
+            "pickRate": 14.29,
+            "winRate": 58.73,
+            "deltaWinRate": -2.98
+          }
+        ]
+      },
+      {
+        "slot": 5,
+        "baseWinRate": 60.14,
+        "topItems": [
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png",
+            "pickRate": 45.45,
+            "winRate": 60.18,
+            "deltaWinRate": 0.04
+          },
+          {
+            "equipId": 1226,
+            "equipName": "圣杯",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1226.png",
+            "pickRate": 18.18,
+            "winRate": 64.29,
+            "deltaWinRate": 4.15
+          },
+          {
+            "equipId": 1333,
+            "equipName": "不祥征兆",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1333.png",
+            "pickRate": 18.18,
+            "winRate": 58.78,
+            "deltaWinRate": -1.36
+          },
+          {
+            "equipId": 1331,
+            "equipName": "红莲斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1331.png",
+            "pickRate": 9.09,
+            "winRate": 75,
+            "deltaWinRate": 14.86
+          }
+        ]
+      },
+      {
+        "slot": 6,
+        "baseWinRate": 66.47,
+        "topItems": [
+          {
+            "equipId": 1332,
+            "equipName": "霸者重装",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1332.png",
+            "pickRate": 50,
+            "winRate": 68.97,
+            "deltaWinRate": 2.5
+          },
+          {
+            "equipId": 1333,
+            "equipName": "不祥征兆",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1333.png",
+            "pickRate": 50,
+            "winRate": 62.34,
+            "deltaWinRate": -4.13
+          }
+        ]
+      }
+    ],
+    "topFullBuilds": [
+      {
+        "build": [
+          {
+            "equipId": 1724,
+            "equipName": "近卫·救赎",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1751.png"
+          },
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png"
+          },
+          {
+            "equipId": 1336,
+            "equipName": "极寒风暴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1336.png"
+          },
+          {
+            "equipId": 1333,
+            "equipName": "不祥征兆",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1333.png"
+          },
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png"
+          },
+          {
+            "equipId": 1332,
+            "equipName": "霸者重装",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1332.png"
+          }
+        ],
+        "frequency": 2.22,
+        "summonerSkill": {
+          "skillId": 80102,
+          "skillName": "治疗术",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/2bfe8f88808b1566dd979c0b14b766ed.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1724,
+            "equipName": "近卫·救赎",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1751.png"
+          },
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png"
+          },
+          {
+            "equipId": 1353,
+            "equipName": "旭日初光",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1353.png"
+          },
+          {
+            "equipId": 1341,
+            "equipName": "冰霜冲击",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png"
+          },
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png"
+          },
+          {
+            "equipId": 1333,
+            "equipName": "不祥征兆",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1333.png"
+          }
+        ],
+        "frequency": 2.22,
+        "summonerSkill": {
+          "skillId": 80102,
+          "skillName": "治疗术",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/2bfe8f88808b1566dd979c0b14b766ed.png"
+        }
+      }
+    ],
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png",
+        "pickRate": 67.55,
+        "winRate": 51.06
+      },
+      {
+        "equipmentId": 1724,
+        "equipmentName": "近卫·救赎",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1751.png",
+        "pickRate": 60.61,
+        "winRate": 49.83
+      },
+      {
+        "equipmentId": 1353,
+        "equipmentName": "旭日初光",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1353.png",
+        "pickRate": 51.63,
+        "winRate": 54.94
+      },
+      {
+        "equipmentId": 1423,
+        "equipmentName": "冷静之靴",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1423.png",
+        "pickRate": 27.96,
+        "winRate": 45.26
+      },
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png",
+        "pickRate": 27.35,
+        "winRate": 50.75
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png",
+        "pickRate": 26.33,
+        "winRate": 58.91
+      },
+      {
+        "equipmentId": 1721,
+        "equipmentName": "极影·救赎",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1746.png",
+        "pickRate": 25.31,
+        "winRate": 46.77
+      },
+      {
+        "equipmentId": 1333,
+        "equipmentName": "不祥征兆",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1333.png",
+        "pickRate": 18.37,
+        "winRate": 56.67
+      },
+      {
+        "equipmentId": 1336,
+        "equipmentName": "极寒风暴",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1336.png",
+        "pickRate": 11.22,
+        "winRate": 65.45
+      },
+      {
+        "equipmentId": 1226,
+        "equipmentName": "圣杯",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1226.png",
+        "pickRate": 9.59,
+        "winRate": 53.19
+      }
+    ]
+  }
+}

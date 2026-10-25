@@ -57,8 +57,14 @@ try {
     } catch {}
     await new Promise((r) => setTimeout(r, 100));
   }
-  assert.equal(status?.version, '0.26.0');
-  assert.equal(status.heroCount, 133);
+  assert.equal(
+    status?.version,
+    JSON.parse(readFileSync(join(root, 'package.json'), 'utf8')).version,
+  );
+  assert.equal(
+    status.heroCount,
+    JSON.parse(readFileSync(join(root, 'src/player/data/heroes.json'), 'utf8')).heroes.length,
+  );
   const workspace = await (await fetch(`http://127.0.0.1:${port}/api/workspace`)).json();
   assert.deepEqual(workspace.pool, []);
   assert.deepEqual(workspace.matches, []);

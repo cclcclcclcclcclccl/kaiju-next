@@ -1,0 +1,60 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-24&heroId=140",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-24",
+    "heroId": 140
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:10:04.908Z",
+  "rawSha256": "8fa7a00809b9d895493cc77bdf778931b1de2a3fb429ad8b89713cf5581a002b",
+  "cache": "fresh",
+  "data": {
+    "heroId": 140,
+    "queryDate": "2026-10-24",
+    "skinDistribution": [
+      {
+        "skinName": "赤影疾锋",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a55a53bd886454818cd8108634d66dc6.jpg",
+        "pickRate": 30.04
+      },
+      {
+        "skinName": "武圣",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/d737e2aa7a98776f8ee5c4464ed421e6.jpg",
+        "pickRate": 22.42
+      },
+      {
+        "skinName": "冰锋战神",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/3528d129fd4fc43c861279ece4f9bba3.jpg",
+        "pickRate": 21.92
+      },
+      {
+        "skinName": "神骥·镇沧海",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/21ae7f953841e0a281c3dcdb7466937f.jpg",
+        "pickRate": 12.18
+      },
+      {
+        "skinName": "龙腾万里",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a54eeada6a70ec4ed6836af7694d42a7.jpg",
+        "pickRate": 9.81
+      },
+      {
+        "skinName": "百相守梦",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/7a25af832a227b8d549063410e5f482a.jpg",
+        "pickRate": 3.19
+      },
+      {
+        "skinName": "天启骑士",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/6e682887a6491eecc5cab145260db2ae.jpg",
+        "pickRate": 0.25
+      },
+      {
+        "skinName": "决胜骁骑",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/65fb0129a51bbee620f42a4c53c902ed.jpg",
+        "pickRate": 0.19
+      }
+    ]
+  }
+}

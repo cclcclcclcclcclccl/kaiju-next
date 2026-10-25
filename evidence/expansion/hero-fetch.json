@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-12T12:28:07.880Z",
+  "fetchedAt": "2026-10-25T13:07:22.062Z",
   "source": "https://pvp.qq.com/web201605/js/herolist.json",
   "count": 133,
   "skillPages": 133,
@@ -154,15 +154,15 @@
   "runeSource": "https://pvp.qq.com/web201605/js/ming.json",
   "proofs": [
     {
-      "id": 105,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/105.json",
-      "sha256": "729c74eeadfe9f12b1b1dc4ba3ac88b5c55684a6a8cc413958708f19eafa04b2",
-      "skills": 4
-    },
-    {
       "id": 106,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/106.json",
       "sha256": "9c7aa300be4f812997c4b4027c700155c1524994e43052ecfb9cb0ffaab9a7e4",
+      "skills": 4
+    },
+    {
+      "id": 105,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/105.json",
+      "sha256": "729c74eeadfe9f12b1b1dc4ba3ac88b5c55684a6a8cc413958708f19eafa04b2",
       "skills": 4
     },
     {
@@ -178,9 +178,45 @@
       "skills": 4
     },
     {
+      "id": 107,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/107.json",
+      "sha256": "54aa995b07dd60b1a98188f20decfa513bf29d542ef9db4459e7f2f51d771dbb",
+      "skills": 4
+    },
+    {
+      "id": 109,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/109.json",
+      "sha256": "075e3d777333444e220a56910e0e11205f0468c432f19165dd59b4edbc5af2fb",
+      "skills": 4
+    },
+    {
+      "id": 108,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/108.json",
+      "sha256": "903e7198208dd9f787514f9def0559889b79bbcf6866597c7851556fb136ff4d",
+      "skills": 4
+    },
+    {
+      "id": 116,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/116.json",
+      "sha256": "697edafa8b0ed886720f152ac43b432b221261a54de24b3ad23df043c37461c9",
+      "skills": 4
+    },
+    {
       "id": 113,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/113.json",
       "sha256": "45d16c2008fe2df944380ba8d1fb138ed8613aba34c4787d4c3579a4f84fd589",
+      "skills": 4
+    },
+    {
+      "id": 110,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/110.json",
+      "sha256": "bbd69b2b33060f0e2ee06bbd0eedea1b88cbccaf96f4c243a1d8895ef81ecac2",
+      "skills": 4
+    },
+    {
+      "id": 167,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/167.json",
+      "sha256": "3776343239f1627407fe5394d9e3ca1ccbf1258abc6e170d6494954253792aa3",
       "skills": 4
     },
     {
@@ -196,36 +232,6 @@
       "skills": 4
     },
     {
-      "id": 116,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/116.json",
-      "sha256": "697edafa8b0ed886720f152ac43b432b221261a54de24b3ad23df043c37461c9",
-      "skills": 4
-    },
-    {
-      "id": 107,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/107.json",
-      "sha256": "122b30defb13e9bd4ff124b9c63345cdac569fa04431db530c28958fb18aed67",
-      "skills": 4
-    },
-    {
-      "id": 110,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/110.json",
-      "sha256": "bbd69b2b33060f0e2ee06bbd0eedea1b88cbccaf96f4c243a1d8895ef81ecac2",
-      "skills": 4
-    },
-    {
-      "id": 108,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/108.json",
-      "sha256": "903e7198208dd9f787514f9def0559889b79bbcf6866597c7851556fb136ff4d",
-      "skills": 4
-    },
-    {
-      "id": 109,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/109.json",
-      "sha256": "075e3d777333444e220a56910e0e11205f0468c432f19165dd59b4edbc5af2fb",
-      "skills": 4
-    },
-    {
       "id": 117,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/117.json",
       "sha256": "cf18593db97a6de99d0f32fd38da13b5dcbdf61da2c729441065c8d71988fc0b",
@@ -238,9 +244,9 @@
       "skills": 4
     },
     {
-      "id": 123,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/123.json",
-      "sha256": "5f973a2b3a1d655c97f42942d8c91aa8b167bfc5582c80a9ba6ecc43996c2bb9",
+      "id": 549,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/549.json",
+      "sha256": "8415b6422c597efde132f2290b114621649db08ebd691a30c3cfe7038bc596ad",
       "skills": 4
     },
     {
@@ -250,21 +256,15 @@
       "skills": 4
     },
     {
-      "id": 167,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/167.json",
-      "sha256": "3776343239f1627407fe5394d9e3ca1ccbf1258abc6e170d6494954253792aa3",
+      "id": 124,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/124.json",
+      "sha256": "5faf8ecaab8589062571ffba598ee1eb485b27ba27c771d24e6edf9bf1b6e53a",
       "skills": 4
     },
     {
-      "id": 549,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/549.json",
-      "sha256": "8415b6422c597efde132f2290b114621649db08ebd691a30c3cfe7038bc596ad",
-      "skills": 4
-    },
-    {
-      "id": 120,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/120.json",
-      "sha256": "62b281035eacceea38862802bd2cd52d1cdb881584ef9955c9c57730a00de2c2",
+      "id": 123,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/123.json",
+      "sha256": "5f973a2b3a1d655c97f42942d8c91aa8b167bfc5582c80a9ba6ecc43996c2bb9",
       "skills": 4
     },
     {
@@ -274,33 +274,9 @@
       "skills": 4
     },
     {
-      "id": 124,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/124.json",
-      "sha256": "5faf8ecaab8589062571ffba598ee1eb485b27ba27c771d24e6edf9bf1b6e53a",
-      "skills": 4
-    },
-    {
-      "id": 126,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/126.json",
-      "sha256": "126385cf3ee2239aa51188fb35380103a880034649f79a3e886a300a5772f831",
-      "skills": 4
-    },
-    {
-      "id": 127,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/127.json",
-      "sha256": "1a6bbf4151ae220c12c98b836a577263a2506b6fcbefb61f48b29ce392b8487e",
-      "skills": 4
-    },
-    {
       "id": 128,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/128.json",
       "sha256": "88ba44e2d420185cc5bcfec56f24a121489271b2ca1e73695066fe0640df34c1",
-      "skills": 4
-    },
-    {
-      "id": 129,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/129.json",
-      "sha256": "aa4c55a6c485c6c40d983ee8b333cdacc0b39a4b5798cc3c9d2c53a43ee40141",
       "skills": 4
     },
     {
@@ -310,15 +286,27 @@
       "skills": 4
     },
     {
-      "id": 131,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/131.json",
-      "sha256": "03635b8b72cd77708e27daee802559d0b3bd3e149568359395e84176cd11e645",
+      "id": 120,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/120.json",
+      "sha256": "62b281035eacceea38862802bd2cd52d1cdb881584ef9955c9c57730a00de2c2",
       "skills": 4
     },
     {
-      "id": 133,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/133.json",
-      "sha256": "189bc26dcab05c1baf6b097eb4e44e13c490813aa2003215e8c23a62e059c3e6",
+      "id": 126,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/126.json",
+      "sha256": "126385cf3ee2239aa51188fb35380103a880034649f79a3e886a300a5772f831",
+      "skills": 4
+    },
+    {
+      "id": 129,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/129.json",
+      "sha256": "aa4c55a6c485c6c40d983ee8b333cdacc0b39a4b5798cc3c9d2c53a43ee40141",
+      "skills": 4
+    },
+    {
+      "id": 127,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/127.json",
+      "sha256": "1a6bbf4151ae220c12c98b836a577263a2506b6fcbefb61f48b29ce392b8487e",
       "skills": 4
     },
     {
@@ -328,27 +316,9 @@
       "skills": 4
     },
     {
-      "id": 134,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/134.json",
-      "sha256": "1bfa4e2733375e2fb59e5f5c09e3c0cf3f72eeed233a3f4aa2afd693387f5a50",
-      "skills": 4
-    },
-    {
-      "id": 136,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/136.json",
-      "sha256": "9710e03d6d70e1832178220b945cb76f9f01cbbc376bc6fa74a41d52a2345859",
-      "skills": 4
-    },
-    {
-      "id": 135,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/135.json",
-      "sha256": "62686d93ff9ba235c1b86a23ca3df22bd9b5e5830ce7b30757c59a3dddd737c6",
-      "skills": 4
-    },
-    {
-      "id": 141,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/141.json",
-      "sha256": "ae397401aff7c73c8bc731441b3944484823c60d5ff8f8a490a5560f188f38a9",
+      "id": 131,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/131.json",
+      "sha256": "03635b8b72cd77708e27daee802559d0b3bd3e149568359395e84176cd11e645",
       "skills": 4
     },
     {
@@ -358,15 +328,51 @@
       "skills": 4
     },
     {
-      "id": 139,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/139.json",
-      "sha256": "811e1c8e43e222310ae90de210284ab35a26ebb460f702d91d36c41ae8788cfa",
+      "id": 133,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/133.json",
+      "sha256": "189bc26dcab05c1baf6b097eb4e44e13c490813aa2003215e8c23a62e059c3e6",
+      "skills": 4
+    },
+    {
+      "id": 135,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/135.json",
+      "sha256": "62686d93ff9ba235c1b86a23ca3df22bd9b5e5830ce7b30757c59a3dddd737c6",
+      "skills": 4
+    },
+    {
+      "id": 134,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/134.json",
+      "sha256": "1bfa4e2733375e2fb59e5f5c09e3c0cf3f72eeed233a3f4aa2afd693387f5a50",
       "skills": 4
     },
     {
       "id": 142,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/142.json",
       "sha256": "2b17911a62d1785d2f865c4e88bc0f76e19cbecb8285cf8ea4ec78d91677e01c",
+      "skills": 4
+    },
+    {
+      "id": 136,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/136.json",
+      "sha256": "9710e03d6d70e1832178220b945cb76f9f01cbbc376bc6fa74a41d52a2345859",
+      "skills": 4
+    },
+    {
+      "id": 139,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/139.json",
+      "sha256": "811e1c8e43e222310ae90de210284ab35a26ebb460f702d91d36c41ae8788cfa",
+      "skills": 4
+    },
+    {
+      "id": 149,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/149.json",
+      "sha256": "da9d1dad849332e0610059ceb1601205c89423c40c146868ffdd7bc5ac902889",
+      "skills": 4
+    },
+    {
+      "id": 141,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/141.json",
+      "sha256": "ae397401aff7c73c8bc731441b3944484823c60d5ff8f8a490a5560f188f38a9",
       "skills": 4
     },
     {
@@ -382,21 +388,15 @@
       "skills": 4
     },
     {
-      "id": 148,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/148.json",
-      "sha256": "4a8ec031d0a6fb6717ddf6f1f48f5c25c3f48d064c7b47591c84ddaf914152c1",
-      "skills": 4
-    },
-    {
-      "id": 149,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/149.json",
-      "sha256": "da9d1dad849332e0610059ceb1601205c89423c40c146868ffdd7bc5ac902889",
-      "skills": 4
-    },
-    {
       "id": 152,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/152.json",
       "sha256": "3a9555e4de4bc8c23051fabf192518d5cc0ce6497ee4e6154af62fdc6c1e03ed",
+      "skills": 4
+    },
+    {
+      "id": 148,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/148.json",
+      "sha256": "4a8ec031d0a6fb6717ddf6f1f48f5c25c3f48d064c7b47591c84ddaf914152c1",
       "skills": 4
     },
     {
@@ -418,6 +418,12 @@
       "skills": 4
     },
     {
+      "id": 156,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/156.json",
+      "sha256": "3f6193c1dd4626da4cb247002c22a33d729315147bd75c278d219b0d9f8a6b2d",
+      "skills": 4
+    },
+    {
       "id": 157,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/157.json",
       "sha256": "280899146ca4cc9ff4d9d23be436e9fe254f7cec12ed9bf2a633b99dcb98e350",
@@ -430,9 +436,9 @@
       "skills": 4
     },
     {
-      "id": 156,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/156.json",
-      "sha256": "3f6193c1dd4626da4cb247002c22a33d729315147bd75c278d219b0d9f8a6b2d",
+      "id": 170,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/170.json",
+      "sha256": "811dd27c0cc087a6d22c81c1911d12832db4ef389b004e1d179d916434268b7c",
       "skills": 4
     },
     {
@@ -442,15 +448,15 @@
       "skills": 4
     },
     {
-      "id": 166,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/166.json",
-      "sha256": "b19d099e4151ea85c2cb94702d02efe807a2cd8c57eca6fc153e81d307faf145",
-      "skills": 4
-    },
-    {
       "id": 169,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/169.json",
       "sha256": "48dc235ed98c5976e8a463ddfc71245c006e697ce8434978d1821df742a93ec2",
+      "skills": 4
+    },
+    {
+      "id": 166,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/166.json",
+      "sha256": "b19d099e4151ea85c2cb94702d02efe807a2cd8c57eca6fc153e81d307faf145",
       "skills": 4
     },
     {
@@ -460,21 +466,15 @@
       "skills": 4
     },
     {
-      "id": 173,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/173.json",
-      "sha256": "b9f0d86e21e6211f6b9655b645f97b85388ef91500246849cc76394edfdc5f1c",
-      "skills": 4
-    },
-    {
-      "id": 170,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/170.json",
-      "sha256": "811dd27c0cc087a6d22c81c1911d12832db4ef389b004e1d179d916434268b7c",
-      "skills": 4
-    },
-    {
       "id": 171,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/171.json",
       "sha256": "3bf30c1664e17de51132e488ce278a547080aa6c7e9486065246dbc4d48a9cc8",
+      "skills": 4
+    },
+    {
+      "id": 173,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/173.json",
+      "sha256": "b9f0d86e21e6211f6b9655b645f97b85388ef91500246849cc76394edfdc5f1c",
       "skills": 4
     },
     {
@@ -484,15 +484,21 @@
       "skills": 4
     },
     {
-      "id": 178,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/178.json",
-      "sha256": "1a41f89ecf57d512d73d8c343120119b6fd99172b0fdc4669b689ac9bf76de63",
-      "skills": 4
-    },
-    {
       "id": 175,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/175.json",
       "sha256": "57f7408f1cdb121e70d31e76cca9826d8027f0cdbaa1986eee46ded6bb15ade9",
+      "skills": 4
+    },
+    {
+      "id": 183,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/183.json",
+      "sha256": "cf74e829fa8791e3dcd18afc414bf79d8a99a3687e682fedcdf4665f39638ac0",
+      "skills": 4
+    },
+    {
+      "id": 178,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/178.json",
+      "sha256": "1a41f89ecf57d512d73d8c343120119b6fd99172b0fdc4669b689ac9bf76de63",
       "skills": 4
     },
     {
@@ -508,33 +514,21 @@
       "skills": 4
     },
     {
-      "id": 183,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/183.json",
-      "sha256": "cf74e829fa8791e3dcd18afc414bf79d8a99a3687e682fedcdf4665f39638ac0",
-      "skills": 4
-    },
-    {
       "id": 180,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/180.json",
       "sha256": "e8d39a4352b0757d62f073f16da19faab99906508a6b7660f647387f6e5251e6",
       "skills": 5
     },
     {
-      "id": 191,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/191.json",
-      "sha256": "a46134a63afd3e43f17d18252aced7db0f8d25fbfec2b6563d9bc8a081fa7a36",
-      "skills": 5
+      "id": 190,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/190.json",
+      "sha256": "4a6f65d063d2b8f1958d567fdc61520474faae3d4f9057edf980b07a303fdae0",
+      "skills": 4
     },
     {
       "id": 192,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/192.json",
       "sha256": "0d4dd68e00ef95e0dd517496878612ab2b092dd409825c12af3f61ebad8157aa",
-      "skills": 4
-    },
-    {
-      "id": 190,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/190.json",
-      "sha256": "4a6f65d063d2b8f1958d567fdc61520474faae3d4f9057edf980b07a303fdae0",
       "skills": 4
     },
     {
@@ -556,10 +550,10 @@
       "skills": 4
     },
     {
-      "id": 195,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/195.json",
-      "sha256": "8c32cf32dc2cfb5e827e1b7eaa99187c87a76e069a1df968cff160c12efbe079",
-      "skills": 4
+      "id": 191,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/191.json",
+      "sha256": "a46134a63afd3e43f17d18252aced7db0f8d25fbfec2b6563d9bc8a081fa7a36",
+      "skills": 5
     },
     {
       "id": 193,
@@ -574,9 +568,15 @@
       "skills": 4
     },
     {
-      "id": 194,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/194.json",
-      "sha256": "67b47e7771e230b53cff2f0aab70b44b4e9891e250bf035807f11d03aab912c0",
+      "id": 199,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/199.json",
+      "sha256": "8b51608cd2f92824428cf8f32572d7b5f93db285318ee39f64b3da799db60a97",
+      "skills": 4
+    },
+    {
+      "id": 195,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/195.json",
+      "sha256": "8c32cf32dc2cfb5e827e1b7eaa99187c87a76e069a1df968cff160c12efbe079",
       "skills": 4
     },
     {
@@ -592,15 +592,9 @@
       "skills": 5
     },
     {
-      "id": 176,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/176.json",
-      "sha256": "3719063d03994cc35b75a7ca96b2797342d558243151b3671609c984cefa5cbe",
-      "skills": 4
-    },
-    {
-      "id": 501,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/501.json",
-      "sha256": "bdee8693655cdd9c097c9b1db411fd89d828492aa63aba78e85376ba660a0541",
+      "id": 194,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/194.json",
+      "sha256": "67b47e7771e230b53cff2f0aab70b44b4e9891e250bf035807f11d03aab912c0",
       "skills": 4
     },
     {
@@ -610,15 +604,9 @@
       "skills": 4
     },
     {
-      "id": 199,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/199.json",
-      "sha256": "8b51608cd2f92824428cf8f32572d7b5f93db285318ee39f64b3da799db60a97",
-      "skills": 4
-    },
-    {
-      "id": 197,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/197.json",
-      "sha256": "cb6ee7e4879c0a08e4cfa6e1eb3dc577148acf01eb663782c81d9003f9deb568",
+      "id": 501,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/501.json",
+      "sha256": "bdee8693655cdd9c097c9b1db411fd89d828492aa63aba78e85376ba660a0541",
       "skills": 4
     },
     {
@@ -628,10 +616,10 @@
       "skills": 4
     },
     {
-      "id": 125,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/125.json",
-      "sha256": "2f01aacd5c528957758f4dd5803ed2c0325dfe9b2ae9a26add466ef342598174",
-      "skills": 5
+      "id": 176,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/176.json",
+      "sha256": "3719063d03994cc35b75a7ca96b2797342d558243151b3671609c984cefa5cbe",
+      "skills": 4
     },
     {
       "id": 504,
@@ -640,21 +628,21 @@
       "skills": 4
     },
     {
+      "id": 197,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/197.json",
+      "sha256": "cb6ee7e4879c0a08e4cfa6e1eb3dc577148acf01eb663782c81d9003f9deb568",
+      "skills": 4
+    },
+    {
+      "id": 125,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/125.json",
+      "sha256": "2f01aacd5c528957758f4dd5803ed2c0325dfe9b2ae9a26add466ef342598174",
+      "skills": 5
+    },
+    {
       "id": 510,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/510.json",
       "sha256": "4c1eb93f25cac441e7ca762905942c16ee509937ebf1bf0ae5eee8c476b00804",
-      "skills": 4
-    },
-    {
-      "id": 509,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/509.json",
-      "sha256": "b20f52129b6caaaada4fe5c129d95a8efad10d7585e405041197e74308250bd3",
-      "skills": 4
-    },
-    {
-      "id": 508,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/508.json",
-      "sha256": "b3c4920286d8f9597245dbc0fa8dfecd69a5853f93325018769620ee67199f27",
       "skills": 4
     },
     {
@@ -670,21 +658,33 @@
       "skills": 5
     },
     {
+      "id": 509,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/509.json",
+      "sha256": "b20f52129b6caaaada4fe5c129d95a8efad10d7585e405041197e74308250bd3",
+      "skills": 4
+    },
+    {
+      "id": 508,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/508.json",
+      "sha256": "b3c4920286d8f9597245dbc0fa8dfecd69a5853f93325018769620ee67199f27",
+      "skills": 4
+    },
+    {
       "id": 312,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/312.json",
       "sha256": "73c258842e0cbc929624ba6425384eba4f868fc3991cbe84a493c5683fb8a04e",
       "skills": 4
     },
     {
-      "id": 513,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/513.json",
-      "sha256": "41ccfc550ab29510420d48574b97d03ce76969975140fdf98ca7cfd7c1c65acb",
-      "skills": 4
-    },
-    {
       "id": 515,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/515.json",
       "sha256": "22a9b3a057fdc98ab0b8e1ea18e6a268f40c10e569dab42d0c1794841e4295bf",
+      "skills": 4
+    },
+    {
+      "id": 513,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/513.json",
+      "sha256": "41ccfc550ab29510420d48574b97d03ce76969975140fdf98ca7cfd7c1c65acb",
       "skills": 4
     },
     {
@@ -700,15 +700,15 @@
       "skills": 4
     },
     {
-      "id": 505,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/505.json",
-      "sha256": "68b457db8e2d8c0440f519c433bd14dd2773eaacf86fb0c36275f2dcd75e05db",
+      "id": 523,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/523.json",
+      "sha256": "99dffbc6fc890f5e30505aa64f70a7102e681b09d036d2e28481fc5d74608fd2",
       "skills": 4
     },
     {
-      "id": 506,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/506.json",
-      "sha256": "6adf8d5e0a06d5e83bc604c915db69e17d728541a96e7c136502bcf15d2402e6",
+      "id": 505,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/505.json",
+      "sha256": "68b457db8e2d8c0440f519c433bd14dd2773eaacf86fb0c36275f2dcd75e05db",
       "skills": 4
     },
     {
@@ -718,33 +718,15 @@
       "skills": 4
     },
     {
+      "id": 506,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/506.json",
+      "sha256": "6adf8d5e0a06d5e83bc604c915db69e17d728541a96e7c136502bcf15d2402e6",
+      "skills": 4
+    },
+    {
       "id": 518,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/518.json",
       "sha256": "f43fb2cf091b71476ad1d073320ba420fb971fea180b0792914e6f7062adb5c4",
-      "skills": 4
-    },
-    {
-      "id": 523,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/523.json",
-      "sha256": "99dffbc6fc890f5e30505aa64f70a7102e681b09d036d2e28481fc5d74608fd2",
-      "skills": 4
-    },
-    {
-      "id": 525,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/525.json",
-      "sha256": "06eba104e7bfbba393d6d05f1505702c6b83f6e2d2294e6caf4d7ba67a422bb2",
-      "skills": 5
-    },
-    {
-      "id": 531,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/531.json",
-      "sha256": "5626525a3e8b2a43ed4aa9f035a9a04251822ce6c01c84661adf850b65ced31e",
-      "skills": 4
-    },
-    {
-      "id": 524,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/524.json",
-      "sha256": "c74478e9f37289eea3b85229c1e4d0da9db8fdfc18692a5b6d61028da22a5cf2",
       "skills": 4
     },
     {
@@ -754,9 +736,15 @@
       "skills": 4
     },
     {
-      "id": 527,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/527.json",
-      "sha256": "86bf710f7d9ac32e5465d460439d220ccba5e5a01bfe86f9e2870447dd600fac",
+      "id": 525,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/525.json",
+      "sha256": "06eba104e7bfbba393d6d05f1505702c6b83f6e2d2294e6caf4d7ba67a422bb2",
+      "skills": 5
+    },
+    {
+      "id": 524,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/524.json",
+      "sha256": "fe5a22f9821442ffb471855fb93785cc3dbf7e139a0afd49519f0228ba7cd7a3",
       "skills": 4
     },
     {
@@ -766,9 +754,21 @@
       "skills": 4
     },
     {
+      "id": 531,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/531.json",
+      "sha256": "5626525a3e8b2a43ed4aa9f035a9a04251822ce6c01c84661adf850b65ced31e",
+      "skills": 4
+    },
+    {
       "id": 537,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/537.json",
       "sha256": "d332104f161bba509569da922c008cd0be0a17deab7cd339d9a789a602f3d41c",
+      "skills": 4
+    },
+    {
+      "id": 527,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/527.json",
+      "sha256": "86bf710f7d9ac32e5465d460439d220ccba5e5a01bfe86f9e2870447dd600fac",
       "skills": 4
     },
     {
@@ -796,12 +796,6 @@
       "skills": 4
     },
     {
-      "id": 548,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/548.json",
-      "sha256": "23125e72ff033de9b28273ee7310bdc33411d4fb83672d99dfe0fa288b778c7c",
-      "skills": 4
-    },
-    {
       "id": 542,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/542.json",
       "sha256": "d7866ca4355bf7fd723098d6d89fa99227d0a8472c382b9c7cae495e8850c141",
@@ -814,21 +808,21 @@
       "skills": 4
     },
     {
+      "id": 548,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/548.json",
+      "sha256": "23125e72ff033de9b28273ee7310bdc33411d4fb83672d99dfe0fa288b778c7c",
+      "skills": 4
+    },
+    {
+      "id": 564,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/564.json",
+      "sha256": "d1636cd787ea0ade7a885cc41710cccf92ef28eced8e63c3342f9e9f1a6e3609",
+      "skills": 4
+    },
+    {
       "id": 521,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/521.json",
       "sha256": "c0e601b55bad3d6d0f944ef09b010ab8fe141afa251dccf7ca5b1b7d73dd9d2c",
-      "skills": 4
-    },
-    {
-      "id": 544,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/544.json",
-      "sha256": "51b722e4193fbbe711e698904532a87f7b0189c8e5190378f5dcdc5a7c5011e8",
-      "skills": 4
-    },
-    {
-      "id": 545,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/545.json",
-      "sha256": "98146434c62a9400b098cb2150f63f9d27e124a4fd69cf5ffcd4ed9a766e2f0c",
       "skills": 4
     },
     {
@@ -838,15 +832,9 @@
       "skills": 4
     },
     {
-      "id": 564,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/564.json",
-      "sha256": "7282e91b526da81cfc727f1cf3419689b0232f6605b3957a7968477f124b2677",
-      "skills": 4
-    },
-    {
-      "id": 159,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/159.json",
-      "sha256": "9a6a49cf26686913df6632dbb1a28a050dfefb46420ce4a27aa0cb5367031f3f",
+      "id": 544,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/544.json",
+      "sha256": "51b722e4193fbbe711e698904532a87f7b0189c8e5190378f5dcdc5a7c5011e8",
       "skills": 4
     },
     {
@@ -856,16 +844,28 @@
       "skills": 4
     },
     {
-      "id": 519,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/519.json",
-      "sha256": "09adb2cb018ff707e360a00c4723d0b2be1d9c008b7a0cfdaf047f4b28f5de1c",
-      "skills": 5
+      "id": 545,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/545.json",
+      "sha256": "98146434c62a9400b098cb2150f63f9d27e124a4fd69cf5ffcd4ed9a766e2f0c",
+      "skills": 4
     },
     {
       "id": 517,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/517.json",
       "sha256": "d37fb29f5c648d537bb25520ac8752b828dca9ed76d9b64ca962123cc4b9b7e8",
       "skills": 4
+    },
+    {
+      "id": 159,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/159.json",
+      "sha256": "9a6a49cf26686913df6632dbb1a28a050dfefb46420ce4a27aa0cb5367031f3f",
+      "skills": 4
+    },
+    {
+      "id": 519,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/519.json",
+      "sha256": "09adb2cb018ff707e360a00c4723d0b2be1d9c008b7a0cfdaf047f4b28f5de1c",
+      "skills": 5
     },
     {
       "id": 582,
@@ -880,27 +880,15 @@
       "skills": 4
     },
     {
-      "id": 577,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/577.json",
-      "sha256": "36d704febd2727d6a326aef9f1b5f12a047052403f41bc2be2765315ab989c47",
-      "skills": 4
-    },
-    {
       "id": 558,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/558.json",
       "sha256": "939b96182dd847a3f1f8cca2d50ee7fc577b677238bd4f1ab50a2d8cd7f1cf87",
       "skills": 4
     },
     {
-      "id": 177,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/177.json",
-      "sha256": "8a6bbe1bf34cb2d5d8bf5e2a41d0faa5787104b7d3c2bf9e8cff40cbc034a36c",
-      "skills": 4
-    },
-    {
-      "id": 550,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/550.json",
-      "sha256": "2936868d676cad77d200d1914634dc902c25934a47e4fe083d6432777e28b370",
+      "id": 577,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/577.json",
+      "sha256": "36d704febd2727d6a326aef9f1b5f12a047052403f41bc2be2765315ab989c47",
       "skills": 4
     },
     {
@@ -910,15 +898,21 @@
       "skills": 4
     },
     {
-      "id": 584,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/584.json",
-      "sha256": "378a4b94d2e6322ff73fb70de11ef3dbff6afd7890a52925391320e664a2cd8f",
+      "id": 172,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/172.json",
+      "sha256": "ca42fa4ceedc70c2fcfbac892e7d0849eb0d8516dc38fb07841b788f2faf2fcd",
+      "skills": 4
+    },
+    {
+      "id": 177,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/177.json",
+      "sha256": "8a6bbe1bf34cb2d5d8bf5e2a41d0faa5787104b7d3c2bf9e8cff40cbc034a36c",
       "skills": 4
     },
     {
       "id": 585,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/585.json",
-      "sha256": "7ce5af1fd06a76480e950239ce0d3edad5549c4199b9fea416cb4e05c6fffc08",
+      "sha256": "39a3ad9f3e449aaf2a6f564411a592d15ef384f624dfab635def8ee96d4a0bc1",
       "skills": 4
     },
     {
@@ -928,27 +922,33 @@
       "skills": 4
     },
     {
-      "id": 138,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/138.json",
-      "sha256": "ced60484d7cfacc20ad56d3b2770b6b9eedc0859655bd96d688d296c67aa8c20",
-      "skills": 4
-    },
-    {
-      "id": 172,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/172.json",
-      "sha256": "ca42fa4ceedc70c2fcfbac892e7d0849eb0d8516dc38fb07841b788f2faf2fcd",
-      "skills": 4
-    },
-    {
-      "id": 547,
-      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/547.json",
-      "sha256": "ffc774ee4317e6afc8506314be2bed7dd16aead52a8dfe91dd9d20f08a189f3d",
+      "id": 550,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/550.json",
+      "sha256": "2936868d676cad77d200d1914634dc902c25934a47e4fe083d6432777e28b370",
       "skills": 4
     },
     {
       "id": 583,
       "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/583.json",
       "sha256": "da942f829ed21d2f9f9a0ab5c62b5a3969853ef41992a55f35ae6dbdb37e6715",
+      "skills": 4
+    },
+    {
+      "id": 584,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/584.json",
+      "sha256": "378a4b94d2e6322ff73fb70de11ef3dbff6afd7890a52925391320e664a2cd8f",
+      "skills": 4
+    },
+    {
+      "id": 138,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/138.json",
+      "sha256": "0a34693f7937d398179066759116a47cf3424a31c2bb48232bf8c9ae5ccb87f3",
+      "skills": 4
+    },
+    {
+      "id": 547,
+      "source": "https://pvp.qq.com/zlkdatasys/zsbd_herolist/547.json",
+      "sha256": "ffc774ee4317e6afc8506314be2bed7dd16aead52a8dfe91dd9d20f08a189f3d",
       "skills": 4
     }
   ],

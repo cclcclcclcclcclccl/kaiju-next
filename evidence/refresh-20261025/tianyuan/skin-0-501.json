@@ -1,0 +1,50 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-24&heroId=501",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-24",
+    "heroId": 501
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:14:32.160Z",
+  "rawSha256": "c4d4be9242c42e37d7227de28279c78efbc39ccd1ca65f62cb3ad028a965749c",
+  "cache": "fresh",
+  "data": {
+    "heroId": 501,
+    "queryDate": "2026-10-24",
+    "skinDistribution": [
+      {
+        "skinName": "夜落电台",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/877d39ecdadbb7afd5d455b8a54cec84.jpg",
+        "pickRate": 35.56
+      },
+      {
+        "skinName": "百晓客",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/63ff7ba79d1c413cc1c1d9b9a82f2596.jpg",
+        "pickRate": 26.67
+      },
+      {
+        "skinName": "吟游魔法",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/05fe27f5c5bb959d5a70c1b9e3426fea.jpg",
+        "pickRate": 20
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/b82b8981422f54388e0fe75866ca00f8.png",
+        "pickRate": 11.11
+      },
+      {
+        "skinName": "景韶洛都",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/173481c1242a505b3f110cdc591b8756.jpg",
+        "pickRate": 4.44
+      },
+      {
+        "skinName": "虹云星官",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/40dc587a5bf8a565ca8bc0717d954f19.jpg",
+        "pickRate": 2.22
+      }
+    ]
+  }
+}

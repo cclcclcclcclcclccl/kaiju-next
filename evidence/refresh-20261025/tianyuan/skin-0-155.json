@@ -1,0 +1,55 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-24&heroId=155",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-24",
+    "heroId": 155
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:11:15.451Z",
+  "rawSha256": "9ac35fb8bb97910c99c321ce4a22d7285c59fb19d0dc69dff4e84546a6b0865b",
+  "cache": "fresh",
+  "data": {
+    "heroId": 155,
+    "queryDate": "2026-10-24",
+    "skinDistribution": [
+      {
+        "skinName": "陌上桑",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/465e9cc45a6f3ebad2261fe223285b41.jpg",
+        "pickRate": 39.75
+      },
+      {
+        "skinName": "繁夏笺",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/ad33e6894f16c727eba884e9b7bc050b.jpg",
+        "pickRate": 26.72
+      },
+      {
+        "skinName": "奇遇舞章",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/0a1ee899724b340d67a4c8dd41b13674.jpg",
+        "pickRate": 17.66
+      },
+      {
+        "skinName": "觅芳踪",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/e62145fab3336680ae48779c25b6f2b7.jpg",
+        "pickRate": 9.82
+      },
+      {
+        "skinName": "鹤鸣心笺",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/d572bebaea8552ebf941acb24c2beca5.jpg",
+        "pickRate": 2.74
+      },
+      {
+        "skinName": "女武神",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/1d6b6116cc43d51652544f77c044e3f5.jpg",
+        "pickRate": 2.64
+      },
+      {
+        "skinName": "流音漫舞",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a993bc981ba583414c311d52b3172666.jpg",
+        "pickRate": 0.66
+      }
+    ]
+  }
+}

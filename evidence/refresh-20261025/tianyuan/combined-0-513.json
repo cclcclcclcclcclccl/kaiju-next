@@ -1,0 +1,43 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-10-24&heroId=513",
+  "query": {
+    "kind": "combined",
+    "date": "2026-10-24",
+    "heroId": 513
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:15:31.613Z",
+  "rawSha256": "e656fbdea4d092dfbc0714c23ce3b96e91e10587b04bc02ddb8623c668cb4057",
+  "cache": "fresh",
+  "data": {
+    "heroId": 513,
+    "positions": {
+      "1": {
+        "pickRate": 100,
+        "winRate": 52.49
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "闪现",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png",
+        "pickRate": 57.45,
+        "winRate": 52.74
+      },
+      {
+        "skillName": "狂暴",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/d3c417e460de2ad52d778459c50f402f.png",
+        "pickRate": 40.36,
+        "winRate": 53.65
+      },
+      {
+        "skillName": "净化",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/d42fcfdf7e4d6b7f1ba46e0faed9b64e.png",
+        "pickRate": 2.18,
+        "winRate": 50
+      }
+    ]
+  }
+}

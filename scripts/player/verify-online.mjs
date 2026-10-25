@@ -3,9 +3,11 @@ import { createServer } from 'node:http';
 import { readFile, readdir, mkdir, writeFile } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 import assert from 'node:assert/strict';
-const out = 'evidence/online-v0261';
+const out = process.argv[2] ?? 'evidence/online-v0261';
 await mkdir(out, { recursive: true });
 const root = resolve('dist-review');
+const published = JSON.parse(await readFile(root + '/review-data/manifest.json', 'utf8'));
+const defaultDate = published.defaultDate;
 const mime = {
   '.html': 'text/html; charset=utf-8',
   '.js': 'text/javascript',
@@ -50,6 +52,7 @@ try {
   });
   await page.goto(base);
   await page.getByText('固定在线版 · 浏览器存储', { exact: false }).waitFor();
+  await page.screenshot({ path: out + '/home-desktop.png' });
   const apiFile = (await readdir(root + '/assets')).find((f) => f.startsWith('browserApi-'));
   assert.ok(apiFile);
   const attach = async (p) =>
@@ -177,14 +180,14 @@ try {
     409,
   );
   report.checks.push('manual review saves and reloads; stale revision rejected');
-  const stats = await call('/tianyuan?kind=stats&date=2026-10-13&mode=5');
+  const stats = await call(`/tianyuan?kind=stats&date=${defaultDate}&mode=5`);
   assert.ok(stats.ok && stats.data.data.length >= 130);
-  assert.equal(stats.data.query.date, '2026-10-13');
+  assert.equal(stats.data.query.date, defaultDate);
   assert.equal(stats.data.cache, 'stale');
   assert.equal((await call('/tianyuan?kind=stats&date=2026-10-01&mode=5')).status, 404);
   for (const kind of ['skin', 'equip', 'combined', 'analysis', 'duration']) {
     const packet = await call(
-      `/tianyuan?kind=${kind}&heroId=544${['analysis', 'duration'].includes(kind) ? '' : '&date=2026-10-13'}`,
+      `/tianyuan?kind=${kind}&heroId=544${['analysis', 'duration'].includes(kind) ? '' : '&date=' + defaultDate}`,
     );
     assert.equal(packet.ok, true, kind);
   }
@@ -223,6 +226,7 @@ try {
       report.checks.push(
         'human blue ban followed by real AI red worker computation, advanced to step 3',
       );
+      await page.screenshot({ path: out + '/bp-viewport.png' });
     }
     if (['tier', 'draft', 'pool'].includes(id))
       await page.screenshot({ path: `${out}/${id}-desktop.png`, fullPage: true });

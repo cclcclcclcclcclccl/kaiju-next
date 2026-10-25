@@ -11,3 +11,4 @@ docs/source/contest-requirements.original.txt -text
 evidence/refinement/references/*.txt -text
 
 *.cmd text eol=crlf
+*.pdf binary

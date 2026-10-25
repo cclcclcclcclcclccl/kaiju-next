@@ -1,0 +1,43 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-10-24&heroId=171",
+  "query": {
+    "kind": "combined",
+    "date": "2026-10-24",
+    "heroId": 171
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:12:14.935Z",
+  "rawSha256": "fcc1896272a0f2038e9df5595d4e14a6b93ffd0b1f1b6591514b6b6c11f1cca7",
+  "cache": "fresh",
+  "data": {
+    "heroId": 171,
+    "positions": {
+      "4": {
+        "pickRate": 100,
+        "winRate": 46.9
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "治疗术",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/2bfe8f88808b1566dd979c0b14b766ed.png",
+        "pickRate": 87.29,
+        "winRate": 47.56
+      },
+      {
+        "skillName": "雾行千山",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/adb44ab57875ca4d8f9a0d931d0abda9.png",
+        "pickRate": 8.58,
+        "winRate": 48.03
+      },
+      {
+        "skillName": "晕眩",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/e373bf64ddf0b06205d17680575da9b7.png",
+        "pickRate": 3.83,
+        "winRate": 42.21
+      }
+    ]
+  }
+}

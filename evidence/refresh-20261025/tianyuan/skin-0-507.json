@@ -1,0 +1,40 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-24&heroId=507",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-24",
+    "heroId": 507
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:15:02.473Z",
+  "rawSha256": "231d0b5e2bda622ac2d13f2ba6cf9f2f355fa02222107fb7b31c987630929e38",
+  "cache": "fresh",
+  "data": {
+    "heroId": 507,
+    "queryDate": "2026-10-24",
+    "skinDistribution": [
+      {
+        "skinName": "问心剑",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/d67271340b3431924f40dad6b1bbbb7b.jpg",
+        "pickRate": 42.47
+      },
+      {
+        "skinName": "灼热之刃",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/1c3134c51b96472d953d7a583a786458.jpg",
+        "pickRate": 25.37
+      },
+      {
+        "skinName": "山海·炽霜斩",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/63bfbffbacd17aad951cedc8ad65b67d.jpg",
+        "pickRate": 18.94
+      },
+      {
+        "skinName": "一念神魔",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/fd58cb847954e063bbc558a560c4a60b.jpg",
+        "pickRate": 13.22
+      }
+    ]
+  }
+}

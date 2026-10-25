@@ -1,0 +1,50 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-24&heroId=509",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-24",
+    "heroId": 509
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:15:12.492Z",
+  "rawSha256": "4283f0e99d50ef61f37ad4b4dac1da9cdd97863c961e456debc191ed03ee5a1a",
+  "cache": "fresh",
+  "data": {
+    "heroId": 509,
+    "queryDate": "2026-10-24",
+    "skinDistribution": [
+      {
+        "skinName": "一塔千年",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/2c8553cbff039b72ed315fb3851d2ade.jpg",
+        "pickRate": 52.74
+      },
+      {
+        "skinName": "极冰防御线",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a34fc536014743a01f6abb4a3d0707df.jpg",
+        "pickRate": 22.06
+      },
+      {
+        "skinName": "梦圆繁星",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/4f6e68126bb74a5ce2865da2a825cc29.jpg",
+        "pickRate": 19.17
+      },
+      {
+        "skinName": "圆桌骑士",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/74eb478d4035a44a37e5d97a49b8cbc8.jpg",
+        "pickRate": 3.74
+      },
+      {
+        "skinName": "御銮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/57bc4c5a1d4a38c47aa57685820e697f.jpg",
+        "pickRate": 2.17
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/08e774e39abfd27614b60ca63a4f3894.png",
+        "pickRate": 0.12
+      }
+    ]
+  }
+}

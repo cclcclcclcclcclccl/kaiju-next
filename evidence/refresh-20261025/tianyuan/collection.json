@@ -1,0 +1,6442 @@
+{
+  "requestedDate": "2026-10-24",
+  "source": "https://tianyuanzhiyi.com",
+  "authentication": "none",
+  "startedAt": "2026-10-25T13:07:07.860Z",
+  "results": [
+    {
+      "query": {
+        "kind": "stats",
+        "mode": 1,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "stats-1-0.json",
+      "rawSha256": "118724e1d134da2cbdccae324d8f75e5e9b8f8d03480a965575f7e22d0d363bf"
+    },
+    {
+      "query": {
+        "kind": "stats",
+        "mode": 3,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "stats-3-0.json",
+      "rawSha256": "98eacf17df2ee75cab3e322273a3ead37b48ffcf62443a0a6a76870c34f7bec1"
+    },
+    {
+      "query": {
+        "kind": "stats",
+        "mode": 4,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "stats-4-0.json",
+      "rawSha256": "d87d3c7697c233b5093d9fab0720a61fee80472e8716222fc20ce8701abd72d0"
+    },
+    {
+      "query": {
+        "kind": "stats",
+        "mode": 5,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "stats-5-0.json",
+      "rawSha256": "b4e7d9bd3a78d9a3036af3308b74f1c2846eda42ea4404667a9a3d874d23587f"
+    },
+    {
+      "query": {
+        "kind": "tier",
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "tier-0-0.json",
+      "rawSha256": "b0187e725f300234fc055f3212175ba9b5a92c1171e245434ddb3b2f1bcab2ee"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 105,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-105.json",
+      "rawSha256": "00b3ff50c199fab8618a036b87ee97dc259bc487cf38dcd37ccfd0e48fc68626"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 105
+      },
+      "state": "ok",
+      "file": "duration-0-105.json",
+      "rawSha256": "af4fcc50cdd1fdc68ebf777daf5249def918a2f48c47c8d80d52378a2551cd23"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 105
+      },
+      "state": "ok",
+      "file": "analysis-0-105.json",
+      "rawSha256": "5dac2a72b4636c5af7aaac6480547108d27580b4fc7eb24210bf774f0fdff04e"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 105,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-105.json",
+      "rawSha256": "01a861b9ba03234ee47991094b3ca05fea41ace3686d30a1e23f08ec4b04c0d6"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 105,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-105.json",
+      "rawSha256": "29bf4ed0227753faedcdb1d365f6128c38f9d05f1cbb547fb75adb2a05d0b55e"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 106,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-106.json",
+      "rawSha256": "89bc13ce2afe1fe2033d91882bd5e2295fdae5043ca2f931931df818c03d8ecc"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 106
+      },
+      "state": "ok",
+      "file": "duration-0-106.json",
+      "rawSha256": "2803395b359d5521b29341d3f06a2bcfa52967465d44d92fc96a7b71a7a13c0d"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 106
+      },
+      "state": "ok",
+      "file": "analysis-0-106.json",
+      "rawSha256": "04a38c02f18f9d439a15ca8ec8f02aed39da4177baf1fc35e8714e520a2e527b"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 106,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-106.json",
+      "rawSha256": "3592011d9dca77c77ae6654a968087ee7b910b30a976872ef52698daebabf6a9"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 106,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-106.json",
+      "rawSha256": "1f6858a3c3bc7fed9b99360795698622b23c24eea9fbeafddbbb2be568bda0f9"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 107,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-107.json",
+      "rawSha256": "fd0398d5c67f83407e40e0f80d19a821d03d852b50aec501424973b7d623b2dc"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 107
+      },
+      "state": "ok",
+      "file": "duration-0-107.json",
+      "rawSha256": "3d493a36441eb9ba5d8451317abb9fc017fbb3a599bb2ce0fb17d89d4a96afa4"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 107
+      },
+      "state": "ok",
+      "file": "analysis-0-107.json",
+      "rawSha256": "4b69644e567c4f84a2c662d826a2fe44582242234655892be2a64f8b1f654813"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 107,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-107.json",
+      "rawSha256": "fa312d43891f14a181d651455676a815f91e59a5629c1d302cfade033ead3d69"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 107,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-107.json",
+      "rawSha256": "bfdcbbfc43603b6255b92258121ffc08389be53d401fa1a430177f62f54ebfef"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 108,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-108.json",
+      "rawSha256": "202baa900d2e26d76fd78a75d7faac2f03eaf42a910835b8ba16a3a820aa02ed"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 108
+      },
+      "state": "ok",
+      "file": "duration-0-108.json",
+      "rawSha256": "3a300dd9d9dbd39beffef1578b3dd682ee7a2211f439d5657bba37e430c8e09f"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 108
+      },
+      "state": "ok",
+      "file": "analysis-0-108.json",
+      "rawSha256": "a2b6961b6a19eb9c7aacf3dc1c2ad9a31227d24b18f483f25a089fc4cad376fd"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 108,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-108.json",
+      "rawSha256": "3c8240abd5450f506dc1ba4cbaaf5ae6b426c96a24b2b0f6d84d39408b878be1"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 108,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-108.json",
+      "rawSha256": "14290ce732ee1c764fa6622f510f319aed5dbb56941db5cb12339f6505b6e3d2"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 109,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-109.json",
+      "rawSha256": "a88c623c3716b1f27c91068851b213f208292040e8473c74b964506fadbe4215"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 109
+      },
+      "state": "ok",
+      "file": "duration-0-109.json",
+      "rawSha256": "0a0568a403d6a3105c1361dc8d760309f84ed23f51b571243c68e43549ed069a"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 109
+      },
+      "state": "ok",
+      "file": "analysis-0-109.json",
+      "rawSha256": "be27b607de7c7b936f2fef8c792928190cf579a93b0371aec493c794f6297783"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 109,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-109.json",
+      "rawSha256": "99c25c1f1178727d2b7b04606f01ae18569fd7a12a1a00b7285ad5a9082d6a7f"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 109,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-109.json",
+      "rawSha256": "2be4de19f87dadf619f950f342974e5d9a702ee26c3971e1a8ac67a6936fdea5"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 110,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-110.json",
+      "rawSha256": "5c52100387f2db0e7f4bf0ead4e6745fec4622ad078e812c427bb76fec516681"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 110
+      },
+      "state": "ok",
+      "file": "duration-0-110.json",
+      "rawSha256": "40820699bcfb96319a57615db45067bf48dea102e67cf34dda700f6dab014911"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 110
+      },
+      "state": "ok",
+      "file": "analysis-0-110.json",
+      "rawSha256": "690f613f86370db99e7b1eead934aac9bcaaf644fb720dbb52882b9265911ed7"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 110,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-110.json",
+      "rawSha256": "82ab9d59abb15e9d73f0777bf4abad89d0b119a683315ee2edac228d82ab8bc9"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 110,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-110.json",
+      "rawSha256": "0ae40d3ecae9cc34962e3897901ffb269f427cc808cb9266ecd1ae35de8c02da"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 111,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-111.json",
+      "rawSha256": "0e53a424f7844a6235ef739e5dd7716a54a891ad141344df5be8915e8ba42051"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 111
+      },
+      "state": "ok",
+      "file": "duration-0-111.json",
+      "rawSha256": "c9b47804dd19cd5cf6182d50e28ff6ded39f1c167f08a997f6a7d0f940dfd9a5"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 111
+      },
+      "state": "ok",
+      "file": "analysis-0-111.json",
+      "rawSha256": "c8946fbb7147e128308cbbc960b922d1054498a3daaf7e392e0cdaabebfb9fff"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 111,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-111.json",
+      "rawSha256": "f26fee39bb5230d61521740d913788277bfa208b9ba72fe957a477841fe8b6da"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 111,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-111.json",
+      "rawSha256": "e73058278d8c33716b4360d6b7fd9fa6e74f3ce99c44d060c2c305e2011eab05"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 112,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-112.json",
+      "rawSha256": "f3ff20cf34aafb115eb18b3b3c0ec6feb2fde5edbabf0fa1420d35e832812c83"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 112
+      },
+      "state": "ok",
+      "file": "duration-0-112.json",
+      "rawSha256": "8c5bce9351c06f0777cf71fced11734db0e525549ad476a8504e0518dff57596"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 112
+      },
+      "state": "ok",
+      "file": "analysis-0-112.json",
+      "rawSha256": "2db409be9ec67a517ccb84dbb6142fbfded77c1ed147ad36d5ee5428732e24c0"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 112,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-112.json",
+      "rawSha256": "3e904d5aa16cdd484e284364587490a43112736ea4e5224d4aa846dd6f4c15b9"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 112,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-112.json",
+      "rawSha256": "bcf644dd627ccbfd83b9d93a37a90852d12ce46fd30329e45f35735b1797858c"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 113,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-113.json",
+      "rawSha256": "2de0dbbc713f3e7cae116826d0ed2bc025785cb6020a78c138adab5162d55e0b"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 113
+      },
+      "state": "ok",
+      "file": "duration-0-113.json",
+      "rawSha256": "9bde19c2b67cf8382ac4d2599d78baf767d01fdb12ef27dcf39771d249b7a040"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 113
+      },
+      "state": "ok",
+      "file": "analysis-0-113.json",
+      "rawSha256": "26a2d93cfbc359f788377ca31f1efeef2c59df4b5731e0bf5d0081d107c4c34f"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 113,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-113.json",
+      "rawSha256": "a675e6eaab039ae7da32d55cd27c5b96d1fdde721fb6be79e96580324c1bfa80"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 113,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-113.json",
+      "rawSha256": "78e67d91eba06bad7cfb640905ac3f80b77a398185bf13bd6c7e7e1151d41e5b"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 114,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-114.json",
+      "rawSha256": "001f4d3fd0c0efd97bbf3da249e0261be173278bcfecc86fb3e6d93ab474c694"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 114
+      },
+      "state": "ok",
+      "file": "duration-0-114.json",
+      "rawSha256": "0a69940c7d12f001847b8609270bbe8516255ece0d8ee54e653f4f7a9ae0875f"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 114
+      },
+      "state": "ok",
+      "file": "analysis-0-114.json",
+      "rawSha256": "a9e4eef0af0973ad9c935d8e2f0f6b0625b1016c6aaa8905cae887433810300d"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 114,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-114.json",
+      "rawSha256": "e197793a7fdc4fb819e9c4ba4deee197f3588ffbb2e569ca2633a9f7179dfe55"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 114,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-114.json",
+      "rawSha256": "06b0ee41f533be8cba7b4f7c7c06051eab3a913fd76da69a8ee7360b7a993459"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 115,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-115.json",
+      "rawSha256": "7de8af416205c6a801bd24d5341dbd2f746fed63f0825c7df4c2b60864ada055"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 115
+      },
+      "state": "ok",
+      "file": "duration-0-115.json",
+      "rawSha256": "73dcaecb5e7521aaaada2116f8e81a40c6fee12c615e43ff39e082b392d4ddbb"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 115
+      },
+      "state": "ok",
+      "file": "analysis-0-115.json",
+      "rawSha256": "8c6679c5b75bb873eef5319c50afb8c610cd993950d5194574e60a96d71487b7"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 115,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-115.json",
+      "rawSha256": "8e0f4826c80371f331cd74217d7177e550aef660d8a2c958f15ce95a69a30148"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 115,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-115.json",
+      "rawSha256": "0f5ca6fcdc87a591580a723171fdc20291b20de61d26e8be022710bbc8677388"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 116,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-116.json",
+      "rawSha256": "ce62711dc2ebf1a0bce6e635628e136725c4d384c6eebb444559d6e4fd4dd1d7"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 116
+      },
+      "state": "ok",
+      "file": "duration-0-116.json",
+      "rawSha256": "a3126e42416c75a51d377a5ea54a2a866bab6fa902ea4ce53ded7055a1a1d0c0"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 116
+      },
+      "state": "ok",
+      "file": "analysis-0-116.json",
+      "rawSha256": "c5709515f82e1885be5e3a71c69d485524d42c51763c858f695f7f2e7ae10b43"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 116,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-116.json",
+      "rawSha256": "096a408e4b5fdf743ab892e208432e9111ee741c2d6ab65ee38ed56ded08ee97"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 116,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-116.json",
+      "rawSha256": "02445e8bb81786dee66d2670947c826b33f4b6904f9b4e99696811b8512f2155"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 117,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-117.json",
+      "rawSha256": "eb783717d1db45f907fceb8790b7781aa6cd9b9f19073d89031f03b715bfaddf"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 117
+      },
+      "state": "ok",
+      "file": "duration-0-117.json",
+      "rawSha256": "3547bce22891f37b9035b3de260b15cc9b0d7aea007252d42a4e9ba928476f46"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 117
+      },
+      "state": "ok",
+      "file": "analysis-0-117.json",
+      "rawSha256": "69348c91946148b13f579d683a6760ce4c4d130957a33d1457be36aa5196f7df"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 117,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-117.json",
+      "rawSha256": "523ae15570a8b75efb5b161d6150f678226af1b7b95120242a7268c58f4c4cba"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 117,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-117.json",
+      "rawSha256": "d705a7a729110231c8d77183a45006b95e5fdcfe6501b12b615f59dd38fa11fd"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 118,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-118.json",
+      "rawSha256": "72ba61108acb8db7d21656a7f3326da6ab85abbb8ab9856682142662043f977f"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 118
+      },
+      "state": "ok",
+      "file": "duration-0-118.json",
+      "rawSha256": "102740c864b2cd55d891c45e143a6ae3635a29c1d125516ea00c5fafaccba2c0"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 118
+      },
+      "state": "ok",
+      "file": "analysis-0-118.json",
+      "rawSha256": "8221b05c94aaadf73fb30d336e0370821878276fa372b17cada4e110761ea1bd"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 118,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-118.json",
+      "rawSha256": "eeed94f6337bc2ec59b8ad9bb206fa27e045c11b603111928e983113c87a9f20"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 118,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-118.json",
+      "rawSha256": "96fd38651306fc292bc4c462d82b512470a6ee49cfa531e2d8570a36bb1a60f0"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 119,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-119.json",
+      "rawSha256": "b7f8a8315b598a7d8b7e0892c74c2afa1aac0509af50829e374b4a8d0ce85790"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 119
+      },
+      "state": "ok",
+      "file": "duration-0-119.json",
+      "rawSha256": "5ca6528269214213a29d544bc8e1145393ae9f2f7b1df5be7949d9859b576a9c"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 119
+      },
+      "state": "ok",
+      "file": "analysis-0-119.json",
+      "rawSha256": "b2620b0c98d63cea3a2224ce3a79df9cc7698714a04be583081661e5bd12fa96"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 119,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-119.json",
+      "rawSha256": "1aa42928c70f798ad51dda70c6e818b574ad44e8abfd36840a61a0c3a126bb0b"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 119,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-119.json",
+      "rawSha256": "46ca27f119d54fa1bc7edfd8a9fb73977c317ff6d80d390107f09efe98c47e98"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 120,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-120.json",
+      "rawSha256": "1705ecfe57f2672977454543e35351cbb16756fab2ccff20515b4852729cc502"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 120
+      },
+      "state": "ok",
+      "file": "duration-0-120.json",
+      "rawSha256": "6715327abe167eecb0fa3f34c53bd8c90ef2cea2d9cea11c11e5b0dd2553ebc3"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 120
+      },
+      "state": "ok",
+      "file": "analysis-0-120.json",
+      "rawSha256": "268a38905c03b934137de7212e74e1716265cf2a5e70ddf08b5a59edbe9d33c6"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 120,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-120.json",
+      "rawSha256": "3e8cb5edc14ac26f22c4ced16438e724875e3405dc4428fc41c67ebee6ac93ee"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 120,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-120.json",
+      "rawSha256": "ecea96c157cb516cabd49c598e797414a77c092c4641c9cbf7e5de23c5f5ce4f"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 121,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-121.json",
+      "rawSha256": "2d79dec6b3fcb2632afb15cd8b4bae01e27405ee6f2af6f672730cc21d3d6def"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 121
+      },
+      "state": "ok",
+      "file": "duration-0-121.json",
+      "rawSha256": "503a7daf9ffac71cdd37a666d73a7341dee21a7fc4636892682b801f53bed15b"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 121
+      },
+      "state": "ok",
+      "file": "analysis-0-121.json",
+      "rawSha256": "9911f6246a3302c5b4f1e347b255542a77c0d8c3bd10a6f96bcd2c883f16bbe1"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 121,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-121.json",
+      "rawSha256": "adffd709be6fa545676bff32701a124aa3fe32a152d1fd389c2fc912cdd7eb05"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 121,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-121.json",
+      "rawSha256": "61bbbb645fa1fa468a3562cdad79b31b1d88fa476a2d88e79d5923dadeeae19a"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 123,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-123.json",
+      "rawSha256": "a2ae922fe5554a75675cffb4d5888f8fc023836f32612a560ec47832f6f390e2"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 123
+      },
+      "state": "ok",
+      "file": "duration-0-123.json",
+      "rawSha256": "a722e2522cddb852925117a70e37157be85278f85d6a47c68668580bdf4eafc3"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 123
+      },
+      "state": "ok",
+      "file": "analysis-0-123.json",
+      "rawSha256": "ed4d90d548ee753a1146742346f29f898365eb91433dde66449d3fd3e66f413e"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 123,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-123.json",
+      "rawSha256": "0a4db74d8ea4076ede658208d1c1f2c0ca99cc88538e7a7826c290183aa3714f"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 123,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-123.json",
+      "rawSha256": "17eb7e60f2dad2e5dfba19e5b443606437560c7159a29af50d236e5dc598f953"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 124,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-124.json",
+      "rawSha256": "184ab74d1ad7862fac137a0e62b5f3c5a0589a61c1795ed316c134248f951609"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 124
+      },
+      "state": "ok",
+      "file": "duration-0-124.json",
+      "rawSha256": "e009ca57bce305bba9fb3dfb3c7403bdf22a1541dea03e9cbcf2e338d2ef237a"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 124
+      },
+      "state": "ok",
+      "file": "analysis-0-124.json",
+      "rawSha256": "1e4dc912086bc3d18ffe7f4f4087d2e3bca89d11528305349af5b5cf7f5c7c8b"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 124,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-124.json",
+      "rawSha256": "acb6b96a03e2db9dc91802ed5285f127ef8b0660fbb174f06aac42eab49b6740"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 124,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-124.json",
+      "rawSha256": "0cc410339cc3b0797080938977ae3b62d35d4d7a0a2e71af04f9589dd084dc12"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 125,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-125.json",
+      "rawSha256": "0a7734186abcfcef793b3430143914bad765e2f62f562b1cf3959cd81783c362"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 125
+      },
+      "state": "ok",
+      "file": "duration-0-125.json",
+      "rawSha256": "d88d3abe1fa0892487391bfb33b6c502bdaa97440517e18495c0f898eb2c9e3e"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 125
+      },
+      "state": "ok",
+      "file": "analysis-0-125.json",
+      "rawSha256": "b5b010b462e2842b1a295a15f3f5757a7515454b6715b3ebbaf037f4afd3a7a5"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 125,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-125.json",
+      "rawSha256": "2c386572d3b10a6eb1c776176ce3395cf2667a747f11aa80aa150f64f8825151"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 125,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-125.json",
+      "rawSha256": "f3b6f11b710c337c312c2f2c5cfd027210b58582461876efe22c1ef73314d1cd"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 126,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-126.json",
+      "rawSha256": "8ef9d2b5dcc92634299104fdd5e5c5d4509987c5b3c81391db3b47a3f7df25e5"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 126
+      },
+      "state": "ok",
+      "file": "duration-0-126.json",
+      "rawSha256": "fb724d5cddca23b54ba06fb778be83776294e079bfb0edcee220c0f88787e94a"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 126
+      },
+      "state": "ok",
+      "file": "analysis-0-126.json",
+      "rawSha256": "a3f5ae2b8a340c05fe477ed2f72ce1659dbfffbb09c062230368ba9fbab02bb6"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 126,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-126.json",
+      "rawSha256": "94913cce9acc05d767cffe37b799ba6c8129f02ec43988f0420cc06226026ba3"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 126,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-126.json",
+      "rawSha256": "211be1213f9017c1f69ec69330ab76ffb8cc0eeff016c936c64fce7d317ab5e1"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 127,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-127.json",
+      "rawSha256": "be43d4355fb5d21fa9723ae4f6942aa8cf3e911d52426b0ae9a833fecba78a97"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 127
+      },
+      "state": "ok",
+      "file": "duration-0-127.json",
+      "rawSha256": "6756460122096012b16daa331273ced179712ebc85d505ba5087cd7f1b3b23ea"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 127
+      },
+      "state": "ok",
+      "file": "analysis-0-127.json",
+      "rawSha256": "27ba67f8c494a36a27d1c728a5e0361544b06f816632e50a8a4d5485d9d28b51"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 127,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-127.json",
+      "rawSha256": "52a4037c59063a90075106094cc14ee0c17d18be031773bd7d305efc8f5e382d"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 127,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-127.json",
+      "rawSha256": "9617e1025562ce816bbf1fc30297b93d462aa1cc013ebeaf5a92e83a957ce915"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 128,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-128.json",
+      "rawSha256": "c86978c8b6c7cf374249cda1d7a574a67a66d5248e952f12fb6eacc165a6f8ae"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 128
+      },
+      "state": "ok",
+      "file": "duration-0-128.json",
+      "rawSha256": "099225d9e6ee4fcf64a62f9e00d72b8d20e96b11ddede5fea0368f0298e7f89e"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 128
+      },
+      "state": "ok",
+      "file": "analysis-0-128.json",
+      "rawSha256": "3a35f9c9a2dc2ea5c1d33f7b42afdc24663ebc4ffb47baa59283a0a5a0604a8c"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 128,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-128.json",
+      "rawSha256": "257d8829d187be4142eec669dedb481f69992fb078791d954ef8b41e04b4cfa9"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 128,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-128.json",
+      "rawSha256": "613884ec115d139fa98d2638d20150829b6427dee2300b6b08eb22447dbcdc04"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 129,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-129.json",
+      "rawSha256": "1fbc407dbdc5c2148f39e54904a7cfb802ddb2deb47e830df003296fce84f5c0"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 129
+      },
+      "state": "ok",
+      "file": "duration-0-129.json",
+      "rawSha256": "19f4e7c9e0616322ee01ce67ea376618ddadce0a3120556d918fd08b747a6b1f"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 129
+      },
+      "state": "ok",
+      "file": "analysis-0-129.json",
+      "rawSha256": "5437cbcc94dbcb0dc5866d17ca1349058ec0f831009b9e5c55e6a2e0f95e92fa"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 129,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-129.json",
+      "rawSha256": "33f3f8b86e419ca6f4cf35a7fa9a83fdd06af35fab6c02704593e97dd5fdccda"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 129,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-129.json",
+      "rawSha256": "eb29ec8816cd42bcf5a391cccd90368497e576b5bf2cef49ea2e6150073899e8"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 130,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-130.json",
+      "rawSha256": "25533d96ca41fc1cdfd48c8947ee9818be49d50ea97a5e90609785de0486d115"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 130
+      },
+      "state": "ok",
+      "file": "duration-0-130.json",
+      "rawSha256": "bc27b78727970027dfa591bdb9bcbc48b4fac192f882af8968242a4ee6b87e2a"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 130
+      },
+      "state": "ok",
+      "file": "analysis-0-130.json",
+      "rawSha256": "c2e109b0905b286446f3e2546b7b86e7fd3067fbd1946a5cbfedc47a16bc055a"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 130,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-130.json",
+      "rawSha256": "09867cf7ba428152924c35e3fb256188dfa190b1284546f2b8f7dcc4c0b0d2d5"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 130,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-130.json",
+      "rawSha256": "f883ded2677d9e97f6953f8a013fdfbdcf9e3409fc226fffe61992358cde83d2"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 131,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-131.json",
+      "rawSha256": "23f57cf60ad7cfe9353b5eab0a14781093b279e71abe82e49968f5524537886b"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 131
+      },
+      "state": "ok",
+      "file": "duration-0-131.json",
+      "rawSha256": "c3aa125cc95d87bd68fb7b4a313f988beb4c97289a23637f93e6fb270c5b1d2f"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 131
+      },
+      "state": "ok",
+      "file": "analysis-0-131.json",
+      "rawSha256": "72f03ee40c7ff628a1becea262110b96b8c248ac7b19ed6d584c4fd319c0dbef"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 131,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-131.json",
+      "rawSha256": "fe35d8f5bd09c363b7f64c3939ec9c2e11c033dde41ab36535ab491f55d0b83e"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 131,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-131.json",
+      "rawSha256": "a0bafb6536226e17eda279fe359884349ddb1bee6ab41d938166db47479efaca"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 132,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-132.json",
+      "rawSha256": "1bae065c3fc70b0a7e8b89226b6ab8bf7c2c8e3b2467613ae7661c2ccb607280"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 132
+      },
+      "state": "ok",
+      "file": "duration-0-132.json",
+      "rawSha256": "dbcc574b8e74a4c430f393ce46684027ce8909936ae236900ac4930ae857552d"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 132
+      },
+      "state": "ok",
+      "file": "analysis-0-132.json",
+      "rawSha256": "2e836673a9197b0e08e551f0e5430856c1b739068e78372693723cb70834fcef"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 132,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-132.json",
+      "rawSha256": "e2a4024859b8dae9bb56164ad2e362f6a5bb14eac31c599c510c8df9e81b8289"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 132,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-132.json",
+      "rawSha256": "bdcec5a08e70cf27acaba751bb0fa4e4907f374fb9774b2a8925f9300a65eec7"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 133,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-133.json",
+      "rawSha256": "c93690e2212cc95d31ee26d0de50a4229b7a6e17d6604bd6e90c6f9e3783cee4"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 133
+      },
+      "state": "ok",
+      "file": "duration-0-133.json",
+      "rawSha256": "9baad4cf4a74fe871d942a71b25a8ac7c113605e05912a78b8c4bb98e04d8c16"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 133
+      },
+      "state": "ok",
+      "file": "analysis-0-133.json",
+      "rawSha256": "16c8734ecae91f527d6826bbd233aa9ef2d5eb3d2965ac1131c7c8433c2e6327"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 133,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-133.json",
+      "rawSha256": "4d2548a70722ea8e0cf199afee4dc0359f55991f8e984092a357dd4c96364ed1"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 133,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-133.json",
+      "rawSha256": "383b49b4503149be6cd5ec3588afd2677dae0d10645aaa9b0b6f82ee9b4e8e86"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 134,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-134.json",
+      "rawSha256": "0acd0a9f5148f2614be94e198ac9c656bc7ba4db4502bf31b7ea3fa82a0ade0d"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 134
+      },
+      "state": "ok",
+      "file": "duration-0-134.json",
+      "rawSha256": "b6a8dd36dda9d706c9b96204d81d0e36a3311b606573f4fcbd7ba5c8aa5f6069"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 134
+      },
+      "state": "ok",
+      "file": "analysis-0-134.json",
+      "rawSha256": "b6ef3af48bcf5641e2b9326ef80d17c5df573c8240ff8914d5a0e13e86edc0e1"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 134,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-134.json",
+      "rawSha256": "eee297bce01124781469ffbae2c2c3067667eb197bd90b1818a370b1229d1a4e"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 134,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-134.json",
+      "rawSha256": "5570edeac2527fbdd93ae550f72fa8e0aac78be77d58453ab4c73ce6e8624a01"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 135,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-135.json",
+      "rawSha256": "ea82fcef2f1212a4cf068e755142a815485cd12839c2bdad5d312b4383656afc"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 135
+      },
+      "state": "ok",
+      "file": "duration-0-135.json",
+      "rawSha256": "092d3bb46dc4f5ba1c4d465fbc6e7f56742dd9ba5da57ccfc7d9709696cc63c6"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 135
+      },
+      "state": "ok",
+      "file": "analysis-0-135.json",
+      "rawSha256": "5ff3854faf04d10c75af87a0284360b7773ba7e650abe8f8b9017b81a796c6e2"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 135,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-135.json",
+      "rawSha256": "2fadd1144bb1a398d03f9d7fb7729dc282ab9c1cbb33abe6d8863d0e8ecac93e"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 135,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-135.json",
+      "rawSha256": "25eaf02902d17e15c04157e963a4b3c09348cdc6635df8c515f643010ffcbe1f"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 136,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-136.json",
+      "rawSha256": "93baa81d8b3476c901294ca0ab10cf2639b911bd0b4c7f896b3a2f63d8d87317"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 136
+      },
+      "state": "ok",
+      "file": "duration-0-136.json",
+      "rawSha256": "663eee4fc7b1ba586d088520639eb86ff0321920b2c15af85cac631a01005992"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 136
+      },
+      "state": "ok",
+      "file": "analysis-0-136.json",
+      "rawSha256": "3ee14c72fcde2822b46ee88ae3594a03a389ba22c12985d999462b294dc9108f"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 136,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-136.json",
+      "rawSha256": "04977d05e16a7f08a9eb4419194c5bfc14f2306f3778286ccbc3e7c39f44887c"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 136,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-136.json",
+      "rawSha256": "717a1f6c105410109e46589fd97a2ecddd4169884b21a978124390c63366c278"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 137,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-137.json",
+      "rawSha256": "495e2bd5f37befd949b1d5526447a12eb0e88aafa6e06649fade645171a83b0c"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 137
+      },
+      "state": "ok",
+      "file": "duration-0-137.json",
+      "rawSha256": "55a3f6549e73c64160f79cdc91b03338235c648500bbe2e7b20cead816afccdc"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 137
+      },
+      "state": "ok",
+      "file": "analysis-0-137.json",
+      "rawSha256": "c67e304ec6d68f059db89f022f482947e75e563b62a7a43ac7ca73b5f750cedd"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 137,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-137.json",
+      "rawSha256": "52289738f73271c738f254002f79c7d3029c2771804868b5498f00b89b655d98"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 137,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-137.json",
+      "rawSha256": "6677927015b5f32d0f1dc005d74b1bff3940e2abff856b4d6e20d528178f7e9c"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 138,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-138.json",
+      "rawSha256": "a257788ae4f2cb7645e5b1ac41ef800d56634e3dbf2637bda25f4c8ebd42a907"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 138
+      },
+      "state": "ok",
+      "file": "duration-0-138.json",
+      "rawSha256": "2937ced53d7af0e6a87b725d338228aab3922e255db105bd1910c5053ea8d288"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 138
+      },
+      "state": "ok",
+      "file": "analysis-0-138.json",
+      "rawSha256": "2df3bf8700d647c2a38a04a6ff8008a8f6aed3826898cebc54ffaa11437e6ce3"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 138,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-138.json",
+      "rawSha256": "5a158729a44bf72c30d205bfea4f0870997ef3c9a1407bd2d3f5a3ec362160e0"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 138,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-138.json",
+      "rawSha256": "a3281bf1f5ad88028d50bb761cbb7199368d5c98c7e21461e6c420bcd0dd82af"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 139,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-139.json",
+      "rawSha256": "cabb7ceda6bfe9b6f161b6b9cdf8251a1db9e0834df7e782af0ddf4c185b900b"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 139
+      },
+      "state": "ok",
+      "file": "duration-0-139.json",
+      "rawSha256": "31dc1fc78df27aa5ff49a10154b2079975db77ba74c4a36d89d87f1850ad6c21"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 139
+      },
+      "state": "ok",
+      "file": "analysis-0-139.json",
+      "rawSha256": "771bef46c813358c23793cf97259b63a6eea1e744a6325ccde681118efd3b066"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 139,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-139.json",
+      "rawSha256": "c9b1e56532fed4be986cc817a818d73c91894d73cd88b9e296bae81b24d0d023"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 139,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-139.json",
+      "rawSha256": "981028a3fcb2725bb719c4b1aa46165470e0ced7616c40c2a7dcc7eed5537acb"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 140,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-140.json",
+      "rawSha256": "8fa7a00809b9d895493cc77bdf778931b1de2a3fb429ad8b89713cf5581a002b"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 140
+      },
+      "state": "ok",
+      "file": "duration-0-140.json",
+      "rawSha256": "b825de2add8784f5083e9c1b521e5dbdc44155d0668b7eeed479de24879c4817"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 140
+      },
+      "state": "ok",
+      "file": "analysis-0-140.json",
+      "rawSha256": "926e4bf390644570e50d320b5d877f51e1d0161e4f43f037a61ea4aadb27fa10"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 140,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-140.json",
+      "rawSha256": "56476ac89fa569d8b3a1036cdccfdc80a756edbfb7a112d6893a6b64a597ebd5"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 140,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-140.json",
+      "rawSha256": "0e44d6f7a584cba5ac3223179b4cbd29d312ccddd34b46b3bb0cdd59b6b41b72"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 141,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-141.json",
+      "rawSha256": "f7c6faae4b1062f7bd16de49621c1113160e97d6171327540136c0b312f04d92"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 141
+      },
+      "state": "ok",
+      "file": "duration-0-141.json",
+      "rawSha256": "06b44319257ca0f7f5868746b48eb68a45c8ea002be80040ffb5611dded1f4b4"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 141
+      },
+      "state": "ok",
+      "file": "analysis-0-141.json",
+      "rawSha256": "f3cc4367e660057e10bcbe6e468f758f8d667201d3e8e5a0913236df067a5cfc"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 141,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-141.json",
+      "rawSha256": "6e2465740aef7eafea5a33f7d126e52f99cea49eba98f64f1d0184724acf815d"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 141,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-141.json",
+      "rawSha256": "532c5ec6d45c5a588ab1b08d9d0e63ce50c041ade9fde3c2c53a6bb860831667"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 142,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-142.json",
+      "rawSha256": "33c8c64544398195a5289b9a9476c4c39bd5217b0275684a32c691f1936fdb93"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 142
+      },
+      "state": "ok",
+      "file": "duration-0-142.json",
+      "rawSha256": "20fe38d9a46594e7f29917e6acee18f11d9384df9444e22ad4cb4cdb9a355214"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 142
+      },
+      "state": "ok",
+      "file": "analysis-0-142.json",
+      "rawSha256": "83c0c6666f62e07f28f8270ef9dd867e6be5b74b8caf0d9b3552eb31b319906c"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 142,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-142.json",
+      "rawSha256": "c2b3c3d5937b0e291f22000935628cf7a7167bd3f8bc97f403ed48c6c1a03eee"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 142,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-142.json",
+      "rawSha256": "19be54f710daf78111c317df51e52af153227c8e1db3fdc7196c44f9039c6c66"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 144,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-144.json",
+      "rawSha256": "2c975c86ec05ae0d6534fb0badefc33dd66318ddc4a0c0216c4320675a236d72"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 144
+      },
+      "state": "ok",
+      "file": "duration-0-144.json",
+      "rawSha256": "3de150df1883371e910473c636f736c602ad9f52146c248c59f81bd2fc7b786b"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 144
+      },
+      "state": "ok",
+      "file": "analysis-0-144.json",
+      "rawSha256": "29808ad56f182dc2b2cec9db31c522a7af9a9ef15c6c72b6bc881eed13dd73b2"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 144,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-144.json",
+      "rawSha256": "7f6dd02bdfe5fabd47ad698107e4c8eef58f1d2685137d2696cfed1d4ca5384a"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 144,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-144.json",
+      "rawSha256": "1902d5cc8b61fca39c1503726e8f39cf6762f6db762999023ceb00d14ae69ee8"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 146,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-146.json",
+      "rawSha256": "27f65255f1fbc37f405e5b45e7a2c67cfaffa6389c33b974405942661158cad4"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 146
+      },
+      "state": "ok",
+      "file": "duration-0-146.json",
+      "rawSha256": "052d43bfdfbd8c9e5c3827cfe5a419bd9f3ba756ad74f6d39a7dc1c0469bd50e"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 146
+      },
+      "state": "ok",
+      "file": "analysis-0-146.json",
+      "rawSha256": "612ae3d5e75676a0019ff56a5e9ba360673b149c6eb43b90039ac76e9bf2739f"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 146,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-146.json",
+      "rawSha256": "4f1f76fd89639c654b2ece6996ce93bdcdc7609d3e57f5cc35b662af3bcac90a"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 146,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-146.json",
+      "rawSha256": "7d832eb09ceed5f35d19b08d27d924c87462aa9998d9b494a6c7a72361877f65"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 148,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-148.json",
+      "rawSha256": "996fd0cb5f7bdb81b2f872ceef744d1358327a7dbd2d1b505a9ed5e59c7caa0c"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 148
+      },
+      "state": "ok",
+      "file": "duration-0-148.json",
+      "rawSha256": "31de9516639c6b4c0c25f6a110638c199286a86c99250ee1623392e762330769"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 148
+      },
+      "state": "ok",
+      "file": "analysis-0-148.json",
+      "rawSha256": "0e9ed2e5dcfd2c391c524249dbe99a1114f07b244fe7c2519a5b393caf7ba156"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 148,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-148.json",
+      "rawSha256": "1bca0cb2ca7a2030960b0867a1b1cc9380a95cba34977aa6dc3bb0550cd795ef"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 148,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-148.json",
+      "rawSha256": "7c05abcfa41854980a58da722940a9bb83235b413ba3168050cc919e5adaf2e5"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 149,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-149.json",
+      "rawSha256": "8a7c13de42c0451a80d491feee035e0a853b5e3fe6509635318e866bc6e274ea"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 149
+      },
+      "state": "ok",
+      "file": "duration-0-149.json",
+      "rawSha256": "f156aecda4b2900841b10324f4dfaffbabe3fb6835ca57ad515316b5180227d1"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 149
+      },
+      "state": "ok",
+      "file": "analysis-0-149.json",
+      "rawSha256": "cf43ed1520f10efc7d22fe25a380993694981341f3563de62afeddcc4383f8b0"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 149,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-149.json",
+      "rawSha256": "92fb4ba08c0d82856808cef56ebb0a9aaeb052570475c919deb6a616cd9e1259"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 149,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-149.json",
+      "rawSha256": "2d19549c793211823bc9a2c9341ed2baa84ee47246ecfb711ce59e5d2b9f7481"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 150,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-150.json",
+      "rawSha256": "9d6f1ddfc602b7682a34f0fcdf3393b6c42445ea3c0cdc4efce580c3f37236e0"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 150
+      },
+      "state": "ok",
+      "file": "duration-0-150.json",
+      "rawSha256": "c6d6bdad85821b7aa7671b92f6472184f5b20760e19579824a1c78ea373a77da"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 150
+      },
+      "state": "ok",
+      "file": "analysis-0-150.json",
+      "rawSha256": "e920abb12385b85ec2b3d05ed74f74383cf1aab97765746ac157a5d351a7be87"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 150,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-150.json",
+      "rawSha256": "2cb633bcb6e0e3cdc162e3286eaf64c291c471a86df4eacc47a9a5f47871c4a4"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 150,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-150.json",
+      "rawSha256": "c2be30b4687983fc3994c142efe24b436fe1c0ca4f3337e73b85d7e9c48cb74e"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 151,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-151.json",
+      "rawSha256": "dcedb352c7fd369c84bb7492e49c134bee6de63f466e1ebad2485945af4c8751"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 151
+      },
+      "state": "ok",
+      "file": "duration-0-151.json",
+      "rawSha256": "09276cf3474f7c0bc2d4a254c8b123625afd464669bb66c5b7e192ed483d6b17"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 151
+      },
+      "state": "ok",
+      "file": "analysis-0-151.json",
+      "rawSha256": "a70b17c2943aca53db3e6eba3125c5fc5a8076ee2df8b22e8e912038c2948fda"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 151,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-151.json",
+      "rawSha256": "71b84bdd180d27abe4eb8c4a11baba2d4f0a47a20fbe897870d22dbb13d2b235"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 151,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-151.json",
+      "rawSha256": "8956cd0bf1daa11c27b593b168748db2fc7a2235482eae130541adb15bd96816"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 152,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-152.json",
+      "rawSha256": "2250b8bbd03af36e4b609edd5c0ab87e90f28a81a20412fa0e306e38966feabb"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 152
+      },
+      "state": "ok",
+      "file": "duration-0-152.json",
+      "rawSha256": "5695e209995d960528cf6c54aca7206938529c087c44ac8d262c01119b38dc29"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 152
+      },
+      "state": "ok",
+      "file": "analysis-0-152.json",
+      "rawSha256": "67005c4f38fd8247a87ad9560c1857cf54452ff0a2c50a0515fb3f51595564d2"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 152,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-152.json",
+      "rawSha256": "0a109cf68291e3a103b6ea6de2166c88998561722e628f62f8117591204d9da1"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 152,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-152.json",
+      "rawSha256": "f1c44b66cf0d5d97a623d557d1d91d4b368d567ed63262a4cfcf9c2d859090cd"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 153,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-153.json",
+      "rawSha256": "2c7b173636cc27128d1db23bf8ad45d1991740831d8e6d528f9222ef87962197"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 153
+      },
+      "state": "ok",
+      "file": "duration-0-153.json",
+      "rawSha256": "691bb17033e6b4db6042befe28994c23075258b0af209ad071c4d8488ddd95cf"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 153
+      },
+      "state": "ok",
+      "file": "analysis-0-153.json",
+      "rawSha256": "e01594277fdec028eb396b112411b7d8a750373b73eebbd9dfd1696c2e0f8036"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 153,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-153.json",
+      "rawSha256": "583f89788e6b0bcf2ac252f5e22e9bdc757d89c8f2c6e2fb1eb88cf534815af1"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 153,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-153.json",
+      "rawSha256": "229e05e021bc664c5b152e6f1cb8f22f84433ac35e29156e9356bc5613eda0d4"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 154,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-154.json",
+      "rawSha256": "d71e70532460cb820511f27191c1553c28a587d00bf1e1648be2a07b49c72120"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 154
+      },
+      "state": "ok",
+      "file": "duration-0-154.json",
+      "rawSha256": "fde9a72089fc26acc37d58e11b2b8ffd7d2d8dd9c225dfcf11d6eda07977a33c"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 154
+      },
+      "state": "ok",
+      "file": "analysis-0-154.json",
+      "rawSha256": "e6af04e8c9f4476ab7eea40cf57447cd51c9461fd23f9b4862e55f38cbfcc4a0"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 154,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-154.json",
+      "rawSha256": "e2ce7e853896cc5efbf76cc3c0aacc3fc655502310bd3730b635829c187bf886"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 154,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-154.json",
+      "rawSha256": "f612a5124389cf80f476fe7b6056a805d85ffe2ab50cade1a7df076dbd800286"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 155,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-155.json",
+      "rawSha256": "9ac35fb8bb97910c99c321ce4a22d7285c59fb19d0dc69dff4e84546a6b0865b"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 155
+      },
+      "state": "ok",
+      "file": "duration-0-155.json",
+      "rawSha256": "a121bd0b29cbd6c37c637be9cb6e94573a58938d0d7885c759cfce09ecd8d458"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 155
+      },
+      "state": "ok",
+      "file": "analysis-0-155.json",
+      "rawSha256": "1cf2d49f498dbb958f31c598d78cbbb2e9185419bfcca2335f80f2ef85193179"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 155,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-155.json",
+      "rawSha256": "6f2329e5b7d695bec45557da184657570313f33ae5c81f778da27700b1157881"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 155,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-155.json",
+      "rawSha256": "ca6b597e05727c04ba7b6af6fdb2fa4c06ad585cc1e8dd7de2e0d0a8e194a92c"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 156,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-156.json",
+      "rawSha256": "7147da074b5f4316cd914c95c4a341b949cfefd4b34f28fd87e37b0a2995a06a"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 156
+      },
+      "state": "ok",
+      "file": "duration-0-156.json",
+      "rawSha256": "37cbd11e76e2bd13fbe96e3f0abb378bc52ad52ba804e96323095bf73a9fa245"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 156
+      },
+      "state": "ok",
+      "file": "analysis-0-156.json",
+      "rawSha256": "2dcb995cc0a558a4e519dfa025a2fb958b0c2ab1a8ba8e22cc9eacd263960a53"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 156,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-156.json",
+      "rawSha256": "696718ccb21f229629da0683eaa3fdc1d9b4fa4b4dcc2fcc91ac77582efd5d3d"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 156,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-156.json",
+      "rawSha256": "0dea964755936859774430f6ee66dd8b2daf675a0dfdaf79c56ef68e75c36dfa"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 157,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-157.json",
+      "rawSha256": "4c88799072e4feb6ffa04cc2282126dfebd8ac6592eec241bdf2bd56891a9c3a"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 157
+      },
+      "state": "ok",
+      "file": "duration-0-157.json",
+      "rawSha256": "00ec7bc2e2fcc0c3ae4e179ce87b82e5521ead7f8c0a4bbea1555048b08ed4d4"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 157
+      },
+      "state": "ok",
+      "file": "analysis-0-157.json",
+      "rawSha256": "22433697a4c76ee88415289bd37768a31a00588772b5417af181f0d501374623"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 157,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-157.json",
+      "rawSha256": "c81244d0936c33a585fafd38ab14ccc574fab074afe47ee266702dfa83574684"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 157,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-157.json",
+      "rawSha256": "356d69e1de13a3e9069131001f4d2bbba5e5bfcd2b1173d73787682a28bd9078"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 159,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-159.json",
+      "rawSha256": "36990af97ff812445ff2e270e163ad6d194024f16e510c8001286e8f3090e3c8"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 159
+      },
+      "state": "ok",
+      "file": "duration-0-159.json",
+      "rawSha256": "4fc431e906dc7a81ba82ad029765d18eccd07b385b4d1237b4c15238b324e172"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 159
+      },
+      "state": "ok",
+      "file": "analysis-0-159.json",
+      "rawSha256": "3cf6ccb5e757b81c78d56f12206c644cf0f065d9c2dd14405708719c88c12e83"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 159,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-159.json",
+      "rawSha256": "1d76872bd8694ff22c02319f78453474676e5250f7c69725614da1fb9ba63db6"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 159,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-159.json",
+      "rawSha256": "c2ef93028b5c49c3e6277b7cc3a7c8c9e8b7eb262db2508a8f9ec059c8d06e33"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 162,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-162.json",
+      "rawSha256": "ce304d17e4b2f8ae213c00c01a928a5e74ad6d55df0d5d91bcc35133ec6c8315"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 162
+      },
+      "state": "ok",
+      "file": "duration-0-162.json",
+      "rawSha256": "477b240ee1fb23310cdc37c726d0c0db5181b41d0952deb029f53caab46b80b9"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 162
+      },
+      "state": "ok",
+      "file": "analysis-0-162.json",
+      "rawSha256": "37ddb9ebbd36cc445ce96eb3f3632371ed6d3de88cf0c4dff793fae908e13b9d"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 162,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-162.json",
+      "rawSha256": "e07cef3c3773ed943b1f07376d9f1b0802977b83db2daaebcb7d06fb2d07e171"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 162,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-162.json",
+      "rawSha256": "e8a54de14bd151e78e1714e0e2e52f0254368f4d87368816d56b8c180dee3f74"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 163,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-163.json",
+      "rawSha256": "2a6f541b031d2bfc9baf5baa20583028ca213db8b1a5f7b98c3e07616a1f627f"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 163
+      },
+      "state": "ok",
+      "file": "duration-0-163.json",
+      "rawSha256": "6031e28022c15667bbd04b7efc77946aaba22245eea13800db6737be7f62221e"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 163
+      },
+      "state": "ok",
+      "file": "analysis-0-163.json",
+      "rawSha256": "4bc0effed29e8ab8f493f449a036b43d9c2674d04da14d6098de1889d2494282"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 163,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-163.json",
+      "rawSha256": "e93cb97d9d7885cb0ae55a9240e415541c912c6bd78fd7a0ee8cbec1f7b0f076"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 163,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-163.json",
+      "rawSha256": "df423ddd7629b3bc7b8c0ba591c4121c336ac168d059c04130cf476121ecae76"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 166,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-166.json",
+      "rawSha256": "9631d301abb785e1977e189efd91cc9c852ea3647dc4983478a1500236d24fba"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 166
+      },
+      "state": "ok",
+      "file": "duration-0-166.json",
+      "rawSha256": "7d1d87420b523c3e7630eedb8d75e039cec04a32df444872821347311e1d5c27"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 166
+      },
+      "state": "ok",
+      "file": "analysis-0-166.json",
+      "rawSha256": "c9704739bbce88e3169d2092c823cbb6ab29d19d55b46a1d548422375e5e0e49"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 166,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-166.json",
+      "rawSha256": "672bdfa31b1de021399387099a657d7e4bd5fa5cdf6f653cc4bddf5ade2eecac"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 166,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-166.json",
+      "rawSha256": "f0ecc4f70ffac519ea2e3b94201a73b7ccd289628d3c0a5c3899100ab6af7ade"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 167,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-167.json",
+      "rawSha256": "6204c1b82a1c081fb270fce4362d51930a965a8259342758bad3869137165755"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 167
+      },
+      "state": "ok",
+      "file": "duration-0-167.json",
+      "rawSha256": "1aac749ed1bb9d61b3ea721764d2ac0fd4e2d0341999b02c216c0de687214d87"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 167
+      },
+      "state": "ok",
+      "file": "analysis-0-167.json",
+      "rawSha256": "a173e69a8d6690b9bf40b8fe16feaaf74e7711a272b8e4a9d60db5a17467b7d6"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 167,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-167.json",
+      "rawSha256": "e1548a6bda1c447972b67c673779ce1e3b0a5c4a1538a07dc220d67c48576f80"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 167,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-167.json",
+      "rawSha256": "e865e2e3375d04acb42fb0cf5439f44216fc60405a7a43463ca8d8f1cc365778"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 168,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-168.json",
+      "rawSha256": "921cbd5c04112c665c717c0b83160a5dc401fd63979184079f18df204db20649"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 168
+      },
+      "state": "ok",
+      "file": "duration-0-168.json",
+      "rawSha256": "d832d83a8bb85520701007aac4c36b4e724915dea409d5662f49a9359b0bc54c"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 168
+      },
+      "state": "ok",
+      "file": "analysis-0-168.json",
+      "rawSha256": "061abe2db19a20b19e409236caa6576ee7b333319f86c2d6eba1e1d00ce46201"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 168,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-168.json",
+      "rawSha256": "3db2426f15f8e227a6fa5ad71b38425a7ccc5f0eafb12ff534c4ca7693d5c4d9"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 168,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-168.json",
+      "rawSha256": "79291862ab8867189a80a6197d0b80850b2b25d782e59261591637a10c83a31e"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 169,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-169.json",
+      "rawSha256": "e312817b6fded7c680febe3787687f1f807ee3b465f992268fa90a34c1a0b4a7"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 169
+      },
+      "state": "ok",
+      "file": "duration-0-169.json",
+      "rawSha256": "100765ee109f159e4096cf7f69b1914686cd5bc44db6fd0d94cb46b0ee565604"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 169
+      },
+      "state": "ok",
+      "file": "analysis-0-169.json",
+      "rawSha256": "b7c75889b0cfc9e87a3e6c8e60c8fe349e5952fd14ffb0e43fe998cbc2ae0a0c"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 169,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-169.json",
+      "rawSha256": "e1ca2870bc70eefd13c12c144b6833f34dba16d9b1f21682b206c6732b78551d"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 169,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-169.json",
+      "rawSha256": "033b0bd9782f54ef5236b3827adbb31654ced24e68831215a908d5e0201bb9e6"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 170,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-170.json",
+      "rawSha256": "ce2e5ffa9ab44c832b3588eef3266168cd8bf8142c2d127bab089f89c7d0d713"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 170
+      },
+      "state": "ok",
+      "file": "duration-0-170.json",
+      "rawSha256": "2896d2ad532c7ead4f9a4f25bbf5adbfd4310f4fc8595cf15e45901b4dc12a6f"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 170
+      },
+      "state": "ok",
+      "file": "analysis-0-170.json",
+      "rawSha256": "06f19e8bc470896effbdb0180abeb2990d142e1a7f8bb88cad7635288fa6496a"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 170,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-170.json",
+      "rawSha256": "f5cf1596dc1f002d860a1ec5078aabb325dd4685cc684dd86990b808db09818c"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 170,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-170.json",
+      "rawSha256": "82b72f7a9f6a00e4d602e507ca11966a112fe1372a390bc7dd78e82e0b3d51f6"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 171,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-171.json",
+      "rawSha256": "f4ffe0a08d6cfb38ea226d66d33726be33b88c7c151a1427f5e21f39e50e6fb1"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 171
+      },
+      "state": "ok",
+      "file": "duration-0-171.json",
+      "rawSha256": "572331f278294be272d27e8fa41e31125f0014b7c768000d2185b67f54819f16"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 171
+      },
+      "state": "ok",
+      "file": "analysis-0-171.json",
+      "rawSha256": "3c5640c84f3d11f276e163c4e5229072810fa7a32c99bb3dbb8d11145150691f"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 171,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-171.json",
+      "rawSha256": "43d7f32471a50532f08f4c04018dee862f2da006e8ee3233cb1ca7a83e53f040"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 171,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-171.json",
+      "rawSha256": "fcc1896272a0f2038e9df5595d4e14a6b93ffd0b1f1b6591514b6b6c11f1cca7"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 172,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-172.json",
+      "rawSha256": "39277b492ce19b6690ae279694396a812884cb367a6eee29267475ea954fa483"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 172
+      },
+      "state": "ok",
+      "file": "duration-0-172.json",
+      "rawSha256": "7ebebda70be36d267819013729d93fb380495eaa56da90d1e93792fe090fa0f3"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 172
+      },
+      "state": "ok",
+      "file": "analysis-0-172.json",
+      "rawSha256": "779cdf4628f633ddf17b4a4bb8418e78e970515ad14dd2bb8235d5447090becb"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 172,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-172.json",
+      "rawSha256": "92b1a815ff0e348e00c48dc665df1353dc5e65ff22b2bcd0567f7dae76d1b3dc"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 172,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-172.json",
+      "rawSha256": "be6b72a3847cd0686b0cdd2ebda774d9d0f4ecf2d357498ac4d6c12beec59bf0"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 173,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-173.json",
+      "rawSha256": "abe590263422f35dd65d11954730a3e256b4963d4ace93cfe73919d3f02ae3d9"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 173
+      },
+      "state": "ok",
+      "file": "duration-0-173.json",
+      "rawSha256": "982714c2f5c2688c368dee3f08da15ea600235541ea906c98702d14f275f2146"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 173
+      },
+      "state": "ok",
+      "file": "analysis-0-173.json",
+      "rawSha256": "784c9617a7177c617098c71dd0929adc7a9a3f2cb6daba83ecc8b7b82e9a23af"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 173,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-173.json",
+      "rawSha256": "6ca44fd60e9916d4c4b69ae136224ee738dcd49370e844327e777d6ab66b9112"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 173,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-173.json",
+      "rawSha256": "6ebee1109eee51013fb663e1a3a7d5d44b526ce2bb940a12d13c6c1ef67f218b"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 174,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-174.json",
+      "rawSha256": "602923c282e2f673a339dcfc2cdd3d2710a8852150792dbff382a5057d26e544"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 174
+      },
+      "state": "ok",
+      "file": "duration-0-174.json",
+      "rawSha256": "3f6444242b693d51accc240c42b1b595bbe91511a19988cf4de5c7a7aa9adfc9"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 174
+      },
+      "state": "ok",
+      "file": "analysis-0-174.json",
+      "rawSha256": "7fb92a26b3021da5bf1ab018b56f7ae16788faace92b46926e44e5af0e255ee2"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 174,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-174.json",
+      "rawSha256": "25f9e11ceb90291f8be4d29dcb499fad995ed0349ad85861757329ec07f38ce0"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 174,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-174.json",
+      "rawSha256": "7025aba7e9e8651c1c528b6002cc51551523c9a9f3399301efd02c1459012a9e"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 175,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-175.json",
+      "rawSha256": "8a04b2d0b686a510dbb64800db5cb1e9c0577686a6940f06b4e79323e8b20182"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 175
+      },
+      "state": "ok",
+      "file": "duration-0-175.json",
+      "rawSha256": "7ebe9010b92f002c46b7823ba3ccbd898086b40e07b2484dcf694b877686081b"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 175
+      },
+      "state": "ok",
+      "file": "analysis-0-175.json",
+      "rawSha256": "9c81b00acaf9bab1717a94150eae7f66444ed33658d3e332840b0e9abf879e00"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 175,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-175.json",
+      "rawSha256": "d4cb2aede12bc47dfebf9b9e667992379bdb4bcbf56baad5f90c836df9dfa0a2"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 175,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-175.json",
+      "rawSha256": "17477239b9368178edfedd2d120252035858b3bfe1695684342516b9fffa06b9"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 176,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-176.json",
+      "rawSha256": "43f77683dbffa132b7386a29eb7b75455bbefc56b49c2ebcabb8a8a2ba80ae9c"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 176
+      },
+      "state": "ok",
+      "file": "duration-0-176.json",
+      "rawSha256": "f8aa452e2f2969f7988007b1870c7e85d86714dc2cf20bf2a185bce141d86a0e"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 176
+      },
+      "state": "ok",
+      "file": "analysis-0-176.json",
+      "rawSha256": "c4f097061b3a9f1c09d9cb7e2150ff03776ec75f03e25200cf701f5939e58a97"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 176,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-176.json",
+      "rawSha256": "3eee983c7fd92a4f7711a7e9ca89e4aaff26d57e921494c25452bbab42cfa97b"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 176,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-176.json",
+      "rawSha256": "5bb0933516956f178692bed048ba70af4c6cff43a7a7a250e037b248454973b2"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 177,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-177.json",
+      "rawSha256": "94c72665ef2043dbce2310659e01c0025b8d44ce16b271510a48c55c54cdacee"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 177
+      },
+      "state": "ok",
+      "file": "duration-0-177.json",
+      "rawSha256": "9214f7e60059e5a2892788cf530dc2ceac29443b74b4be9bd5210bf11e79fda7"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 177
+      },
+      "state": "ok",
+      "file": "analysis-0-177.json",
+      "rawSha256": "619998213874b846c23befaf5db7eb09ea941bad1ef770315da319c586948085"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 177,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-177.json",
+      "rawSha256": "dced66d3b296412132c9a81b41b33b9b5d36781c7fe9d6442de01b6f9f47733c"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 177,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-177.json",
+      "rawSha256": "59487b6a39955d654ea456856f995f51dbae27b5184e37e066fc1959a189ffd9"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 178,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-178.json",
+      "rawSha256": "f6faaa651b18e08fdba631b16fa27785340d5dca6aac5e7f3eec6c6bd7269b82"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 178
+      },
+      "state": "ok",
+      "file": "duration-0-178.json",
+      "rawSha256": "71facba13bf7fbf25b115943cb10c6d6fbd7a7064dc116e003c608ace4a799de"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 178
+      },
+      "state": "ok",
+      "file": "analysis-0-178.json",
+      "rawSha256": "c3752235af3b045e207a43b05897eb152f25f57c91297fa0293333642cac6db5"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 178,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-178.json",
+      "rawSha256": "2e52d7da13f2d0a4dc5467d5fbb80f9917326649af09a09e8ac149e1fdb9ce09"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 178,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-178.json",
+      "rawSha256": "8caec1521f755476f3b3304d9eda45e188a210b0becb6f2cf80fc554a0e4b64c"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 179,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-179.json",
+      "rawSha256": "922243aba8378eaab8476697e758677288978868e3707bf282a219934d3b0d72"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 179
+      },
+      "state": "ok",
+      "file": "duration-0-179.json",
+      "rawSha256": "12e04c25e414d1653df1d6d419f1c995e0744e652247122812d0043a0fa753cd"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 179
+      },
+      "state": "ok",
+      "file": "analysis-0-179.json",
+      "rawSha256": "6e27cccac818ef63ceb84fd3f39cc15de0ebc0b161ad6208f9a0ec23123f67d1"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 179,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-179.json",
+      "rawSha256": "b401f88d3967d025892b4922e0a38ac629daac6f8c99145bd835467cf06c3869"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 179,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-179.json",
+      "rawSha256": "ed1a84e96ec522334d5ab4d86cc367b83d0e2b4fed2403e1a5260f6444b5b24c"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 180,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-180.json",
+      "rawSha256": "d12cd4a5b89a4b35134127a77b8d9e3380c834ea3c6ca09352b59ff309eeb329"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 180
+      },
+      "state": "ok",
+      "file": "duration-0-180.json",
+      "rawSha256": "ddb7ed976bb4f178add9f0bcff25da8f4857a428b979ba86c9d6f884949280c8"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 180
+      },
+      "state": "ok",
+      "file": "analysis-0-180.json",
+      "rawSha256": "b4891f1ab5ae05f3fed29b4514138744a09b2f932661874b53adcc831d30c9f2"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 180,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-180.json",
+      "rawSha256": "ac0fa415604a6b7bf2ea9dbe254b9a90ef504483c1ab864e27ab429f15378b25"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 180,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-180.json",
+      "rawSha256": "2e170e986cecfa1a96ac2477cc5b14e7c31ab018a5ae1f01117e556dc19888c7"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 182,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-182.json",
+      "rawSha256": "661469990ca2e97a22fe08d31ae04af89309c8884a947116e4babed58fb397b3"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 182
+      },
+      "state": "ok",
+      "file": "duration-0-182.json",
+      "rawSha256": "34b40ae4fcc8a0e91679b60b823efccad1f647beffc9b4e93fc3dde51a34728b"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 182
+      },
+      "state": "ok",
+      "file": "analysis-0-182.json",
+      "rawSha256": "4e14f16b9d27b4a808ad8f1f4c3cfda748baf26a51eef6f288fa604060a66a27"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 182,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-182.json",
+      "rawSha256": "63a31d0a9bd51aa87747354d9ae86824929f1a4d9be0e89a0515a5beb53b58dc"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 182,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-182.json",
+      "rawSha256": "1aa83465f324c37810520439db0c3bc13019d6af7a2778ff250d564fb9daf538"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 183,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-183.json",
+      "rawSha256": "03ce029496cb3725b7c7d7e6f9d7802483f51169415f1c8b0e7d6627e40e99a7"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 183
+      },
+      "state": "ok",
+      "file": "duration-0-183.json",
+      "rawSha256": "55a09644d1ede96f716b695053d2a33ea25c27dea4316ce07cc56f17499d78cd"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 183
+      },
+      "state": "ok",
+      "file": "analysis-0-183.json",
+      "rawSha256": "65349f06418aa0662c982fe36e21feca0719cf12beee6f89f7b2ec483e66660c"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 183,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-183.json",
+      "rawSha256": "f448ee7d7d4b5fa2b719b7032652278a4fd82959a49488bc797f47326ace54ae"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 183,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-183.json",
+      "rawSha256": "aad122ad4b3b72a30d24bb3b82bb099fb2369014c853803e31c8388f939f0615"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 184,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-184.json",
+      "rawSha256": "cb48817d7d708cba6750574a7cadb8199bec77642c05469c9381c01a56530f4f"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 184
+      },
+      "state": "ok",
+      "file": "duration-0-184.json",
+      "rawSha256": "c1e55670c17b3f3bc89164f1866b03d6e72d46fe30b417afa7fbab202bb0515a"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 184
+      },
+      "state": "ok",
+      "file": "analysis-0-184.json",
+      "rawSha256": "64701bfd27154b69a5afa0018f9420e0e025bd49c5c697836221ae98cad02e17"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 184,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-184.json",
+      "rawSha256": "c7da69a7f822eb0db47fed2e73764a98e712e06245d7f59b1e93a250f64577d4"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 184,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-184.json",
+      "rawSha256": "d0ac4a85b80bdf1650dcf0b6a3bcb6a92070ca93c68d62e07c435fb9f9a1fbff"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 186,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-186.json",
+      "rawSha256": "485525742cd6ab7de68e80d6716bbcded79e2b0a37c824a946c372a556ed33cc"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 186
+      },
+      "state": "ok",
+      "file": "duration-0-186.json",
+      "rawSha256": "9313bf09e5bf41b23ada106c30336e788769d3a572e57a64ca96eed36fe7248f"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 186
+      },
+      "state": "ok",
+      "file": "analysis-0-186.json",
+      "rawSha256": "ab52f963fc18c7feee3cbcd40f3c141c72289490e6fd9e95acb5746036555d7e"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 186,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-186.json",
+      "rawSha256": "aefc1e19f24a6e0a4a2313a53f5e009bad150ef56fdea01db627acf994e794a3"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 186,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-186.json",
+      "rawSha256": "9d1435cefeeab623b6faeb1e572a6c22842e98d4a739d60a68a2c6452ff167e7"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 187,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-187.json",
+      "rawSha256": "5cc7c9a50c0339f82e472f95e65d2db7e262f4119027604063562d62f0f28a90"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 187
+      },
+      "state": "ok",
+      "file": "duration-0-187.json",
+      "rawSha256": "4597da2705734d9e659af39da0b62daf3795bca9f44d23bf4f893e0db95bf5bf"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 187
+      },
+      "state": "ok",
+      "file": "analysis-0-187.json",
+      "rawSha256": "4c82f28df912d0efde7242e392af704ccd6e72103d75cd605c81fef0c68f5424"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 187,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-187.json",
+      "rawSha256": "58f88de02d9d65b8e34cdbbaf229369d7805568b70d0ce0cab68c422c3667658"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 187,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-187.json",
+      "rawSha256": "e8d8f89f13baae3a10840eb7d86a1940b729fbc17c06a4a929710e427ebcc344"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 188,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-188.json",
+      "rawSha256": "b6cf3a032f62489de7e4b97ca064f3b3e6be8b051c246e9a3509c980e408327c"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 188
+      },
+      "state": "ok",
+      "file": "duration-0-188.json",
+      "rawSha256": "96eb3946f2376c5aa54c4b2bf5d614a84567969454067ef32559420303def33b"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 188
+      },
+      "state": "ok",
+      "file": "analysis-0-188.json",
+      "rawSha256": "6526e5f214da7d434a0fbc7c08bbb70c914913fc04f8f9a7cc7f63e71c778c28"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 188,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-188.json",
+      "rawSha256": "050996c3e6f2490d286f5c646c615575a660d54e09d9c1711b78775d5a74ddae"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 188,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-188.json",
+      "rawSha256": "9600d4afc39fe552ab3e53287a8718b1e15d3b4f0990a7e61677bc58f6f7ba1e"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 189,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-189.json",
+      "rawSha256": "9d663ae7676093469aa067650424dece55443f88f7c9466165dc5f34332c4452"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 189
+      },
+      "state": "ok",
+      "file": "duration-0-189.json",
+      "rawSha256": "1090e1ffc09c567913c074160728dfcbdba80551ad5855b240eb28424dac7c28"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 189
+      },
+      "state": "ok",
+      "file": "analysis-0-189.json",
+      "rawSha256": "77d34146560a5781b63495f9cd3aa8caf52afce68f2f03315c3261e9635522c1"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 189,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-189.json",
+      "rawSha256": "8d3b0b771aceea264ee377158af3f4b6bedcc220fc9721c53cb0e0bddfaf877b"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 189,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-189.json",
+      "rawSha256": "20e3fd736f0293b1030b9ba589dd5e25bb4c09a846a3f7e67d3bfa2de38aa0b1"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 190,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-190.json",
+      "rawSha256": "2ad377b14f50672722640fa2547699acf0153e74567b6f0a750197054776b1d8"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 190
+      },
+      "state": "ok",
+      "file": "duration-0-190.json",
+      "rawSha256": "df2aa1c2fce164ba1496129951b9bf69d83fd913b779b320b8a7397522cfdf9d"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 190
+      },
+      "state": "ok",
+      "file": "analysis-0-190.json",
+      "rawSha256": "34190e56d6230376db101f39b9328c4f036d18e474d0afff5cdaea908c19952c"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 190,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-190.json",
+      "rawSha256": "179d70a52991777848133f1f8860c36a667cb93b45c642e8f3f8f79eb6beba7e"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 190,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-190.json",
+      "rawSha256": "51eed23f5ccfcde4e0317dd0bc108be16b22c89d4b2aa6bfe831d1a217bf66c5"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 191,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-191.json",
+      "rawSha256": "fe0a73a20fdde1437e57fe0885dac61f205e5450a1d5b9a83f53e7fed75435bf"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 191
+      },
+      "state": "ok",
+      "file": "duration-0-191.json",
+      "rawSha256": "bdf20196209d7fb587f20a893bd16deb52c092d314329e98caae73e8363b9eab"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 191
+      },
+      "state": "ok",
+      "file": "analysis-0-191.json",
+      "rawSha256": "300c52a0c0bf3e697b1ba1f41e65a020678e837b5209c1ec55e627ebe7abbf96"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 191,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-191.json",
+      "rawSha256": "335c9e21ff5875754ee9062773ee2e32da2736688afe242ea4a35f2961cecef7"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 191,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-191.json",
+      "rawSha256": "56d7125a57156a4703105cf8f9be1d3784931f8a7b9b381d726e18efb0264721"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 192,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-192.json",
+      "rawSha256": "7a67dc53225860a61ca15441ad4a6ddc559c819b3b36ece902ab2f13bf5cce1c"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 192
+      },
+      "state": "ok",
+      "file": "duration-0-192.json",
+      "rawSha256": "24b85de423c5663a2dfe929ddb2b25b0d61be737337c19b46851512e39abcef3"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 192
+      },
+      "state": "ok",
+      "file": "analysis-0-192.json",
+      "rawSha256": "ebe2103108efd599712a0af9de8a717b813d66292a016d401be0a5c55a2c6dda"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 192,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-192.json",
+      "rawSha256": "953edcf4142a709afb5e331f9cae4b1a480c39f4ed6c5fc06ae3fa1f6b0d21db"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 192,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-192.json",
+      "rawSha256": "726c72372a979436afdd52a26806d111a81e201d6a091c5a44497ab1fe05924a"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 193,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-193.json",
+      "rawSha256": "4a50bb07adbd32956da83fc84da4ee8bae1c9010a7a156e6c6720712a0e28b0b"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 193
+      },
+      "state": "ok",
+      "file": "duration-0-193.json",
+      "rawSha256": "6fbb326ca28672c96cb331751ac947428c42946cbcd589561954b50c829cb979"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 193
+      },
+      "state": "ok",
+      "file": "analysis-0-193.json",
+      "rawSha256": "1f44e462c95ed58efab93f70e6ffbbd30be76c1bcf384202b02c652b7eca5c6d"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 193,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-193.json",
+      "rawSha256": "8f9e1222c832842059aeb8a6549fcf9c843c204421f047b6a7a75536dfd50349"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 193,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-193.json",
+      "rawSha256": "fa67f0cea6e62d7a832f8355417197045c7ceac1f7a9a4a963bff1d5eaa0ee93"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 194,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-194.json",
+      "rawSha256": "c451ef0325ef4e801965895de0c77c01bb250004683aefb77381bfd3e4aa7975"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 194
+      },
+      "state": "ok",
+      "file": "duration-0-194.json",
+      "rawSha256": "30b18f2beb1f8926bdb37e318cbb4613e0c4c149682ad6712fe9b032ec7e8560"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 194
+      },
+      "state": "ok",
+      "file": "analysis-0-194.json",
+      "rawSha256": "23c9f9ebd0969c7d127d8817e12a44bcba16a064edacbfe9a85d67459ab6424d"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 194,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-194.json",
+      "rawSha256": "99dea22face5c64bfd8d581ed50a7b30ab0edc2998289fe4d78981e3a861a290"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 194,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-194.json",
+      "rawSha256": "b7e0b82c26e752483108d0968c1baedd88d3e6fa258914c25770f00cfa7a4fab"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 195,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-195.json",
+      "rawSha256": "ecfb4dfcd735c3c463774246eac0b8e3d44496d0dad3e997392aa2e26556e666"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 195
+      },
+      "state": "ok",
+      "file": "duration-0-195.json",
+      "rawSha256": "d9015be6014e64d099e224bae4ffe566add85c8bcc3172e6341c94c697a0d8eb"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 195
+      },
+      "state": "ok",
+      "file": "analysis-0-195.json",
+      "rawSha256": "27713c0a3fbe821533dd62312e03fe867b8edfdb24f5df0e85a888c81b6c9469"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 195,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-195.json",
+      "rawSha256": "c65ba8e603970829fc1d8bfc9b07fce4ac6db61465837d91f127e6179a761ef5"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 195,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-195.json",
+      "rawSha256": "1a198c74439a5c499502f3cd4fe4ca260311158f4c577f5385829c28c31cb0a9"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 196,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-196.json",
+      "rawSha256": "2d606674933b068473b5efcb4b3e20eb4fdb043034feaf247f46f7ac5e6f3b00"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 196
+      },
+      "state": "ok",
+      "file": "duration-0-196.json",
+      "rawSha256": "fc97185f6e03a3e412707a10ca1277f03b6da043bf7dbe9c5a0e1ab6dba1c266"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 196
+      },
+      "state": "ok",
+      "file": "analysis-0-196.json",
+      "rawSha256": "ddb43d77aea7186f753fa9028bd6e824290fc9ec9279180f34fd5b7f04262e7f"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 196,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-196.json",
+      "rawSha256": "6916e4e970eb7b85e9afe608bc64ea75f64a9f252dc1cf7ff9923bb7dc7a7427"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 196,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-196.json",
+      "rawSha256": "53a598424c17641f310adfa9ee572e1ef24812c661c95a2af4861cb3b837472a"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 197,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-197.json",
+      "rawSha256": "e5928eec15df9143af638c587d842db06294aafca8852a7807dc56efebbcc6fd"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 197
+      },
+      "state": "ok",
+      "file": "duration-0-197.json",
+      "rawSha256": "5ef52c27982b4718f85c7e5c4f50dd46b859431bdc0219cd275ec5c3a3150f49"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 197
+      },
+      "state": "ok",
+      "file": "analysis-0-197.json",
+      "rawSha256": "5dd2bbabff867b676ba13fcc369fd32394c66aaea30cf5696bc43ae113ae13f6"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 197,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-197.json",
+      "rawSha256": "75fa25b5c8e47b748cffcfcddaeabe8479b01fe28f6a150bd88f21c3c4273b43"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 197,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-197.json",
+      "rawSha256": "cee9b01b21846fbfe022a47ce70af62c94bc01f476ede49afd2eaa4ef7ef5f2e"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 198,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-198.json",
+      "rawSha256": "c04533653aa59d7eb3333533af0a4c5689e3a9da51d43e7873b377be74445e7c"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 198
+      },
+      "state": "ok",
+      "file": "duration-0-198.json",
+      "rawSha256": "d050c260f903b20d56f9fb034b91a99333c7ce367cf4ddad218a9ba79c930f15"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 198
+      },
+      "state": "ok",
+      "file": "analysis-0-198.json",
+      "rawSha256": "30674ad907b843b1f2495f17bbcdfedfcf733145269fb535b31a9f1def4a84d8"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 198,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-198.json",
+      "rawSha256": "0ba16d602a00e7f4d068f7dae33b776df65adab190823b0e9ba076e458cdd8aa"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 198,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-198.json",
+      "rawSha256": "b1ebd2957ea4171b960967ec9180ff023cb958e7c45a7ef40ac0739f85267c75"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 199,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-199.json",
+      "rawSha256": "d277cac08ba7e42a2193b3074bef07b4dacede691b2ad404af40a4d5dc1d4350"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 199
+      },
+      "state": "ok",
+      "file": "duration-0-199.json",
+      "rawSha256": "6c7d1dbf1e79d88e8f6d75f0e5a32200577ebb2bdc91edf57635277327340cc9"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 199
+      },
+      "state": "ok",
+      "file": "analysis-0-199.json",
+      "rawSha256": "2726499375a8268fcdfefd65a31b2d0b70b66414d24a32ca702c17cc7d4df86e"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 199,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-199.json",
+      "rawSha256": "e3c5aaf8416941edef4696d77c9dcff8efd1c6d7c71373e9d4e1aec4264a73af"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 199,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-199.json",
+      "rawSha256": "9dfd87979741807cf4715d456385ad8d6508dc1a18fb00adb9450083862c9d95"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 312,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-312.json",
+      "rawSha256": "11fe930563f42299edc9e17352594e8dba7e4b0e51a9bb68fb30f2c3ac6a3589"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 312
+      },
+      "state": "ok",
+      "file": "duration-0-312.json",
+      "rawSha256": "ee7c4a8d028ffdb06dd164572aefe0a2d2b88da8d154412e1eb2296df11bc823"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 312
+      },
+      "state": "ok",
+      "file": "analysis-0-312.json",
+      "rawSha256": "a89226a6ecf2ff427895177216acc4b206e52dc52eb61dbb5a64f7d22af13863"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 312,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-312.json",
+      "rawSha256": "4358e93f867070ac7d663344cdf6855c1fc31a0e2058a5604ce9e6ecaf151d06"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 312,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-312.json",
+      "rawSha256": "dfe9a287dd05485dc01a40d8d29d33c981df8a4b2e7042cd51effa1504296617"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 501,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-501.json",
+      "rawSha256": "c4d4be9242c42e37d7227de28279c78efbc39ccd1ca65f62cb3ad028a965749c"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 501
+      },
+      "state": "ok",
+      "file": "duration-0-501.json",
+      "rawSha256": "0105d0d84361fb9a0a828a6d2ccb747b0639b6cf35d0105275dc2116dc0c9024"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 501
+      },
+      "state": "ok",
+      "file": "analysis-0-501.json",
+      "rawSha256": "e27af07f47fe71378a7499295abc2fd6ef204f339605104f9185353f120eff97"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 501,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-501.json",
+      "rawSha256": "993a6d309f0b16e2d51b411cd4ebed13c939597be8c605602106068d17eeb13f"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 501,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-501.json",
+      "rawSha256": "949da3fec8da78ecc31e6fba4de0953754abc0330661efeea374e9aae2acac7b"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 502,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-502.json",
+      "rawSha256": "9cbd3bed79db24d4925feb825f0cc62e75faf52d3106212cdc76b7f5fbad2b4b"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 502
+      },
+      "state": "ok",
+      "file": "duration-0-502.json",
+      "rawSha256": "b7f08173f59b3efbbdbe0849aabc8d3306b8484fb06fbe83ede85d2a250d29b7"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 502
+      },
+      "state": "ok",
+      "file": "analysis-0-502.json",
+      "rawSha256": "a1f4676117972f7239e45126b352da3fb81a6a6596b437c96bcab7c1b24e8b27"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 502,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-502.json",
+      "rawSha256": "fd7d3fe0ba905eb606c062c6af13602c7d6f114be9d8b7bb522d99557de1901c"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 502,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-502.json",
+      "rawSha256": "c7f7f192d869d4eacb2f2d9b1e1cbe99d119bc330f86f07975eaf7f6bc54015a"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 503,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-503.json",
+      "rawSha256": "a60612e5b2fb633e5d04125712053a7ba08f461b03cb91d6df02593b2c2070b3"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 503
+      },
+      "state": "ok",
+      "file": "duration-0-503.json",
+      "rawSha256": "33bb63c08a9630236935119fbc770f98872b631233b1406876dd60b9160ba9d9"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 503
+      },
+      "state": "ok",
+      "file": "analysis-0-503.json",
+      "rawSha256": "48a122d619fd21c740cd088819a5f6496d8b25758be81f079c7271edaec7d1bc"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 503,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-503.json",
+      "rawSha256": "96c82126b942b200413eab0f5cedc6115b38946b6800290bc2d6f4561e9ab7ff"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 503,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-503.json",
+      "rawSha256": "0df9bee8e81caa55c4d1a5fdbdac7066e76c2ccfd41338c19f6312fadb6a4af6"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 504,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-504.json",
+      "rawSha256": "b06bec3fcf4082a8542c29184fec546fb94757552a63963447a040e8fc66f5fa"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 504
+      },
+      "state": "ok",
+      "file": "duration-0-504.json",
+      "rawSha256": "4727efc7112f9fac9b88986326f89a4030a797bc112e2fe28fe497794e0a384e"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 504
+      },
+      "state": "ok",
+      "file": "analysis-0-504.json",
+      "rawSha256": "8c904db92f2ac4d6e804f764298576cdd5212179b5bdadaad752a261afc09604"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 504,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-504.json",
+      "rawSha256": "8d27a471a496b768ac0851b50fbe3d1d32dc16a648e59fa882806ef74cbfbafa"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 504,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-504.json",
+      "rawSha256": "714724540d4171082c056c1594f6c5c66c2bec51a7496a2bb84cb846cf5d4c98"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 505,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-505.json",
+      "rawSha256": "7ed335913adce0258777f078c910399bdc53d87ba85523324bd2824f386973c7"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 505
+      },
+      "state": "ok",
+      "file": "duration-0-505.json",
+      "rawSha256": "6fbc24c2cfd5f9c062b5b157769f0e2aa2fce5667d2568148774a3fc7927b417"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 505
+      },
+      "state": "ok",
+      "file": "analysis-0-505.json",
+      "rawSha256": "0616ce49bc253c3aaa1176bfdc1887749dacb24e5866d65c7edaca9205f53a37"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 505,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-505.json",
+      "rawSha256": "7c783955249ba7bfd71fa594b9777a60e17896787685ee4bf27947b6e3597778"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 505,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-505.json",
+      "rawSha256": "e12d7695b5ec35e1d8cbdd101e81f7f6ad94b8dcf5a6a27bc6c60ef6d7a00dbb"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 506,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-506.json",
+      "rawSha256": "44ba795bbf87cfc00e7fcb47cd967e6ab2f4f3a4df289b07442b4ba07929b37d"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 506
+      },
+      "state": "ok",
+      "file": "duration-0-506.json",
+      "rawSha256": "deff9c3934ad6767d6a4f233072abfefa5ea87889731f1f6858d3f012d1c02b3"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 506
+      },
+      "state": "ok",
+      "file": "analysis-0-506.json",
+      "rawSha256": "1ab0819106e44109a68eebca5af6a63e5e9eb8340b004723881f1166566a099d"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 506,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-506.json",
+      "rawSha256": "bcf50b185ec096ff051ea1e55c2b066000e83a06a27e4d4335f0f6d1e8edc39a"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 506,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-506.json",
+      "rawSha256": "636f9dd5a52abc1c3abcf38c28a9680f6a29a4d2b75ff239ed3226bc3ceed28d"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 507,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-507.json",
+      "rawSha256": "231d0b5e2bda622ac2d13f2ba6cf9f2f355fa02222107fb7b31c987630929e38"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 507
+      },
+      "state": "ok",
+      "file": "duration-0-507.json",
+      "rawSha256": "9b123519b9d679632059e3698454d2a458d2864100e513cdf270bf91e495dc64"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 507
+      },
+      "state": "ok",
+      "file": "analysis-0-507.json",
+      "rawSha256": "9d5b4c0763233f4fe7d80f7b3a413b0afe5c68dc5c540990c0b95e6e0df4245f"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 507,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-507.json",
+      "rawSha256": "2fa8131a990d550f0d46f8dcf6d2b979d0cde9362fa39a65f7299c6e54ba7068"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 507,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-507.json",
+      "rawSha256": "6d1b569fff6ab33f2bd14ac1105441cd8aec61b6781b2b86acea8114a2adff26"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 508,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-508.json",
+      "rawSha256": "954e2f4a405a13fcfa8e9040855d4a92c74e86dd8dd80649e000901a5a7ad390"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 508
+      },
+      "state": "ok",
+      "file": "duration-0-508.json",
+      "rawSha256": "603d90bc8e530f6f440a29554cad1c44b1ca5c27ddb44ae83322cf2edd4d2bc2"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 508
+      },
+      "state": "ok",
+      "file": "analysis-0-508.json",
+      "rawSha256": "0982cbd46da756e962a3d50412f95ae91046c7ea1176fa962a1ecbcb04549ece"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 508,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-508.json",
+      "rawSha256": "1466af7023ccb05f53cfd8fc9c516035644c0ba6d6f12671cb309848abc5cd29"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 508,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-508.json",
+      "rawSha256": "f8fdad3200281f0f2ec47fb994632979f53e23c95ac89c1595573c2fbffdd1e3"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 509,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-509.json",
+      "rawSha256": "4283f0e99d50ef61f37ad4b4dac1da9cdd97863c961e456debc191ed03ee5a1a"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 509
+      },
+      "state": "ok",
+      "file": "duration-0-509.json",
+      "rawSha256": "56ca1ce96fc96f0cecd4236061fcbfcff905e12b8e9e3fabdf50b32529e97852"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 509
+      },
+      "state": "ok",
+      "file": "analysis-0-509.json",
+      "rawSha256": "b14aea4c9ccc1ccc8142c4dc8d656345d77f81a4709040a08dc24a2687dbe33e"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 509,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-509.json",
+      "rawSha256": "1bcb9ac46cbb7106cf7aa68bf2ff9e650bf77b0b50c25b0d96287960ca7e295f"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 509,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-509.json",
+      "rawSha256": "514744018e1fc3dd90e66758177cc8e5ac07e29b794cbe0d160c97a64ce48f51"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 510,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-510.json",
+      "rawSha256": "a55ae82b60da6a9d18fb2852400c7b8d985adfc41e51e24215c2f3a98f1c6ed8"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 510
+      },
+      "state": "ok",
+      "file": "duration-0-510.json",
+      "rawSha256": "af65dbe7b3ef1a3cb5b9029e47231f0ecacf2ed13362cbad4307ccd43e44331c"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 510
+      },
+      "state": "ok",
+      "file": "analysis-0-510.json",
+      "rawSha256": "e76606c90592856bfba322ce87e293ceb4824066c0f66a532d0cc2d4023a09ef"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 510,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-510.json",
+      "rawSha256": "89120b78940af5550ddd7bc1ff6dd0c102f4b8101a60879c6577b3760db78d8c"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 510,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-510.json",
+      "rawSha256": "a8b77c9ca505169399215aa35ae7b3e07eaa4ef89fc0e65e4ef31bf1972bc1fc"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 511,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-511.json",
+      "rawSha256": "ca9be723d2f6c3772a968df69dfb449d6813090f5156888c496b421ba7b3dc18"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 511
+      },
+      "state": "ok",
+      "file": "duration-0-511.json",
+      "rawSha256": "bf792363bb90fa5ad361a2764dbb938ce167458661af99e387d0a9fb4e7e5797"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 511
+      },
+      "state": "ok",
+      "file": "analysis-0-511.json",
+      "rawSha256": "d5c4ee3dc39bd921a818eab233708b13aeb5b431bfa4ab554bbcaa0718d998d9"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 511,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-511.json",
+      "rawSha256": "f0d2f0d0b415f7eaa1db12deafb55fb7e36f7e935a68f283ee1b8886ab73446d"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 511,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-511.json",
+      "rawSha256": "741b655e112d6048061d4d7412ac0952ef9474d58985045cba733926c2b3bc45"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 513,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-513.json",
+      "rawSha256": "de823bae37defdec634ac10c2923abd88c2605e1c0c807e006bccbda022b8966"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 513
+      },
+      "state": "ok",
+      "file": "duration-0-513.json",
+      "rawSha256": "6e17317aedb0f3983d158188ef83400c15c0f38d3380e36c9fa5f69a632ce7de"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 513
+      },
+      "state": "ok",
+      "file": "analysis-0-513.json",
+      "rawSha256": "555cd3aded2c13f78c99bf9aa2959b5f310f2425cfc7c2ca8b3a4c022a643cbb"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 513,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-513.json",
+      "rawSha256": "0a7f5358b30419dc351587ad0758d3865ab90b6a4ab2d71490fcc6fb283050ce"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 513,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-513.json",
+      "rawSha256": "e656fbdea4d092dfbc0714c23ce3b96e91e10587b04bc02ddb8623c668cb4057"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 514,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-514.json",
+      "rawSha256": "87ea61984be8905a311fec862a093d447b2184127e70ccb268185ade953762c0"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 514
+      },
+      "state": "ok",
+      "file": "duration-0-514.json",
+      "rawSha256": "30d893aef90715f40233600f00205b2a5796fceff8ea2afa6600affc72a49419"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 514
+      },
+      "state": "ok",
+      "file": "analysis-0-514.json",
+      "rawSha256": "d06c528960f10d6f9ed85d3cf519240e88e509a6ed3bf63da6d932be69fe8e58"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 514,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-514.json",
+      "rawSha256": "a8019c4d2f40c87c65d3708196069794e59aacefad572c02a47a4affde66009a"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 514,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-514.json",
+      "rawSha256": "95b4db376d739e7b0539751f9b33d904ee00baeda37182edad03a1aa73d2d353"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 515,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-515.json",
+      "rawSha256": "63b91de2edc8878ff25c31505e898f80c7ad76c80524f4caa70ab0d37649c2a8"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 515
+      },
+      "state": "ok",
+      "file": "duration-0-515.json",
+      "rawSha256": "ff7003f98f1f554f30f3870101a60d8534b961a5675fd7d0c60d8b10e2612270"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 515
+      },
+      "state": "ok",
+      "file": "analysis-0-515.json",
+      "rawSha256": "3ae74b41e9976bce9a32b1c04a16d4cde090b31a74d6029908f7ba9befd0a9fa"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 515,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-515.json",
+      "rawSha256": "f2c780dfb1e32d17cdb1858b93b91eee43479ed98f92339021c6eacad02ae15a"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 515,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-515.json",
+      "rawSha256": "3528a5bfa2036771fcd04569fdd5f8d9178772431d8f27c2e39feea2c3b51303"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 517,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-517.json",
+      "rawSha256": "f9e6907c9de11bd4c9514bd4b70c311eecce1aaecb18fcff0decc6eb4775c4da"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 517
+      },
+      "state": "ok",
+      "file": "duration-0-517.json",
+      "rawSha256": "c2ab53922b7032419bd0dc627eb1bf844fe8a8e101fd8b551fafadbe199ecdcc"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 517
+      },
+      "state": "ok",
+      "file": "analysis-0-517.json",
+      "rawSha256": "add2c2cee288025c61943a43cc9f8f309930dbfe72fac56ca2081cb8b556a4d9"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 517,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-517.json",
+      "rawSha256": "6b8653497f031dd0d325c80d1f23c4f4a1c3d2276e7e79c03bc45a150b9cb88e"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 517,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-517.json",
+      "rawSha256": "4badd0098b32c2ce6a3d6b0a910f9f221cea2a58fccf46618442826e9d52f18b"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 518,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-518.json",
+      "rawSha256": "1cf300f3aba61821cca63d2ced091b0b298208bcfbfda3ad6f5f2a1f8e1c4c15"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 518
+      },
+      "state": "ok",
+      "file": "duration-0-518.json",
+      "rawSha256": "c46db277f03a6d71f2740c84828ad31cc434383e88a7401fdef5da872ea01434"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 518
+      },
+      "state": "ok",
+      "file": "analysis-0-518.json",
+      "rawSha256": "801f112e68aa50b6b9086489c89262289c4684288c62574c659bc1448b2eab1a"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 518,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-518.json",
+      "rawSha256": "951cd00c1811baf3df0109ea7652059384b018acddfa668665e9641f506866b3"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 518,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-518.json",
+      "rawSha256": "cb33aac6b653a53ebcad50d41eaa4b939301880f3fdde9ef09c697fe57a43c07"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 519,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-519.json",
+      "rawSha256": "10b63416ed9f3055d15b7c9b5efa71ba3ebb11916a9320809ed7a7e86ac9988f"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 519
+      },
+      "state": "ok",
+      "file": "duration-0-519.json",
+      "rawSha256": "1ad6065c9a56b8d725be583be2a9cdc61fcc4c8f9bac2a9c01b30c16d04375ca"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 519
+      },
+      "state": "ok",
+      "file": "analysis-0-519.json",
+      "rawSha256": "042238d1d05c77b25f670a75c803493ebb71b4465e0e0ed518a93b9ab75791aa"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 519,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-519.json",
+      "rawSha256": "dedcd22dfae2163e1f8c4a447fba7d3d5835ecaadddcba6293b4abd1cdaafed2"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 519,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-519.json",
+      "rawSha256": "ea02633e0005760bd2915d924423fbae1a8457283ba724305d8da9f722033dc5"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 521,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-521.json",
+      "rawSha256": "73f97d7e4ea6b489409f2ab9649857ddbb27873b55da270ee751f3a7d4e99801"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 521
+      },
+      "state": "ok",
+      "file": "duration-0-521.json",
+      "rawSha256": "0b5a7ff13677470ebad3abb0c40eecdbd5acb5b60be0def2d18785e125a87595"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 521
+      },
+      "state": "ok",
+      "file": "analysis-0-521.json",
+      "rawSha256": "0f5dd349871df3ae6d196554cf3c526aa22695146faedbadc4c5f11a26e1d699"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 521,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-521.json",
+      "rawSha256": "5610fee201a5a1ce3bdc2c9c7fd80de63aac6927ae987238f8bbf4d03d1ba69e"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 521,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-521.json",
+      "rawSha256": "19da92de67eb8368d338871e358ef03a381a2a2aead5cf6a86dba958778bfb60"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 522,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-522.json",
+      "rawSha256": "e85f33c0eb207e34734b533bd0acf30592f840d5561b3f72f0f32f9dc6027526"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 522
+      },
+      "state": "ok",
+      "file": "duration-0-522.json",
+      "rawSha256": "ac72d96b13d43f45252018760e24a86f46259f2d2dbe96b4953cf59cb564ff64"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 522
+      },
+      "state": "ok",
+      "file": "analysis-0-522.json",
+      "rawSha256": "df0fb038458e7e35975668e11a3e234af307e22a9962f89e7b69782192b7df1b"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 522,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-522.json",
+      "rawSha256": "83f65f74a85fba174bc57c340e00d34e4d19bff8e85266f4b15203ec263c1e89"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 522,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-522.json",
+      "rawSha256": "b089569dae4b2ad0aa152b8159471431d6b5536171ea86d1340161de08863db5"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 523,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-523.json",
+      "rawSha256": "59d9ec1537df353e6f5976c0b1004963184a6e08cc8dbb04e44d53a0d63debf6"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 523
+      },
+      "state": "ok",
+      "file": "duration-0-523.json",
+      "rawSha256": "379718d34f5308b73868b69b532c8d8a719d7dd85f6bfeb06588e1f40293ccba"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 523
+      },
+      "state": "ok",
+      "file": "analysis-0-523.json",
+      "rawSha256": "e8332e2674fc4d4088d3bf73792622ef7d2c854b33403b6e826c56562555872c"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 523,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-523.json",
+      "rawSha256": "8b8cc4732f781bc03b4105d5f3af32a37386c5e1d1c897b1d0ca64d5c87d4356"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 523,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-523.json",
+      "rawSha256": "c295fa08e6ddcd695157a8c05eb1442e964a7b9e37da7f6b6ec741a74f561a7c"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 524,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-524.json",
+      "rawSha256": "ffa2eba06de3ee3b63ad62f6eb37458a2c7e686fca0594fa8f40fe7ffac606d0"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 524
+      },
+      "state": "ok",
+      "file": "duration-0-524.json",
+      "rawSha256": "eab02f6e24f5468de705085c4180cfaa8a06ba8dbe22693b9eb7a6bcd6f52f06"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 524
+      },
+      "state": "ok",
+      "file": "analysis-0-524.json",
+      "rawSha256": "fa401c2a6718887caa4866247253581c60d72aa857acd0cec1016d2fc090bafb"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 524,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-524.json",
+      "rawSha256": "a62a1adab6c8a36c187b1c1457adc3471e7950d964e4dab4c592a11f7d19c157"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 524,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-524.json",
+      "rawSha256": "49f9be2f172a154f5014ccd0725a644002766a75a30d7acef214452ae2e71970"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 525,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-525.json",
+      "rawSha256": "449c6dbd955ea10f9129a213343a9f0a56d2fb3f5378025c6b56b99e6da5ed61"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 525
+      },
+      "state": "ok",
+      "file": "duration-0-525.json",
+      "rawSha256": "8d7d0ab356c0d48a03b5becd53aab558c66f96cdd8c20695ddd15b491eacbff7"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 525
+      },
+      "state": "ok",
+      "file": "analysis-0-525.json",
+      "rawSha256": "5a26e2da42073a8d78ad14c100241a9149974a576f6aba68cc8dc9fffeff28fd"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 525,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-525.json",
+      "rawSha256": "bb761bec4b5b5038946c0acca9ed52cace531fe0ce834ddf72aacd68353ee840"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 525,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-525.json",
+      "rawSha256": "a55332a0ae65e527dcaf3fc9fbee4048ba0a906fda4056f2853af17d0bd4217f"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 527,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-527.json",
+      "rawSha256": "75f58fc4359bff5d115ca0b5d90a8bcf5237c7c61da98cb80406eea612fe7d81"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 527
+      },
+      "state": "ok",
+      "file": "duration-0-527.json",
+      "rawSha256": "5005e73eea67bccd04d29f735065152f90f10f0e773c851083d4f30db01d8379"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 527
+      },
+      "state": "ok",
+      "file": "analysis-0-527.json",
+      "rawSha256": "794e4ae7aedfc61cfb6de2d1f6384d3f4adcb7058251a30aef152929319ef953"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 527,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-527.json",
+      "rawSha256": "f7024e9e17a7606f133625c33f47256b8bcf8d71a7ead3e2c53b72a4e1e6cc79"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 527,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-527.json",
+      "rawSha256": "6842e0d2dd278efe399eb4bff0113cdd92a02eef7851a802ff3404f5a2387494"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 528,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-528.json",
+      "rawSha256": "451bea2c9acfda302a6947af599c7c67d519678a65faff3c12ef92492b6bd86b"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 528
+      },
+      "state": "ok",
+      "file": "duration-0-528.json",
+      "rawSha256": "ce0ed9fd3299a6c6d853732cba4b66e74ae2cb45efe9be7ed0410dd391fbc992"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 528
+      },
+      "state": "ok",
+      "file": "analysis-0-528.json",
+      "rawSha256": "e0848f125cfe806faba4aa064a019f7b64874d1151a426eba7c51c5e819da99e"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 528,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-528.json",
+      "rawSha256": "9cd5da69fbbe93ee440b2e66fef9f0804b86961e7d4fd2b3564aed48f6f631fe"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 528,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-528.json",
+      "rawSha256": "0947a954cad47790f13c541d1eff8f5331c2351d06c9127140f0a1ba65371a92"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 529,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-529.json",
+      "rawSha256": "7d21b15bd6e8b5ae41fe497c9ba56d129d801a97e831bb29152bebc2e8c4e8b7"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 529
+      },
+      "state": "ok",
+      "file": "duration-0-529.json",
+      "rawSha256": "03b961fbefa0ab9088d76b1dd46de865e5370aadc13ed5610ee4777d589ad09b"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 529
+      },
+      "state": "ok",
+      "file": "analysis-0-529.json",
+      "rawSha256": "77f7119a54402e4c73246e2e937668dd5d8372f47c5833f4f4f0e7b15eb00c23"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 529,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-529.json",
+      "rawSha256": "a49510874919e29aca5a382388c13d522b7e881622d135f18e95060ff9ef2330"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 529,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-529.json",
+      "rawSha256": "c3afeaf5abdeed7085921bca334c82f1cd3ea3ca4353326b0d14ff166a4178a6"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 531,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-531.json",
+      "rawSha256": "5ee4aed2c373ffa1e171bd5d054e7b52f43156effa520f5847429e9027522246"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 531
+      },
+      "state": "ok",
+      "file": "duration-0-531.json",
+      "rawSha256": "7b3ea65ba33066e0af391ca4ef021233f3678b8a1f5feb5252cc8d7d06dcd606"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 531
+      },
+      "state": "ok",
+      "file": "analysis-0-531.json",
+      "rawSha256": "777dce93d734fcd95b86250f7a32f9086cafde04a18c1247667c04fdd1cb15f2"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 531,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-531.json",
+      "rawSha256": "4d5dea54177ec1f3baaf36f04595d0a0783d90b41f911f004099c51cb7a6a03a"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 531,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-531.json",
+      "rawSha256": "b1d46d619cf6bd23bc313932ae112e37863bce576f34625a6b6ca85b1c335121"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 533,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-533.json",
+      "rawSha256": "faae883f41264b2acb2607c64ceaaaab5dc3732b8bb292cc4d30df7ab6fa506a"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 533
+      },
+      "state": "ok",
+      "file": "duration-0-533.json",
+      "rawSha256": "69b41e48b786ec153e708dd87a0179a695faf93bd3f0b411d78b22236a923e5c"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 533
+      },
+      "state": "ok",
+      "file": "analysis-0-533.json",
+      "rawSha256": "413a0d2bad724ce5f9be05070236f9665067f9621f7cdac3e4a459b5a2147b90"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 533,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-533.json",
+      "rawSha256": "d4848801f9b2909122bf9a8a4a3ae623ac39e89f2ac3a25f79ddb921c951e4b3"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 533,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-533.json",
+      "rawSha256": "6f7f0ebbf1c8cc51a74165903a0819a03fe138a56b993ad6a0d65ded1b19d823"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 534,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-534.json",
+      "rawSha256": "46ff971daca8a3be2e2e7b85ce0b8d06d81611dcf9ff5ff9cd67c3d371e97fff"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 534
+      },
+      "state": "ok",
+      "file": "duration-0-534.json",
+      "rawSha256": "9d4fbb61e05870402cce44d58bd9d63fe17ddc423d79b81365a1468913fdcf57"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 534
+      },
+      "state": "ok",
+      "file": "analysis-0-534.json",
+      "rawSha256": "96bc48a5da61d72ccd905ff12dca805e0a6b16485480431cffa745665556d3ad"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 534,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-534.json",
+      "rawSha256": "c2f680fdf6f0a2c67844e2497dfc79db7e224e159788925ef3da95246fc64d2d"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 534,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-534.json",
+      "rawSha256": "f54dc895ca7447efae12122e5cdee1b76b5ccec1f2e10f2bedb2fef87e80cc97"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 536,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-536.json",
+      "rawSha256": "02c74649b1a7a0bb86af9853d9b6dfdd32335d97053053cebd24cda020b3be61"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 536
+      },
+      "state": "ok",
+      "file": "duration-0-536.json",
+      "rawSha256": "6b0e62c6689b1b3a1b7b52dbe88028d5ed11f9e87bd103d8b993d7d3c8c8dcfe"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 536
+      },
+      "state": "ok",
+      "file": "analysis-0-536.json",
+      "rawSha256": "aefff5bafb0f1bf058861b94139604197aacd3b97573b26c34c0b14cba2c0786"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 536,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-536.json",
+      "rawSha256": "d0cacfb0e85dbcfad40d6e7e48de3f9cbe9ea7f856b9d82e29172774fe21e6bf"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 536,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-536.json",
+      "rawSha256": "f0c473f8bd8df5241111d7ca4aa09eb80694baeba03ba48849f3d4fc8ec46797"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 537,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-537.json",
+      "rawSha256": "0a4269ad195c754790b0c69a7757d9e3dc74461932e3edcdf588be37f6f423f9"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 537
+      },
+      "state": "ok",
+      "file": "duration-0-537.json",
+      "rawSha256": "c45f0bdc8aa79b345bce671bebb9f4ec56f138c023f3ad9582a18e6da1750734"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 537
+      },
+      "state": "ok",
+      "file": "analysis-0-537.json",
+      "rawSha256": "3e0c8a1e90fa14c372027e8c013a8ebf639d0347f9a2b3f5d7ca01d7daa94523"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 537,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-537.json",
+      "rawSha256": "bbe87d7a705890d042802dd2c5b788ec2d735328e9d9f701dd42bb21109fc4cf"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 537,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-537.json",
+      "rawSha256": "1648c77516b672b940b5f31c9a632917ea751f87c40ca64f21b8ea675873a109"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 538,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-538.json",
+      "rawSha256": "62cfa16d34fff239d201a1370f91130022a47064afe90a9826ce85745e0bec8f"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 538
+      },
+      "state": "ok",
+      "file": "duration-0-538.json",
+      "rawSha256": "3b0bdab10b369125922776f5778c268b77ea48e12f01ba70b4b461081dee7acd"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 538
+      },
+      "state": "ok",
+      "file": "analysis-0-538.json",
+      "rawSha256": "5b014b0faa88a958687c1454d7560ff2ae7945d78d98ff97812bde747c0128d5"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 538,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-538.json",
+      "rawSha256": "8516bdf0f031c6d84e49a29e017f67dc6f574346c96c038f98ea9ec4b41e8c05"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 538,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-538.json",
+      "rawSha256": "072a53758091de6f7e507e6c42c01ac4e260a0859e28d9f80e810fb80e9b707d"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 540,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-540.json",
+      "rawSha256": "a223c59ec00a37eb7595e1aa71d6266f21ceacebcfc07d4748be5aa86400b23e"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 540
+      },
+      "state": "ok",
+      "file": "duration-0-540.json",
+      "rawSha256": "f8143282713034fcaca70930eefd125f1138db17aeb8b2f3063c01063328da4c"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 540
+      },
+      "state": "ok",
+      "file": "analysis-0-540.json",
+      "rawSha256": "dfeda52b717aec7f440db23b27112bcbf3caf771c746fac345ca53f3f534cf64"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 540,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-540.json",
+      "rawSha256": "fe93ca60d27340585c4cc2c92517c8fb46fe8252595c3ca020ffc851ca0e1499"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 540,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-540.json",
+      "rawSha256": "6247e5eb37dbde53ab0e1adabfef202131483c9c8f95e0a838243f499e035db7"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 542,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-542.json",
+      "rawSha256": "ac285ebcbb7fc0cc06b7fff8a95da7ec9a5378e032e38ac30c9497c0e8583fa3"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 542
+      },
+      "state": "ok",
+      "file": "duration-0-542.json",
+      "rawSha256": "a1a5a35b7edd16972e87d1783a8ef0ef8bc31d4ae97349095b43af51530d2bc9"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 542
+      },
+      "state": "ok",
+      "file": "analysis-0-542.json",
+      "rawSha256": "9e53a2d334ac0d5f12825a0b9f6d76f8edb767ff1001d2e9ddb88f336d756ae4"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 542,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-542.json",
+      "rawSha256": "613ba66913e20fe2c7114bbd04afc6b69a5c21bbd52f2875c905e89094132d93"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 542,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-542.json",
+      "rawSha256": "ab19888513aca5b0ca924153441c5da53ddcc9514604fd28535fea44654f3417"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 544,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-544.json",
+      "rawSha256": "ba57c3133e80beea7f81b129ae7168237709ed967cdcf8b35a85ec5a2133f00a"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 544
+      },
+      "state": "ok",
+      "file": "duration-0-544.json",
+      "rawSha256": "764267b678334b697a23b174db933dd23d281bcdcfa09bca2c946e22eb619305"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 544
+      },
+      "state": "ok",
+      "file": "analysis-0-544.json",
+      "rawSha256": "e71299f7be392e5d6671a8c591401fadfc08a838abe66310d75d5c6d1dfda74a"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 544,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-544.json",
+      "rawSha256": "3975870d2cb4d1813f1a23f8d8528681c7acdbd7f94dcf1ebe7c70120d8fe9be"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 544,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-544.json",
+      "rawSha256": "3f0957aad7c2271a4394f3957a5d85ea117c57b647673457a0f971649e722a07"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 545,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-545.json",
+      "rawSha256": "28980a64ea3e6b79cfb46a9968c58cc0649c9f37876f406fd54c2ca0a4cc5b6b"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 545
+      },
+      "state": "ok",
+      "file": "duration-0-545.json",
+      "rawSha256": "fbf5ea3da301d147b8b633ad210b9ee7143fa98da0133b517b2c9f706b5e564f"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 545
+      },
+      "state": "ok",
+      "file": "analysis-0-545.json",
+      "rawSha256": "d839a1e90f102ecc81ea26fbf20d838c60f5569e25c27ce1373389d811de5665"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 545,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-545.json",
+      "rawSha256": "dc99c82c7958a639ecb77c48d052434ee496877bf4aad14cf89c7f029a960526"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 545,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-545.json",
+      "rawSha256": "251e30e0af720e41a20ce1cb6a08e0c5782da28d9c40720c4e6ee1307e92e7aa"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 547,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-547.json",
+      "rawSha256": "61606f609a8683c2aa6b797fa1444826eb0b57dc5b4029d412f4efa328a7b307"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 547
+      },
+      "state": "ok",
+      "file": "duration-0-547.json",
+      "rawSha256": "93c4a39456d549be0df72348fc53500880c7c11c398b7af600b401bfada2cf2a"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 547
+      },
+      "state": "ok",
+      "file": "analysis-0-547.json",
+      "rawSha256": "c4103cfe8c24437aca23d6c1c0d45a5ce58cd91686234bb3ccd5b56cdc527409"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 547,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-547.json",
+      "rawSha256": "5c2000d20d430c71877f74231ee2b34a604fe2de6e05697d85e6316e8e252263"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 547,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-547.json",
+      "rawSha256": "01005be8cac859c30e15a68b15cbaa2c881ae2e4b6cfb00331ed77808200fd2e"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 548,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-548.json",
+      "rawSha256": "c64d6071efc3f254343b5825b22273a1e49692967b02201dd074ff7cb4878d33"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 548
+      },
+      "state": "ok",
+      "file": "duration-0-548.json",
+      "rawSha256": "7a2276d9e0dc059122632a4112ae3886c03460648c0d4e67776244ffbf4ba3ac"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 548
+      },
+      "state": "ok",
+      "file": "analysis-0-548.json",
+      "rawSha256": "d832bc1a19dcb24ef14f64d82f7b0c041926691fd42af61f24ffdb365b87426e"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 548,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-548.json",
+      "rawSha256": "f02421732644808c9caee7a5c19ead4e01419c1b2226e1883c56d8f449c34219"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 548,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-548.json",
+      "rawSha256": "89e1864200dbd4bf1f354ea585427fecbcee02f1471859fd3b93f1705f01aadf"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 549,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-549.json",
+      "rawSha256": "45b2fdacd08bb1751b62a2a32e28d0e5576f978e7c64a259800b1cb33af1423f"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 549
+      },
+      "state": "ok",
+      "file": "duration-0-549.json",
+      "rawSha256": "5f2eb0a5b52a454b16a62d33789b659465e9b8c45f4fca2973e125eed8da0153"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 549
+      },
+      "state": "ok",
+      "file": "analysis-0-549.json",
+      "rawSha256": "8cad394cba674cad2c672fbb4d711ab3d62aaec6e1c81252d09e0269cbf8037d"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 549,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-549.json",
+      "rawSha256": "e2d9b18ef933a299266ccc84f9f81b13ac97f61a1cf5f4d49469507dee172efe"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 549,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-549.json",
+      "rawSha256": "2bfe20dfd040e98017d95ce0feab635d0efd3df4eb05ea110e92cef54738db31"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 550,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-550.json",
+      "rawSha256": "8fc154dc48c1fa1301c9aae757721fe04d45d87ca96588d221149c8f694dd067"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 550
+      },
+      "state": "ok",
+      "file": "duration-0-550.json",
+      "rawSha256": "dad78220d6aee85ba7175313650cce4960b5b639d954a167e2997b60c2c9f26d"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 550
+      },
+      "state": "ok",
+      "file": "analysis-0-550.json",
+      "rawSha256": "fb14f01e5b436bf23b97e5c7ceb45ba622a755d3e0aae9727c81c0990aa3a372"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 550,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-550.json",
+      "rawSha256": "3f35ce7b8e0f4523f0321ce8f70de6bd8c2c3f5e28e7e2b8ec8e904d5af29e57"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 550,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-550.json",
+      "rawSha256": "c93581eed62a2e278b87e88c17267b4765a69a6692a21d9299ad18008efb0e9e"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 558,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-558.json",
+      "rawSha256": "a84c2d0b2b3796d27ac8de1b70bf9b747b9407709574efda3824f06abab48192"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 558
+      },
+      "state": "ok",
+      "file": "duration-0-558.json",
+      "rawSha256": "ecdf4ecc11f29d7360efd9c7efaaed71d76b2f761cd2ef2bef38067ad1fb199e"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 558
+      },
+      "state": "ok",
+      "file": "analysis-0-558.json",
+      "rawSha256": "33252b81e2a7aa5dc4cb3a00f59b667c2955a7e1acddf3a29c237fa4e8c4ea13"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 558,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-558.json",
+      "rawSha256": "7e55577e295e08b9b4877d171d3cbf47652ef31397216d517652e8a8db3b9dd2"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 558,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-558.json",
+      "rawSha256": "16c26e03ae72deac75fa11cbbaf8c586b828c01943b8f603b18dbe2b3378928f"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 563,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-563.json",
+      "rawSha256": "9d0cac26946026da5fb1e3fb492518ff234ed71210ca0766e5da9ad428355129"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 563
+      },
+      "state": "ok",
+      "file": "duration-0-563.json",
+      "rawSha256": "004bb1d344914c6b6ac7f2f32df421e81ea67774fe2e9364268956555295c911"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 563
+      },
+      "state": "ok",
+      "file": "analysis-0-563.json",
+      "rawSha256": "be0d2a62aa3e90644971c833884022187a19c34166bc857869ea505ee859a1ac"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 563,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-563.json",
+      "rawSha256": "0289942bff91b40a61f813a86bfe54c7aef1fb534297ee3f77c05e1c178d60d0"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 563,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-563.json",
+      "rawSha256": "49731429469619523b447247d20ec87570a626cdcb2a031a871da7d983402604"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 564,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-564.json",
+      "rawSha256": "773145ef740680c5ad8ee4d4888bb8f92bac0bfc6817a6d74e436fd89e2c99b8"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 564
+      },
+      "state": "ok",
+      "file": "duration-0-564.json",
+      "rawSha256": "7e01387f9f6c922ac396e39cb7f6d890f6b62ae4107593915466b765f9c34999"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 564
+      },
+      "state": "ok",
+      "file": "analysis-0-564.json",
+      "rawSha256": "2f855e5eb1f041039b5d8af47153e071630e9d6f79fca1903ca93a2c3e390951"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 564,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-564.json",
+      "rawSha256": "43e1d748128460ba2f8b23eeb571e9b2cbc37f295799b503b68fb8f9db33ac72"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 564,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-564.json",
+      "rawSha256": "03c752e708a1c1a5f558606060ddde18d4d19dfa49fe506a41b6bc615554619a"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 577,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-577.json",
+      "rawSha256": "9b7b7aee89d247ddf3917e4b5ea5f19e5a71a29a4ec9f6c6e4c38e3977504d0b"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 577
+      },
+      "state": "ok",
+      "file": "duration-0-577.json",
+      "rawSha256": "76fff70e9899772022f3f7a5a4946c21948191c59e7e013978d3a9d5c1789f7c"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 577
+      },
+      "state": "ok",
+      "file": "analysis-0-577.json",
+      "rawSha256": "b3f010fc9affe9fecd48bd98e265a927dacf0e6947af53c781f135dbcd18176c"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 577,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-577.json",
+      "rawSha256": "429513f0e4ff6242508c62aff37ded4366cb14155b00259b0c55b9bc59054f6d"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 577,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-577.json",
+      "rawSha256": "d6aeedfe902f0e9387fd83b697e0978c0fe2d77e5a4f5eb25964f91335688004"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 581,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-581.json",
+      "rawSha256": "3622c9c4e6cfeb346eb9536c976cd379468e816e05d25352f3ae8971998dd22f"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 581
+      },
+      "state": "ok",
+      "file": "duration-0-581.json",
+      "rawSha256": "90d0618e9bae5323d2677443a8d4f3412688d794cc188553f5f2229a99e30f89"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 581
+      },
+      "state": "ok",
+      "file": "analysis-0-581.json",
+      "rawSha256": "f85f78355412c18ad21eb2c1ce03a902b00af1344310380854ca39ae260580be"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 581,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-581.json",
+      "rawSha256": "d3d9fc215355819acf114b6235e200b5d9d26532baaaff534be9eb91b753cf94"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 581,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-581.json",
+      "rawSha256": "32388202b83b7b645035ceae6bcb41b82c9dccf388be77d1eb0b009f6862883d"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 582,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-582.json",
+      "rawSha256": "df2466358f767a203a3b15618013141585ccc81f67646e62b7ae9c88424ab976"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 582
+      },
+      "state": "ok",
+      "file": "duration-0-582.json",
+      "rawSha256": "41273170d1344f72d338b01e761da91905fda3a368faad05909c46f9904dad9e"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 582
+      },
+      "state": "ok",
+      "file": "analysis-0-582.json",
+      "rawSha256": "bd268c609303d80e5cee9408d0be44a8fc8356131bc798e5ba92e9451dce0a1f"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 582,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-582.json",
+      "rawSha256": "61dc06bdaa3f644b9f3016b6a3a34e49fa471d53af10e4765b129b84ddc5692a"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 582,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-582.json",
+      "rawSha256": "3a59eb4ee32d144e8d62a39755ffb8cf8373dd2f34f48ed84cfd3df8a7b29c5a"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 583,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-583.json",
+      "rawSha256": "3b218be2ed91e03ed7f07dd15d0c3783085d64386bb90f8df36ec9d3e22f326e"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 583
+      },
+      "state": "ok",
+      "file": "duration-0-583.json",
+      "rawSha256": "0206432759284ede9ada31b03a18c1748ff8708e405cb22e69bc9f0eca6476f3"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 583
+      },
+      "state": "ok",
+      "file": "analysis-0-583.json",
+      "rawSha256": "1e79aa1206765f484ccc8cdc0caa16b602d8fb2a223678a6776aa39049fa3eb4"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 583,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-583.json",
+      "rawSha256": "b61cda3ca5d89edd1317c49224c3c156b75dd3e9f815a66960a88e4ea436f613"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 583,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-583.json",
+      "rawSha256": "bffa841f1786a22b0a70c8709b1f5ff74a164e9245058c2ef61f25d071d97e4b"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 584,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-584.json",
+      "rawSha256": "daedbc4a74b4b651413e1ee08545f5ec838b50fe2cc98b8d6d02fde7806fdb30"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 584
+      },
+      "state": "ok",
+      "file": "duration-0-584.json",
+      "rawSha256": "4aa7b7583c2b598d552eb60c30d18681cf1c9221a9a2a85d7c16c4d2f6539f32"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 584
+      },
+      "state": "ok",
+      "file": "analysis-0-584.json",
+      "rawSha256": "f87166e283383094dc1463ea40f3faa36c0ef86e48a7918269db14c051834fa1"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 584,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-584.json",
+      "rawSha256": "fcd0d78e9ca341d5fb128aa60db073f124e08121f337a2562bb1af36a9d80cfc"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 584,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-584.json",
+      "rawSha256": "1a988944d61e2b50634e581373ab8498ed6ada941dfdab127549295c936c97e6"
+    },
+    {
+      "query": {
+        "kind": "skin",
+        "heroId": 585,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "skin-0-585.json",
+      "rawSha256": "01b0e32d73ede244549f04c34bf3f559830a56001391ad8e74ec6101695fefce"
+    },
+    {
+      "query": {
+        "kind": "duration",
+        "heroId": 585
+      },
+      "state": "ok",
+      "file": "duration-0-585.json",
+      "rawSha256": "cbde9507239a5077e689387f38af75d50596c4fe4601f4524e765450a6f4eb6e"
+    },
+    {
+      "query": {
+        "kind": "analysis",
+        "heroId": 585
+      },
+      "state": "ok",
+      "file": "analysis-0-585.json",
+      "rawSha256": "7ac5f4ae50958f61f6282edb54f04e411f4487f44122280eb0841a41517e8bbe"
+    },
+    {
+      "query": {
+        "kind": "equip",
+        "heroId": 585,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "equip-0-585.json",
+      "rawSha256": "cea03dd19eefa393f2d81cf74e737c398237fb082ab7d5de077561118a693bf7"
+    },
+    {
+      "query": {
+        "kind": "combined",
+        "heroId": 585,
+        "date": "2026-10-24"
+      },
+      "state": "ok",
+      "file": "combined-0-585.json",
+      "rawSha256": "090e841b8f0417c7f122487f08a6a971b542e24ae60b29bc82f26c54c12fb10a"
+    }
+  ],
+  "completedAt": "2026-10-25T13:18:33.144Z"
+}

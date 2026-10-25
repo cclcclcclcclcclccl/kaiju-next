@@ -1,0 +1,128 @@
+{
+  "running": false,
+  "intervalMinutes": 35,
+  "startedAt": "2026-10-25T13:07:28.970Z",
+  "results": [
+    {
+      "segment": 1,
+      "position": 1,
+      "state": "fresh",
+      "sourceDate": "2026-10-24",
+      "fetchedAt": "2026-10-25T13:07:29.374Z",
+      "rows": 10
+    },
+    {
+      "segment": 1,
+      "position": 2,
+      "state": "fresh",
+      "sourceDate": "2026-10-24",
+      "fetchedAt": "2026-10-25T13:07:29.543Z",
+      "rows": 10
+    },
+    {
+      "segment": 1,
+      "position": 3,
+      "state": "fresh",
+      "sourceDate": "2026-10-24",
+      "fetchedAt": "2026-10-25T13:07:29.701Z",
+      "rows": 10
+    },
+    {
+      "segment": 1,
+      "position": 4,
+      "state": "fresh",
+      "sourceDate": "2026-10-24",
+      "fetchedAt": "2026-10-25T13:07:29.862Z",
+      "rows": 10
+    },
+    {
+      "segment": 1,
+      "position": 5,
+      "state": "fresh",
+      "sourceDate": "2026-10-24",
+      "fetchedAt": "2026-10-25T13:07:30.005Z",
+      "rows": 10
+    },
+    {
+      "segment": 3,
+      "position": 1,
+      "state": "fresh",
+      "sourceDate": "2026-10-24",
+      "fetchedAt": "2026-10-25T13:07:30.152Z",
+      "rows": 10
+    },
+    {
+      "segment": 3,
+      "position": 2,
+      "state": "fresh",
+      "sourceDate": "2026-10-24",
+      "fetchedAt": "2026-10-25T13:07:30.292Z",
+      "rows": 10
+    },
+    {
+      "segment": 3,
+      "position": 3,
+      "state": "fresh",
+      "sourceDate": "2026-10-24",
+      "fetchedAt": "2026-10-25T13:07:30.442Z",
+      "rows": 10
+    },
+    {
+      "segment": 3,
+      "position": 4,
+      "state": "fresh",
+      "sourceDate": "2026-10-24",
+      "fetchedAt": "2026-10-25T13:07:30.592Z",
+      "rows": 10
+    },
+    {
+      "segment": 3,
+      "position": 5,
+      "state": "fresh",
+      "sourceDate": "2026-10-24",
+      "fetchedAt": "2026-10-25T13:07:30.752Z",
+      "rows": 10
+    },
+    {
+      "segment": 4,
+      "position": 1,
+      "state": "fresh",
+      "sourceDate": "2026-10-24",
+      "fetchedAt": "2026-10-25T13:07:30.912Z",
+      "rows": 10
+    },
+    {
+      "segment": 4,
+      "position": 2,
+      "state": "fresh",
+      "sourceDate": "2026-10-24",
+      "fetchedAt": "2026-10-25T13:07:31.048Z",
+      "rows": 10
+    },
+    {
+      "segment": 4,
+      "position": 3,
+      "state": "fresh",
+      "sourceDate": "2026-10-24",
+      "fetchedAt": "2026-10-25T13:07:31.173Z",
+      "rows": 10
+    },
+    {
+      "segment": 4,
+      "position": 4,
+      "state": "fresh",
+      "sourceDate": "2026-10-24",
+      "fetchedAt": "2026-10-25T13:07:31.333Z",
+      "rows": 10
+    },
+    {
+      "segment": 4,
+      "position": 5,
+      "state": "fresh",
+      "sourceDate": "2026-10-24",
+      "fetchedAt": "2026-10-25T13:07:31.492Z",
+      "rows": 10
+    }
+  ],
+  "completedAt": "2026-10-25T13:07:31.497Z"
+}

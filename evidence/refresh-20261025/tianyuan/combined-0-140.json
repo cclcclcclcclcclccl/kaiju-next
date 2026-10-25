@@ -1,0 +1,35 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-10-24&heroId=140",
+  "query": {
+    "kind": "combined",
+    "date": "2026-10-24",
+    "heroId": 140
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:10:08.909Z",
+  "rawSha256": "0e44d6f7a584cba5ac3223179b4cbd29d312ccddd34b46b3bb0cdd59b6b41b72",
+  "cache": "fresh",
+  "data": {
+    "heroId": 140,
+    "positions": {
+      "0": {
+        "pickRate": 98.75,
+        "winRate": 52.66
+      },
+      "4": {
+        "pickRate": 1.14,
+        "winRate": 44.64
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "疾跑",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/55e001673b284adf8ac6b26d93ea7b7d.png",
+        "pickRate": 100,
+        "winRate": 52.4
+      }
+    ]
+  }
+}

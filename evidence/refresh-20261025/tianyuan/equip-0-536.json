@@ -1,0 +1,882 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-24&heroId=536",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-24",
+    "heroId": 536
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:16:56.369Z",
+  "rawSha256": "d0cacfb0e85dbcfad40d6e7e48de3f9cbe9ea7f856b9d82e29172774fe21e6bf",
+  "cache": "fresh",
+  "data": {
+    "heroId": 536,
+    "queryEndDate": "2026-10-24T16:59:59.999Z",
+    "topItemsBySlot": [
+      {
+        "slot": 1,
+        "baseWinRate": 49.9,
+        "topItems": [
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png",
+            "pickRate": 38.5,
+            "winRate": 49.88,
+            "deltaWinRate": -0.02
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png",
+            "pickRate": 37.57,
+            "winRate": 50.46,
+            "deltaWinRate": 0.56
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png",
+            "pickRate": 16.18,
+            "winRate": 49.71,
+            "deltaWinRate": -0.19
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+            "pickRate": 2.81,
+            "winRate": null,
+            "deltaWinRate": null
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "baseWinRate": 49.95,
+        "topItems": [
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+            "pickRate": 47.93,
+            "winRate": 53.06,
+            "deltaWinRate": 3.11
+          },
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png",
+            "pickRate": 18.07,
+            "winRate": 53.73,
+            "deltaWinRate": 3.78
+          },
+          {
+            "equipId": 1423,
+            "equipName": "冷静之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1423.png",
+            "pickRate": 11.38,
+            "winRate": 31.5,
+            "deltaWinRate": -18.45
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png",
+            "pickRate": 10.04,
+            "winRate": 50.08,
+            "deltaWinRate": 0.13
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "baseWinRate": 50.94,
+        "topItems": [
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png",
+            "pickRate": 43.97,
+            "winRate": 51.07,
+            "deltaWinRate": 0.13
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png",
+            "pickRate": 27.26,
+            "winRate": 50.93,
+            "deltaWinRate": -0.01
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png",
+            "pickRate": 13.15,
+            "winRate": 50.54,
+            "deltaWinRate": -0.4
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+            "pickRate": 7.12,
+            "winRate": 53.25,
+            "deltaWinRate": 2.31
+          }
+        ]
+      },
+      {
+        "slot": 4,
+        "baseWinRate": 56.65,
+        "topItems": [
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png",
+            "pickRate": 57.17,
+            "winRate": 57.38,
+            "deltaWinRate": 0.73
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png",
+            "pickRate": 19,
+            "winRate": 56.72,
+            "deltaWinRate": 0.07
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png",
+            "pickRate": 9.33,
+            "winRate": 56.08,
+            "deltaWinRate": -0.57
+          },
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png",
+            "pickRate": 5.5,
+            "winRate": 50.41,
+            "deltaWinRate": -6.24
+          }
+        ]
+      },
+      {
+        "slot": 5,
+        "baseWinRate": 63.43,
+        "topItems": [
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png",
+            "pickRate": 52.87,
+            "winRate": 63.13,
+            "deltaWinRate": -0.3
+          },
+          {
+            "equipId": 1334,
+            "equipName": "不死鸟之眼",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1334.png",
+            "pickRate": 16.62,
+            "winRate": 65.26,
+            "deltaWinRate": 1.83
+          },
+          {
+            "equipId": 1341,
+            "equipName": "冰霜冲击",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png",
+            "pickRate": 6.95,
+            "winRate": 63.7,
+            "deltaWinRate": 0.27
+          },
+          {
+            "equipId": 1125,
+            "equipName": "破魔刀",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1125.png",
+            "pickRate": 4.53,
+            "winRate": null,
+            "deltaWinRate": null
+          }
+        ]
+      },
+      {
+        "slot": 6,
+        "baseWinRate": 64.48,
+        "topItems": [
+          {
+            "equipId": 1341,
+            "equipName": "冰霜冲击",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png",
+            "pickRate": 21.19,
+            "winRate": 64.86,
+            "deltaWinRate": 0.38
+          },
+          {
+            "equipId": 1127,
+            "equipName": "名刀·司命",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1127.png",
+            "pickRate": 8.47,
+            "winRate": 66.09,
+            "deltaWinRate": 1.61
+          },
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png",
+            "pickRate": 8.47,
+            "winRate": 62.2,
+            "deltaWinRate": -2.28
+          },
+          {
+            "equipId": 1353,
+            "equipName": "旭日初光",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1353.png",
+            "pickRate": 8.47,
+            "winRate": 68.07,
+            "deltaWinRate": 3.59
+          }
+        ]
+      }
+    ],
+    "topFullBuilds": [
+      {
+        "build": [
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 1341,
+            "equipName": "冰霜冲击",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png"
+          },
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png"
+          }
+        ],
+        "frequency": 2.14,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png"
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png"
+          },
+          {
+            "equipId": 1341,
+            "equipName": "冰霜冲击",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png"
+          }
+        ],
+        "frequency": 1.2,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png"
+          },
+          {
+            "equipId": 1127,
+            "equipName": "名刀·司命",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1127.png"
+          }
+        ],
+        "frequency": 0.8,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png"
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 1347,
+            "equipName": "永夜守护",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1347.png"
+          },
+          {
+            "equipId": 1341,
+            "equipName": "冰霜冲击",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png"
+          }
+        ],
+        "frequency": 0.4,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 1125,
+            "equipName": "破魔刀",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1125.png"
+          },
+          {
+            "equipId": 1353,
+            "equipName": "旭日初光",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1353.png"
+          }
+        ],
+        "frequency": 0.4,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png"
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 1327,
+            "equipName": "反伤刺甲",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1327.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png"
+          }
+        ],
+        "frequency": 0.4,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 1125,
+            "equipName": "破魔刀",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1125.png"
+          },
+          {
+            "equipId": 1341,
+            "equipName": "冰霜冲击",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png"
+          }
+        ],
+        "frequency": 0.4,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png"
+          },
+          {
+            "equipId": 1328,
+            "equipName": "血魔之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1328.png"
+          }
+        ],
+        "frequency": 0.4,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png"
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 1347,
+            "equipName": "永夜守护",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1347.png"
+          },
+          {
+            "equipId": 1338,
+            "equipName": "暴烈之甲",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1338.png"
+          }
+        ],
+        "frequency": 0.27,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 1334,
+            "equipName": "不死鸟之眼",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1334.png"
+          }
+        ],
+        "frequency": 0.27,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png"
+          },
+          {
+            "equipId": 1331,
+            "equipName": "红莲斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1331.png"
+          }
+        ],
+        "frequency": 0.27,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png"
+          },
+          {
+            "equipId": 1327,
+            "equipName": "反伤刺甲",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1327.png"
+          }
+        ],
+        "frequency": 0.27,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png"
+          },
+          {
+            "equipId": 1333,
+            "equipName": "不祥征兆",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1333.png"
+          }
+        ],
+        "frequency": 0.27,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 1131,
+            "equipName": "碎星锤",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1131.png"
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png"
+          },
+          {
+            "equipId": 1331,
+            "equipName": "红莲斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1331.png"
+          }
+        ],
+        "frequency": 0.13,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      }
+    ],
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png",
+        "pickRate": 95.49,
+        "winRate": 50.73
+      },
+      {
+        "equipmentId": 11311,
+        "equipmentName": "纯净苍穹",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png",
+        "pickRate": 88.66,
+        "winRate": 51.06
+      },
+      {
+        "equipmentId": 13310,
+        "equipmentName": "冰痕之握",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png",
+        "pickRate": 76.53,
+        "winRate": 54.15
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+        "pickRate": 58.69,
+        "winRate": 53.55
+      },
+      {
+        "equipmentId": 1335,
+        "equipmentName": "魔女斗篷",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png",
+        "pickRate": 31.52,
+        "winRate": 59.32
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png",
+        "pickRate": 22.68,
+        "winRate": 50.66
+      },
+      {
+        "equipmentId": 1423,
+        "equipmentName": "冷静之靴",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1423.png",
+        "pickRate": 15.41,
+        "winRate": 29.48
+      },
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png",
+        "pickRate": 14.55,
+        "winRate": 62.97
+      },
+      {
+        "equipmentId": 1334,
+        "equipmentName": "不死鸟之眼",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1334.png",
+        "pickRate": 10.36,
+        "winRate": 69.2
+      },
+      {
+        "equipmentId": 1353,
+        "equipmentName": "旭日初光",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1353.png",
+        "pickRate": 3.92,
+        "winRate": 66.03
+      }
+    ]
+  }
+}

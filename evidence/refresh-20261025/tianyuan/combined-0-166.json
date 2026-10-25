@@ -1,0 +1,35 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-10-24&heroId=166",
+  "query": {
+    "kind": "combined",
+    "date": "2026-10-24",
+    "heroId": 166
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:11:49.707Z",
+  "rawSha256": "f0ecc4f70ffac519ea2e3b94201a73b7ccd289628d3c0a5c3899100ab6af7ade",
+  "cache": "fresh",
+  "data": {
+    "heroId": 166,
+    "positions": {
+      "0": {
+        "pickRate": 94.73,
+        "winRate": 51.77
+      },
+      "4": {
+        "pickRate": 5.05,
+        "winRate": 50
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "终结",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/1f49f189ef61ea4ef2e2da08e6207956.png",
+        "pickRate": 99.56,
+        "winRate": 51.9
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-10-24&heroId=544",
+  "query": {
+    "kind": "combined",
+    "date": "2026-10-24",
+    "heroId": 544
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:17:22.479Z",
+  "rawSha256": "3f0957aad7c2271a4394f3957a5d85ea117c57b647673457a0f971649e722a07",
+  "cache": "fresh",
+  "data": {
+    "heroId": 544,
+    "positions": {
+      "0": {
+        "pickRate": 22.31,
+        "winRate": 47.69
+      },
+      "4": {
+        "pickRate": 77.31,
+        "winRate": 47.38
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "晕眩",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/e373bf64ddf0b06205d17680575da9b7.png",
+        "pickRate": 70,
+        "winRate": 47.08
+      },
+      {
+        "skillName": "终结",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/1f49f189ef61ea4ef2e2da08e6207956.png",
+        "pickRate": 22.69,
+        "winRate": 47.59
+      },
+      {
+        "skillName": "惩击",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png",
+        "pickRate": 2.31,
+        "winRate": 46.88
+      },
+      {
+        "skillName": "治疗术",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/2bfe8f88808b1566dd979c0b14b766ed.png",
+        "pickRate": 1.92,
+        "winRate": 54.22
+      },
+      {
+        "skillName": "闪现",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png",
+        "pickRate": 1.54,
+        "winRate": 36.84
+      },
+      {
+        "skillName": "雾行千山",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/adb44ab57875ca4d8f9a0d931d0abda9.png",
+        "pickRate": 1.54,
+        "winRate": 43.37
+      }
+    ]
+  }
+}

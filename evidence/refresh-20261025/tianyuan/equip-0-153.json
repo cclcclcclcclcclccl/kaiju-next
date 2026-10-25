@@ -1,0 +1,722 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-24&heroId=153",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-24",
+    "heroId": 153
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:11:08.530Z",
+  "rawSha256": "583f89788e6b0bcf2ac252f5e22e9bdc757d89c8f2c6e2fb1eb88cf534815af1",
+  "cache": "fresh",
+  "data": {
+    "heroId": 153,
+    "queryEndDate": "2026-10-24T16:59:59.999Z",
+    "topItemsBySlot": [
+      {
+        "slot": 1,
+        "baseWinRate": 49.44,
+        "topItems": [
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png",
+            "pickRate": 79.55,
+            "winRate": 51.62,
+            "deltaWinRate": 2.18
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png",
+            "pickRate": 13.64,
+            "winRate": 44.92,
+            "deltaWinRate": -4.52
+          },
+          {
+            "equipId": 1426,
+            "equipName": "疾步之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1426.png",
+            "pickRate": 3.41,
+            "winRate": null,
+            "deltaWinRate": null
+          },
+          {
+            "equipId": 1131,
+            "equipName": "碎星锤",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1131.png",
+            "pickRate": 1.14,
+            "winRate": null,
+            "deltaWinRate": null
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "baseWinRate": 49.56,
+        "topItems": [
+          {
+            "equipId": 1426,
+            "equipName": "疾步之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1426.png",
+            "pickRate": 51.14,
+            "winRate": 44.85,
+            "deltaWinRate": -4.71
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+            "pickRate": 20.45,
+            "winRate": 58.02,
+            "deltaWinRate": 8.46
+          },
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png",
+            "pickRate": 11.36,
+            "winRate": 54.9,
+            "deltaWinRate": 5.34
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png",
+            "pickRate": 10.23,
+            "winRate": 38.4,
+            "deltaWinRate": -11.16
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "baseWinRate": 50.61,
+        "topItems": [
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png",
+            "pickRate": 78.82,
+            "winRate": 51.77,
+            "deltaWinRate": 1.16
+          },
+          {
+            "equipId": 1327,
+            "equipName": "反伤刺甲",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1327.png",
+            "pickRate": 9.41,
+            "winRate": 48.1,
+            "deltaWinRate": -2.51
+          },
+          {
+            "equipId": 1138,
+            "equipName": "强者破军",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1138.png",
+            "pickRate": 4.71,
+            "winRate": null,
+            "deltaWinRate": null
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png",
+            "pickRate": 2.35,
+            "winRate": null,
+            "deltaWinRate": null
+          }
+        ]
+      },
+      {
+        "slot": 4,
+        "baseWinRate": 57.17,
+        "topItems": [
+          {
+            "equipId": 1138,
+            "equipName": "强者破军",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1138.png",
+            "pickRate": 60.81,
+            "winRate": 55.81,
+            "deltaWinRate": -1.36
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png",
+            "pickRate": 13.51,
+            "winRate": 61.21,
+            "deltaWinRate": 4.04
+          },
+          {
+            "equipId": 1327,
+            "equipName": "反伤刺甲",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1327.png",
+            "pickRate": 10.81,
+            "winRate": 57.65,
+            "deltaWinRate": 0.48
+          },
+          {
+            "equipId": 1131,
+            "equipName": "碎星锤",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1131.png",
+            "pickRate": 4.05,
+            "winRate": null,
+            "deltaWinRate": null
+          }
+        ]
+      },
+      {
+        "slot": 5,
+        "baseWinRate": 64.09,
+        "topItems": [
+          {
+            "equipId": 1131,
+            "equipName": "碎星锤",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1131.png",
+            "pickRate": 56.52,
+            "winRate": 62.11,
+            "deltaWinRate": -1.98
+          },
+          {
+            "equipId": 1138,
+            "equipName": "强者破军",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1138.png",
+            "pickRate": 26.09,
+            "winRate": 67.49,
+            "deltaWinRate": 3.4
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png",
+            "pickRate": 4.35,
+            "winRate": null,
+            "deltaWinRate": null
+          },
+          {
+            "equipId": 1125,
+            "equipName": "破魔刀",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1125.png",
+            "pickRate": 2.17,
+            "winRate": null,
+            "deltaWinRate": null
+          }
+        ]
+      },
+      {
+        "slot": 6,
+        "baseWinRate": 66.5,
+        "topItems": [
+          {
+            "equipId": 1131,
+            "equipName": "碎星锤",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1131.png",
+            "pickRate": 38.89,
+            "winRate": 67.88,
+            "deltaWinRate": 1.38
+          },
+          {
+            "equipId": 1134,
+            "equipName": "宗师之力",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1134.png",
+            "pickRate": 16.67,
+            "winRate": 67.03,
+            "deltaWinRate": 0.53
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png",
+            "pickRate": 11.11,
+            "winRate": 69.12,
+            "deltaWinRate": 2.62
+          },
+          {
+            "equipId": 1125,
+            "equipName": "破魔刀",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1125.png",
+            "pickRate": 5.56,
+            "winRate": 74.29,
+            "deltaWinRate": 7.79
+          }
+        ]
+      }
+    ],
+    "topFullBuilds": [
+      {
+        "build": [
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 1426,
+            "equipName": "疾步之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1426.png"
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 1138,
+            "equipName": "强者破军",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1138.png"
+          },
+          {
+            "equipId": 1131,
+            "equipName": "碎星锤",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1131.png"
+          },
+          {
+            "equipId": 1134,
+            "equipName": "宗师之力",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1134.png"
+          }
+        ],
+        "frequency": 2.27,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1138,
+            "equipName": "强者破军",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1138.png"
+          },
+          {
+            "equipId": 1131,
+            "equipName": "碎星锤",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1131.png"
+          }
+        ],
+        "frequency": 2.27,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 1426,
+            "equipName": "疾步之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1426.png"
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 1138,
+            "equipName": "强者破军",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1138.png"
+          },
+          {
+            "equipId": 1131,
+            "equipName": "碎星锤",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1131.png"
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          }
+        ],
+        "frequency": 2.27,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 1426,
+            "equipName": "疾步之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1426.png"
+          },
+          {
+            "equipId": 1327,
+            "equipName": "反伤刺甲",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1327.png"
+          },
+          {
+            "equipId": 1131,
+            "equipName": "碎星锤",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1131.png"
+          },
+          {
+            "equipId": 1138,
+            "equipName": "强者破军",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1138.png"
+          },
+          {
+            "equipId": 1134,
+            "equipName": "宗师之力",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1134.png"
+          }
+        ],
+        "frequency": 1.14,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png"
+          },
+          {
+            "equipId": 1327,
+            "equipName": "反伤刺甲",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1327.png"
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1131,
+            "equipName": "碎星锤",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1131.png"
+          },
+          {
+            "equipId": 1125,
+            "equipName": "破魔刀",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1125.png"
+          }
+        ],
+        "frequency": 1.14,
+        "summonerSkill": {
+          "skillId": 80108,
+          "skillName": "终结",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/1f49f189ef61ea4ef2e2da08e6207956.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1335,
+            "equipName": "魔女斗篷",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1335.png"
+          },
+          {
+            "equipId": 1138,
+            "equipName": "强者破军",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1138.png"
+          },
+          {
+            "equipId": 1131,
+            "equipName": "碎星锤",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1131.png"
+          }
+        ],
+        "frequency": 1.14,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 1426,
+            "equipName": "疾步之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1426.png"
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 1138,
+            "equipName": "强者破军",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1138.png"
+          },
+          {
+            "equipId": 1131,
+            "equipName": "碎星锤",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1131.png"
+          },
+          {
+            "equipId": 1341,
+            "equipName": "冰霜冲击",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png"
+          }
+        ],
+        "frequency": 1.14,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 1426,
+            "equipName": "疾步之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1426.png"
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 1327,
+            "equipName": "反伤刺甲",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1327.png"
+          },
+          {
+            "equipId": 1138,
+            "equipName": "强者破军",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1138.png"
+          },
+          {
+            "equipId": 1131,
+            "equipName": "碎星锤",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1131.png"
+          }
+        ],
+        "frequency": 1.14,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 1127,
+            "equipName": "名刀·司命",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1127.png"
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 1328,
+            "equipName": "血魔之怒",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1328.png"
+          },
+          {
+            "equipId": 1131,
+            "equipName": "碎星锤",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1131.png"
+          },
+          {
+            "equipId": 1138,
+            "equipName": "强者破军",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1138.png"
+          }
+        ],
+        "frequency": 1.14,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png"
+          },
+          {
+            "equipId": 1137,
+            "equipName": "暗影战斧",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png"
+          },
+          {
+            "equipId": 1127,
+            "equipName": "名刀·司命",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1127.png"
+          },
+          {
+            "equipId": 1138,
+            "equipName": "强者破军",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1138.png"
+          },
+          {
+            "equipId": 1131,
+            "equipName": "碎星锤",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1131.png"
+          }
+        ],
+        "frequency": 1.14,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      }
+    ],
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1137,
+        "equipmentName": "暗影战斧",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1137.png",
+        "pickRate": 99.16,
+        "winRate": 48.89
+      },
+      {
+        "equipmentId": 1533,
+        "equipmentName": "贪婪之噬",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png",
+        "pickRate": 77.87,
+        "winRate": 49.67
+      },
+      {
+        "equipmentId": 1138,
+        "equipmentName": "强者破军",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1138.png",
+        "pickRate": 54.39,
+        "winRate": 57.14
+      },
+      {
+        "equipmentId": 1426,
+        "equipmentName": "疾步之靴",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1426.png",
+        "pickRate": 50.51,
+        "winRate": 44.82
+      },
+      {
+        "equipmentId": 1131,
+        "equipmentName": "碎星锤",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1131.png",
+        "pickRate": 33.95,
+        "winRate": 58.71
+      },
+      {
+        "equipmentId": 1327,
+        "equipmentName": "反伤刺甲",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1327.png",
+        "pickRate": 27.53,
+        "winRate": 52.76
+      },
+      {
+        "equipmentId": 11311,
+        "equipmentName": "纯净苍穹",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png",
+        "pickRate": 26.35,
+        "winRate": 62.82
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+        "pickRate": 24.16,
+        "winRate": 55.94
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png",
+        "pickRate": 14.53,
+        "winRate": 56.98
+      },
+      {
+        "equipmentId": 1127,
+        "equipmentName": "名刀·司命",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1127.png",
+        "pickRate": 8.45,
+        "winRate": 60
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-24&heroId=537",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-24",
+    "heroId": 537
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:16:58.277Z",
+  "rawSha256": "0a4269ad195c754790b0c69a7757d9e3dc74461932e3edcdf588be37f6f423f9",
+  "cache": "fresh",
+  "data": {
+    "heroId": 537,
+    "queryDate": "2026-10-24",
+    "skinDistribution": [
+      {
+        "skinName": "愿照·山河定",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/6b51d1ed5351d10bf80430e085aa5f74.jpg",
+        "pickRate": 54.16
+      },
+      {
+        "skinName": "启蛰",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/73979632957108bc53f8e26d8da25f3c.jpg",
+        "pickRate": 42.77
+      },
+      {
+        "skinName": "地狱燃心",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/0f403c466f18663a98a817643045a67f.jpg",
+        "pickRate": 3.02
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/44cc658c2168372b5aea0c9325f35359.png",
+        "pickRate": 0.05
+      }
+    ]
+  }
+}

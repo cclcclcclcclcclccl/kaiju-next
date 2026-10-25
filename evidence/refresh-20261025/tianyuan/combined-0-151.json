@@ -1,0 +1,49 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-10-24&heroId=151",
+  "query": {
+    "kind": "combined",
+    "date": "2026-10-24",
+    "heroId": 151
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:11:00.041Z",
+  "rawSha256": "8956cd0bf1daa11c27b593b168748db2fc7a2235482eae130541adb15bd96816",
+  "cache": "fresh",
+  "data": {
+    "heroId": 151,
+    "positions": {
+      "2": {
+        "pickRate": 100,
+        "winRate": 48
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "闪现",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png",
+        "pickRate": 58.15,
+        "winRate": 50.83
+      },
+      {
+        "skillName": "弱化",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/73db63c0dd9597d963ee2386b3b91002.png",
+        "pickRate": 21.74,
+        "winRate": 45.72
+      },
+      {
+        "skillName": "雾行千山",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/adb44ab57875ca4d8f9a0d931d0abda9.png",
+        "pickRate": 15.76,
+        "winRate": 47.7
+      },
+      {
+        "skillName": "净化",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/d42fcfdf7e4d6b7f1ba46e0faed9b64e.png",
+        "pickRate": 4.35,
+        "winRate": 50.64
+      }
+    ]
+  }
+}

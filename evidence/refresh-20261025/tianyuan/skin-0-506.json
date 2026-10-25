@@ -1,0 +1,35 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-24&heroId=506",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-24",
+    "heroId": 506
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:14:57.402Z",
+  "rawSha256": "44ba795bbf87cfc00e7fcb47cd967e6ab2f4f3a4df289b07442b4ba07929b37d",
+  "cache": "fresh",
+  "data": {
+    "heroId": 506,
+    "queryDate": "2026-10-24",
+    "skinDistribution": [
+      {
+        "skinName": "时之祈愿",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/3d9fbcc66dca53bd261deb931b6270e9.jpg",
+        "pickRate": 71.95
+      },
+      {
+        "skinName": "荷鲁斯之眼",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/4122ddb96fb13037bf5763d3bde32a9f.jpg",
+        "pickRate": 20.36
+      },
+      {
+        "skinName": "群星魔术团",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/50374557832cd071702fb03f73bb5e48.jpg",
+        "pickRate": 7.69
+      }
+    ]
+  }
+}

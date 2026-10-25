@@ -1,0 +1,60 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-24&heroId=183",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-24",
+    "heroId": 183
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:13:06.387Z",
+  "rawSha256": "03ce029496cb3725b7c7d7e6f9d7802483f51169415f1c8b0e7d6627e40e99a7",
+  "cache": "fresh",
+  "data": {
+    "heroId": 183,
+    "queryDate": "2026-10-24",
+    "skinDistribution": [
+      {
+        "skinName": "冰冠公主",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/6f7520a17cb91a989b66e1a13db2d1bd.jpg",
+        "pickRate": 35.95
+      },
+      {
+        "skinName": "神奇女侠",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/f5972ecffabf87f47c209697a95b6d51.jpg",
+        "pickRate": 33.79
+      },
+      {
+        "skinName": "战争女神",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/ae3ff71a25aaa1a37425efa14631f5da.jpg",
+        "pickRate": 18.27
+      },
+      {
+        "skinName": "单词大作战",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/ac576978ba912b9950a466d264cf3333.jpg",
+        "pickRate": 4.91
+      },
+      {
+        "skinName": "执弈定局",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/edb314de06e35f59f8a7e96bcbe4bf32.jpg",
+        "pickRate": 2.95
+      },
+      {
+        "skinName": "潮玩士官长",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/9fd160230e63bf36a93ebf144a12d082.jpg",
+        "pickRate": 2.36
+      },
+      {
+        "skinName": "黎明之约",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/fa5851239645a83f39b360d219af2192.jpg",
+        "pickRate": 1.57
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/38ef965b650a7d05b792662d16c02e5b.png",
+        "pickRate": 0.2
+      }
+    ]
+  }
+}

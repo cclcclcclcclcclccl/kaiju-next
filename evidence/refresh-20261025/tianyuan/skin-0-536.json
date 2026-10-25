@@ -1,0 +1,30 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-10-24&heroId=536",
+  "query": {
+    "kind": "skin",
+    "date": "2026-10-24",
+    "heroId": 536
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:16:53.237Z",
+  "rawSha256": "02c74649b1a7a0bb86af9853d9b6dfdd32335d97053053cebd24cda020b3be61",
+  "cache": "fresh",
+  "data": {
+    "heroId": 536,
+    "queryDate": "2026-10-24",
+    "skinDistribution": [
+      {
+        "skinName": "浮生妄",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/c09dfa6cb0a6ba4cea7c70ab6ad77ed5.jpg",
+        "pickRate": 89.47
+      },
+      {
+        "skinName": "永昼",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/ba766b012281c42d48e5dd0b4a904761.jpg",
+        "pickRate": 10.53
+      }
+    ]
+  }
+}

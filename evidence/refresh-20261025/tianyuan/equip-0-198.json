@@ -1,0 +1,802 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-10-24&heroId=198",
+  "query": {
+    "kind": "equip",
+    "date": "2026-10-24",
+    "heroId": 198
+  },
+  "requestedDate": "2026-10-24",
+  "fetchedAt": "2026-10-25T13:14:20.061Z",
+  "rawSha256": "0ba16d602a00e7f4d068f7dae33b776df65adab190823b0e9ba076e458cdd8aa",
+  "cache": "fresh",
+  "data": {
+    "heroId": 198,
+    "queryEndDate": "2026-10-24T16:59:59.999Z",
+    "topItemsBySlot": [
+      {
+        "slot": 1,
+        "baseWinRate": 51.27,
+        "topItems": [
+          {
+            "equipId": 1128,
+            "equipName": "寒霜袭侵",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png",
+            "pickRate": 36.43,
+            "winRate": 53.28,
+            "deltaWinRate": 2.01
+          },
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png",
+            "pickRate": 36.43,
+            "winRate": 54.89,
+            "deltaWinRate": 3.62
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+            "pickRate": 20.93,
+            "winRate": 45.62,
+            "deltaWinRate": -5.65
+          },
+          {
+            "equipId": 1425,
+            "equipName": "急速战靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1425.png",
+            "pickRate": 2.33,
+            "winRate": null,
+            "deltaWinRate": null
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "baseWinRate": 51.37,
+        "topItems": [
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+            "pickRate": 55.81,
+            "winRate": 53.73,
+            "deltaWinRate": 2.36
+          },
+          {
+            "equipId": 1128,
+            "equipName": "寒霜袭侵",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png",
+            "pickRate": 15.5,
+            "winRate": 47.54,
+            "deltaWinRate": -3.83
+          },
+          {
+            "equipId": 1425,
+            "equipName": "急速战靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1425.png",
+            "pickRate": 5.43,
+            "winRate": 60.97,
+            "deltaWinRate": 9.6
+          },
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png",
+            "pickRate": 3.1,
+            "winRate": null,
+            "deltaWinRate": null
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "baseWinRate": 53.32,
+        "topItems": [
+          {
+            "equipId": 1136,
+            "equipName": "影刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1136.png",
+            "pickRate": 26.61,
+            "winRate": 56.21,
+            "deltaWinRate": 2.89
+          },
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png",
+            "pickRate": 26.61,
+            "winRate": 64.25,
+            "deltaWinRate": 10.93
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png",
+            "pickRate": 18.55,
+            "winRate": 41.21,
+            "deltaWinRate": -12.11
+          },
+          {
+            "equipId": 1128,
+            "equipName": "寒霜袭侵",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png",
+            "pickRate": 11.29,
+            "winRate": 54.57,
+            "deltaWinRate": 1.25
+          }
+        ]
+      },
+      {
+        "slot": 4,
+        "baseWinRate": 59.79,
+        "topItems": [
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png",
+            "pickRate": 23.76,
+            "winRate": 61.09,
+            "deltaWinRate": 1.3
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png",
+            "pickRate": 23.76,
+            "winRate": 60.87,
+            "deltaWinRate": 1.08
+          },
+          {
+            "equipId": 1128,
+            "equipName": "寒霜袭侵",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png",
+            "pickRate": 19.8,
+            "winRate": 58.84,
+            "deltaWinRate": -0.95
+          },
+          {
+            "equipId": 1341,
+            "equipName": "冰霜冲击",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png",
+            "pickRate": 8.91,
+            "winRate": 56.61,
+            "deltaWinRate": -3.18
+          }
+        ]
+      },
+      {
+        "slot": 5,
+        "baseWinRate": 66.57,
+        "topItems": [
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png",
+            "pickRate": 29.09,
+            "winRate": 67.81,
+            "deltaWinRate": 1.24
+          },
+          {
+            "equipId": 11210,
+            "equipName": "制裁之刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11210.png",
+            "pickRate": 21.82,
+            "winRate": 66.56,
+            "deltaWinRate": -0.01
+          },
+          {
+            "equipId": 1534,
+            "equipName": "怒龙剑盾",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1534.png",
+            "pickRate": 10.91,
+            "winRate": 65.66,
+            "deltaWinRate": -0.91
+          },
+          {
+            "equipId": 1341,
+            "equipName": "冰霜冲击",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png",
+            "pickRate": 9.09,
+            "winRate": 67.16,
+            "deltaWinRate": 0.59
+          }
+        ]
+      },
+      {
+        "slot": 6,
+        "baseWinRate": 68.83,
+        "topItems": [
+          {
+            "equipId": 1126,
+            "equipName": "末世",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1126.png",
+            "pickRate": 31.58,
+            "winRate": 75.1,
+            "deltaWinRate": 6.27
+          },
+          {
+            "equipId": 1125,
+            "equipName": "破魔刀",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1125.png",
+            "pickRate": 21.05,
+            "winRate": 70.08,
+            "deltaWinRate": 1.25
+          },
+          {
+            "equipId": 1128,
+            "equipName": "寒霜袭侵",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png",
+            "pickRate": 5.26,
+            "winRate": 67.65,
+            "deltaWinRate": -1.18
+          },
+          {
+            "equipId": 1134,
+            "equipName": "宗师之力",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1134.png",
+            "pickRate": 5.26,
+            "winRate": 67.74,
+            "deltaWinRate": -1.09
+          }
+        ]
+      }
+    ],
+    "topFullBuilds": [
+      {
+        "build": [
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1136,
+            "equipName": "影刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1136.png"
+          },
+          {
+            "equipId": 1128,
+            "equipName": "寒霜袭侵",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png"
+          },
+          {
+            "equipId": 1126,
+            "equipName": "末世",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1126.png"
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          }
+        ],
+        "frequency": 2.33,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1128,
+            "equipName": "寒霜袭侵",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1125,
+            "equipName": "破魔刀",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1125.png"
+          }
+        ],
+        "frequency": 1.55,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 1127,
+            "equipName": "名刀·司命",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1127.png"
+          },
+          {
+            "equipId": 1128,
+            "equipName": "寒霜袭侵",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png"
+          },
+          {
+            "equipId": 1136,
+            "equipName": "影刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1136.png"
+          },
+          {
+            "equipId": 1126,
+            "equipName": "末世",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1126.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          }
+        ],
+        "frequency": 0.78,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1136,
+            "equipName": "影刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1136.png"
+          },
+          {
+            "equipId": 1128,
+            "equipName": "寒霜袭侵",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png"
+          },
+          {
+            "equipId": 1157,
+            "equipName": "不动·天穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1157.png"
+          },
+          {
+            "equipId": 1126,
+            "equipName": "末世",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1126.png"
+          }
+        ],
+        "frequency": 0.78,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1128,
+            "equipName": "寒霜袭侵",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 1341,
+            "equipName": "冰霜冲击",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png"
+          },
+          {
+            "equipId": 1126,
+            "equipName": "末世",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1126.png"
+          }
+        ],
+        "frequency": 0.78,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1128,
+            "equipName": "寒霜袭侵",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png"
+          },
+          {
+            "equipId": 1127,
+            "equipName": "名刀·司命",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1127.png"
+          },
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 1136,
+            "equipName": "影刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1136.png"
+          },
+          {
+            "equipId": 11210,
+            "equipName": "制裁之刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11210.png"
+          },
+          {
+            "equipId": 1134,
+            "equipName": "宗师之力",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1134.png"
+          }
+        ],
+        "frequency": 0.78,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1128,
+            "equipName": "寒霜袭侵",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 1341,
+            "equipName": "冰霜冲击",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png"
+          },
+          {
+            "equipId": 1327,
+            "equipName": "反伤刺甲",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1327.png"
+          }
+        ],
+        "frequency": 0.78,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1532,
+            "equipName": "巨人之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1532.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 1341,
+            "equipName": "冰霜冲击",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png"
+          },
+          {
+            "equipId": 1128,
+            "equipName": "寒霜袭侵",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png"
+          },
+          {
+            "equipId": 1332,
+            "equipName": "霸者重装",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1332.png"
+          }
+        ],
+        "frequency": 0.78,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1128,
+            "equipName": "寒霜袭侵",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1341,
+            "equipName": "冰霜冲击",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png"
+          }
+        ],
+        "frequency": 0.78,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1128,
+            "equipName": "寒霜袭侵",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png"
+          },
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png"
+          },
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1125,
+            "equipName": "破魔刀",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1125.png"
+          }
+        ],
+        "frequency": 0.78,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1128,
+            "equipName": "寒霜袭侵",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 11311,
+            "equipName": "纯净苍穹",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png"
+          },
+          {
+            "equipId": 1534,
+            "equipName": "怒龙剑盾",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1534.png"
+          },
+          {
+            "equipId": 1351,
+            "equipName": "徐行·凛冬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1351.png"
+          }
+        ],
+        "frequency": 0.78,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1533,
+            "equipName": "贪婪之噬",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png"
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1128,
+            "equipName": "寒霜袭侵",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png"
+          },
+          {
+            "equipId": 13310,
+            "equipName": "冰痕之握",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png"
+          },
+          {
+            "equipId": 11210,
+            "equipName": "制裁之刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11210.png"
+          },
+          {
+            "equipId": 1125,
+            "equipName": "破魔刀",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1125.png"
+          }
+        ],
+        "frequency": 0.78,
+        "summonerSkill": {
+          "skillId": 80104,
+          "skillName": "惩击",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png"
+        }
+      }
+    ],
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1128,
+        "equipmentName": "寒霜袭侵",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1128.png",
+        "pickRate": 85.53,
+        "winRate": 54.18
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+        "pickRate": 83.18,
+        "winRate": 48.93
+      },
+      {
+        "equipmentId": 1533,
+        "equipmentName": "贪婪之噬",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1533.png",
+        "pickRate": 65.23,
+        "winRate": 58.07
+      },
+      {
+        "equipmentId": 11311,
+        "equipmentName": "纯净苍穹",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11311.png",
+        "pickRate": 48.31,
+        "winRate": 56.03
+      },
+      {
+        "equipmentId": 1136,
+        "equipmentName": "影刃",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1136.png",
+        "pickRate": 25.19,
+        "winRate": 56.34
+      },
+      {
+        "equipmentId": 13310,
+        "equipmentName": "冰痕之握",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/13310.png",
+        "pickRate": 24.06,
+        "winRate": 55.47
+      },
+      {
+        "equipmentId": 1534,
+        "equipmentName": "怒龙剑盾",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1534.png",
+        "pickRate": 18.33,
+        "winRate": 65.13
+      },
+      {
+        "equipmentId": 1341,
+        "equipmentName": "冰霜冲击",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1341.png",
+        "pickRate": 16.54,
+        "winRate": 58.52
+      },
+      {
+        "equipmentId": 11210,
+        "equipmentName": "制裁之刃",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11210.png",
+        "pickRate": 15.04,
+        "winRate": 56.88
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png",
+        "pickRate": 6.39,
+        "winRate": 54.41
+      }
+    ]
+  }
+}

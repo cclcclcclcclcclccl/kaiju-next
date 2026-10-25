@@ -4,6 +4,19 @@ import assert from 'node:assert/strict';
 const root = 'dist-review';
 const manifest = JSON.parse(await readFile(root + '/review-data/manifest.json', 'utf8'));
 assert.equal(manifest.format, 'zizai-public-review-v1');
+const heroIds = JSON.parse(await readFile('src/player/data/heroes.json', 'utf8')).heroes.map(
+  (h) => h.id,
+);
+assert.equal(manifest.heroCount, heroIds.length);
+assert.ok(manifest.completeDates.includes(manifest.defaultDate));
+const date = manifest.defaultDate;
+for (const mode of [1, 3, 4, 5]) assert.ok(manifest.entries[`/tianyuan/stats-${date}-${mode}-0`]);
+assert.ok(manifest.entries[`/tianyuan/tier-${date}-0-0`]);
+for (const id of heroIds)
+  for (const kind of ['skin', 'equip', 'combined', 'analysis', 'duration']) {
+    const day = ['analysis', 'duration'].includes(kind) ? 'undated' : date;
+    assert.ok(manifest.entries[`/tianyuan/${kind}-${day}-0-${id}`], `Missing ${kind} for ${id}`);
+  }
 const forbidden = ['workspace', 'personal', 'account', 'password', 'token'];
 for (const [key, entry] of Object.entries(manifest.entries)) {
   assert.ok(!forbidden.some((word) => key.includes(word)));

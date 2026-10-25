@@ -131,8 +131,12 @@ export default function ProfilePage({ focusHeroId }: { focusHeroId?: number }) {
       <div className="page-heading">
         <div>
           <p className="eyebrow">PLAYER PROFILE / YOUR REAL COMFORT ZONE</p>
-          <h1>几张截图，认识你的英雄池。</h1>
-          <p>从常玩的英雄开始。识别、核对、保存，不必先填一整张表。</p>
+          <h1>{reviewMode ? '从常玩的英雄，建立你的档案。' : '几张截图，认识你的英雄池。'}</h1>
+          <p>
+            {reviewMode
+              ? '手动补录或导入自己的记录，保存后用于个性化备战。'
+              : '从常玩的英雄开始。识别、核对、保存，不必先填一整张表。'}
+          </p>
         </div>
         <button className="btn primary" disabled={busy} onClick={save}>
           <Save size={16} />
@@ -140,8 +144,10 @@ export default function ProfilePage({ focusHeroId }: { focusHeroId?: number }) {
         </button>
       </div>
       <div className="pro-notice">
-        优先上传截图建立档案；手动补录与文件导入在下方折叠区。游戏账号自动同步尚未接通，核对后的记录直接用于英雄池、推荐、BP
-        和体系适配。
+        {reviewMode
+          ? '固定在线版未部署截图识别服务。请在下方手动补录或导入文件；记录只保存到当前浏览器。'
+          : '优先上传截图建立档案；手动补录与文件导入在下方折叠区。'}
+        游戏账号自动同步尚未接通，核对后的记录直接用于英雄池、推荐、BP 和体系适配。
       </div>
       {draftNotice && <p className="pro-notice">{draftNotice}</p>}
       <div className="detail-actions">
