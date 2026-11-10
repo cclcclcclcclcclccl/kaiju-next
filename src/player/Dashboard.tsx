@@ -80,9 +80,9 @@ export default function Dashboard({
               打有准备的局。
             </h2>
             <p>
-              从英雄池到阵容，再到下一局的小目标。
+              结合你会的英雄，比较这一手的选择。
               <br />
-              把零散的信息，变成自己的打法。
+              解释选人、摇摆分路和对手的后续应对。
             </p>
             <div className="banner-buttons">
               <button className="btn primary" onClick={() => go('draft')}>
@@ -143,7 +143,7 @@ export default function Dashboard({
             icon: Plus,
             n: '03',
             title: '完善我的英雄池',
-            desc: '导入截图、记录熟练度和打法',
+            desc: '登记常玩英雄，直接用于逐手 BP',
             page: 'pool' as Page,
           },
           {

@@ -34,6 +34,7 @@ export default function CoachLab({
   onOpen: (h: Hero) => void;
 }) {
   const { data } = usePro();
+  const [flexible, setFlexible] = useState(true);
   const [settings, setSettings] = useState<CoachSettings>(defaultSettings),
     [opponentPool, setOpponentPool] = useState<number[]>([]),
     [opponentQuery, setOpponentQuery] = useState('');
@@ -69,6 +70,7 @@ export default function CoachLab({
     data.snapshots,
     settings,
     assignments,
+    flexible,
     opponentPool,
     social,
   ]);
@@ -120,6 +122,7 @@ export default function CoachLab({
         settings,
         members,
         opponentPool,
+        ...(flexible ? { flexibleRoles: { locks: {} } } : {}),
         snapshot: latestSnapshot(data.snapshots, draft.segment ?? '大众分段'),
       };
       const instance = new Worker(new URL('./coach.worker.ts', import.meta.url), {
@@ -282,6 +285,14 @@ export default function CoachLab({
         <label className="check-control">
           <input
             type="checkbox"
+            checked={flexible}
+            onChange={(e) => setFlexible(e.target.checked)}
+          />
+          随后续选人自动调整分路（同时检查成员英雄池）
+        </label>
+        <label className="check-control">
+          <input
+            type="checkbox"
             checked={settings.respectPools}
             onChange={(e) => setSettings({ ...settings, respectPools: e.target.checked })}
           />
@@ -416,7 +427,11 @@ export default function CoachLab({
                   className="btn secondary"
                   onClick={() => {
                     try {
-                      onChange(applyCoachMove(draft, candidate.move));
+                      onChange(
+                        candidate.move.kind === 'pick' && candidate.lineup
+                          ? { ...draft, [candidate.move.team]: candidate.lineup }
+                          : applyCoachMove(draft, candidate.move),
+                      );
                     } catch (e) {
                       setError((e as Error).message);
                     }

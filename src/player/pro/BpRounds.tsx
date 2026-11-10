@@ -17,9 +17,27 @@ import {
   undoSession,
 } from './bpSession.ts';
 import type { BpSession } from './bpSession.ts';
-import type { CoachResult } from './coach.ts';
+import type { CoachResult, CoachInput } from './coach.ts';
+import { usePro } from './context.tsx';
+import { effectivePool, latestSnapshot } from './analytics.ts';
+import { assignRoster } from './rosterFlex.ts';
+import TurnAdvice from './TurnAdvice.tsx';
 export { BP_ROUNDS, bpStep } from './bpSession.ts';
 const STORAGE = 'kaiju.bp.rehearsal.v1';
+const PREFERENCES = 'zizai.bp.preferences.v1';
+function preferences() {
+  try {
+    const p = JSON.parse(localStorage.getItem(PREFERENCES) ?? 'null');
+    if (
+      p &&
+      typeof p.enabled === 'boolean' &&
+      ROLES.includes(p.role) &&
+      ['allies', 'enemies'].includes(p.team)
+    )
+      return p as { enabled: boolean; role: Role; team: 'allies' | 'enemies' };
+  } catch {}
+  return null;
+}
 function restore() {
   try {
     const raw = localStorage.getItem(STORAGE);
@@ -40,6 +58,13 @@ export default function BpRounds({
   onChange: (d: Draft) => void;
   series?: { seed: BpSession; onSession: (session: BpSession) => void };
 }) {
+  const { data } = usePro();
+  const [savedPreferences] = useState(preferences);
+  const [personalize, setPersonalize] = useState(savedPreferences?.enabled ?? true);
+  const [playerRole, setPlayerRole] = useState<Role>(savedPreferences?.role ?? draft.role);
+  const [manualTeam, setManualTeam] = useState<'allies' | 'enemies'>(
+    savedPreferences?.team ?? 'allies',
+  );
   const [initial] = useState(() => (series ? { session: series.seed, error: '' } : restore()));
   const [session, setSession] = useState<BpSession | null>(initial.session);
   const [format, setFormat] = useState<BpSession['format']>(initial.session?.format ?? 'staged');
@@ -53,28 +78,101 @@ export default function BpRounds({
     [busy, setBusy] = useState(false);
   const [result, setResult] = useState<CoachResult | null>(null);
   const [clockEpoch, setClockEpoch] = useState(0);
+  useEffect(() => {
+    try {
+      localStorage.setItem(
+        PREFERENCES,
+        JSON.stringify({ enabled: personalize, role: playerRole, team: manualTeam }),
+      );
+    } catch {
+      setStorageError('个人BP设置未能写入浏览器，请导出记录。');
+    }
+  }, [personalize, playerRole, manualTeam]);
   const rounds = roundsFor(session?.format ?? format);
   const count = session?.moves.length ?? 0,
     turn = session ? rounds[count] : undefined;
-  const position = useMemo(
+  const rawPosition = useMemo(
     () => replaySession(session ?? { version: 1, format, mode, moves: [] }, draft),
     [session, draft, format, mode],
   );
+  const personalPool = effectivePool(draft.pool, data.profile);
+  const playerTeam = mode === 'red' ? 'enemies' : mode === 'blue' ? 'allies' : manualTeam;
+  const sideMembers: CoachInput['sideMembers'] =
+    personalize && personalPool.length
+      ? {
+          [playerTeam]: {
+            [playerRole]: {
+              id: 'self',
+              name: data.profile.name === '我的档案' ? '我自己' : data.profile.name,
+              pool: draft.pool,
+              profile: data.profile,
+            },
+          },
+        }
+      : {};
+  const inferenceState = useMemo(() => {
+    if (!session) return { position: rawPosition, inferences: undefined, issue: '' };
+    const inferences = {
+      allies: sessionInference(session, 'allies'),
+      enemies: sessionInference(session, 'enemies'),
+    };
+    let issue = '';
+    for (const team of ['allies', 'enemies'] as const) {
+      if (!sideMembers[team]) continue;
+      try {
+        inferences[team] = assignRoster(
+          Object.values(rawPosition[team]).filter((id): id is number => id !== undefined),
+          heroes,
+          session.locks ?? {},
+          {
+            members: sideMembers[team]!,
+            respectPools: true,
+            blocked: [
+              ...rawPosition.banned,
+              ...Object.values(rawPosition[team === 'allies' ? 'enemies' : 'allies']),
+              ...(session.unavailable?.[team] ?? []),
+            ].filter((id): id is number => id !== undefined),
+          },
+        );
+      } catch (e) {
+        issue = (e as Error).message;
+      }
+    }
+    return {
+      position: {
+        ...rawPosition,
+        allies: inferences.allies.lineup,
+        enemies: inferences.enemies.lineup,
+      },
+      inferences,
+      issue,
+    };
+  }, [session, rawPosition, JSON.stringify(sideMembers)]);
+  const { position, inferences } = inferenceState;
   const used = [
     ...Object.values(position.allies),
     ...Object.values(position.enemies),
     ...position.banned,
   ];
-  const inferences = useMemo(
-    () =>
-      session
-        ? {
-            allies: sessionInference(session, 'allies'),
-            enemies: sessionInference(session, 'enemies'),
-          }
-        : undefined,
-    [session],
-  );
+  const coachInput: CoachInput = {
+    draft: position,
+    settings: {
+      depth: 4,
+      width: 6,
+      strategy: 'robust',
+      firstPick: 'allies',
+      nextSide: turn?.team ?? 'allies',
+      action: turn?.kind ?? 'pick',
+      respectPools: personalize,
+    },
+    members: {},
+    sideMembers,
+    opponentPool: [],
+    sequence: rounds.slice(count),
+    flexibleRoles: { locks: session?.locks ?? {} },
+    unavailableHeroes: session?.unavailable,
+    snapshot: latestSnapshot(data.snapshots, draft.segment ?? '大众分段'),
+  };
   const aiTurn =
     !!turn &&
     ((mode === 'blue' && turn.team === 'enemies') || (mode === 'red' && turn.team === 'allies'));
@@ -145,32 +243,13 @@ export default function BpRounds({
         setError('AI 线程未能完成，请重试或手动接管。');
       }
     };
-    instance.postMessage({
-      heroes,
-      input: {
-        draft: position,
-        settings: {
-          depth: 4,
-          width: 6,
-          strategy: 'robust',
-          firstPick: 'allies',
-          nextSide: turn.team,
-          action: turn.kind,
-          respectPools: false,
-        },
-        members: {},
-        opponentPool: [],
-        sequence: rounds.slice(count),
-        flexibleRoles: { locks: session.locks ?? {} },
-        unavailableHeroes: session.unavailable,
-      },
-    });
+    instance.postMessage({ heroes, input: coachInput });
     return () => {
       active = false;
       clearTimeout(timer);
       instance.terminate();
     };
-  }, [session, mode, paused]);
+  }, [session, mode, paused, JSON.stringify(coachInput)]);
   const begin = () => {
     setClockEpoch((n) => n + 1);
     setSession({
@@ -297,6 +376,63 @@ export default function BpRounds({
           </button>
         )}
       </div>
+      <div className="pro-toolbar" aria-label="个人英雄池设置">
+        <label>
+          <input
+            type="checkbox"
+            checked={personalize}
+            disabled={!personalPool.length}
+            onChange={(e) => {
+              setPaused(true);
+              setResult(null);
+              setPersonalize(e.target.checked);
+            }}
+          />
+          结合我的英雄池
+        </label>
+        {mode === 'manual' && (
+          <label>
+            我的一方
+            <select
+              aria-label="我的一方"
+              value={manualTeam}
+              onChange={(e) => {
+                setPaused(true);
+                setManualTeam(e.target.value as typeof manualTeam);
+              }}
+            >
+              <option value="allies">蓝方</option>
+              <option value="enemies">红方</option>
+            </select>
+          </label>
+        )}
+        <label>
+          我的分路
+          <select
+            aria-label="我的分路"
+            value={playerRole}
+            onChange={(e) => {
+              setPaused(true);
+              setResult(null);
+              setPlayerRole(e.target.value as Role);
+            }}
+          >
+            {ROLES.map((r) => (
+              <option key={r}>{r}</option>
+            ))}
+          </select>
+        </label>
+        <span className="data-caption">
+          {personalPool.length
+            ? `已读取 ${personalPool.length} 位英雄；${playerTeam === 'allies' ? '蓝方' : '红方'}${playerRole}使用你的记录，其他成员按未知处理。`
+            : '尚未登记英雄池，可先在“我的英雄池”添加常玩英雄；当前按未知水平分析。'}
+        </span>
+      </div>
+      {inferenceState.issue && (
+        <p role="alert" className="pro-notice">
+          {inferenceState.issue}
+        </p>
+      )}
       <BpTimer
         turnKey={`${clockEpoch}:${session?.format}:${count}`}
         active={!!turn}
@@ -323,6 +459,16 @@ export default function BpRounds({
         每一手只选英雄，双方可优先选任意分路。系统随本方后续选人重新推断位置；“仍可摇摆”不等于已确定分路。下方可手动锁定分路；选择已占用的位置会交换两位英雄并同时锁定。调整后
         AI 暂停，确认后继续。
       </p>
+      {session && turn && (
+        <TurnAdvice
+          input={coachInput}
+          disabled={!canManual || busy}
+          onChoose={(id) => {
+            setChosen(String(id));
+            setError('');
+          }}
+        />
+      )}
       <div className="bp-board">
         {(['allies', 'enemies'] as const).map((team) => (
           <section
