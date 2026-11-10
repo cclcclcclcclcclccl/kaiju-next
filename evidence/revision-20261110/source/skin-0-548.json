@@ -1,0 +1,40 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=548",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 548
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:38:28.538Z",
+  "rawSha256": "3ba0a58e3ae32ffc6db851173e94d9c50115464432fdcb36be43b568a7c79926",
+  "cache": "fresh",
+  "data": {
+    "heroId": 548,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "危途狂花",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/aee39c3a031145302d942267595c9bbe.jpg",
+        "pickRate": 87.5
+      },
+      {
+        "skinName": "驭风魔法",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/38099fa80ae96c3ef481a72c6cd4eb5b.jpg",
+        "pickRate": 6.28
+      },
+      {
+        "skinName": "玫蓝誓约",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/0fbb286166ace31c4522bd5fe47d68a7.jpg",
+        "pickRate": 5.9
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/8cbae1fbbeb9736fea5cc29e10be7b23.png",
+        "pickRate": 0.33
+      }
+    ]
+  }
+}

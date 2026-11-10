@@ -1,0 +1,51 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-11-09&heroId=199",
+  "query": {
+    "kind": "combined",
+    "date": "2026-11-09",
+    "heroId": 199
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:35:20.721Z",
+  "rawSha256": "cf7b1e00d466b8a0aef2c6ee7dd0250aeeb7638291ea2ad26c106ff574f1ae1c",
+  "cache": "fresh",
+  "data": {
+    "heroId": 199,
+    "positions": {
+      "0": {
+        "pickRate": 0.7,
+        "winRate": 60
+      },
+      "1": {
+        "pickRate": 0.7,
+        "winRate": 70
+      },
+      "2": {
+        "pickRate": 98.6,
+        "winRate": 51.15
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "狂暴",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/d3c417e460de2ad52d778459c50f402f.png",
+        "pickRate": 97.55,
+        "winRate": 50.96
+      },
+      {
+        "skillName": "传送",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/32eca3de9de9a92d93e036b2e2c29f25.png",
+        "pickRate": 1.4,
+        "winRate": 55.1
+      },
+      {
+        "skillName": "闪现",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png",
+        "pickRate": 1.05,
+        "winRate": 53.49
+      }
+    ]
+  }
+}

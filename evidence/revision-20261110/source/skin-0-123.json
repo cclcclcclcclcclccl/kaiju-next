@@ -1,0 +1,85 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=123",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 123
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:29:43.696Z",
+  "rawSha256": "0a372c14cfce80da6ecff8fa1a29fcc4f547811fcfd60a7dc3a761fb985a4a79",
+  "cache": "fresh",
+  "data": {
+    "heroId": 123,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "千魇归渊",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/cca820194ab11d92791cc749e0637302.jpg",
+        "pickRate": 26.89
+      },
+      {
+        "skinName": "怒海麟威",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/42bc9224a61e0d49893b33b1a053c88d.jpg",
+        "pickRate": 18.94
+      },
+      {
+        "skinName": "圣诞狂欢",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/eb5ae83f75dc89edcdc43a86db414ffb.jpg",
+        "pickRate": 15.15
+      },
+      {
+        "skinName": "末日机甲",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/9be845220418adae045e5620a1358864.jpg",
+        "pickRate": 12.88
+      },
+      {
+        "skinName": "遇见神鼓",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/fc0f2492020eb4a30c33b9e96e10d52f.jpg",
+        "pickRate": 10.98
+      },
+      {
+        "skinName": "天魔缭乱",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/de0a2f3017d39f340aaef7e8f4997fb3.jpg",
+        "pickRate": 4.17
+      },
+      {
+        "skinName": "御风骁将",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/112db50469ce5ba75bfab5dd3ed6b98b.jpg",
+        "pickRate": 3.41
+      },
+      {
+        "skinName": "野性能量",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/c49a756940ffded0b9bf515111aa337b.jpg",
+        "pickRate": 2.27
+      },
+      {
+        "skinName": "曦玄引",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/3789d707981f4ce088261b2cbbbc57bc.jpg",
+        "pickRate": 1.89
+      },
+      {
+        "skinName": "猎兽之王",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/876213b0a813b2d50800e05ec1162401.jpg",
+        "pickRate": 1.52
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/dafe931fe9bec2cd47748dc2bfca7b01.png",
+        "pickRate": 0.76
+      },
+      {
+        "skinName": "逐霄战戟",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/4e8255b8f45622342b38e04598f443fd.jpg",
+        "pickRate": 0.76
+      },
+      {
+        "skinName": "舞狮寰",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/fc5a0c7b6cc624c5fdb4a280f442b722.jpg",
+        "pickRate": 0.38
+      }
+    ]
+  }
+}

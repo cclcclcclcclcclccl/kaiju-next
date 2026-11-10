@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-10",
+  "version": "0.27.0",
+  "defaultDataDate": "2026-11-09",
+  "archivedQueries": 1675,
+  "sourceQueries": 670,
+  "sourceFailures": 0,
+  "officialScopes": 15,
+  "officialStates": [
+    "cached"
+  ],
+  "coreTests": 126,
+  "spending": 0,
+  "contestSubmittedByAgent": false
+}

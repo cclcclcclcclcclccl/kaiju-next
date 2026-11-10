@@ -1,0 +1,8787 @@
+{
+  "kind": "synthetic-constraint-benchmark",
+  "seed": 20261110,
+  "checkedAt": "2026-11-10T06:30:33.262Z",
+  "cases": 80,
+  "independentOracleAgreements": 80,
+  "feasibleCases": 46,
+  "baselineFeasibleCases": 42,
+  "jointFeasibleCases": 46,
+  "p95Ms": 0.18540000000001555,
+  "maxMs": 1.4532000000000096,
+  "limitations": "Constructed player pools over real catalog eligibility. Independent exhaustive feasibility oracle; not real players, match outcomes, coach labels, calibrated win rate, or proof of professional strength.",
+  "results": [
+    {
+      "id": 0,
+      "ids": [],
+      "blocked": [
+        187,
+        139,
+        533,
+        174,
+        189,
+        166,
+        193,
+        522
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 187,
+              "level": "main"
+            },
+            {
+              "heroId": 139,
+              "level": "main"
+            },
+            {
+              "heroId": 178,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 166,
+              "level": "main"
+            },
+            {
+              "heroId": 193,
+              "level": "main"
+            },
+            {
+              "heroId": 522,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 109,
+              "level": "main"
+            },
+            {
+              "heroId": 179,
+              "level": "main"
+            },
+            {
+              "heroId": 513,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 533,
+              "level": "main"
+            },
+            {
+              "heroId": 112,
+              "level": "main"
+            },
+            {
+              "heroId": 174,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 189,
+              "level": "main"
+            },
+            {
+              "heroId": 175,
+              "level": "main"
+            },
+            {
+              "heroId": 585,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 1.0408999999999935
+    },
+    {
+      "id": 1,
+      "ids": [
+        542
+      ],
+      "blocked": [
+        187
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 536,
+              "level": "main"
+            },
+            {
+              "heroId": 135,
+              "level": "main"
+            },
+            {
+              "heroId": 141,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 195,
+              "level": "main"
+            },
+            {
+              "heroId": 542,
+              "level": "main"
+            },
+            {
+              "heroId": 193,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 156,
+              "level": "main"
+            },
+            {
+              "heroId": 119,
+              "level": "main"
+            },
+            {
+              "heroId": 136,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 584,
+              "level": "main"
+            },
+            {
+              "heroId": 199,
+              "level": "main"
+            },
+            {
+              "heroId": 112,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 505,
+              "level": "main"
+            },
+            {
+              "heroId": 187,
+              "level": "main"
+            },
+            {
+              "heroId": 534,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "打野": 542
+      },
+      "elapsedMs": 0.8429999999999893
+    },
+    {
+      "id": 2,
+      "ids": [
+        124,
+        113
+      ],
+      "blocked": [
+        112
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 140,
+              "level": "main"
+            },
+            {
+              "heroId": 537,
+              "level": "main"
+            },
+            {
+              "heroId": 172,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 528,
+              "level": "main"
+            },
+            {
+              "heroId": 193,
+              "level": "main"
+            },
+            {
+              "heroId": 137,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 582,
+              "level": "main"
+            },
+            {
+              "heroId": 124,
+              "level": "main"
+            },
+            {
+              "heroId": 119,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 524,
+              "level": "main"
+            },
+            {
+              "heroId": 192,
+              "level": "main"
+            },
+            {
+              "heroId": 112,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 108,
+              "level": "main"
+            },
+            {
+              "heroId": 105,
+              "level": "main"
+            },
+            {
+              "heroId": 113,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "中路": 124,
+        "游走": 113
+      },
+      "elapsedMs": 0.22679999999999723
+    },
+    {
+      "id": 3,
+      "ids": [
+        192,
+        584,
+        191
+      ],
+      "blocked": [
+        180,
+        126,
+        156
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 135,
+              "level": "main"
+            },
+            {
+              "heroId": 529,
+              "level": "main"
+            },
+            {
+              "heroId": 180,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 544,
+              "level": "main"
+            },
+            {
+              "heroId": 511,
+              "level": "main"
+            },
+            {
+              "heroId": 126,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 156,
+              "level": "main"
+            },
+            {
+              "heroId": 106,
+              "level": "main"
+            },
+            {
+              "heroId": 157,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 192,
+              "level": "main"
+            },
+            {
+              "heroId": 584,
+              "level": "main"
+            },
+            {
+              "heroId": 508,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 544,
+              "level": "main"
+            },
+            {
+              "heroId": 168,
+              "level": "main"
+            },
+            {
+              "heroId": 191,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.17779999999999063
+    },
+    {
+      "id": 4,
+      "ids": [
+        177,
+        514,
+        137,
+        194
+      ],
+      "blocked": [
+        537,
+        182,
+        159
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 537,
+              "level": "main"
+            },
+            {
+              "heroId": 121,
+              "level": "main"
+            },
+            {
+              "heroId": 514,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 121,
+              "level": "main"
+            },
+            {
+              "heroId": 137,
+              "level": "main"
+            },
+            {
+              "heroId": 515,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 182,
+              "level": "main"
+            },
+            {
+              "heroId": 124,
+              "level": "main"
+            },
+            {
+              "heroId": 521,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 533,
+              "level": "main"
+            },
+            {
+              "heroId": 155,
+              "level": "main"
+            },
+            {
+              "heroId": 177,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 159,
+              "level": "main"
+            },
+            {
+              "heroId": 108,
+              "level": "main"
+            },
+            {
+              "heroId": 194,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "发育路": 177,
+        "对抗路": 514,
+        "打野": 137,
+        "游走": 194
+      },
+      "elapsedMs": 0.18540000000001555
+    },
+    {
+      "id": 5,
+      "ids": [],
+      "blocked": [
+        515,
+        519
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 105,
+              "level": "main"
+            },
+            {
+              "heroId": 517,
+              "level": "main"
+            },
+            {
+              "heroId": 125,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 515,
+              "level": "main"
+            },
+            {
+              "heroId": 180,
+              "level": "main"
+            },
+            {
+              "heroId": 531,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 137,
+              "level": "main"
+            },
+            {
+              "heroId": 157,
+              "level": "main"
+            },
+            {
+              "heroId": 176,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 545,
+              "level": "main"
+            },
+            {
+              "heroId": 519,
+              "level": "main"
+            },
+            {
+              "heroId": 548,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 114,
+              "level": "main"
+            },
+            {
+              "heroId": 189,
+              "level": "main"
+            },
+            {
+              "heroId": 135,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {},
+      "elapsedMs": 0.14990000000000236
+    },
+    {
+      "id": 6,
+      "ids": [
+        131
+      ],
+      "blocked": [
+        534
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 172,
+              "level": "main"
+            },
+            {
+              "heroId": 537,
+              "level": "main"
+            },
+            {
+              "heroId": 121,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 517,
+              "level": "main"
+            },
+            {
+              "heroId": 131,
+              "level": "main"
+            },
+            {
+              "heroId": 195,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 109,
+              "level": "main"
+            },
+            {
+              "heroId": 179,
+              "level": "main"
+            },
+            {
+              "heroId": 124,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 112,
+              "level": "main"
+            },
+            {
+              "heroId": 524,
+              "level": "main"
+            },
+            {
+              "heroId": 545,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 152,
+              "level": "main"
+            },
+            {
+              "heroId": 168,
+              "level": "main"
+            },
+            {
+              "heroId": 534,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "打野": 131
+      },
+      "elapsedMs": 1.4532000000000096
+    },
+    {
+      "id": 7,
+      "ids": [
+        116,
+        536
+      ],
+      "blocked": [
+        162,
+        167
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 128,
+              "level": "main"
+            },
+            {
+              "heroId": 510,
+              "level": "main"
+            },
+            {
+              "heroId": 536,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 162,
+              "level": "main"
+            },
+            {
+              "heroId": 167,
+              "level": "main"
+            },
+            {
+              "heroId": 116,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 136,
+              "level": "main"
+            },
+            {
+              "heroId": 127,
+              "level": "main"
+            },
+            {
+              "heroId": 190,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 545,
+              "level": "main"
+            },
+            {
+              "heroId": 151,
+              "level": "main"
+            },
+            {
+              "heroId": 519,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 184,
+              "level": "main"
+            },
+            {
+              "heroId": 168,
+              "level": "main"
+            },
+            {
+              "heroId": 148,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "打野": 116,
+        "对抗路": 536
+      },
+      "elapsedMs": 0.15450000000001296
+    },
+    {
+      "id": 8,
+      "ids": [
+        139,
+        522,
+        550
+      ],
+      "blocked": [
+        197,
+        133
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 120,
+              "level": "main"
+            },
+            {
+              "heroId": 522,
+              "level": "main"
+            },
+            {
+              "heroId": 139,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 176,
+              "level": "main"
+            },
+            {
+              "heroId": 549,
+              "level": "main"
+            },
+            {
+              "heroId": 515,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 197,
+              "level": "main"
+            },
+            {
+              "heroId": 312,
+              "level": "main"
+            },
+            {
+              "heroId": 137,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 192,
+              "level": "main"
+            },
+            {
+              "heroId": 151,
+              "level": "main"
+            },
+            {
+              "heroId": 133,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 550,
+              "level": "main"
+            },
+            {
+              "heroId": 148,
+              "level": "main"
+            },
+            {
+              "heroId": 184,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.1554999999999893
+    },
+    {
+      "id": 9,
+      "ids": [
+        155,
+        533,
+        137,
+        547
+      ],
+      "blocked": [
+        529
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 120,
+              "level": "main"
+            },
+            {
+              "heroId": 117,
+              "level": "main"
+            },
+            {
+              "heroId": 529,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 138,
+              "level": "main"
+            },
+            {
+              "heroId": 137,
+              "level": "main"
+            },
+            {
+              "heroId": 153,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 504,
+              "level": "main"
+            },
+            {
+              "heroId": 157,
+              "level": "main"
+            },
+            {
+              "heroId": 191,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 524,
+              "level": "main"
+            },
+            {
+              "heroId": 155,
+              "level": "main"
+            },
+            {
+              "heroId": 533,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 126,
+              "level": "main"
+            },
+            {
+              "heroId": 152,
+              "level": "main"
+            },
+            {
+              "heroId": 547,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.15139999999999532
+    },
+    {
+      "id": 10,
+      "ids": [],
+      "blocked": [
+        180,
+        121,
+        583,
+        584
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 180,
+              "level": "main"
+            },
+            {
+              "heroId": 121,
+              "level": "main"
+            },
+            {
+              "heroId": 144,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 583,
+              "level": "main"
+            },
+            {
+              "heroId": 130,
+              "level": "main"
+            },
+            {
+              "heroId": 195,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 136,
+              "level": "main"
+            },
+            {
+              "heroId": 127,
+              "level": "main"
+            },
+            {
+              "heroId": 182,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 112,
+              "level": "main"
+            },
+            {
+              "heroId": 133,
+              "level": "main"
+            },
+            {
+              "heroId": 584,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 186,
+              "level": "main"
+            },
+            {
+              "heroId": 126,
+              "level": "main"
+            },
+            {
+              "heroId": 540,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {},
+      "elapsedMs": 0.15119999999998868
+    },
+    {
+      "id": 11,
+      "ids": [
+        187
+      ],
+      "blocked": [
+        198,
+        114
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 558,
+              "level": "main"
+            },
+            {
+              "heroId": 511,
+              "level": "main"
+            },
+            {
+              "heroId": 187,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 198,
+              "level": "main"
+            },
+            {
+              "heroId": 146,
+              "level": "main"
+            },
+            {
+              "heroId": 183,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 197,
+              "level": "main"
+            },
+            {
+              "heroId": 179,
+              "level": "main"
+            },
+            {
+              "heroId": 152,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 519,
+              "level": "main"
+            },
+            {
+              "heroId": 169,
+              "level": "main"
+            },
+            {
+              "heroId": 133,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 113,
+              "level": "main"
+            },
+            {
+              "heroId": 550,
+              "level": "main"
+            },
+            {
+              "heroId": 114,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": false,
+      "jointFeasible": true,
+      "lineup": {
+        "对抗路": 187
+      },
+      "elapsedMs": 0.13329999999999131
+    },
+    {
+      "id": 12,
+      "ids": [
+        127,
+        117
+      ],
+      "blocked": [
+        522,
+        155,
+        149
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 522,
+              "level": "main"
+            },
+            {
+              "heroId": 117,
+              "level": "main"
+            },
+            {
+              "heroId": 123,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 531,
+              "level": "main"
+            },
+            {
+              "heroId": 538,
+              "level": "main"
+            },
+            {
+              "heroId": 549,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 124,
+              "level": "main"
+            },
+            {
+              "heroId": 119,
+              "level": "main"
+            },
+            {
+              "heroId": 127,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 519,
+              "level": "main"
+            },
+            {
+              "heroId": 112,
+              "level": "main"
+            },
+            {
+              "heroId": 155,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 149,
+              "level": "main"
+            },
+            {
+              "heroId": 547,
+              "level": "main"
+            },
+            {
+              "heroId": 148,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "中路": 127,
+        "对抗路": 117
+      },
+      "elapsedMs": 0.1490000000000009
+    },
+    {
+      "id": 13,
+      "ids": [
+        312,
+        138,
+        584
+      ],
+      "blocked": [
+        198
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 128,
+              "level": "main"
+            },
+            {
+              "heroId": 198,
+              "level": "main"
+            },
+            {
+              "heroId": 549,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 528,
+              "level": "main"
+            },
+            {
+              "heroId": 138,
+              "level": "main"
+            },
+            {
+              "heroId": 163,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 312,
+              "level": "main"
+            },
+            {
+              "heroId": 110,
+              "level": "main"
+            },
+            {
+              "heroId": 108,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 584,
+              "level": "main"
+            },
+            {
+              "heroId": 199,
+              "level": "main"
+            },
+            {
+              "heroId": 192,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 114,
+              "level": "main"
+            },
+            {
+              "heroId": 184,
+              "level": "main"
+            },
+            {
+              "heroId": 168,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "中路": 312,
+        "打野": 138,
+        "发育路": 584
+      },
+      "elapsedMs": 0.12180000000000746
+    },
+    {
+      "id": 14,
+      "ids": [
+        197,
+        517,
+        141,
+        135
+      ],
+      "blocked": [
+        138,
+        148,
+        107,
+        138
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 172,
+              "level": "main"
+            },
+            {
+              "heroId": 134,
+              "level": "main"
+            },
+            {
+              "heroId": 141,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 107,
+              "level": "main"
+            },
+            {
+              "heroId": 138,
+              "level": "main"
+            },
+            {
+              "heroId": 517,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 115,
+              "level": "main"
+            },
+            {
+              "heroId": 197,
+              "level": "main"
+            },
+            {
+              "heroId": 148,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 524,
+              "level": "main"
+            },
+            {
+              "heroId": 533,
+              "level": "main"
+            },
+            {
+              "heroId": 169,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 135,
+              "level": "main"
+            },
+            {
+              "heroId": 171,
+              "level": "main"
+            },
+            {
+              "heroId": 577,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "中路": 197,
+        "打野": 517,
+        "对抗路": 141,
+        "游走": 135
+      },
+      "elapsedMs": 0.11760000000001014
+    },
+    {
+      "id": 15,
+      "ids": [],
+      "blocked": [
+        190,
+        521,
+        105
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 564,
+              "level": "main"
+            },
+            {
+              "heroId": 529,
+              "level": "main"
+            },
+            {
+              "heroId": 544,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 522,
+              "level": "main"
+            },
+            {
+              "heroId": 170,
+              "level": "main"
+            },
+            {
+              "heroId": 190,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 523,
+              "level": "main"
+            },
+            {
+              "heroId": 582,
+              "level": "main"
+            },
+            {
+              "heroId": 521,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 192,
+              "level": "main"
+            },
+            {
+              "heroId": 174,
+              "level": "main"
+            },
+            {
+              "heroId": 151,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 105,
+              "level": "main"
+            },
+            {
+              "heroId": 501,
+              "level": "main"
+            },
+            {
+              "heroId": 194,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {},
+      "elapsedMs": 0.09590000000000032
+    },
+    {
+      "id": 16,
+      "ids": [
+        144
+      ],
+      "blocked": [
+        140,
+        198,
+        173
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 144,
+              "level": "main"
+            },
+            {
+              "heroId": 522,
+              "level": "main"
+            },
+            {
+              "heroId": 140,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 198,
+              "level": "main"
+            },
+            {
+              "heroId": 116,
+              "level": "main"
+            },
+            {
+              "heroId": 146,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 156,
+              "level": "main"
+            },
+            {
+              "heroId": 563,
+              "level": "main"
+            },
+            {
+              "heroId": 115,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 111,
+              "level": "main"
+            },
+            {
+              "heroId": 174,
+              "level": "main"
+            },
+            {
+              "heroId": 173,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 176,
+              "level": "main"
+            },
+            {
+              "heroId": 171,
+              "level": "main"
+            },
+            {
+              "heroId": 168,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "对抗路": 144
+      },
+      "elapsedMs": 0.10349999999999682
+    },
+    {
+      "id": 17,
+      "ids": [
+        550,
+        186
+      ],
+      "blocked": [
+        527,
+        128
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 180,
+              "level": "main"
+            },
+            {
+              "heroId": 139,
+              "level": "main"
+            },
+            {
+              "heroId": 527,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 128,
+              "level": "main"
+            },
+            {
+              "heroId": 180,
+              "level": "main"
+            },
+            {
+              "heroId": 517,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 190,
+              "level": "main"
+            },
+            {
+              "heroId": 109,
+              "level": "main"
+            },
+            {
+              "heroId": 141,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 548,
+              "level": "main"
+            },
+            {
+              "heroId": 111,
+              "level": "main"
+            },
+            {
+              "heroId": 524,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 550,
+              "level": "main"
+            },
+            {
+              "heroId": 544,
+              "level": "main"
+            },
+            {
+              "heroId": 186,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.14700000000001978
+    },
+    {
+      "id": 18,
+      "ids": [
+        111,
+        141,
+        545
+      ],
+      "blocked": [
+        105,
+        534
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 121,
+              "level": "main"
+            },
+            {
+              "heroId": 514,
+              "level": "main"
+            },
+            {
+              "heroId": 105,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 502,
+              "level": "main"
+            },
+            {
+              "heroId": 581,
+              "level": "main"
+            },
+            {
+              "heroId": 511,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 513,
+              "level": "main"
+            },
+            {
+              "heroId": 540,
+              "level": "main"
+            },
+            {
+              "heroId": 141,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 111,
+              "level": "main"
+            },
+            {
+              "heroId": 545,
+              "level": "main"
+            },
+            {
+              "heroId": 508,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 534,
+              "level": "main"
+            },
+            {
+              "heroId": 191,
+              "level": "main"
+            },
+            {
+              "heroId": 176,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.1337000000000046
+    },
+    {
+      "id": 19,
+      "ids": [
+        505,
+        169,
+        544,
+        583
+      ],
+      "blocked": [
+        550
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 166,
+              "level": "main"
+            },
+            {
+              "heroId": 564,
+              "level": "main"
+            },
+            {
+              "heroId": 544,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 533,
+              "level": "main"
+            },
+            {
+              "heroId": 515,
+              "level": "main"
+            },
+            {
+              "heroId": 583,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 191,
+              "level": "main"
+            },
+            {
+              "heroId": 108,
+              "level": "main"
+            },
+            {
+              "heroId": 152,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 173,
+              "level": "main"
+            },
+            {
+              "heroId": 132,
+              "level": "main"
+            },
+            {
+              "heroId": 169,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 176,
+              "level": "main"
+            },
+            {
+              "heroId": 550,
+              "level": "main"
+            },
+            {
+              "heroId": 505,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "游走": 505,
+        "发育路": 169,
+        "对抗路": 544,
+        "打野": 583
+      },
+      "elapsedMs": 0.11010000000001696
+    },
+    {
+      "id": 20,
+      "ids": [],
+      "blocked": [
+        564,
+        537,
+        513,
+        137
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 517,
+              "level": "main"
+            },
+            {
+              "heroId": 564,
+              "level": "main"
+            },
+            {
+              "heroId": 121,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 506,
+              "level": "main"
+            },
+            {
+              "heroId": 178,
+              "level": "main"
+            },
+            {
+              "heroId": 537,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 513,
+              "level": "main"
+            },
+            {
+              "heroId": 137,
+              "level": "main"
+            },
+            {
+              "heroId": 156,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 196,
+              "level": "main"
+            },
+            {
+              "heroId": 151,
+              "level": "main"
+            },
+            {
+              "heroId": 169,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 159,
+              "level": "main"
+            },
+            {
+              "heroId": 191,
+              "level": "main"
+            },
+            {
+              "heroId": 175,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {},
+      "elapsedMs": 0.0952000000000055
+    },
+    {
+      "id": 21,
+      "ids": [
+        538
+      ],
+      "blocked": [
+        141,
+        182,
+        136,
+        192,
+        184,
+        506,
+        138
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 141,
+              "level": "main"
+            },
+            {
+              "heroId": 123,
+              "level": "main"
+            },
+            {
+              "heroId": 563,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 506,
+              "level": "main"
+            },
+            {
+              "heroId": 538,
+              "level": "main"
+            },
+            {
+              "heroId": 138,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 156,
+              "level": "main"
+            },
+            {
+              "heroId": 182,
+              "level": "main"
+            },
+            {
+              "heroId": 136,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 548,
+              "level": "main"
+            },
+            {
+              "heroId": 196,
+              "level": "main"
+            },
+            {
+              "heroId": 192,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 194,
+              "level": "main"
+            },
+            {
+              "heroId": 189,
+              "level": "main"
+            },
+            {
+              "heroId": 184,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "打野": 538
+      },
+      "elapsedMs": 0.10679999999999268
+    },
+    {
+      "id": 22,
+      "ids": [
+        180,
+        179
+      ],
+      "blocked": [
+        519,
+        152
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 515,
+              "level": "main"
+            },
+            {
+              "heroId": 163,
+              "level": "main"
+            },
+            {
+              "heroId": 180,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 128,
+              "level": "main"
+            },
+            {
+              "heroId": 162,
+              "level": "main"
+            },
+            {
+              "heroId": 190,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 179,
+              "level": "main"
+            },
+            {
+              "heroId": 540,
+              "level": "main"
+            },
+            {
+              "heroId": 182,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 545,
+              "level": "main"
+            },
+            {
+              "heroId": 111,
+              "level": "main"
+            },
+            {
+              "heroId": 519,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 509,
+              "level": "main"
+            },
+            {
+              "heroId": 156,
+              "level": "main"
+            },
+            {
+              "heroId": 152,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "对抗路": 180,
+        "中路": 179
+      },
+      "elapsedMs": 0.11009999999998854
+    },
+    {
+      "id": 23,
+      "ids": [
+        123,
+        531,
+        177
+      ],
+      "blocked": [
+        151,
+        132
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 123,
+              "level": "main"
+            },
+            {
+              "heroId": 140,
+              "level": "main"
+            },
+            {
+              "heroId": 515,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 522,
+              "level": "main"
+            },
+            {
+              "heroId": 531,
+              "level": "main"
+            },
+            {
+              "heroId": 131,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 142,
+              "level": "main"
+            },
+            {
+              "heroId": 179,
+              "level": "main"
+            },
+            {
+              "heroId": 110,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 151,
+              "level": "main"
+            },
+            {
+              "heroId": 132,
+              "level": "main"
+            },
+            {
+              "heroId": 177,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 148,
+              "level": "main"
+            },
+            {
+              "heroId": 152,
+              "level": "main"
+            },
+            {
+              "heroId": 114,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "对抗路": 123,
+        "打野": 531,
+        "发育路": 177
+      },
+      "elapsedMs": 0.1483000000000061
+    },
+    {
+      "id": 24,
+      "ids": [
+        163,
+        515,
+        582,
+        519
+      ],
+      "blocked": [
+        513,
+        194
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 193,
+              "level": "main"
+            },
+            {
+              "heroId": 537,
+              "level": "main"
+            },
+            {
+              "heroId": 515,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 146,
+              "level": "main"
+            },
+            {
+              "heroId": 163,
+              "level": "main"
+            },
+            {
+              "heroId": 506,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 582,
+              "level": "main"
+            },
+            {
+              "heroId": 513,
+              "level": "main"
+            },
+            {
+              "heroId": 124,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 196,
+              "level": "main"
+            },
+            {
+              "heroId": 174,
+              "level": "main"
+            },
+            {
+              "heroId": 519,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 194,
+              "level": "main"
+            },
+            {
+              "heroId": 156,
+              "level": "main"
+            },
+            {
+              "heroId": 149,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "打野": 163,
+        "对抗路": 515,
+        "中路": 582,
+        "发育路": 519
+      },
+      "elapsedMs": 0.11879999999999313
+    },
+    {
+      "id": 25,
+      "ids": [],
+      "blocked": [
+        518,
+        153,
+        177
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 172,
+              "level": "main"
+            },
+            {
+              "heroId": 135,
+              "level": "main"
+            },
+            {
+              "heroId": 117,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 529,
+              "level": "main"
+            },
+            {
+              "heroId": 518,
+              "level": "main"
+            },
+            {
+              "heroId": 153,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 109,
+              "level": "main"
+            },
+            {
+              "heroId": 513,
+              "level": "main"
+            },
+            {
+              "heroId": 136,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 177,
+              "level": "main"
+            },
+            {
+              "heroId": 111,
+              "level": "main"
+            },
+            {
+              "heroId": 533,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 176,
+              "level": "main"
+            },
+            {
+              "heroId": 550,
+              "level": "main"
+            },
+            {
+              "heroId": 585,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {},
+      "elapsedMs": 0.10949999999999704
+    },
+    {
+      "id": 26,
+      "ids": [
+        550
+      ],
+      "blocked": [
+        503,
+        176,
+        155
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 503,
+              "level": "main"
+            },
+            {
+              "heroId": 163,
+              "level": "main"
+            },
+            {
+              "heroId": 105,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 116,
+              "level": "main"
+            },
+            {
+              "heroId": 176,
+              "level": "main"
+            },
+            {
+              "heroId": 531,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 156,
+              "level": "main"
+            },
+            {
+              "heroId": 179,
+              "level": "main"
+            },
+            {
+              "heroId": 106,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 169,
+              "level": "main"
+            },
+            {
+              "heroId": 155,
+              "level": "main"
+            },
+            {
+              "heroId": 519,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 176,
+              "level": "main"
+            },
+            {
+              "heroId": 550,
+              "level": "main"
+            },
+            {
+              "heroId": 159,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "游走": 550
+      },
+      "elapsedMs": 0.10310000000001196
+    },
+    {
+      "id": 27,
+      "ids": [
+        179,
+        176
+      ],
+      "blocked": [
+        193,
+        107
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 193,
+              "level": "main"
+            },
+            {
+              "heroId": 180,
+              "level": "main"
+            },
+            {
+              "heroId": 564,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 137,
+              "level": "main"
+            },
+            {
+              "heroId": 107,
+              "level": "main"
+            },
+            {
+              "heroId": 515,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 563,
+              "level": "main"
+            },
+            {
+              "heroId": 176,
+              "level": "main"
+            },
+            {
+              "heroId": 179,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 192,
+              "level": "main"
+            },
+            {
+              "heroId": 196,
+              "level": "main"
+            },
+            {
+              "heroId": 199,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 194,
+              "level": "main"
+            },
+            {
+              "heroId": 108,
+              "level": "main"
+            },
+            {
+              "heroId": 126,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.1303000000000054
+    },
+    {
+      "id": 28,
+      "ids": [
+        528,
+        149,
+        138
+      ],
+      "blocked": [
+        152,
+        502
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 529,
+              "level": "main"
+            },
+            {
+              "heroId": 522,
+              "level": "main"
+            },
+            {
+              "heroId": 172,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 138,
+              "level": "main"
+            },
+            {
+              "heroId": 502,
+              "level": "main"
+            },
+            {
+              "heroId": 528,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 504,
+              "level": "main"
+            },
+            {
+              "heroId": 141,
+              "level": "main"
+            },
+            {
+              "heroId": 523,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 174,
+              "level": "main"
+            },
+            {
+              "heroId": 192,
+              "level": "main"
+            },
+            {
+              "heroId": 519,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 189,
+              "level": "main"
+            },
+            {
+              "heroId": 152,
+              "level": "main"
+            },
+            {
+              "heroId": 149,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.12219999999999231
+    },
+    {
+      "id": 29,
+      "ids": [
+        508,
+        582,
+        563,
+        521
+      ],
+      "blocked": [
+        549,
+        583,
+        187
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 544,
+              "level": "main"
+            },
+            {
+              "heroId": 549,
+              "level": "main"
+            },
+            {
+              "heroId": 563,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 583,
+              "level": "main"
+            },
+            {
+              "heroId": 121,
+              "level": "main"
+            },
+            {
+              "heroId": 510,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 179,
+              "level": "main"
+            },
+            {
+              "heroId": 521,
+              "level": "main"
+            },
+            {
+              "heroId": 582,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 133,
+              "level": "main"
+            },
+            {
+              "heroId": 508,
+              "level": "main"
+            },
+            {
+              "heroId": 177,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 191,
+              "level": "main"
+            },
+            {
+              "heroId": 187,
+              "level": "main"
+            },
+            {
+              "heroId": 126,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.11819999999997322
+    },
+    {
+      "id": 30,
+      "ids": [],
+      "blocked": [
+        522,
+        159
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 529,
+              "level": "main"
+            },
+            {
+              "heroId": 522,
+              "level": "main"
+            },
+            {
+              "heroId": 135,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 549,
+              "level": "main"
+            },
+            {
+              "heroId": 153,
+              "level": "main"
+            },
+            {
+              "heroId": 130,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 152,
+              "level": "main"
+            },
+            {
+              "heroId": 523,
+              "level": "main"
+            },
+            {
+              "heroId": 156,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 533,
+              "level": "main"
+            },
+            {
+              "heroId": 155,
+              "level": "main"
+            },
+            {
+              "heroId": 584,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 547,
+              "level": "main"
+            },
+            {
+              "heroId": 159,
+              "level": "main"
+            },
+            {
+              "heroId": 505,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {},
+      "elapsedMs": 0.08669999999997913
+    },
+    {
+      "id": 31,
+      "ids": [
+        139
+      ],
+      "blocked": [
+        153
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 123,
+              "level": "main"
+            },
+            {
+              "heroId": 198,
+              "level": "main"
+            },
+            {
+              "heroId": 139,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 153,
+              "level": "main"
+            },
+            {
+              "heroId": 131,
+              "level": "main"
+            },
+            {
+              "heroId": 166,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 106,
+              "level": "main"
+            },
+            {
+              "heroId": 182,
+              "level": "main"
+            },
+            {
+              "heroId": 563,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 174,
+              "level": "main"
+            },
+            {
+              "heroId": 112,
+              "level": "main"
+            },
+            {
+              "heroId": 133,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 505,
+              "level": "main"
+            },
+            {
+              "heroId": 501,
+              "level": "main"
+            },
+            {
+              "heroId": 149,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "对抗路": 139
+      },
+      "elapsedMs": 0.10569999999998458
+    },
+    {
+      "id": 32,
+      "ids": [
+        148,
+        180
+      ],
+      "blocked": [
+        585
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 149,
+              "level": "main"
+            },
+            {
+              "heroId": 536,
+              "level": "main"
+            },
+            {
+              "heroId": 163,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 180,
+              "level": "main"
+            },
+            {
+              "heroId": 528,
+              "level": "main"
+            },
+            {
+              "heroId": 515,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 563,
+              "level": "main"
+            },
+            {
+              "heroId": 182,
+              "level": "main"
+            },
+            {
+              "heroId": 504,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 533,
+              "level": "main"
+            },
+            {
+              "heroId": 112,
+              "level": "main"
+            },
+            {
+              "heroId": 155,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 540,
+              "level": "main"
+            },
+            {
+              "heroId": 148,
+              "level": "main"
+            },
+            {
+              "heroId": 585,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": false,
+      "jointFeasible": true,
+      "lineup": {
+        "游走": 148,
+        "打野": 180
+      },
+      "elapsedMs": 0.10669999999998936
+    },
+    {
+      "id": 33,
+      "ids": [
+        179,
+        544,
+        149
+      ],
+      "blocked": [
+        110,
+        192
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 517,
+              "level": "main"
+            },
+            {
+              "heroId": 149,
+              "level": "main"
+            },
+            {
+              "heroId": 558,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 544,
+              "level": "main"
+            },
+            {
+              "heroId": 518,
+              "level": "main"
+            },
+            {
+              "heroId": 162,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 179,
+              "level": "main"
+            },
+            {
+              "heroId": 110,
+              "level": "main"
+            },
+            {
+              "heroId": 142,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 155,
+              "level": "main"
+            },
+            {
+              "heroId": 192,
+              "level": "main"
+            },
+            {
+              "heroId": 533,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 176,
+              "level": "main"
+            },
+            {
+              "heroId": 149,
+              "level": "main"
+            },
+            {
+              "heroId": 156,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "中路": 179,
+        "打野": 544,
+        "对抗路": 149
+      },
+      "elapsedMs": 0.11549999999999727
+    },
+    {
+      "id": 34,
+      "ids": [
+        174,
+        513,
+        110,
+        177
+      ],
+      "blocked": [
+        563,
+        152,
+        550
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 563,
+              "level": "main"
+            },
+            {
+              "heroId": 141,
+              "level": "main"
+            },
+            {
+              "heroId": 105,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 542,
+              "level": "main"
+            },
+            {
+              "heroId": 177,
+              "level": "main"
+            },
+            {
+              "heroId": 170,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 137,
+              "level": "main"
+            },
+            {
+              "heroId": 513,
+              "level": "main"
+            },
+            {
+              "heroId": 110,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 155,
+              "level": "main"
+            },
+            {
+              "heroId": 199,
+              "level": "main"
+            },
+            {
+              "heroId": 174,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 152,
+              "level": "main"
+            },
+            {
+              "heroId": 171,
+              "level": "main"
+            },
+            {
+              "heroId": 550,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.14879999999999427
+    },
+    {
+      "id": 35,
+      "ids": [],
+      "blocked": [
+        169,
+        501,
+        533,
+        517,
+        537
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 121,
+              "level": "main"
+            },
+            {
+              "heroId": 126,
+              "level": "main"
+            },
+            {
+              "heroId": 563,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 533,
+              "level": "main"
+            },
+            {
+              "heroId": 517,
+              "level": "main"
+            },
+            {
+              "heroId": 537,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 312,
+              "level": "main"
+            },
+            {
+              "heroId": 142,
+              "level": "main"
+            },
+            {
+              "heroId": 148,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 169,
+              "level": "main"
+            },
+            {
+              "heroId": 151,
+              "level": "main"
+            },
+            {
+              "heroId": 519,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 175,
+              "level": "main"
+            },
+            {
+              "heroId": 501,
+              "level": "main"
+            },
+            {
+              "heroId": 113,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.11299999999999955
+    },
+    {
+      "id": 36,
+      "ids": [
+        536
+      ],
+      "blocked": [
+        545,
+        148
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 144,
+              "level": "main"
+            },
+            {
+              "heroId": 536,
+              "level": "main"
+            },
+            {
+              "heroId": 194,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 153,
+              "level": "main"
+            },
+            {
+              "heroId": 116,
+              "level": "main"
+            },
+            {
+              "heroId": 170,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 540,
+              "level": "main"
+            },
+            {
+              "heroId": 582,
+              "level": "main"
+            },
+            {
+              "heroId": 176,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 524,
+              "level": "main"
+            },
+            {
+              "heroId": 545,
+              "level": "main"
+            },
+            {
+              "heroId": 192,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 540,
+              "level": "main"
+            },
+            {
+              "heroId": 176,
+              "level": "main"
+            },
+            {
+              "heroId": 148,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "对抗路": 536
+      },
+      "elapsedMs": 0.09649999999999181
+    },
+    {
+      "id": 37,
+      "ids": [
+        126,
+        538
+      ],
+      "blocked": [
+        124,
+        196,
+        194
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 187,
+              "level": "main"
+            },
+            {
+              "heroId": 536,
+              "level": "main"
+            },
+            {
+              "heroId": 126,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 137,
+              "level": "main"
+            },
+            {
+              "heroId": 511,
+              "level": "main"
+            },
+            {
+              "heroId": 538,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 540,
+              "level": "main"
+            },
+            {
+              "heroId": 197,
+              "level": "main"
+            },
+            {
+              "heroId": 124,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 524,
+              "level": "main"
+            },
+            {
+              "heroId": 196,
+              "level": "main"
+            },
+            {
+              "heroId": 519,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 114,
+              "level": "main"
+            },
+            {
+              "heroId": 194,
+              "level": "main"
+            },
+            {
+              "heroId": 168,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "对抗路": 126,
+        "打野": 538
+      },
+      "elapsedMs": 0.116800000000012
+    },
+    {
+      "id": 38,
+      "ids": [
+        152,
+        110,
+        167
+      ],
+      "blocked": [
+        137,
+        537,
+        106,
+        113
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 163,
+              "level": "main"
+            },
+            {
+              "heroId": 178,
+              "level": "main"
+            },
+            {
+              "heroId": 522,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 137,
+              "level": "main"
+            },
+            {
+              "heroId": 167,
+              "level": "main"
+            },
+            {
+              "heroId": 537,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 110,
+              "level": "main"
+            },
+            {
+              "heroId": 152,
+              "level": "main"
+            },
+            {
+              "heroId": 106,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 584,
+              "level": "main"
+            },
+            {
+              "heroId": 519,
+              "level": "main"
+            },
+            {
+              "heroId": 169,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 159,
+              "level": "main"
+            },
+            {
+              "heroId": 108,
+              "level": "main"
+            },
+            {
+              "heroId": 113,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.095799999999997
+    },
+    {
+      "id": 39,
+      "ids": [
+        195,
+        519,
+        169,
+        170
+      ],
+      "blocked": [
+        176,
+        175
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 503,
+              "level": "main"
+            },
+            {
+              "heroId": 527,
+              "level": "main"
+            },
+            {
+              "heroId": 105,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 172,
+              "level": "main"
+            },
+            {
+              "heroId": 195,
+              "level": "main"
+            },
+            {
+              "heroId": 170,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 152,
+              "level": "main"
+            },
+            {
+              "heroId": 176,
+              "level": "main"
+            },
+            {
+              "heroId": 108,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 519,
+              "level": "main"
+            },
+            {
+              "heroId": 169,
+              "level": "main"
+            },
+            {
+              "heroId": 174,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 175,
+              "level": "main"
+            },
+            {
+              "heroId": 577,
+              "level": "main"
+            },
+            {
+              "heroId": 108,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.11639999999999873
+    },
+    {
+      "id": 40,
+      "ids": [],
+      "blocked": [
+        504,
+        142
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 522,
+              "level": "main"
+            },
+            {
+              "heroId": 549,
+              "level": "main"
+            },
+            {
+              "heroId": 140,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 176,
+              "level": "main"
+            },
+            {
+              "heroId": 583,
+              "level": "main"
+            },
+            {
+              "heroId": 517,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 106,
+              "level": "main"
+            },
+            {
+              "heroId": 504,
+              "level": "main"
+            },
+            {
+              "heroId": 142,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 519,
+              "level": "main"
+            },
+            {
+              "heroId": 508,
+              "level": "main"
+            },
+            {
+              "heroId": 545,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 186,
+              "level": "main"
+            },
+            {
+              "heroId": 505,
+              "level": "main"
+            },
+            {
+              "heroId": 547,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {},
+      "elapsedMs": 0.1413000000000011
+    },
+    {
+      "id": 41,
+      "ids": [
+        510
+      ],
+      "blocked": [
+        502,
+        584
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 128,
+              "level": "main"
+            },
+            {
+              "heroId": 518,
+              "level": "main"
+            },
+            {
+              "heroId": 166,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 502,
+              "level": "main"
+            },
+            {
+              "heroId": 510,
+              "level": "main"
+            },
+            {
+              "heroId": 190,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 582,
+              "level": "main"
+            },
+            {
+              "heroId": 136,
+              "level": "main"
+            },
+            {
+              "heroId": 141,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 174,
+              "level": "main"
+            },
+            {
+              "heroId": 112,
+              "level": "main"
+            },
+            {
+              "heroId": 584,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 188,
+              "level": "main"
+            },
+            {
+              "heroId": 547,
+              "level": "main"
+            },
+            {
+              "heroId": 189,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": false,
+      "jointFeasible": true,
+      "lineup": {
+        "打野": 510
+      },
+      "elapsedMs": 0.12570000000005166
+    },
+    {
+      "id": 42,
+      "ids": [
+        197,
+        522
+      ],
+      "blocked": [
+        529,
+        523,
+        513,
+        177,
+        169,
+        128,
+        529
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 529,
+              "level": "main"
+            },
+            {
+              "heroId": 135,
+              "level": "main"
+            },
+            {
+              "heroId": 149,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 128,
+              "level": "main"
+            },
+            {
+              "heroId": 529,
+              "level": "main"
+            },
+            {
+              "heroId": 522,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 197,
+              "level": "main"
+            },
+            {
+              "heroId": 523,
+              "level": "main"
+            },
+            {
+              "heroId": 513,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 177,
+              "level": "main"
+            },
+            {
+              "heroId": 169,
+              "level": "main"
+            },
+            {
+              "heroId": 519,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 187,
+              "level": "main"
+            },
+            {
+              "heroId": 544,
+              "level": "main"
+            },
+            {
+              "heroId": 189,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "中路": 197,
+        "打野": 522
+      },
+      "elapsedMs": 0.1179000000000201
+    },
+    {
+      "id": 43,
+      "ids": [
+        167,
+        195,
+        105
+      ],
+      "blocked": [
+        132
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 125,
+              "level": "main"
+            },
+            {
+              "heroId": 511,
+              "level": "main"
+            },
+            {
+              "heroId": 522,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 167,
+              "level": "main"
+            },
+            {
+              "heroId": 117,
+              "level": "main"
+            },
+            {
+              "heroId": 195,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 582,
+              "level": "main"
+            },
+            {
+              "heroId": 179,
+              "level": "main"
+            },
+            {
+              "heroId": 115,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 132,
+              "level": "main"
+            },
+            {
+              "heroId": 199,
+              "level": "main"
+            },
+            {
+              "heroId": 519,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 148,
+              "level": "main"
+            },
+            {
+              "heroId": 176,
+              "level": "main"
+            },
+            {
+              "heroId": 105,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.180499999999995
+    },
+    {
+      "id": 44,
+      "ids": [
+        191,
+        199,
+        152,
+        113
+      ],
+      "blocked": [
+        549
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 515,
+              "level": "main"
+            },
+            {
+              "heroId": 172,
+              "level": "main"
+            },
+            {
+              "heroId": 194,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 549,
+              "level": "main"
+            },
+            {
+              "heroId": 129,
+              "level": "main"
+            },
+            {
+              "heroId": 193,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 515,
+              "level": "main"
+            },
+            {
+              "heroId": 152,
+              "level": "main"
+            },
+            {
+              "heroId": 106,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 199,
+              "level": "main"
+            },
+            {
+              "heroId": 545,
+              "level": "main"
+            },
+            {
+              "heroId": 173,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 187,
+              "level": "main"
+            },
+            {
+              "heroId": 113,
+              "level": "main"
+            },
+            {
+              "heroId": 191,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.13350000000002638
+    },
+    {
+      "id": 45,
+      "ids": [],
+      "blocked": [
+        502,
+        138,
+        184
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 139,
+              "level": "main"
+            },
+            {
+              "heroId": 180,
+              "level": "main"
+            },
+            {
+              "heroId": 581,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 502,
+              "level": "main"
+            },
+            {
+              "heroId": 531,
+              "level": "main"
+            },
+            {
+              "heroId": 138,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 136,
+              "level": "main"
+            },
+            {
+              "heroId": 156,
+              "level": "main"
+            },
+            {
+              "heroId": 523,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 173,
+              "level": "main"
+            },
+            {
+              "heroId": 132,
+              "level": "main"
+            },
+            {
+              "heroId": 155,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 184,
+              "level": "main"
+            },
+            {
+              "heroId": 187,
+              "level": "main"
+            },
+            {
+              "heroId": 171,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {},
+      "elapsedMs": 0.08400000000000318
+    },
+    {
+      "id": 46,
+      "ids": [
+        191
+      ],
+      "blocked": [
+        120,
+        503,
+        134,
+        180,
+        174,
+        151
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 120,
+              "level": "main"
+            },
+            {
+              "heroId": 503,
+              "level": "main"
+            },
+            {
+              "heroId": 134,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 558,
+              "level": "main"
+            },
+            {
+              "heroId": 180,
+              "level": "main"
+            },
+            {
+              "heroId": 190,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 124,
+              "level": "main"
+            },
+            {
+              "heroId": 127,
+              "level": "main"
+            },
+            {
+              "heroId": 191,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 174,
+              "level": "main"
+            },
+            {
+              "heroId": 584,
+              "level": "main"
+            },
+            {
+              "heroId": 151,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 113,
+              "level": "main"
+            },
+            {
+              "heroId": 168,
+              "level": "main"
+            },
+            {
+              "heroId": 118,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.11239999999997963
+    },
+    {
+      "id": 47,
+      "ids": [
+        190,
+        549
+      ],
+      "blocked": [
+        144,
+        563,
+        127
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 144,
+              "level": "main"
+            },
+            {
+              "heroId": 563,
+              "level": "main"
+            },
+            {
+              "heroId": 117,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 538,
+              "level": "main"
+            },
+            {
+              "heroId": 190,
+              "level": "main"
+            },
+            {
+              "heroId": 549,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 156,
+              "level": "main"
+            },
+            {
+              "heroId": 127,
+              "level": "main"
+            },
+            {
+              "heroId": 106,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 111,
+              "level": "main"
+            },
+            {
+              "heroId": 173,
+              "level": "main"
+            },
+            {
+              "heroId": 133,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 585,
+              "level": "main"
+            },
+            {
+              "heroId": 156,
+              "level": "main"
+            },
+            {
+              "heroId": 187,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.11630000000002383
+    },
+    {
+      "id": 48,
+      "ids": [
+        119,
+        549,
+        117
+      ],
+      "blocked": [
+        118
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 503,
+              "level": "main"
+            },
+            {
+              "heroId": 549,
+              "level": "main"
+            },
+            {
+              "heroId": 117,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 128,
+              "level": "main"
+            },
+            {
+              "heroId": 162,
+              "level": "main"
+            },
+            {
+              "heroId": 537,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 119,
+              "level": "main"
+            },
+            {
+              "heroId": 521,
+              "level": "main"
+            },
+            {
+              "heroId": 176,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 584,
+              "level": "main"
+            },
+            {
+              "heroId": 196,
+              "level": "main"
+            },
+            {
+              "heroId": 508,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 113,
+              "level": "main"
+            },
+            {
+              "heroId": 501,
+              "level": "main"
+            },
+            {
+              "heroId": 118,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.10520000000002483
+    },
+    {
+      "id": 49,
+      "ids": [
+        191,
+        584,
+        166,
+        142
+      ],
+      "blocked": [
+        503,
+        510,
+        524,
+        163,
+        510,
+        150
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 193,
+              "level": "main"
+            },
+            {
+              "heroId": 503,
+              "level": "main"
+            },
+            {
+              "heroId": 166,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 163,
+              "level": "main"
+            },
+            {
+              "heroId": 510,
+              "level": "main"
+            },
+            {
+              "heroId": 150,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 521,
+              "level": "main"
+            },
+            {
+              "heroId": 142,
+              "level": "main"
+            },
+            {
+              "heroId": 523,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 133,
+              "level": "main"
+            },
+            {
+              "heroId": 524,
+              "level": "main"
+            },
+            {
+              "heroId": 584,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 135,
+              "level": "main"
+            },
+            {
+              "heroId": 191,
+              "level": "main"
+            },
+            {
+              "heroId": 159,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.155399999999986
+    },
+    {
+      "id": 50,
+      "ids": [],
+      "blocked": [
+        170,
+        517,
+        188
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 144,
+              "level": "main"
+            },
+            {
+              "heroId": 180,
+              "level": "main"
+            },
+            {
+              "heroId": 507,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 170,
+              "level": "main"
+            },
+            {
+              "heroId": 517,
+              "level": "main"
+            },
+            {
+              "heroId": 522,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 106,
+              "level": "main"
+            },
+            {
+              "heroId": 523,
+              "level": "main"
+            },
+            {
+              "heroId": 108,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 112,
+              "level": "main"
+            },
+            {
+              "heroId": 155,
+              "level": "main"
+            },
+            {
+              "heroId": 508,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 188,
+              "level": "main"
+            },
+            {
+              "heroId": 135,
+              "level": "main"
+            },
+            {
+              "heroId": 176,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {},
+      "elapsedMs": 0.10130000000003747
+    },
+    {
+      "id": 51,
+      "ids": [
+        581
+      ],
+      "blocked": [
+        522
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 522,
+              "level": "main"
+            },
+            {
+              "heroId": 549,
+              "level": "main"
+            },
+            {
+              "heroId": 581,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 167,
+              "level": "main"
+            },
+            {
+              "heroId": 533,
+              "level": "main"
+            },
+            {
+              "heroId": 531,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 176,
+              "level": "main"
+            },
+            {
+              "heroId": 190,
+              "level": "main"
+            },
+            {
+              "heroId": 197,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 174,
+              "level": "main"
+            },
+            {
+              "heroId": 111,
+              "level": "main"
+            },
+            {
+              "heroId": 192,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 550,
+              "level": "main"
+            },
+            {
+              "heroId": 135,
+              "level": "main"
+            },
+            {
+              "heroId": 547,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "对抗路": 581
+      },
+      "elapsedMs": 0.0928000000000111
+    },
+    {
+      "id": 52,
+      "ids": [
+        519,
+        511
+      ],
+      "blocked": [
+        523,
+        191,
+        508,
+        156
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 511,
+              "level": "main"
+            },
+            {
+              "heroId": 527,
+              "level": "main"
+            },
+            {
+              "heroId": 581,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 107,
+              "level": "main"
+            },
+            {
+              "heroId": 542,
+              "level": "main"
+            },
+            {
+              "heroId": 528,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 523,
+              "level": "main"
+            },
+            {
+              "heroId": 191,
+              "level": "main"
+            },
+            {
+              "heroId": 115,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 508,
+              "level": "main"
+            },
+            {
+              "heroId": 524,
+              "level": "main"
+            },
+            {
+              "heroId": 519,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 118,
+              "level": "main"
+            },
+            {
+              "heroId": 544,
+              "level": "main"
+            },
+            {
+              "heroId": 156,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "发育路": 519,
+        "对抗路": 511
+      },
+      "elapsedMs": 0.10140000000001237
+    },
+    {
+      "id": 53,
+      "ids": [
+        563,
+        125,
+        108
+      ],
+      "blocked": [
+        120,
+        506,
+        155,
+        171
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 120,
+              "level": "main"
+            },
+            {
+              "heroId": 144,
+              "level": "main"
+            },
+            {
+              "heroId": 125,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 180,
+              "level": "main"
+            },
+            {
+              "heroId": 193,
+              "level": "main"
+            },
+            {
+              "heroId": 506,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 521,
+              "level": "main"
+            },
+            {
+              "heroId": 563,
+              "level": "main"
+            },
+            {
+              "heroId": 141,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 155,
+              "level": "main"
+            },
+            {
+              "heroId": 174,
+              "level": "main"
+            },
+            {
+              "heroId": 151,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 577,
+              "level": "main"
+            },
+            {
+              "heroId": 171,
+              "level": "main"
+            },
+            {
+              "heroId": 108,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "中路": 563,
+        "对抗路": 125,
+        "游走": 108
+      },
+      "elapsedMs": 0.09809999999998809
+    },
+    {
+      "id": 54,
+      "ids": [
+        124,
+        537,
+        525,
+        109
+      ],
+      "blocked": [
+        110
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 125,
+              "level": "main"
+            },
+            {
+              "heroId": 537,
+              "level": "main"
+            },
+            {
+              "heroId": 187,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 146,
+              "level": "main"
+            },
+            {
+              "heroId": 581,
+              "level": "main"
+            },
+            {
+              "heroId": 198,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 124,
+              "level": "main"
+            },
+            {
+              "heroId": 110,
+              "level": "main"
+            },
+            {
+              "heroId": 109,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 155,
+              "level": "main"
+            },
+            {
+              "heroId": 173,
+              "level": "main"
+            },
+            {
+              "heroId": 199,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 525,
+              "level": "main"
+            },
+            {
+              "heroId": 152,
+              "level": "main"
+            },
+            {
+              "heroId": 186,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.10439999999999827
+    },
+    {
+      "id": 55,
+      "ids": [],
+      "blocked": [
+        134,
+        544
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 139,
+              "level": "main"
+            },
+            {
+              "heroId": 128,
+              "level": "main"
+            },
+            {
+              "heroId": 134,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 544,
+              "level": "main"
+            },
+            {
+              "heroId": 549,
+              "level": "main"
+            },
+            {
+              "heroId": 195,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 563,
+              "level": "main"
+            },
+            {
+              "heroId": 141,
+              "level": "main"
+            },
+            {
+              "heroId": 191,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 508,
+              "level": "main"
+            },
+            {
+              "heroId": 199,
+              "level": "main"
+            },
+            {
+              "heroId": 151,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 135,
+              "level": "main"
+            },
+            {
+              "heroId": 577,
+              "level": "main"
+            },
+            {
+              "heroId": 191,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {},
+      "elapsedMs": 0.08440000000001646
+    },
+    {
+      "id": 56,
+      "ids": [
+        163
+      ],
+      "blocked": [
+        138,
+        180,
+        190
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 518,
+              "level": "main"
+            },
+            {
+              "heroId": 163,
+              "level": "main"
+            },
+            {
+              "heroId": 125,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 138,
+              "level": "main"
+            },
+            {
+              "heroId": 180,
+              "level": "main"
+            },
+            {
+              "heroId": 190,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 540,
+              "level": "main"
+            },
+            {
+              "heroId": 176,
+              "level": "main"
+            },
+            {
+              "heroId": 157,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 508,
+              "level": "main"
+            },
+            {
+              "heroId": 133,
+              "level": "main"
+            },
+            {
+              "heroId": 155,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 509,
+              "level": "main"
+            },
+            {
+              "heroId": 113,
+              "level": "main"
+            },
+            {
+              "heroId": 126,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.09350000000000591
+    },
+    {
+      "id": 57,
+      "ids": [
+        504,
+        536
+      ],
+      "blocked": [
+        130,
+        199
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 141,
+              "level": "main"
+            },
+            {
+              "heroId": 536,
+              "level": "main"
+            },
+            {
+              "heroId": 121,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 130,
+              "level": "main"
+            },
+            {
+              "heroId": 544,
+              "level": "main"
+            },
+            {
+              "heroId": 510,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 504,
+              "level": "main"
+            },
+            {
+              "heroId": 513,
+              "level": "main"
+            },
+            {
+              "heroId": 197,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 199,
+              "level": "main"
+            },
+            {
+              "heroId": 519,
+              "level": "main"
+            },
+            {
+              "heroId": 548,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 509,
+              "level": "main"
+            },
+            {
+              "heroId": 171,
+              "level": "main"
+            },
+            {
+              "heroId": 156,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "中路": 504,
+        "对抗路": 536
+      },
+      "elapsedMs": 0.08749999999997726
+    },
+    {
+      "id": 58,
+      "ids": [
+        521,
+        523,
+        176
+      ],
+      "blocked": [
+        533,
+        157,
+        505
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 510,
+              "level": "main"
+            },
+            {
+              "heroId": 105,
+              "level": "main"
+            },
+            {
+              "heroId": 194,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 176,
+              "level": "main"
+            },
+            {
+              "heroId": 138,
+              "level": "main"
+            },
+            {
+              "heroId": 533,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 157,
+              "level": "main"
+            },
+            {
+              "heroId": 523,
+              "level": "main"
+            },
+            {
+              "heroId": 521,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 151,
+              "level": "main"
+            },
+            {
+              "heroId": 174,
+              "level": "main"
+            },
+            {
+              "heroId": 111,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 550,
+              "level": "main"
+            },
+            {
+              "heroId": 148,
+              "level": "main"
+            },
+            {
+              "heroId": 505,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.09379999999998745
+    },
+    {
+      "id": 59,
+      "ids": [
+        188,
+        533,
+        581,
+        199
+      ],
+      "blocked": [
+        114
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 139,
+              "level": "main"
+            },
+            {
+              "heroId": 194,
+              "level": "main"
+            },
+            {
+              "heroId": 558,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 180,
+              "level": "main"
+            },
+            {
+              "heroId": 522,
+              "level": "main"
+            },
+            {
+              "heroId": 581,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 312,
+              "level": "main"
+            },
+            {
+              "heroId": 124,
+              "level": "main"
+            },
+            {
+              "heroId": 142,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 533,
+              "level": "main"
+            },
+            {
+              "heroId": 584,
+              "level": "main"
+            },
+            {
+              "heroId": 199,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 188,
+              "level": "main"
+            },
+            {
+              "heroId": 114,
+              "level": "main"
+            },
+            {
+              "heroId": 156,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.10120000000000573
+    },
+    {
+      "id": 60,
+      "ids": [],
+      "blocked": [
+        513,
+        148
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 123,
+              "level": "main"
+            },
+            {
+              "heroId": 581,
+              "level": "main"
+            },
+            {
+              "heroId": 544,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 518,
+              "level": "main"
+            },
+            {
+              "heroId": 198,
+              "level": "main"
+            },
+            {
+              "heroId": 549,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 513,
+              "level": "main"
+            },
+            {
+              "heroId": 182,
+              "level": "main"
+            },
+            {
+              "heroId": 197,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 173,
+              "level": "main"
+            },
+            {
+              "heroId": 584,
+              "level": "main"
+            },
+            {
+              "heroId": 196,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 114,
+              "level": "main"
+            },
+            {
+              "heroId": 148,
+              "level": "main"
+            },
+            {
+              "heroId": 191,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {},
+      "elapsedMs": 0.09119999999995798
+    },
+    {
+      "id": 61,
+      "ids": [
+        162
+      ],
+      "blocked": [
+        177,
+        148
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 522,
+              "level": "main"
+            },
+            {
+              "heroId": 120,
+              "level": "main"
+            },
+            {
+              "heroId": 563,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 177,
+              "level": "main"
+            },
+            {
+              "heroId": 176,
+              "level": "main"
+            },
+            {
+              "heroId": 162,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 119,
+              "level": "main"
+            },
+            {
+              "heroId": 108,
+              "level": "main"
+            },
+            {
+              "heroId": 148,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 132,
+              "level": "main"
+            },
+            {
+              "heroId": 508,
+              "level": "main"
+            },
+            {
+              "heroId": 199,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 534,
+              "level": "main"
+            },
+            {
+              "heroId": 156,
+              "level": "main"
+            },
+            {
+              "heroId": 114,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "打野": 162
+      },
+      "elapsedMs": 0.083500000000015
+    },
+    {
+      "id": 62,
+      "ids": [
+        188,
+        547
+      ],
+      "blocked": [
+        178,
+        162,
+        107
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 178,
+              "level": "main"
+            },
+            {
+              "heroId": 549,
+              "level": "main"
+            },
+            {
+              "heroId": 527,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 162,
+              "level": "main"
+            },
+            {
+              "heroId": 506,
+              "level": "main"
+            },
+            {
+              "heroId": 107,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 152,
+              "level": "main"
+            },
+            {
+              "heroId": 521,
+              "level": "main"
+            },
+            {
+              "heroId": 515,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 548,
+              "level": "main"
+            },
+            {
+              "heroId": 519,
+              "level": "main"
+            },
+            {
+              "heroId": 132,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 188,
+              "level": "main"
+            },
+            {
+              "heroId": 501,
+              "level": "main"
+            },
+            {
+              "heroId": 547,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.09789999999998145
+    },
+    {
+      "id": 63,
+      "ids": [
+        542,
+        138,
+        563
+      ],
+      "blocked": [
+        515,
+        175,
+        515
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 180,
+              "level": "main"
+            },
+            {
+              "heroId": 187,
+              "level": "main"
+            },
+            {
+              "heroId": 149,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 138,
+              "level": "main"
+            },
+            {
+              "heroId": 542,
+              "level": "main"
+            },
+            {
+              "heroId": 515,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 191,
+              "level": "main"
+            },
+            {
+              "heroId": 563,
+              "level": "main"
+            },
+            {
+              "heroId": 115,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 111,
+              "level": "main"
+            },
+            {
+              "heroId": 545,
+              "level": "main"
+            },
+            {
+              "heroId": 132,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 175,
+              "level": "main"
+            },
+            {
+              "heroId": 114,
+              "level": "main"
+            },
+            {
+              "heroId": 126,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.09319999999996753
+    },
+    {
+      "id": 64,
+      "ids": [
+        507,
+        108,
+        151,
+        112
+      ],
+      "blocked": [
+        136,
+        577
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 154,
+              "level": "main"
+            },
+            {
+              "heroId": 507,
+              "level": "main"
+            },
+            {
+              "heroId": 198,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 549,
+              "level": "main"
+            },
+            {
+              "heroId": 537,
+              "level": "main"
+            },
+            {
+              "heroId": 198,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 108,
+              "level": "main"
+            },
+            {
+              "heroId": 312,
+              "level": "main"
+            },
+            {
+              "heroId": 136,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 112,
+              "level": "main"
+            },
+            {
+              "heroId": 151,
+              "level": "main"
+            },
+            {
+              "heroId": 192,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 577,
+              "level": "main"
+            },
+            {
+              "heroId": 525,
+              "level": "main"
+            },
+            {
+              "heroId": 126,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.10469999999997981
+    },
+    {
+      "id": 65,
+      "ids": [],
+      "blocked": [
+        517,
+        133
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 518,
+              "level": "main"
+            },
+            {
+              "heroId": 123,
+              "level": "main"
+            },
+            {
+              "heroId": 529,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 517,
+              "level": "main"
+            },
+            {
+              "heroId": 121,
+              "level": "main"
+            },
+            {
+              "heroId": 146,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 142,
+              "level": "main"
+            },
+            {
+              "heroId": 182,
+              "level": "main"
+            },
+            {
+              "heroId": 179,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 151,
+              "level": "main"
+            },
+            {
+              "heroId": 173,
+              "level": "main"
+            },
+            {
+              "heroId": 133,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 105,
+              "level": "main"
+            },
+            {
+              "heroId": 114,
+              "level": "main"
+            },
+            {
+              "heroId": 171,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {},
+      "elapsedMs": 0.08300000000002683
+    },
+    {
+      "id": 66,
+      "ids": [
+        190
+      ],
+      "blocked": [
+        522,
+        117,
+        191
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 180,
+              "level": "main"
+            },
+            {
+              "heroId": 510,
+              "level": "main"
+            },
+            {
+              "heroId": 549,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 177,
+              "level": "main"
+            },
+            {
+              "heroId": 522,
+              "level": "main"
+            },
+            {
+              "heroId": 117,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 142,
+              "level": "main"
+            },
+            {
+              "heroId": 115,
+              "level": "main"
+            },
+            {
+              "heroId": 190,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 199,
+              "level": "main"
+            },
+            {
+              "heroId": 519,
+              "level": "main"
+            },
+            {
+              "heroId": 177,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 152,
+              "level": "main"
+            },
+            {
+              "heroId": 113,
+              "level": "main"
+            },
+            {
+              "heroId": 191,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "中路": 190
+      },
+      "elapsedMs": 0.08640000000002601
+    },
+    {
+      "id": 67,
+      "ids": [
+        533,
+        110
+      ],
+      "blocked": [
+        509
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 144,
+              "level": "main"
+            },
+            {
+              "heroId": 564,
+              "level": "main"
+            },
+            {
+              "heroId": 544,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 533,
+              "level": "main"
+            },
+            {
+              "heroId": 581,
+              "level": "main"
+            },
+            {
+              "heroId": 195,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 513,
+              "level": "main"
+            },
+            {
+              "heroId": 108,
+              "level": "main"
+            },
+            {
+              "heroId": 110,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 111,
+              "level": "main"
+            },
+            {
+              "heroId": 177,
+              "level": "main"
+            },
+            {
+              "heroId": 151,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 505,
+              "level": "main"
+            },
+            {
+              "heroId": 509,
+              "level": "main"
+            },
+            {
+              "heroId": 189,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "打野": 533,
+        "中路": 110
+      },
+      "elapsedMs": 0.12889999999998736
+    },
+    {
+      "id": 68,
+      "ids": [
+        196,
+        519,
+        172
+      ],
+      "blocked": [
+        198,
+        153,
+        585
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 515,
+              "level": "main"
+            },
+            {
+              "heroId": 507,
+              "level": "main"
+            },
+            {
+              "heroId": 172,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 198,
+              "level": "main"
+            },
+            {
+              "heroId": 150,
+              "level": "main"
+            },
+            {
+              "heroId": 153,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 115,
+              "level": "main"
+            },
+            {
+              "heroId": 523,
+              "level": "main"
+            },
+            {
+              "heroId": 515,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 192,
+              "level": "main"
+            },
+            {
+              "heroId": 196,
+              "level": "main"
+            },
+            {
+              "heroId": 519,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 585,
+              "level": "main"
+            },
+            {
+              "heroId": 547,
+              "level": "main"
+            },
+            {
+              "heroId": 148,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.10130000000003747
+    },
+    {
+      "id": 69,
+      "ids": [
+        141,
+        550,
+        194,
+        136
+      ],
+      "blocked": [
+        146,
+        509
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 194,
+              "level": "main"
+            },
+            {
+              "heroId": 139,
+              "level": "main"
+            },
+            {
+              "heroId": 125,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 131,
+              "level": "main"
+            },
+            {
+              "heroId": 117,
+              "level": "main"
+            },
+            {
+              "heroId": 146,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 136,
+              "level": "main"
+            },
+            {
+              "heroId": 141,
+              "level": "main"
+            },
+            {
+              "heroId": 109,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 177,
+              "level": "main"
+            },
+            {
+              "heroId": 155,
+              "level": "main"
+            },
+            {
+              "heroId": 151,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 509,
+              "level": "main"
+            },
+            {
+              "heroId": 188,
+              "level": "main"
+            },
+            {
+              "heroId": 550,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.10419999999999163
+    },
+    {
+      "id": 70,
+      "ids": [],
+      "blocked": [
+        507,
+        517,
+        531,
+        177,
+        517,
+        121,
+        531
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 134,
+              "level": "main"
+            },
+            {
+              "heroId": 507,
+              "level": "main"
+            },
+            {
+              "heroId": 522,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 517,
+              "level": "main"
+            },
+            {
+              "heroId": 121,
+              "level": "main"
+            },
+            {
+              "heroId": 531,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 191,
+              "level": "main"
+            },
+            {
+              "heroId": 179,
+              "level": "main"
+            },
+            {
+              "heroId": 142,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 112,
+              "level": "main"
+            },
+            {
+              "heroId": 519,
+              "level": "main"
+            },
+            {
+              "heroId": 177,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 547,
+              "level": "main"
+            },
+            {
+              "heroId": 534,
+              "level": "main"
+            },
+            {
+              "heroId": 501,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.08949999999998681
+    },
+    {
+      "id": 71,
+      "ids": [
+        166
+      ],
+      "blocked": [],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 511,
+              "level": "main"
+            },
+            {
+              "heroId": 166,
+              "level": "main"
+            },
+            {
+              "heroId": 154,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 166,
+              "level": "main"
+            },
+            {
+              "heroId": 528,
+              "level": "main"
+            },
+            {
+              "heroId": 506,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 119,
+              "level": "main"
+            },
+            {
+              "heroId": 141,
+              "level": "main"
+            },
+            {
+              "heroId": 176,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 199,
+              "level": "main"
+            },
+            {
+              "heroId": 155,
+              "level": "main"
+            },
+            {
+              "heroId": 196,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 544,
+              "level": "main"
+            },
+            {
+              "heroId": 168,
+              "level": "main"
+            },
+            {
+              "heroId": 585,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "对抗路": 166
+      },
+      "elapsedMs": 0.08890000000002374
+    },
+    {
+      "id": 72,
+      "ids": [
+        194,
+        179
+      ],
+      "blocked": [
+        105
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 105,
+              "level": "main"
+            },
+            {
+              "heroId": 536,
+              "level": "main"
+            },
+            {
+              "heroId": 194,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 180,
+              "level": "main"
+            },
+            {
+              "heroId": 162,
+              "level": "main"
+            },
+            {
+              "heroId": 193,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 106,
+              "level": "main"
+            },
+            {
+              "heroId": 179,
+              "level": "main"
+            },
+            {
+              "heroId": 190,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 155,
+              "level": "main"
+            },
+            {
+              "heroId": 151,
+              "level": "main"
+            },
+            {
+              "heroId": 508,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 126,
+              "level": "main"
+            },
+            {
+              "heroId": 585,
+              "level": "main"
+            },
+            {
+              "heroId": 525,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": false,
+      "jointFeasible": true,
+      "lineup": {
+        "对抗路": 194,
+        "中路": 179
+      },
+      "elapsedMs": 0.0858000000000061
+    },
+    {
+      "id": 73,
+      "ids": [
+        544,
+        542,
+        180
+      ],
+      "blocked": [
+        139,
+        518,
+        188
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 139,
+              "level": "main"
+            },
+            {
+              "heroId": 198,
+              "level": "main"
+            },
+            {
+              "heroId": 544,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 518,
+              "level": "main"
+            },
+            {
+              "heroId": 180,
+              "level": "main"
+            },
+            {
+              "heroId": 542,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 110,
+              "level": "main"
+            },
+            {
+              "heroId": 191,
+              "level": "main"
+            },
+            {
+              "heroId": 115,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 174,
+              "level": "main"
+            },
+            {
+              "heroId": 177,
+              "level": "main"
+            },
+            {
+              "heroId": 196,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 188,
+              "level": "main"
+            },
+            {
+              "heroId": 168,
+              "level": "main"
+            },
+            {
+              "heroId": 505,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.09829999999999472
+    },
+    {
+      "id": 74,
+      "ids": [
+        507,
+        176,
+        163,
+        113
+      ],
+      "blocked": [
+        178,
+        531,
+        138,
+        508
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 507,
+              "level": "main"
+            },
+            {
+              "heroId": 163,
+              "level": "main"
+            },
+            {
+              "heroId": 178,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 531,
+              "level": "main"
+            },
+            {
+              "heroId": 138,
+              "level": "main"
+            },
+            {
+              "heroId": 515,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 141,
+              "level": "main"
+            },
+            {
+              "heroId": 136,
+              "level": "main"
+            },
+            {
+              "heroId": 142,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 524,
+              "level": "main"
+            },
+            {
+              "heroId": 508,
+              "level": "main"
+            },
+            {
+              "heroId": 548,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 113,
+              "level": "main"
+            },
+            {
+              "heroId": 544,
+              "level": "main"
+            },
+            {
+              "heroId": 176,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.09780000000000655
+    },
+    {
+      "id": 75,
+      "ids": [],
+      "blocked": [
+        563,
+        125,
+        173
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 563,
+              "level": "main"
+            },
+            {
+              "heroId": 166,
+              "level": "main"
+            },
+            {
+              "heroId": 125,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 153,
+              "level": "main"
+            },
+            {
+              "heroId": 522,
+              "level": "main"
+            },
+            {
+              "heroId": 163,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 563,
+              "level": "main"
+            },
+            {
+              "heroId": 179,
+              "level": "main"
+            },
+            {
+              "heroId": 137,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 196,
+              "level": "main"
+            },
+            {
+              "heroId": 112,
+              "level": "main"
+            },
+            {
+              "heroId": 173,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 118,
+              "level": "main"
+            },
+            {
+              "heroId": 126,
+              "level": "main"
+            },
+            {
+              "heroId": 191,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {},
+      "elapsedMs": 0.09780000000000655
+    },
+    {
+      "id": 76,
+      "ids": [
+        548
+      ],
+      "blocked": [
+        142,
+        525,
+        540
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 126,
+              "level": "main"
+            },
+            {
+              "heroId": 123,
+              "level": "main"
+            },
+            {
+              "heroId": 172,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 146,
+              "level": "main"
+            },
+            {
+              "heroId": 117,
+              "level": "main"
+            },
+            {
+              "heroId": 150,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 563,
+              "level": "main"
+            },
+            {
+              "heroId": 142,
+              "level": "main"
+            },
+            {
+              "heroId": 115,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 192,
+              "level": "main"
+            },
+            {
+              "heroId": 196,
+              "level": "main"
+            },
+            {
+              "heroId": 548,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 525,
+              "level": "main"
+            },
+            {
+              "heroId": 186,
+              "level": "main"
+            },
+            {
+              "heroId": 540,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": true,
+      "baselineFeasible": true,
+      "jointFeasible": true,
+      "lineup": {
+        "发育路": 548
+      },
+      "elapsedMs": 0.09020000000003847
+    },
+    {
+      "id": 77,
+      "ids": [
+        196,
+        132
+      ],
+      "blocked": [
+        179,
+        127,
+        184,
+        188,
+        178,
+        198,
+        549
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 518,
+              "level": "main"
+            },
+            {
+              "heroId": 515,
+              "level": "main"
+            },
+            {
+              "heroId": 134,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 178,
+              "level": "main"
+            },
+            {
+              "heroId": 198,
+              "level": "main"
+            },
+            {
+              "heroId": 549,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 179,
+              "level": "main"
+            },
+            {
+              "heroId": 156,
+              "level": "main"
+            },
+            {
+              "heroId": 127,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 132,
+              "level": "main"
+            },
+            {
+              "heroId": 177,
+              "level": "main"
+            },
+            {
+              "heroId": 196,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 186,
+              "level": "main"
+            },
+            {
+              "heroId": 184,
+              "level": "main"
+            },
+            {
+              "heroId": 188,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.09379999999998745
+    },
+    {
+      "id": 78,
+      "ids": [
+        169,
+        581,
+        134
+      ],
+      "blocked": [],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 581,
+              "level": "main"
+            },
+            {
+              "heroId": 134,
+              "level": "main"
+            },
+            {
+              "heroId": 511,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 137,
+              "level": "main"
+            },
+            {
+              "heroId": 506,
+              "level": "main"
+            },
+            {
+              "heroId": 172,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 156,
+              "level": "main"
+            },
+            {
+              "heroId": 563,
+              "level": "main"
+            },
+            {
+              "heroId": 523,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 177,
+              "level": "main"
+            },
+            {
+              "heroId": 533,
+              "level": "main"
+            },
+            {
+              "heroId": 169,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 126,
+              "level": "main"
+            },
+            {
+              "heroId": 194,
+              "level": "main"
+            },
+            {
+              "heroId": 149,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.105700000000013
+    },
+    {
+      "id": 79,
+      "ids": [
+        150,
+        193,
+        174,
+        151
+      ],
+      "blocked": [
+        519,
+        152
+      ],
+      "members": {
+        "对抗路": {
+          "id": "对抗路",
+          "name": "对抗路构造选手",
+          "pool": [
+            {
+              "heroId": 120,
+              "level": "main"
+            },
+            {
+              "heroId": 140,
+              "level": "main"
+            },
+            {
+              "heroId": 166,
+              "level": "main"
+            }
+          ]
+        },
+        "打野": {
+          "id": "打野",
+          "name": "打野构造选手",
+          "pool": [
+            {
+              "heroId": 150,
+              "level": "main"
+            },
+            {
+              "heroId": 170,
+              "level": "main"
+            },
+            {
+              "heroId": 193,
+              "level": "main"
+            }
+          ]
+        },
+        "中路": {
+          "id": "中路",
+          "name": "中路构造选手",
+          "pool": [
+            {
+              "heroId": 191,
+              "level": "main"
+            },
+            {
+              "heroId": 108,
+              "level": "main"
+            },
+            {
+              "heroId": 136,
+              "level": "main"
+            }
+          ]
+        },
+        "发育路": {
+          "id": "发育路",
+          "name": "发育路构造选手",
+          "pool": [
+            {
+              "heroId": 519,
+              "level": "main"
+            },
+            {
+              "heroId": 151,
+              "level": "main"
+            },
+            {
+              "heroId": 174,
+              "level": "main"
+            }
+          ]
+        },
+        "游走": {
+          "id": "游走",
+          "name": "游走构造选手",
+          "pool": [
+            {
+              "heroId": 152,
+              "level": "main"
+            },
+            {
+              "heroId": 577,
+              "level": "main"
+            },
+            {
+              "heroId": 188,
+              "level": "main"
+            }
+          ]
+        }
+      },
+      "possible": false,
+      "baselineFeasible": false,
+      "jointFeasible": false,
+      "lineup": null,
+      "elapsedMs": 0.11019999999996344
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=140",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 140
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:31:09.500Z",
+  "rawSha256": "e2c8f946101af4ffcd0355bdf7a908f127c475bb9ed4fa22bb798e5c5d044a8d",
+  "cache": "fresh",
+  "data": {
+    "heroId": 140,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "赤影疾锋",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a55a53bd886454818cd8108634d66dc6.jpg",
+        "pickRate": 31.36
+      },
+      {
+        "skinName": "冰锋战神",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/3528d129fd4fc43c861279ece4f9bba3.jpg",
+        "pickRate": 24.71
+      },
+      {
+        "skinName": "龙腾万里",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a54eeada6a70ec4ed6836af7694d42a7.jpg",
+        "pickRate": 21.05
+      },
+      {
+        "skinName": "神骥·镇沧海",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/21ae7f953841e0a281c3dcdb7466937f.jpg",
+        "pickRate": 17.79
+      },
+      {
+        "skinName": "武圣",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/d737e2aa7a98776f8ee5c4464ed421e6.jpg",
+        "pickRate": 2.58
+      },
+      {
+        "skinName": "天启骑士",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/6e682887a6491eecc5cab145260db2ae.jpg",
+        "pickRate": 1.36
+      },
+      {
+        "skinName": "决胜骁骑",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/65fb0129a51bbee620f42a4c53c902ed.jpg",
+        "pickRate": 0.61
+      },
+      {
+        "skinName": "百相守梦",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/7a25af832a227b8d549063410e5f482a.jpg",
+        "pickRate": 0.34
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/e624bf0f1ab70cfcedb3daf5c938c33f.png",
+        "pickRate": 0.2
+      }
+    ]
+  }
+}

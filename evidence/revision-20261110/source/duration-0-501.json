@@ -1,0 +1,34 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/detail/specifyheroperiod?heroId=501",
+  "query": {
+    "kind": "duration",
+    "heroId": 501
+  },
+  "fetchedAt": "2026-11-10T06:35:27.801Z",
+  "rawSha256": "6bc32b75a345723934ee15715160dbd6c603d084b7ae07ae91ad6a0b03eb5cc1",
+  "cache": "fresh",
+  "data": {
+    "heroId": 501,
+    "avgWinDurationSeconds": 810.08,
+    "avgLossDurationSeconds": 776.12,
+    "winRateByDuration": [
+      {
+        "winRate": 38.86,
+        "intervalRate": 42.04,
+        "durationRange": "0-12分钟"
+      },
+      {
+        "winRate": 46.85,
+        "intervalRate": 48.16,
+        "durationRange": "12-18分钟"
+      },
+      {
+        "winRate": 48.43,
+        "intervalRate": 9.79,
+        "durationRange": "18分钟+"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=125",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 125
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:29:53.778Z",
+  "rawSha256": "8777df0877175af3462c40bb329691bc5576868f4c0c65f399a2a082707dbb32",
+  "cache": "fresh",
+  "data": {
+    "heroId": 125,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "诡秘之主",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/ed40a58eaa5a27bc1b6da143f307eb5f.jpg",
+        "pickRate": 63.69
+      },
+      {
+        "skinName": "云间偶戏",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/8570e8821f3b48ecce9a9333d24960fd.jpg",
+        "pickRate": 17.57
+      },
+      {
+        "skinName": "午夜歌剧院",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a64cf277b55178d33544baa2d78aa2ef.jpg",
+        "pickRate": 12.63
+      },
+      {
+        "skinName": "无心",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/058a0fc4f008a629257a21d988162dae.jpg",
+        "pickRate": 6.11
+      }
+    ]
+  }
+}

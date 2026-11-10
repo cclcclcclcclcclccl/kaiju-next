@@ -1,0 +1,40 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=577",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 577
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:38:58.880Z",
+  "rawSha256": "a9078569fb52ce160a8ce50d68563219421765d957898223429cb44aa4a96b48",
+  "cache": "fresh",
+  "data": {
+    "heroId": 577,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "涂山红红",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/37656f0bf8fb58b209e0fb719263be3d.jpg",
+        "pickRate": 56.07
+      },
+      {
+        "skinName": "灵卦秘语",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/8cc6dcac466ce61d67b592f4eebf9d76.jpg",
+        "pickRate": 23.89
+      },
+      {
+        "skinName": "巫礼祀神",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/6cb5bb4ab150c65484c682496735f480.jpg",
+        "pickRate": 18.42
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/003c20c2c9df52a97dd6f9080669f728.png",
+        "pickRate": 1.63
+      }
+    ]
+  }
+}

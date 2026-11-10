@@ -1,0 +1,55 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=503",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 503
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:35:36.831Z",
+  "rawSha256": "6d3904157519a7dbc4b5cdccd8760eaf26b4bf29716d4df4732b1a515b92bc0a",
+  "cache": "fresh",
+  "data": {
+    "heroId": 503,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "龙之律动",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/c265e26927b6e7d20eb8a3d019a57bc3.jpg",
+        "pickRate": 56.21
+      },
+      {
+        "skinName": "电玩高手",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/9f89ffb243a2c7e92eecbc807f42c03f.jpg",
+        "pickRate": 17.6
+      },
+      {
+        "skinName": "命运角斗场",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/f41e605ba92ee46c0fe42e646e3aca2d.jpg",
+        "pickRate": 16.51
+      },
+      {
+        "skinName": "铁影缉凶",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/aa182c2f1aef08ddf53d19656ea6ee8f.jpg",
+        "pickRate": 4.78
+      },
+      {
+        "skinName": "御狮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/2867c225d598dca4eb890d729a8d6c88.jpg",
+        "pickRate": 2.96
+      },
+      {
+        "skinName": "特工战影",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/c6db1ff215dda91c2f1220b2ba4f6847.jpg",
+        "pickRate": 1.77
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/683c28526d717781556705774532dfc9.png",
+        "pickRate": 0.17
+      }
+    ]
+  }
+}

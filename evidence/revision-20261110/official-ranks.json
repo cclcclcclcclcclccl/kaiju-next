@@ -1,0 +1,128 @@
+{
+  "running": false,
+  "intervalMinutes": 35,
+  "startedAt": "2026-11-10T06:40:23.019Z",
+  "results": [
+    {
+      "segment": 1,
+      "position": 1,
+      "state": "cached",
+      "sourceDate": "2026-11-09",
+      "fetchedAt": "2026-11-10T06:15:57.471Z",
+      "rows": 10
+    },
+    {
+      "segment": 1,
+      "position": 2,
+      "state": "cached",
+      "sourceDate": "2026-11-09",
+      "fetchedAt": "2026-11-10T06:15:57.622Z",
+      "rows": 10
+    },
+    {
+      "segment": 1,
+      "position": 3,
+      "state": "cached",
+      "sourceDate": "2026-11-09",
+      "fetchedAt": "2026-11-10T06:15:57.751Z",
+      "rows": 10
+    },
+    {
+      "segment": 1,
+      "position": 4,
+      "state": "cached",
+      "sourceDate": "2026-11-09",
+      "fetchedAt": "2026-11-10T06:15:57.891Z",
+      "rows": 10
+    },
+    {
+      "segment": 1,
+      "position": 5,
+      "state": "cached",
+      "sourceDate": "2026-11-09",
+      "fetchedAt": "2026-11-10T06:15:58.021Z",
+      "rows": 10
+    },
+    {
+      "segment": 3,
+      "position": 1,
+      "state": "cached",
+      "sourceDate": "2026-11-09",
+      "fetchedAt": "2026-11-10T06:15:58.151Z",
+      "rows": 10
+    },
+    {
+      "segment": 3,
+      "position": 2,
+      "state": "cached",
+      "sourceDate": "2026-11-09",
+      "fetchedAt": "2026-11-10T06:15:58.291Z",
+      "rows": 10
+    },
+    {
+      "segment": 3,
+      "position": 3,
+      "state": "cached",
+      "sourceDate": "2026-11-09",
+      "fetchedAt": "2026-11-10T06:15:58.451Z",
+      "rows": 10
+    },
+    {
+      "segment": 3,
+      "position": 4,
+      "state": "cached",
+      "sourceDate": "2026-11-09",
+      "fetchedAt": "2026-11-10T06:15:58.592Z",
+      "rows": 10
+    },
+    {
+      "segment": 3,
+      "position": 5,
+      "state": "cached",
+      "sourceDate": "2026-11-09",
+      "fetchedAt": "2026-11-10T06:15:58.732Z",
+      "rows": 10
+    },
+    {
+      "segment": 4,
+      "position": 1,
+      "state": "cached",
+      "sourceDate": "2026-11-09",
+      "fetchedAt": "2026-11-10T06:15:58.881Z",
+      "rows": 10
+    },
+    {
+      "segment": 4,
+      "position": 2,
+      "state": "cached",
+      "sourceDate": "2026-11-09",
+      "fetchedAt": "2026-11-10T06:15:59.030Z",
+      "rows": 10
+    },
+    {
+      "segment": 4,
+      "position": 3,
+      "state": "cached",
+      "sourceDate": "2026-11-09",
+      "fetchedAt": "2026-11-10T06:15:59.171Z",
+      "rows": 10
+    },
+    {
+      "segment": 4,
+      "position": 4,
+      "state": "cached",
+      "sourceDate": "2026-11-09",
+      "fetchedAt": "2026-11-10T06:15:59.311Z",
+      "rows": 10
+    },
+    {
+      "segment": 4,
+      "position": 5,
+      "state": "cached",
+      "sourceDate": "2026-11-09",
+      "fetchedAt": "2026-11-10T06:15:59.471Z",
+      "rows": 10
+    }
+  ],
+  "completedAt": "2026-11-10T06:40:23.065Z"
+}

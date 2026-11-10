@@ -1,0 +1,47 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-11-09&heroId=558",
+  "query": {
+    "kind": "combined",
+    "date": "2026-11-09",
+    "heroId": 558
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:38:47.680Z",
+  "rawSha256": "eb462471adaea57d89ee86218bb7d7a5b9a0637596f48b304f3bbeae712931e9",
+  "cache": "fresh",
+  "data": {
+    "heroId": 558,
+    "positions": {
+      "0": {
+        "pickRate": 96.14,
+        "winRate": 50.41
+      },
+      "3": {
+        "pickRate": 3.43,
+        "winRate": 43.29
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "闪现",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png",
+        "pickRate": 90.56,
+        "winRate": 49.91
+      },
+      {
+        "skillName": "传送",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/32eca3de9de9a92d93e036b2e2c29f25.png",
+        "pickRate": 5.58,
+        "winRate": 42.86
+      },
+      {
+        "skillName": "惩击",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png",
+        "pickRate": 3.43,
+        "winRate": 45.75
+      }
+    ]
+  }
+}

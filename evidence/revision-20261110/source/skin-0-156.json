@@ -1,0 +1,65 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=156",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 156
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:32:15.153Z",
+  "rawSha256": "e8d6a57aac48ecd37c20cec549bd4fd8e156048fdb1a15986dec88e8209789cc",
+  "cache": "fresh",
+  "data": {
+    "heroId": 156,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "黄金白羊座",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/695186b43691b1bad7d5c7b2ada64664.jpg",
+        "pickRate": 50.12
+      },
+      {
+        "skinName": "千筹问战",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/86e1552e0c2225d739b2273d55665e82.jpg",
+        "pickRate": 14.07
+      },
+      {
+        "skinName": "缤纷绘卷",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/0337e49b4e2e6c2a74d7c51f11179df6.jpg",
+        "pickRate": 8.64
+      },
+      {
+        "skinName": "一千零一夜",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/c4563cf2a57c94f570a420bac1787856.jpg",
+        "pickRate": 6.91
+      },
+      {
+        "skinName": "古海寻踪",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/db61c06d9b2dc3d92e8717d3ea65ec16.jpg",
+        "pickRate": 5.68
+      },
+      {
+        "skinName": "罗小黑战记",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/592f8dc3f6587b10c21da6143c0d6467.jpg",
+        "pickRate": 5.19
+      },
+      {
+        "skinName": "灵野札记",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/c1d1d17e220361a497f542143d1fb2ad.jpg",
+        "pickRate": 4.44
+      },
+      {
+        "skinName": "幽兰居士",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/51e2292845e9456927e42effb10d92a7.jpg",
+        "pickRate": 4.2
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/1e8b6f73d00ae1d058299bb94808741c.png",
+        "pickRate": 0.74
+      }
+    ]
+  }
+}

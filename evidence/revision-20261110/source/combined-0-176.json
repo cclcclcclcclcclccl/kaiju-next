@@ -1,0 +1,47 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-11-09&heroId=176",
+  "query": {
+    "kind": "combined",
+    "date": "2026-11-09",
+    "heroId": 176
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:33:34.857Z",
+  "rawSha256": "1f41e4f52df5b35eb9fd69e1500fd08f92a0d89331e10593441b385294a20746",
+  "cache": "fresh",
+  "data": {
+    "heroId": 176,
+    "positions": {
+      "1": {
+        "pickRate": 69.11,
+        "winRate": 49.67
+      },
+      "4": {
+        "pickRate": 30.89,
+        "winRate": 49.82
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "闪现",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png",
+        "pickRate": 98.09,
+        "winRate": 50.17
+      },
+      {
+        "skillName": "净化",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/d42fcfdf7e4d6b7f1ba46e0faed9b64e.png",
+        "pickRate": 0.64,
+        "winRate": 44.23
+      },
+      {
+        "skillName": "传送",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/32eca3de9de9a92d93e036b2e2c29f25.png",
+        "pickRate": 0.64,
+        "winRate": 46.23
+      }
+    ]
+  }
+}

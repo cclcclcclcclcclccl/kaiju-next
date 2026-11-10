@@ -1,0 +1,60 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=168",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 168
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:32:50.485Z",
+  "rawSha256": "9cba7ae896612b5644f2f5f8457b17f9d45d36f76011fffb695d136025c19cbf",
+  "cache": "fresh",
+  "data": {
+    "heroId": 168,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "星界战将",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a4ef7faee87092b887d040f589262e29.jpg",
+        "pickRate": 36.42
+      },
+      {
+        "skinName": "奔雷神使",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/e047d94739f2116ec3f73d6bbec8a201.jpg",
+        "pickRate": 16.61
+      },
+      {
+        "skinName": "西部大镖客",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/ce0aa03337e85a5d5d00c7352c7cb961.jpg",
+        "pickRate": 14.06
+      },
+      {
+        "skinName": "小牛鸭",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/857bdf546e044e039d5f1c1f198a03fa.jpg",
+        "pickRate": 11.82
+      },
+      {
+        "skinName": "牛运亨通",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/10d1adbfb6fb7b2d94bb48277947bc19.jpg",
+        "pickRate": 8.63
+      },
+      {
+        "skinName": "御旌",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/aedbd2d1ddcc8b216f4ba13c9caf68c0.jpg",
+        "pickRate": 5.75
+      },
+      {
+        "skinName": "制霸全明星",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/53ed10ae520299ebb26eafb111d9c82b.jpg",
+        "pickRate": 3.51
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/be988dcba748c48480712495ac8db9ce.png",
+        "pickRate": 3.19
+      }
+    ]
+  }
+}

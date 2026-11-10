@@ -1,0 +1,45 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=136",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 136
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:30:49.312Z",
+  "rawSha256": "145a3808b39d03bf91a144147f5160ab7b23cb818e29d8dce97e34c8b58af706",
+  "cache": "fresh",
+  "data": {
+    "heroId": 136,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "海洋之心",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/c4c7321194e094b5c7183e0785caf915.jpg",
+        "pickRate": 59.57
+      },
+      {
+        "skinName": "倪克斯神谕",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/62ff9c5eddae7f46d5990ee4c3934988.jpg",
+        "pickRate": 25.51
+      },
+      {
+        "skinName": "神器·明辉仪",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/502001511c3f7339ae202ac58b3122db.jpg",
+        "pickRate": 7.53
+      },
+      {
+        "skinName": "东方不败",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/118f39077a5186e09acea2517c686257.jpg",
+        "pickRate": 5.99
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/804003144058a714a993f5d7127dc9b1.png",
+        "pickRate": 1.4
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-11-09&heroId=113",
+  "query": {
+    "kind": "combined",
+    "date": "2026-11-09",
+    "heroId": 113
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:29:02.365Z",
+  "rawSha256": "c359b7660b510d5a8061081c43b71fb0b25656672c937631243842653ff3bd2d",
+  "cache": "fresh",
+  "data": {
+    "heroId": 113,
+    "positions": {
+      "1": {
+        "pickRate": 4.35,
+        "winRate": 100
+      },
+      "4": {
+        "pickRate": 95.65,
+        "winRate": 49.21
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "治疗术",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/2bfe8f88808b1566dd979c0b14b766ed.png",
+        "pickRate": 91.3,
+        "winRate": 49.03
+      },
+      {
+        "skillName": "终结",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/1f49f189ef61ea4ef2e2da08e6207956.png",
+        "pickRate": 8.7,
+        "winRate": 43.51
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=518",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 518
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:36:42.564Z",
+  "rawSha256": "0675593b9c539c2926914da75d4a96d65b7341d6b6d21992c5d99e4e78a4c2f9",
+  "cache": "fresh",
+  "data": {
+    "heroId": 518,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "琥珀纪元",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/0898ea52cb7e3abf5b13e0aab423796e.jpg",
+        "pickRate": 41.97
+      },
+      {
+        "skinName": "无双飞将",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/ee76423c5466c0245ca796409858d23d.jpg",
+        "pickRate": 34.17
+      },
+      {
+        "skinName": "神骥·逐星野",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/210c97da113dbdb994313beab39d6c2e.jpg",
+        "pickRate": 18.14
+      },
+      {
+        "skinName": "神威",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/624358a2eba4cfc6fe9df7b54f26119e.jpg",
+        "pickRate": 2.91
+      },
+      {
+        "skinName": "幸存者",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/cb8fb7cddba5128796ba796b63f60221.jpg",
+        "pickRate": 2.64
+      },
+      {
+        "skinName": "访茗客",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a476aa984f718c581cc568294cd2bb8d.jpg",
+        "pickRate": 0.17
+      }
+    ]
+  }
+}

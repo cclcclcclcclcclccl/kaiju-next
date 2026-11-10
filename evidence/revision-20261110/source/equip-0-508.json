@@ -1,0 +1,394 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/equip?date=2026-11-09&heroId=508",
+  "query": {
+    "kind": "equip",
+    "date": "2026-11-09",
+    "heroId": 508
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:36:05.194Z",
+  "rawSha256": "4281f88934762f37755655aac8b974d970403b7b1b6e64daa53511726b4d8ce5",
+  "cache": "fresh",
+  "data": {
+    "heroId": 508,
+    "queryEndDate": "2026-11-09T16:59:59.999Z",
+    "topItemsBySlot": [
+      {
+        "slot": 1,
+        "baseWinRate": 51.04,
+        "topItems": [
+          {
+            "equipId": 1136,
+            "equipName": "影刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1136.png",
+            "pickRate": 40,
+            "winRate": 50.33,
+            "deltaWinRate": -0.71
+          },
+          {
+            "equipId": 1425,
+            "equipName": "急速战靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1425.png",
+            "pickRate": 30,
+            "winRate": 42.9,
+            "deltaWinRate": -8.14
+          },
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+            "pickRate": 20,
+            "winRate": 53.69,
+            "deltaWinRate": 2.65
+          },
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png",
+            "pickRate": 10,
+            "winRate": 52.44,
+            "deltaWinRate": 1.4
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "baseWinRate": 51.08,
+        "topItems": [
+          {
+            "equipId": 1136,
+            "equipName": "影刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1136.png",
+            "pickRate": 60,
+            "winRate": 51.63,
+            "deltaWinRate": 0.55
+          },
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png",
+            "pickRate": 20,
+            "winRate": 47.64,
+            "deltaWinRate": -3.44
+          },
+          {
+            "equipId": 1138,
+            "equipName": "强者破军",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1138.png",
+            "pickRate": 10,
+            "winRate": 71.43,
+            "deltaWinRate": 20.35
+          },
+          {
+            "equipId": 1425,
+            "equipName": "急速战靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1425.png",
+            "pickRate": 10,
+            "winRate": 39.75,
+            "deltaWinRate": -11.33
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "baseWinRate": 52.31,
+        "topItems": [
+          {
+            "equipId": 1133,
+            "equipName": "无尽战刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1133.png",
+            "pickRate": 87.5,
+            "winRate": 53.05,
+            "deltaWinRate": 0.74
+          },
+          {
+            "equipId": 1161,
+            "equipName": "幽影袖箭",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1161.png",
+            "pickRate": 12.5,
+            "winRate": 51.47,
+            "deltaWinRate": -0.84
+          }
+        ]
+      },
+      {
+        "slot": 4,
+        "baseWinRate": 59.79,
+        "topItems": [
+          {
+            "equipId": 1155,
+            "equipName": "仁者破晓",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1155.png",
+            "pickRate": 57.14,
+            "winRate": 60.02,
+            "deltaWinRate": 0.23
+          },
+          {
+            "equipId": 11210,
+            "equipName": "制裁之刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11210.png",
+            "pickRate": 28.57,
+            "winRate": 60,
+            "deltaWinRate": 0.21
+          },
+          {
+            "equipId": 1133,
+            "equipName": "无尽战刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1133.png",
+            "pickRate": 14.29,
+            "winRate": 58.23,
+            "deltaWinRate": -1.56
+          }
+        ]
+      },
+      {
+        "slot": 5,
+        "baseWinRate": 66.18,
+        "topItems": [
+          {
+            "equipId": 1155,
+            "equipName": "仁者破晓",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1155.png",
+            "pickRate": 60,
+            "winRate": 65.7,
+            "deltaWinRate": -0.48
+          },
+          {
+            "equipId": 1126,
+            "equipName": "末世",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1126.png",
+            "pickRate": 40,
+            "winRate": 66.1,
+            "deltaWinRate": -0.08
+          }
+        ]
+      },
+      {
+        "slot": 6,
+        "baseWinRate": 69.8,
+        "topItems": [
+          {
+            "equipId": 1126,
+            "equipName": "末世",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1126.png",
+            "pickRate": 33.33,
+            "winRate": 73.42,
+            "deltaWinRate": 3.62
+          },
+          {
+            "equipId": 1141,
+            "equipName": "逐日之弓",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1141.png",
+            "pickRate": 33.33,
+            "winRate": 69.85,
+            "deltaWinRate": 0.05
+          },
+          {
+            "equipId": 1161,
+            "equipName": "幽影袖箭",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1161.png",
+            "pickRate": 33.33,
+            "winRate": 63.27,
+            "deltaWinRate": -6.53
+          }
+        ]
+      }
+    ],
+    "topFullBuilds": [
+      {
+        "build": [
+          {
+            "equipId": 1422,
+            "equipName": "抵抗之靴",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png"
+          },
+          {
+            "equipId": 1136,
+            "equipName": "影刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1136.png"
+          },
+          {
+            "equipId": 1133,
+            "equipName": "无尽战刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1133.png"
+          },
+          {
+            "equipId": 1155,
+            "equipName": "仁者破晓",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1155.png"
+          },
+          {
+            "equipId": 1126,
+            "equipName": "末世",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1126.png"
+          },
+          {
+            "equipId": 1141,
+            "equipName": "逐日之弓",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1141.png"
+          }
+        ],
+        "frequency": 10,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1421,
+            "equipName": "影忍之足",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png"
+          },
+          {
+            "equipId": 1136,
+            "equipName": "影刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1136.png"
+          },
+          {
+            "equipId": 1161,
+            "equipName": "幽影袖箭",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1161.png"
+          },
+          {
+            "equipId": 1133,
+            "equipName": "无尽战刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1133.png"
+          },
+          {
+            "equipId": 1155,
+            "equipName": "仁者破晓",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1155.png"
+          },
+          {
+            "equipId": 1126,
+            "equipName": "末世",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1126.png"
+          }
+        ],
+        "frequency": 10,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      },
+      {
+        "build": [
+          {
+            "equipId": 1136,
+            "equipName": "影刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1136.png"
+          },
+          {
+            "equipId": 1138,
+            "equipName": "强者破军",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1138.png"
+          },
+          {
+            "equipId": 1133,
+            "equipName": "无尽战刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1133.png"
+          },
+          {
+            "equipId": 11210,
+            "equipName": "制裁之刃",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11210.png"
+          },
+          {
+            "equipId": 1155,
+            "equipName": "仁者破晓",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1155.png"
+          },
+          {
+            "equipId": 1161,
+            "equipName": "幽影袖箭",
+            "equipIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1161.png"
+          }
+        ],
+        "frequency": 10,
+        "summonerSkill": {
+          "skillId": 80115,
+          "skillName": "闪现",
+          "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png"
+        }
+      }
+    ],
+    "equipmentWinRates": [
+      {
+        "equipmentId": 1136,
+        "equipmentName": "影刃",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1136.png",
+        "pickRate": 97.92,
+        "winRate": 52.34
+      },
+      {
+        "equipmentId": 1133,
+        "equipmentName": "无尽战刃",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1133.png",
+        "pickRate": 89.58,
+        "winRate": 52.56
+      },
+      {
+        "equipmentId": 1155,
+        "equipmentName": "仁者破晓",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1155.png",
+        "pickRate": 75.83,
+        "winRate": 60.44
+      },
+      {
+        "equipmentId": 1422,
+        "equipmentName": "抵抗之靴",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1422.png",
+        "pickRate": 42.92,
+        "winRate": 59.22
+      },
+      {
+        "equipmentId": 1126,
+        "equipmentName": "末世",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1126.png",
+        "pickRate": 30.42,
+        "winRate": 68.49
+      },
+      {
+        "equipmentId": 1425,
+        "equipmentName": "急速战靴",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1425.png",
+        "pickRate": 28.75,
+        "winRate": 39.13
+      },
+      {
+        "equipmentId": 1421,
+        "equipmentName": "影忍之足",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1421.png",
+        "pickRate": 22.08,
+        "winRate": 52.83
+      },
+      {
+        "equipmentId": 1141,
+        "equipmentName": "逐日之弓",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1141.png",
+        "pickRate": 14.17,
+        "winRate": 82.35
+      },
+      {
+        "equipmentId": 1161,
+        "equipmentName": "幽影袖箭",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/1161.png",
+        "pickRate": 11.67,
+        "winRate": 53.57
+      },
+      {
+        "equipmentId": 11210,
+        "equipmentName": "制裁之刃",
+        "equipmentIcon": "https://img.pvp.mcxssg.net/manage/custom_wzryequip/11210.png",
+        "pickRate": 11.25,
+        "winRate": 62.96
+      }
+    ]
+  }
+}

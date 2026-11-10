@@ -1,0 +1,92 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/hero/analysis?heroId=501",
+  "query": {
+    "kind": "analysis",
+    "heroId": 501
+  },
+  "fetchedAt": "2026-11-10T06:35:28.807Z",
+  "rawSha256": "beef103a5a6a9c82c1eb7188a95b6b57bc3aadf5c5a563c5f1d3cafec9adc843",
+  "cache": "fresh",
+  "data": {
+    "heroId": 501,
+    "counters": [
+      {
+        "heroName": "戈娅",
+        "totalMatches": 138,
+        "advantageIndex": 8.17
+      }
+    ],
+    "counteredBy": [
+      {
+        "heroName": "蚩奼",
+        "totalMatches": 142,
+        "advantageIndex": -10.44
+      },
+      {
+        "heroName": "百里守约",
+        "totalMatches": 146,
+        "advantageIndex": -9.26
+      },
+      {
+        "heroName": "李信",
+        "totalMatches": 144,
+        "advantageIndex": -9
+      },
+      {
+        "heroName": "大乔",
+        "totalMatches": 143,
+        "advantageIndex": -7.05
+      },
+      {
+        "heroName": "元歌",
+        "totalMatches": 164,
+        "advantageIndex": -6.94
+      },
+      {
+        "heroName": "诸葛亮",
+        "totalMatches": 194,
+        "advantageIndex": -5.28
+      },
+      {
+        "heroName": "少司缘",
+        "totalMatches": 318,
+        "advantageIndex": -4.08
+      }
+    ],
+    "goodSynergies": [],
+    "badSynergies": [
+      {
+        "heroName": "赵云",
+        "totalMatches": 170,
+        "synergyIndex": -10.12
+      },
+      {
+        "heroName": "沈梦溪",
+        "totalMatches": 188,
+        "synergyIndex": -8.37
+      },
+      {
+        "heroName": "马超",
+        "totalMatches": 181,
+        "synergyIndex": -7.78
+      },
+      {
+        "heroName": "女娲",
+        "totalMatches": 172,
+        "synergyIndex": -6.47
+      },
+      {
+        "heroName": "哪吒",
+        "totalMatches": 158,
+        "synergyIndex": -6.4
+      },
+      {
+        "heroName": "元流之子(射手)",
+        "totalMatches": 225,
+        "synergyIndex": -3.98
+      }
+    ]
+  }
+}

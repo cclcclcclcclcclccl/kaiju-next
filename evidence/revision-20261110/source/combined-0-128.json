@@ -1,0 +1,47 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-11-09&heroId=128",
+  "query": {
+    "kind": "combined",
+    "date": "2026-11-09",
+    "heroId": 128
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:30:12.946Z",
+  "rawSha256": "d98bd17b1ac2c13f947d1af3a0d49dd4f9f75fb5747e6f42e58cf32f4d300195",
+  "cache": "fresh",
+  "data": {
+    "heroId": 128,
+    "positions": {
+      "0": {
+        "pickRate": 97.45,
+        "winRate": 50.65
+      },
+      "3": {
+        "pickRate": 2.55,
+        "winRate": null
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "雾行千山",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/adb44ab57875ca4d8f9a0d931d0abda9.png",
+        "pickRate": 64.29,
+        "winRate": 50.65
+      },
+      {
+        "skillName": "闪现",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/eb3386a58bce7cc31773de8cf7fce8fd.png",
+        "pickRate": 33.16,
+        "winRate": 50.91
+      },
+      {
+        "skillName": "惩击",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png",
+        "pickRate": 2.55,
+        "winRate": 47.96
+      }
+    ]
+  }
+}

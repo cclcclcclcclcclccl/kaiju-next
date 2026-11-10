@@ -62,6 +62,7 @@ try {
   report.checks.push('visitor browser hero pool persists through public-site reload');
   await page.locator('.sidebar').getByText('阵容备战', { exact: true }).click();
   await page.getByLabel('操作模式', { exact: true }).selectOption('blue');
+  await page.getByLabel('结合我的英雄池', { exact: true }).uncheck();
   await page.getByRole('button', { name: '开始新演练', exact: true }).click();
   await page.getByLabel('本轮英雄', { exact: true }).selectOption('544');
   await page.getByRole('button', { name: '确认本轮', exact: true }).click();

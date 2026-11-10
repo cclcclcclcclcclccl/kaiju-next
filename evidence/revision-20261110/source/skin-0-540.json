@@ -1,0 +1,40 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=540",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 540
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:38:03.339Z",
+  "rawSha256": "0786ff627425e277698b5787211b03821bdd9d904852f44dd27df557e1b59414",
+  "cache": "fresh",
+  "data": {
+    "heroId": 540,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "济世禅心",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/b91874d9940729561e1fa5ac786e28cd.jpg",
+        "pickRate": 68.12
+      },
+      {
+        "skinName": "前尘",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/54d0bded6101d8fce4cee1803d4e2d56.jpg",
+        "pickRate": 17.03
+      },
+      {
+        "skinName": "唐三藏",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/e9bcdc268eba6f7ea3d2d2f09f189e06.jpg",
+        "pickRate": 10.51
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/d122988682a05aef355cf1b5066c1f40.png",
+        "pickRate": 4.35
+      }
+    ]
+  }
+}

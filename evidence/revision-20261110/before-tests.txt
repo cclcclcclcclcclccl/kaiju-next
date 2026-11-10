@@ -1,0 +1,90 @@
+✖ registered players and flex roles work together; Zhuge can release mid for Daji (8.3731ms)
+✔ manual lock cannot silently override registered player eligibility (0.9963ms)
+✖ future roster feasibility prevents taking another players only remaining hero (0.4072ms)
+✖ red-side personal pool is enforced independently of blue-side identity (16.0837ms)
+✔ banned unique pool hero produces an actionable infeasibility error (0.625ms)
+✖ one player cannot occupy two lanes on the same side (0.5193ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 2
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 402.5587
+
+✖ failing tests:
+
+test at server\player\roster-flex.test.ts:20:1
+✖ registered players and flex roles work together; Zhuge can release mid for Daji (8.3731ms)
+  Error: 自动摇摆推演暂不与固定选手分路约束混用
+      at searchCoach (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/src/player/pro/coach.ts:134:53)
+      at TestContext.<anonymous> (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/server/player/roster-flex.test.ts:21:18)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.start (node:internal/test_runner/test:1177:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17)
+
+test at server\player\roster-flex.test.ts:32:1
+✖ future roster feasibility prevents taking another players only remaining hero (0.4072ms)
+  Error: 自动摇摆推演暂不与固定选手分路约束混用
+      at searchCoach (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/src/player/pro/coach.ts:134:53)
+      at TestContext.<anonymous> (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/server/player/roster-flex.test.ts:35:18)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at server\player\roster-flex.test.ts:39:1
+✖ red-side personal pool is enforced independently of blue-side identity (16.0837ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert.ok(result.candidates.filter(c => c.move.role === '中路').every(c => c.move.heroId === id('妲己')))
+
+      at TestContext.<anonymous> (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/server/player/roster-flex.test.ts:44:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at server\player\roster-flex.test.ts:51:1
+✖ one player cannot occupy two lanes on the same side (0.5193ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /一个位置|重复/. Input:
+
+  'Error: 自动摇摆推演暂不与固定选手分路约束混用'
+
+      at TestContext.<anonymous> (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/server/player/roster-flex.test.ts:54:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: 自动摇摆推演暂不与固定选手分路约束混用
+        at searchCoach (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/src/player/pro/coach.ts:134:53)
+        at file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/server/player/roster-flex.test.ts:54:23
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/server/player/roster-flex.test.ts:54:10)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1306:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+        at Test.postRun (node:internal/test_runner/test:1447:19)
+        at Test.run (node:internal/test_runner/test:1372:12),
+    expected: /一个位置|重复/,
+    operator: 'throws',
+    diff: 'simple'
+  }

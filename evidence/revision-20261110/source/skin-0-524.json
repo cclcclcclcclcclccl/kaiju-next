@@ -1,0 +1,55 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=524",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 524
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:37:07.815Z",
+  "rawSha256": "3f5bef6c92b681bfd0ff1191e84c12e62a5be0bb0c99a49a3fcc316f7d0b9fa8",
+  "cache": "fresh",
+  "data": {
+    "heroId": 524,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "龙鼓争鸣",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/25d4c64fd6903aec671feebfcfe53901.jpg",
+        "pickRate": 51.75
+      },
+      {
+        "skinName": "归虚梦演",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/f63a606f1a7243bfb921833073632f13.jpg",
+        "pickRate": 31.58
+      },
+      {
+        "skinName": "狂想玩偶喵",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/c30d00255b50eaab839be05bd5692ac4.jpg",
+        "pickRate": 10.96
+      },
+      {
+        "skinName": "百解令",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/459b775ef42e60f64b22375786006394.jpg",
+        "pickRate": 3.51
+      },
+      {
+        "skinName": "胡桃狂想曲",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/f9b5efb01a182c27cc4590d539e0c836.jpg",
+        "pickRate": 0.88
+      },
+      {
+        "skinName": "顽岩魄",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/5de003e5f332519bdf3de6bf86233b1c.jpg",
+        "pickRate": 0.88
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/1601abbe4627280fe4fe42520cf68888.png",
+        "pickRate": 0.44
+      }
+    ]
+  }
+}

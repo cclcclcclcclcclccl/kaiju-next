@@ -1,0 +1,55 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=521",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 521
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:36:52.640Z",
+  "rawSha256": "270efb120b53486079dd5a6436e486c29f1a23cc0b4a4b2ccc251a74c7252cb4",
+  "cache": "fresh",
+  "data": {
+    "heroId": 521,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "真言先知",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/0e08c3b48bd9253d23d278c09ecf9ba0.jpg",
+        "pickRate": 29.81
+      },
+      {
+        "skinName": "海之女神",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/86c17e0d9e84a00cdfc63f2660d95d6c.jpg",
+        "pickRate": 22.74
+      },
+      {
+        "skinName": "金乌负日",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/c03b98bcc4a9f9da5f5de6df303c74d1.jpg",
+        "pickRate": 15.28
+      },
+      {
+        "skinName": "幻泉雾影",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/d988a3229031ad789a89bfb61bfd8fa6.jpg",
+        "pickRate": 12.64
+      },
+      {
+        "skinName": "王牌新星",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a4127dcaffb58ebf16b97c9ea4ab1e0f.jpg",
+        "pickRate": 11.6
+      },
+      {
+        "skinName": "浮梦罗烟",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/5a7036253fdd9eedce31a998c2c3458d.jpg",
+        "pickRate": 7.36
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/6b9fe870275a03952b9ce9d126dec834.png",
+        "pickRate": 0.57
+      }
+    ]
+  }
+}

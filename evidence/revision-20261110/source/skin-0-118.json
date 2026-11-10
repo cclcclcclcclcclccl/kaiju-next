@@ -1,0 +1,70 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=118",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 118
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:29:23.515Z",
+  "rawSha256": "2feb417aa3d57f4c87a801e80d2edb6a43ba5e40cd1d6d1b52bec18a68ac8868",
+  "cache": "fresh",
+  "data": {
+    "heroId": 118,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "帕恰狗之风",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/2aab5cd3c8a5ed6290a24046fb2629d1.jpg",
+        "pickRate": 48.92
+      },
+      {
+        "skinName": "小动物乐团",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/17fdd7def7928f75d77e35101a98c505.jpg",
+        "pickRate": 20.97
+      },
+      {
+        "skinName": "茶境仙",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/dbb85f91fbc58aeb6da61b937a010358.jpg",
+        "pickRate": 11.83
+      },
+      {
+        "skinName": "寅虎·展翼",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/abfca40bfa0c166df2e7b6000b0378b8.jpg",
+        "pickRate": 7.53
+      },
+      {
+        "skinName": "天狼运算者",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/ca7ebd31028a408fd98be4bd9df3ca61.jpg",
+        "pickRate": 3.76
+      },
+      {
+        "skinName": "归虚梦演",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/917c44de84067f4305b0c8b381c12b52.jpg",
+        "pickRate": 2.15
+      },
+      {
+        "skinName": "天使之翼",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/0ae3a96be65cef841d756955ded5d517.jpg",
+        "pickRate": 1.61
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/7297418d03dc7972fa9953dd438b6bea.png",
+        "pickRate": 1.08
+      },
+      {
+        "skinName": "未来旅行",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/6c9b1a2f6de50b695cd15bb379f2dcfc.jpg",
+        "pickRate": 1.08
+      },
+      {
+        "skinName": "妖精王",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a16260ef8c29d30c8bff00678aabcdc2.jpg",
+        "pickRate": 1.08
+      }
+    ]
+  }
+}

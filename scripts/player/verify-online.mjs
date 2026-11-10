@@ -216,6 +216,8 @@ try {
     report.pages.push({ id, heading: await page.locator('main h1').first().textContent() });
     if (id === 'draft') {
       await page.getByLabel('操作模式', { exact: true }).selectOption('blue');
+      // Unrestricted AI-turn coverage; personal-pool constraints have a separate test.
+      await page.getByLabel('结合我的英雄池', { exact: true }).uncheck();
       await page.getByRole('button', { name: '开始新演练', exact: true }).click();
       await page.getByLabel('本轮英雄', { exact: true }).selectOption('544');
       await page.getByRole('button', { name: '确认本轮', exact: true }).click();

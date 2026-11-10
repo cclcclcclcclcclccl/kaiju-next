@@ -1,0 +1,65 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=190",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 190
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:34:31.259Z",
+  "rawSha256": "219e54dd623ab8e0288b9d36a3c191af5d21354c13699f0642e7c6d27e413aa8",
+  "cache": "fresh",
+  "data": {
+    "heroId": 190,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "星域神启",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/f7bedbd04f517d10e021b81e79ac7b87.jpg",
+        "pickRate": 50.17
+      },
+      {
+        "skinName": "黄金分割率",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/9ae8e839d4b7c8fef0b8b991f56c2760.jpg",
+        "pickRate": 22.97
+      },
+      {
+        "skinName": "星航指挥官",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/0aace40f9866fc3d586156f7427a9243.jpg",
+        "pickRate": 8.18
+      },
+      {
+        "skinName": "天机白泽",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/5c715499e1b10adf0498ebbd57a8ad12.jpg",
+        "pickRate": 7.54
+      },
+      {
+        "skinName": "时雨天司",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/4dd116707b478904160269bd61d1e487.jpg",
+        "pickRate": 5.47
+      },
+      {
+        "skinName": "掌控之力",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/806c4a88c13415fb68eced71f6884f2f.jpg",
+        "pickRate": 2.37
+      },
+      {
+        "skinName": "武陵仙君",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/3b4505b3b717a8e4f54537dce939f30a.jpg",
+        "pickRate": 2.03
+      },
+      {
+        "skinName": "鹤羽星尊",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/2c2189d1f8039abcba5a23c4496e9f7a.jpg",
+        "pickRate": 1.1
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/a55ee7738de67afa5cae26681886149f.png",
+        "pickRate": 0.17
+      }
+    ]
+  }
+}

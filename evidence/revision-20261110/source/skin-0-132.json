@@ -1,0 +1,70 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=132",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 132
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:30:29.129Z",
+  "rawSha256": "431a3ea527ac5135496ac465a9b21028fdbf20de6b7de6178cbf02d95656b3fd",
+  "cache": "fresh",
+  "data": {
+    "heroId": 132,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "暗影游猎",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/ad31e509ee791ec15e07b5b9c13fb620.jpg",
+        "pickRate": 29.21
+      },
+      {
+        "skinName": "怪盗基德",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/7a1a02e5bdbe8e01974132801b601d5b.jpg",
+        "pickRate": 28.04
+      },
+      {
+        "skinName": "深海之息",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/ad445701ee007887fae7fea14de3ef00.jpg",
+        "pickRate": 16.36
+      },
+      {
+        "skinName": "激情绿茵",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/8277822433b12152115751780394691b.jpg",
+        "pickRate": 11.92
+      },
+      {
+        "skinName": "山海·玄木吟",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/cd40f0aa4558861a986f6501d0979958.jpg",
+        "pickRate": 4.44
+      },
+      {
+        "skinName": "妄想实况",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/94f64315ef7a8ea6a94a077947546dd0.jpg",
+        "pickRate": 3.5
+      },
+      {
+        "skinName": "星界特工",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/0ff7904c57ba8bc4afbd9453b12b47a6.jpg",
+        "pickRate": 2.8
+      },
+      {
+        "skinName": "逐梦之星",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/4980e5f093112ddbfbbab4b70d147348.jpg",
+        "pickRate": 1.87
+      },
+      {
+        "skinName": "潮玩牛仔",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/f541edfdc795f35a537ef60b8012789f.jpg",
+        "pickRate": 1.17
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/67bce625e42b9332aa96bf08519607c1.png",
+        "pickRate": 0.7
+      }
+    ]
+  }
+}

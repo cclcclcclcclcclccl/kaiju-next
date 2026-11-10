@@ -1,0 +1,30 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=550",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 550
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:38:38.619Z",
+  "rawSha256": "84fbad734a23767117acd12043e3c9cb5dff7802a9c3068ec999a1de0d791cb2",
+  "cache": "fresh",
+  "data": {
+    "heroId": 550,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "戏梦巡演",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/14f82383903f58b2af77156d9ed690a1.jpg",
+        "pickRate": 97.45
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_skin_128x128/d042d5a61ffe49a4c69d919a8f6ae977.jpg",
+        "pickRate": 2.55
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "requestedDate": "2026-11-09",
+  "source": "https://tianyuanzhiyi.com",
+  "authentication": "none",
+  "startedAt": "2026-11-10T06:27:30.782Z",
+  "results": [
+    {
+      "query": {
+        "kind": "stats",
+        "mode": 1,
+        "date": "2026-11-09"
+      },
+      "state": "ok",
+      "file": "stats-1-0.json",
+      "rawSha256": "3b84da98830252b2ce1fae5aec741bac2f97f2e1c8ad469caffeda12df2b5d2a"
+    },
+    {
+      "query": {
+        "kind": "stats",
+        "mode": 3,
+        "date": "2026-11-09"
+      },
+      "state": "ok",
+      "file": "stats-3-0.json",
+      "rawSha256": "b5f1151d8e40771e59be463a94d1efd727f66f8c702bc73be8b6b72927201a0f"
+    },
+    {
+      "query": {
+        "kind": "stats",
+        "mode": 4,
+        "date": "2026-11-09"
+      },
+      "state": "ok",
+      "file": "stats-4-0.json",
+      "rawSha256": "1cdf3032b1ab2e747b436501fa0c8047d63f724d75db3219e984438cba808ff1"
+    },
+    {
+      "query": {
+        "kind": "stats",
+        "mode": 5,
+        "date": "2026-11-09"
+      },
+      "state": "ok",
+      "file": "stats-5-0.json",
+      "rawSha256": "dc532a1e5b07fe2e7250cd5f788c0348d00d0d5fca5d07d9a1c10c930cd034b2"
+    },
+    {
+      "query": {
+        "kind": "tier",
+        "date": "2026-11-09"
+      },
+      "state": "ok",
+      "file": "tier-0-0.json",
+      "rawSha256": "9c09f21cb12853f03889709033099c1ef4a6d98d853e117821e2dc3b3806ec10"
+    }
+  ],
+  "completedAt": "2026-11-10T06:27:31.670Z"
+}

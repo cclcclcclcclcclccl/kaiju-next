@@ -1,0 +1,35 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=558",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 558
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:38:43.670Z",
+  "rawSha256": "17dc82775ab52f0624c39ceffd050e6740d5833d63369c7b87e839c75c7224f6",
+  "cache": "fresh",
+  "data": {
+    "heroId": 558,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "魅影绮裳",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/0326b017674872b59ce2fe5f94f31a42.jpg",
+        "pickRate": 80.76
+      },
+      {
+        "skinName": "百相守梦",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/207590d63d1dbfdfd80e8a63885193cc.jpg",
+        "pickRate": 18.59
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/7de5bd0dfdba2c1a8af8c627b58a0452.png",
+        "pickRate": 0.66
+      }
+    ]
+  }
+}

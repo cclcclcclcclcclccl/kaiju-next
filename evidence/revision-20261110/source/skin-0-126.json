@@ -1,0 +1,55 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=126",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 126
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:29:58.907Z",
+  "rawSha256": "c2c02aac3df29b8442b57bd4d2b828aef98165154c7459c3417b1fb1bf1a2f69",
+  "cache": "fresh",
+  "data": {
+    "heroId": 126,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "乘风破浪",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/82031a769cc7fcc5337269d897531dcc.jpg",
+        "pickRate": 46.32
+      },
+      {
+        "skinName": "霜北刀",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/1beb873c5b88170c14e18d52cdbbff55.jpg",
+        "pickRate": 18.65
+      },
+      {
+        "skinName": "无限飓风号",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/5287a3b7f86671536c4f72fd56ebf842.jpg",
+        "pickRate": 14.73
+      },
+      {
+        "skinName": "战争骑士",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/8ae938ab80dea3db2872893ad9897e07.jpg",
+        "pickRate": 13.42
+      },
+      {
+        "skinName": "朔风刀",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/55056e9d5947490b11041c57acaf332c.jpg",
+        "pickRate": 4.16
+      },
+      {
+        "skinName": "匿光决锋者",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/4a0d7f6ef8690daf3403aecf5192bc18.jpg",
+        "pickRate": 1.43
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/30fae784f10b6b83ab5ec959620b0527.png",
+        "pickRate": 1.31
+      }
+    ]
+  }
+}

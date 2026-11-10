@@ -1,10 +1,17 @@
 # 自在弈境 · 有来源、懂英雄池的王者备战台
 
-**传智杯 · AI创新应用挑战赛｜蔡晨霖 · 西安交通大学人工智能2501｜v0.26.2**
+**传智杯 · AI创新应用挑战赛｜蔡晨霖 · 西安交通大学人工智能2501｜v0.27.0**
+
+## 2026-11-10 预指导后修订
+
+本轮将个人英雄池和自动摇摆分路接入逐手BP：选择自己的红蓝方与分路，点击“分析这一手”，比较个人准备度、候选理由和后续回应；确认后才落子。联合分配检查会为剩余登记成员保留不同的可用英雄，固定成员教练面板也支持换位。详见[修订、独立评测与8天安排](docs/44-preguidance-revision-20261110.md)。
+
+80组构造英雄池与独立穷举检查结果一致；46组有解时，目录分路基线保留可行分工42组，新方法46组。该结果不是实际胜率或真人效果。10月25日PDF和视频仍是历史交付，未改称新版。
+
 
 把真实公开资料、个人英雄池、好友配合、逐手 BP 和复盘证据放在同一个工作台。目标是帮助玩家决定“这一局适合拿什么，打完具体改什么”。
 
-[评审仓库](https://github.com/cclcclcclcclcclccl/kaiju-next) · [提交清单](submission/提交清单.md) · [技术 PDF](output/pdf/自在弈境-技术文档.pdf) · [新版演示及完整包](https://github.com/cclcclcclcclcclccl/kaiju-next/releases/tag/v0.26.0) · [真实 AI 对话链](submission/prompt-chains/manifest.json)
+[评审仓库](https://github.com/cclcclcclcclcclccl/kaiju-next) · [提交清单](submission/提交清单.md) · [技术 PDF](output/pdf/自在弈境-技术文档.pdf) · [新版演示及完整包](https://github.com/cclcclcclcclcclccl/kaiju-next/releases/tag/v0.26.2) · [真实 AI 对话链](submission/prompt-chains/manifest.json)
 
 站点全称为**自在弈境数据站**，灵感来自赵怀真“自在之心”：用可核查的信息和充分准备，获得从容选择。旧名“开局 NEXT”保留在原始对话与历史版本；仓库地址和存储标识不变以兼容既有账号。
 

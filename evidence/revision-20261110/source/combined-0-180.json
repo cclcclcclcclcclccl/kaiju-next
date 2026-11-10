@@ -1,0 +1,47 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/combined?date=2026-11-09&heroId=180",
+  "query": {
+    "kind": "combined",
+    "date": "2026-11-09",
+    "heroId": 180
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:33:54.967Z",
+  "rawSha256": "5a7a72f67d0c883db689f05481f61b161b67f776f1223336bf0ad38bb2fb8c71",
+  "cache": "fresh",
+  "data": {
+    "heroId": 180,
+    "positions": {
+      "0": {
+        "pickRate": 90.08,
+        "winRate": 48.3
+      },
+      "3": {
+        "pickRate": 9.92,
+        "winRate": 48.92
+      }
+    },
+    "summonerSkills": [
+      {
+        "skillName": "终结",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/1f49f189ef61ea4ef2e2da08e6207956.png",
+        "pickRate": 89.52,
+        "winRate": 49.65
+      },
+      {
+        "skillName": "惩击",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/818cfdc9dc9ac1c9ccb91f7911a45ef7.png",
+        "pickRate": 9.92,
+        "winRate": 47.95
+      },
+      {
+        "skillName": "弱化",
+        "skillIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_summonerSkill_icon/73db63c0dd9597d963ee2386b3b91002.png",
+        "pickRate": 0.57,
+        "winRate": 50.53
+      }
+    ]
+  }
+}

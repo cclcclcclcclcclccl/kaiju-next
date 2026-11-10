@@ -1,0 +1,60 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=114",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 114
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:29:03.373Z",
+  "rawSha256": "f20ed7297b0613b550c5c57f0ff5ae006cc849147bf2014f7d1febd47b1a8c55",
+  "cache": "fresh",
+  "data": {
+    "heroId": 114,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "天才门将",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/5a52eb1e34b87bbb49eb79f81501bd2e.jpg",
+        "pickRate": 50.67
+      },
+      {
+        "skinName": "超级夜猫侠",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/b6331349bd28264572794348afc86dde.jpg",
+        "pickRate": 15.1
+      },
+      {
+        "skinName": "电玩·爆裂旋风",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/e73081a8d0df8d8359d602d682be9e20.jpg",
+        "pickRate": 13.76
+      },
+      {
+        "skinName": "鸭鸭历险记",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/bc9dc3a964024a67053978b47d816622.jpg",
+        "pickRate": 10.07
+      },
+      {
+        "skinName": "绅士熊喵",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/06eca46719087152ff8e52c1177df0d6.jpg",
+        "pickRate": 4.7
+      },
+      {
+        "skinName": "秘密基地",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/8a1b0012d3105b5beaa56654b85b0ea7.jpg",
+        "pickRate": 3.36
+      },
+      {
+        "skinName": "英喵野望",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/3cea8bbfbab16a4018d17f61109eadfa.jpg",
+        "pickRate": 2.01
+      },
+      {
+        "skinName": "唤灵魔甲",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/418bbb35afcb24ebd8e066b4e1149c4b.jpg",
+        "pickRate": 0.34
+      }
+    ]
+  }
+}

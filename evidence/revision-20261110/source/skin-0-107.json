@@ -1,0 +1,80 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=107",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 107
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:28:28.173Z",
+  "rawSha256": "ba6513e7e3716b95bee1653801debd19032f271cdf45ca3ba75f7323695a4e17",
+  "cache": "fresh",
+  "data": {
+    "heroId": 107,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "飞龙神将",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/6f0777c9d78ae6fcb4ac3c2cc22eeee0.jpg",
+        "pickRate": 32.17
+      },
+      {
+        "skinName": "乘龙·铭钟鼎",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/22ffa09f314d09641dfd0daee869230b.jpg",
+        "pickRate": 18.19
+      },
+      {
+        "skinName": "白执事",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/c7988e808febd4b8d584ec6984dead52.jpg",
+        "pickRate": 16.13
+      },
+      {
+        "skinName": "淬星耀世",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/98a1ef176768f6464f2069b0a71ddf5c.jpg",
+        "pickRate": 13.17
+      },
+      {
+        "skinName": "未来纪元",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/6b0421a7b6980ed7840a45cf70325482.jpg",
+        "pickRate": 8.5
+      },
+      {
+        "skinName": "忍·炎影",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/941e001e5e36b1aa065febeb5156e163.jpg",
+        "pickRate": 4.92
+      },
+      {
+        "skinName": "皇家上将",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/1d7ade126041c8cf6010606b7ddf9760.jpg",
+        "pickRate": 1.62
+      },
+      {
+        "skinName": "引擎之心",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/e9224d2fa90a8bf5b2e417c485b2642d.jpg",
+        "pickRate": 1.58
+      },
+      {
+        "skinName": "龙胆",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/cbdcdb47f80319b25dcba1fbe26f4bf2.jpg",
+        "pickRate": 1.48
+      },
+      {
+        "skinName": "百木心枪",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/56fc1bdb211532d1b34ad087479b2d2c.jpg",
+        "pickRate": 1.1
+      },
+      {
+        "skinName": "嘻哈天王",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a0256af4c6900eaca8af298cfe374a77.jpg",
+        "pickRate": 1.05
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/4108fe3d4326c7585c81fb30dbe14047.png",
+        "pickRate": 0.1
+      }
+    ]
+  }
+}

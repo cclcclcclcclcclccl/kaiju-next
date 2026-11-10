@@ -1,0 +1,38 @@
+✔ registered players and flex roles work together; Zhuge can release mid for Daji (24.2361ms)
+✔ manual lock cannot silently override registered player eligibility (1.4029ms)
+✔ future roster feasibility prevents taking another players only remaining hero (10.501ms)
+✔ red-side personal pool is enforced independently of blue-side identity (12.2713ms)
+✔ banned unique pool hero produces an actionable infeasibility error (1.0869ms)
+✔ one player cannot occupy two lanes on the same side (0.4109ms)
+✖ red-side analysis calls blue responses the opponent, not its own following pick (475.5582ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 6
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 921.3827
+
+✖ failing tests:
+
+test at server\player\roster-flex.test.ts:82:1
+✖ red-side analysis calls blue responses the opponent, not its own following pick (475.5582ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert.ok(result.candidates.every(c=>c.opponentReplies.every(r=>r.move.team==='allies')))
+
+      at TestContext.<anonymous> (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/server/player/roster-flex.test.ts:88:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

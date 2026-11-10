@@ -1,0 +1,30 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=547",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 547
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:38:23.569Z",
+  "rawSha256": "c37fb342d69dc082ad4a63ce3bca8aa88cc3893f413dfbbef67d41f3a3a43e82",
+  "cache": "fresh",
+  "data": {
+    "heroId": 547,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "烈焰狂欢",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_E1/ce085e8f0ee349a0c4b8dab2f4216fed.png",
+        "pickRate": 98.72
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/aed9c716b4ea6e37f66eb60b32f2d38a.jpg",
+        "pickRate": 1.28
+      }
+    ]
+  }
+}

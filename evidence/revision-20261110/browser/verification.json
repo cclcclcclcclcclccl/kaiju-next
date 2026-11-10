@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-10T06:43:12.335Z",
+  "mode": "isolated browser with constructed personal records; no live user database",
+  "checks": [
+    "current personal pool and saved side/lane preferences are actually read",
+    "real Web Worker returns candidate explanations and opponent replies without auto-picking",
+    "explicit confirmation applies exactly one move and survives reload",
+    "red-side profile selection and lane survive reload",
+    "1440/768/390px layouts have no horizontal overflow"
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "passed": true
+}

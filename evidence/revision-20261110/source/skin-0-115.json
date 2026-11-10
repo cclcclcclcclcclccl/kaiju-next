@@ -1,0 +1,55 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=115",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 115
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:29:08.394Z",
+  "rawSha256": "b7e8a0dbef96b4929b780183c97572e3f7a7659e0a6a92fd2807435996d86b61",
+  "cache": "fresh",
+  "data": {
+    "heroId": 115,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "燃音魔法",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/83284784e35f10366be13b30c5d7f62a.jpg",
+        "pickRate": 62.95
+      },
+      {
+        "skinName": "天秀·音浪",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/6997fe8bbc6ed232df092eb11f0a2dd7.jpg",
+        "pickRate": 22.8
+      },
+      {
+        "skinName": "金属狂潮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/51cfe21d1611df5b880cb7fae25da3f9.jpg",
+        "pickRate": 7.25
+      },
+      {
+        "skinName": "死亡摇滚",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/70c3f372f828df9651330a2bfed68e91.jpg",
+        "pickRate": 2.85
+      },
+      {
+        "skinName": "落日弦歌",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/0c7ff3246cf5f89fcf96f3f6b3265dcd.jpg",
+        "pickRate": 2.07
+      },
+      {
+        "skinName": "玩趣恶龙",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/909f01ac34907f92714c300b973744b4.jpg",
+        "pickRate": 1.81
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/486826e952d81c18e7015f07c2c1e9e3.png",
+        "pickRate": 0.26
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=501",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 501
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:35:26.751Z",
+  "rawSha256": "81753862dfe8b6910eb6f7b522e766ab3225e187a3f854dc8c40d364235c5b09",
+  "cache": "fresh",
+  "data": {
+    "heroId": 501,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "吟游魔法",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/05fe27f5c5bb959d5a70c1b9e3426fea.jpg",
+        "pickRate": 34.09
+      },
+      {
+        "skinName": "占星师",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/c3fec7abb891507a24916fed14017a9e.jpg",
+        "pickRate": 27.27
+      },
+      {
+        "skinName": "疑决卦",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/0b8dd07a9fb4b8a892cb5a1632411523.jpg",
+        "pickRate": 18.18
+      },
+      {
+        "skinName": "百晓客",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/63ff7ba79d1c413cc1c1d9b9a82f2596.jpg",
+        "pickRate": 11.36
+      },
+      {
+        "skinName": "虹云星官",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/40dc587a5bf8a565ca8bc0717d954f19.jpg",
+        "pickRate": 4.55
+      },
+      {
+        "skinName": "夜落电台",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/877d39ecdadbb7afd5d455b8a54cec84.jpg",
+        "pickRate": 2.27
+      },
+      {
+        "skinName": "原皮",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/custom_wzry_skin_128x128/b82b8981422f54388e0fe75866ca00f8.png",
+        "pickRate": 2.27
+      }
+    ]
+  }
+}

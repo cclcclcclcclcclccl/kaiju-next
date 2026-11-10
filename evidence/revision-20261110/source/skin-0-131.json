@@ -1,0 +1,55 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=131",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 131
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:30:24.050Z",
+  "rawSha256": "fe1264d2ed86ca4741bba5822d41f725aa0f7c48b7a3695b95518799d91f5e25",
+  "cache": "fresh",
+  "data": {
+    "heroId": 131,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "鸣剑·曳影",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a0d945e0834e931445ac5a2109e8879d.jpg",
+        "pickRate": 56.79
+      },
+      {
+        "skinName": "碎月剑心",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/31f951fd189a25c4edf3c0a0b67c4da2.jpg",
+        "pickRate": 29.17
+      },
+      {
+        "skinName": "千年之狐",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/23d94e858e1211834faec0486ccdb558.jpg",
+        "pickRate": 5.46
+      },
+      {
+        "skinName": "凤求凰",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/e5ed8b15d7a1a43b11134102d0ec518e.jpg",
+        "pickRate": 4.84
+      },
+      {
+        "skinName": "诗剑行",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/7e03fdf685e5200cd41feda37e44d147.jpg",
+        "pickRate": 2.65
+      },
+      {
+        "skinName": "敏锐之力",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/42a109f8512a969cfdd71fad07565726.jpg",
+        "pickRate": 0.62
+      },
+      {
+        "skinName": "范海辛",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/1bf7c590310279e7c3ce6910025b66e0.jpg",
+        "pickRate": 0.47
+      }
+    ]
+  }
+}

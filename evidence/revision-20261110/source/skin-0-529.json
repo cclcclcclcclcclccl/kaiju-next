@@ -1,0 +1,50 @@
+{
+  "source": "天元之弈数据站",
+  "sourceClass": "third-party-public",
+  "url": "https://tianyuanzhiyi.com/api/herostats/skin?date=2026-11-09&heroId=529",
+  "query": {
+    "kind": "skin",
+    "date": "2026-11-09",
+    "heroId": 529
+  },
+  "requestedDate": "2026-11-09",
+  "fetchedAt": "2026-11-10T06:37:27.966Z",
+  "rawSha256": "534dde59f6e543ebffc6f31c2f61f1645dc1d24c478ad9888ad7b6d5844e7288",
+  "cache": "fresh",
+  "data": {
+    "heroId": 529,
+    "queryDate": "2026-11-09",
+    "skinDistribution": [
+      {
+        "skinName": "创世神祝",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/a586c7de4d522ff447a64f11607b416e.jpg",
+        "pickRate": 44.44
+      },
+      {
+        "skinName": "撼世英歌",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/b7ddec6d357327959d63a1d6feea9c82.jpg",
+        "pickRate": 26.34
+      },
+      {
+        "skinName": "敬我三分",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/ce4947c864c0f2bc433c23aebb9397c1.jpg",
+        "pickRate": 14.81
+      },
+      {
+        "skinName": "冰霜神祇",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/4a281e895da8b9a020aefd0829bd4416.jpg",
+        "pickRate": 7.41
+      },
+      {
+        "skinName": "重装意志",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/c35192c4adbcf19dbd0ec28f02a47365.jpg",
+        "pickRate": 5.76
+      },
+      {
+        "skinName": "经纬探寻者",
+        "skinIcon": "https://img.pvp.mcxssg.net/manage/compress/custom_wzry_E1/44661028882fe40ec2a5f5c957ab72df.jpg",
+        "pickRate": 1.23
+      }
+    ]
+  }
+}
