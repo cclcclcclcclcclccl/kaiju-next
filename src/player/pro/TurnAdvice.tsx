@@ -19,6 +19,13 @@ export default function TurnAdvice({
   const worker = useRef<Worker | null>(null),
     timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const fingerprint = JSON.stringify(input);
+  const visibleCandidates =
+    result?.candidates
+      .filter(
+        (candidate, index, all) =>
+          all.findIndex((c) => c.move.heroId === candidate.move.heroId) === index,
+      )
+      .slice(0, 3) ?? [];
   const stop = () => {
     worker.current?.terminate();
     worker.current = null;
@@ -89,7 +96,7 @@ export default function TurnAdvice({
             {result.bounded ? ' · 达到计算预算，保留上一完整层结果' : ''}。方案值不是胜率。
           </p>
           <div className="turn-advice-options">
-            {result.candidates.slice(0, 3).map((c, i) => (
+            {visibleCandidates.map((c, i) => (
               <article key={c.move.heroId + ':' + c.move.role}>
                 <div className="section-title">
                   <Portrait hero={heroById(c.move.heroId)} />
@@ -98,7 +105,24 @@ export default function TurnAdvice({
                   </h4>
                   <span>{i === 0 ? '优先比较' : '备选'}</span>
                 </div>
-                <p>对本方方案值：{result.side === 'allies' ? c.value : -c.value}</p>
+                <p>
+                  对本方方案值：{result.side === 'allies' ? c.value : -c.value}
+                  {i > 0 && (
+                    <small>
+                      {' '}
+                      · 比首选低{' '}
+                      {Math.max(
+                        0,
+                        Math.round(
+                          (result.side === 'allies' ? 1 : -1) *
+                            (visibleCandidates[0].value - c.value) *
+                            10,
+                        ) / 10,
+                      )}{' '}
+                      分
+                    </small>
+                  )}
+                </p>
                 <ul>
                   {c.reasons.slice(0, 3).map((r, j) => (
                     <li key={j}>{r}</li>

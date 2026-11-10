@@ -1,0 +1,62 @@
+✔ registered players and flex roles work together; Zhuge can release mid for Daji (28.2518ms)
+✔ manual lock cannot silently override registered player eligibility (1.4146ms)
+✔ future roster feasibility prevents taking another players only remaining hero (11.5341ms)
+✔ red-side personal pool is enforced independently of blue-side identity (12.7618ms)
+✔ banned unique pool hero produces an actionable infeasibility error (1.0361ms)
+✔ one player cannot occupy two lanes on the same side (0.4286ms)
+✔ red-side analysis calls blue responses the opponent, not its own following pick (486.9515ms)
+✖ ban candidates never remove the acting players last registered lane option (2.0611ms)
+✖ one exhausted roster does not block the other sides legal turn (0.902ms)
+✖ ban remains possible when the opponent already filled its five lanes (1.0858ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 7
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1016.3149
+
+✖ failing tests:
+
+test at server\player\roster-flex.test.ts:99:1
+✖ ban candidates never remove the acting players last registered lane option (2.0611ms)
+  AssertionError [ERR_ASSERTION]: a ban must preserve a completion for its own registered player
+      at TestContext.<anonymous> (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/server/player/roster-flex.test.ts:109:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at server\player\roster-flex.test.ts:114:1
+✖ one exhausted roster does not block the other sides legal turn (0.902ms)
+  Error: 已选英雄、手动锁定或剩余英雄池无法满足成员分路，请调整分工或补充英雄池。
+      at searchCoach (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/src/player/pro/coach.ts:378:15)
+      at TestContext.<anonymous> (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/server/player/roster-flex.test.ts:119:16)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at server\player\roster-flex.test.ts:125:1
+✖ ban remains possible when the opponent already filled its five lanes (1.0858ms)
+  Error: 没有合法候选。检查选手英雄池、已禁英雄和待选位置；可关闭“仅用已登记英雄池”做练习推演。
+      at searchCoach (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/src/player/pro/coach.ts:383:11)
+      at TestContext.<anonymous> (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/server/player/roster-flex.test.ts:129:16)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)

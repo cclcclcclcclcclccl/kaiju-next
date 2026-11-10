@@ -519,3 +519,41 @@
     gap: 12px;
   }
 }
+.bp-pool-availability {
+  margin: 16px 0;
+  padding: 16px;
+  border: 1px solid var(--line, #344051);
+  border-radius: 10px;
+}
+.bp-pool-availability .section-title {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.bp-pool-availability h3 {
+  margin: 0;
+}
+.bp-pool-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+.bp-pool-hero {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 8px;
+}
+.bp-pool-hero .portrait {
+  width: 32px;
+  height: 32px;
+}
+.bp-pool-hero small {
+  color: var(--muted, #aab6c7);
+}
+.bp-pool-availability .bp-pool-hero:disabled {
+  opacity: 1;
+  cursor: default;
+}

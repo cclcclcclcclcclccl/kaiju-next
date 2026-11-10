@@ -95,3 +95,51 @@ test('red-side analysis calls blue responses the opponent, not its own following
     result.candidates.every((c) => c.opponentReplies.every((r) => r.move.team === 'allies')),
   );
 });
+
+test('ban candidates never remove the acting players last registered lane option', () => {
+  for (const side of ['allies', 'enemies'] as const) {
+    const input = base();
+    input.draft = emptyDraft();
+    input.members = {};
+    input.sideMembers = { [side]: { 中路: member('唯一中单', ['妲己']) } };
+    input.settings = { ...input.settings, nextSide: side, action: 'ban', depth: 1 };
+    // Every hero must fit inside the beam so the case does not depend on ranking luck.
+    const catalog = ['妲己', '诸葛亮', '吕布', '孙尚香', '刘禅'].map(heroByName);
+    const result = searchCoach(catalog, input, { maxMs: 10000 });
+    assert.ok(result.candidates.length);
+    assert.ok(
+      result.candidates.every((c) => c.move.heroId !== id('妲己')),
+      'a ban must preserve a completion for its own registered player',
+    );
+  }
+});
+
+test('one exhausted roster does not block the other sides legal turn', () => {
+  const input = base();
+  input.members = {};
+  input.draft = { ...emptyDraft(), banned: [id('妲己')] };
+  input.sideMembers = { allies: { 中路: member('蓝方', ['妲己']) } };
+  input.settings = { ...input.settings, nextSide: 'enemies', depth: 1 };
+  const result = searchCoach(heroes, input, { maxMs: 10000 });
+  assert.ok(result.candidates.length);
+  assert.ok(result.candidates.every((c) => c.move.team === 'enemies'));
+  assert.ok(result.assumptions.some((s) => s.includes('蓝方') && s.includes('英雄池')));
+});
+
+test('ban remains possible when the opponent already filled its five lanes', () => {
+  const input = base();
+  input.members = {};
+  input.draft = emptyDraft();
+  input.draft.enemies = {
+    对抗路: id('吕布'),
+    打野: id('李白'),
+    中路: id('妲己'),
+    发育路: id('孙尚香'),
+    游走: id('刘禅'),
+  };
+  input.settings = { ...input.settings, action: 'ban', depth: 1 };
+  const result = searchCoach(heroes, input, { maxMs: 10000 });
+  assert.ok(result.candidates.length);
+  const taken = new Set(Object.values(input.draft.enemies));
+  assert.ok(result.candidates.every((c) => c.move.kind === 'ban' && !taken.has(c.move.heroId)));
+});

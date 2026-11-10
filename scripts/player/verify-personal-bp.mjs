@@ -4,7 +4,7 @@ import { createServer } from 'node:http';
 import { readFile, mkdir, writeFile } from 'node:fs/promises';
 import { resolve, sep, extname } from 'node:path';
 import { heroes, heroByName } from '../../src/player/catalog.ts';
-const out = 'evidence/revision-20261110/browser';
+const out = process.argv[2] ?? 'evidence/revision-20261110/browser';
 await mkdir(out, { recursive: true });
 const root = resolve('dist-review');
 const mime = {
@@ -30,9 +30,12 @@ const server = createServer(async (req, res) => {
   }
 });
 await new Promise((r) => server.listen(0, '127.0.0.1', r));
-const base = `http://127.0.0.1:${server.address().port}/kaiju-next/`;
+const base =
+  process.argv.find((arg) => arg.startsWith('--url='))?.slice(6) ??
+  `http://127.0.0.1:${server.address().port}/kaiju-next/`;
 const browser = await chromium.launch({ channel: 'msedge' });
 const report = {
+  url: base,
   checkedAt: new Date().toISOString(),
   mode: 'isolated browser with constructed personal records; no live user database',
   checks: [],
@@ -88,11 +91,25 @@ try {
   await panel.getByText(/已读取 2 位英雄/).waitFor();
   assert.match(await panel.getByText(/已读取 2 位英雄/).innerText(), /蓝方中路/);
   report.checks.push('current personal pool and saved side/lane preferences are actually read');
+  const availability = panel.getByRole('region', { name: '我的分路可用英雄' });
+  await availability.getByRole('heading', { name: '我的中路 · 2 位可用' }).waitFor();
+  await availability.getByRole('button', { name: /妲己/ }).click();
+  assert.equal(
+    await page.evaluate(
+      () => JSON.parse(localStorage.getItem('kaiju.bp.rehearsal.v1')).moves.length,
+    ),
+    6,
+  );
+  report.checks.push(
+    'personal lane panel shows only eligible available heroes; quick selection does not auto-confirm',
+  );
   const advice = page.getByRole('region', { name: '当前回合个性化建议' });
   await advice.getByRole('button', { name: '分析这一手', exact: true }).click();
   const choice = advice.getByRole('button', { name: /^选中.*等待确认$/ }).first();
   await choice.waitFor({ state: 'visible', timeout: 30000 });
   assert.ok((await advice.locator('article').count()) > 0);
+  const names = await advice.locator('article h4').allTextContents();
+  assert.equal(new Set(names.map((n) => n.split(' · ')[0])).size, names.length);
   const before = await page.evaluate(
     () => JSON.parse(localStorage.getItem('kaiju.bp.rehearsal.v1')).moves.length,
   );
@@ -129,13 +146,58 @@ try {
   report.checks.push('red-side profile selection and lane survive reload');
   for (const width of [1440, 768, 390]) {
     await page.setViewportSize({ width, height: 1000 });
+    if (width === 390)
+      await page.waitForFunction(
+        () => document.querySelector('.sidebar').getBoundingClientRect().right <= 0,
+      );
     assert.ok(
       await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1),
       `overflow ${width}`,
     );
-    await panel.screenshot({ path: `${out}/bp-${width}.png` });
+    await panel.screenshot({ path: `${out}/bp-${width}.png`, animations: 'disabled' });
   }
   report.checks.push('1440/768/390px layouts have no horizontal overflow');
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.evaluate(
+    async ({ url, ids }) => {
+      const api = (await import(url)).browserApi;
+      await api('/pool-edit', { changes: [{ heroId: ids[1], expected: 'main', level: null }] });
+      localStorage.setItem(
+        'kaiju.bp.rehearsal.v1',
+        JSON.stringify({ version: 1, format: 'staged', mode: 'manual', moves: [] }),
+      );
+      localStorage.setItem(
+        'zizai.bp.preferences.v1',
+        JSON.stringify({ enabled: true, role: '中路', team: 'allies' }),
+      );
+    },
+    { url: moduleUrl, ids },
+  );
+  await page.reload();
+  await availability.getByRole('heading', { name: '我的中路 · 1 位可用' }).waitFor();
+  await advice.getByRole('button', { name: '分析这一手', exact: true }).click();
+  await advice.locator('article').first().waitFor({ timeout: 30000 });
+  assert.ok(
+    !(await advice.locator('article h4').allTextContents()).some((n) => n.includes('妲己')),
+  );
+  report.checks.push('ban suggestions protect the players only registered mid hero');
+  // A human may deliberately override advice; the opponent must still play.
+  await panel.getByLabel('操作模式', { exact: true }).selectOption('blue');
+  await panel.getByRole('button', { name: '开始新演练', exact: true }).click();
+  await panel.getByLabel('本轮英雄', { exact: true }).selectOption(String(ids[0]));
+  await panel.getByRole('button', { name: '确认本轮', exact: true }).click();
+  await panel
+    .locator('.bp-turn-banner')
+    .filter({ hasText: '第 3 / 20 步' })
+    .waitFor({ timeout: 30000 });
+  await availability.getByRole('heading', { name: '我的中路 · 0 位可用' }).waitFor();
+  await availability.getByText(/当前分路的登记英雄已被占用或禁用/).waitFor();
+  await availability.locator('summary').click();
+  await availability.getByText('已禁用', { exact: true }).waitFor();
+  await availability.screenshot({ path: out + '/pool-exhausted.png' });
+  report.checks.push(
+    'manual self-ban gives a visible pool recovery explanation while opponent AI continues',
+  );
   assert.deepEqual(report.errors, []);
   assert.deepEqual(report.failedRequests, []);
   report.passed = true;

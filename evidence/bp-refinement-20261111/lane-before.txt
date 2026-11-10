@@ -1,0 +1,44 @@
+✖ lane summary separates wrong lane, bans, opponent picks, teammate picks and series exclusions (1.2493ms)
+✖ profile-only hero and current own pick are recognized without fabricating stats (23.8997ms)
+✖ empty or wrong-lane pool never implies usable heroes (0.2541ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 0
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 389.1147
+
+✖ failing tests:
+
+test at server\player\lane-options.test.ts:9:1
+✖ lane summary separates wrong lane, bans, opponent picks, teammate picks and series exclusions (1.2493ms)
+  TypeError: options.laneOptions is not a function
+      at TestContext.<anonymous> (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/server/player/lane-options.test.ts:12:24)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.start (node:internal/test_runner/test:1177:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17)
+
+test at server\player\lane-options.test.ts:17:1
+✖ profile-only hero and current own pick are recognized without fabricating stats (23.8997ms)
+  TypeError: options.laneOptions is not a function
+      at TestContext.<anonymous> (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/server/player/lane-options.test.ts:19:24)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)
+
+test at server\player\lane-options.test.ts:23:1
+✖ empty or wrong-lane pool never implies usable heroes (0.2541ms)
+  TypeError: options.laneOptions is not a function
+      at TestContext.<anonymous> (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/server/player/lane-options.test.ts:25:26)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)

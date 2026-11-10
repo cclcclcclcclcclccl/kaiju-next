@@ -22,6 +22,7 @@ import { usePro } from './context.tsx';
 import { effectivePool, latestSnapshot } from './analytics.ts';
 import { assignRoster } from './rosterFlex.ts';
 import TurnAdvice from './TurnAdvice.tsx';
+import { laneOptions } from './laneOptions.ts';
 export { BP_ROUNDS, bpStep } from './bpSession.ts';
 const STORAGE = 'kaiju.bp.rehearsal.v1';
 const PREFERENCES = 'zizai.bp.preferences.v1';
@@ -177,6 +178,14 @@ export default function BpRounds({
     !!turn &&
     ((mode === 'blue' && turn.team === 'enemies') || (mode === 'red' && turn.team === 'allies'));
   const canManual = !!turn && (!aiTurn || paused);
+  const personalOptions = laneOptions(
+    position,
+    heroes,
+    playerRole,
+    { id: 'self', name: '我自己', pool: draft.pool, profile: data.profile },
+    playerTeam,
+    session?.unavailable?.[playerTeam],
+  );
   const excluded = turn?.kind === 'pick' ? (session?.unavailable?.[turn.team] ?? []) : [];
   useEffect(() => {
     if (!session) return;
@@ -428,6 +437,73 @@ export default function BpRounds({
             : '尚未登记英雄池，可先在“我的英雄池”添加常玩英雄；当前按未知水平分析。'}
         </span>
       </div>
+      {personalize && personalPool.length > 0 && (
+        <section className="bp-pool-availability" aria-label="我的分路可用英雄">
+          <div className="section-title">
+            <h3>
+              我的{playerRole} ·{' '}
+              {personalOptions.assigned ? '已经选定' : `${personalOptions.available.length} 位可用`}
+            </h3>
+            <span className="data-caption">
+              登记 {personalOptions.registered} 位，其中 {personalOptions.supported} 位支持当前分路
+            </span>
+          </div>
+          {personalOptions.assigned && (
+            <p className="bp-pool-hero">
+              <Portrait hero={personalOptions.assigned} />
+              <strong>{personalOptions.assigned.name}</strong>
+              <span>已分配给你；后续可手动调整</span>
+            </p>
+          )}
+          {!personalOptions.assigned && !personalOptions.available.length && (
+            <p role="status">
+              {personalOptions.supported
+                ? '当前分路的登记英雄已被占用或禁用。可调整分路、补充英雄池，或关闭英雄池限制继续练习。'
+                : '已登记的英雄没有当前分路。请先把“我的分路”改为自己实际要走的位置。'}
+            </p>
+          )}
+          {personalOptions.available.length > 0 && (
+            <div className="bp-pool-options">
+              {personalOptions.available.map((h) => (
+                <button
+                  className="bp-pool-hero"
+                  key={h.id}
+                  disabled={!canManual || turn?.team !== playerTeam || turn?.kind !== 'pick'}
+                  onClick={() => {
+                    setChosen(String(h.id));
+                    setError('');
+                  }}
+                >
+                  <Portrait hero={h} />
+                  <strong>{h.name}</strong>
+                  <small>
+                    {turn?.team === playerTeam && turn?.kind === 'pick'
+                      ? '选中，待确认'
+                      : '当前可用'}
+                  </small>
+                </button>
+              ))}
+            </div>
+          )}
+          {personalOptions.blocked.length > 0 && (
+            <details>
+              <summary>{personalOptions.blocked.length} 位本手不可用 · 查看原因</summary>
+              <div className="bp-pool-options">
+                {personalOptions.blocked.map(({ hero, reason }) => (
+                  <span className="bp-pool-hero" key={hero.id}>
+                    <Portrait hero={hero} />
+                    <strong>{hero.name}</strong>
+                    <small>{reason}</small>
+                  </span>
+                ))}
+              </div>
+            </details>
+          )}
+          <p className="data-caption">
+            按已登记英雄与当前选禁显示；不代表推荐顺序。队友已选的摇摆英雄仍可通过分路调整换位。
+          </p>
+        </section>
+      )}
       {inferenceState.issue && (
         <p role="alert" className="pro-notice">
           {inferenceState.issue}

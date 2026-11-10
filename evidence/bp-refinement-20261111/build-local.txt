@@ -1,0 +1,86 @@
+
+> kaiju-player-companion@0.27.1 build
+> tsc --noEmit && vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+node_modules/zod/v4/core/regexes.js (74:0): A comment
+
+"/** Anchors a pattern source. The interpolation lives here rather than at the call site because
+ * esbuild will not drop a `@__PURE__` call whose own argument interpolates a variable, but it
+ * will drop `anchor(dateSource)`. Keeping it inline pinned `date` into every bundle. */"
+
+in "node_modules/zod/v4/core/regexes.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/zod/v4/core/util.js (400:0): A comment
+
+"// Wrapped in a `@__PURE__` IIFE: esbuild never tree-shakes a top-level initializer that contains a member access on `Number`, so the bare object literal survived into every bundle."
+
+in "node_modules/zod/v4/core/util.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/zod/v4/core/util.js (400:0): A comment
+
+"// Wrapped in a `@__PURE__` IIFE: esbuild never tree-shakes a top-level initializer that contains a member access on `Number`, so the bare object literal survived into every bundle."
+
+in "node_modules/zod/v4/core/util.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/zod/v4/core/regexes.js (74:0): A comment
+
+"/** Anchors a pattern source. The interpolation lives here rather than at the call site because
+ * esbuild will not drop a `@__PURE__` call whose own argument interpolates a variable, but it
+ * will drop `anchor(dateSource)`. Keeping it inline pinned `date` into every bundle. */"
+
+in "node_modules/zod/v4/core/regexes.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/zod/v4/core/regexes.js (74:0): A comment
+
+"/** Anchors a pattern source. The interpolation lives here rather than at the call site because
+ * esbuild will not drop a `@__PURE__` call whose own argument interpolates a variable, but it
+ * will drop `anchor(dateSource)`. Keeping it inline pinned `date` into every bundle. */"
+
+in "node_modules/zod/v4/core/regexes.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/zod/v4/core/util.js (400:0): A comment
+
+"// Wrapped in a `@__PURE__` IIFE: esbuild never tree-shakes a top-level initializer that contains a member access on `Number`, so the bare object literal survived into every bundle."
+
+in "node_modules/zod/v4/core/util.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/zod/v4/core/regexes.js (74:0): A comment
+
+"/** Anchors a pattern source. The interpolation lives here rather than at the call site because
+ * esbuild will not drop a `@__PURE__` call whose own argument interpolates a variable, but it
+ * will drop `anchor(dateSource)`. Keeping it inline pinned `date` into every bundle. */"
+
+in "node_modules/zod/v4/core/regexes.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/zod/v4/core/util.js (400:0): A comment
+
+"// Wrapped in a `@__PURE__` IIFE: esbuild never tree-shakes a top-level initializer that contains a member access on `Number`, so the bare object literal survived into every bundle."
+
+in "node_modules/zod/v4/core/util.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+✓ 1784 modules transformed.
+rendering chunks...
+[plugin vite:reporter]
+(!) D:/学习相关/传智杯/AI创新应用挑战赛/src/player/pro/ResourceCenter.tsx is dynamically imported by D:/学习相关/传智杯/AI创新应用挑战赛/src/player/App.tsx but also statically imported by D:/学习相关/传智杯/AI创新应用挑战赛/src/player/Heroes.tsx, dynamic import will not move module into another chunk.
+
+computing gzip size...
+dist/index.html                           0.90 kB │ gzip:   0.55 kB
+dist/assets/coach.worker-CGMp_a6k.js    121.71 kB
+dist/assets/arena.worker-76zAuCBn.js    123.70 kB
+dist/assets/index-B-Pxm7u7.css           87.27 kB │ gzip:  17.99 kB
+dist/assets/flexRoles-Clh8L80g.js         1.52 kB │ gzip:   0.94 kB
+dist/assets/backup-98EXzxh0.js            2.02 kB │ gzip:   1.05 kB
+dist/assets/BackupCenter-B3C9ncK3.js      4.03 kB │ gzip:   2.01 kB
+dist/assets/seriesBp-B4XjdjZ_.js          5.36 kB │ gzip:   2.51 kB
+dist/assets/Social-CRxVgcNs.js            6.46 kB │ gzip:   2.82 kB
+dist/assets/Journal-DiktnDdu.js           8.78 kB │ gzip:   3.53 kB
+dist/assets/browserApi-CBvlqcff.js        8.83 kB │ gzip:   4.21 kB
+dist/assets/Systems-GFKLp1P5.js          17.86 kB │ gzip:   7.90 kB
+dist/assets/Replay-nO4okxCV.js           23.63 kB │ gzip:   9.83 kB
+dist/assets/Profile-C6YDVx8a.js          28.30 kB │ gzip:  10.61 kB
+dist/assets/DataHub-BzgJ69IB.js          42.81 kB │ gzip:  14.83 kB
+dist/assets/Leaderboard-CCstuZWq.js      54.38 kB │ gzip:  18.49 kB
+dist/assets/Draft-CpTvMhoC.js            60.24 kB │ gzip:  20.37 kB
+dist/assets/vendor-DR1O3GwS.js          329.32 kB │ gzip: 100.48 kB
+dist/assets/index-BsVszRDh.js           594.54 kB │ gzip: 161.14 kB
+dist/assets/heroes-5Dz6qe-E.js        1,232.66 kB │ gzip: 284.79 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 16.92s

@@ -220,20 +220,6 @@ export function searchCoach(
   };
   if (Object.keys(draft.allies).length + Object.keys(draft.enemies).length === 10)
     throw new Error('双方五个位置都已填满。先清除待推演位置，再计算下一手。');
-  if (!input.flexibleRoles)
-    for (const side of ['allies', 'enemies'] as const)
-      for (const role of ROLES)
-        if (
-          cfg.respectPools &&
-          rosters[side][role] &&
-          !draft[side][role] &&
-          !memberPools(side, role).some(
-            (p) => !used.includes(p.heroId) && byId.get(p.heroId)?.roles.includes(role),
-          )
-        )
-          throw new Error(
-            `${rosters[side][role]!.name}在${role}没有可用的已登记英雄。请补充英雄池或调整分工。`,
-          );
   if (
     input.sequence &&
     (!input.sequence.length ||
@@ -351,32 +337,59 @@ export function searchCoach(
       if (covered.length < width && !covered.includes(candidate)) covered.push(candidate);
     return covered.sort((a, b) => b.prior - a.prior || a.move.heroId - b.move.heroId);
   };
+  const rosterFeasible = (state: Draft, side: Side) => {
+    if (!cfg.respectPools || !Object.values(rosters[side]).some(Boolean)) return true;
+    const ids = Object.values(state[side]).filter((id): id is number => id !== undefined);
+    const locks =
+      input.flexibleRoles?.locks ??
+      Object.fromEntries(
+        Object.entries(state[side]).map(([role, id]) => [String(id), role as Role]),
+      );
+    return !!flexAssignment(ids, locks, side, state);
+  };
   const banMoves = (position: Draft, side: Side): RankedMove[] => {
     const targets = moves(position, opposite(side), Math.min(20, cfg.width * 3));
-    const ids = [...new Set(targets.map((t) => t.move.heroId))];
-    return ids.slice(0, cfg.width).map((heroId) => {
+    const taken = new Set([
+      ...Object.values(position.allies),
+      ...Object.values(position.enemies),
+      ...position.banned,
+    ]);
+    // Banning is not picking: the full legal ban set remains available even if
+    // the opponent cannot pick or all high-priority targets are needed by us.
+    const ids = [
+      ...new Set([
+        ...targets.map((t) => t.move.heroId),
+        ...heroes.map((h) => h.id).sort((a, b) => a - b),
+      ]),
+    ];
+    const candidates: RankedMove[] = [];
+    for (const heroId of ids) {
+      if (taken.has(heroId)) continue;
       const move: CoachMove = { team: side, kind: 'ban', heroId, role: draft.role };
       const state = applyCoachMove(position, move);
-      return {
+      if (!rosterFeasible(state, side)) continue;
+      candidates.push({
         move,
         state,
         value: evaluate(state),
         prior: targets.find((t) => t.move.heroId === heroId)?.prior ?? 0,
-      };
-    });
-  };
-  if (input.flexibleRoles)
-    for (const side of ['allies', 'enemies'] as const) {
-      if (
-        !flexAssignment(
-          Object.values(draft[side]).filter((id): id is number => id !== undefined),
-          input.flexibleRoles.locks,
-          side,
-          draft,
-        )
-      )
-        throw Error('已选英雄、手动锁定或剩余英雄池无法满足成员分路，请调整分工或补充英雄池。');
+      });
+      if (candidates.length >= cfg.width) break;
     }
+    return candidates;
+  };
+  const rosterWarnings: string[] = [];
+  for (const side of ['allies', 'enemies'] as const) {
+    const ids = Object.values(draft[side]).filter((id): id is number => id !== undefined);
+    const valid =
+      rosterFeasible(draft, side) &&
+      (!input.flexibleRoles || !!flexAssignment(ids, input.flexibleRoles.locks, side, draft));
+    if (!valid) {
+      const message = `${side === 'allies' ? '蓝方' : '红方'}没有可用的完整分路方案：已选英雄、手动锁定或剩余英雄池无法满足成员分路，请调整分工或补充英雄池。`;
+      if (side === rootSide) throw Error(message);
+      rosterWarnings.push(message + ' 本次仍可分析另一方，无法完成的后续分支会提前终止。');
+    }
+  }
   const roots = cfg.action === 'ban' ? banMoves(draft, rootSide) : moves(draft, rootSide);
   rootGeneration = false;
   if (!roots.length)
@@ -485,6 +498,16 @@ export function searchCoach(
       if (knownOpponents.has(hero.id)) reasons.push('该英雄在你提供的对手英雄池线索中');
       reasons.push(noteFor(hero).tip);
       const risks = [noteFor(hero).tradeoff];
+      if (!rosterFeasible(root.state, opposite(root.move.team)))
+        risks.push(
+          '这一步会耗尽对方已登记分路的可行英雄池；对方仍可能使用未登记英雄，不能据此视为实战必胜。',
+        );
+      if (
+        root.move.kind === 'ban' &&
+        cfg.respectPools &&
+        Object.values(rosters[root.move.team]).some(Boolean)
+      )
+        reasons.push('禁用后仍为本方已登记分路保留可行英雄，不自禁唯一可用选择');
       if (evaluation.line.length + 1 < completedDepth)
         risks.push('这条分支无法按当前英雄池继续完成选人，请调整成员分工或扩大可用英雄池');
       if (!meta.size) risks.push('没有满足口径与样本要求的版本统计，本次未加入版本强度分');
@@ -530,6 +553,7 @@ export function searchCoach(
     candidateWidth: cfg.width,
     side: rootSide,
     assumptions: [
+      ...rosterWarnings,
       ...(Object.values(rosters).some((r) => Object.values(r).length)
         ? [
             '按已登记成员分路联合分配英雄与熟练度；启用英雄池限制时，用匹配检查为剩余已登记成员保留不同的可用英雄。未知队友不虚构档案，未保证后续对手禁选后仍可完成。',
