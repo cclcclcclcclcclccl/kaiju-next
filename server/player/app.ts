@@ -35,9 +35,14 @@ async function body(req: IncomingMessage, limit = 128 * 1024) {
     throw new PlayerHttpError(415, '请使用 JSON 提交');
   let size = 0;
   const chunks: Buffer[] = [];
-  for await (const chunk of req) {
+  // The default async iterator destroys IncomingMessage on an early throw.
+  // Keep it alive long enough to send a JSON error and drain without buffering.
+  for await (const chunk of req.iterator({ destroyOnReturn: false })) {
     size += chunk.length;
-    if (size > limit) throw new PlayerHttpError(413, '提交内容过大，请减少图片或记录数量');
+    if (size > limit) {
+      req.resume();
+      throw new PlayerHttpError(413, '提交内容过大，请减少图片或记录数量');
+    }
     chunks.push(chunk);
   }
   try {
