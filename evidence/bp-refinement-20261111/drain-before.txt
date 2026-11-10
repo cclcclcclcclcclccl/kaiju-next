@@ -1,0 +1,29 @@
+✖ oversized chunked upload receives JSON 413 instead of a reset connection (59.2191ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 546.1701
+
+✖ failing tests:
+
+test at server\player\body-limit.test.ts:9:1
+✖ oversized chunked upload receives JSON 413 instead of a reset connection (59.2191ms)
+  AssertionError [ERR_ASSERTION]: drain the upload before replying to avoid client upload cancellation races
+
+  true !== false
+
+      at TestContext.<anonymous> (file:///D:/%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E4%BC%A0%E6%99%BA%E6%9D%AF/AI%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E6%8C%91%E6%88%98%E8%B5%9B/server/player/body-limit.test.ts:58:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

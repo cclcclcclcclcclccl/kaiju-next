@@ -10,6 +10,8 @@ test('oversized chunked upload receives JSON 413 instead of a reset connection',
   const store = createPlayerStore(':memory:'),
     app = createPlayerApp(store, heroes);
   let aborted = false;
+  let uploadEnded = false;
+  let responseBeforeUploadEnd = false;
   app.on('request', (req) =>
     req.on('aborted', () => {
       aborted = true;
@@ -33,6 +35,7 @@ test('oversized chunked upload receives JSON 413 instead of a reset connection',
           headers: { 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked' },
         },
         (res) => {
+          responseBeforeUploadEnd = !uploadEnded;
           let body = '';
           res.on('data', (chunk) => (body += chunk));
           res.on('end', () => accept({ status: res.statusCode, body }));
@@ -43,12 +46,20 @@ test('oversized chunked upload receives JSON 413 instead of a reset connection',
       req.setTimeout(5000, () => req.destroy(Error('test request timed out')));
       // Unknown total length: exceed the default 128 KiB limit before the request ends.
       req.write('{"padding":"' + 'x'.repeat(160 * 1024));
-      const end = setTimeout(() => req.end('"}'), 50);
+      const end = setTimeout(() => {
+        uploadEnded = true;
+        req.end('"}');
+      }, 100);
       t.after(() => clearTimeout(end));
     },
   );
   assert.equal(result.status, 413);
   assert.match(JSON.parse(result.body).error, /过大/);
+  assert.equal(
+    responseBeforeUploadEnd,
+    false,
+    'drain the upload before replying to avoid client upload cancellation races',
+  );
   assert.equal(
     aborted,
     false,

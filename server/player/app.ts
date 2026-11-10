@@ -35,16 +35,18 @@ async function body(req: IncomingMessage, limit = 128 * 1024) {
     throw new PlayerHttpError(415, '请使用 JSON 提交');
   let size = 0;
   const chunks: Buffer[] = [];
-  // The default async iterator destroys IncomingMessage on an early throw.
-  // Keep it alive long enough to send a JSON error and drain without buffering.
+  // Drain an oversized request before replying. Returning while fetch is still
+  // uploading can race its cancellation and surface ECONNRESET instead of 413.
+  // Discard buffered chunks immediately at the limit; never buffer the excess.
   for await (const chunk of req.iterator({ destroyOnReturn: false })) {
     size += chunk.length;
     if (size > limit) {
-      req.resume();
-      throw new PlayerHttpError(413, '提交内容过大，请减少图片或记录数量');
+      chunks.length = 0;
+      continue;
     }
     chunks.push(chunk);
   }
+  if (size > limit) throw new PlayerHttpError(413, '提交内容过大，请减少图片或记录数量');
   try {
     return JSON.parse(Buffer.concat(chunks).toString('utf8'));
   } catch {
