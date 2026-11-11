@@ -3,7 +3,7 @@ import { mkdirSync, writeFileSync, readdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { spawn } from 'node:child_process';
-const folder = resolve('submission/省赛最终材料-20261111/视频制作');
+const folder = resolve('artifacts/final-video-20261111');
 const base = process.env.KAIJU_VIDEO_BASE || 'http://127.0.0.1:4319/kaiju-next/';
 mkdirSync(folder, { recursive: true });
 const browser = await chromium.launch({
