@@ -389,7 +389,7 @@ export default function BpRounds({
         <label>
           <input
             type="checkbox"
-            checked={personalize}
+            checked={personalize && personalPool.length > 0}
             disabled={!personalPool.length}
             onChange={(e) => {
               setPaused(true);

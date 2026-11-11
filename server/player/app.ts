@@ -217,7 +217,7 @@ export function createPlayerApp(
         return send(200, {
           product: '自在弈境',
           productId: 'kaiju-player-companion',
-          version: '0.27.1',
+          version: '0.28.0',
           modelConfigured: Boolean(providerConfig()),
           publicSharing: Boolean(publicUrl),
           publicUrl: publicUrl?.origin,

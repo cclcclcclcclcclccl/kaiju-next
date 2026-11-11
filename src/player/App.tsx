@@ -370,7 +370,7 @@ export default function App() {
                     ? '分享服务已连接'
                     : '本地工作台已连接'
                 : '正在连接服务'}
-              <small>v0.27.1</small>
+              <small>v0.28.0</small>
             </span>
           </div>
         </aside>
